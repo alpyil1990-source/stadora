@@ -3,7 +3,7 @@ import { areas, type AreaId } from '../data/content'
 import { useQuoteOptional } from '../context/QuoteContext'
 
 const screens = [
-  { to: '/design/binsignia', label: 'BINSIGNIA-utkast' },
+  { to: '/design/binsignia', label: 'Avfallsutkast' },
   { to: '/', label: 'Startsida' },
   { to: '/produkter', label: 'Sortiment' },
   { to: '/offertlista', label: 'Offertlista' },

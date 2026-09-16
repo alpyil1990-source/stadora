@@ -15,7 +15,7 @@ export function DesignIndexPage() {
         <h2 className="text-xl">Skärmar att granska</h2>
         <ol className="mt-4 columns-1 gap-8 text-sm sm:columns-2">
           {[
-            ['BINSIGNIA-utkast (5 produkter)', '/design/binsignia'],
+            ['Avfallsutkast (5 produkter)', '/design/binsignia'],
             ['Startsida offentlig miljö', '/'],
             ['Hela sortimentet (kategorier)', '/produkter'],
             ['Källsortering (ALBRIS, BERNINA, EIGER, GEMINI)', '/produkter/avfall-atervinning/kallsortering'],
