@@ -65,16 +65,11 @@ export function HomePage() {
       </section>
 
       <section>
-        <p className="kicker">Utkast · BINSIGNIA</p>
+        <p className="kicker">Utkast · avfall</p>
         <h2 className="mt-2 text-2xl md:text-3xl">Fem modeller för granskning</h2>
         <p className="mt-3 max-w-2xl text-sm text-muted">
-          Foton och övergripande spec från binsignia.com, med skriftligt tillstånd. Pris syns inte
-          här — listan i euro ligger i intern admin. Resten av sortimentet väntar.
-        </p>
-        <p className="mt-3 text-sm">
-          <Link className="underline" to="/design/binsignia">
-            Så här är utkastet tänkt
-          </Link>
+          Askkopp och källsortering med kapacitet och materialval. Pris syns inte här. Resten av
+          sortimentet väntar.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {binsigniaDraft.map((p) => (

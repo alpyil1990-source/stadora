@@ -124,7 +124,7 @@ export const publicNav = {
   })),
 }
 
-/** Parkmöbler: fält från live-sajten. BINSIGNIA-utkast: fält från binsignia.com och prislista september 2026. */
+/** Parkmöbler: fält från live-sajten. Avfallsutkast: spec från leverantörens underlag, utan att namnge leverantören publikt. */
 export const products: Record<string, Product> = {
   'parkbank-arsta': {
     slug: 'parkbank-arsta',

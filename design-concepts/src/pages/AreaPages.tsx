@@ -66,8 +66,8 @@ export function DocumentsPage() {
       </p>
       <p className="mt-4 text-sm">
         När dokument finns ska varje fil visa typ, språk, format, versionsnummer och datum. Visa
-        aldrig “finns på begäran” utan bekräftelse. För BINSIGNIA lämnas ritningar och PDF-datablad
-        per projekt eller order — de publiceras inte i katalogen.
+        aldrig “finns på begäran” utan bekräftelse. Ritningar och datablad för ett projekt tas fram i
+        offerten när de behövs — de publiceras inte i katalogen.
       </p>
       <div className="mt-8 border border-dashed border-line p-6 text-sm text-muted">
         Exempel på rad när ett datablad finns: Datablad · Svenska · PDF · v1.2 · 2026-03-12

@@ -173,7 +173,7 @@ export const seedQuotes: QuoteCase[] = [
         qty: 4,
         unitPrice: 4800,
         comment: 'Pulverlackerad stålplåt · 1 × 35 l',
-        image: '/images/binsignia/luna-1.png',
+        image: '/images/avfall/luna-1.png',
       },
     ],
     freight: 6200,

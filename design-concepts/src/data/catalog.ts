@@ -83,7 +83,7 @@ export const catalog: CategoryDef[] = [
       {
         slug: 'kallsortering',
         name: 'Källsortering',
-        blurb: 'Stationer och behållare med fraktioner. Fem BINSIGNIA-modeller som utkast.',
+        blurb: 'Stationer och behållare med fraktioner.',
         productSlugs: [
           'kallsortering-albris',
           'kallsortering-bernina',

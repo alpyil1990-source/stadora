@@ -55,7 +55,6 @@ export function ProductView({
   const standardFeatures = finish?.standardFeatures
   const optionalFeatures = finish?.optionalFeatures
   const sizeLegend = product.sizeLegend ?? 'Storlek'
-  const sourceUrl = finish?.sourceUrl ?? product.sourceUrl
   const sizePhotos = hasSizeTaggedImages(product.images)
 
   const galleryState = imagesForVariant(product.images, {
@@ -231,9 +230,7 @@ export function ProductView({
                     onChange={() => setVariants((s) => ({ ...s, Material: m.name }))}
                   />
                   <span className="block font-medium">{m.name}</span>
-                  <span className="block text-xs text-muted">
-                    {m.code} · art.nr {m.sku}
-                  </span>
+                  <span className="block text-xs text-muted">Art.nr {m.sku}</span>
                 </label>
               )
             })}
@@ -409,12 +406,6 @@ export function ProductView({
           <dd className="font-medium">{materialLabel}</dd>
         </div>
       )}
-      {product.manufacturer && (
-        <div className="col-span-2">
-          <dt className="text-muted">Tillverkare</dt>
-          <dd className="font-medium">{product.manufacturer}</dd>
-        </div>
-      )}
       {product.medicalClass && (
         <div className="col-span-2">
           <dt className="text-muted">Klassning</dt>
@@ -462,12 +453,6 @@ export function ProductView({
                 <th>Material</th>
                 <td>{materialLabel}</td>
               </tr>
-              {finish?.code && (
-                <tr>
-                  <th>Utförande</th>
-                  <td>{finish.code}</td>
-                </tr>
-              )}
               {product.cement && (
                 <tr>
                   <th>Betong</th>
@@ -481,9 +466,7 @@ export function ProductView({
       {(standardFeatures?.length || optionalFeatures?.length) && (
         <section id="utforande">
           <h2 className="text-xl">Ingår och tillval</h2>
-          <p className="mt-2 text-sm text-muted">
-            Gäller valt material. Listan kommer från tillverkarens produktsida, inte från antaganden.
-          </p>
+          <p className="mt-2 text-sm text-muted">Gäller valt material.</p>
           <table className="spec-table mt-3">
             <tbody>
               {standardFeatures && standardFeatures.length > 0 && (
@@ -581,14 +564,6 @@ export function ProductView({
             Inga verifierade datablad, CAD-filer eller certifikat är publicerade för den här
             produkten. Sektionen döljs i produktion när den är tom; den visas här för att visa hur
             luckor hanteras. Vi skriver inte att filer finns på begäran.
-          </p>
-        )}
-        {sourceUrl && (
-          <p className="mt-3 text-sm">
-            Källa:{' '}
-            <a className="underline" href={sourceUrl} rel="noreferrer" target="_blank">
-              {sourceUrl.replace('https://', '')}
-            </a>
           </p>
         )}
       </section>

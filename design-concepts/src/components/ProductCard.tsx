@@ -23,7 +23,7 @@ export function ProductCard({ product }: { product: Product }) {
         )}
         {product.materials && product.materials.length > 0 && (
           <p className="font-ui text-xs tabular-nums text-muted">
-            {product.materials.map((m) => `${m.code} ${m.sku}`).join(' · ')}
+            Art.nr {product.materials.map((m) => m.sku).join(' · ')}
           </p>
         )}
         <p className="text-sm text-muted">{product.summary}</p>
