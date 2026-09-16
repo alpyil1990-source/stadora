@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from './components/AppShell'
+import { ScrollToTop } from './components/ScrollToTop'
 import { AdminShell } from './components/AdminShell'
 import { QuoteReplyShell } from './components/QuoteReplyShell'
 import { HomePage } from './pages/PublicPages'
@@ -27,6 +28,7 @@ import { AdminSupplierDetail } from './pages/admin/AdminSupplierDetail'
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <CommerceProvider>
         <SupplierProvider>
         <Routes>
