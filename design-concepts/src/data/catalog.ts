@@ -1,4 +1,5 @@
 import { avfallCatalogSlugs } from './binsignia-rest'
+import { investimCatalogSlugs } from './investim'
 
 export type CatalogStatus = 'published' | 'needs_work' | 'draft'
 
@@ -37,12 +38,13 @@ export const catalog: CategoryDef[] = [
           'parkbank-grondal',
           'parkbank-aspudden',
           'parkbank-enskede',
+          ...investimCatalogSlugs.parkbankar,
         ],
         draftExamples: ['Parkbänk Muren', 'Parkbänk Silverdal', 'Smart parkbänk Norra Djurgården'],
         filters: [
           { legend: 'Ryggstöd', options: ['Med ryggstöd', 'Utan ryggstöd'] },
           { legend: 'Montering', options: ['Fristående', 'Skruvas i underlaget'] },
-          { legend: 'Material', options: ['Arkitektonisk betong', 'Trä'] },
+          { legend: 'Material', options: ['Arkitektonisk betong', 'Tvättad betong', 'Stål', 'Trä'] },
         ],
       },
       {
@@ -242,8 +244,12 @@ export const catalog: CategoryDef[] = [
         slug: 'pollare',
         name: 'Pollare',
         blurb: 'Fasta och fällbara pollare.',
-        productSlugs: [],
+        productSlugs: [...investimCatalogSlugs.pollare],
         draftExamples: ['Pollare Skylten', 'Pollare Stigen', 'Fällpollare Enskede'],
+        filters: [
+          { legend: 'Form', options: ['Fyrkantig', 'Rund', 'Sexkantig', 'Åttkantig'] },
+          { legend: 'Material', options: ['Tvättad betong', 'Arkitektonisk betong'] },
+        ],
       },
       {
         slug: 'avsparrning',

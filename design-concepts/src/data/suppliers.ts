@@ -1,4 +1,5 @@
 import { BINSIGNIA_SLUGS } from './binsignia'
+import { INVESTIM_SLUGS } from './investim'
 
 export type SupplierStatus = 'aktiv' | 'invantar_underlag' | 'pausad'
 
@@ -55,7 +56,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'Plantslingan 36, 142 51 Skogås',
     notes:
-      'Egna utemiljöprodukter i konceptet (parkbänkar, Rödberga). Namngiven inköpskontakt saknas i underlaget. Nya foton ska komma från intern/leverantörslänk — inte skrapas från den publicerade sajten.',
+      'Egna utemiljöprodukter i konceptet (parkbänkar Årsta–Enskede, Rödberga). Namngiven inköpskontakt saknas i underlaget. Nya foton ska komma från intern/leverantörslänk — inte skrapas från den publicerade sajten.',
     productSlugs: [
       'parkbank-arsta',
       'parkbank-hammarby',
@@ -85,6 +86,27 @@ export const seedSuppliers: Supplier[] = [
     notes:
       'Partneravtal september 2026. Bildrätt: produktfoton, beskrivningar och övergripande spec på stadora.se. Ritningar/PDF per projekt. Drop-ship Sverige, neutral leverans. Icke-exklusivt. B2B, omvänd skattskyldighet. Listpris EUR, rabatt 15/22/30 %. 54 serier i katalogen, 122 SKU-rader i intern lista. PETALSTEEL saknas på prislistan och är inte importerad. Hämta inte bilder från stadora.se. Leverantörens artikelnummer syns bara i admin.',
     productSlugs: [...BINSIGNIA_SLUGS],
+  },
+  {
+    id: 'investim',
+    name: 'INVESTIM S.A.',
+    status: 'aktiv',
+    orgNr: '0000124986',
+    vatNr: 'PL5260152790',
+    legalName: 'INVESTIM S.A.',
+    website: 'https://www.investim.com.pl',
+    mediaSource: 'https://investim.com.pl/oferta',
+    contact: {
+      name: 'Robert Miąsek',
+      role: 'COO',
+      email: 'robert@investim.com.pl',
+      phone: '+48 578 220 440',
+    },
+    address:
+      'Kontor: ul. Cybernetyki 4a lok. U4, 02-677 Warszawa. Produktion: ul. Suwalna 5a, 05-119 Łajski, Polen.',
+    notes:
+      'Prislista 2026 EUR. Rabatt enligt mejl: arkitektonisk betong 10 %; tvättad betong 20 %, bänkar 10 %; papperskorg i tvättad granit med trä och stållock 5 %. Stål har ingen angiven rabatt. 15 bänkar från skickade länkar + pollare från slupki-betonowe utom fluorescerande. Katalognummer och EUR bara i admin. Hämta inte bilder från stadora.se.',
+    productSlugs: [...INVESTIM_SLUGS],
   },
 ]
 

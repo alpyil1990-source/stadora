@@ -472,6 +472,12 @@ export function ProductView({
                   <td>{product.cement}</td>
                 </tr>
               )}
+              {product.wood && (
+                <tr>
+                  <th>Trä</th>
+                  <td>{product.wood}</td>
+                </tr>
+              )}
             </tbody>
           </table>
         </section>

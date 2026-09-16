@@ -4,6 +4,7 @@ import { useQuoteOptional } from '../context/QuoteContext'
 
 const screens = [
   { to: '/design/binsignia', label: 'Avfallskatalog' },
+  { to: '/design/park-pollare', label: 'Park och pollare' },
   { to: '/', label: 'Startsida' },
   { to: '/produkter', label: 'Sortiment' },
   { to: '/offertlista', label: 'Offertlista' },

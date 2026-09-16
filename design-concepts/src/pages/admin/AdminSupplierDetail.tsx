@@ -5,6 +5,7 @@ import { products, productPath } from '../../data/content'
 import { colorChoices, hasColorTaggedImages, hasSizeTaggedImages } from '../../data/gallery'
 import { supplierStatusLabel, type SupplierStatus } from '../../data/suppliers'
 import { AdminBinsigniaTerms } from './AdminBinsigniaTerms'
+import { AdminInvestimTerms } from './AdminInvestimTerms'
 
 const statuses: SupplierStatus[] = ['aktiv', 'invantar_underlag', 'pausad']
 
@@ -153,6 +154,7 @@ export function AdminSupplierDetail() {
       </section>
 
       {supplier.id === 'binsignia' && <AdminBinsigniaTerms />}
+      {supplier.id === 'investim' && <AdminInvestimTerms />}
 
       <section>
         <h2 className="text-xl">Produkter från den här leverantören</h2>

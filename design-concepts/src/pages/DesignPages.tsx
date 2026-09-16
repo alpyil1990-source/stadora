@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { BINSIGNIA_SLUGS, productPath, products } from '../data/content'
+import { BINSIGNIA_SLUGS, INVESTIM_SLUGS, productPath, products } from '../data/content'
 
 export function DesignIndexPage() {
   return (
@@ -41,6 +41,10 @@ export function DesignIndexPage() {
             ['Admin: fakturor', '/admin/fakturor'],
             ['Admin: leverantörer', '/admin/leverantorer'],
             ['Admin: BINSIGNIA (Paula Stirbu)', '/admin/leverantorer/binsignia'],
+            ['Admin: INVESTIM (Robert Miąsek)', '/admin/leverantorer/investim'],
+            ['Parkbänkar och pollare (intern översikt)', '/design/park-pollare'],
+            ['Pollare', '/produkter/pollare-racken/pollare'],
+            ['Parkbänk i tvättad betong', '/produkt/parkbank-tvattad-rygg'],
             ['Miljö: bostadsgård', '/miljoer/bostadsgard'],
             ['Dokumentcenter', '/dokument'],
             ['Tre designriktningar', '/design/riktningar'],
@@ -72,6 +76,23 @@ export function DesignIndexPage() {
         <p className="mt-3">
           <Link className="underline" to="/design/binsignia">
             Intern översikt
+          </Link>
+        </p>
+      </section>
+      <section className="border border-line bg-sheet p-6 text-sm">
+        <h2 className="text-lg">Parkbänkar och pollare</h2>
+        <p className="mt-2 text-muted">
+          15 bänkar från de skickade länkarna och 42 pollare från betongpollar-listan. Fluorescerande
+          pollare är undantagen. Inga priser och inga katalognummer på den publika sidan. Listpris,
+          rabatt och netto ligger i intern admin.
+        </p>
+        <p className="mt-3">
+          <Link className="underline" to="/design/park-pollare">
+            Intern översikt
+          </Link>
+          {' · '}
+          <Link className="underline" to="/admin/leverantorer/investim">
+            Inköpslista EUR
           </Link>
         </p>
       </section>
@@ -143,6 +164,67 @@ export function BinsigniaDraftPage() {
           <li>PC och SST som material. AISI 304 bara på rostfritt — inte på pulverlack.</li>
           <li>Inga priser och inga leverantörsartikelnummer på produktsidan.</li>
           <li>Ritningar och PDF-datablad publiceras inte. De lämnas per projekt.</li>
+        </ul>
+      </section>
+    </div>
+  )
+}
+
+export function InvestimDraftPage() {
+  const items = INVESTIM_SLUGS.map((slug) => products[slug]).filter(Boolean)
+  const groups = [
+    { name: 'Parkbänkar', slug: 'parkbankar', href: '/produkter/parkmobler/parkbankar' },
+    { name: 'Pollare', slug: 'pollare', href: '/produkter/pollare-racken/pollare' },
+  ]
+
+  return (
+    <div className="space-y-10">
+      <div>
+        <p className="kicker">Intern översikt · park och pollare</p>
+        <h1 className="mt-2 text-3xl md:text-4xl">Parkbänkar och pollare</h1>
+        <p className="mt-4 max-w-2xl text-muted">
+          {items.length} serier från prislistan 2026 EUR och de skickade produktsidorna.
+          Fluorescerande pollare är inte importerad. Publika sidor visar namn, material och mått —
+          inte leverantör, inte EUR, inte katalognummer.
+        </p>
+        <p className="mt-3 text-sm">
+          <Link className="underline" to="/admin/leverantorer/investim">
+            Intern EUR-lista, rabatt och netto
+          </Link>
+        </p>
+      </div>
+      {groups.map((g) => {
+        const rows = items.filter((p) => p.subcategorySlug === g.slug)
+        return (
+          <section key={g.slug}>
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <h2 className="text-xl">
+                {g.name} · {rows.length}
+              </h2>
+              <Link className="text-sm underline" to={g.href}>
+                Öppna underkategorin
+              </Link>
+            </div>
+            <ul className="mt-4 columns-1 gap-x-8 text-sm sm:columns-2 lg:columns-3">
+              {rows.map((p) => (
+                <li key={p.slug} className="break-inside-avoid border-b border-line py-2">
+                  <Link className="underline-offset-2 hover:underline" to={productPath(p)}>
+                    {p.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      })}
+      <section className="border border-line bg-sheet p-6 text-sm">
+        <h2 className="text-lg">Vad som gäller</h2>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-muted">
+          <li>Foton från leverantörens sajt, inte från stadora.se.</li>
+          <li>Arkitektonisk betong 10 %. Tvättad betong 20 %, bänkar 10 %. Stål utan angiven rabatt.</li>
+          <li>Papperskorg i tvättad granit med trä och stållock 5 % — ingen sådan produkt i den här importen.</li>
+          <li>Inga priser och inga katalognummer på produktsidan.</li>
+          <li>Ritningar publiceras inte. De lämnas per projekt i offerten.</li>
         </ul>
       </section>
     </div>

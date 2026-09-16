@@ -1,0 +1,2883 @@
+{
+  "series": [
+    {
+      "slug": "parkbank-tvattad-rygg",
+      "name": "Parkbänk i tvättad betong med ryggstöd",
+      "sku": "107",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i tvättad betong med ryggstöd. Tvättad betong, trälister och stål, 210 cm.",
+      "description": "Parkbänk i tvättad betong med ryggstöd. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Tvättad betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "210 cm"
+        },
+        {
+          "label": "Sittlängd",
+          "value": "180 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "44 cm"
+        },
+        {
+          "label": "Total höjd",
+          "value": "78 cm"
+        },
+        {
+          "label": "Djup",
+          "value": "40 cm"
+        }
+      ],
+      "weight": "200 kg",
+      "mounting": [
+        "Fristående",
+        "Skruvas i hårdgjort underlag",
+        "Skruvas i fundament i mjukt underlag"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "parkbank-stal-rygg",
+        "parkbank-stal-rygg-metall",
+        "parkbank-arkitektur-rygg"
+      ],
+      "images": [
+        {
+          "file": "parkbank-tvattad-rygg-1.jpg",
+          "alt": "Parkbänk i tvättad betong med ryggstöd"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-stal-rygg",
+      "name": "Parkbänk i stål med ryggstöd",
+      "sku": "224",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i stål med ryggstöd. Stålstomme, trälister, 180 cm.",
+      "description": "Parkbänk i stål med ryggstöd. Trälister 4 cm, lackade tre gånger. Stommen är av stålplåt, varmförzinkad och pulverlackerad.",
+      "material": "Stålstomme, trälister",
+      "cement": null,
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "180 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "43 cm"
+        },
+        {
+          "label": "Total höjd",
+          "value": "80 cm"
+        },
+        {
+          "label": "Bredd",
+          "value": "70 cm"
+        }
+      ],
+      "weight": null,
+      "mounting": [
+        "Fristående",
+        "Skruvas i hårdgjort underlag",
+        "Skruvas i fundament i mjukt underlag"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": true,
+      "related": [
+        "parkbank-tvattad-rygg",
+        "parkbank-stal-rygg-metall",
+        "parkbank-arkitektur-rygg"
+      ],
+      "images": [
+        {
+          "file": "parkbank-stal-rygg-1.jpg",
+          "alt": "Parkbänk i stål med ryggstöd"
+        },
+        {
+          "file": "parkbank-stal-rygg-2.jpg",
+          "alt": "Parkbänk i stål med ryggstöd"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-stal-rygg-metall",
+      "name": "Parkbänk i stål med ryggstöd, metallstomme",
+      "sku": "260",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i stål med ryggstöd, metallstomme. Stålstomme, trälister, 180 cm.",
+      "description": "Parkbänk i stål med ryggstöd, metallstomme. Trälister 4 cm, lackade tre gånger. Stommen är av stålplåt, varmförzinkad och pulverlackerad.",
+      "material": "Stålstomme, trälister",
+      "cement": null,
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "180 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "43 cm"
+        },
+        {
+          "label": "Total höjd",
+          "value": "77 cm"
+        },
+        {
+          "label": "Bredd",
+          "value": "65 cm"
+        }
+      ],
+      "weight": null,
+      "mounting": [
+        "Fristående",
+        "Skruvas i hårdgjort underlag",
+        "Skruvas i fundament i mjukt underlag"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": true,
+      "related": [
+        "parkbank-tvattad-rygg",
+        "parkbank-stal-rygg",
+        "parkbank-arkitektur-rygg"
+      ],
+      "images": [
+        {
+          "file": "parkbank-stal-rygg-metall-1.jpg",
+          "alt": "Parkbänk i stål med ryggstöd, metallstomme"
+        },
+        {
+          "file": "parkbank-stal-rygg-metall-2.jpg",
+          "alt": "Parkbänk i stål med ryggstöd, metallstomme"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-stal",
+      "name": "Parkbänk i stål utan ryggstöd",
+      "sku": "156",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i stål utan ryggstöd. Stålrörsstomme, trälister, 192 cm.",
+      "description": "Parkbänk i stål utan ryggstöd. Trälister 4 cm, lackade tre gånger. Stommen är av stålrör, varmförzinkad och pulverlackerad.",
+      "material": "Stålrörsstomme, trälister",
+      "cement": null,
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "192 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "42 cm"
+        },
+        {
+          "label": "Sittdjup",
+          "value": "46 cm"
+        }
+      ],
+      "weight": null,
+      "mounting": [
+        "Fristående",
+        "Skruvas i hårdgjort underlag",
+        "Skruvas i fundament i mjukt underlag"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": true,
+      "related": [
+        "parkbank-stal-tra",
+        "parkbank-arkitektur-sits",
+        "parkbank-arkitektur-smal"
+      ],
+      "images": [
+        {
+          "file": "parkbank-stal-1.jpg",
+          "alt": "Parkbänk i stål utan ryggstöd"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-stal-tra",
+      "name": "Parkbänk i stål och trä utan ryggstöd",
+      "sku": "209",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i stål och trä utan ryggstöd. Stålstomme, trälister, 180 cm.",
+      "description": "Parkbänk i stål och trä utan ryggstöd. Trälister 4 cm, lackade tre gånger. Stommen är av stålplåt, varmförzinkad och pulverlackerad.",
+      "material": "Stålstomme, trälister",
+      "cement": null,
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "180 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "45 cm"
+        },
+        {
+          "label": "Bredd",
+          "value": "45 cm"
+        }
+      ],
+      "weight": null,
+      "mounting": [
+        "Fristående",
+        "Skruvas i hårdgjort underlag",
+        "Skruvas i fundament i mjukt underlag"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": true,
+      "related": [
+        "parkbank-stal",
+        "parkbank-arkitektur-sits",
+        "parkbank-arkitektur-smal"
+      ],
+      "images": [
+        {
+          "file": "parkbank-stal-tra-1.jpg",
+          "alt": "Parkbänk i stål och trä utan ryggstöd"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-arkitektur-sits",
+      "name": "Parkbänk i arkitektonisk betong med träsits",
+      "sku": "601",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i arkitektonisk betong med träsits. Arkitektonisk betong, trälister och stål, 180 cm.",
+      "description": "Parkbänk i arkitektonisk betong med träsits. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Längd",
+          "value": "180 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "44 cm"
+        },
+        {
+          "label": "Bredd",
+          "value": "75 cm"
+        }
+      ],
+      "weight": "490 kg",
+      "mounting": [
+        "Fristående"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "parkbank-stal",
+        "parkbank-stal-tra",
+        "parkbank-arkitektur-smal"
+      ],
+      "images": [
+        {
+          "file": "parkbank-arkitektur-sits-1.jpg",
+          "alt": "Parkbänk i arkitektonisk betong med träsits"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-arkitektur-rygg",
+      "name": "Parkbänk i arkitektonisk betong med ryggstöd",
+      "sku": "601-ZO",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i arkitektonisk betong med ryggstöd. Arkitektonisk betong, trälister och stål, 240 cm.",
+      "description": "Parkbänk i arkitektonisk betong med ryggstöd. Tillverkas i betong. Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade två gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade två gånger.",
+      "dimensions": [
+        {
+          "label": "Längd",
+          "value": "240 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "45 cm"
+        },
+        {
+          "label": "Bredd",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "500 kg",
+      "mounting": [
+        "Fristående"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "parkbank-tvattad-rygg",
+        "parkbank-stal-rygg",
+        "parkbank-stal-rygg-metall"
+      ],
+      "images": [
+        {
+          "file": "parkbank-arkitektur-rygg-1.jpg",
+          "alt": "Parkbänk i arkitektonisk betong med ryggstöd"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-arkitektur-smal",
+      "name": "Parkbänk i arkitektonisk betong, smal sits",
+      "sku": "603",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i arkitektonisk betong, smal sits. Arkitektonisk betong, trälister och stål, 180 cm.",
+      "description": "Parkbänk i arkitektonisk betong, smal sits. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Tillval på sidan: uppspelning av inlagd ljudfil via LED-sensor. Pris för tillvalet saknas i listan. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Längd",
+          "value": "180 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "43 cm"
+        },
+        {
+          "label": "Sittdjup",
+          "value": "45 cm"
+        }
+      ],
+      "weight": "570 kg",
+      "mounting": [
+        "Fristående"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "parkbank-stal",
+        "parkbank-stal-tra",
+        "parkbank-arkitektur-sits"
+      ],
+      "images": [
+        {
+          "file": "parkbank-arkitektur-smal-1.jpg",
+          "alt": "Parkbänk i arkitektonisk betong, smal sits"
+        },
+        {
+          "file": "parkbank-arkitektur-smal-2.jpg",
+          "alt": "Parkbänk i arkitektonisk betong, smal sits"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-arkitektur-rygg-200",
+      "name": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm",
+      "sku": "605",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm. Arkitektonisk betong, trälister och stål.",
+      "description": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "200 cm"
+        },
+        {
+          "label": "Sittlängd",
+          "value": "180 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "41 cm"
+        },
+        {
+          "label": "Total höjd",
+          "value": "77 cm"
+        },
+        {
+          "label": "Sittdjup",
+          "value": "43 cm"
+        }
+      ],
+      "weight": null,
+      "mounting": [
+        "Fristående",
+        "Skruvas i hårdgjort underlag",
+        "I mjukt underlag med fabrikslånga betongben"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [
+        {
+          "name": "Fristående",
+          "summary": "Listpris fristående"
+        },
+        {
+          "name": "I mark",
+          "summary": "Listpris för nedsänkt montage"
+        }
+      ],
+      "defaultSize": "Fristående",
+      "sizeLegend": "Montering",
+      "ralInQuote": false,
+      "related": [
+        "parkbank-tvattad-rygg",
+        "parkbank-stal-rygg",
+        "parkbank-stal-rygg-metall"
+      ],
+      "images": [
+        {
+          "file": "parkbank-arkitektur-rygg-200-1.jpg",
+          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm"
+        },
+        {
+          "file": "parkbank-arkitektur-rygg-200-2.jpg",
+          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-modul",
+      "name": "Modulär parkbänk i arkitektonisk betong",
+      "sku": "608",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Modulär parkbänk i arkitektonisk betong. Arkitektonisk betong, trälister och stål, 120 cm.",
+      "description": "Modulär parkbänk i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Modullängd",
+          "value": "120 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "44,5 cm"
+        },
+        {
+          "label": "Sittdjup",
+          "value": "60 cm"
+        },
+        {
+          "label": "Bredd",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "700 kg",
+      "mounting": [
+        "Fristående"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [
+        {
+          "name": "Utan ryggstöd",
+          "summary": "Modul utan ryggstöd"
+        },
+        {
+          "name": "Med ryggstöd",
+          "summary": "Modul med ryggstöd"
+        }
+      ],
+      "defaultSize": "Utan ryggstöd",
+      "sizeLegend": "Ryggstöd",
+      "ralInQuote": false,
+      "related": [
+        "parkbank-tvattad-rygg",
+        "parkbank-stal-rygg",
+        "parkbank-stal-rygg-metall"
+      ],
+      "images": [
+        {
+          "file": "parkbank-modul-1.jpg",
+          "alt": "Modulär parkbänk i arkitektonisk betong"
+        },
+        {
+          "file": "parkbank-modul-2.jpg",
+          "alt": "Modulär parkbänk i arkitektonisk betong"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-puck",
+      "name": "Parkbänk Puck",
+      "sku": "651",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk Puck. Arkitektonisk betong, trälister och stål, 200 cm.",
+      "description": "Parkbänk Puck. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "200 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "50 cm"
+        },
+        {
+          "label": "Sittdjup",
+          "value": "55 cm"
+        }
+      ],
+      "weight": "600 kg",
+      "mounting": [
+        "Fristående"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "parkbank-stal",
+        "parkbank-stal-tra",
+        "parkbank-arkitektur-sits"
+      ],
+      "images": [
+        {
+          "file": "parkbank-puck-1.jpg",
+          "alt": "Parkbänk Puck"
+        },
+        {
+          "file": "parkbank-puck-2.jpg",
+          "alt": "Parkbänk Puck"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-arkitektur-200",
+      "name": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 cm",
+      "sku": "652",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 cm. Arkitektonisk betong, trälister och stål.",
+      "description": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "200 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "54 cm"
+        },
+        {
+          "label": "Sittdjup",
+          "value": "65 cm"
+        }
+      ],
+      "weight": "600 kg",
+      "mounting": [
+        "Fristående"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "parkbank-stal",
+        "parkbank-stal-tra",
+        "parkbank-arkitektur-sits"
+      ],
+      "images": [
+        {
+          "file": "parkbank-arkitektur-200-1.jpg",
+          "alt": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 cm"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-arkitektur-200-rygg",
+      "name": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm",
+      "sku": "652-ZO",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm. Arkitektonisk betong, trälister och stål.",
+      "description": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "200 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "54 cm"
+        },
+        {
+          "label": "Total höjd",
+          "value": "95 cm"
+        },
+        {
+          "label": "Bredd",
+          "value": "55 cm"
+        }
+      ],
+      "weight": "600 kg",
+      "mounting": [
+        "Fristående"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "parkbank-tvattad-rygg",
+        "parkbank-stal-rygg",
+        "parkbank-stal-rygg-metall"
+      ],
+      "images": [
+        {
+          "file": "parkbank-arkitektur-200-rygg-1.jpg",
+          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm"
+        },
+        {
+          "file": "parkbank-arkitektur-200-rygg-2.jpg",
+          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-rogal",
+      "name": "Parkbänk Rogal",
+      "sku": "655",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk Rogal. Arkitektonisk betong, trälister och stål, 229,5 cm.",
+      "description": "Parkbänk Rogal. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Längd ytterbåge",
+          "value": "229,5 cm"
+        },
+        {
+          "label": "Höjd med träsits",
+          "value": "50 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "45 cm"
+        },
+        {
+          "label": "Bredd",
+          "value": "45 cm"
+        }
+      ],
+      "weight": "450 kg",
+      "mounting": [
+        "Fristående",
+        "Kan ställas i grupp"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "parkbank-stal",
+        "parkbank-stal-tra",
+        "parkbank-arkitektur-sits"
+      ],
+      "images": [
+        {
+          "file": "parkbank-rogal-1.jpg",
+          "alt": "Parkbänk Rogal"
+        },
+        {
+          "file": "parkbank-rogal-2.jpg",
+          "alt": "Parkbänk Rogal"
+        }
+      ]
+    },
+    {
+      "slug": "parkbank-arkitektur-rygg-180",
+      "name": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm",
+      "sku": "659",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm. Arkitektonisk betong, trälister och stål.",
+      "description": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "material": "Arkitektonisk betong, trälister och stål",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "wood": "Trälister 4 cm, lackade tre gånger.",
+      "dimensions": [
+        {
+          "label": "Total längd",
+          "value": "180 cm"
+        },
+        {
+          "label": "Sittlängd",
+          "value": "160 cm"
+        },
+        {
+          "label": "Sitthöjd",
+          "value": "45 cm"
+        },
+        {
+          "label": "Total höjd",
+          "value": "85 cm"
+        },
+        {
+          "label": "Sittdjup",
+          "value": "46 cm"
+        },
+        {
+          "label": "Bänkbredd",
+          "value": "80 cm"
+        }
+      ],
+      "weight": null,
+      "mounting": [
+        "Fristående",
+        "Skruvas i hårdgjort underlag"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "parkbank-tvattad-rygg",
+        "parkbank-stal-rygg",
+        "parkbank-stal-rygg-metall"
+      ],
+      "images": [
+        {
+          "file": "parkbank-arkitektur-rygg-180-1.jpg",
+          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm"
+        },
+        {
+          "file": "parkbank-arkitektur-rygg-180-2.jpg",
+          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-119",
+      "name": "Pollare fyrkantig 39 cm",
+      "sku": "119",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 39 cm i tvättad betong, 80 kg.",
+      "description": "Pollare fyrkantig i tvättad betong, 80 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Bas",
+          "value": "30 × 30 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "39 cm"
+        }
+      ],
+      "weight": "80 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [
+        {
+          "name": "39 cm",
+          "summary": "80 kg",
+          "weight": "80 kg",
+          "dimensions": [
+            {
+              "label": "Höjd",
+              "value": "39 cm"
+            }
+          ]
+        },
+        {
+          "name": "44 cm",
+          "summary": "92 kg",
+          "weight": "92 kg",
+          "dimensions": [
+            {
+              "label": "Höjd",
+              "value": "44 cm"
+            }
+          ]
+        }
+      ],
+      "defaultSize": "39 cm",
+      "sizeLegend": "Höjd",
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32",
+        "pollare-fyrkant-42"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-119-1.jpg",
+          "alt": "Pollare fyrkantig"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-57",
+      "name": "Pollare fyrkantig 57 cm",
+      "sku": "12",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 57 cm i tvättad betong, 107 kg.",
+      "description": "Pollare fyrkantig 57 i tvättad betong, 107 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Bas",
+          "value": "25 × 25 cm"
+        },
+        {
+          "label": "Överdel",
+          "value": "32 × 32 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "57 cm"
+        }
+      ],
+      "weight": "107 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-32",
+        "pollare-fyrkant-42"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-57-1.jpg",
+          "alt": "Pollare fyrkantig 57"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-32",
+      "name": "Pollare fyrkantig 32 cm",
+      "sku": "12A",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 32 cm i tvättad betong, 69 kg.",
+      "description": "Pollare fyrkantig 32 i tvättad betong, 69 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Bas",
+          "value": "32 × 32 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "32 cm"
+        }
+      ],
+      "weight": "69 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-42"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-32-1.jpg",
+          "alt": "Pollare fyrkantig 32"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-42",
+      "name": "Pollare fyrkantig 42 cm",
+      "sku": "13",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 42 cm i tvättad betong, 28 kg.",
+      "description": "Pollare fyrkantig 42 i tvättad betong, 28 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Höjd",
+          "value": "42 cm"
+        }
+      ],
+      "weight": "28 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-42-1.jpg",
+          "alt": "Pollare fyrkantig 42"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-60",
+      "name": "Pollare fyrkantig 60 cm",
+      "sku": "14",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 60 cm i tvättad betong, 73 kg.",
+      "description": "Pollare fyrkantig 60 i tvättad betong, 73 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Höjd",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "73 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-60-1.jpg",
+          "alt": "Pollare fyrkantig 60"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-44",
+      "name": "Pollare fyrkantig 44 cm",
+      "sku": "17",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 44 cm i tvättad betong, 87 kg.",
+      "description": "Pollare fyrkantig 44 i tvättad betong, 87 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Bas",
+          "value": "40 × 40 cm"
+        },
+        {
+          "label": "Diameter",
+          "value": "24 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "44 cm"
+        }
+      ],
+      "weight": "87 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-44-1.jpg",
+          "alt": "Pollare fyrkantig 44"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-44-2",
+      "name": "Pollare fyrkantig 44 cm",
+      "sku": "21",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 44 cm i tvättad betong, 69 kg.",
+      "description": "Pollare fyrkantig 44 i tvättad betong, 69 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Bas",
+          "value": "30 × 30 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "44 cm"
+        }
+      ],
+      "weight": "69 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-44-2-1.jpg",
+          "alt": "Pollare fyrkantig 44"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-47",
+      "name": "Pollare fyrkantig 47 cm",
+      "sku": "27",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 47 cm i tvättad betong, 40 kg.",
+      "description": "Pollare fyrkantig 47 i tvättad betong, 40 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Höjd",
+          "value": "47 cm"
+        }
+      ],
+      "weight": "40 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-47-1.jpg",
+          "alt": "Pollare fyrkantig 47"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-88",
+      "name": "Pollare fyrkantig 88 cm",
+      "sku": "35",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 88 cm i tvättad betong, 120 kg.",
+      "description": "Pollare fyrkantig 88 i tvättad betong, 120 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Bas",
+          "value": "30 × 30 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "88 cm"
+        }
+      ],
+      "weight": "120 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-88-1.jpg",
+          "alt": "Pollare fyrkantig 88"
+        },
+        {
+          "file": "pollare-fyrkant-88-2.jpg",
+          "alt": "Pollare fyrkantig 88"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-58",
+      "name": "Pollare fyrkantig 58 cm",
+      "sku": "39",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 58 cm i tvättad betong, 66 kg.",
+      "description": "Pollare fyrkantig 58 i tvättad betong, 66 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Höjd",
+          "value": "58 cm"
+        }
+      ],
+      "weight": "66 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-58-1.jpg",
+          "alt": "Pollare fyrkantig 58"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-80",
+      "name": "Pollare fyrkantig 80 cm",
+      "sku": "154",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 80 cm i tvättad betong, 165 kg.",
+      "description": "Pollare fyrkantig 80 i tvättad betong, 165 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Bas",
+          "value": "40 × 40 cm"
+        },
+        {
+          "label": "Överdel",
+          "value": "20 × 20 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "80 cm"
+        }
+      ],
+      "weight": "165 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-80-1.jpg",
+          "alt": "Pollare fyrkantig 80"
+        },
+        {
+          "file": "pollare-fyrkant-80-2.jpg",
+          "alt": "Pollare fyrkantig 80"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-70",
+      "name": "Pollare fyrkantig 70 cm",
+      "sku": "169",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 70 cm i tvättad betong, 65 kg.",
+      "description": "Pollare fyrkantig 70 i tvättad betong, 65 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Bas",
+          "value": "20 × 20 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "70 cm"
+        }
+      ],
+      "weight": "65 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-70-1.jpg",
+          "alt": "Pollare fyrkantig 70"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-fyrkant-83",
+      "name": "Pollare fyrkantig 83 cm",
+      "sku": "7",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare fyrkantig 83 cm i tvättad betong, 50 kg.",
+      "description": "Pollare fyrkantig 83 i tvättad betong, 50 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Höjd",
+          "value": "83 cm"
+        }
+      ],
+      "weight": "50 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-fyrkant-83-1.jpg",
+          "alt": "Pollare fyrkantig 83"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-sexkant-74",
+      "name": "Pollare sexkantig 74 cm",
+      "sku": "1",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare sexkantig 74 cm i tvättad betong, 70 kg.",
+      "description": "Pollare sexkantig 74 i tvättad betong, 70 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "30 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "20 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "74 cm"
+        }
+      ],
+      "weight": "70 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-sexkant-74-1.jpg",
+          "alt": "Pollare sexkantig 74"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-attkant-96",
+      "name": "Pollare åttkantig 96 cm",
+      "sku": "3",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare åttkantig 96 cm i tvättad betong, 234 kg.",
+      "description": "Pollare åttkantig 96 i tvättad betong, 234 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "42 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "30 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "96 cm"
+        }
+      ],
+      "weight": "234 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-attkant-96-1.jpg",
+          "alt": "Pollare åttkantig 96"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-attkant-74",
+      "name": "Pollare åttkantig 74 cm",
+      "sku": "19",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare åttkantig 74 cm i tvättad betong, 75 kg.",
+      "description": "Pollare åttkantig 74 i tvättad betong, 75 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "30 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "20 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "74 cm"
+        }
+      ],
+      "weight": "75 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-attkant-74-1.jpg",
+          "alt": "Pollare åttkantig 74"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-betong-60",
+      "name": "Pollare 60 cm",
+      "sku": "37",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare 60 cm i tvättad betong, 40 kg.",
+      "description": "Pollare 60 cm i tvättad betong, 40 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Höjd",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "40 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-betong-60-1.jpg",
+          "alt": "Pollare betong 60"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-82",
+      "name": "Pollare rund 82 cm, Ø 30 cm",
+      "sku": "5",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 82 cm, Ø 30 cm i tvättad betong, 89 kg.",
+      "description": "Pollare rund 82 i tvättad betong, 89 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "30 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "20 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "82 cm"
+        }
+      ],
+      "weight": "89 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-82-1.jpg",
+          "alt": "Pollare rund 82"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-60",
+      "name": "Pollare rund 60 cm, Ø 30 cm",
+      "sku": "11",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 60 cm, Ø 30 cm i tvättad betong, 93 kg.",
+      "description": "Pollare rund 60 i tvättad betong, 93 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "30 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "93 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-60-1.jpg",
+          "alt": "Pollare rund 60"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-50",
+      "name": "Pollare rund 50 cm, Ø 30 cm",
+      "sku": "11A",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 50 cm, Ø 30 cm i tvättad betong, 78 kg.",
+      "description": "Pollare rund 50 i tvättad betong, 78 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "30 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "50 cm"
+        }
+      ],
+      "weight": "78 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-50-1.jpg",
+          "alt": "Pollare rund 50"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-26",
+      "name": "Pollare rund, två diametrar",
+      "sku": "26",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund, två diametrar i tvättad betong.",
+      "description": "Pollare rund i tvättad betong, 41 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [],
+      "weight": "41 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [
+        {
+          "name": "Ø 30 cm",
+          "summary": "Höjd 32 cm · 41 kg",
+          "weight": "41 kg",
+          "dimensions": [
+            {
+              "label": "Diameter",
+              "value": "30 cm"
+            },
+            {
+              "label": "Höjd",
+              "value": "32 cm"
+            }
+          ]
+        },
+        {
+          "name": "Ø 40 cm",
+          "summary": "Höjd 40 cm · 75 kg",
+          "weight": "75 kg",
+          "dimensions": [
+            {
+              "label": "Diameter",
+              "value": "40 cm"
+            },
+            {
+              "label": "Höjd",
+              "value": "40 cm"
+            }
+          ]
+        }
+      ],
+      "defaultSize": "Ø 30 cm",
+      "sizeLegend": "Diameter",
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-26-1.jpg",
+          "alt": "Pollare rund"
+        },
+        {
+          "file": "pollare-rund-26-2.jpg",
+          "alt": "Pollare rund"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-60-2",
+      "name": "Pollare rund 60 cm, Ø 30 cm",
+      "sku": "36",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 60 cm, Ø 30 cm i tvättad betong, 65 kg.",
+      "description": "Pollare rund 60 i tvättad betong, 65 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "30 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "20 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "65 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-60-2-1.jpg",
+          "alt": "Pollare rund 60"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-56",
+      "name": "Pollare rund 56 cm, Ø 28 cm",
+      "sku": "38",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 56 cm, Ø 28 cm i tvättad betong, 90 kg.",
+      "description": "Pollare rund 56 i tvättad betong, 90 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "28 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "56 cm"
+        }
+      ],
+      "weight": "90 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-56-1.jpg",
+          "alt": "Pollare rund 56"
+        },
+        {
+          "file": "pollare-rund-56-2.jpg",
+          "alt": "Pollare rund 56"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-80",
+      "name": "Pollare rund 80 cm, Ø 40 cm",
+      "sku": "46",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 80 cm, Ø 40 cm i tvättad betong, 165 kg.",
+      "description": "Pollare rund 80 i tvättad betong, 165 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "40 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "27 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "80 cm"
+        }
+      ],
+      "weight": "165 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-80-1.jpg",
+          "alt": "Pollare rund 80"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-79",
+      "name": "Pollare rund 79 cm, Ø 63 cm",
+      "sku": "52",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 79 cm, Ø 63 cm i tvättad betong, 315 kg.",
+      "description": "Pollare rund 79 i tvättad betong, 315 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "63 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "40 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "79 cm"
+        }
+      ],
+      "weight": "315 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-79-1.jpg",
+          "alt": "Pollare rund 79"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-0",
+      "name": "Pollare rund 61 cm, Ø 46 cm",
+      "sku": "92",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 61 cm, Ø 46 cm i tvättad betong, 175 kg.",
+      "description": "Pollare rund i tvättad betong.",
+      "material": "Tvättad betong",
+      "cement": null,
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "46 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "61 cm"
+        }
+      ],
+      "weight": "175 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-0-1.jpg",
+          "alt": "Pollare rund"
+        },
+        {
+          "file": "pollare-rund-0-2.jpg",
+          "alt": "Pollare rund"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-52",
+      "name": "Pollare rund 52 cm, Ø 46 cm",
+      "sku": "93",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 52 cm, Ø 46 cm i tvättad betong, 140 kg.",
+      "description": "Pollare rund 52 i tvättad betong, 140 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "46 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "52 cm"
+        }
+      ],
+      "weight": "140 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-52-1.jpg",
+          "alt": "Pollare rund 52"
+        },
+        {
+          "file": "pollare-rund-52-2.jpg",
+          "alt": "Pollare rund 52"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-38",
+      "name": "Pollare rund 38 cm, Ø 62 cm",
+      "sku": "94",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 38 cm, Ø 62 cm i tvättad betong, 170 kg.",
+      "description": "Pollare rund 38 i tvättad betong, 170 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "62 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "38 cm"
+        }
+      ],
+      "weight": "170 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-38-1.jpg",
+          "alt": "Pollare rund 38"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-35",
+      "name": "Pollare rund 35 cm, Ø 62 cm",
+      "sku": "95",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 35 cm, Ø 62 cm i tvättad betong, 155 kg.",
+      "description": "Pollare rund 35 i tvättad betong, 155 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "62 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "35 cm"
+        }
+      ],
+      "weight": "155 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-35-1.jpg",
+          "alt": "Pollare rund 35"
+        },
+        {
+          "file": "pollare-rund-35-2.jpg",
+          "alt": "Pollare rund 35"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-82-2",
+      "name": "Pollare rund 82 cm, Ø 40 cm",
+      "sku": "96",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 82 cm, Ø 40 cm i tvättad betong, 160 kg.",
+      "description": "Pollare rund 82 i tvättad betong, 160 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "40 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "82 cm"
+        }
+      ],
+      "weight": "160 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-82-2-1.jpg",
+          "alt": "Pollare rund 82"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-60-3",
+      "name": "Pollare rund 60 cm, Ø 37 cm",
+      "sku": "97",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 60 cm, Ø 37 cm i tvättad betong, 105 kg.",
+      "description": "Pollare rund 60 i tvättad betong, 105 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "37 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "105 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-60-3-1.jpg",
+          "alt": "Pollare rund 60"
+        },
+        {
+          "file": "pollare-rund-60-3-2.jpg",
+          "alt": "Pollare rund 60"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-82-3",
+      "name": "Pollare rund 82 cm, Ø 44 cm",
+      "sku": "142",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 82 cm, Ø 44 cm i tvättad betong, 270 kg.",
+      "description": "Pollare rund 82 i tvättad betong, 270 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "44 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "82 cm"
+        }
+      ],
+      "weight": "270 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-82-3-1.jpg",
+          "alt": "Pollare rund 82"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-50-2",
+      "name": "Pollare rund 50 cm, Ø 36 cm",
+      "sku": "150",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 50 cm, Ø 36 cm i tvättad betong, 90 kg.",
+      "description": "Pollare rund 50 i tvättad betong, 90 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "36 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "50 cm"
+        }
+      ],
+      "weight": "90 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-50-2-1.jpg",
+          "alt": "Pollare rund 50"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-63",
+      "name": "Pollare rund 63 cm, Ø 36 cm",
+      "sku": "151",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 63 cm, Ø 36 cm i tvättad betong, 130 kg.",
+      "description": "Pollare rund 63 i tvättad betong, 130 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "36 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "63 cm"
+        }
+      ],
+      "weight": "130 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-63-1.jpg",
+          "alt": "Pollare rund 63"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-60-4",
+      "name": "Pollare rund 60 cm, Ø 23 cm",
+      "sku": "152",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 60 cm, Ø 23 cm i tvättad betong, 50 kg.",
+      "description": "Pollare rund 60 i tvättad betong, 50 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "23 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "50 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-60-4-1.jpg",
+          "alt": "Pollare rund 60"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-80-2",
+      "name": "Pollare rund 80 cm, Ø 36 cm",
+      "sku": "155",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 80 cm, Ø 36 cm i tvättad betong, 180 kg.",
+      "description": "Pollare rund 80 i tvättad betong, 180 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "36 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "80 cm"
+        }
+      ],
+      "weight": "180 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-80-2-1.jpg",
+          "alt": "Pollare rund 80"
+        },
+        {
+          "file": "pollare-rund-80-2-2.jpg",
+          "alt": "Pollare rund 80"
+        },
+        {
+          "file": "pollare-rund-80-2-3.jpg",
+          "alt": "Pollare rund 80"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-107",
+      "name": "Pollare rund 107 cm, Ø 42 cm",
+      "sku": "167",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 107 cm, Ø 42 cm i tvättad betong, 165 kg.",
+      "description": "Pollare rund 107 i tvättad betong, 165 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "42 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "18 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "107 cm"
+        }
+      ],
+      "weight": "165 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-107-1.jpg",
+          "alt": "Pollare rund 107"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-80-3",
+      "name": "Pollare rund 80 cm, Ø 35,5 cm",
+      "sku": "170",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 80 cm, Ø 35,5 cm i tvättad betong, 98 kg.",
+      "description": "Pollare rund 80 i tvättad betong, 98 kg. Tillverkas i betong. Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "35,5 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "17 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "80 cm"
+        }
+      ],
+      "weight": "98 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-80-3-1.jpg",
+          "alt": "Pollare rund 80"
+        },
+        {
+          "file": "pollare-rund-80-3-2.jpg",
+          "alt": "Pollare rund 80"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-60-5",
+      "name": "Pollare rund 60 cm, Ø 37 cm",
+      "sku": "227",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 60 cm, Ø 37 cm i tvättad betong, 90 kg.",
+      "description": "Pollare rund 60 i tvättad betong, 90 kg. Tillverkas i betong. Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "37 cm"
+        },
+        {
+          "label": "Diameter upptill",
+          "value": "27 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "90 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-60-5-1.jpg",
+          "alt": "Pollare rund 60"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-50-3",
+      "name": "Pollare rund 50 cm, Ø 38 cm",
+      "sku": "266",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund 50 cm, Ø 38 cm i tvättad betong, 45 kg.",
+      "description": "Pollare rund 50 i tvättad betong, 45 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "38 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "50 cm"
+        }
+      ],
+      "weight": "45 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-50-3-1.jpg",
+          "alt": "Pollare rund 50"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-rund-613",
+      "name": "Pollare rund, tre höjder",
+      "sku": "613",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund i arkitektonisk betong, tre höjder.",
+      "description": "Pollare rund i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: reflextejp i gult, vitt eller rött. Tillval enligt sidan: målning med betongfärg i valfri kulör.",
+      "material": "Arkitektonisk betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "25 cm"
+        }
+      ],
+      "weight": null,
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [
+        {
+          "name": "50 cm",
+          "summary": "61 kg",
+          "weight": "61 kg",
+          "dimensions": [
+            {
+              "label": "Höjd",
+              "value": "50 cm"
+            },
+            {
+              "label": "Diameter",
+              "value": "25 cm"
+            }
+          ]
+        },
+        {
+          "name": "70 cm",
+          "summary": "85 kg",
+          "weight": "85 kg",
+          "dimensions": [
+            {
+              "label": "Höjd",
+              "value": "70 cm"
+            },
+            {
+              "label": "Diameter",
+              "value": "25 cm"
+            }
+          ]
+        },
+        {
+          "name": "85 cm",
+          "summary": "103 kg",
+          "weight": "103 kg",
+          "dimensions": [
+            {
+              "label": "Höjd",
+              "value": "85 cm"
+            },
+            {
+              "label": "Diameter",
+              "value": "25 cm"
+            }
+          ]
+        }
+      ],
+      "defaultSize": "50 cm",
+      "sizeLegend": "Höjd",
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-rund-613-1.jpg",
+          "alt": "Pollare rund"
+        },
+        {
+          "file": "pollare-rund-613-2.jpg",
+          "alt": "Pollare rund"
+        }
+      ]
+    },
+    {
+      "slug": "pollare-skylt",
+      "name": "Pollare rund med fäste för skylt, 75 cm",
+      "sku": "132",
+      "category": "Pollare och räcken",
+      "categorySlug": "pollare-racken",
+      "subcategory": "Pollare",
+      "subcategorySlug": "pollare",
+      "summary": "Pollare rund med fäste för skylt, 75 cm i tvättad betong, 240 kg.",
+      "description": "Pollare rund, med fäste för skylt 75 i tvättad betong, 240 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "material": "Tvättad betong",
+      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "dimensions": [
+        {
+          "label": "Diameter",
+          "value": "55 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "75 cm"
+        }
+      ],
+      "weight": "240 kg",
+      "mounting": [
+        "Hål i undersidan för eventuell förankring"
+      ],
+      "environment": "Utomhus i offentlig miljö",
+      "sizes": [],
+      "defaultSize": null,
+      "sizeLegend": null,
+      "ralInQuote": false,
+      "related": [
+        "pollare-fyrkant-119",
+        "pollare-fyrkant-57",
+        "pollare-fyrkant-32"
+      ],
+      "images": [
+        {
+          "file": "pollare-skylt-1.jpg",
+          "alt": "Pollare rund, med fäste för skylt 75"
+        },
+        {
+          "file": "pollare-skylt-2.jpg",
+          "alt": "Pollare rund, med fäste för skylt 75"
+        },
+        {
+          "file": "pollare-skylt-3.jpg",
+          "alt": "Pollare rund, med fäste för skylt 75"
+        }
+      ]
+    }
+  ],
+  "catalog": {
+    "parkbankar": [
+      "parkbank-tvattad-rygg",
+      "parkbank-stal-rygg",
+      "parkbank-stal-rygg-metall",
+      "parkbank-stal",
+      "parkbank-stal-tra",
+      "parkbank-arkitektur-sits",
+      "parkbank-arkitektur-rygg",
+      "parkbank-arkitektur-smal",
+      "parkbank-arkitektur-rygg-200",
+      "parkbank-modul",
+      "parkbank-puck",
+      "parkbank-arkitektur-200",
+      "parkbank-arkitektur-200-rygg",
+      "parkbank-rogal",
+      "parkbank-arkitektur-rygg-180"
+    ],
+    "pollare": [
+      "pollare-fyrkant-119",
+      "pollare-fyrkant-57",
+      "pollare-fyrkant-32",
+      "pollare-fyrkant-42",
+      "pollare-fyrkant-60",
+      "pollare-fyrkant-44",
+      "pollare-fyrkant-44-2",
+      "pollare-fyrkant-47",
+      "pollare-fyrkant-88",
+      "pollare-fyrkant-58",
+      "pollare-fyrkant-80",
+      "pollare-fyrkant-70",
+      "pollare-fyrkant-83",
+      "pollare-sexkant-74",
+      "pollare-attkant-96",
+      "pollare-attkant-74",
+      "pollare-betong-60",
+      "pollare-rund-82",
+      "pollare-rund-60",
+      "pollare-rund-50",
+      "pollare-rund-26",
+      "pollare-rund-60-2",
+      "pollare-rund-56",
+      "pollare-rund-80",
+      "pollare-rund-79",
+      "pollare-rund-0",
+      "pollare-rund-52",
+      "pollare-rund-38",
+      "pollare-rund-35",
+      "pollare-rund-82-2",
+      "pollare-rund-60-3",
+      "pollare-rund-82-3",
+      "pollare-rund-50-2",
+      "pollare-rund-63",
+      "pollare-rund-60-4",
+      "pollare-rund-80-2",
+      "pollare-rund-107",
+      "pollare-rund-80-3",
+      "pollare-rund-60-5",
+      "pollare-rund-50-3",
+      "pollare-rund-613",
+      "pollare-skylt"
+    ]
+  },
+  "skipped": [
+    "Concrete post painted with fluorescent paint"
+  ]
+}

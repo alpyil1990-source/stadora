@@ -1,4 +1,5 @@
 import { binsigniaProducts } from './binsignia'
+import { investimProducts } from './investim'
 import { catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
@@ -373,6 +374,7 @@ export const products: Record<string, Product> = {
     related: ['askkopp-luna'],
     imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
   },
+  ...investimProducts,
   ...binsigniaProducts,
   'akutvagn-genius': {
     slug: 'akutvagn-genius',
@@ -414,6 +416,7 @@ export const products: Record<string, Product> = {
 }
 
 export { BINSIGNIA_SLUGS } from './binsignia'
+export { INVESTIM_SLUGS } from './investim'
 
 export const binsigniaDraft = [
   products['askkopp-luna'],

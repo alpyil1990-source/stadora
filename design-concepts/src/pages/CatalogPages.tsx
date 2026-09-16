@@ -136,8 +136,39 @@ export function SubcategoryListPage() {
       const sel = on[f.legend] ?? []
       if (sel.length === 0) continue
       if (f.legend === 'Material') {
-        const hay = [p.material, ...(p.materials?.map((m) => m.name) ?? [])].join(' ')
-        if (!sel.some((s) => hay.includes(s))) return false
+        const hay = [p.material, ...(p.materials?.map((m) => m.name) ?? [])].join(' ').toLowerCase()
+        if (
+          !sel.some((s) => {
+            const opt = s.toLowerCase()
+            if (opt === 'stål') return hay.includes('stål') && !hay.includes('betong')
+            return hay.includes(opt)
+          })
+        ) {
+          return false
+        }
+      }
+      if (f.legend === 'Form') {
+        const hay = `${p.name} ${p.summary}`.toLowerCase()
+        if (!sel.some((s) => hay.includes(s.toLowerCase()))) return false
+      }
+      if (f.legend === 'Ryggstöd') {
+        const sizeBlob = (p.sizes ?? []).map((s) => `${s.name} ${s.summary ?? ''}`).join(' ')
+        const text = `${p.name} ${p.summary} ${p.description} ${sizeBlob}`.toLowerCase()
+        const withBack = text.includes('med ryggstöd')
+        const without = text.includes('utan ryggstöd')
+        if (!sel.some((s) => (s === 'Med ryggstöd' ? withBack : without))) return false
+      }
+      if (f.legend === 'Montering') {
+        const hay = (p.mounting ?? []).join(' ').toLowerCase()
+        if (
+          !sel.some((s) => {
+            if (s === 'Fristående') return hay.includes('fristående')
+            if (s === 'Skruvas i underlaget') return hay.includes('skruv')
+            return hay.includes(s.toLowerCase())
+          })
+        ) {
+          return false
+        }
       }
       if (f.legend === 'Fraktioner') {
         const sizes = p.sizes ?? []

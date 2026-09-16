@@ -22,8 +22,12 @@ Se `/design` i prototypen, eller:
 - `/produkter/lek-aktivitet` underkategorier (gungor, lekställ, lekhus …)
 - `/produkter/lek-aktivitet/gungor` tom underkategori (utkast från live-sajten)
 - `/produkter/parkmobler` huvudkategori
-- `/produkter/parkmobler/parkbankar` lista + filter
+- `/produkter/parkmobler/parkbankar` lista + filter (Relicon + import 2026)
+- `/produkter/pollare-racken/pollare` betongpollare
 - `/produkt/parkbank-arsta` hybrid produktsida (C)
+- `/produkt/parkbank-tvattad-rygg` exempelbänk från 2026-importen
+- `/design/park-pollare` intern översikt parkbänkar och pollare
+- `/admin/leverantorer/investim` intern EUR-lista, rabatt och netto
 - `/produkt/papperskorg-rodberga-100` storlek (80/100 cm) — bilden byts när foto finns
 - `/produkt/askkopp-luna` material PC/SST + RAL
 - `/produkter/avfall-atervinning/kallsortering` hela källsorteringsserien
