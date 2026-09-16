@@ -3,7 +3,6 @@
 @theme {
   --font-sans: "IBM Plex Sans", "Manrope", system-ui, sans-serif;
   --font-ui: "Manrope", system-ui, sans-serif;
-  --font-display: "IBM Plex Sans", "Manrope", system-ui, sans-serif;
   --color-paper: #f4f2ec;
   --color-sheet: #fffcf7;
   --color-ink: #1c2b26;
@@ -14,28 +13,6 @@
   --color-school: #6a5e43;
   --color-care: #3f5a63;
   --color-warn: #8a4b2a;
-  --color-inverse: #1c2b26;
-  --color-inverse-fg: #f4f2ec;
-  --color-logo-sage: #6b7f73;
-}
-
-html[data-theme="atelje"] {
-  --font-sans: "Figtree", system-ui, sans-serif;
-  --font-ui: "Figtree", system-ui, sans-serif;
-  --font-display: "Syne", system-ui, sans-serif;
-  --color-paper: #f3eee4;
-  --color-sheet: #fffcf8;
-  --color-ink: #1b1914;
-  --color-muted: #5e574c;
-  --color-line: #ddd4c4;
-  --color-sage: #c45c2a;
-  --color-sage-dark: #9a3f16;
-  --color-school: #9a3f16;
-  --color-care: #2f5d62;
-  --color-warn: #8a4b2a;
-  --color-inverse: #1b1914;
-  --color-inverse-fg: #f3eee4;
-  --color-logo-sage: #6b7f73;
 }
 
 html {
@@ -44,14 +21,6 @@ html {
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.5;
-}
-
-html[data-theme="atelje"] h1,
-html[data-theme="atelje"] h2,
-html[data-theme="atelje"] .display {
-  font-family: var(--font-display);
-  font-weight: 600;
-  letter-spacing: -0.045em;
 }
 
 body {
@@ -81,11 +50,6 @@ body {
   color: var(--color-sage-dark);
 }
 
-html[data-theme="atelje"] .kicker {
-  letter-spacing: 0.22em;
-  font-weight: 700;
-}
-
 .spec-table {
   width: 100%;
   border-collapse: collapse;
@@ -108,62 +72,4 @@ html[data-theme="atelje"] .kicker {
 
 .spec-table td {
   font-variant-numeric: tabular-nums;
-}
-
-html[data-theme="atelje"] .site-nav {
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-html[data-theme="atelje"] .product-card {
-  border: 0;
-  background: transparent;
-}
-
-html[data-theme="atelje"] .product-card .card-media {
-  aspect-ratio: 4 / 5;
-  background: #e8e0d2;
-}
-
-html[data-theme="atelje"] .product-card.featured .card-media {
-  aspect-ratio: 5 / 4;
-}
-
-html[data-theme="atelje"] .product-card .card-media img {
-  padding: 1.25rem;
-  object-fit: contain;
-}
-
-html[data-theme="atelje"] .product-card .card-body {
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-}
-
-html[data-theme="atelje"] .product-card .card-specs {
-  display: none;
-}
-
-html[data-theme="atelje"] .product-gallery {
-  background: #e8e0d2;
-  border-color: transparent;
-}
-
-html[data-theme="atelje"] .product-gallery img {
-  padding: 2rem;
-}
-
-html[data-theme="atelje"] .area-tabs a {
-  border: 0;
-  border-bottom: 2px solid transparent;
-  background: transparent;
-  padding-inline: 0.9rem;
-}
-
-html[data-theme="atelje"] .area-tabs a[aria-current="page"] {
-  border-bottom-color: var(--color-sage);
-  background: transparent;
-  color: var(--color-ink);
 }

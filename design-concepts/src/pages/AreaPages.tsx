@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { careProducts, products } from '../data/content'
 import { ProductCard } from '../components/ProductCard'
-import { useTheme } from '../context/ThemeContext'
 
 export function CareHomePage() {
   return (
@@ -60,112 +59,52 @@ export function CareHomePage() {
 }
 
 export function SchoolHomePage() {
-  const { theme } = useTheme()
-  const atelje = theme === 'atelje'
-
-  const intro = (
-    <>
-      <p className="kicker">STADORA Skola</p>
-      <h1 className="mt-3 text-4xl md:text-5xl">Möbler för skola och förskola</h1>
-      <p className="mt-5 text-muted">
-        Eget affärsområde, skilt från utemiljö och vård. Offertlista och filter delas inte med
-        lekplats eller akutvagnar.
-      </p>
-    </>
-  )
-
-  const rest = (
-    <section className="grid gap-8 lg:grid-cols-2">
-      <ProductCard product={products['ada-melaminskap']} />
-      <div className="border border-line bg-sheet p-6">
-        <p className="kicker">Publiceringsstatus</p>
-        <p className="mt-3 text-sm text-muted">
-          Live-sajten har ett stort skolsortiment (Mirplay, Gerom). Många poster har unik identitet
-          men korta, upprepade texter. De klassas som “publicera men förbättra” i inventeringen —
-          inte som utkast, men inte heller som färdiga spec-sidor.
-        </p>
-        <p className="mt-3 text-sm text-muted">
-          Ada visas som exempel: kulörer är verifierade. Mått saknas på sidan och utelämnas.
-        </p>
-      </div>
-    </section>
-  )
-
-  if (atelje) {
-    return (
-      <div>
-        <img
-          src="/images/env-skola.jpg"
-          alt="Skolgård"
-          className="h-[min(56svh,520px)] w-full object-cover"
-        />
-        <div className="shell space-y-14 py-10 md:py-14">
-          <section className="-mt-28 max-w-xl bg-sheet p-6 shadow-[0_24px_60px_rgba(27,25,20,0.12)] md:p-10">
-            {intro}
-          </section>
-          {rest}
-        </div>
-      </div>
-    )
-  }
-
   return (
     <div className="space-y-14">
-      <section className="max-w-2xl">{intro}</section>
-      {rest}
+      <section className="max-w-2xl">
+        <p className="kicker">STADORA Skola</p>
+        <h1 className="mt-3 text-4xl md:text-5xl">Möbler för skola och förskola</h1>
+        <p className="mt-5 text-muted">
+          Eget affärsområde, skilt från utemiljö och vård. Offertlista och filter delas inte med
+          lekplats eller akutvagnar.
+        </p>
+      </section>
+      <section className="grid gap-8 lg:grid-cols-2">
+        <ProductCard product={products['ada-melaminskap']} />
+        <div className="border border-line bg-sheet p-6">
+          <p className="kicker">Publiceringsstatus</p>
+          <p className="mt-3 text-sm text-muted">
+            Live-sajten har ett stort skolsortiment (Mirplay, Gerom). Många poster har unik
+            identitet men korta, upprepade texter. De klassas som “publicera men förbättra” i
+            inventeringen — inte som utkast, men inte heller som färdiga spec-sidor.
+          </p>
+          <p className="mt-3 text-sm text-muted">
+            Ada visas som exempel: kulörer är verifierade. Mått saknas på sidan och utelämnas.
+          </p>
+        </div>
+      </section>
     </div>
   )
 }
 
 export function EnvironmentPage() {
-  const { theme } = useTheme()
-  const atelje = theme === 'atelje'
-
-  const copy = (
-    <>
+  return (
+    <div className="space-y-10">
       <p className="kicker">Miljöer</p>
       <h1 className="text-4xl">Bostadsgård</h1>
-      <p className="mt-4 max-w-2xl text-muted">
+      <p className="max-w-2xl text-muted">
         Typmiljö — inte ett påhittat referensprojekt. Produkter länkas bara när de är verifierade.
         Riktiga projekt publiceras när foto, plats och produktlista är bekräftade.
       </p>
-    </>
-  )
-
-  const productsBlock = (
-    <section>
-      <h2 className="text-2xl">Produkter som ofta specificeras tillsammans</h2>
-      <div className="mt-5 grid gap-4 sm:grid-cols-3">
-        <ProductCard product={products['parkbank-arsta']} />
-        <ProductCard product={products['parkbank-hammarby']} />
-        <ProductCard product={products['papperskorg-rodberga-100']} />
-      </div>
-    </section>
-  )
-
-  if (atelje) {
-    return (
-      <div>
-        <img
-          src="/images/env-gaard.jpg"
-          alt="Bostadsgård"
-          className="h-[min(62svh,560px)] w-full object-cover"
-        />
-        <div className="shell space-y-14 py-10 md:py-14">
-          <section className="-mt-28 max-w-xl bg-sheet p-6 shadow-[0_24px_60px_rgba(27,25,20,0.12)] md:p-10">
-            {copy}
-          </section>
-          {productsBlock}
-        </div>
-      </div>
-    )
-  }
-
-  return (
-    <div className="space-y-10">
-      {copy}
       <img src="/images/env-gaard.jpg" alt="Bostadsgård" className="aspect-[16/8] w-full object-cover" />
-      {productsBlock}
+      <section>
+        <h2 className="text-2xl">Produkter som ofta specificeras tillsammans</h2>
+        <div className="mt-5 grid gap-4 sm:grid-cols-3">
+          <ProductCard product={products['parkbank-arsta']} />
+          <ProductCard product={products['parkbank-hammarby']} />
+          <ProductCard product={products['papperskorg-rodberga-100']} />
+        </div>
+      </section>
     </div>
   )
 }

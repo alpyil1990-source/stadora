@@ -2,7 +2,6 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import type { AreaId } from '../data/content'
 import { QuoteProvider } from '../context/QuoteContext'
-import { useTheme } from '../context/ThemeContext'
 import { ConceptBar } from './ConceptBar'
 import { AreaBar } from './AreaBar'
 import { SiteHeader } from './SiteHeader'
@@ -14,16 +13,9 @@ function areaFromPath(pathname: string): AreaId {
   return 'offentlig'
 }
 
-function isFlush(theme: string, pathname: string) {
-  if (theme !== 'atelje') return false
-  return pathname === '/' || pathname === '/miljoer/bostadsgard' || pathname === '/skola'
-}
-
 export function AppShell() {
   const location = useLocation()
-  const { theme } = useTheme()
   const [area, setArea] = useState<AreaId>(() => areaFromPath(location.pathname))
-  const flush = isFlush(theme, location.pathname)
 
   useEffect(() => {
     setArea(areaFromPath(location.pathname))
@@ -35,7 +27,7 @@ export function AppShell() {
         <ConceptBar />
         <AreaBar />
         <SiteHeader area={area} />
-        <main className={flush ? '' : 'shell py-8 md:py-12'}>
+        <main className="shell py-8 md:py-12">
           <Outlet />
         </main>
         <SiteFooter area={area} />

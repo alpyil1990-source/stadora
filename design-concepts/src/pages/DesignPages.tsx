@@ -1,25 +1,15 @@
 import { Link } from 'react-router-dom'
-import { ThemeToggle } from '../components/ThemeToggle'
-import { useTheme } from '../context/ThemeContext'
 
 export function DesignIndexPage() {
-  const { theme } = useTheme()
-
   return (
     <div className="space-y-10">
       <div>
         <p className="kicker">Designkoncept</p>
-        <h1 className="mt-2 text-3xl md:text-4xl">
-          {theme === 'atelje' ? 'STADORA Ateljé' : 'STADORA Specification Atlas'}
-        </h1>
+        <h1 className="mt-2 text-3xl md:text-4xl">STADORA Specification Atlas</h1>
         <p className="mt-4 max-w-2xl text-muted">
           Klickbar prototyp för informationsarkitektur, hybrid produktsida och offertflöde. Ingen
-          produktion, ingen databas, inga påhittade certifikat. Växla uttryck uppe i listen — Ateljé
-          är det nya ljusa spåret, Atlas det tidigare.
+          produktion, ingen databas, inga påhittade certifikat.
         </p>
-        <div className="mt-5">
-          <ThemeToggle />
-        </div>
       </div>
       <section>
         <h2 className="text-xl">Skärmar att granska</h2>
@@ -63,55 +53,40 @@ export function DesignIndexPage() {
 }
 
 export function DirectionsPage() {
-  const { theme } = useTheme()
-
   return (
     <div className="space-y-10">
       <div>
         <p className="kicker">Visuella riktningar</p>
         <h1 className="mt-2 text-3xl">Tre uttryck, samma logotyp</h1>
         <p className="mt-4 max-w-2xl text-muted">
-          Ateljé är det ljusa alternativa spåret i prototypen. Atlas ligger ett klick bort om Ateljé
-          inte passar. Mörk bakgrund används inte.
+          Prototypen kör riktning 2. Riktning 1 och 3 visas som jämförelse — inte som alternativa
+          appar.
         </p>
-        <div className="mt-5">
-          <ThemeToggle />
-        </div>
       </div>
       <div className="grid gap-6 lg:grid-cols-3">
         <Direction
-          id="Ateljé"
-          title="Ljust ateljéuttryck"
-          rec={theme === 'atelje'}
-          body="Kalksten, kol och tegelröd accent. Syne + Figtree. Foto i fullbredd med vit textplatta, stående produktkort utan ram. Sage bara i logotypen. Live i prototypen."
-        />
-        <Direction
-          id="Atlas"
-          title="Specification Atlas"
-          rec={theme === 'atlas'}
-          body="Papper, bläck, sage som enda accent. IBM Plex Sans / Manrope. Spec som tabell, produktfoto på neutral yta. Det tidigare spåret — finns kvar som växel."
-        />
-        <Direction
-          id="—"
+          id="1"
           title="Civic Continuity"
           rec={false}
-          body="Sand, bläck, sage, Instrument Serif. Nära dagens Lovable-sajt. Inte byggt som körbart tema."
+          body="Sand, bläck, sage, Instrument Serif. Nära dagens Lovable-sajt. Tryggt för varumärket, riskerar magasin-känsla och låg täthet i spec-tabeller."
+        />
+        <Direction
+          id="2"
+          title="Specification Atlas"
+          rec
+          body="Papper, bläck, sage som enda accent. IBM Plex Sans / Manrope. Spec som tabell, produktfoto på neutral yta. Byggd för inköpare, ingenjör och arkitekt. Rekommenderas."
+        />
+        <Direction
+          id="3"
+          title="Nordic Project Gallery"
+          rec={false}
+          body="Fullbredd foto, mörkare ytor, Vestre-led. Starkt för landskapsarkitekt. Sämre läsbarhet för tabeller, vård och skolmöbler; tyngre bilder."
         />
       </div>
       <section className="grid gap-6 md:grid-cols-3">
-        {theme === 'atelje' ? (
-          <>
-            <Swatch name="Kalksten" value="#F3EEE4" />
-            <Swatch name="Tegel" value="#C45C2A" />
-            <Swatch name="Kol" value="#1B1914" />
-          </>
-        ) : (
-          <>
-            <Swatch name="Ink" value="#1C2B26" />
-            <Swatch name="Sage" value="#5C7268" />
-            <Swatch name="Paper" value="#F4F2EC" />
-          </>
-        )}
+        <Swatch name="Ink" value="#1C2B26" />
+        <Swatch name="Sage" value="#5C7268" />
+        <Swatch name="Paper" value="#F4F2EC" />
       </section>
     </div>
   )
@@ -130,10 +105,7 @@ function Direction({
 }) {
   return (
     <article className={`border p-5 ${rec ? 'border-ink bg-sheet' : 'border-line'}`}>
-      <p className="kicker">
-        {id}
-        {rec ? ' · visas nu' : ''}
-      </p>
+      <p className="kicker">Riktning {id}{rec ? ' · vald' : ''}</p>
       <h2 className="mt-2 text-xl">{title}</h2>
       <p className="mt-3 text-sm text-muted">{body}</p>
     </article>
