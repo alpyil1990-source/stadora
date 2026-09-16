@@ -86,6 +86,11 @@ function toProduct(row: SeriesJson): Product {
 export const investimCatalogSlugs = catalogFile.catalog as {
   parkbankar: string[]
   pollare: string[]
+  cykelstall: string[]
+  planteringskarl: string[]
+  papperskorgar: string[]
+  'bord-picknick': string[]
+  'modulara-sitt': string[]
 }
 
 export const investimProducts: Record<string, Product> = Object.fromEntries(

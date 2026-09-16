@@ -51,7 +51,7 @@ export const catalog: CategoryDef[] = [
         slug: 'bord-picknick',
         name: 'Bord och picknick',
         blurb: 'Picknickbord och utomhusbord.',
-        productSlugs: [],
+        productSlugs: [...investimCatalogSlugs['bord-picknick']],
         draftExamples: ['Picknickbord Tanto', 'Utomhusbord Långholmen'],
         liveReady: ['Picknickbord Enskede (grupp 1 på live-sajten, inte inlagd som kort här än)'],
       },
@@ -59,7 +59,7 @@ export const catalog: CategoryDef[] = [
         slug: 'modulara-sitt',
         name: 'Modulära sitt',
         blurb: 'Sittmoduler och sittelement.',
-        productSlugs: [],
+        productSlugs: [...investimCatalogSlugs['modulara-sitt']],
         draftExamples: ['Sittelement Sandö', 'Sittmodul Hornsberg'],
         liveReady: ['Sittmodul Skarpnäck (grupp 1 på live-sajten, inte inlagd som kort här än)'],
       },
@@ -74,7 +74,10 @@ export const catalog: CategoryDef[] = [
         slug: 'papperskorgar',
         name: 'Papperskorgar',
         blurb: 'Fristående kärl för park, torg och gård.',
-        productSlugs: avfallCatalogSlugs.papperskorgar,
+        productSlugs: [
+          ...avfallCatalogSlugs.papperskorgar,
+          ...investimCatalogSlugs.papperskorgar,
+        ],
         draftExamples: ['Papperskorg Djurö', 'Papperskorg Granö'],
       },
       {
@@ -113,7 +116,7 @@ export const catalog: CategoryDef[] = [
         slug: 'cykelstall',
         name: 'Cykelställ',
         blurb: 'Markstående ställ.',
-        productSlugs: [],
+        productSlugs: [...investimCatalogSlugs.cykelstall],
         draftExamples: ['Cykelställ Vasastan', 'Cykelställ Bromma', 'Cykelställ Slussen'],
       },
       {
@@ -223,7 +226,7 @@ export const catalog: CategoryDef[] = [
         slug: 'planteringskarl',
         name: 'Planteringskärl',
         blurb: 'Kärl och lådor.',
-        productSlugs: [],
+        productSlugs: [...investimCatalogSlugs.planteringskarl],
         draftExamples: ['Planteringskärl Stadshag', 'Planteringskärl Bergshamra', 'Planteringslåda Mariehäll'],
       },
       {

@@ -105,7 +105,7 @@ export const seedSuppliers: Supplier[] = [
     address:
       'Kontor: ul. Cybernetyki 4a lok. U4, 02-677 Warszawa. Produktion: ul. Suwalna 5a, 05-119 Łajski, Polen.',
     notes:
-      'Prislista 2026 EUR. Rabatt: all arkitektonisk betong 10 %; all tvättad betong 20 %, bänkar 10 %; papperskorg i tvättad granit med trä och stållock 5 %. Stålbänkar räknas som bänkar (10 %). 15 bänkar från skickade länkar + pollare från slupki-betonowe utom fluorescerande. Katalognummer och EUR bara i admin. Hämta inte bilder från stadora.se.',
+      'Prislista 2026 EUR. Rabatt: all arkitektonisk betong 10 %; all tvättad betong 20 %, bänkar 10 %; papperskorg i tvättad granit med trä och stållock 5 %. Stålbänkar räknas som bänkar (10 %). Parkbänkar, pollare, cykelställ och planteringskärl från skickade länkar; fluorescerande pollare undantagen. Katalognummer och EUR bara i admin. Hämta inte bilder från stadora.se.',
     productSlugs: [...INVESTIM_SLUGS],
   },
 ]

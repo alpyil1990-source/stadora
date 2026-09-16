@@ -44,6 +44,8 @@ export function DesignIndexPage() {
             ['Admin: INVESTIM (Robert Miąsek)', '/admin/leverantorer/investim'],
             ['Parkbänkar och pollare (intern översikt)', '/design/park-pollare'],
             ['Pollare', '/produkter/pollare-racken/pollare'],
+            ['Cykelställ', '/produkter/cykelparkering/cykelstall'],
+            ['Planteringskärl', '/produkter/plantering/planteringskarl'],
             ['Parkbänk i tvättad betong', '/produkt/parkbank-tvattad-rygg'],
             ['Miljö: bostadsgård', '/miljoer/bostadsgard'],
             ['Dokumentcenter', '/dokument'],
@@ -82,9 +84,9 @@ export function DesignIndexPage() {
       <section className="border border-line bg-sheet p-6 text-sm">
         <h2 className="text-lg">Parkbänkar och pollare</h2>
         <p className="mt-2 text-muted">
-          15 bänkar från de skickade länkarna och 42 pollare från betongpollar-listan. Fluorescerande
-          pollare är undantagen. Inga priser och inga katalognummer på den publika sidan. Listpris,
-          rabatt och netto ligger i intern admin.
+          Parkbänkar, pollare, cykelställ och planteringskärl från de skickade länkarna och
+          betongpollar-listan. Fluorescerande pollare är undantagen. Inga priser och inga
+          katalognummer på den publika sidan. Listpris, rabatt och netto ligger i intern admin.
         </p>
         <p className="mt-3">
           <Link className="underline" to="/design/park-pollare">
@@ -174,7 +176,12 @@ export function InvestimDraftPage() {
   const items = INVESTIM_SLUGS.map((slug) => products[slug]).filter(Boolean)
   const groups = [
     { name: 'Parkbänkar', slug: 'parkbankar', href: '/produkter/parkmobler/parkbankar' },
+    { name: 'Bord och picknick', slug: 'bord-picknick', href: '/produkter/parkmobler/bord-picknick' },
+    { name: 'Modulära sitt', slug: 'modulara-sitt', href: '/produkter/parkmobler/modulara-sitt' },
     { name: 'Pollare', slug: 'pollare', href: '/produkter/pollare-racken/pollare' },
+    { name: 'Cykelställ', slug: 'cykelstall', href: '/produkter/cykelparkering/cykelstall' },
+    { name: 'Planteringskärl', slug: 'planteringskarl', href: '/produkter/plantering/planteringskarl' },
+    { name: 'Papperskorgar', slug: 'papperskorgar', href: '/produkter/avfall-atervinning/papperskorgar' },
   ]
 
   return (
