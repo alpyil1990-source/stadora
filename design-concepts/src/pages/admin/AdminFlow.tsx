@@ -70,6 +70,13 @@ export function AdminFlow() {
           inte i en varukorg. Siffrorna i admin är konceptexempel.
         </p>
       </div>
+      <p className="border border-line bg-sheet px-4 py-3 text-sm text-muted">
+        Produktbilder och ny katalogdata kommer från leverantören (länk i{' '}
+        <Link className="underline" to="/admin/leverantorer">
+          admin → leverantörer
+        </Link>
+        ), inte genom att hämta filer från stadora.se.
+      </p>
       <ol className="space-y-8">
         {steps.map((s) => (
           <li key={s.n} className="border-t border-line pt-6">

@@ -2,6 +2,12 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { Product } from '../data/content'
 import { productPath, products } from '../data/content'
+import {
+  colorChoices,
+  hasColorTaggedImages,
+  imagesForVariant,
+  shownLabel,
+} from '../data/gallery'
 import { useQuote } from '../context/QuoteContext'
 import { ProductCard } from './ProductCard'
 
@@ -15,70 +21,123 @@ export function ProductView({
   layout: ProductLayout
 }) {
   const { add } = useQuote()
+  const colors = colorChoices(product)
   const [qty, setQty] = useState(1)
   const [active, setActive] = useState(0)
+  const [ral, setRal] = useState('')
   const [variants, setVariants] = useState<Record<string, string>>(() => {
     const init: Record<string, string> = {}
     product.variants?.forEach((v) => {
       init[v.label] = v.options[0]
     })
-    if (product.colors?.[0]) init['Kulör'] = product.colors[0]
+    if (product.sizes?.length) {
+      init['Storlek'] = product.defaultSize ?? product.sizes[0].name
+    }
+    if (colors[0]) init['Kulör'] = colors[0].name
     return init
   })
   const [added, setAdded] = useState(false)
   const [ask, setAsk] = useState(false)
 
-  const variantLabel = Object.values(variants).filter(Boolean).join(' · ') || undefined
-  const related = product.related
-    .map((slug) => products[slug])
-    .filter(Boolean)
+  const selectedSize = product.sizes?.find((s) => s.name === variants['Storlek'])
+  const sku = selectedSize?.sku ?? product.sku
+  const dimensions = selectedSize?.dimensions ?? product.dimensions
+  const weight = selectedSize?.weight ?? product.weight
+  const capacity = selectedSize?.capacity ?? product.capacity
+
+  const galleryState = imagesForVariant(product.images, {
+    color: variants['Kulör'],
+    size: variants['Storlek'],
+  })
+  const shown = galleryState.shown
+  const current = shown[Math.min(active, shown.length - 1)] ?? product.images[0]
+  const taggedColors = hasColorTaggedImages(product.images)
+  const missingColorPhoto =
+    Boolean(variants['Kulör']) && taggedColors && !galleryState.colorMatched
+  const missingSizePhoto = Boolean(variants['Storlek']) && !galleryState.sizeMatched
+
+  const variantParts = [
+    variants['Storlek'],
+    variants['Kulör'],
+    ral.trim() ? `RAL ${ral.trim()}` : '',
+    ...Object.entries(variants)
+      .filter(([key]) => key !== 'Storlek' && key !== 'Kulör')
+      .map(([, value]) => value),
+  ].filter(Boolean)
+  const variantLabel = variantParts.join(' · ') || undefined
+  const related = product.related.map((slug) => products[slug]).filter(Boolean)
+  const popKey = `${variants['Kulör'] ?? ''}-${variants['Storlek'] ?? ''}-${current?.src ?? ''}`
+
+  function selectColor(name: string) {
+    setVariants((v) => ({ ...v, Kulör: name }))
+    setActive(0)
+  }
+
+  function selectSize(name: string) {
+    setVariants((v) => ({ ...v, Storlek: name }))
+    setActive(0)
+  }
 
   function addToQuote() {
     add({
       slug: product.slug,
       name: product.name,
-      sku: product.sku,
+      sku,
       variant: variantLabel,
       qty,
       href: productPath(product),
-      image: product.images[0]?.src,
-      imageAlt: product.images[0]?.alt ?? product.name,
+      image: current?.src,
+      imageAlt: current?.alt ?? product.name,
     })
     setAdded(true)
   }
 
   const jump = useMemo(() => {
     const items = [{ id: 'oversikt', label: 'Översikt' }]
-    if (product.dimensions?.length) items.push({ id: 'matt', label: 'Mått och vikt' })
+    if (dimensions?.length) items.push({ id: 'matt', label: 'Mått och vikt' })
     if (product.material) items.push({ id: 'material', label: 'Material' })
     if (product.mounting?.length) items.push({ id: 'montering', label: 'Montering' })
     if (product.warranty || product.leadTime) items.push({ id: 'leverans', label: 'Leverans' })
     if (product.medicalClass) items.push({ id: 'standard', label: 'Standarder' })
     if (related.length) items.push({ id: 'serie', label: 'Samma serie' })
     return items
-  }, [product, related.length])
+  }, [dimensions, product, related.length])
 
   const gallery = (
     <div>
-      <div className="aspect-[5/4] border border-line bg-paper">
-        <img
-          src={product.images[active]?.src}
-          alt={product.images[active]?.alt}
-          className="h-full w-full object-contain p-6"
-        />
+      <div className="aspect-[5/4] overflow-hidden border border-line bg-paper">
+        {current && (
+          <img
+            key={popKey}
+            src={current.src}
+            alt={current.alt}
+            className="gallery-pop h-full w-full object-contain p-6"
+          />
+        )}
       </div>
-      {product.imageNote && (
-        <p className="mt-2 text-xs text-muted">{product.imageNote}</p>
+      {product.imageNote && <p className="mt-2 text-xs text-muted">{product.imageNote}</p>}
+      {missingSizePhoto && (
+        <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
+          Ingen produktbild för höjd {variants['Storlek']} ännu. Bilden visar{' '}
+          {shownLabel(shown)}. Den saknade bilden hämtas från leverantören när ni ger länken — inte
+          från stadora.se.
+        </p>
       )}
-      {product.images.length > 1 && (
+      {missingColorPhoto && (
+        <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
+          Ingen produktbild i {variants['Kulör']}. Bilden visar {shownLabel(shown)}. Offertlistan
+          får ändå rätt kulör.
+        </p>
+      )}
+      {shown.length > 1 && (
         <ul className="mt-3 flex gap-2">
-          {product.images.map((img, i) => (
+          {shown.map((img, i) => (
             <li key={img.src}>
               <button
                 type="button"
                 onClick={() => setActive(i)}
                 className={`h-16 w-16 border bg-paper p-1 ${
-                  i === active ? 'border-ink' : 'border-line'
+                  i === Math.min(active, shown.length - 1) ? 'border-ink' : 'border-line'
                 }`}
               >
                 <img src={img.src} alt="" className="h-full w-full object-contain" />
@@ -92,29 +151,98 @@ export function ProductView({
 
   const configure = (
     <div className="space-y-4">
-      {product.colors && (
+      {product.sizes && product.sizes.length > 0 && (
+        <fieldset>
+          <legend className="text-sm font-medium">Storlek</legend>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {product.sizes.map((s) => {
+              const hasPhoto = product.images.some((img) => img.size === s.name)
+              const selected = variants['Storlek'] === s.name
+              return (
+                <label
+                  key={s.name}
+                  className={`cursor-pointer border px-3 py-2 text-sm ${
+                    selected ? 'border-ink bg-paper' : 'border-line'
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    className="sr-only"
+                    name="size"
+                    checked={selected}
+                    onChange={() => selectSize(s.name)}
+                  />
+                  <span className="block font-medium">{s.name}</span>
+                  {s.sku && <span className="block text-xs text-muted">Art.nr {s.sku}</span>}
+                  {s.summary && <span className="block text-xs text-muted">{s.summary}</span>}
+                  <span className="block text-xs text-muted">
+                    {hasPhoto ? 'Produktbild finns' : 'Bild saknas — exempelbilden ligger kvar'}
+                  </span>
+                </label>
+              )
+            })}
+          </div>
+        </fieldset>
+      )}
+      {colors.length > 0 && (
         <fieldset>
           <legend className="text-sm font-medium">Kulör</legend>
           <div className="mt-2 flex flex-wrap gap-2">
-            {product.colors.map((c) => (
-              <label
-                key={c}
-                className={`cursor-pointer border px-3 py-2 text-sm ${
-                  variants['Kulör'] === c ? 'border-ink bg-paper' : 'border-line'
-                }`}
-              >
-                <input
-                  type="radio"
-                  className="sr-only"
-                  name="color"
-                  checked={variants['Kulör'] === c}
-                  onChange={() => setVariants((v) => ({ ...v, Kulör: c }))}
-                />
-                {c}
-              </label>
-            ))}
+            {colors.map((c) => {
+              const hasPhoto = product.images.some((img) => img.color === c.name)
+              const selected = variants['Kulör'] === c.name
+              return (
+                <label
+                  key={c.name}
+                  className={`flex cursor-pointer items-center gap-2 border px-3 py-2 text-sm ${
+                    selected ? 'border-ink bg-paper' : 'border-line'
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    className="sr-only"
+                    name="color"
+                    checked={selected}
+                    onChange={() => selectColor(c.name)}
+                  />
+                  {c.hex && (
+                    <span
+                      className="inline-block h-4 w-4 shrink-0 rounded-full border border-line"
+                      style={{ background: c.hex }}
+                      aria-hidden
+                    />
+                  )}
+                  <span>
+                    {c.name}
+                    {taggedColors && (
+                      <span className="mt-0.5 block text-xs text-muted">
+                        {hasPhoto ? 'Byter bild' : 'Ingen unik bild'}
+                      </span>
+                    )}
+                  </span>
+                </label>
+              )
+            })}
           </div>
         </fieldset>
+      )}
+      {product.ralInQuote && (
+        <div>
+          <label htmlFor="ral" className="text-sm font-medium">
+            Kulör (RAL)
+          </label>
+          <p className="mt-1 text-xs text-muted">
+            Valfri standard-RAL ingår. Ingen unik produktbild per kulör — bilden är
+            exempelutförande. Koden följer med till offertlistan.
+          </p>
+          <input
+            id="ral"
+            value={ral}
+            onChange={(e) => setRal(e.target.value)}
+            placeholder="t.ex. 7021"
+            className="mt-2 w-40 border border-line bg-sheet px-3 py-2"
+          />
+        </div>
       )}
       {product.variants?.map((v) => (
         <fieldset key={v.label}>
@@ -197,22 +325,22 @@ export function ProductView({
 
   const keyFacts = (
     <dl className="grid grid-cols-2 gap-3 text-sm">
-      {product.sku && (
+      {sku && (
         <div>
           <dt className="text-muted">Art.nr</dt>
-          <dd className="font-medium tabular-nums">{product.sku}</dd>
+          <dd className="font-medium tabular-nums">{sku}</dd>
         </div>
       )}
-      {product.weight && (
+      {weight && (
         <div>
           <dt className="text-muted">Vikt</dt>
-          <dd className="font-medium">{product.weight}</dd>
+          <dd className="font-medium">{weight}</dd>
         </div>
       )}
-      {product.dimensions?.[0] && (
+      {dimensions?.[0] && (
         <div>
-          <dt className="text-muted">{product.dimensions[0].label}</dt>
-          <dd className="font-medium">{product.dimensions[0].value}</dd>
+          <dt className="text-muted">{dimensions[0].label}</dt>
+          <dd className="font-medium">{dimensions[0].value}</dd>
         </div>
       )}
       {product.material && (
@@ -232,27 +360,27 @@ export function ProductView({
 
   const sections = (
     <div className="space-y-12">
-      {product.dimensions && product.dimensions.length > 0 && (
+      {dimensions && dimensions.length > 0 && (
         <section id="matt">
           <h2 className="text-xl">Mått och vikt</h2>
           <table className="spec-table mt-3">
             <tbody>
-              {product.dimensions.map((row) => (
+              {dimensions.map((row) => (
                 <tr key={row.label}>
                   <th>{row.label}</th>
                   <td>{row.value}</td>
                 </tr>
               ))}
-              {product.weight && (
+              {weight && (
                 <tr>
                   <th>Vikt</th>
-                  <td>{product.weight}</td>
+                  <td>{weight}</td>
                 </tr>
               )}
-              {product.capacity && (
+              {capacity && (
                 <tr>
                   <th>Kapacitet</th>
-                  <td>{product.capacity}</td>
+                  <td>{capacity}</td>
                 </tr>
               )}
             </tbody>
@@ -357,6 +485,9 @@ export function ProductView({
     </div>
   )
 
+  const visualSrc =
+    shown.find((i) => i.kind === 'site')?.src ?? shown[0]?.src ?? product.images[0]?.src
+
   if (layout === 'visual') {
     return (
       <article>
@@ -364,9 +495,10 @@ export function ProductView({
         <div className="-mx-4 md:mx-0">
           <div className="max-h-[72vh] overflow-hidden bg-ink">
             <img
-              src={product.images.find((i) => i.kind === 'site')?.src ?? product.images[0].src}
-              alt={product.images[0].alt}
-              className="mx-auto max-h-[72vh] w-full object-contain"
+              key={popKey}
+              src={visualSrc}
+              alt={current?.alt ?? product.name}
+              className="gallery-pop mx-auto max-h-[72vh] w-full object-contain"
             />
           </div>
         </div>
@@ -429,8 +561,8 @@ export function ProductView({
             {product.category} · {product.subcategory}
           </p>
           <h1 className="mt-2 text-3xl md:text-4xl">{product.name}</h1>
-          {product.sku && (
-            <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {product.sku}</p>
+          {sku && (
+            <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {sku}</p>
           )}
           <p className="mt-4 max-w-xl text-muted">{product.description}</p>
           <div className="mt-6">{keyFacts}</div>

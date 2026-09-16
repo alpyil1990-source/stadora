@@ -20,11 +20,15 @@ import { AdminInvoices } from './pages/admin/AdminInvoices'
 import { AdminFlow } from './pages/admin/AdminFlow'
 import { CustomerQuotePage } from './pages/CustomerQuotePage'
 import { CommerceProvider } from './context/CommerceContext'
+import { SupplierProvider } from './context/SupplierContext'
+import { AdminSuppliers } from './pages/admin/AdminSuppliers'
+import { AdminSupplierDetail } from './pages/admin/AdminSupplierDetail'
 
 export default function App() {
   return (
     <BrowserRouter>
       <CommerceProvider>
+        <SupplierProvider>
         <Routes>
           <Route element={<AppShell />}>
             <Route path="/" element={<HomePage />} />
@@ -53,12 +57,15 @@ export default function App() {
             <Route path="/admin/offerter" element={<AdminQuotes />} />
             <Route path="/admin/offerter/:id" element={<AdminQuoteDetail />} />
             <Route path="/admin/fakturor" element={<AdminInvoices />} />
+            <Route path="/admin/leverantorer" element={<AdminSuppliers />} />
+            <Route path="/admin/leverantorer/:id" element={<AdminSupplierDetail />} />
           </Route>
           <Route element={<QuoteReplyShell />}>
             <Route path="/q/:id" element={<CustomerQuotePage />} />
           </Route>
           <Route path="*" element={<Navigate to="/design" replace />} />
         </Routes>
+        </SupplierProvider>
       </CommerceProvider>
     </BrowserRouter>
   )

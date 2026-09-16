@@ -25,7 +25,8 @@ export function DesignIndexPage() {
             ['Produktsida C hybrid (rekommenderas)', '/produkt/parkbank-arsta'],
             ['Produktsida A upphandling', '/design/produktsida-a'],
             ['Produktsida B arkitektur', '/design/produktsida-b'],
-            ['Askkopp LUNA med varianter', '/produkt/askkopp-luna'],
+            ['Rödberga: storlek byter bild', '/produkt/papperskorg-rodberga-100'],
+            ['LUNA: kulör utan unik bild', '/produkt/askkopp-luna'],
             ['Offertlista', '/offertlista'],
             ['Offertformulär', '/offert'],
             ['Admin: VD-översikt', '/admin'],
@@ -33,13 +34,12 @@ export function DesignIndexPage() {
             ['Admin: offertärenden', '/admin/offerter'],
             ['Kundens offertlänk (godkänn)', '/q/Q-2026-0164'],
             ['Admin: fakturor', '/admin/fakturor'],
+            ['Admin: leverantörer', '/admin/leverantorer'],
             ['Miljö: bostadsgård', '/miljoer/bostadsgard'],
-            ['STADORA Vård startsida', '/vard'],
-            ['Akutvagn Genius', '/vard/produkt/akutvagn-genius'],
-            ['STADORA Skola startsida', '/skola'],
-            ['Ada, skolprodukt med luckor', '/skola/produkt/ada-melaminskap'],
             ['Dokumentcenter', '/dokument'],
             ['Tre designriktningar', '/design/riktningar'],
+            ['Skola (pausad gren)', '/skola'],
+            ['Vård (pausad gren)', '/vard'],
           ].map(([label, href]) => (
             <li key={href} className="break-inside-avoid border-b border-line py-2">
               <Link className="underline-offset-2 hover:underline" to={href}>
@@ -55,6 +55,14 @@ export function DesignIndexPage() {
           Prototypen är responsiv. Under 1024 px: hamburgermeny med accordion-kategorier, offertlista
           och primär knapp. Produktsidan har fast bottenbar för “Lägg i offertlista”. Öppna
           startsidan, listan och Årsta i ett smalt fönster eller i enhetens förhandsgranskning.
+        </p>
+      </section>
+      <section className="border border-line bg-sheet p-6 text-sm">
+        <h2 className="text-lg">Kulör, storlek och bild</h2>
+        <p className="mt-2 text-muted">
+          En produktsida, väljare för storlek och kulör. Finns en bild märkt med valet byts
+          huvudbilden. Saknas bild ligger exempelutförandet kvar, med en tydlig notis. Nya foton
+          kommer från leverantörens länk i admin — inte från stadora.se. Skola och vård väntar.
         </p>
       </section>
     </div>

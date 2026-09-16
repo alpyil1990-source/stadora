@@ -27,6 +27,8 @@ npm run dev
 
 Öppnas på `http://127.0.0.1:4317`. Börja på `/design` för en förteckning över alla skärmar.
 
+Skola och vård avvaktar. Offentlig miljö byggs först. Leverantörer, kontaktperson och produktantal ligger i prototypen under `/admin/leverantorer`. Produktbilder ska komma från leverantörens länk, inte skrapas från den publicerade sajten.
+
 ## Vad som inte ska göras än
 
 Ingen migrering av Lovable-data, inga produktionsroutes, ingen databas. Vänta på uttryckligt godkännande av mockups innan implementationen i Fas 2.

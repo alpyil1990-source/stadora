@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useCommerce, useKpis } from '../../context/CommerceContext'
+import { useSuppliers } from '../../context/SupplierContext'
 import {
   formatSek,
   quoteTotalExVat,
@@ -17,7 +18,10 @@ const funnel: { status: QuoteStatus; label: string }[] = [
 
 export function AdminDashboard() {
   const { quotes, invoices, reset } = useCommerce()
+  const { suppliers, productCount } = useSuppliers()
   const k = useKpis()
+  const supplierProducts = suppliers.reduce((n, s) => n + productCount(s.id), 0)
+  const missingContacts = suppliers.filter((s) => !s.contact.name.trim()).length
   const byArea = (['offentlig', 'skola', 'vard'] as const).map((area) => ({
     area,
     label: area === 'offentlig' ? 'Offentlig miljö' : area === 'skola' ? 'Skola' : 'Vård',
@@ -57,7 +61,18 @@ export function AdminDashboard() {
         <Kpi label="Vinstandel" value={`${k.winRate} %`} hint="Vunna / (vunna + förlorade)" />
         <Kpi label="Öppna ärenden" value={String(k.openQuotes)} hint="Inte betald, förlorad eller utgången" />
         <Kpi label="Snitt RFQ → offert" value={`${k.avgDaysToSend} dagar`} hint="Konceptantagande" />
+        <Kpi
+          label="Leverantörer"
+          value={String(suppliers.length)}
+          hint={`${supplierProducts} produkter kopplade · ${missingContacts} utan kontaktperson`}
+        />
       </section>
+
+      <p className="text-sm">
+        <Link className="underline" to="/admin/leverantorer">
+          Leverantörer, kontaktpersoner och bildkällor
+        </Link>
+      </p>
 
       <section className="grid gap-8 lg:grid-cols-2">
         <div>

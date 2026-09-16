@@ -71,7 +71,7 @@ export const catalog: CategoryDef[] = [
         name: 'Papperskorgar',
         blurb: 'Fristående kärl för park, torg och gård.',
         productSlugs: ['papperskorg-rodberga-100'],
-        draftExamples: ['Papperskorg Rödberga 80', 'Papperskorg Djurö', 'Papperskorg Granö'],
+        draftExamples: ['Papperskorg Djurö', 'Papperskorg Granö'],
       },
       {
         slug: 'askkoppar',

@@ -2,6 +2,30 @@ import { catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
 
+export type ProductImage = {
+  src: string
+  alt: string
+  kind: 'studio' | 'site' | 'detail'
+  /** Matches a color option name when this file shows that finish. */
+  color?: string
+  /** Matches a size option name when this file shows that size. */
+  size?: string
+}
+
+export type ColorOption = {
+  name: string
+  hex?: string
+}
+
+export type SizeOption = {
+  name: string
+  sku?: string
+  summary?: string
+  dimensions?: { label: string; value: string }[]
+  weight?: string
+  capacity?: string
+}
+
 export type Product = {
   slug: string
   name: string
@@ -13,7 +37,7 @@ export type Product = {
   subcategorySlug: string
   summary: string
   description: string
-  images: { src: string; alt: string; kind: 'studio' | 'site' | 'detail' }[]
+  images: ProductImage[]
   material?: string
   cement?: string
   wood?: string
@@ -26,7 +50,11 @@ export type Product = {
   warranty?: string
   medicalClass?: string
   manufacturerQms?: string
-  colors?: string[]
+  colors?: Array<string | ColorOption>
+  sizes?: SizeOption[]
+  defaultSize?: string
+  /** Free-text RAL on the quote line. No swatch catalog unless colors[] exists. */
+  ralInQuote?: boolean
   variants?: { label: string; options: string[] }[]
   related: string[]
   imageNote?: string
@@ -261,36 +289,63 @@ export const products: Record<string, Product> = {
   },
   'papperskorg-rodberga-100': {
     slug: 'papperskorg-rodberga-100',
-    name: 'Papperskorg Rödberga 100',
+    name: 'Papperskorg Rödberga',
     sku: 'ST-1199',
     area: 'offentlig',
     category: 'Avfall och återvinning',
     categorySlug: 'avfall-atervinning',
     subcategory: 'Papperskorgar',
     subcategorySlug: 'papperskorgar',
-    summary: 'Papperskorg i arkitektonisk betong med tak i cortenstål, höjd 100 cm.',
+    summary:
+      'Papperskorg i arkitektonisk betong med tak i cortenstål. Två höjder: 80 cm och 100 cm.',
     description:
-      'Papperskorg i arkitektonisk betong med tak i cortenstål, höjd 100 cm. Tillverkas i arkitektonisk betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand.',
+      'Papperskorg i arkitektonisk betong med tak i cortenstål. Tillverkas i arkitektonisk betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. På live-sajten är 80 och 100 två artiklar; här är de en serie så att bild och mått följer storleksvalet.',
     images: [
       {
         src: '/images/rodberga-studio.png',
-        alt: 'Papperskorg Rödberga 100, studiofoto',
+        alt: 'Papperskorg Rödberga 100 cm, studiofoto',
         kind: 'studio',
+        size: '100 cm',
       },
       {
         src: '/images/rodberga-miljo.jpg',
-        alt: 'Papperskorg Rödberga 100 i utemiljö',
+        alt: 'Papperskorg Rödberga 100 cm i utemiljö',
         kind: 'site',
+        size: '100 cm',
       },
     ],
     material: 'Arkitektonisk betong, tak i cortenstål',
-    dimensions: [
-      { label: 'Bas', value: '45 × 45 cm' },
-      { label: 'Höjd', value: '80 cm' },
-      { label: 'Höjd med tak', value: '100 cm' },
-      { label: 'Volym med innerkärl', value: 'ca 75 l' },
+    cement:
+      'Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand.',
+    defaultSize: '100 cm',
+    sizes: [
+      {
+        name: '80 cm',
+        sku: 'ST-1198',
+        summary: 'Höjd med tak 80 cm.',
+        dimensions: [
+          { label: 'Bas', value: '45 × 45 cm' },
+          { label: 'Höjd', value: '60 cm' },
+          { label: 'Höjd med tak', value: '80 cm' },
+          { label: 'Volym med innerkärl', value: 'ca 50 l' },
+        ],
+        weight: '150 kg',
+        capacity: 'ca 50 l',
+      },
+      {
+        name: '100 cm',
+        sku: 'ST-1199',
+        summary: 'Höjd med tak 100 cm.',
+        dimensions: [
+          { label: 'Bas', value: '45 × 45 cm' },
+          { label: 'Höjd', value: '80 cm' },
+          { label: 'Höjd med tak', value: '100 cm' },
+          { label: 'Volym med innerkärl', value: 'ca 75 l' },
+        ],
+        weight: '205 kg',
+        capacity: 'ca 75 l',
+      },
     ],
-    weight: '205 kg',
     related: ['askkopp-luna'],
     imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
   },
@@ -316,6 +371,7 @@ export const products: Record<string, Product> = {
     environment: 'Inomhus, skyddad utomhusmiljö',
     leadTime: 'Normalt cirka 5 veckor',
     warranty: '12 månader från leverans',
+    ralInQuote: true,
     variants: [
       {
         label: 'Material',
@@ -331,7 +387,8 @@ export const products: Record<string, Product> = {
       },
     ],
     related: ['papperskorg-rodberga-100'],
-    imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
+    imageNote:
+      'Bilden visar ett exempelutförande. Valfri standard-RAL-kulör ingår; ingen unik produktbild per kulör finns i konceptet. Kulör hämtas från leverantören när ni ger länken.',
   },
   'akutvagn-genius': {
     slug: 'akutvagn-genius',

@@ -6,6 +6,7 @@ const nav = [
   { to: '/admin/flode', label: 'Så går det till' },
   { to: '/admin/offerter', label: 'Offerter' },
   { to: '/admin/fakturor', label: 'Fakturor' },
+  { to: '/admin/leverantorer', label: 'Leverantörer' },
 ]
 
 export function AdminShell() {
