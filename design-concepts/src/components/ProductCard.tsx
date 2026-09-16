@@ -1,19 +1,29 @@
 import { Link } from 'react-router-dom'
 import type { Product } from '../data/content'
 import { productPath } from '../data/content'
+import { useTheme } from '../context/ThemeContext'
 
-export function ProductCard({ product }: { product: Product }) {
+export function ProductCard({
+  product,
+  featured = false,
+}: {
+  product: Product
+  featured?: boolean
+}) {
   const img = product.images[0]
+  const { theme } = useTheme()
+  const atelje = theme === 'atelje'
+
   return (
-    <article className="flex flex-col border border-line bg-sheet">
-      <Link to={productPath(product)} className="block aspect-[5/4] bg-paper">
+    <article className={`product-card flex h-full flex-col border border-line bg-sheet ${featured ? 'featured' : ''}`}>
+      <Link to={productPath(product)} className="card-media block aspect-[5/4] bg-paper">
         {img && (
           <img src={img.src} alt={img.alt} className="h-full w-full object-contain p-4" />
         )}
       </Link>
-      <div className="flex flex-1 flex-col gap-2 p-4">
+      <div className="card-body flex flex-1 flex-col gap-2 p-4">
         <p className="kicker">{product.subcategory}</p>
-        <h3 className="text-lg font-medium leading-snug">
+        <h3 className={`leading-snug ${atelje ? 'display text-2xl' : 'text-lg font-medium'}`}>
           <Link to={productPath(product)} className="hover:underline">
             {product.name}
           </Link>
@@ -21,8 +31,8 @@ export function ProductCard({ product }: { product: Product }) {
         {product.sku && (
           <p className="font-ui text-xs tabular-nums text-muted">Art.nr {product.sku}</p>
         )}
-        <p className="text-sm text-muted">{product.summary}</p>
-        <dl className="mt-auto grid grid-cols-2 gap-x-3 gap-y-1 pt-3 text-xs text-muted">
+        {(!atelje || featured) && <p className="text-sm text-muted">{product.summary}</p>}
+        <dl className="card-specs mt-auto grid grid-cols-2 gap-x-3 gap-y-1 pt-3 text-xs text-muted">
           {product.material && (
             <>
               <dt>Material</dt>

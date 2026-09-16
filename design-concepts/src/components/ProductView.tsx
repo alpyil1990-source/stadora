@@ -60,7 +60,7 @@ export function ProductView({
 
   const gallery = (
     <div>
-      <div className="aspect-[5/4] border border-line bg-paper">
+      <div className="product-gallery aspect-[5/4] border border-line bg-paper">
         <img
           src={product.images[active]?.src}
           alt={product.images[active]?.alt}

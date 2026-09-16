@@ -1,8 +1,158 @@
 import { Link } from 'react-router-dom'
 import { benches, products } from '../data/content'
 import { ProductCard } from '../components/ProductCard'
+import { useTheme } from '../context/ThemeContext'
+
+const missions = [
+  {
+    title: 'Park och torg',
+    text: 'Bänkar och sitt för högt slitage.',
+    href: '/produkter/parkmobler/parkbankar',
+    img: '/images/env-park.jpg',
+  },
+  {
+    title: 'Avfall',
+    text: 'Kärl och stationer för gård och gata.',
+    href: '/produkt/papperskorg-rodberga-100',
+    img: '/images/rodberga-miljo.jpg',
+  },
+  {
+    title: 'Cykelparkering',
+    text: 'Sortimentet kompletteras. Inga demo-SKU:er i konceptet.',
+    href: '/produkter/parkmobler',
+    img: '/images/env-cykel.jpg',
+  },
+  {
+    title: 'Lek och aktivitet',
+    text: 'Publiceras när verifierade produkter finns.',
+    href: '/produkter/parkmobler',
+    img: '/images/env-skola.jpg',
+  },
+]
 
 export function HomePage() {
+  const { theme } = useTheme()
+  if (theme === 'atelje') return <AteljeHome />
+  return <AtlasHome />
+}
+
+function AteljeHome() {
+  return (
+    <div>
+      <section className="relative">
+        <img
+          src="/images/hero.jpg"
+          alt="Offentlig utemiljö med sittplatser och plantering"
+          className="h-[min(78svh,720px)] w-full object-cover"
+        />
+        <div className="shell relative z-10 -mt-28 pb-6 md:-mt-36">
+          <div className="max-w-xl bg-sheet p-6 shadow-[0_24px_60px_rgba(27,25,20,0.12)] md:p-10">
+            <p className="kicker">Offentlig miljö</p>
+            <h1 className="mt-3 text-4xl leading-[1.05] md:text-6xl">
+              Möbler för platsen, underlag för projektet.
+            </h1>
+            <p className="mt-5 max-w-md text-muted">
+              Kommun, fastighet, arkitekt och entreprenad. Samla ett projekt i offertlistan. Pris
+              lämnas i offert — ingen kassa.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link
+                to="/produkter/parkmobler"
+                className="bg-sage px-5 py-3 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet"
+              >
+                Utforska sortimentet
+              </Link>
+              <Link
+                to="/offert"
+                className="border border-ink px-5 py-3 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em]"
+              >
+                Begär offert
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="shell space-y-24 py-16 md:py-20">
+        <section>
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <p className="kicker">Ingång efter uppdrag</p>
+              <h2 className="mt-2 text-3xl md:text-4xl">Vad gäller projektet?</h2>
+            </div>
+            <Link to="/produkter/parkmobler" className="text-sm underline">
+              Alla kategorier
+            </Link>
+          </div>
+          <div className="mt-10 grid gap-8 sm:grid-cols-2">
+            {missions.map((m) => (
+              <Link key={m.title} to={m.href} className="group block">
+                <img src={m.img} alt="" className="aspect-[16/10] w-full object-cover" />
+                <h3 className="display mt-4 text-2xl">{m.title}</h3>
+                <p className="mt-1 text-sm text-muted">{m.text}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <p className="kicker">Verifierade produkter i konceptet</p>
+          <h2 className="mt-2 text-3xl md:text-4xl">Parkbänkar med mått och artikelnummer</h2>
+          <p className="mt-3 max-w-2xl text-sm text-muted">
+            Listan visar bara produkter som uppfyller miniminivån i inventeringen. Platssnamn-SKU:er
+            med demo-bild och identisk text är utkast och visas inte här.
+          </p>
+          <div className="mt-10 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-12">
+            {benches.map((p, i) => (
+              <div key={p.slug} className={i === 0 ? 'sm:col-span-2 lg:col-span-6' : 'lg:col-span-3'}>
+                <ProductCard product={p} featured={i === 0} />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="grid items-end gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <p className="kicker">Från plats till offert</p>
+            <h2 className="mt-2 text-3xl">Tre steg, ingen kassa</h2>
+            <ol className="mt-8 space-y-6">
+              {[
+                ['Berätta om platsen', 'Gata, park, skolgård eller gård. Bifoga handling om ni har den.'],
+                ['Vi tar fram underlag', 'Förslag, mått och infästning utifrån det som är verifierat.'],
+                ['Offert mot tidplan', 'Pris och leverans i offerten — inte på produktsidan.'],
+              ].map(([t, d], i) => (
+                <li key={t}>
+                  <p className="kicker">0{i + 1}</p>
+                  <p className="mt-2 text-xl">{t}</p>
+                  <p className="mt-1 text-sm text-muted">{d}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div className="lg:col-span-7">
+            <img src="/images/env-gaard.jpg" alt="" className="aspect-[4/3] w-full object-cover" />
+          </div>
+        </section>
+
+        <section className="border-t border-line pt-12">
+          <p className="kicker">Kontakt</p>
+          <h2 className="mt-2 max-w-xl text-3xl md:text-4xl">Prata med oss innan ni ritar.</h2>
+          <p className="mt-4 max-w-xl text-muted">
+            STADORA är ett varumärke inom Relicon AB. Mejla plats, ungefärlig volym och tidplan.
+          </p>
+          <Link
+            to="/offert"
+            className="mt-6 inline-block bg-sage px-5 py-3 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet"
+          >
+            Begär offert
+          </Link>
+        </section>
+      </div>
+    </div>
+  )
+}
+
+function AtlasHome() {
   return (
     <div className="space-y-20">
       <section className="grid items-end gap-8 lg:grid-cols-12">
@@ -50,15 +200,10 @@ export function HomePage() {
           </Link>
         </div>
         <div className="mt-8 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            ['Park och torg', 'Bänkar och sitt för högt slitage.', '/produkter/parkmobler/parkbankar'],
-            ['Avfall', 'Kärl och stationer för gård och gata.', '/produkt/papperskorg-rodberga-100'],
-            ['Cykelparkering', 'Sortimentet kompletteras. Inga demo-SKU:er i konceptet.', '/produkter/parkmobler'],
-            ['Lek och aktivitet', 'Publiceras när verifierade produkter finns.', '/produkter/parkmobler'],
-          ].map(([title, text, href]) => (
-            <Link key={title} to={href} className="bg-sheet p-6 hover:bg-paper">
-              <h3 className="text-lg">{title}</h3>
-              <p className="mt-2 text-sm text-muted">{text}</p>
+          {missions.map((m) => (
+            <Link key={m.title} to={m.href} className="bg-sheet p-6 hover:bg-paper">
+              <h3 className="text-lg">{m.title}</h3>
+              <p className="mt-2 text-sm text-muted">{m.text}</p>
             </Link>
           ))}
         </div>

@@ -5,9 +5,9 @@ Nytt repo för omtaget av [stadora.se](https://www.stadora.se). Den publicerade 
 Godkänd riktning från planeringen:
 
 - Tre affärsområden: Offentlig miljö, Skola, Vård
-- Designriktning **Specification Atlas**
 - Produktsida **C (hybrid)**
 - Offertbaserad försäljning, inga priser, ingen kassa
+- Visuellt uttryck: prototypen växlar mellan **Ateljé** (ljust, bildlett, tegelaccent) och **Atlas** (spec-papper, sage)
 
 ## Vad som finns här
 

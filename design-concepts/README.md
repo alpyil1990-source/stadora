@@ -2,7 +2,7 @@
 
 Klickbar prototyp för omtaget. **Inte** den publicerade webbplatsen och **inte** produktionssajten.
 
-Riktning: Specification Atlas (papper, bläck, sage, IBM Plex Sans / Manrope). Produktsida C (hybrid) är standard. A och B finns som jämförelse.
+Riktning: två växelbara uttryck. **Ateljé** (standard) är ljust ateljéuttryck med foto i fullbredd, Syne/Figtree och tegelröd accent — sage bara i logotypen. **Atlas** är det tidigare spec-spåret (papper, bläck, sage, IBM Plex / Manrope). Växla i listen. Produktsida C (hybrid) är standard. A och B finns som jämförelse.
 
 ## Köra
 

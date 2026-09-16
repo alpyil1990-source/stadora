@@ -3,10 +3,13 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, Search, X } from 'lucide-react'
 import { areas, publicNav, type AreaId } from '../data/content'
 import { useQuote } from '../context/QuoteContext'
+import { useTheme } from '../context/ThemeContext'
 import { BrandMark } from './BrandMark'
 
 export function SiteHeader({ area }: { area: AreaId }) {
   const { count } = useQuote()
+  const { theme } = useTheme()
+  const atelje = theme === 'atelje'
   const [open, setOpen] = useState(false)
   const [mega, setMega] = useState(false)
   const location = useLocation()
@@ -51,7 +54,7 @@ export function SiteHeader({ area }: { area: AreaId }) {
         <Link to={home} className="flex items-center gap-3 text-ink" aria-label="STADORA startsida">
           <BrandMark className="h-10 w-auto" />
           <span className="hidden sm:block">
-            <span className="block font-ui text-[1.35rem] font-semibold leading-none tracking-tight">
+            <span className={`block text-[1.35rem] font-semibold leading-none tracking-tight ${atelje ? 'display' : 'font-ui'}`}>
               STADORA
             </span>
             <span className="mt-1 block font-ui text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-muted">
@@ -60,7 +63,7 @@ export function SiteHeader({ area }: { area: AreaId }) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 font-ui text-[0.78rem] font-medium uppercase tracking-[0.1em] lg:flex">
+        <nav className="site-nav hidden items-center gap-6 font-ui text-[0.78rem] font-medium uppercase tracking-[0.1em] lg:flex">
           {links.map((item) =>
             'type' in item && item.type === 'mega' ? (
               <button
@@ -91,7 +94,11 @@ export function SiteHeader({ area }: { area: AreaId }) {
           </Link>
           <Link
             to="/offert"
-            className="hidden bg-ink px-4 py-2.5 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet hover:bg-sage-dark md:inline-block"
+            className={`hidden px-4 py-2.5 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] md:inline-block ${
+              atelje
+                ? 'bg-sage text-sheet hover:bg-sage-dark'
+                : 'bg-ink text-sheet hover:bg-sage-dark'
+            }`}
           >
             Begär offert
           </Link>
