@@ -20,6 +20,7 @@ import {
 import { useQuote } from '../context/QuoteContext'
 import { ProductCard } from './ProductCard'
 import { Breadcrumb } from './Breadcrumb'
+import { ProductImageZoom } from './ProductLightbox'
 
 export type ProductLayout = 'hybrid' | 'spec' | 'visual'
 
@@ -139,11 +140,12 @@ export function ProductView({
     <div>
       <div className="aspect-[5/4] overflow-hidden border border-line bg-paper">
         {current && (
-          <img
-            key={popKey}
-            src={current.src}
+          <ProductImageZoom
+            images={shown}
+            currentSrc={current.src}
             alt={current.alt}
-            className="gallery-pop h-full w-full object-contain p-6"
+            imgKey={popKey}
+            imgClassName="gallery-pop h-full w-full object-contain p-6"
           />
         )}
       </div>
@@ -601,12 +603,15 @@ export function ProductView({
         <ProductNav product={product} />
         <div className="-mx-4 md:mx-0">
           <div className="max-h-[72vh] overflow-hidden bg-ink">
-            <img
-              key={popKey}
-              src={visualSrc}
-              alt={current?.alt ?? product.name}
-              className="gallery-pop mx-auto max-h-[72vh] w-full object-contain"
-            />
+            {visualSrc && (
+              <ProductImageZoom
+                images={shown}
+                currentSrc={visualSrc}
+                alt={current?.alt ?? product.name}
+                imgKey={popKey}
+                imgClassName="gallery-pop mx-auto max-h-[72vh] w-full object-contain"
+              />
+            )}
           </div>
         </div>
         <div className="mx-auto max-w-3xl py-12">
