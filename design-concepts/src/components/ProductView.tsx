@@ -1,8 +1,15 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ArrowLeft } from 'lucide-react'
 import type { Product } from '../data/content'
 import { productPath, products } from '../data/content'
 import { selectedMaterial } from '../data/binsignia'
+import {
+  categoryPath,
+  findCategory,
+  findSubcategory,
+  subcategoryPath,
+} from '../data/catalog'
 import {
   colorChoices,
   hasColorTaggedImages,
@@ -12,6 +19,7 @@ import {
 } from '../data/gallery'
 import { useQuote } from '../context/QuoteContext'
 import { ProductCard } from './ProductCard'
+import { Breadcrumb } from './Breadcrumb'
 
 export type ProductLayout = 'hybrid' | 'spec' | 'visual'
 
@@ -588,6 +596,7 @@ export function ProductView({
       <article>
         <LayoutNote title="B. Arkitekturledd" />
         <ReviewNote product={product} />
+        <ProductNav product={product} />
         <div className="-mx-4 md:mx-0">
           <div className="max-h-[72vh] overflow-hidden bg-ink">
             <img
@@ -614,6 +623,7 @@ export function ProductView({
       <article>
         <LayoutNote title="A. Upphandlingsledd" />
         <ReviewNote product={product} />
+        <ProductNav product={product} />
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">{gallery}</div>
           <div className="lg:col-span-8">
@@ -641,6 +651,7 @@ export function ProductView({
     <article>
       <LayoutNote title="C. Hybrid — rekommenderas" />
       <ReviewNote product={product} />
+      <ProductNav product={product} />
       <nav aria-label="På sidan" className="mb-6 flex flex-wrap gap-2 text-xs">
         {jump.map((j) => (
           <a
@@ -699,5 +710,55 @@ function ReviewNote({ product }: { product: Product }) {
         Öppna utkastöversikten
       </Link>
     </p>
+  )
+}
+
+function productTrail(product: Product) {
+  if (product.area === 'skola' || product.area === 'vard') {
+    const home = product.area === 'skola' ? '/skola' : '/vard'
+    const areaLabel = product.area === 'skola' ? 'Skola' : 'Vård'
+    return {
+      items: [
+        { label: 'Hem', to: home },
+        { label: areaLabel, to: home },
+        { label: product.name },
+      ],
+      backTo: home,
+      backLabel: `Tillbaka till ${areaLabel}`,
+    }
+  }
+
+  const category = findCategory(product.categorySlug)
+  const sub = category ? findSubcategory(category, product.subcategorySlug) : undefined
+  const items: { label: string; to?: string }[] = [
+    { label: 'Hem', to: '/' },
+    { label: 'Sortiment', to: '/produkter' },
+  ]
+  if (category) items.push({ label: category.name, to: categoryPath(category) })
+  if (category && sub) items.push({ label: sub.name, to: subcategoryPath(category, sub) })
+  items.push({ label: product.name })
+
+  return {
+    items,
+    backTo: category && sub ? subcategoryPath(category, sub) : '/produkter',
+    backLabel: sub ? `Tillbaka till ${sub.name}` : 'Tillbaka till sortimentet',
+  }
+}
+
+function ProductNav({ product }: { product: Product }) {
+  const trail = productTrail(product)
+  return (
+    <div className="mb-8">
+      <div className="-mb-3">
+        <Breadcrumb items={trail.items} />
+      </div>
+      <Link
+        to={trail.backTo}
+        className="inline-flex items-center gap-2 border border-ink px-4 py-2.5 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em]"
+      >
+        <ArrowLeft className="h-4 w-4" aria-hidden />
+        {trail.backLabel}
+      </Link>
+    </div>
   )
 }
