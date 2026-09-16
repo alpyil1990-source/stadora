@@ -36,31 +36,25 @@ export const investimDiscountRules = [
     family: 'ac',
     label: 'Arkitektonisk betong',
     percent: 10,
-    note: 'Gäller hela sortimentet i arkitektonisk betong.',
+    note: 'Hela sortimentet: bänkar, pollare och övrigt i arkitektonisk betong.',
   },
   {
     family: 'rinsed',
-    label: 'Tvättad betong (ej bänk)',
+    label: 'Tvättad betong',
     percent: 20,
-    note: 'Pollare och övrigt i tvättad betong, utom bänkar.',
+    note: 'All tvättad betong. Bänkar i tvättad betong har 10 % i stället.',
   },
   {
-    family: 'rinsed_bench',
-    label: 'Tvättad betong, bänkar',
+    family: 'bench',
+    label: 'Bänkar',
     percent: 10,
-    note: 'Bänkar i tvättad betong har 10 %, inte 20 %.',
+    note: 'Alla bänkar: tvättad betong, arkitektonisk betong och stål.',
   },
   {
     family: 'bin_wood_steel',
     label: 'Papperskorg i tvättad granit med trä och stållock',
     percent: 5,
-    note: 'Ingen sådan produkt i den här importen. Regeln ligger här så den inte glöms.',
-  },
-  {
-    family: 'steel',
-    label: 'Stål',
-    percent: null,
-    note: 'Ingen procentsats i mejlet. Listpris visas utan avdrag tills ni bekräftar rabatten.',
+    note: 'Undantag från 20 % på tvättad betong. Ingen sådan produkt i den här importen.',
   },
 ]
 
@@ -89,12 +83,19 @@ export function formatEur(n: number | null) {
   }).format(n)
 }
 
+const FAMILY_LABEL: Record<string, string> = {
+  ac: 'Arkitektonisk betong',
+  rinsed: 'Tvättad betong (pollare m.m.)',
+  rinsed_bench: 'Bänkar, tvättad betong',
+  steel: 'Bänkar i stål',
+}
+
 export function investimGroups() {
-  const order = ['rinsed_bench', 'ac', 'steel', 'rinsed']
+  const order = ['rinsed_bench', 'steel', 'ac', 'rinsed']
   const unique = [...new Set(investimPrices.map((r) => r.family))]
   return [...order.filter((f) => unique.includes(f)), ...unique.filter((f) => !order.includes(f))]
 }
 
 export function familyLabel(family: string) {
-  return investimDiscountRules.find((r) => r.family === family)?.label ?? family
+  return FAMILY_LABEL[family] ?? investimDiscountRules.find((r) => r.family === family)?.label ?? family
 }

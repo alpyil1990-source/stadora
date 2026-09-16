@@ -17,10 +17,10 @@
     "sku": "224",
     "variant": "Med ryggstöd",
     "listEur": 605,
-    "discountPercent": null,
-    "netEur": null,
-    "discountRule": "Rabatt för stål är inte angiven",
-    "note": "Prislistan har även utförande utan ryggstöd 352 EUR. Rabatt för stål är inte angiven.",
+    "discountPercent": 10,
+    "netEur": 544.5,
+    "discountRule": "Bänkar 10 %",
+    "note": "Prislistan har även utförande utan ryggstöd 352 EUR.",
     "family": "steel"
   },
   {
@@ -29,10 +29,10 @@
     "sku": "260",
     "variant": "Med ryggstöd",
     "listEur": 708,
-    "discountPercent": null,
-    "netEur": null,
-    "discountRule": "Rabatt för stål är inte angiven",
-    "note": "Prislistan har även armstöd 756 EUR. Specen på sidan nämner inte armstöd. Rabatt för stål är inte angiven.",
+    "discountPercent": 10,
+    "netEur": 637.2,
+    "discountRule": "Bänkar 10 %",
+    "note": "Prislistan har även armstöd 756 EUR. Specen på sidan nämner inte armstöd.",
     "family": "steel"
   },
   {
@@ -41,10 +41,10 @@
     "sku": "156",
     "variant": "Utan ryggstöd",
     "listEur": 230,
-    "discountPercent": null,
-    "netEur": null,
-    "discountRule": "Rabatt för stål är inte angiven",
-    "note": "Prislistan har även med ryggstöd 275 EUR och dubbelbänk 472 EUR. Rabatt för stål är inte angiven.",
+    "discountPercent": 10,
+    "netEur": 207.0,
+    "discountRule": "Bänkar 10 %",
+    "note": "Prislistan har även med ryggstöd 275 EUR och dubbelbänk 472 EUR.",
     "family": "steel"
   },
   {
@@ -53,10 +53,10 @@
     "sku": "209",
     "variant": "Utan ryggstöd",
     "listEur": 236,
-    "discountPercent": null,
-    "netEur": null,
-    "discountRule": "Rabatt för stål är inte angiven",
-    "note": "Rabatt för stål är inte angiven i underlaget.",
+    "discountPercent": 10,
+    "netEur": 212.4,
+    "discountRule": "Bänkar 10 %",
+    "note": null,
     "family": "steel"
   },
   {

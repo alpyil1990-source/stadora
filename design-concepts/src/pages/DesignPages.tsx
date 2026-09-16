@@ -221,7 +221,7 @@ export function InvestimDraftPage() {
         <h2 className="text-lg">Vad som gäller</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-muted">
           <li>Foton från leverantörens sajt, inte från stadora.se.</li>
-          <li>Arkitektonisk betong 10 %. Tvättad betong 20 %, bänkar 10 %. Stål utan angiven rabatt.</li>
+          <li>Arkitektonisk betong 10 %. Tvättad betong 20 %, bänkar 10 % (även stålbänkar). Papperskorg i tvättad granit med trä och stållock 5 %.</li>
           <li>Papperskorg i tvättad granit med trä och stållock 5 % — ingen sådan produkt i den här importen.</li>
           <li>Inga priser och inga katalognummer på produktsidan.</li>
           <li>Ritningar publiceras inte. De lämnas per projekt i offerten.</li>
