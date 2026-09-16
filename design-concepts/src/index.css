@@ -13,9 +13,11 @@
   --color-school: #6a5e43;
   --color-care: #3f5a63;
   --color-warn: #8a4b2a;
+  --color-logo-sage: #6b7f73;
 }
 
 html {
+  --logo-sage: #6b7f73;
   color: var(--color-ink);
   background: var(--color-paper);
   font-family: var(--font-sans);
@@ -48,6 +50,21 @@ body {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-sage-dark);
+}
+
+.brand-name {
+  font-family: var(--font-ui);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.brand-tagline {
+  font-family: var(--font-ui);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 600;
 }
 
 .spec-table {

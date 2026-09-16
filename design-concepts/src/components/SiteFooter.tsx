@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom'
 import { company, type AreaId } from '../data/content'
-import { BrandMark } from './BrandMark'
+import { BrandLockup } from './BrandMark'
 
 export function SiteFooter({ area }: { area: AreaId }) {
   return (
     <footer className="mt-16 bg-ink text-sheet">
       <div className="shell grid gap-10 py-14 md:grid-cols-4">
         <div>
-          <Link to={area === 'offentlig' ? '/' : `/${area}`} className="inline-flex flex-col text-sheet">
-            <BrandMark className="h-14 w-auto" />
-            <span className="mt-3 font-ui text-xl font-semibold">STADORA</span>
+          <Link
+            to={area === 'offentlig' ? '/' : `/${area}`}
+            className="inline-flex flex-col items-start text-sheet"
+            aria-label="STADORA — startsidan"
+          >
+            <BrandLockup layout="stack" />
           </Link>
           <p className="mt-4 max-w-xs text-sm text-sheet/70">
             {area === 'vard'

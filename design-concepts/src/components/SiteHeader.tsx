@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, Search, X } from 'lucide-react'
 import { areas, publicNav, type AreaId } from '../data/content'
 import { useQuote } from '../context/QuoteContext'
-import { BrandMark } from './BrandMark'
+import { BrandLockup } from './BrandMark'
 
 export function SiteHeader({ area }: { area: AreaId }) {
   const { count } = useQuote()
@@ -47,17 +47,9 @@ export function SiteHeader({ area }: { area: AreaId }) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-sheet/95 backdrop-blur">
-      <div className="shell flex h-[4.25rem] items-center justify-between gap-4 lg:h-20">
-        <Link to={home} className="flex items-center gap-3 text-ink" aria-label="STADORA startsida">
-          <BrandMark className="h-10 w-auto" />
-          <span className="hidden sm:block">
-            <span className="block font-ui text-[1.35rem] font-semibold leading-none tracking-tight">
-              STADORA
-            </span>
-            <span className="mt-1 block font-ui text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-muted">
-              {meta.tagline}
-            </span>
-          </span>
+      <div className="shell flex h-[4.5rem] items-center justify-between gap-6 md:h-24">
+        <Link to={home} className="inline-flex items-center gap-3 text-ink" aria-label="STADORA — startsidan">
+          <BrandLockup />
         </Link>
 
         <nav className="hidden items-center gap-6 font-ui text-[0.78rem] font-medium uppercase tracking-[0.1em] lg:flex">
