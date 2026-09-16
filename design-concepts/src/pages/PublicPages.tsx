@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { benches } from '../data/content'
+import { benches, binsigniaDraft } from '../data/content'
 import { ProductCard } from '../components/ProductCard'
 
 export function HomePage() {
@@ -60,6 +60,25 @@ export function HomePage() {
               <h3 className="text-lg">{title}</h3>
               <p className="mt-2 text-sm text-muted">{text}</p>
             </Link>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <p className="kicker">Utkast · BINSIGNIA</p>
+        <h2 className="mt-2 text-2xl md:text-3xl">Fem modeller för granskning</h2>
+        <p className="mt-3 max-w-2xl text-sm text-muted">
+          Foton och övergripande spec från binsignia.com, med skriftligt tillstånd. Pris syns inte
+          här — listan i euro ligger i intern admin. Resten av sortimentet väntar.
+        </p>
+        <p className="mt-3 text-sm">
+          <Link className="underline" to="/design/binsignia">
+            Så här är utkastet tänkt
+          </Link>
+        </p>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {binsigniaDraft.map((p) => (
+            <ProductCard key={p.slug} product={p} />
           ))}
         </div>
       </section>

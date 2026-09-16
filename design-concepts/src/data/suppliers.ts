@@ -5,6 +5,7 @@ export type SupplierContact = {
   role: string
   email: string
   phone: string
+  mobile?: string
 }
 
 export type Supplier = {
@@ -12,6 +13,8 @@ export type Supplier = {
   name: string
   status: SupplierStatus
   orgNr: string
+  vatNr?: string
+  legalName?: string
   website: string
   /** Direct media/catalog URL from the supplier — not stadora.se. */
   mediaSource: string
@@ -61,17 +64,31 @@ export const seedSuppliers: Supplier[] = [
     ],
   },
   {
-    id: 'luna-pending',
-    name: 'LUNA-askkopp — leverantör saknas',
-    status: 'invantar_underlag',
-    orgNr: '',
-    website: '',
-    mediaSource: '',
-    contact: emptyContact(),
-    address: '',
+    id: 'binsignia',
+    name: 'BINSIGNIA® / FORWARD SUPPORT SRL',
+    status: 'aktiv',
+    orgNr: 'J2021003071088',
+    vatNr: 'RO34966214',
+    legalName: 'FORWARD SUPPORT SRL',
+    website: 'https://www.binsignia.com',
+    mediaSource: 'https://www.binsignia.com/products',
+    contact: {
+      name: 'Paula Stirbu',
+      role: 'B2B / återförsäljning',
+      email: 'paula.stirbu@binsignia.com',
+      phone: '+40 21 539 99 90',
+      mobile: '+40 740 276 637',
+    },
+    address: '9 Prunului Street, Vulcan, Brașov County, 507270, Romania',
     notes:
-      'Askkopp LUNA ligger i den offentliga katalogen. Fyll i leverantörens namn, kontaktperson och länk till produktbilder/katalog. Vi hämtar inte bilder från stadora.se.',
-    productSlugs: ['askkopp-luna'],
+      'Partneravtal september 2026. Bildrätt: produktfoton, beskrivningar och övergripande spec på stadora.se. Ritningar/PDF per projekt. Drop-ship Sverige, neutral leverans. Icke-exklusivt. B2B, omvänd skattskyldighet. Listpris EUR, rabatt 15/22/30 %. Utkast: 5 av 107 modeller på webbplatsen. Hämta inte bilder från stadora.se.',
+    productSlugs: [
+      'askkopp-luna',
+      'kallsortering-albris',
+      'kallsortering-bernina',
+      'kallsortering-eiger',
+      'kallsortering-gemini',
+    ],
   },
 ]
 

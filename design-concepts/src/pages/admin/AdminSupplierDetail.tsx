@@ -4,6 +4,7 @@ import { useSuppliers } from '../../context/SupplierContext'
 import { products, productPath } from '../../data/content'
 import { colorChoices, hasColorTaggedImages, hasSizeTaggedImages } from '../../data/gallery'
 import { supplierStatusLabel, type SupplierStatus } from '../../data/suppliers'
+import { AdminBinsigniaTerms } from './AdminBinsigniaTerms'
 
 const statuses: SupplierStatus[] = ['aktiv', 'invantar_underlag', 'pausad']
 
@@ -53,9 +54,19 @@ export function AdminSupplierDetail() {
             onChange={(v) => update(supplier.id, { name: v })}
           />
           <Field
-            label="Org.nr"
+            label="Org.nr / reg."
             value={supplier.orgNr}
             onChange={(v) => update(supplier.id, { orgNr: v })}
+          />
+          <Field
+            label="VAT"
+            value={supplier.vatNr ?? ''}
+            onChange={(v) => update(supplier.id, { vatNr: v })}
+          />
+          <Field
+            label="Juridiskt namn"
+            value={supplier.legalName ?? ''}
+            onChange={(v) => update(supplier.id, { legalName: v })}
           />
           <Field
             label="Webb"
@@ -110,6 +121,11 @@ export function AdminSupplierDetail() {
             value={supplier.contact.phone}
             onChange={(v) => updateContact(supplier.id, { phone: v })}
           />
+          <Field
+            label="Mobil"
+            value={supplier.contact.mobile ?? ''}
+            onChange={(v) => updateContact(supplier.id, { mobile: v })}
+          />
         </form>
       </section>
 
@@ -136,6 +152,8 @@ export function AdminSupplierDetail() {
         </label>
       </section>
 
+      {supplier.id === 'binsignia' && <AdminBinsigniaTerms />}
+
       <section>
         <h2 className="text-xl">Produkter från den här leverantören</h2>
         <p className="mt-2 text-sm text-muted">
@@ -159,7 +177,12 @@ export function AdminSupplierDetail() {
                     <Link className="font-medium underline" to={productPath(p)}>
                       {p.name}
                     </Link>
-                    {p.sku && <p className="text-xs text-muted">Art.nr {p.sku}</p>}
+                    {p.sku && !p.materials?.length && <p className="text-xs text-muted">Art.nr {p.sku}</p>}
+                    {p.materials && p.materials.length > 0 && (
+                      <p className="text-xs text-muted">
+                        {p.materials.map((m) => `${m.code} ${m.sku}`).join(' · ')}
+                      </p>
+                    )}
                   </div>
                   <div className="text-sm text-muted md:col-span-5">
                     {sizes.length > 0 && (

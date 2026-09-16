@@ -18,8 +18,13 @@ export function ProductCard({ product }: { product: Product }) {
             {product.name}
           </Link>
         </h3>
-        {product.sku && (
+        {product.sku && !product.materials?.length && (
           <p className="font-ui text-xs tabular-nums text-muted">Art.nr {product.sku}</p>
+        )}
+        {product.materials && product.materials.length > 0 && (
+          <p className="font-ui text-xs tabular-nums text-muted">
+            {product.materials.map((m) => `${m.code} ${m.sku}`).join(' · ')}
+          </p>
         )}
         <p className="text-sm text-muted">{product.summary}</p>
         <dl className="mt-auto grid grid-cols-2 gap-x-3 gap-y-1 pt-3 text-xs text-muted">

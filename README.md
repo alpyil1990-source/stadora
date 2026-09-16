@@ -29,6 +29,8 @@ npm run dev
 
 Skola och vård avvaktar. Offentlig miljö byggs först. Leverantörer, kontaktperson och produktantal ligger i prototypen under `/admin/leverantorer`. Produktbilder ska komma från leverantörens länk, inte skrapas från den publicerade sajten.
 
+Första riktiga leverantörsutkastet är **BINSIGNIA** (Paula Stirbu / FORWARD SUPPORT SRL): fem modeller på `/design/binsignia`. Listpriser i euro syns bara i admin. Inga priser på den publika katalogen.
+
 ## Vad som inte ska göras än
 
 Ingen migrering av Lovable-data, inga produktionsroutes, ingen databas. Vänta på uttryckligt godkännande av mockups innan implementationen i Fas 2.

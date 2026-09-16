@@ -83,9 +83,18 @@ export const catalog: CategoryDef[] = [
       {
         slug: 'kallsortering',
         name: 'Källsortering',
-        blurb: 'Stationer och behållare med fraktioner.',
-        productSlugs: [],
-        draftExamples: ['Källsorteringsstation ALBRIS', 'Källsorteringsstation ELM', 'Källsorteringsbehållare ZUPO'],
+        blurb: 'Stationer och behållare med fraktioner. Fem BINSIGNIA-modeller som utkast.',
+        productSlugs: [
+          'kallsortering-albris',
+          'kallsortering-bernina',
+          'kallsortering-eiger',
+          'kallsortering-gemini',
+        ],
+        draftExamples: ['Källsorteringsstation ELM', 'Källsorteringsbehållare ZUPO'],
+        filters: [
+          { legend: 'Material', options: ['Pulverlackerad stålplåt', 'Rostfritt stål'] },
+          { legend: 'Fraktioner', options: ['1', '2', '3', '4'] },
+        ],
       },
       {
         slug: 'miljohus',

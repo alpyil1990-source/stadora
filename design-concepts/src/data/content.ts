@@ -1,3 +1,4 @@
+import { binsigniaProducts } from './binsignia'
 import { catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
@@ -26,6 +27,16 @@ export type SizeOption = {
   capacity?: string
 }
 
+export type MaterialFinish = {
+  name: string
+  code: 'PC' | 'SST'
+  sku: string
+  environment?: string
+  sourceUrl?: string
+  standardFeatures?: string[]
+  optionalFeatures?: string[]
+}
+
 export type Product = {
   slug: string
   name: string
@@ -39,6 +50,8 @@ export type Product = {
   description: string
   images: ProductImage[]
   material?: string
+  manufacturer?: string
+  sourceUrl?: string
   cement?: string
   wood?: string
   dimensions?: { label: string; value: string }[]
@@ -53,11 +66,17 @@ export type Product = {
   colors?: Array<string | ColorOption>
   sizes?: SizeOption[]
   defaultSize?: string
+  /** Label for the size radios. Internal state key remains Storlek. */
+  sizeLegend?: string
+  materials?: MaterialFinish[]
+  defaultMaterial?: string
   /** Free-text RAL on the quote line. No swatch catalog unless colors[] exists. */
   ralInQuote?: boolean
   variants?: { label: string; options: string[] }[]
   related: string[]
   imageNote?: string
+  documentPolicy?: string
+  reviewNote?: string
 }
 
 export const company = {
@@ -105,7 +124,7 @@ export const publicNav = {
   })),
 }
 
-/** Only fields verified on the live Stadora product pages. Empty sections are omitted in UI. */
+/** Parkmöbler: fält från live-sajten. BINSIGNIA-utkast: fält från binsignia.com och prislista september 2026. */
 export const products: Record<string, Product> = {
   'parkbank-arsta': {
     slug: 'parkbank-arsta',
@@ -349,47 +368,7 @@ export const products: Record<string, Product> = {
     related: ['askkopp-luna'],
     imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
   },
-  'askkopp-luna': {
-    slug: 'askkopp-luna',
-    name: 'Askkopp LUNA',
-    area: 'offentlig',
-    category: 'Avfall och återvinning',
-    categorySlug: 'avfall-atervinning',
-    subcategory: 'Askkoppar',
-    subcategorySlug: 'askkoppar',
-    summary:
-      'Askkopp LUNA tillverkas i pulverlackerad stålplåt eller rostfritt stål med kapacitet 35 liter.',
-    description:
-      'Askkopp LUNA tillverkas i pulverlackerad stålplåt eller rostfritt stål med kapacitet 35 liter. Utförande, standardegenskaper och tillval varierar med valt material och visas för den valda konfigurationen. Valfri standard-RAL-kulör ingår. Pris lämnas som offert.',
-    images: [
-      { src: '/images/luna-1.png', alt: 'Askkopp LUNA', kind: 'studio' },
-      { src: '/images/luna-2.png', alt: 'Askkopp LUNA, detalj', kind: 'detail' },
-    ],
-    material: 'Pulverlackerad stålplåt eller rostfritt stål',
-    dimensions: [{ label: 'B × D × H', value: '15 × 20 × 102 cm' }],
-    capacity: '35 l',
-    environment: 'Inomhus, skyddad utomhusmiljö',
-    leadTime: 'Normalt cirka 5 veckor',
-    warranty: '12 månader från leverans',
-    ralInQuote: true,
-    variants: [
-      {
-        label: 'Material',
-        options: ['Pulverlackerad stålplåt', 'Rostfritt stål'],
-      },
-      {
-        label: 'Märkning',
-        options: [
-          'Standard svensk sorteringsmärkning',
-          'Utan märkning',
-          'Anpassad märkning',
-        ],
-      },
-    ],
-    related: ['papperskorg-rodberga-100'],
-    imageNote:
-      'Bilden visar ett exempelutförande. Valfri standard-RAL-kulör ingår; ingen unik produktbild per kulör finns i konceptet. Kulör hämtas från leverantören när ni ger länken.',
-  },
+  ...binsigniaProducts,
   'akutvagn-genius': {
     slug: 'akutvagn-genius',
     name: 'Akutvagn Genius',
@@ -428,6 +407,16 @@ export const products: Record<string, Product> = {
     related: [],
   },
 }
+
+export { BINSIGNIA_SLUGS } from './binsignia'
+
+export const binsigniaDraft = [
+  products['askkopp-luna'],
+  products['kallsortering-albris'],
+  products['kallsortering-bernina'],
+  products['kallsortering-eiger'],
+  products['kallsortering-gemini'],
+]
 
 export const benches = [
   products['parkbank-hammarby'],

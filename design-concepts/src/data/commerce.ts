@@ -169,10 +169,11 @@ export const seedQuotes: QuoteCase[] = [
       },
       {
         name: 'Askkopp LUNA',
+        sku: '9747',
         qty: 4,
         unitPrice: 4800,
-        comment: 'Pulverlackerad stålplåt',
-        image: '/images/luna-1.png',
+        comment: 'Pulverlackerad stålplåt · 1 × 35 l',
+        image: '/images/binsignia/luna-1.png',
       },
     ],
     freight: 6200,

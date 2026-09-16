@@ -2,9 +2,11 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { Product } from '../data/content'
 import { productPath, products } from '../data/content'
+import { selectedMaterial } from '../data/binsignia'
 import {
   colorChoices,
   hasColorTaggedImages,
+  hasSizeTaggedImages,
   imagesForVariant,
   shownLabel,
 } from '../data/gallery'
@@ -33,6 +35,9 @@ export function ProductView({
     if (product.sizes?.length) {
       init['Storlek'] = product.defaultSize ?? product.sizes[0].name
     }
+    if (product.materials?.length) {
+      init['Material'] = product.defaultMaterial ?? product.materials[0].name
+    }
     if (colors[0]) init['Kulör'] = colors[0].name
     return init
   })
@@ -40,10 +45,18 @@ export function ProductView({
   const [ask, setAsk] = useState(false)
 
   const selectedSize = product.sizes?.find((s) => s.name === variants['Storlek'])
-  const sku = selectedSize?.sku ?? product.sku
+  const finish = selectedMaterial(product, variants['Material'])
+  const sku = finish?.sku ?? selectedSize?.sku ?? product.sku
   const dimensions = selectedSize?.dimensions ?? product.dimensions
   const weight = selectedSize?.weight ?? product.weight
   const capacity = selectedSize?.capacity ?? product.capacity
+  const materialLabel = finish?.name ?? product.material
+  const environment = finish?.environment ?? product.environment
+  const standardFeatures = finish?.standardFeatures
+  const optionalFeatures = finish?.optionalFeatures
+  const sizeLegend = product.sizeLegend ?? 'Storlek'
+  const sourceUrl = finish?.sourceUrl ?? product.sourceUrl
+  const sizePhotos = hasSizeTaggedImages(product.images)
 
   const galleryState = imagesForVariant(product.images, {
     color: variants['Kulör'],
@@ -54,7 +67,8 @@ export function ProductView({
   const taggedColors = hasColorTaggedImages(product.images)
   const missingColorPhoto =
     Boolean(variants['Kulör']) && taggedColors && !galleryState.colorMatched
-  const missingSizePhoto = Boolean(variants['Storlek']) && !galleryState.sizeMatched
+  const missingSizePhoto =
+    Boolean(variants['Storlek']) && sizePhotos && !galleryState.sizeMatched
 
   const variantParts = [
     variants['Storlek'],
@@ -95,13 +109,23 @@ export function ProductView({
   const jump = useMemo(() => {
     const items = [{ id: 'oversikt', label: 'Översikt' }]
     if (dimensions?.length) items.push({ id: 'matt', label: 'Mått och vikt' })
-    if (product.material) items.push({ id: 'material', label: 'Material' })
+    if (materialLabel) items.push({ id: 'material', label: 'Material' })
+    if (standardFeatures?.length || optionalFeatures?.length) {
+      items.push({ id: 'utforande', label: 'Utförande' })
+    }
     if (product.mounting?.length) items.push({ id: 'montering', label: 'Montering' })
     if (product.warranty || product.leadTime) items.push({ id: 'leverans', label: 'Leverans' })
     if (product.medicalClass) items.push({ id: 'standard', label: 'Standarder' })
-    if (related.length) items.push({ id: 'serie', label: 'Samma serie' })
+    if (related.length) items.push({ id: 'serie', label: 'Samma typ' })
     return items
-  }, [dimensions, product, related.length])
+  }, [
+    dimensions,
+    materialLabel,
+    optionalFeatures?.length,
+    product,
+    related.length,
+    standardFeatures?.length,
+  ])
 
   const gallery = (
     <div>
@@ -118,9 +142,7 @@ export function ProductView({
       {product.imageNote && <p className="mt-2 text-xs text-muted">{product.imageNote}</p>}
       {missingSizePhoto && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
-          Ingen produktbild för höjd {variants['Storlek']} ännu. Bilden visar{' '}
-          {shownLabel(shown)}. Den saknade bilden hämtas från leverantören när ni ger länken — inte
-          från stadora.se.
+          Ingen produktbild för {variants['Storlek']} ännu. Bilden visar {shownLabel(shown)}.
         </p>
       )}
       {missingColorPhoto && (
@@ -153,7 +175,7 @@ export function ProductView({
     <div className="space-y-4">
       {product.sizes && product.sizes.length > 0 && (
         <fieldset>
-          <legend className="text-sm font-medium">Storlek</legend>
+          <legend className="text-sm font-medium">{sizeLegend}</legend>
           <div className="mt-2 flex flex-wrap gap-2">
             {product.sizes.map((s) => {
               const hasPhoto = product.images.some((img) => img.size === s.name)
@@ -174,9 +196,43 @@ export function ProductView({
                   />
                   <span className="block font-medium">{s.name}</span>
                   {s.sku && <span className="block text-xs text-muted">Art.nr {s.sku}</span>}
-                  {s.summary && <span className="block text-xs text-muted">{s.summary}</span>}
+                  {s.summary && s.summary !== s.name && (
+                    <span className="block text-xs text-muted">{s.summary}</span>
+                  )}
+                  {sizePhotos && (
+                    <span className="block text-xs text-muted">
+                      {hasPhoto ? 'Produktbild finns' : 'Bild saknas — exempelbilden ligger kvar'}
+                    </span>
+                  )}
+                </label>
+              )
+            })}
+          </div>
+        </fieldset>
+      )}
+      {product.materials && product.materials.length > 0 && (
+        <fieldset>
+          <legend className="text-sm font-medium">Material</legend>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {product.materials.map((m) => {
+              const selected = variants['Material'] === m.name
+              return (
+                <label
+                  key={m.code}
+                  className={`cursor-pointer border px-3 py-2 text-sm ${
+                    selected ? 'border-ink bg-paper' : 'border-line'
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    className="sr-only"
+                    name="material"
+                    checked={selected}
+                    onChange={() => setVariants((s) => ({ ...s, Material: m.name }))}
+                  />
+                  <span className="block font-medium">{m.name}</span>
                   <span className="block text-xs text-muted">
-                    {hasPhoto ? 'Produktbild finns' : 'Bild saknas — exempelbilden ligger kvar'}
+                    {m.code} · art.nr {m.sku}
                   </span>
                 </label>
               )
@@ -232,8 +288,10 @@ export function ProductView({
             Kulör (RAL)
           </label>
           <p className="mt-1 text-xs text-muted">
-            Valfri standard-RAL ingår. Ingen unik produktbild per kulör — bilden är
-            exempelutförande. Koden följer med till offertlistan.
+            {finish?.code === 'SST'
+              ? 'På rostfritt ingår RAL för lock eller innerkärl enligt prislistan. Ingen unik produktbild per kulör.'
+              : 'Valfri standard-RAL ingår för pulverlack. Ingen unik produktbild per kulör — bilden är exempelutförande.'}{' '}
+            Koden följer med till offertlistan.
           </p>
           <input
             id="ral"
@@ -244,7 +302,9 @@ export function ProductView({
           />
         </div>
       )}
-      {product.variants?.map((v) => (
+      {product.variants
+        ?.filter((v) => !(v.label === 'Material' && product.materials?.length))
+        .map((v) => (
         <fieldset key={v.label}>
           <legend className="text-sm font-medium">{v.label}</legend>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -343,10 +403,16 @@ export function ProductView({
           <dd className="font-medium">{dimensions[0].value}</dd>
         </div>
       )}
-      {product.material && (
+      {materialLabel && (
         <div className="col-span-2">
           <dt className="text-muted">Material</dt>
-          <dd className="font-medium">{product.material}</dd>
+          <dd className="font-medium">{materialLabel}</dd>
+        </div>
+      )}
+      {product.manufacturer && (
+        <div className="col-span-2">
+          <dt className="text-muted">Tillverkare</dt>
+          <dd className="font-medium">{product.manufacturer}</dd>
         </div>
       )}
       {product.medicalClass && (
@@ -387,19 +453,61 @@ export function ProductView({
           </table>
         </section>
       )}
-      {product.material && (
+      {materialLabel && (
         <section id="material">
           <h2 className="text-xl">Material och ytbehandling</h2>
           <table className="spec-table mt-3">
             <tbody>
               <tr>
                 <th>Material</th>
-                <td>{product.material}</td>
+                <td>{materialLabel}</td>
               </tr>
+              {finish?.code && (
+                <tr>
+                  <th>Utförande</th>
+                  <td>{finish.code}</td>
+                </tr>
+              )}
               {product.cement && (
                 <tr>
                   <th>Betong</th>
                   <td>{product.cement}</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </section>
+      )}
+      {(standardFeatures?.length || optionalFeatures?.length) && (
+        <section id="utforande">
+          <h2 className="text-xl">Ingår och tillval</h2>
+          <p className="mt-2 text-sm text-muted">
+            Gäller valt material. Listan kommer från tillverkarens produktsida, inte från antaganden.
+          </p>
+          <table className="spec-table mt-3">
+            <tbody>
+              {standardFeatures && standardFeatures.length > 0 && (
+                <tr>
+                  <th>Ingår</th>
+                  <td>
+                    <ul className="list-disc space-y-1 pl-5">
+                      {standardFeatures.map((f) => (
+                        <li key={f}>{f}</li>
+                      ))}
+                    </ul>
+                  </td>
+                </tr>
+              )}
+              {optionalFeatures && optionalFeatures.length > 0 && (
+                <tr>
+                  <th>Tillval</th>
+                  <td>
+                    <ul className="list-disc space-y-1 pl-5">
+                      {optionalFeatures.map((f) => (
+                        <li key={f}>{f}</li>
+                      ))}
+                    </ul>
+                  </td>
                 </tr>
               )}
             </tbody>
@@ -416,10 +524,10 @@ export function ProductView({
           </ul>
         </section>
       )}
-      {product.environment && (
+      {environment && (
         <section>
           <h2 className="text-xl">Användningsmiljö</h2>
-          <p className="mt-3 text-sm">{product.environment}</p>
+          <p className="mt-3 text-sm">{environment}</p>
         </section>
       )}
       {(product.warranty || product.leadTime) && (
@@ -466,11 +574,23 @@ export function ProductView({
       )}
       <section>
         <h2 className="text-xl">Dokument och underlag</h2>
-        <p className="mt-3 border border-dashed border-line bg-paper px-4 py-5 text-sm text-muted">
-          Inga verifierade datablad, CAD-filer eller certifikat är publicerade för den här
-          produkten. Sektionen döljs i produktion när den är tom; den visas här för att visa
-          hur luckor hanteras. Vi skriver inte att filer finns på begäran.
-        </p>
+        {product.documentPolicy ? (
+          <p className="mt-3 border border-line bg-paper px-4 py-5 text-sm">{product.documentPolicy}</p>
+        ) : (
+          <p className="mt-3 border border-dashed border-line bg-paper px-4 py-5 text-sm text-muted">
+            Inga verifierade datablad, CAD-filer eller certifikat är publicerade för den här
+            produkten. Sektionen döljs i produktion när den är tom; den visas här för att visa hur
+            luckor hanteras. Vi skriver inte att filer finns på begäran.
+          </p>
+        )}
+        {sourceUrl && (
+          <p className="mt-3 text-sm">
+            Källa:{' '}
+            <a className="underline" href={sourceUrl} rel="noreferrer" target="_blank">
+              {sourceUrl.replace('https://', '')}
+            </a>
+          </p>
+        )}
       </section>
       {related.length > 0 && (
         <section id="serie">
@@ -492,6 +612,7 @@ export function ProductView({
     return (
       <article>
         <LayoutNote title="B. Arkitekturledd" />
+        <ReviewNote product={product} />
         <div className="-mx-4 md:mx-0">
           <div className="max-h-[72vh] overflow-hidden bg-ink">
             <img
@@ -517,6 +638,7 @@ export function ProductView({
     return (
       <article>
         <LayoutNote title="A. Upphandlingsledd" />
+        <ReviewNote product={product} />
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">{gallery}</div>
           <div className="lg:col-span-8">
@@ -543,6 +665,7 @@ export function ProductView({
   return (
     <article>
       <LayoutNote title="C. Hybrid — rekommenderas" />
+      <ReviewNote product={product} />
       <nav aria-label="På sidan" className="mb-6 flex flex-wrap gap-2 text-xs">
         {jump.map((j) => (
           <a
@@ -588,6 +711,18 @@ function LayoutNote({ title }: { title: string }) {
     <p className="mb-6 border border-line bg-paper px-3 py-2 text-xs text-muted">
       Produktsidelayout: <strong className="text-ink">{title}</strong>. Tomma sektioner utelämnas.
       Inga mått, certifikat eller dokument är påhittade.
+    </p>
+  )
+}
+
+function ReviewNote({ product }: { product: Product }) {
+  if (!product.reviewNote) return null
+  return (
+    <p className="mb-6 border border-dashed border-line bg-sheet px-3 py-2 text-sm">
+      {product.reviewNote}{' '}
+      <Link className="underline" to="/design/binsignia">
+        Öppna utkastöversikten
+      </Link>
     </p>
   )
 }
