@@ -25,13 +25,13 @@ export function SiteFooter({ area }: { area: AreaId }) {
             {area === 'offentlig' ? (
               <>
                 <li>
+                  <Link to="/produkter">Alla kategorier</Link>
+                </li>
+                <li>
+                  <Link to="/produkter/lek-aktivitet">Lek och aktivitet</Link>
+                </li>
+                <li>
                   <Link to="/produkter/parkmobler">Parkmöbler</Link>
-                </li>
-                <li>
-                  <Link to="/produkt/papperskorg-rodberga-100">Avfall och återvinning</Link>
-                </li>
-                <li>
-                  <Link to="/produkter/parkmobler/parkbankar">Parkbänkar</Link>
                 </li>
               </>
             ) : area === 'skola' ? (

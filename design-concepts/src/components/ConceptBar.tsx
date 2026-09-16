@@ -4,17 +4,15 @@ import { useQuote } from '../context/QuoteContext'
 
 const screens = [
   { to: '/', label: 'Startsida' },
-  { to: '/produkter/parkmobler', label: 'Kategori' },
-  { to: '/produkter/parkmobler/parkbankar', label: 'Produktlista' },
+  { to: '/produkter', label: 'Sortiment' },
+  { to: '/produkter/lek-aktivitet', label: 'Lek' },
+  { to: '/produkter/lek-aktivitet/gungor', label: 'Gungor' },
+  { to: '/produkter/parkmobler/parkbankar', label: 'Parkbänkar' },
   { to: '/produkt/parkbank-arsta', label: 'Produktsida C' },
-  { to: '/design/produktsida-a', label: 'Produktsida A' },
-  { to: '/design/produktsida-b', label: 'Produktsida B' },
   { to: '/offertlista', label: 'Offertlista' },
   { to: '/offert', label: 'Offertformulär' },
-  { to: '/miljoer/bostadsgard', label: 'Miljö' },
   { to: '/vard', label: 'Vård' },
   { to: '/skola', label: 'Skola' },
-  { to: '/design/riktningar', label: 'Tre riktningar' },
 ]
 
 export function ConceptBar() {

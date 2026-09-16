@@ -18,6 +18,9 @@ Dev-servern lyssnar på port **4317**.
 Se `/design` i prototypen, eller:
 
 - `/` startsida offentlig miljö
+- `/produkter` sju huvudkategorier
+- `/produkter/lek-aktivitet` underkategorier (gungor, lekställ, lekhus …)
+- `/produkter/lek-aktivitet/gungor` tom underkategori (utkast från live-sajten)
 - `/produkter/parkmobler` huvudkategori
 - `/produkter/parkmobler/parkbankar` lista + filter
 - `/produkt/parkbank-arsta` hybrid produktsida (C)

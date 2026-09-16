@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from './components/AppShell'
-import { HomePage, CategoryPage, ProductListPage } from './pages/PublicPages'
+import { HomePage } from './pages/PublicPages'
+import { CatalogIndexPage, CategoryHubPage, SubcategoryListPage } from './pages/CatalogPages'
 import { ProductLayoutA, ProductLayoutB, ProductPage } from './pages/ProductPages'
 import { QuoteFormPage, QuoteListPage } from './pages/QuotePages'
 import {
@@ -21,8 +22,9 @@ export default function App() {
           <Route path="/design/riktningar" element={<DirectionsPage />} />
           <Route path="/design/produktsida-a" element={<ProductLayoutA />} />
           <Route path="/design/produktsida-b" element={<ProductLayoutB />} />
-          <Route path="/produkter/parkmobler" element={<CategoryPage />} />
-          <Route path="/produkter/parkmobler/parkbankar" element={<ProductListPage />} />
+          <Route path="/produkter" element={<CatalogIndexPage />} />
+          <Route path="/produkter/:categorySlug" element={<CategoryHubPage />} />
+          <Route path="/produkter/:categorySlug/:subcategorySlug" element={<SubcategoryListPage />} />
           <Route path="/produkt/:slug" element={<ProductPage />} />
           <Route path="/offertlista" element={<QuoteListPage />} />
           <Route path="/offert" element={<QuoteFormPage />} />

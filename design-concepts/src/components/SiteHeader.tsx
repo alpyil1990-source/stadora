@@ -110,51 +110,28 @@ export function SiteHeader({ area }: { area: AreaId }) {
 
       {mega && area === 'offentlig' && (
         <div className="hidden border-t border-line bg-sheet lg:block">
-          <div className="shell grid grid-cols-3 gap-10 py-8">
-            <div>
-              <p className="kicker">Kategorier</p>
-              <ul className="mt-3 space-y-2 text-sm">
-                {publicNav.products.map((c) => (
-                  <li key={c.name}>
-                    <Link className="hover:underline" to={c.href}>
-                      {c.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <p className="kicker">Parkmöbler</p>
-              <ul className="mt-3 space-y-2 text-sm">
-                {publicNav.products[0].children.map((c) => (
-                  <li key={c.name}>
-                    <Link className="hover:underline" to={c.href}>
-                      {c.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <p className="kicker">Verifierade exempel i konceptet</p>
-              <ul className="mt-3 space-y-2 text-sm">
-                <li>
-                  <Link className="hover:underline" to="/produkt/parkbank-arsta">
-                    Parkbänk Årsta · ST-1208
-                  </Link>
-                </li>
-                <li>
-                  <Link className="hover:underline" to="/produkt/papperskorg-rodberga-100">
-                    Papperskorg Rödberga 100
-                  </Link>
-                </li>
-                <li>
-                  <Link className="hover:underline" to="/produkt/askkopp-luna">
-                    Askkopp LUNA
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          <div className="shell grid grid-cols-2 gap-8 py-8 lg:grid-cols-4">
+            {publicNav.products.map((c) => (
+              <div key={c.name}>
+                <Link to={c.href} className="kicker hover:underline">
+                  {c.name}
+                </Link>
+                <ul className="mt-3 space-y-2 text-sm">
+                  {c.children.map((ch) => (
+                    <li key={ch.name}>
+                      <Link className="hover:underline" to={ch.href}>
+                        {ch.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="shell border-t border-line py-4 text-sm">
+            <Link className="underline" to="/produkter">
+              Alla kategorier
+            </Link>
           </div>
         </div>
       )}

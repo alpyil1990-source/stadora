@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { benches, products } from '../data/content'
+import { benches } from '../data/content'
 import { ProductCard } from '../components/ProductCard'
 
 export function HomePage() {
@@ -17,7 +17,7 @@ export function HomePage() {
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
-              to="/produkter/parkmobler"
+              to="/produkter"
               className="bg-ink px-5 py-3 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet"
             >
               Utforska sortimentet
@@ -45,16 +45,16 @@ export function HomePage() {
             <p className="kicker">Ingång efter uppdrag</p>
             <h2 className="mt-2 text-2xl md:text-3xl">Vad gäller projektet?</h2>
           </div>
-          <Link to="/produkter/parkmobler" className="text-sm underline">
+          <Link to="/produkter" className="text-sm underline">
             Alla kategorier
           </Link>
         </div>
         <div className="mt-8 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ['Park och torg', 'Bänkar och sitt för högt slitage.', '/produkter/parkmobler/parkbankar'],
-            ['Avfall', 'Kärl och stationer för gård och gata.', '/produkt/papperskorg-rodberga-100'],
-            ['Cykelparkering', 'Sortimentet kompletteras. Inga demo-SKU:er i konceptet.', '/produkter/parkmobler'],
-            ['Lek och aktivitet', 'Publiceras när verifierade produkter finns.', '/produkter/parkmobler'],
+            ['Park och torg', 'Bänkar och sitt för högt slitage.', '/produkter/parkmobler'],
+            ['Avfall', 'Kärl och stationer för gård och gata.', '/produkter/avfall-atervinning'],
+            ['Cykelparkering', 'Ställ, tak och service. Underkategorier finns, produkterna är utkast.', '/produkter/cykelparkering'],
+            ['Lek och aktivitet', 'Gungor, lekställ, lekhus. Klicka in — även tomma hyllor.', '/produkter/lek-aktivitet'],
           ].map(([title, text, href]) => (
             <Link key={title} to={href} className="bg-sheet p-6 hover:bg-paper">
               <h3 className="text-lg">{title}</h3>
@@ -116,91 +116,6 @@ export function HomePage() {
           Begär offert
         </Link>
       </section>
-    </div>
-  )
-}
-
-export function CategoryPage() {
-  return (
-    <div>
-      <p className="kicker">Sortiment</p>
-      <h1 className="mt-2 text-4xl">Parkmöbler</h1>
-      <p className="mt-4 max-w-2xl text-muted">
-        Bänkar, bord och sittsystem för parker, gårdar och gemensamma platser. I detta koncept visas
-        endast bänkar med verifierade mått och artikelnummer.
-      </p>
-      <ul className="mt-8 grid gap-3 sm:grid-cols-3">
-        <li>
-          <Link to="/produkter/parkmobler/parkbankar" className="block border border-line bg-sheet p-5">
-            <p className="font-medium">Parkbänkar</p>
-            <p className="mt-1 text-sm text-muted">5 verifierade produkter i konceptet</p>
-          </Link>
-        </li>
-        <li className="border border-dashed border-line p-5 text-sm text-muted">
-          Picknickbord — Enskede har data men ligger i förbättringsgruppen tills unika texter finns
-          för hela underkategorin.
-        </li>
-        <li className="border border-dashed border-line p-5 text-sm text-muted">
-          Modulära sitt — flera poster är utkast med demo-bild.
-        </li>
-      </ul>
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {benches.map((p) => (
-          <ProductCard key={p.slug} product={p} />
-        ))}
-        <ProductCard product={products['papperskorg-rodberga-100']} />
-      </div>
-    </div>
-  )
-}
-
-export function ProductListPage() {
-  return (
-    <div className="grid gap-8 lg:grid-cols-12">
-      <aside className="lg:col-span-3">
-        <h1 className="text-3xl">Parkbänkar</h1>
-        <p className="mt-3 text-sm text-muted">
-          Filter är en taxonomi, inte råa leverantörssträngar. Endast värden som faktiskt finns i
-          urvalet.
-        </p>
-        <form className="mt-6 space-y-5 text-sm" onSubmit={(e) => e.preventDefault()}>
-          <fieldset>
-            <legend className="font-medium">Ryggstöd</legend>
-            <label className="mt-2 flex gap-2">
-              <input type="checkbox" defaultChecked /> Med ryggstöd
-            </label>
-            <label className="mt-2 flex gap-2">
-              <input type="checkbox" defaultChecked /> Utan ryggstöd
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend className="font-medium">Montering</legend>
-            <label className="mt-2 flex gap-2">
-              <input type="checkbox" defaultChecked /> Fristående
-            </label>
-            <label className="mt-2 flex gap-2">
-              <input type="checkbox" defaultChecked /> Skruvas i underlaget
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend className="font-medium">Material</legend>
-            <label className="mt-2 flex gap-2">
-              <input type="checkbox" defaultChecked /> Arkitektonisk betong
-            </label>
-            <label className="mt-2 flex gap-2">
-              <input type="checkbox" defaultChecked /> Trä
-            </label>
-          </fieldset>
-        </form>
-      </aside>
-      <div className="lg:col-span-9">
-        <p className="text-sm text-muted">{benches.length} produkter · pris i offert</p>
-        <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          {benches.map((p) => (
-            <ProductCard key={p.slug} product={p} />
-          ))}
-        </div>
-      </div>
     </div>
   )
 }

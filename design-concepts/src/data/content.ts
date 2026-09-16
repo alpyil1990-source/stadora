@@ -1,3 +1,5 @@
+import { catalog } from './catalog'
+
 export type AreaId = 'offentlig' | 'skola' | 'vard'
 
 export type Product = {
@@ -65,30 +67,14 @@ export const areas: Record<
 }
 
 export const publicNav = {
-  products: [
-    {
-      name: 'Parkmöbler',
-      href: '/produkter/parkmobler',
-      children: [
-        { name: 'Parkbänkar', href: '/produkter/parkmobler/parkbankar' },
-        { name: 'Bord och picknick', href: '/produkter/parkmobler/parkbankar' },
-        { name: 'Modulära sitt', href: '/produkter/parkmobler/parkbankar' },
-      ],
-    },
-    {
-      name: 'Avfall och återvinning',
-      href: '/produkter/parkmobler',
-      children: [
-        { name: 'Papperskorgar', href: '/produkt/papperskorg-rodberga-100' },
-        { name: 'Askkoppar', href: '/produkt/askkopp-luna' },
-      ],
-    },
-    { name: 'Cykelparkering', href: '/produkter/parkmobler', children: [] },
-    { name: 'Väderskydd och hållplatser', href: '/produkter/parkmobler', children: [] },
-    { name: 'Lek och aktivitet', href: '/produkter/parkmobler', children: [] },
-    { name: 'Plantering', href: '/produkter/parkmobler', children: [] },
-    { name: 'Pollare och räcken', href: '/produkter/parkmobler', children: [] },
-  ],
+  products: catalog.map((c) => ({
+    name: c.name,
+    href: `/produkter/${c.slug}`,
+    children: c.children.map((s) => ({
+      name: s.name,
+      href: `/produkter/${c.slug}/${s.slug}`,
+    })),
+  })),
 }
 
 /** Only fields verified on the live Stadora product pages. Empty sections are omitted in UI. */

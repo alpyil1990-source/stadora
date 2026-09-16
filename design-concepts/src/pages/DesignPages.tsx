@@ -16,8 +16,12 @@ export function DesignIndexPage() {
         <ol className="mt-4 columns-1 gap-8 text-sm sm:columns-2">
           {[
             ['Startsida offentlig miljö', '/'],
+            ['Hela sortimentet (kategorier)', '/produkter'],
+            ['Lek och aktivitet', '/produkter/lek-aktivitet'],
+            ['Gungor (tom underkategori)', '/produkter/lek-aktivitet/gungor'],
+            ['Lekställningar', '/produkter/lek-aktivitet/lekstallningar'],
             ['Huvudkategori Parkmöbler', '/produkter/parkmobler'],
-            ['Produktlista med filter', '/produkter/parkmobler/parkbankar'],
+            ['Produktlista Parkbänkar', '/produkter/parkmobler/parkbankar'],
             ['Produktsida C hybrid (rekommenderas)', '/produkt/parkbank-arsta'],
             ['Produktsida A upphandling', '/design/produktsida-a'],
             ['Produktsida B arkitektur', '/design/produktsida-b'],
