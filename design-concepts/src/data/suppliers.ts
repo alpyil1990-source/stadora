@@ -1,3 +1,5 @@
+import { BINSIGNIA_SLUGS } from './binsignia'
+
 export type SupplierStatus = 'aktiv' | 'invantar_underlag' | 'pausad'
 
 export type SupplierContact = {
@@ -81,14 +83,8 @@ export const seedSuppliers: Supplier[] = [
     },
     address: '9 Prunului Street, Vulcan, Brașov County, 507270, Romania',
     notes:
-      'Partneravtal september 2026. Bildrätt: produktfoton, beskrivningar och övergripande spec på stadora.se. Ritningar/PDF per projekt. Drop-ship Sverige, neutral leverans. Icke-exklusivt. B2B, omvänd skattskyldighet. Listpris EUR, rabatt 15/22/30 %. Utkast: 5 av 107 modeller på webbplatsen. Hämta inte bilder från stadora.se.',
-    productSlugs: [
-      'askkopp-luna',
-      'kallsortering-albris',
-      'kallsortering-bernina',
-      'kallsortering-eiger',
-      'kallsortering-gemini',
-    ],
+      'Partneravtal september 2026. Bildrätt: produktfoton, beskrivningar och övergripande spec på stadora.se. Ritningar/PDF per projekt. Drop-ship Sverige, neutral leverans. Icke-exklusivt. B2B, omvänd skattskyldighet. Listpris EUR, rabatt 15/22/30 %. 54 serier i katalogen, 122 SKU-rader i intern lista. PETALSTEEL saknas på prislistan och är inte importerad. Hämta inte bilder från stadora.se. Leverantörens artikelnummer syns bara i admin.',
+    productSlugs: [...BINSIGNIA_SLUGS],
   },
 ]
 

@@ -1,5 +1,7 @@
 /** Intern inköpslista. Visas aldrig på den publika katalogen. */
 
+import priceRows from './generated/avfall-prices.json'
+
 export type BinsigniaDiscount = {
   min: number
   max: number | null
@@ -41,7 +43,8 @@ export const binsigniaPriceMeta = {
     'Drop-ship till slutkund i Sverige/EU. Neutral leverans: ingen BINSIGNIA-faktura eller pris i paketet. Faktura mejlas till STADORA.',
     'Garanti 12 månader från leverans. Ledtid cirka 5 veckor från orderbekräftelse (förskott).',
     'Listpriser i euro. Ingen automatisk omräkning till SEK i konceptet.',
-    'Utkastet visar fem modeller. Hela listan har 122 rader; de importeras inte förrän utkastet är godkänt.',
+    '122 SKU-rader från prislistan september 2026. Publika sidor visar serie och material, inte EUR.',
+    'PETALSTEEL (planteringskärl) finns på leverantörens webb men inte på prislistan — inte importerad.',
   ],
   lidSurchargeEur: {
     PC: { '35 l': 35, '60 l': 40, '100 l': 45 },
@@ -80,90 +83,11 @@ export type BinsigniaPriceRow = {
   sku: string
   config: string
   listEur: number
+  variant?: string
+  anomaly?: boolean
 }
 
-export const binsigniaDraftPrices: BinsigniaPriceRow[] = [
-  { slug: 'askkopp-luna', model: 'LUNA', material: 'PC', sku: '9747', config: '1 × 35 l', listEur: 490 },
-  { slug: 'askkopp-luna', model: 'LUNA', material: 'SST', sku: '9698', config: '1 × 35 l', listEur: 690 },
-
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '1 × 35 l', listEur: 490 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '1 × 60 l', listEur: 610 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '1 × 100 l', listEur: 720 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '2 × 35 l', listEur: 790 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '2 × 60 l', listEur: 1020 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '2 × 100 l', listEur: 1150 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '3 × 35 l', listEur: 1120 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '3 × 60 l', listEur: 1360 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '3 × 100 l', listEur: 1620 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '4 × 35 l', listEur: 1340 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '4 × 60 l', listEur: 1620 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'PC', sku: '1088', config: '4 × 100 l', listEur: 2150 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '1 × 35 l', listEur: 600 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '1 × 60 l', listEur: 650 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '1 × 100 l', listEur: 870 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '2 × 35 l', listEur: 1030 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '2 × 60 l', listEur: 1120 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '2 × 100 l', listEur: 1260 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '3 × 35 l', listEur: 1250 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '3 × 60 l', listEur: 1630 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '3 × 100 l', listEur: 1770 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '4 × 35 l', listEur: 1500 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '4 × 60 l', listEur: 1880 },
-  { slug: 'kallsortering-albris', model: 'ALBRIS', material: 'SST', sku: '1096', config: '4 × 100 l', listEur: 2300 },
-
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '1 × 35 l', listEur: 370 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '1 × 60 l', listEur: 470 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '1 × 100 l', listEur: 570 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '2 × 35 l', listEur: 510 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '2 × 60 l', listEur: 620 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '2 × 100 l', listEur: 710 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '3 × 35 l', listEur: 730 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '3 × 60 l', listEur: 860 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '3 × 100 l', listEur: 1040 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '4 × 35 l', listEur: 850 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '4 × 60 l', listEur: 1040 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'PC', sku: '1107', config: '4 × 100 l', listEur: 1150 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '1 × 35 l', listEur: 490 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '1 × 60 l', listEur: 620 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '1 × 100 l', listEur: 730 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '2 × 35 l', listEur: 840 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '2 × 60 l', listEur: 950 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '2 × 100 l', listEur: 1000 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '3 × 35 l', listEur: 990 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '3 × 60 l', listEur: 1130 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '3 × 100 l', listEur: 1400 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '4 × 35 l', listEur: 1250 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '4 × 60 l', listEur: 1420 },
-  { slug: 'kallsortering-bernina', model: 'BERNINA', material: 'SST', sku: '1114', config: '4 × 100 l', listEur: 1680 },
-
-  { slug: 'kallsortering-eiger', model: 'EIGER', material: 'PC', sku: '14300', config: '3 × 100 l', listEur: 2310 },
-  { slug: 'kallsortering-eiger', model: 'EIGER', material: 'SST', sku: '14333', config: '3 × 100 l', listEur: 2620 },
-
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '1 × 35 l', listEur: 720 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '1 × 60 l', listEur: 890 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '1 × 100 l', listEur: 920 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '2 × 35 l', listEur: 970 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '2 × 60 l', listEur: 1070 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '2 × 100 l', listEur: 1150 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '3 × 35 l', listEur: 1050 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '3 × 60 l', listEur: 1110 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '3 × 100 l', listEur: 1260 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '4 × 35 l', listEur: 1150 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '4 × 60 l', listEur: 1320 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'PC', sku: '8661', config: '4 × 100 l', listEur: 1470 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '1 × 35 l', listEur: 890 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '1 × 60 l', listEur: 940 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '1 × 100 l', listEur: 1030 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '2 × 35 l', listEur: 1040 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '2 × 60 l', listEur: 1120 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '2 × 100 l', listEur: 1240 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '3 × 35 l', listEur: 1170 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '3 × 60 l', listEur: 1270 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '3 × 100 l', listEur: 1420 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '4 × 35 l', listEur: 1260 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '4 × 60 l', listEur: 1400 },
-  { slug: 'kallsortering-gemini', model: 'GEMINI', material: 'SST', sku: '8532', config: '4 × 100 l', listEur: 1585 },
-]
+export const binsigniaPrices = priceRows as BinsigniaPriceRow[]
 
 export function discountForQty(qty: number): BinsigniaDiscount {
   if (qty >= 51) return binsigniaDiscounts[2]
@@ -186,5 +110,12 @@ export function formatEur(n: number) {
 }
 
 export function pricesForSlug(slug: string) {
-  return binsigniaDraftPrices.filter((r) => r.slug === slug)
+  return binsigniaPrices.filter((r) => r.slug === slug)
+}
+
+export function binsigniaModels() {
+  const featured = ['LUNA', 'ALBRIS', 'BERNINA', 'EIGER', 'GEMINI']
+  const unique = [...new Set(binsigniaPrices.map((r) => r.model))]
+  const rest = unique.filter((m) => !featured.includes(m)).sort((a, b) => a.localeCompare(b, 'sv'))
+  return [...featured.filter((m) => unique.includes(m)), ...rest]
 }

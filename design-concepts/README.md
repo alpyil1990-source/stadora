@@ -25,9 +25,9 @@ Se `/design` i prototypen, eller:
 - `/produkter/parkmobler/parkbankar` lista + filter
 - `/produkt/parkbank-arsta` hybrid produktsida (C)
 - `/produkt/papperskorg-rodberga-100` storlek (80/100 cm) — bilden byts när foto finns
-- `/produkt/askkopp-luna` material PC/SST + RAL, foton från binsignia.com
-- `/produkt/kallsortering-albris` (och BERNINA, EIGER, GEMINI)
-- `/design/binsignia` utkastöversikt innan resten av sortimentet
+- `/produkt/askkopp-luna` material PC/SST + RAL
+- `/produkter/avfall-atervinning/kallsortering` hela källsorteringsserien
+- `/design/binsignia` intern översikt av avfallskatalogen
 - `/design/produktsida-a` upphandlingsledd
 - `/design/produktsida-b` arkitekturledd
 - `/offertlista` och `/offert`
@@ -40,4 +40,4 @@ Mobil: smal viewport. Meny under 1024 px, fast offertknapp på produktsidan.
 
 ## Innehållsregel
 
-Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. BINSIGNIA-foton i utkastet är hämtade från binsignia.com med skriftligt tillstånd.
+Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin.

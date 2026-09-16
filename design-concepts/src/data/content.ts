@@ -129,7 +129,7 @@ export const publicNav = {
   })),
 }
 
-/** Parkmöbler: fält från live-sajten. Avfallsutkast: spec från leverantörens underlag, utan att namnge leverantören publikt. */
+/** Parkmöbler: fält från live-sajten. Avfall: spec från leverantörens underlag, utan att namnge leverantören publikt. */
 export const products: Record<string, Product> = {
   'parkbank-arsta': {
     slug: 'parkbank-arsta',

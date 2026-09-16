@@ -1,0 +1,4734 @@
+[
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "1 × 35 l",
+    "listEur": 490.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "1 × 60 l",
+    "listEur": 610.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "1 × 100 l",
+    "listEur": 720.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "2 × 35 l",
+    "listEur": 790.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "2 × 60 l",
+    "listEur": 1020.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "2 × 100 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "3 × 35 l",
+    "listEur": 1120.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "3 × 60 l",
+    "listEur": 1360.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "3 × 100 l",
+    "listEur": 1620.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "4 × 35 l",
+    "listEur": 1340.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "4 × 60 l",
+    "listEur": 1620.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "PC",
+    "sku": "1088",
+    "config": "4 × 100 l",
+    "listEur": 2150.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "1 × 35 l",
+    "listEur": 600.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "1 × 60 l",
+    "listEur": 650.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "1 × 100 l",
+    "listEur": 870.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "2 × 35 l",
+    "listEur": 1030.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "2 × 60 l",
+    "listEur": 1120.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "2 × 100 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "3 × 35 l",
+    "listEur": 1250.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "3 × 60 l",
+    "listEur": 1630.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "3 × 100 l",
+    "listEur": 1770.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "4 × 35 l",
+    "listEur": 1500.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "4 × 60 l",
+    "listEur": 1880.0
+  },
+  {
+    "slug": "kallsortering-albris",
+    "model": "ALBRIS",
+    "material": "SST",
+    "sku": "1096",
+    "config": "4 × 100 l",
+    "listEur": 2300.0
+  },
+  {
+    "slug": "kallsortering-ampato",
+    "model": "AMPATO",
+    "material": "PC",
+    "sku": "6335",
+    "config": "3 × 35 l",
+    "listEur": 1200.0
+  },
+  {
+    "slug": "kallsortering-ampato",
+    "model": "AMPATO",
+    "material": "PC",
+    "sku": "6335",
+    "config": "3 × 60 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-ampato",
+    "model": "AMPATO",
+    "material": "PC",
+    "sku": "6335",
+    "config": "3 × 100 l",
+    "listEur": 1440.0
+  },
+  {
+    "slug": "kallsortering-ampato",
+    "model": "AMPATO",
+    "material": "SST",
+    "sku": "6302",
+    "config": "3 × 35 l",
+    "listEur": 1320.0
+  },
+  {
+    "slug": "kallsortering-ampato",
+    "model": "AMPATO",
+    "material": "SST",
+    "sku": "6302",
+    "config": "3 × 60 l",
+    "listEur": 1480.0
+  },
+  {
+    "slug": "kallsortering-ampato",
+    "model": "AMPATO",
+    "material": "SST",
+    "sku": "6302",
+    "config": "3 × 100 l",
+    "listEur": 1630.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "PC",
+    "sku": "4738",
+    "config": "2 × 60 l",
+    "listEur": 1230.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "PC",
+    "sku": "4738",
+    "config": "2 × 100 l",
+    "listEur": 1370.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "PC",
+    "sku": "4738",
+    "config": "3 × 60 l",
+    "listEur": 1520.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "PC",
+    "sku": "4738",
+    "config": "3 × 100 l",
+    "listEur": 1870.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "PC",
+    "sku": "4738",
+    "config": "4 × 60 l",
+    "listEur": 1930.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "PC",
+    "sku": "4738",
+    "config": "4 × 100 l",
+    "listEur": 2200.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "SST",
+    "sku": "4617",
+    "config": "2 × 60 l",
+    "listEur": 1620.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "SST",
+    "sku": "4617",
+    "config": "2 × 100 l",
+    "listEur": 1890.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "SST",
+    "sku": "4617",
+    "config": "3 × 60 l",
+    "listEur": 1930.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "SST",
+    "sku": "4617",
+    "config": "3 × 100 l",
+    "listEur": 2180.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "SST",
+    "sku": "4617",
+    "config": "4 × 60 l",
+    "listEur": 2590.0
+  },
+  {
+    "slug": "kallsortering-arizaro",
+    "model": "ARIZARO",
+    "material": "SST",
+    "sku": "4617",
+    "config": "4 × 100 l",
+    "listEur": 3150.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "PC",
+    "sku": "9275",
+    "config": "1 × 60 l",
+    "listEur": 1000.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "PC",
+    "sku": "9275",
+    "config": "1 × 100 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "PC",
+    "sku": "9275",
+    "config": "2 × 60 l",
+    "listEur": 1390.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "PC",
+    "sku": "9275",
+    "config": "2 × 100 l",
+    "listEur": 1570.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "PC",
+    "sku": "9275",
+    "config": "3 × 60 l",
+    "listEur": 1710.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "PC",
+    "sku": "9275",
+    "config": "3 × 100 l",
+    "listEur": 2090.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "PC",
+    "sku": "9275",
+    "config": "4 × 60 l",
+    "listEur": 2140.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "PC",
+    "sku": "9275",
+    "config": "4 × 100 l",
+    "listEur": 2690.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "SST",
+    "sku": "9114",
+    "config": "1 × 60 l",
+    "listEur": 1190.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "SST",
+    "sku": "9114",
+    "config": "1 × 100 l",
+    "listEur": 1340.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "SST",
+    "sku": "9114",
+    "config": "2 × 60 l",
+    "listEur": 1890.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "SST",
+    "sku": "9114",
+    "config": "2 × 100 l",
+    "listEur": 2150.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "SST",
+    "sku": "9114",
+    "config": "3 × 60 l",
+    "listEur": 2260.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "SST",
+    "sku": "9114",
+    "config": "3 × 100 l",
+    "listEur": 2460.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "SST",
+    "sku": "9114",
+    "config": "4 × 60 l",
+    "listEur": 2980.0
+  },
+  {
+    "slug": "kallsortering-arizaro-at",
+    "model": "ARIZARO AT",
+    "material": "SST",
+    "sku": "9114",
+    "config": "4 × 100 l",
+    "listEur": 3423.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "PC",
+    "sku": "14384",
+    "config": "1 × 60 l",
+    "listEur": 1100.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "PC",
+    "sku": "14384",
+    "config": "1 × 100 l",
+    "listEur": 1350.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "PC",
+    "sku": "14384",
+    "config": "2 × 60 l",
+    "listEur": 1730.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "PC",
+    "sku": "14384",
+    "config": "2 × 100 l",
+    "listEur": 1840.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "PC",
+    "sku": "14384",
+    "config": "3 × 60 l",
+    "listEur": 2100.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "PC",
+    "sku": "14384",
+    "config": "3 × 100 l",
+    "listEur": 2310.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "PC",
+    "sku": "14384",
+    "config": "4 × 60 l",
+    "listEur": 2940.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "PC",
+    "sku": "14384",
+    "config": "4 × 100 l",
+    "listEur": 3260.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "SST",
+    "sku": "14513",
+    "config": "1 × 60 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "SST",
+    "sku": "14513",
+    "config": "1 × 100 l",
+    "listEur": 1680.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "SST",
+    "sku": "14513",
+    "config": "2 × 60 l",
+    "listEur": 1890.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "SST",
+    "sku": "14513",
+    "config": "2 × 100 l",
+    "listEur": 2050.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "SST",
+    "sku": "14513",
+    "config": "3 × 60 l",
+    "listEur": 2520.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "SST",
+    "sku": "14513",
+    "config": "3 × 100 l",
+    "listEur": 2830.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "SST",
+    "sku": "14513",
+    "config": "4 × 60 l",
+    "listEur": 3250.0
+  },
+  {
+    "slug": "kallsortering-arizaro-crystal",
+    "model": "ARIZARO Crystal",
+    "material": "SST",
+    "sku": "14513",
+    "config": "4 × 100 l",
+    "listEur": 3460.0
+  },
+  {
+    "slug": "kallsortering-belvedere",
+    "model": "BELVEDERE",
+    "material": "PC",
+    "sku": "1025",
+    "config": "3 × 35 l",
+    "listEur": 930.0
+  },
+  {
+    "slug": "kallsortering-belvedere",
+    "model": "BELVEDERE",
+    "material": "PC",
+    "sku": "1025",
+    "config": "3 × 60 l",
+    "listEur": 1040.0
+  },
+  {
+    "slug": "kallsortering-belvedere",
+    "model": "BELVEDERE",
+    "material": "PC",
+    "sku": "1025",
+    "config": "3 × 100 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-belvedere",
+    "model": "BELVEDERE",
+    "material": "SST",
+    "sku": "1032",
+    "config": "3 × 35 l",
+    "listEur": 1140.0
+  },
+  {
+    "slug": "kallsortering-belvedere",
+    "model": "BELVEDERE",
+    "material": "SST",
+    "sku": "1032",
+    "config": "3 × 60 l",
+    "listEur": 1250.0
+  },
+  {
+    "slug": "kallsortering-belvedere",
+    "model": "BELVEDERE",
+    "material": "SST",
+    "sku": "1032",
+    "config": "3 × 100 l",
+    "listEur": 1430.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "1 × 35 l",
+    "listEur": 370.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "1 × 60 l",
+    "listEur": 470.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "1 × 100 l",
+    "listEur": 570.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "2 × 35 l",
+    "listEur": 510.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "2 × 60 l",
+    "listEur": 620.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "2 × 100 l",
+    "listEur": 710.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "3 × 35 l",
+    "listEur": 730.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "3 × 60 l",
+    "listEur": 860.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "3 × 100 l",
+    "listEur": 1040.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "4 × 35 l",
+    "listEur": 850.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "4 × 60 l",
+    "listEur": 1040.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "PC",
+    "sku": "1107",
+    "config": "4 × 100 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "1 × 35 l",
+    "listEur": 490.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "1 × 60 l",
+    "listEur": 620.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "1 × 100 l",
+    "listEur": 730.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "2 × 35 l",
+    "listEur": 840.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "2 × 60 l",
+    "listEur": 950.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "2 × 100 l",
+    "listEur": 1000.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "3 × 35 l",
+    "listEur": 990.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "3 × 60 l",
+    "listEur": 1130.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "3 × 100 l",
+    "listEur": 1400.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "4 × 35 l",
+    "listEur": 1250.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "4 × 60 l",
+    "listEur": 1420.0
+  },
+  {
+    "slug": "kallsortering-bernina",
+    "model": "BERNINA",
+    "material": "SST",
+    "sku": "1114",
+    "config": "4 × 100 l",
+    "listEur": 1680.0
+  },
+  {
+    "slug": "kallsortering-bonanza",
+    "model": "BONANZA",
+    "material": "PC",
+    "sku": "1057",
+    "config": "3 × 35 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-bonanza",
+    "model": "BONANZA",
+    "material": "PC",
+    "sku": "1057",
+    "config": "3 × 60 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-bonanza",
+    "model": "BONANZA",
+    "material": "PC",
+    "sku": "1057",
+    "config": "3 × 100 l",
+    "listEur": 1450.0
+  },
+  {
+    "slug": "kallsortering-bonanza",
+    "model": "BONANZA",
+    "material": "SST",
+    "sku": "1064",
+    "config": "3 × 35 l",
+    "listEur": 1380.0
+  },
+  {
+    "slug": "kallsortering-bonanza",
+    "model": "BONANZA",
+    "material": "SST",
+    "sku": "1064",
+    "config": "3 × 60 l",
+    "listEur": 1480.0
+  },
+  {
+    "slug": "kallsortering-bonanza",
+    "model": "BONANZA",
+    "material": "SST",
+    "sku": "1064",
+    "config": "3 × 100 l",
+    "listEur": 1710.0
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "PC",
+    "sku": "5977",
+    "config": "2 × 35 l",
+    "listEur": 1240.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "PC",
+    "sku": "5977",
+    "config": "2 × 60 l",
+    "listEur": 1310.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "PC",
+    "sku": "5977",
+    "config": "2 × 100 l",
+    "listEur": 1390.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "PC",
+    "sku": "5977",
+    "config": "3 × 35 l",
+    "listEur": 1340.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "PC",
+    "sku": "5977",
+    "config": "3 × 60 l",
+    "listEur": 1330.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "PC",
+    "sku": "5977",
+    "config": "3 × 100 l",
+    "listEur": 1720.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "PC",
+    "sku": "5977",
+    "config": "4 × 35 l",
+    "listEur": 1600.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "PC",
+    "sku": "5977",
+    "config": "4 × 60 l",
+    "listEur": 1700.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "PC",
+    "sku": "5977",
+    "config": "4 × 100 l",
+    "listEur": 1880.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "SST",
+    "sku": "5871",
+    "config": "2 × 35 l",
+    "listEur": 1410.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "SST",
+    "sku": "5871",
+    "config": "2 × 60 l",
+    "listEur": 1490.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "SST",
+    "sku": "5871",
+    "config": "2 × 100 l",
+    "listEur": 1600.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "SST",
+    "sku": "5871",
+    "config": "3 × 35 l",
+    "listEur": 1550.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "SST",
+    "sku": "5871",
+    "config": "3 × 60 l",
+    "listEur": 1700.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "SST",
+    "sku": "5871",
+    "config": "3 × 100 l",
+    "listEur": 1970.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "SST",
+    "sku": "5871",
+    "config": "4 × 35 l",
+    "listEur": 1900.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "SST",
+    "sku": "5871",
+    "config": "4 × 60 l",
+    "listEur": 2040.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-brend",
+    "model": "BREND",
+    "material": "SST",
+    "sku": "5871",
+    "config": "4 × 100 l",
+    "listEur": 2370.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-cachi",
+    "model": "CACHI",
+    "material": "PC",
+    "sku": "4884",
+    "config": "4 × 35 l",
+    "listEur": 1050.0
+  },
+  {
+    "slug": "kallsortering-cachi",
+    "model": "CACHI",
+    "material": "PC",
+    "sku": "4884",
+    "config": "4 × 60 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-cachi",
+    "model": "CACHI",
+    "material": "PC",
+    "sku": "4884",
+    "config": "4 × 100 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-cachi",
+    "model": "CACHI",
+    "material": "SST",
+    "sku": "4859",
+    "config": "4 × 35 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-cachi",
+    "model": "CACHI",
+    "material": "SST",
+    "sku": "4859",
+    "config": "4 × 60 l",
+    "listEur": 1450.0
+  },
+  {
+    "slug": "kallsortering-cachi",
+    "model": "CACHI",
+    "material": "SST",
+    "sku": "4859",
+    "config": "4 × 100 l",
+    "listEur": 1560.0
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386",
+    "config": "3 × 35 l",
+    "listEur": 890.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386",
+    "config": "3 × 60 l",
+    "listEur": 990.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386",
+    "config": "3 × 100 l",
+    "listEur": 1090.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386",
+    "config": "4 × 35 l",
+    "listEur": 1110.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386",
+    "config": "4 × 60 l",
+    "listEur": 1260.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386",
+    "config": "4 × 100 l",
+    "listEur": 1360.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386-1",
+    "config": "3 × 35 l",
+    "listEur": 880.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386-1",
+    "config": "3 × 60 l",
+    "listEur": 980.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386-1",
+    "config": "3 × 100 l",
+    "listEur": 1080.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386-1",
+    "config": "4 × 35 l",
+    "listEur": 1100.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386-1",
+    "config": "4 × 60 l",
+    "listEur": 1250.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "PC",
+    "sku": "5386-1",
+    "config": "4 × 100 l",
+    "listEur": 1350.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288",
+    "config": "3 × 35 l",
+    "listEur": 1150.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288",
+    "config": "3 × 60 l",
+    "listEur": 1250.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288",
+    "config": "3 × 100 l",
+    "listEur": 1350.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288",
+    "config": "4 × 35 l",
+    "listEur": 1370.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288",
+    "config": "4 × 60 l",
+    "listEur": 1540.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288",
+    "config": "4 × 100 l",
+    "listEur": 1660.0,
+    "variant": "CR"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288-1",
+    "config": "3 × 35 l",
+    "listEur": 1140.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288-1",
+    "config": "3 × 60 l",
+    "listEur": 1240.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288-1",
+    "config": "3 × 100 l",
+    "listEur": 1340.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288-1",
+    "config": "4 × 35 l",
+    "listEur": 1360.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288-1",
+    "config": "4 × 60 l",
+    "listEur": 1530.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-casiri",
+    "model": "CASIRI",
+    "material": "SST",
+    "sku": "5288-1",
+    "config": "4 × 100 l",
+    "listEur": 1650.0,
+    "variant": "CD"
+  },
+  {
+    "slug": "kallsortering-chani",
+    "model": "CHANI",
+    "material": "PC",
+    "sku": "4934",
+    "config": "4 × 35 l",
+    "listEur": 1050.0
+  },
+  {
+    "slug": "kallsortering-chani",
+    "model": "CHANI",
+    "material": "PC",
+    "sku": "4934",
+    "config": "4 × 60 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-chani",
+    "model": "CHANI",
+    "material": "PC",
+    "sku": "4934",
+    "config": "4 × 100 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-chani",
+    "model": "CHANI",
+    "material": "SST",
+    "sku": "4909",
+    "config": "4 × 35 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-chani",
+    "model": "CHANI",
+    "material": "SST",
+    "sku": "4909",
+    "config": "4 × 60 l",
+    "listEur": 1450.0
+  },
+  {
+    "slug": "kallsortering-chani",
+    "model": "CHANI",
+    "material": "SST",
+    "sku": "4909",
+    "config": "4 × 100 l",
+    "listEur": 1560.0
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "PC",
+    "sku": "935",
+    "config": "3 × 35 l",
+    "listEur": 1050.0
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "PC",
+    "sku": "935",
+    "config": "3 × 60 l",
+    "listEur": 1210.0
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "PC",
+    "sku": "935",
+    "config": "3 × 100 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "PC",
+    "sku": "935-1",
+    "config": "3 × 35 l",
+    "listEur": 1350.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "PC",
+    "sku": "935-1",
+    "config": "3 × 60 l",
+    "listEur": 1470.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "PC",
+    "sku": "935-1",
+    "config": "3 × 100 l",
+    "listEur": 1630.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "SST",
+    "sku": "943",
+    "config": "3 × 35 l",
+    "listEur": 1190.0
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "SST",
+    "sku": "943",
+    "config": "3 × 60 l",
+    "listEur": 1500.0
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "SST",
+    "sku": "943",
+    "config": "3 × 100 l",
+    "listEur": 166.0,
+    "anomaly": true
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "SST",
+    "sku": "943-1",
+    "config": "3 × 35 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "SST",
+    "sku": "943-1",
+    "config": "3 × 60 l",
+    "listEur": 1680.0
+  },
+  {
+    "slug": "kallsortering-cimon",
+    "model": "CIMON",
+    "material": "SST",
+    "sku": "943-1",
+    "config": "3 × 100 l",
+    "listEur": 1890.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "PC",
+    "sku": "9501",
+    "config": "1 × 35 l",
+    "listEur": 790.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "PC",
+    "sku": "9501",
+    "config": "1 × 60 l",
+    "listEur": 860.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "PC",
+    "sku": "9501",
+    "config": "1 × 100 l",
+    "listEur": 980.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "PC",
+    "sku": "9501",
+    "config": "2 × 35 l",
+    "listEur": 990.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "PC",
+    "sku": "9501",
+    "config": "2 × 60 l",
+    "listEur": 1170.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "PC",
+    "sku": "9501",
+    "config": "2 × 100 l",
+    "listEur": 1420.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "SST",
+    "sku": "9436",
+    "config": "1 × 35 l",
+    "listEur": 890.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "SST",
+    "sku": "9436",
+    "config": "1 × 60 l",
+    "listEur": 980.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "SST",
+    "sku": "9436",
+    "config": "1 × 100 l",
+    "listEur": 1050.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "SST",
+    "sku": "9436",
+    "config": "2 × 35 l",
+    "listEur": 1100.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "SST",
+    "sku": "9436",
+    "config": "2 × 60 l",
+    "listEur": 1300.0
+  },
+  {
+    "slug": "kallsortering-denali",
+    "model": "DENALI",
+    "material": "SST",
+    "sku": "9436",
+    "config": "2 × 100 l",
+    "listEur": 2620.0
+  },
+  {
+    "slug": "kallsortering-ecomonde",
+    "model": "ECOMONDE",
+    "material": "PC",
+    "sku": "854",
+    "config": "3 × 35 l",
+    "listEur": 1220.0
+  },
+  {
+    "slug": "kallsortering-ecomonde",
+    "model": "ECOMONDE",
+    "material": "PC",
+    "sku": "854",
+    "config": "3 × 60 l",
+    "listEur": 1390.0
+  },
+  {
+    "slug": "kallsortering-ecomonde",
+    "model": "ECOMONDE",
+    "material": "PC",
+    "sku": "854",
+    "config": "3 × 100 l",
+    "listEur": 1600.0
+  },
+  {
+    "slug": "kallsortering-ecomonde",
+    "model": "ECOMONDE",
+    "material": "SST",
+    "sku": "858",
+    "config": "3 × 35 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-ecomonde",
+    "model": "ECOMONDE",
+    "material": "SST",
+    "sku": "858",
+    "config": "3 × 60 l",
+    "listEur": 1570.0
+  },
+  {
+    "slug": "kallsortering-ecomonde",
+    "model": "ECOMONDE",
+    "material": "SST",
+    "sku": "858",
+    "config": "3 × 100 l",
+    "listEur": 1730.0
+  },
+  {
+    "slug": "kallsortering-eiger",
+    "model": "EIGER",
+    "material": "PC",
+    "sku": "14300",
+    "config": "3 × 100 l",
+    "listEur": 2310.0
+  },
+  {
+    "slug": "kallsortering-eiger",
+    "model": "EIGER",
+    "material": "SST",
+    "sku": "14333",
+    "config": "3 × 100 l",
+    "listEur": 2620.0
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "PC",
+    "sku": "879",
+    "config": "3 × 35 l",
+    "listEur": 1230.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "PC",
+    "sku": "879",
+    "config": "3 × 60 l",
+    "listEur": 1510.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "PC",
+    "sku": "879",
+    "config": "3 × 100 l",
+    "listEur": 1680.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "PC",
+    "sku": "879-1",
+    "config": "3 × 35 l",
+    "listEur": 1230.0,
+    "variant": "rund"
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "PC",
+    "sku": "879-1",
+    "config": "3 × 60 l",
+    "listEur": 1510.0,
+    "variant": "rund"
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "PC",
+    "sku": "879-1",
+    "config": "3 × 100 l",
+    "listEur": 1680.0,
+    "variant": "rund"
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "SST",
+    "sku": "887",
+    "config": "3 × 35 l",
+    "listEur": 1350.0
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "SST",
+    "sku": "887",
+    "config": "3 × 60 l",
+    "listEur": 1670.0
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "SST",
+    "sku": "887",
+    "config": "3 × 100 l",
+    "listEur": 1780.0
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "SST",
+    "sku": "887-1",
+    "config": "3 × 35 l",
+    "listEur": 1350.0
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "SST",
+    "sku": "887-1",
+    "config": "3 × 60 l",
+    "listEur": 1670.0
+  },
+  {
+    "slug": "kallsortering-elm",
+    "model": "ELM",
+    "material": "SST",
+    "sku": "887-1",
+    "config": "3 × 100 l",
+    "listEur": 1780.0
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "PC",
+    "sku": "894",
+    "config": "3 × 35 l",
+    "listEur": 1330.0,
+    "variant": "ram · trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "PC",
+    "sku": "894",
+    "config": "3 × 60 l",
+    "listEur": 1510.0,
+    "variant": "ram · trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "PC",
+    "sku": "894",
+    "config": "3 × 100 l",
+    "listEur": 1680.0,
+    "variant": "ram · trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "PC",
+    "sku": "894-1",
+    "config": "3 × 35 l",
+    "listEur": 1330.0,
+    "variant": "rund · trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "PC",
+    "sku": "894-1",
+    "config": "3 × 60 l",
+    "listEur": 1510.0,
+    "variant": "rund · trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "PC",
+    "sku": "894-1",
+    "config": "3 × 100 l",
+    "listEur": 1680.0,
+    "variant": "rund · trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "SST",
+    "sku": "901",
+    "config": "3 × 35 l",
+    "listEur": 1460.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "SST",
+    "sku": "901",
+    "config": "3 × 60 l",
+    "listEur": 1770.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "SST",
+    "sku": "901",
+    "config": "3 × 100 l",
+    "listEur": 1890.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "SST",
+    "sku": "901-1",
+    "config": "3 × 35 l",
+    "listEur": 1460.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "SST",
+    "sku": "901-1",
+    "config": "3 × 60 l",
+    "listEur": 1780.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-elm-tra",
+    "model": "ELM trä",
+    "material": "SST",
+    "sku": "901-1",
+    "config": "3 × 100 l",
+    "listEur": 1890.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-eridani",
+    "model": "ERIDANI",
+    "material": "PC",
+    "sku": "9961",
+    "config": "1 × 35 l",
+    "listEur": 810.0
+  },
+  {
+    "slug": "kallsortering-eridani",
+    "model": "ERIDANI",
+    "material": "PC",
+    "sku": "9961",
+    "config": "1 × 60 l",
+    "listEur": 900.0
+  },
+  {
+    "slug": "kallsortering-eridani",
+    "model": "ERIDANI",
+    "material": "PC",
+    "sku": "9961",
+    "config": "1 × 100 l",
+    "listEur": 1040.0
+  },
+  {
+    "slug": "kallsortering-eridani",
+    "model": "ERIDANI",
+    "material": "SST",
+    "sku": "9928",
+    "config": "1 × 35 l",
+    "listEur": 910.0
+  },
+  {
+    "slug": "kallsortering-eridani",
+    "model": "ERIDANI",
+    "material": "SST",
+    "sku": "9928",
+    "config": "1 × 60 l",
+    "listEur": 1010.0
+  },
+  {
+    "slug": "kallsortering-eridani",
+    "model": "ERIDANI",
+    "material": "SST",
+    "sku": "9928",
+    "config": "1 × 100 l",
+    "listEur": 1200.0
+  },
+  {
+    "slug": "papperskorg-finlay",
+    "model": "FINLAY",
+    "material": "PC",
+    "sku": "9599",
+    "config": "1 × 35 l",
+    "listEur": 670.0
+  },
+  {
+    "slug": "papperskorg-finlay",
+    "model": "FINLAY",
+    "material": "PC",
+    "sku": "9599",
+    "config": "1 × 60 l",
+    "listEur": 820.0
+  },
+  {
+    "slug": "papperskorg-finlay",
+    "model": "FINLAY",
+    "material": "PC",
+    "sku": "9599",
+    "config": "1 × 100 l",
+    "listEur": 1000.0
+  },
+  {
+    "slug": "papperskorg-finlay",
+    "model": "FINLAY",
+    "material": "SST",
+    "sku": "9566",
+    "config": "1 × 35 l",
+    "listEur": 810.0
+  },
+  {
+    "slug": "papperskorg-finlay",
+    "model": "FINLAY",
+    "material": "SST",
+    "sku": "9566",
+    "config": "1 × 60 l",
+    "listEur": 940.0
+  },
+  {
+    "slug": "papperskorg-finlay",
+    "model": "FINLAY",
+    "material": "SST",
+    "sku": "9566",
+    "config": "1 × 100 l",
+    "listEur": 1090.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "1 × 35 l",
+    "listEur": 720.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "1 × 60 l",
+    "listEur": 890.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "1 × 100 l",
+    "listEur": 920.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "2 × 35 l",
+    "listEur": 970.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "2 × 60 l",
+    "listEur": 1070.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "2 × 100 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "3 × 35 l",
+    "listEur": 1050.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "3 × 60 l",
+    "listEur": 1110.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "3 × 100 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "4 × 35 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "4 × 60 l",
+    "listEur": 1320.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "PC",
+    "sku": "8661",
+    "config": "4 × 100 l",
+    "listEur": 1470.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "1 × 35 l",
+    "listEur": 890.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "1 × 60 l",
+    "listEur": 940.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "1 × 100 l",
+    "listEur": 1030.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "2 × 35 l",
+    "listEur": 1040.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "2 × 60 l",
+    "listEur": 1120.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "2 × 100 l",
+    "listEur": 1240.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "3 × 35 l",
+    "listEur": 1170.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "3 × 60 l",
+    "listEur": 1270.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "3 × 100 l",
+    "listEur": 1420.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "4 × 35 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "4 × 60 l",
+    "listEur": 1400.0
+  },
+  {
+    "slug": "kallsortering-gemini",
+    "model": "GEMINI",
+    "material": "SST",
+    "sku": "8532",
+    "config": "4 × 100 l",
+    "listEur": 1585.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "PC",
+    "sku": "5580",
+    "config": "3 × 35 l",
+    "listEur": 1120.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "PC",
+    "sku": "5580",
+    "config": "3 × 60 l",
+    "listEur": 1360.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "PC",
+    "sku": "5580",
+    "config": "3 × 100 l",
+    "listEur": 1620.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "PC",
+    "sku": "5580",
+    "config": "4 × 35 l",
+    "listEur": 1340.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "PC",
+    "sku": "5580",
+    "config": "4 × 60 l",
+    "listEur": 1620.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "PC",
+    "sku": "5580",
+    "config": "4 × 100 l",
+    "listEur": 2150.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "SST",
+    "sku": "5483",
+    "config": "3 × 35 l",
+    "listEur": 1250.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "SST",
+    "sku": "5483",
+    "config": "3 × 60 l",
+    "listEur": 1630.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "SST",
+    "sku": "5483",
+    "config": "3 × 100 l",
+    "listEur": 1770.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "SST",
+    "sku": "5483",
+    "config": "4 × 35 l",
+    "listEur": 1500.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "SST",
+    "sku": "5483",
+    "config": "4 × 60 l",
+    "listEur": 1880.0
+  },
+  {
+    "slug": "kallsortering-kandel",
+    "model": "KANDEL",
+    "material": "SST",
+    "sku": "5483",
+    "config": "4 × 100 l",
+    "listEur": 2300.0
+  },
+  {
+    "slug": "kallsortering-katyn",
+    "model": "KATYN",
+    "material": "PC",
+    "sku": "9829",
+    "config": "1 × 35 l",
+    "listEur": 830.0
+  },
+  {
+    "slug": "kallsortering-katyn",
+    "model": "KATYN",
+    "material": "PC",
+    "sku": "9829",
+    "config": "1 × 60 l",
+    "listEur": 940.0
+  },
+  {
+    "slug": "kallsortering-katyn",
+    "model": "KATYN",
+    "material": "PC",
+    "sku": "9829",
+    "config": "1 × 100 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-katyn",
+    "model": "KATYN",
+    "material": "SST",
+    "sku": "9796",
+    "config": "1 × 35 l",
+    "listEur": 890.0
+  },
+  {
+    "slug": "kallsortering-katyn",
+    "model": "KATYN",
+    "material": "SST",
+    "sku": "9796",
+    "config": "1 × 60 l",
+    "listEur": 1050.0
+  },
+  {
+    "slug": "kallsortering-katyn",
+    "model": "KATYN",
+    "material": "SST",
+    "sku": "9796",
+    "config": "1 × 100 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-kobuk",
+    "model": "KOBUK",
+    "material": "PC",
+    "sku": "9665",
+    "config": "2 × 35 l",
+    "listEur": 890.0
+  },
+  {
+    "slug": "kallsortering-kobuk",
+    "model": "KOBUK",
+    "material": "PC",
+    "sku": "9665",
+    "config": "2 × 60 l",
+    "listEur": 1040.0
+  },
+  {
+    "slug": "kallsortering-kobuk",
+    "model": "KOBUK",
+    "material": "PC",
+    "sku": "9665",
+    "config": "2 × 100 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-kobuk",
+    "model": "KOBUK",
+    "material": "SST",
+    "sku": "9632",
+    "config": "2 × 35 l",
+    "listEur": 1000.0
+  },
+  {
+    "slug": "kallsortering-kobuk",
+    "model": "KOBUK",
+    "material": "SST",
+    "sku": "9632",
+    "config": "2 × 60 l",
+    "listEur": 1110.0
+  },
+  {
+    "slug": "kallsortering-kobuk",
+    "model": "KOBUK",
+    "material": "SST",
+    "sku": "9632",
+    "config": "2 × 100 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-kunka",
+    "model": "KUNKA",
+    "material": "PC",
+    "sku": "6269",
+    "config": "4 × 35 l",
+    "listEur": 1210.0
+  },
+  {
+    "slug": "kallsortering-kunka",
+    "model": "KUNKA",
+    "material": "PC",
+    "sku": "6269",
+    "config": "4 × 60 l",
+    "listEur": 1330.0
+  },
+  {
+    "slug": "kallsortering-kunka",
+    "model": "KUNKA",
+    "material": "PC",
+    "sku": "6269",
+    "config": "4 × 100 l",
+    "listEur": 1450.0
+  },
+  {
+    "slug": "kallsortering-kunka",
+    "model": "KUNKA",
+    "material": "SST",
+    "sku": "6236",
+    "config": "4 × 35 l",
+    "listEur": 1420.0
+  },
+  {
+    "slug": "kallsortering-kunka",
+    "model": "KUNKA",
+    "material": "SST",
+    "sku": "6236",
+    "config": "4 × 60 l",
+    "listEur": 1620.0
+  },
+  {
+    "slug": "kallsortering-kunka",
+    "model": "KUNKA",
+    "material": "SST",
+    "sku": "6236",
+    "config": "4 × 100 l",
+    "listEur": 1840.0
+  },
+  {
+    "slug": "askkopp-luna",
+    "model": "LUNA",
+    "material": "PC",
+    "sku": "9747",
+    "config": "1 × 35 l",
+    "listEur": 490.0
+  },
+  {
+    "slug": "askkopp-luna",
+    "model": "LUNA",
+    "material": "SST",
+    "sku": "9698",
+    "config": "1 × 35 l",
+    "listEur": 690.0
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "PC",
+    "sku": "951",
+    "config": "3 × 35 l",
+    "listEur": 1050.0
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "PC",
+    "sku": "951",
+    "config": "3 × 60 l",
+    "listEur": 1210.0
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "PC",
+    "sku": "951",
+    "config": "3 × 100 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "PC",
+    "sku": "951-1",
+    "config": "3 × 35 l",
+    "listEur": 1350.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "PC",
+    "sku": "951-1",
+    "config": "3 × 60 l",
+    "listEur": 1470.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "PC",
+    "sku": "951-1",
+    "config": "3 × 100 l",
+    "listEur": 1630.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "SST",
+    "sku": "958",
+    "config": "3 × 35 l",
+    "listEur": 1190.0
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "SST",
+    "sku": "958",
+    "config": "3 × 60 l",
+    "listEur": 1500.0
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "SST",
+    "sku": "958",
+    "config": "3 × 100 l",
+    "listEur": 1660.0
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "SST",
+    "sku": "958-1",
+    "config": "3 × 35 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "SST",
+    "sku": "958-1",
+    "config": "3 × 60 l",
+    "listEur": 1680.0
+  },
+  {
+    "slug": "kallsortering-medele",
+    "model": "MEDELE",
+    "material": "SST",
+    "sku": "958-1",
+    "config": "3 × 100 l",
+    "listEur": 1890.0
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191",
+    "config": "3 × 35 l",
+    "listEur": 890.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191",
+    "config": "3 × 60 l",
+    "listEur": 990.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191",
+    "config": "3 × 100 l",
+    "listEur": 1090.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191",
+    "config": "4 × 35 l",
+    "listEur": 1110.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191",
+    "config": "4 × 60 l",
+    "listEur": 1260.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191",
+    "config": "4 × 100 l",
+    "listEur": 1360.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191-1",
+    "config": "3 × 35 l",
+    "listEur": 890.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191-1",
+    "config": "3 × 60 l",
+    "listEur": 990.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191-1",
+    "config": "3 × 100 l",
+    "listEur": 1090.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191-1",
+    "config": "4 × 35 l",
+    "listEur": 1110.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191-1",
+    "config": "4 × 60 l",
+    "listEur": 1260.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "PC",
+    "sku": "5191-1",
+    "config": "4 × 100 l",
+    "listEur": 1360.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093",
+    "config": "3 × 35 l",
+    "listEur": 1150.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093",
+    "config": "3 × 60 l",
+    "listEur": 1260.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093",
+    "config": "3 × 100 l",
+    "listEur": 1350.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093",
+    "config": "4 × 35 l",
+    "listEur": 1380.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093",
+    "config": "4 × 60 l",
+    "listEur": 1540.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093",
+    "config": "4 × 100 l",
+    "listEur": 1660.0,
+    "variant": "C"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093-1",
+    "config": "3 × 35 l",
+    "listEur": 1150.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093-1",
+    "config": "3 × 60 l",
+    "listEur": 1260.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093-1",
+    "config": "3 × 100 l",
+    "listEur": 1350.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093-1",
+    "config": "4 × 35 l",
+    "listEur": 1380.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093-1",
+    "config": "4 × 60 l",
+    "listEur": 1540.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-medusa",
+    "model": "MEDUSA",
+    "material": "SST",
+    "sku": "5093-1",
+    "config": "4 × 100 l",
+    "listEur": 1660.0,
+    "variant": "F"
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "PC",
+    "sku": "5026",
+    "config": "3 × 35 l",
+    "listEur": 890.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "PC",
+    "sku": "5026",
+    "config": "3 × 60 l",
+    "listEur": 990.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "PC",
+    "sku": "5026",
+    "config": "3 × 100 l",
+    "listEur": 1090.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "PC",
+    "sku": "5026",
+    "config": "4 × 35 l",
+    "listEur": 1110.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "PC",
+    "sku": "5026",
+    "config": "4 × 60 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "PC",
+    "sku": "5026",
+    "config": "4 × 100 l",
+    "listEur": 1360.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "SST",
+    "sku": "4959",
+    "config": "3 × 35 l",
+    "listEur": 1170.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "SST",
+    "sku": "4959",
+    "config": "3 × 60 l",
+    "listEur": 1290.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "SST",
+    "sku": "4959",
+    "config": "3 × 100 l",
+    "listEur": 1420.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "SST",
+    "sku": "4959",
+    "config": "4 × 35 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "SST",
+    "sku": "4959",
+    "config": "4 × 60 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-misti",
+    "model": "MISTI",
+    "material": "SST",
+    "sku": "4959",
+    "config": "4 × 100 l",
+    "listEur": 1600.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "PC",
+    "sku": "847",
+    "config": "3 × 35 l",
+    "listEur": 1000.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "PC",
+    "sku": "847",
+    "config": "3 × 60 l",
+    "listEur": 1240.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "PC",
+    "sku": "847",
+    "config": "3 × 100 l",
+    "listEur": 1360.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "PC",
+    "sku": "847",
+    "config": "4 × 35 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "PC",
+    "sku": "847",
+    "config": "4 × 60 l",
+    "listEur": 1380.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "PC",
+    "sku": "847",
+    "config": "4 × 100 l",
+    "listEur": 1520.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "SST",
+    "sku": "852",
+    "config": "3 × 35 l",
+    "listEur": 1200.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "SST",
+    "sku": "852",
+    "config": "3 × 60 l",
+    "listEur": 1300.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "SST",
+    "sku": "852",
+    "config": "3 × 100 l",
+    "listEur": 1520.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "SST",
+    "sku": "852",
+    "config": "4 × 35 l",
+    "listEur": 1400.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "SST",
+    "sku": "852",
+    "config": "4 × 60 l",
+    "listEur": 1620.0
+  },
+  {
+    "slug": "kallsortering-mundin",
+    "model": "MUNDIN",
+    "material": "SST",
+    "sku": "852",
+    "config": "4 × 100 l",
+    "listEur": 1720.0
+  },
+  {
+    "slug": "kallsortering-nazas",
+    "model": "NAZAS",
+    "material": "PC",
+    "sku": "8499",
+    "config": "2 × 35/60 l",
+    "listEur": 1100.0
+  },
+  {
+    "slug": "kallsortering-nazas",
+    "model": "NAZAS",
+    "material": "PC",
+    "sku": "8499",
+    "config": "2 × 60/100 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-nazas",
+    "model": "NAZAS",
+    "material": "SST",
+    "sku": "8466",
+    "config": "2 × 35/60 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-nazas",
+    "model": "NAZAS",
+    "material": "SST",
+    "sku": "8466",
+    "config": "2 × 60/100 l",
+    "listEur": 1570.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "1 × 35 l",
+    "listEur": 890.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "1 × 60 l",
+    "listEur": 970.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "1 × 100 l",
+    "listEur": 1080.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "2 × 35 l",
+    "listEur": 1020.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "2 × 60 l",
+    "listEur": 1210.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "2 × 100 l",
+    "listEur": 1360.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "3 × 35 l",
+    "listEur": 1210.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "3 × 60 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "3 × 100 l",
+    "listEur": 1410.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "4 × 35 l",
+    "listEur": 1280.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "4 × 60 l",
+    "listEur": 1410.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "PC",
+    "sku": "7884",
+    "config": "4 × 100 l",
+    "listEur": 1590.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "1 × 35 l",
+    "listEur": 1020.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "1 × 60 l",
+    "listEur": 1100.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "1 × 100 l",
+    "listEur": 1240.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "2 × 35 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "2 × 60 l",
+    "listEur": 1260.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "2 × 100 l",
+    "listEur": 1360.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "3 × 35 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "3 × 60 l",
+    "listEur": 1410.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "3 × 100 l",
+    "listEur": 1520.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "4 × 35 l",
+    "listEur": 1420.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "4 × 60 l",
+    "listEur": 1540.0
+  },
+  {
+    "slug": "kallsortering-noatak",
+    "model": "NOATAK",
+    "material": "SST",
+    "sku": "8013",
+    "config": "4 × 100 l",
+    "listEur": 1880.0
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "1 × 35 l",
+    "listEur": 730.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "1 × 60 l",
+    "listEur": 890.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "1 × 100 l",
+    "listEur": 1020.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "2 × 35 l",
+    "listEur": 870.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "2 × 60 l",
+    "listEur": 910.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "2 × 100 l",
+    "listEur": 1050.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "3 × 35 l",
+    "listEur": 990.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "3 × 60 l",
+    "listEur": 1260.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "3 × 100 l",
+    "listEur": 1550.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "4 × 35 l",
+    "listEur": 1210.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "4 × 60 l",
+    "listEur": 1630.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "PC",
+    "sku": "8271",
+    "config": "4 × 100 l",
+    "listEur": 2050.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "1 × 35 l",
+    "listEur": 830.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "1 × 60 l",
+    "listEur": 1000.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "1 × 100 l",
+    "listEur": 1100.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "2 × 35 l",
+    "listEur": 1190.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "2 × 60 l",
+    "listEur": 1230.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "2 × 100 l",
+    "listEur": 1360.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "3 × 35 l",
+    "listEur": 1300.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "3 × 60 l",
+    "listEur": 1570.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "3 × 100 l",
+    "listEur": 1660.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "4 × 35 l",
+    "listEur": 1520.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "4 × 60 l",
+    "listEur": 1940.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parana",
+    "model": "PARANA",
+    "material": "SST",
+    "sku": "8142",
+    "config": "4 × 100 l",
+    "listEur": 2360.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "1 × 35 l",
+    "listEur": 820.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "1 × 60 l",
+    "listEur": 1040.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "1 × 100 l",
+    "listEur": 1300.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "2 × 35 l",
+    "listEur": 1060.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "2 × 60 l",
+    "listEur": 1350.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "2 × 100 l",
+    "listEur": 1700.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "3 × 35 l",
+    "listEur": 1190.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "3 × 60 l",
+    "listEur": 1560.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "3 × 100 l",
+    "listEur": 2080.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "4 × 35 l",
+    "listEur": 1410.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "4 × 60 l",
+    "listEur": 1700.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "PC",
+    "sku": "8985",
+    "config": "4 × 100 l",
+    "listEur": 2540.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "1 × 35 l",
+    "listEur": 1030.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "1 × 60 l",
+    "listEur": 1200.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "1 × 100 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "2 × 35 l",
+    "listEur": 1220.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "2 × 60 l",
+    "listEur": 1510.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "2 × 100 l",
+    "listEur": 1860.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "3 × 35 l",
+    "listEur": 1340.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "3 × 60 l",
+    "listEur": 1720.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "3 × 100 l",
+    "listEur": 2080.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "4 × 35 l",
+    "listEur": 1510.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "4 × 60 l",
+    "listEur": 1810.0
+  },
+  {
+    "slug": "kallsortering-parral",
+    "model": "PARRAL",
+    "material": "SST",
+    "sku": "8856",
+    "config": "4 × 100 l",
+    "listEur": 2620.0
+  },
+  {
+    "slug": "kallsortering-pegas",
+    "model": "PEGAS",
+    "material": "PC",
+    "sku": "872",
+    "config": "3 × 60 l",
+    "listEur": 1350.0
+  },
+  {
+    "slug": "kallsortering-pegas",
+    "model": "PEGAS",
+    "material": "PC",
+    "sku": "872",
+    "config": "3 × 100 l",
+    "listEur": 1720.0
+  },
+  {
+    "slug": "kallsortering-persei",
+    "model": "PERSEI",
+    "material": "PC",
+    "sku": "8433",
+    "config": "2 × 35 l",
+    "listEur": 970.0
+  },
+  {
+    "slug": "kallsortering-persei",
+    "model": "PERSEI",
+    "material": "PC",
+    "sku": "8433",
+    "config": "2 × 60 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-persei",
+    "model": "PERSEI",
+    "material": "PC",
+    "sku": "8433",
+    "config": "2 × 100 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-persei",
+    "model": "PERSEI",
+    "material": "SST",
+    "sku": "8400",
+    "config": "2 × 35 l",
+    "listEur": 1060.0
+  },
+  {
+    "slug": "kallsortering-persei",
+    "model": "PERSEI",
+    "material": "SST",
+    "sku": "8400",
+    "config": "2 × 60 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-persei",
+    "model": "PERSEI",
+    "material": "SST",
+    "sku": "8400",
+    "config": "2 × 100 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "PC",
+    "sku": "4519",
+    "config": "2 × 35 l",
+    "listEur": 860.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "PC",
+    "sku": "4519",
+    "config": "2 × 60 l",
+    "listEur": 1030.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "PC",
+    "sku": "4519",
+    "config": "2 × 100 l",
+    "listEur": 1200.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "PC",
+    "sku": "4519",
+    "config": "3 × 35 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "PC",
+    "sku": "4519",
+    "config": "3 × 60 l",
+    "listEur": 1360.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "PC",
+    "sku": "4519",
+    "config": "3 × 100 l",
+    "listEur": 1490.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "PC",
+    "sku": "4519",
+    "config": "4 × 35 l",
+    "listEur": 1360.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "PC",
+    "sku": "4519",
+    "config": "4 × 60 l",
+    "listEur": 1550.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "PC",
+    "sku": "4519",
+    "config": "4 × 100 l",
+    "listEur": 1590.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "SST",
+    "sku": "4421",
+    "config": "2 × 35 l",
+    "listEur": 1070.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "SST",
+    "sku": "4421",
+    "config": "2 × 60 l",
+    "listEur": 1170.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "SST",
+    "sku": "4421",
+    "config": "2 × 100 l",
+    "listEur": 1220.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "SST",
+    "sku": "4421",
+    "config": "3 × 35 l",
+    "listEur": 1350.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "SST",
+    "sku": "4421",
+    "config": "3 × 60 l",
+    "listEur": 1500.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "SST",
+    "sku": "4421",
+    "config": "3 × 100 l",
+    "listEur": 1590.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "SST",
+    "sku": "4421",
+    "config": "4 × 35 l",
+    "listEur": 1700.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "SST",
+    "sku": "4421",
+    "config": "4 × 60 l",
+    "listEur": 1880.0
+  },
+  {
+    "slug": "kallsortering-pisco",
+    "model": "PISCO",
+    "material": "SST",
+    "sku": "4421",
+    "config": "4 × 100 l",
+    "listEur": 1990.0
+  },
+  {
+    "slug": "kallsortering-polaris",
+    "model": "POLARIS",
+    "material": "PC",
+    "sku": "1121",
+    "config": "4 × 60 l",
+    "listEur": 1220.0
+  },
+  {
+    "slug": "kallsortering-polaris",
+    "model": "POLARIS",
+    "material": "PC",
+    "sku": "1121",
+    "config": "4 × 100 l",
+    "listEur": 1420.0
+  },
+  {
+    "slug": "kallsortering-polaris",
+    "model": "POLARIS",
+    "material": "SST",
+    "sku": "1130",
+    "config": "4 × 60 l",
+    "listEur": 1550.0
+  },
+  {
+    "slug": "kallsortering-polaris",
+    "model": "POLARIS",
+    "material": "SST",
+    "sku": "1130",
+    "config": "4 × 100 l",
+    "listEur": 1630.0
+  },
+  {
+    "slug": "kallsortering-polaris",
+    "model": "POLARIS",
+    "material": "SST",
+    "sku": "1130-1",
+    "config": "4 × 60 l",
+    "listEur": 1390.0
+  },
+  {
+    "slug": "kallsortering-polaris",
+    "model": "POLARIS",
+    "material": "SST",
+    "sku": "1130-1",
+    "config": "4 × 100 l",
+    "listEur": 1575.0
+  },
+  {
+    "slug": "kallsortering-polaris-nat",
+    "model": "POLARIS nät",
+    "material": "PC",
+    "sku": "1137",
+    "config": "4 × 60 l",
+    "listEur": 1220.0,
+    "variant": "nät"
+  },
+  {
+    "slug": "kallsortering-polaris-nat",
+    "model": "POLARIS nät",
+    "material": "PC",
+    "sku": "1137",
+    "config": "4 × 100 l",
+    "listEur": 1350.0,
+    "variant": "nät"
+  },
+  {
+    "slug": "kallsortering-polaris-nat",
+    "model": "POLARIS nät",
+    "material": "SST",
+    "sku": "1141",
+    "config": "4 × 60 l",
+    "listEur": 1620.0,
+    "variant": "nät"
+  },
+  {
+    "slug": "kallsortering-polaris-nat",
+    "model": "POLARIS nät",
+    "material": "SST",
+    "sku": "1141",
+    "config": "4 × 100 l",
+    "listEur": 1780.0,
+    "variant": "nät"
+  },
+  {
+    "slug": "kallsortering-pollux",
+    "model": "POLLUX",
+    "material": "PC",
+    "sku": "990",
+    "config": "3 × 35 l",
+    "listEur": 950.0
+  },
+  {
+    "slug": "kallsortering-pollux",
+    "model": "POLLUX",
+    "material": "PC",
+    "sku": "990",
+    "config": "3 × 60 l",
+    "listEur": 1160.0
+  },
+  {
+    "slug": "kallsortering-pollux",
+    "model": "POLLUX",
+    "material": "PC",
+    "sku": "990",
+    "config": "3 × 100 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-pollux",
+    "model": "POLLUX",
+    "material": "SST",
+    "sku": "996",
+    "config": "3 × 35 l",
+    "listEur": 1220.0
+  },
+  {
+    "slug": "kallsortering-pollux",
+    "model": "POLLUX",
+    "material": "SST",
+    "sku": "996",
+    "config": "3 × 60 l",
+    "listEur": 1470.0
+  },
+  {
+    "slug": "kallsortering-pollux",
+    "model": "POLLUX",
+    "material": "SST",
+    "sku": "996",
+    "config": "3 × 100 l",
+    "listEur": 1670.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "PC",
+    "sku": "4308",
+    "config": "2 × 35 l",
+    "listEur": 770.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "PC",
+    "sku": "4308",
+    "config": "2 × 60 l",
+    "listEur": 830.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "PC",
+    "sku": "4308",
+    "config": "2 × 100 l",
+    "listEur": 860.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "PC",
+    "sku": "4308",
+    "config": "3 × 35 l",
+    "listEur": 900.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "PC",
+    "sku": "4308",
+    "config": "3 × 60 l",
+    "listEur": 960.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "PC",
+    "sku": "4308",
+    "config": "3 × 100 l",
+    "listEur": 1020.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "PC",
+    "sku": "4308",
+    "config": "4 × 35 l",
+    "listEur": 1110.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "PC",
+    "sku": "4308",
+    "config": "4 × 60 l",
+    "listEur": 1150.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "PC",
+    "sku": "4308",
+    "config": "4 × 100 l",
+    "listEur": 1390.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "SST",
+    "sku": "3965",
+    "config": "2 × 35 l",
+    "listEur": 910.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "SST",
+    "sku": "3965",
+    "config": "2 × 60 l",
+    "listEur": 1000.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "SST",
+    "sku": "3965",
+    "config": "2 × 100 l",
+    "listEur": 1060.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "SST",
+    "sku": "3965",
+    "config": "3 × 35 l",
+    "listEur": 1050.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "SST",
+    "sku": "3965",
+    "config": "3 × 60 l",
+    "listEur": 1180.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "SST",
+    "sku": "3965",
+    "config": "3 × 100 l",
+    "listEur": 1280.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "SST",
+    "sku": "3965",
+    "config": "4 × 35 l",
+    "listEur": 1300.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "SST",
+    "sku": "3965",
+    "config": "4 × 60 l",
+    "listEur": 1470.0
+  },
+  {
+    "slug": "kallsortering-sajama",
+    "model": "SAJAMA",
+    "material": "SST",
+    "sku": "3965",
+    "config": "4 × 100 l",
+    "listEur": 1610.0
+  },
+  {
+    "slug": "kallsortering-salliere",
+    "model": "SALLIERE",
+    "material": "PC",
+    "sku": "908",
+    "config": "3 × 35 l",
+    "listEur": 1060.0
+  },
+  {
+    "slug": "kallsortering-salliere",
+    "model": "SALLIERE",
+    "material": "PC",
+    "sku": "908",
+    "config": "3 × 60 l",
+    "listEur": 1220.0
+  },
+  {
+    "slug": "kallsortering-salliere",
+    "model": "SALLIERE",
+    "material": "PC",
+    "sku": "908",
+    "config": "3 × 100 l",
+    "listEur": 1320.0
+  },
+  {
+    "slug": "kallsortering-salliere",
+    "model": "SALLIERE",
+    "material": "SST",
+    "sku": "913",
+    "config": "3 × 35 l",
+    "listEur": 1210.0
+  },
+  {
+    "slug": "kallsortering-salliere",
+    "model": "SALLIERE",
+    "material": "SST",
+    "sku": "913",
+    "config": "3 × 60 l",
+    "listEur": 1520.0
+  },
+  {
+    "slug": "kallsortering-salliere",
+    "model": "SALLIERE",
+    "material": "SST",
+    "sku": "913",
+    "config": "3 × 100 l",
+    "listEur": 1680.0
+  },
+  {
+    "slug": "kallsortering-scopi",
+    "model": "SCOPI",
+    "material": "PC",
+    "sku": "1040",
+    "config": "3 × 35 l",
+    "listEur": 1180.0
+  },
+  {
+    "slug": "kallsortering-scopi",
+    "model": "SCOPI",
+    "material": "PC",
+    "sku": "1040",
+    "config": "3 × 60 l",
+    "listEur": 1340.0
+  },
+  {
+    "slug": "kallsortering-scopi",
+    "model": "SCOPI",
+    "material": "PC",
+    "sku": "1040",
+    "config": "3 × 100 l",
+    "listEur": 1470.0
+  },
+  {
+    "slug": "kallsortering-scopi",
+    "model": "SCOPI",
+    "material": "SST",
+    "sku": "1049",
+    "config": "3 × 35 l",
+    "listEur": 1410.0
+  },
+  {
+    "slug": "kallsortering-scopi",
+    "model": "SCOPI",
+    "material": "SST",
+    "sku": "1049",
+    "config": "3 × 60 l",
+    "listEur": 1540.0
+  },
+  {
+    "slug": "kallsortering-scopi",
+    "model": "SCOPI",
+    "material": "SST",
+    "sku": "1049",
+    "config": "3 × 100 l",
+    "listEur": 1670.0
+  },
+  {
+    "slug": "kallsortering-singla",
+    "model": "SINGLA",
+    "material": "PC",
+    "sku": "979",
+    "config": "3 × 35 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-singla",
+    "model": "SINGLA",
+    "material": "SST",
+    "sku": "983",
+    "config": "3 × 35 l",
+    "listEur": 1730.0
+  },
+  {
+    "slug": "kallsortering-spika",
+    "model": "SPIKA",
+    "material": "PC",
+    "sku": "967",
+    "config": "3 × 35 l",
+    "listEur": 1210.0
+  },
+  {
+    "slug": "kallsortering-spika",
+    "model": "SPIKA",
+    "material": "PC",
+    "sku": "967",
+    "config": "3 × 60 l",
+    "listEur": 1310.0
+  },
+  {
+    "slug": "kallsortering-spika",
+    "model": "SPIKA",
+    "material": "PC",
+    "sku": "967",
+    "config": "3 × 100 l",
+    "listEur": 1560.0
+  },
+  {
+    "slug": "kallsortering-stella",
+    "model": "STELLA",
+    "material": "PC",
+    "sku": "1013",
+    "config": "3 × 35 l",
+    "listEur": 1000.0
+  },
+  {
+    "slug": "kallsortering-stella",
+    "model": "STELLA",
+    "material": "PC",
+    "sku": "1013",
+    "config": "3 × 60 l",
+    "listEur": 1200.0
+  },
+  {
+    "slug": "kallsortering-stella",
+    "model": "STELLA",
+    "material": "PC",
+    "sku": "1013",
+    "config": "3 × 100 l",
+    "listEur": 1360.0
+  },
+  {
+    "slug": "kallsortering-stella",
+    "model": "STELLA",
+    "material": "SST",
+    "sku": "1020",
+    "config": "3 × 35 l",
+    "listEur": 1130.0
+  },
+  {
+    "slug": "kallsortering-stella",
+    "model": "STELLA",
+    "material": "SST",
+    "sku": "1020",
+    "config": "3 × 60 l",
+    "listEur": 1520.0
+  },
+  {
+    "slug": "kallsortering-stella",
+    "model": "STELLA",
+    "material": "SST",
+    "sku": "1020",
+    "config": "3 × 100 l",
+    "listEur": 1840.0
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "PC",
+    "sku": "5774",
+    "config": "2 × 35 l",
+    "listEur": 960.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "PC",
+    "sku": "5774",
+    "config": "2 × 60 l",
+    "listEur": 1120.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "PC",
+    "sku": "5774",
+    "config": "2 × 100 l",
+    "listEur": 1220.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "PC",
+    "sku": "5774",
+    "config": "3 × 35 l",
+    "listEur": 1130.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "PC",
+    "sku": "5774",
+    "config": "3 × 60 l",
+    "listEur": 1350.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "PC",
+    "sku": "5774",
+    "config": "3 × 100 l",
+    "listEur": 1530.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "PC",
+    "sku": "5774",
+    "config": "4 × 35 l",
+    "listEur": 1620.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "PC",
+    "sku": "5774",
+    "config": "4 × 60 l",
+    "listEur": 1760.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "PC",
+    "sku": "5774",
+    "config": "4 × 100 l",
+    "listEur": 2070.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "SST",
+    "sku": "5677",
+    "config": "2 × 35 l",
+    "listEur": 1130.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "SST",
+    "sku": "5677",
+    "config": "2 × 60 l",
+    "listEur": 1250.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "SST",
+    "sku": "5677",
+    "config": "2 × 100 l",
+    "listEur": 1380.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "SST",
+    "sku": "5677",
+    "config": "3 × 35 l",
+    "listEur": 1240.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "SST",
+    "sku": "5677",
+    "config": "3 × 60 l",
+    "listEur": 1460.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "SST",
+    "sku": "5677",
+    "config": "3 × 100 l",
+    "listEur": 1610.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "SST",
+    "sku": "5677",
+    "config": "4 × 35 l",
+    "listEur": 1720.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "SST",
+    "sku": "5677",
+    "config": "4 × 60 l",
+    "listEur": 1870.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tacora",
+    "model": "TACORA",
+    "material": "SST",
+    "sku": "5677",
+    "config": "4 × 100 l",
+    "listEur": 2140.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-todi",
+    "model": "TODI",
+    "material": "PC",
+    "sku": "1068",
+    "config": "3 × 35 l",
+    "listEur": 1130.0
+  },
+  {
+    "slug": "kallsortering-todi",
+    "model": "TODI",
+    "material": "PC",
+    "sku": "1068",
+    "config": "3 × 60 l",
+    "listEur": 1300.0
+  },
+  {
+    "slug": "kallsortering-todi",
+    "model": "TODI",
+    "material": "PC",
+    "sku": "1068",
+    "config": "3 × 100 l",
+    "listEur": 1440.0
+  },
+  {
+    "slug": "kallsortering-todi",
+    "model": "TODI",
+    "material": "SST",
+    "sku": "1076",
+    "config": "3 × 35 l",
+    "listEur": 1350.0
+  },
+  {
+    "slug": "kallsortering-todi",
+    "model": "TODI",
+    "material": "SST",
+    "sku": "1076",
+    "config": "3 × 60 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-todi",
+    "model": "TODI",
+    "material": "SST",
+    "sku": "1076",
+    "config": "3 × 100 l",
+    "listEur": 1630.0
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "PC",
+    "sku": "6155",
+    "config": "3 × 35 l",
+    "listEur": 1480.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "PC",
+    "sku": "6155",
+    "config": "3 × 60 l",
+    "listEur": 1660.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "PC",
+    "sku": "6155",
+    "config": "3 × 100 l",
+    "listEur": 1930.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "PC",
+    "sku": "6155",
+    "config": "4 × 35 l",
+    "listEur": 1670.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "PC",
+    "sku": "6155",
+    "config": "4 × 60 l",
+    "listEur": 1970.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "PC",
+    "sku": "6155",
+    "config": "4 × 100 l",
+    "listEur": 2540.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "SST",
+    "sku": "6074",
+    "config": "3 × 35 l",
+    "listEur": 2130.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "SST",
+    "sku": "6074",
+    "config": "3 × 60 l",
+    "listEur": 2560.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "SST",
+    "sku": "6074",
+    "config": "3 × 100 l",
+    "listEur": 2960.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "SST",
+    "sku": "6074",
+    "config": "4 × 35 l",
+    "listEur": 2460.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "SST",
+    "sku": "6074",
+    "config": "4 × 60 l",
+    "listEur": 3030.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-tolima",
+    "model": "TOLIMA",
+    "material": "SST",
+    "sku": "6074",
+    "config": "4 × 100 l",
+    "listEur": 3540.0,
+    "variant": "trä"
+  },
+  {
+    "slug": "kallsortering-triolet",
+    "model": "TRIOLET",
+    "material": "PC",
+    "sku": "919-1",
+    "config": "3 × 35 l",
+    "listEur": 1340.0
+  },
+  {
+    "slug": "kallsortering-triolet",
+    "model": "TRIOLET",
+    "material": "PC",
+    "sku": "919-1",
+    "config": "3 × 60 l",
+    "listEur": 1470.0
+  },
+  {
+    "slug": "kallsortering-triolet",
+    "model": "TRIOLET",
+    "material": "PC",
+    "sku": "919-1",
+    "config": "3 × 100 l",
+    "listEur": 1610.0
+  },
+  {
+    "slug": "kallsortering-triolet",
+    "model": "TRIOLET",
+    "material": "PC",
+    "sku": "919-2",
+    "config": "3 × 35 l",
+    "listEur": 1350.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-triolet",
+    "model": "TRIOLET",
+    "material": "PC",
+    "sku": "919-2",
+    "config": "3 × 60 l",
+    "listEur": 1470.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-triolet",
+    "model": "TRIOLET",
+    "material": "PC",
+    "sku": "919-2",
+    "config": "3 × 100 l",
+    "listEur": 1630.0,
+    "variant": "ram"
+  },
+  {
+    "slug": "kallsortering-triolet",
+    "model": "TRIOLET",
+    "material": "SST",
+    "sku": "929-1",
+    "config": "3 × 35 l",
+    "listEur": 1460.0
+  },
+  {
+    "slug": "kallsortering-triolet",
+    "model": "TRIOLET",
+    "material": "SST",
+    "sku": "929-1",
+    "config": "3 × 60 l",
+    "listEur": 1680.0
+  },
+  {
+    "slug": "kallsortering-triolet",
+    "model": "TRIOLET",
+    "material": "SST",
+    "sku": "929-1",
+    "config": "3 × 100 l",
+    "listEur": 1890.0
+  },
+  {
+    "slug": "papperskorg-vadret",
+    "model": "VADRET",
+    "material": "PC",
+    "sku": "13949",
+    "config": "1 × 35 l",
+    "listEur": 580.0
+  },
+  {
+    "slug": "papperskorg-vadret",
+    "model": "VADRET",
+    "material": "PC",
+    "sku": "13949",
+    "config": "1 × 60 l",
+    "listEur": 720.0
+  },
+  {
+    "slug": "papperskorg-vadret",
+    "model": "VADRET",
+    "material": "PC",
+    "sku": "13949",
+    "config": "1 × 100 l",
+    "listEur": 890.0
+  },
+  {
+    "slug": "papperskorg-vadret",
+    "model": "VADRET",
+    "material": "SST",
+    "sku": "13982",
+    "config": "1 × 35 l",
+    "listEur": 700.0
+  },
+  {
+    "slug": "papperskorg-vadret",
+    "model": "VADRET",
+    "material": "SST",
+    "sku": "13982",
+    "config": "1 × 60 l",
+    "listEur": 830.0
+  },
+  {
+    "slug": "papperskorg-vadret",
+    "model": "VADRET",
+    "material": "SST",
+    "sku": "13982",
+    "config": "1 × 100 l",
+    "listEur": 990.0
+  },
+  {
+    "slug": "papperskorg-vela",
+    "model": "VELA",
+    "material": "PC",
+    "sku": "9895",
+    "config": "1 × 35 l",
+    "listEur": 670.0
+  },
+  {
+    "slug": "papperskorg-vela",
+    "model": "VELA",
+    "material": "PC",
+    "sku": "9895",
+    "config": "1 × 60 l",
+    "listEur": 820.0
+  },
+  {
+    "slug": "papperskorg-vela",
+    "model": "VELA",
+    "material": "PC",
+    "sku": "9895",
+    "config": "1 × 100 l",
+    "listEur": 1000.0
+  },
+  {
+    "slug": "papperskorg-vela",
+    "model": "VELA",
+    "material": "SST",
+    "sku": "9862",
+    "config": "1 × 35 l",
+    "listEur": 810.0
+  },
+  {
+    "slug": "papperskorg-vela",
+    "model": "VELA",
+    "material": "SST",
+    "sku": "9862",
+    "config": "1 × 60 l",
+    "listEur": 930.0
+  },
+  {
+    "slug": "papperskorg-vela",
+    "model": "VELA",
+    "material": "SST",
+    "sku": "9862",
+    "config": "1 × 100 l",
+    "listEur": 1090.0
+  },
+  {
+    "slug": "papperskorg-zenipole",
+    "model": "ZENIPOLE",
+    "material": "PC",
+    "sku": "15676",
+    "config": "1 × 30 l",
+    "listEur": 350.0,
+    "variant": "stolpe"
+  },
+  {
+    "slug": "papperskorg-zenipole",
+    "model": "ZENIPOLE",
+    "material": "PC",
+    "sku": "15676-1",
+    "config": "1 × 30 l",
+    "listEur": 350.0,
+    "variant": "vägg"
+  },
+  {
+    "slug": "papperskorg-zenipole",
+    "model": "ZENIPOLE",
+    "material": "SST",
+    "sku": "15709",
+    "config": "1 × 30 l",
+    "listEur": 450.0,
+    "variant": "stolpe"
+  },
+  {
+    "slug": "papperskorg-zenipole",
+    "model": "ZENIPOLE",
+    "material": "SST",
+    "sku": "15709-1",
+    "config": "1 × 30 l",
+    "listEur": 450.0,
+    "variant": "vägg"
+  },
+  {
+    "slug": "kallsortering-zupo",
+    "model": "ZUPO",
+    "material": "PC",
+    "sku": "1003",
+    "config": "3 × 35 l",
+    "listEur": 1210.0
+  },
+  {
+    "slug": "kallsortering-zupo",
+    "model": "ZUPO",
+    "material": "PC",
+    "sku": "1003",
+    "config": "3 × 60 l",
+    "listEur": 1420.0
+  },
+  {
+    "slug": "kallsortering-zupo",
+    "model": "ZUPO",
+    "material": "SST",
+    "sku": "1007",
+    "config": "3 × 35 l",
+    "listEur": 1400.0
+  },
+  {
+    "slug": "kallsortering-zupo",
+    "model": "ZUPO",
+    "material": "SST",
+    "sku": "1007",
+    "config": "3 × 60 l",
+    "listEur": 1500.0
+  }
+]

@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { products } from '../data/content'
+import { products, type Product } from '../data/content'
 import {
   catalog,
   categoryPath,
@@ -112,12 +113,49 @@ export function CategoryHubPage() {
 export function SubcategoryListPage() {
   const { categorySlug, subcategorySlug } = useParams()
   const category = findCategory(categorySlug)
+  const [on, setOn] = useState<Record<string, string[]>>({})
   if (!category) return <Navigate to="/produkter" replace />
   const sub = findSubcategory(category, subcategorySlug)
   if (!sub) return <Navigate to={categoryPath(category)} replace />
 
   const items = sub.productSlugs.map((slug) => products[slug]).filter(Boolean)
+  const filters = sub.filters
+
+  function toggle(legend: string, opt: string) {
+    setOn((prev) => {
+      const cur = prev[legend] ?? []
+      return {
+        ...prev,
+        [legend]: cur.includes(opt) ? cur.filter((x) => x !== opt) : [...cur, opt],
+      }
+    })
+  }
+
+  function matches(p: Product) {
+    for (const f of filters ?? []) {
+      const sel = on[f.legend] ?? []
+      if (sel.length === 0) continue
+      if (f.legend === 'Material') {
+        const hay = [p.material, ...(p.materials?.map((m) => m.name) ?? [])].join(' ')
+        if (!sel.some((s) => hay.includes(s))) return false
+      }
+      if (f.legend === 'Fraktioner') {
+        const sizes = p.sizes ?? []
+        if (
+          !sel.some((n) =>
+            sizes.some((sz) => sz.name.startsWith(`${n} ×`) || sz.name.startsWith(`${n}×`)),
+          )
+        ) {
+          return false
+        }
+      }
+    }
+    return true
+  }
+
+  const visible = items.filter(matches)
   const empty = items.length === 0
+  const filteredOut = !empty && visible.length === 0
 
   return (
     <div className="grid gap-8 lg:grid-cols-12">
@@ -135,14 +173,20 @@ export function SubcategoryListPage() {
         <div className="mt-4">
           <StatusNote sub={sub} />
         </div>
-        {sub.filters && !empty ? (
+        {filters && !empty ? (
           <form className="mt-6 space-y-5 text-sm" onSubmit={(e) => e.preventDefault()}>
-            {sub.filters.map((f) => (
+            <p className="text-xs text-muted">Ingen markering = alla. Flera val inom samma grupp är eller.</p>
+            {filters.map((f) => (
               <fieldset key={f.legend}>
                 <legend className="font-medium">{f.legend}</legend>
                 {f.options.map((opt) => (
                   <label key={opt} className="mt-2 flex gap-2">
-                    <input type="checkbox" defaultChecked /> {opt}
+                    <input
+                      type="checkbox"
+                      checked={(on[f.legend] ?? []).includes(opt)}
+                      onChange={() => toggle(f.legend, opt)}
+                    />{' '}
+                    {opt}
                   </label>
                 ))}
               </fieldset>
@@ -194,9 +238,14 @@ export function SubcategoryListPage() {
               </div>
             )}
           </div>
+        ) : filteredOut ? (
+          <div className="border border-dashed border-line p-6">
+            <p className="font-medium">Inga produkter matchar filtren</p>
+            <p className="mt-2 text-sm text-muted">Ta bort någon markering till vänster för att se fler serier.</p>
+          </div>
         ) : (
           <div className="grid gap-4 sm:grid-cols-2">
-            {items.map((p) => (
+            {visible.map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}
           </div>

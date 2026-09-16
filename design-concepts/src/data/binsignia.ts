@@ -1,6 +1,8 @@
 import type { MaterialFinish, Product, ProductImage, SizeOption } from './content'
 
-export const BINSIGNIA_SLUGS = [
+import { BINSIGNIA_REST_SLUGS, binsigniaRestProducts } from './binsignia-rest'
+
+export const BINSIGNIA_FEATURED_SLUGS = [
   'askkopp-luna',
   'kallsortering-albris',
   'kallsortering-bernina',
@@ -29,7 +31,7 @@ const LABELING = {
 }
 
 const IMAGE_NOTE =
-  'Bilden visar ett exempelutförande. Ingen unik produktbild per RAL-kulör eller per kapacitet i det här utkastet. Färgåtergivning på skärm kan avvika.'
+  'Bilden visar ett exempelutförande. Ingen unik produktbild per RAL-kulör eller per kapacitet. Färgåtergivning på skärm kan avvika.'
 
 function photo(
   file: string,
@@ -116,7 +118,7 @@ const body: Pick<
   imageNote: IMAGE_NOTE,
 }
 
-export const binsigniaProducts: Record<string, Product> = {
+const binsigniaFeaturedProducts: Record<string, Product> = {
   'askkopp-luna': {
     ...body,
     slug: 'askkopp-luna',
@@ -365,6 +367,13 @@ export const binsigniaProducts: Record<string, Product> = {
     related: ['askkopp-luna', 'kallsortering-albris', 'kallsortering-bernina'],
   },
 }
+
+export const binsigniaProducts: Record<string, Product> = {
+  ...binsigniaRestProducts,
+  ...binsigniaFeaturedProducts,
+}
+
+export const BINSIGNIA_SLUGS = [...BINSIGNIA_FEATURED_SLUGS, ...BINSIGNIA_REST_SLUGS]
 
 export function selectedMaterial(product: Product, name?: string): MaterialFinish | undefined {
   if (!product.materials?.length) return undefined

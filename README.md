@@ -29,7 +29,7 @@ npm run dev
 
 Skola och vård avvaktar. Offentlig miljö byggs först. Leverantörer, kontaktperson och produktantal ligger i prototypen under `/admin/leverantorer`. Produktbilder ska komma från leverantörens länk, inte skrapas från den publicerade sajten.
 
-Första riktiga leverantörsutkastet är **BINSIGNIA** (Paula Stirbu / FORWARD SUPPORT SRL): fem modeller på `/design/binsignia`. Listpriser i euro syns bara i admin. Inga priser på den publika katalogen.
+Avfallskatalogen har 54 serier från prislistan september 2026 (källsortering, askkopp, papperskorg). Listpriser i euro och leverantörens artikelnummer syns bara i admin. PETALSTEEL saknas på prislistan och är inte importerad. Skola och vård avvaktar.
 
 ## Vad som inte ska göras än
 

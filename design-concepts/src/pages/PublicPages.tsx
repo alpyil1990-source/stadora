@@ -65,12 +65,19 @@ export function HomePage() {
       </section>
 
       <section>
-        <p className="kicker">Utkast · avfall</p>
-        <h2 className="mt-2 text-2xl md:text-3xl">Fem modeller för granskning</h2>
-        <p className="mt-3 max-w-2xl text-sm text-muted">
-          Askkopp och källsortering med kapacitet och materialval. Pris syns inte här. Resten av
-          sortimentet väntar.
-        </p>
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="kicker">Avfall och återvinning</p>
+            <h2 className="mt-2 text-2xl md:text-3xl">Källsortering, askkopp och kärl</h2>
+            <p className="mt-3 max-w-2xl text-sm text-muted">
+              Hela sortimentet ligger under Avfall. Här är fem modeller som visar material och
+              kapacitet. Pris och leverantörens artikelnummer syns inte här.
+            </p>
+          </div>
+          <Link to="/produkter/avfall-atervinning" className="text-sm underline">
+            Alla avfallsprodukter
+          </Link>
+        </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {binsigniaDraft.map((p) => (
             <ProductCard key={p.slug} product={p} />

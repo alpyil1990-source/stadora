@@ -1,0 +1,5539 @@
+{
+  "series": [
+    {
+      "family": "ampato",
+      "slug": "kallsortering-ampato",
+      "name": "Källsortering AMPATO",
+      "sku": "6335",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "AMPATO är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "ampato-1.jpg",
+        "ampato-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "72 × 31 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "87 × 38 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "105 × 46 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "6335",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "6302",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Hjul"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "ampato-1.jpg",
+          "alt": "Källsortering AMPATO, exempelutförande"
+        },
+        {
+          "file": "ampato-2.jpg",
+          "alt": "Källsortering AMPATO, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-arizaro",
+        "kallsortering-arizaro-at",
+        "kallsortering-arizaro-crystal"
+      ]
+    },
+    {
+      "family": "arizaro",
+      "slug": "kallsortering-arizaro",
+      "name": "Källsortering ARIZARO",
+      "sku": "4738",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 2–4 fraktioner à 60 eller 100 liter.",
+      "description": "ARIZARO är en källsorteringsstation. 2–4 fraktioner à 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Förstärkt ram 3 mm, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Bakdörrar med lås. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "arizaro-1.jpg",
+        "arizaro-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "2 × 60 l",
+          "dim": "66 × 38 × 115 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "80 × 45 × 125 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "98 × 38 × 115 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "119 × 45 × 125 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "130 × 38 × 115 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "158 × 45 × 125 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "4738",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Förstärkt ram 3 mm",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Bakdörrar med lås"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "4617",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Bakdörrar med lås",
+            "Förstärkt ram 3 mm"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "arizaro-1.jpg",
+          "alt": "Källsortering ARIZARO, exempelutförande"
+        },
+        {
+          "file": "arizaro-2.jpg",
+          "alt": "Källsortering ARIZARO, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-arizaro-at",
+        "kallsortering-arizaro-crystal",
+        "kallsortering-belvedere"
+      ]
+    },
+    {
+      "family": "arizaro-at",
+      "slug": "kallsortering-arizaro-at",
+      "name": "Källsortering ARIZARO AT",
+      "sku": "9275",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp. 1–4 fraktioner à 60 eller 100 liter.",
+      "description": "ARIZARO AT är en källsorteringsstation med integrerad askkopp. 1–4 fraktioner à 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Förstärkt ram 3 mm, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Bakdörrar med lås, Askkopp. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "arizaro-at-1.jpg",
+        "arizaro-at-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 60 l",
+          "dim": "33 × 38 × 114 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "40 × 45 × 124 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "66 × 38 × 114 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "80 × 45 × 124 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "98 × 38 × 114 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "119 × 45 × 124 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "130 × 38 × 114 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "158 × 45 × 124 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "9275",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Förstärkt ram 3 mm",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Bakdörrar med lås",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "9114",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Förstärkt ram 3 mm",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Bakdörrar med lås",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "arizaro-at-1.jpg",
+          "alt": "Källsortering ARIZARO AT, exempelutförande"
+        },
+        {
+          "file": "arizaro-at-2.jpg",
+          "alt": "Källsortering ARIZARO AT, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-arizaro-crystal",
+        "kallsortering-belvedere",
+        "kallsortering-bernina"
+      ]
+    },
+    {
+      "family": "arizaro-crystal",
+      "slug": "kallsortering-arizaro-crystal",
+      "name": "Källsortering ARIZARO Crystal",
+      "sku": "14384",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med plexiglas. 1–4 fraktioner à 60 eller 100 liter.",
+      "description": "ARIZARO Crystal är en källsorteringsstation med plexiglas. 1–4 fraktioner à 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Innerhållare för säck, Avtagbart lock, Bakdörrar med lås, Förstärkt ram 3 mm. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "arizaro-crystal-1.jpg",
+        "arizaro-crystal-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt och plexiglas eller rostfritt stål och plexiglas",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 60 l",
+          "dim": "34 × 38 × 114 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "41 × 45 × 124 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "67 × 38 × 114 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "81 × 45 × 124 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "99 × 38 × 114 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "121 × 45 × 124 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "132 × 38 × 114 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "160 × 45 × 124 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt och plexiglas",
+          "code": "PC",
+          "sku": "14384",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Bakdörrar med lås",
+            "Förstärkt ram 3 mm"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        },
+        {
+          "name": "Rostfritt stål och plexiglas",
+          "code": "SST",
+          "sku": "14513",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "AISI 304 rostfritt stål",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Bakdörrar med lås",
+            "Förstärkt ram 3 mm"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": true,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "arizaro-crystal-1.jpg",
+          "alt": "Källsortering ARIZARO Crystal, exempelutförande"
+        },
+        {
+          "file": "arizaro-crystal-2.jpg",
+          "alt": "Källsortering ARIZARO Crystal, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-belvedere",
+        "kallsortering-bernina",
+        "kallsortering-bonanza"
+      ]
+    },
+    {
+      "family": "belvedere",
+      "slug": "kallsortering-belvedere",
+      "name": "Källsortering BELVEDERE",
+      "sku": "1025",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "BELVEDERE är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Sammanlänkade innerkärl. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "belvedere-1.jpg",
+        "belvedere-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "78 × 26 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "93 × 32 × 83 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "120 × 40 × 90 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "1025",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Sammanlänkade innerkärl"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "1032",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Sammanlänkade innerkärl"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "belvedere-1.jpg",
+          "alt": "Källsortering BELVEDERE, exempelutförande"
+        },
+        {
+          "file": "belvedere-2.jpg",
+          "alt": "Källsortering BELVEDERE, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-bernina",
+        "kallsortering-bonanza",
+        "kallsortering-brend"
+      ]
+    },
+    {
+      "family": "bonanza",
+      "slug": "kallsortering-bonanza",
+      "name": "Källsortering BONANZA",
+      "sku": "1057",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "BONANZA är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "bonanza-1.jpg",
+        "bonanza-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "69 × 23 × 92 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "84 × 28 × 107 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "99 × 33 × 122 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "1057",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Vippbart lock"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "1064",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Vippbart lock"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "bonanza-1.jpg",
+          "alt": "Källsortering BONANZA, exempelutförande"
+        },
+        {
+          "file": "bonanza-2.jpg",
+          "alt": "Källsortering BONANZA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-brend",
+        "kallsortering-cachi",
+        "kallsortering-casiri"
+      ]
+    },
+    {
+      "family": "brend",
+      "slug": "kallsortering-brend",
+      "name": "Källsortering BREND",
+      "sku": "5977",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med trä. 2–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "BREND är en källsorteringsstation med trä. 2–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "brend-1.jpg",
+        "brend-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt och trä eller rostfritt stål och trä",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "2 × 35 l",
+          "dim": "58 × 32 × 75 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "70 × 38 × 86 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "84 × 45 × 96 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 35 l",
+          "dim": "84 × 32 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "102 × 38 × 86 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "124 × 45 × 96 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "111 × 32 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "135 × 38 × 86 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "163 × 45 × 96 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt och trä",
+          "code": "PC",
+          "sku": "5977",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        },
+        {
+          "name": "Rostfritt stål och trä",
+          "code": "SST",
+          "sku": "5871",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": true,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "brend-1.jpg",
+          "alt": "Källsortering BREND, exempelutförande"
+        },
+        {
+          "file": "brend-2.jpg",
+          "alt": "Källsortering BREND, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-cachi",
+        "kallsortering-casiri",
+        "kallsortering-chani"
+      ]
+    },
+    {
+      "family": "cachi",
+      "slug": "kallsortering-cachi",
+      "name": "Källsortering CACHI",
+      "sku": "4884",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 4 fack à 35, 60 eller 100 liter.",
+      "description": "CACHI är en källsorteringsstation. 4 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "cachi-1.jpg",
+        "cachi-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "4 × 60 l",
+      "sizes": [
+        {
+          "name": "4 × 35 l",
+          "dim": "64 × 64 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "78 × 78 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "95 × 95 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "4884",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "4859",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "cachi-1.jpg",
+          "alt": "Källsortering CACHI, exempelutförande"
+        },
+        {
+          "file": "cachi-2.jpg",
+          "alt": "Källsortering CACHI, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-casiri",
+        "kallsortering-chani",
+        "kallsortering-cimon"
+      ]
+    },
+    {
+      "family": "casiri",
+      "slug": "kallsortering-casiri",
+      "name": "Källsortering CASIRI",
+      "sku": "5386",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "CASIRI är en källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock. Tillval: Hjul, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "casiri-1.jpg",
+        "casiri-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "79 × 26 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "97 × 32 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "118 × 39 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "105 × 26 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "129 × 32 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "156 × 39 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "5386",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "5288",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "casiri-1.jpg",
+          "alt": "Källsortering CASIRI, exempelutförande"
+        },
+        {
+          "file": "casiri-2.jpg",
+          "alt": "Källsortering CASIRI, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-chani",
+        "kallsortering-cimon",
+        "kallsortering-denali"
+      ]
+    },
+    {
+      "family": "chani",
+      "slug": "kallsortering-chani",
+      "name": "Källsortering CHANI",
+      "sku": "4934",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 4 fack à 35, 60 eller 100 liter.",
+      "description": "CHANI är en källsorteringsstation. 4 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "chani-1.jpg",
+        "chani-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "4 × 60 l",
+      "sizes": [
+        {
+          "name": "4 × 35 l",
+          "dim": "64 × 64 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "78 × 78 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "95 × 95 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "4934",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "4909",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "chani-1.jpg",
+          "alt": "Källsortering CHANI, exempelutförande"
+        },
+        {
+          "file": "chani-2.jpg",
+          "alt": "Källsortering CHANI, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-cimon",
+        "kallsortering-denali",
+        "kallsortering-ecomonde"
+      ]
+    },
+    {
+      "family": "cimon",
+      "slug": "kallsortering-cimon",
+      "name": "Källsortering CIMON",
+      "sku": "935",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "CIMON är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Lås, Monteringsram, Sammanlänkade innerkärl. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "cimon-1.jpg",
+        "cimon-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "69 × 23 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "84 × 28 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "99 × 33 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "935",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Lås",
+            "Sammanlänkade innerkärl",
+            "Monteringsram"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "943",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Sammanlänkade innerkärl",
+            "Monteringsram"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "cimon-1.jpg",
+          "alt": "Källsortering CIMON, exempelutförande"
+        },
+        {
+          "file": "cimon-2.jpg",
+          "alt": "Källsortering CIMON, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-denali",
+        "kallsortering-ecomonde",
+        "kallsortering-eiger"
+      ]
+    },
+    {
+      "family": "denali",
+      "slug": "kallsortering-denali",
+      "name": "Källsortering DENALI",
+      "sku": "9501",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp. 1–2 fraktioner à 35, 60 eller 100 liter.",
+      "description": "DENALI är en källsorteringsstation med integrerad askkopp. 1–2 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Askkopp. Tillval: Hjul, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "denali-1.jpg",
+        "denali-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "2 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 35 l",
+          "dim": "45 × 26 × 75 cm",
+          "capacity": "1 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 60 l",
+          "dim": "52 × 32 × 85 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "59 × 39 × 95 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 35 l",
+          "dim": "83 × 26 × 75 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "95 × 32 × 85 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "109 × 39 × 95 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "9501",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "9436",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "denali-1.jpg",
+          "alt": "Källsortering DENALI, exempelutförande"
+        },
+        {
+          "file": "denali-2.jpg",
+          "alt": "Källsortering DENALI, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-ecomonde",
+        "kallsortering-eiger",
+        "kallsortering-elm"
+      ]
+    },
+    {
+      "family": "ecomonde",
+      "slug": "kallsortering-ecomonde",
+      "name": "Källsortering ECOMONDE",
+      "sku": "854",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "ECOMONDE är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul, Lås, Sammanlänkade innerkärl, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "ecomonde-1.jpg",
+        "ecomonde-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "69 × 23 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "84 × 28 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "99 × 33 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "854",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Lås",
+            "Sammanlänkade innerkärl"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "858",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul",
+            "Lås",
+            "Sammanlänkade innerkärl"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "ecomonde-1.jpg",
+          "alt": "Källsortering ECOMONDE, exempelutförande"
+        },
+        {
+          "file": "ecomonde-2.jpg",
+          "alt": "Källsortering ECOMONDE, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-eiger",
+        "kallsortering-elm",
+        "kallsortering-elm-tra"
+      ]
+    },
+    {
+      "family": "elm",
+      "slug": "kallsortering-elm",
+      "name": "Källsortering ELM",
+      "sku": "879",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "ELM är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Lås. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "elm-1.jpg",
+        "elm-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "80 × 27 × 78 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "95 × 32 × 88 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "120 × 37 × 98 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "879",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Lås"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "887",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Lås"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "elm-1.jpg",
+          "alt": "Källsortering ELM, exempelutförande"
+        },
+        {
+          "file": "elm-2.jpg",
+          "alt": "Källsortering ELM, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-elm-tra",
+        "kallsortering-eridani",
+        "kallsortering-gemini"
+      ]
+    },
+    {
+      "family": "elm-tra",
+      "slug": "kallsortering-elm-tra",
+      "name": "Källsortering ELM trä",
+      "sku": "894",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med trä. 3 fack à 35, 60 eller 100 liter.",
+      "description": "ELM trä är en källsorteringsstation med trä. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul, Lås, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "elm-tra-1.jpg",
+        "elm-tra-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt och trä eller rostfritt stål och trä",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "80 × 27 × 78 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "95 × 32 × 88 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "120 × 37 × 98 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt och trä",
+          "code": "PC",
+          "sku": "894",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Lås"
+          ]
+        },
+        {
+          "name": "Rostfritt stål och trä",
+          "code": "SST",
+          "sku": "901",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Innerhållare för säck",
+            "Avtagbart lock"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": true,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "elm-tra-1.jpg",
+          "alt": "Källsortering ELM trä, exempelutförande"
+        },
+        {
+          "file": "elm-tra-2.jpg",
+          "alt": "Källsortering ELM trä, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-eridani",
+        "kallsortering-gemini",
+        "kallsortering-kandel"
+      ]
+    },
+    {
+      "family": "eridani",
+      "slug": "kallsortering-eridani",
+      "name": "Källsortering ERIDANI",
+      "sku": "9961",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp. Kapacitet 35, 60 eller 100 liter.",
+      "description": "ERIDANI är en källsorteringsstation med integrerad askkopp. Kapacitet 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Askkopp. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "eridani-1.jpg",
+        "eridani-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "1 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 35 l",
+          "dim": "36 × 26 × 75 cm",
+          "capacity": "1 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 60 l",
+          "dim": "42 × 32 × 85 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "49 × 39 × 95 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "9961",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "9928",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "eridani-1.jpg",
+          "alt": "Källsortering ERIDANI, exempelutförande"
+        },
+        {
+          "file": "eridani-2.jpg",
+          "alt": "Källsortering ERIDANI, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-gemini",
+        "kallsortering-kandel",
+        "kallsortering-katyn"
+      ]
+    },
+    {
+      "family": "finlay",
+      "slug": "papperskorg-finlay",
+      "name": "Papperskorg FINLAY",
+      "sku": "9599",
+      "subcategory": "Papperskorgar",
+      "subcategorySlug": "papperskorgar",
+      "summary": "Papperskorg. Kapacitet 35, 60 eller 100 liter.",
+      "description": "FINLAY är en papperskorg. Kapacitet 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "finlay-1.jpg",
+        "finlay-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "1 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 35 l",
+          "dim": "Ø 27 × 71 cm",
+          "capacity": "1 × 35 l",
+          "dimLabel": "Ø × H"
+        },
+        {
+          "name": "1 × 60 l",
+          "dim": "Ø 32 × 81 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "Ø × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "Ø 37 × 91 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "Ø × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "9599",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "9566",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "finlay-1.jpg",
+          "alt": "Papperskorg FINLAY, exempelutförande"
+        },
+        {
+          "file": "finlay-2.jpg",
+          "alt": "Papperskorg FINLAY, andra vinkel"
+        }
+      ],
+      "related": [
+        "papperskorg-vadret",
+        "papperskorg-vela",
+        "papperskorg-zenipole"
+      ]
+    },
+    {
+      "family": "kandel",
+      "slug": "kallsortering-kandel",
+      "name": "Källsortering KANDEL",
+      "sku": "5580",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "KANDEL är en källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "kandel-1.jpg",
+        "kandel-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "76 × 26 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "93 × 32 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "116 × 39 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "104 × 26 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "124 × 32 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "156 × 39 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "5580",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "5483",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "kandel-1.jpg",
+          "alt": "Källsortering KANDEL, exempelutförande"
+        },
+        {
+          "file": "kandel-2.jpg",
+          "alt": "Källsortering KANDEL, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-katyn",
+        "kallsortering-kobuk",
+        "kallsortering-kunka"
+      ]
+    },
+    {
+      "family": "katyn",
+      "slug": "kallsortering-katyn",
+      "name": "Källsortering KATYN",
+      "sku": "9829",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp. Kapacitet 35, 60 eller 100 liter.",
+      "description": "KATYN är en källsorteringsstation med integrerad askkopp. Kapacitet 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Askkopp. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "katyn-1.jpg",
+        "katyn-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "1 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 35 l",
+          "dim": "42 × 27 × 85 cm",
+          "capacity": "1 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 60 l",
+          "dim": "50 × 32 × 95 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "57 × 36 × 105 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "9829",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "9796",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "katyn-1.jpg",
+          "alt": "Källsortering KATYN, exempelutförande"
+        },
+        {
+          "file": "katyn-2.jpg",
+          "alt": "Källsortering KATYN, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-kobuk",
+        "kallsortering-kunka",
+        "kallsortering-medele"
+      ]
+    },
+    {
+      "family": "kobuk",
+      "slug": "kallsortering-kobuk",
+      "name": "Källsortering KOBUK",
+      "sku": "9665",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp. 2 fack à 35, 60 eller 100 liter.",
+      "description": "KOBUK är en källsorteringsstation med integrerad askkopp. 2 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och utomhus i allväder. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Askkopp. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "kobuk-1.jpg",
+        "kobuk-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "2 × 60 l",
+      "sizes": [
+        {
+          "name": "2 × 35 l",
+          "dim": "68 × 27 × 72 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "78 × 32 × 83 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "88 × 37 × 93 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "9665",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "9632",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "kobuk-1.jpg",
+          "alt": "Källsortering KOBUK, exempelutförande"
+        },
+        {
+          "file": "kobuk-2.jpg",
+          "alt": "Källsortering KOBUK, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-kunka",
+        "kallsortering-medele",
+        "kallsortering-medusa"
+      ]
+    },
+    {
+      "family": "kunka",
+      "slug": "kallsortering-kunka",
+      "name": "Källsortering KUNKA",
+      "sku": "6269",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 4 fack à 35, 60 eller 100 liter.",
+      "description": "KUNKA är en källsorteringsstation. 4 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "kunka-1.jpg",
+        "kunka-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "4 × 60 l",
+      "sizes": [
+        {
+          "name": "4 × 35 l",
+          "dim": "72 × 72 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "87 × 87 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "105 × 105 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "6269",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "6236",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "kunka-1.jpg",
+          "alt": "Källsortering KUNKA, exempelutförande"
+        },
+        {
+          "file": "kunka-2.jpg",
+          "alt": "Källsortering KUNKA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-medele",
+        "kallsortering-medusa",
+        "kallsortering-misti"
+      ]
+    },
+    {
+      "family": "medele",
+      "slug": "kallsortering-medele",
+      "name": "Källsortering MEDELE",
+      "sku": "951",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "MEDELE är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Lås, Monteringsram, Sammanlänkade innerkärl, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "medele-1.jpg",
+        "medele-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "69 × 23 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "84 × 28 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "99 × 33 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "951",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Lås",
+            "Sammanlänkade innerkärl",
+            "Monteringsram"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "958",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Lås",
+            "Sammanlänkade innerkärl",
+            "Monteringsram"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "medele-1.jpg",
+          "alt": "Källsortering MEDELE, exempelutförande"
+        },
+        {
+          "file": "medele-2.jpg",
+          "alt": "Källsortering MEDELE, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-medusa",
+        "kallsortering-misti",
+        "kallsortering-mundin"
+      ]
+    },
+    {
+      "family": "medusa",
+      "slug": "kallsortering-medusa",
+      "name": "Källsortering MEDUSA",
+      "sku": "5191",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "MEDUSA är en källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "medusa-1.jpg",
+        "medusa-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "79 × 26 × 78 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "97 × 32 × 88 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "119 × 39 × 98 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "105 × 26 × 78 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "129 × 32 × 88 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "157 × 39 × 98 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "5191",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "5093",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "medusa-1.jpg",
+          "alt": "Källsortering MEDUSA, exempelutförande"
+        },
+        {
+          "file": "medusa-2.jpg",
+          "alt": "Källsortering MEDUSA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-misti",
+        "kallsortering-mundin",
+        "kallsortering-nazas"
+      ]
+    },
+    {
+      "family": "misti",
+      "slug": "kallsortering-misti",
+      "name": "Källsortering MISTI",
+      "sku": "5026",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "MISTI är en källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "misti-1.jpg",
+        "misti-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "79 × 26 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "97 × 32 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "118 × 39 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "105 × 26 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "129 × 32 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "156 × 39 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "5026",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "4959",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "misti-1.jpg",
+          "alt": "Källsortering MISTI, exempelutförande"
+        },
+        {
+          "file": "misti-2.jpg",
+          "alt": "Källsortering MISTI, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-mundin",
+        "kallsortering-nazas",
+        "kallsortering-noatak"
+      ]
+    },
+    {
+      "family": "mundin",
+      "slug": "kallsortering-mundin",
+      "name": "Källsortering MUNDIN",
+      "sku": "847",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "MUNDIN är en källsorteringsstation. 3–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock. Tillval: Hjul, Sammanlänkade innerkärl, Vippbart lock, Väggmontering. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "mundin-1.jpg",
+        "mundin-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "90 × 30 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "105 × 35 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "120 × 40 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "120 × 30 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "140 × 35 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "160 × 40 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "847",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul",
+            "Sammanlänkade innerkärl"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "852",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Väggmontering",
+            "Sammanlänkade innerkärl"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "mundin-1.jpg",
+          "alt": "Källsortering MUNDIN, exempelutförande"
+        },
+        {
+          "file": "mundin-2.jpg",
+          "alt": "Källsortering MUNDIN, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-nazas",
+        "kallsortering-noatak",
+        "kallsortering-parana"
+      ]
+    },
+    {
+      "family": "nazas",
+      "slug": "kallsortering-nazas",
+      "name": "Källsortering NAZAS",
+      "sku": "8499",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp. 2 fack à 35/60 liter eller 60/100 liter.",
+      "description": "NAZAS är en källsorteringsstation med integrerad askkopp. 2 fack à 35/60 liter eller 60/100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Askkopp. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "nazas-1.jpg",
+        "nazas-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "2 × 60/100 l",
+      "sizes": [
+        {
+          "name": "2 × 35/60 l",
+          "dim": "Ø 26/31×70/80 cm",
+          "capacity": "2 × 35/60 l",
+          "dimLabel": "Ø × H"
+        },
+        {
+          "name": "2 × 60/100 l",
+          "dim": "Ø 31/36×80/90 cm",
+          "capacity": "2 × 60/100 l",
+          "dimLabel": "Ø × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "8499",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "8466",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "nazas-1.jpg",
+          "alt": "Källsortering NAZAS, exempelutförande"
+        },
+        {
+          "file": "nazas-2.jpg",
+          "alt": "Källsortering NAZAS, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-noatak",
+        "kallsortering-parana",
+        "kallsortering-parral"
+      ]
+    },
+    {
+      "family": "noatak",
+      "slug": "kallsortering-noatak",
+      "name": "Källsortering NOATAK",
+      "sku": "7884",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp. 1–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "NOATAK är en källsorteringsstation med integrerad askkopp. 1–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Askkopp. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "noatak-1.jpg",
+        "noatak-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 35 l",
+          "dim": "57 × 35 × 76 cm",
+          "capacity": "1 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 60 l",
+          "dim": "63 × 40 × 86 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "70 × 50 × 96 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 35 l",
+          "dim": "83 × 35 × 76 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "95 × 40 × 86 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "109 × 50 × 96 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 35 l",
+          "dim": "109 × 35 × 76 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "127 × 40 × 86 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "148 × 50 × 96 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "135 × 35 × 76 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "159 × 40 × 86 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "187 × 80 × 96 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "7884",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "8013",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "noatak-1.jpg",
+          "alt": "Källsortering NOATAK, exempelutförande"
+        },
+        {
+          "file": "noatak-2.jpg",
+          "alt": "Källsortering NOATAK, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-parana",
+        "kallsortering-parral",
+        "kallsortering-pegas"
+      ]
+    },
+    {
+      "family": "parana",
+      "slug": "kallsortering-parana",
+      "name": "Källsortering PARANA",
+      "sku": "8271",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp, med trä. 1–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "PARANA är en källsorteringsstation med integrerad askkopp, med trä. 1–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Askkopp. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "parana-1.jpg",
+        "parana-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt och trä eller rostfritt stål och trä",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 35 l",
+          "dim": "41 × 26 × 85 cm",
+          "capacity": "1 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 60 l",
+          "dim": "48 × 32 × 95 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "54 × 39 × 100 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 35 l",
+          "dim": "68 × 26 × 85 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "80 × 32 × 95 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "94 × 39 × 100 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 35 l",
+          "dim": "94 × 26 × 85 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "112 × 32 × 95 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "133 × 39 × 100 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "120 × 26 × 85 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "144 × 32 × 95 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "172 × 39 × 100 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt och trä",
+          "code": "PC",
+          "sku": "8271",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        },
+        {
+          "name": "Rostfritt stål och trä",
+          "code": "SST",
+          "sku": "8142",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": true,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "parana-1.jpg",
+          "alt": "Källsortering PARANA, exempelutförande"
+        },
+        {
+          "file": "parana-2.jpg",
+          "alt": "Källsortering PARANA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-parral",
+        "kallsortering-pegas",
+        "kallsortering-persei"
+      ]
+    },
+    {
+      "family": "parral",
+      "slug": "kallsortering-parral",
+      "name": "Källsortering PARRAL",
+      "sku": "8985",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp. 1–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "PARRAL är en källsorteringsstation med integrerad askkopp. 1–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Askkopp. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "parral-1.jpg",
+        "parral-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 35 l",
+          "dim": "39 × 32 × 76 cm",
+          "capacity": "1 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 60 l",
+          "dim": "45 × 40 × 86 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "51 × 50 × 96 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 35 l",
+          "dim": "77 × 32 × 76 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "89 × 40 × 86 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "101 × 50 × 96 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 35 l",
+          "dim": "115 × 32 × 76 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "133 × 40 × 86 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "151 × 50 × 96 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "153 × 32 × 76 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "177 × 40 × 86 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "201 × 50 × 96 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "8985",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "8856",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "parral-1.jpg",
+          "alt": "Källsortering PARRAL, exempelutförande"
+        },
+        {
+          "file": "parral-2.jpg",
+          "alt": "Källsortering PARRAL, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-pegas",
+        "kallsortering-persei",
+        "kallsortering-pisco"
+      ]
+    },
+    {
+      "family": "pegas",
+      "slug": "kallsortering-pegas",
+      "name": "Källsortering PEGAS",
+      "sku": "872",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 60 eller 100 liter.",
+      "description": "PEGAS är en källsorteringsstation. 3 fack à 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Märkning/dekaler ingår, Bakdörrar med lås. Valfri standard-RAL ingår för pulverlack. Pris lämnas i offert.",
+      "imageFiles": [
+        "pegas-1.jpg",
+        "pegas-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 60 l",
+          "dim": "95 × 33 × 100 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "110 × 38 × 115 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "872",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Märkning/dekaler ingår",
+            "Bakdörrar med lås"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "pegas-1.jpg",
+          "alt": "Källsortering PEGAS, exempelutförande"
+        },
+        {
+          "file": "pegas-2.jpg",
+          "alt": "Källsortering PEGAS, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-persei",
+        "kallsortering-pisco",
+        "kallsortering-polaris"
+      ]
+    },
+    {
+      "family": "persei",
+      "slug": "kallsortering-persei",
+      "name": "Källsortering PERSEI",
+      "sku": "8433",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med integrerad askkopp. 2 fack à 35, 60 eller 100 liter.",
+      "description": "PERSEI är en källsorteringsstation med integrerad askkopp. 2 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Askkopp. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "persei-1.jpg",
+        "persei-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "2 × 60 l",
+      "sizes": [
+        {
+          "name": "2 × 35 l",
+          "dim": "63 × 27 × 75 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "73 × 31 × 85 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "83 × 36 × 95 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "8433",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "8400",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Askkopp"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": true,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "persei-1.jpg",
+          "alt": "Källsortering PERSEI, exempelutförande"
+        },
+        {
+          "file": "persei-2.jpg",
+          "alt": "Källsortering PERSEI, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-pisco",
+        "kallsortering-polaris",
+        "kallsortering-polaris-nat"
+      ]
+    },
+    {
+      "family": "pisco",
+      "slug": "kallsortering-pisco",
+      "name": "Källsortering PISCO",
+      "sku": "4519",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 2–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "PISCO är en källsorteringsstation. 2–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Vippbart lock. Tillval: Hjul, Lås. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "pisco-1.jpg",
+        "pisco-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "2 × 35 l",
+          "dim": "53 × 26 × 100 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "65 × 32 × 115 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "79 × 39 × 130 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 35 l",
+          "dim": "79 × 26 × 100 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "97 × 32 × 115 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "118 × 39 × 130 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "105 × 26 × 100 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "129 × 32 × 115 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "157 × 39 × 130 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "4519",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Vippbart lock"
+          ],
+          "optionalFeatures": [
+            "Hjul",
+            "Lås"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "4421",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Vippbart lock"
+          ],
+          "optionalFeatures": [
+            "Hjul",
+            "Lås"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "pisco-1.jpg",
+          "alt": "Källsortering PISCO, exempelutförande"
+        },
+        {
+          "file": "pisco-2.jpg",
+          "alt": "Källsortering PISCO, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-polaris",
+        "kallsortering-polaris-nat",
+        "kallsortering-pollux"
+      ]
+    },
+    {
+      "family": "polaris",
+      "slug": "kallsortering-polaris",
+      "name": "Källsortering POLARIS",
+      "sku": "1121",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 4 fack à 60 eller 100 liter.",
+      "description": "POLARIS är en källsorteringsstation. 4 fack à 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock. Tillval: Lås. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "polaris-1.jpg",
+        "polaris-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "4 × 60 l",
+      "sizes": [
+        {
+          "name": "4 × 60 l",
+          "dim": "67 × 67 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "78 × 78 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "1121",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock"
+          ],
+          "optionalFeatures": [
+            "Lås"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "1130",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock"
+          ],
+          "optionalFeatures": [
+            "Lås"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "polaris-1.jpg",
+          "alt": "Källsortering POLARIS, exempelutförande"
+        },
+        {
+          "file": "polaris-2.jpg",
+          "alt": "Källsortering POLARIS, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-polaris-nat",
+        "kallsortering-pollux",
+        "kallsortering-sajama"
+      ]
+    },
+    {
+      "family": "polaris-nat",
+      "slug": "kallsortering-polaris-nat",
+      "name": "Källsortering POLARIS nät",
+      "sku": "1137",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med nätstomme. 4 fack à 60 eller 100 liter.",
+      "description": "POLARIS nät är en källsorteringsstation med nätstomme. 4 fack à 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul, Lås. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "polaris-nat-1.jpg",
+        "polaris-nat-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt med nät eller rostfritt stål med nät",
+      "defaultSize": "4 × 60 l",
+      "sizes": [
+        {
+          "name": "4 × 60 l",
+          "dim": "67 × 67 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "78 × 78 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt, nät",
+          "code": "PC",
+          "sku": "1137",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Hjul",
+            "Lås"
+          ]
+        },
+        {
+          "name": "Rostfritt stål, nät",
+          "code": "SST",
+          "sku": "1141",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Hjul",
+            "Lås"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": true,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "polaris-nat-1.jpg",
+          "alt": "Källsortering POLARIS nät, exempelutförande"
+        },
+        {
+          "file": "polaris-nat-2.jpg",
+          "alt": "Källsortering POLARIS nät, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-pollux",
+        "kallsortering-sajama",
+        "kallsortering-salliere"
+      ]
+    },
+    {
+      "family": "pollux",
+      "slug": "kallsortering-pollux",
+      "name": "Källsortering POLLUX",
+      "sku": "990",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "POLLUX är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Lås, Sammanlänkade innerkärl. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "pollux-1.jpg",
+        "pollux-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "69 × 23 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "84 × 28 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "99 × 33 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "990",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Sammanlänkade innerkärl"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "996",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Lås",
+            "Sammanlänkade innerkärl"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "pollux-1.jpg",
+          "alt": "Källsortering POLLUX, exempelutförande"
+        },
+        {
+          "file": "pollux-2.jpg",
+          "alt": "Källsortering POLLUX, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-sajama",
+        "kallsortering-salliere",
+        "kallsortering-scopi"
+      ]
+    },
+    {
+      "family": "sajama",
+      "slug": "kallsortering-sajama",
+      "name": "Källsortering SAJAMA",
+      "sku": "4308",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 2–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "SAJAMA är en källsorteringsstation. 2–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "sajama-1.jpg",
+        "sajama-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "2 × 35 l",
+          "dim": "53 × 26 × 75 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "65 × 32 × 85 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "79 × 39 × 97 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 35 l",
+          "dim": "79 × 26 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "97 × 32 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "118 × 39 × 96 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "105 × 26 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "129 × 32 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "157 × 39 × 95 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "4308",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Hjul"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "3965",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Hjul"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "sajama-1.jpg",
+          "alt": "Källsortering SAJAMA, exempelutförande"
+        },
+        {
+          "file": "sajama-2.jpg",
+          "alt": "Källsortering SAJAMA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-salliere",
+        "kallsortering-scopi",
+        "kallsortering-singla"
+      ]
+    },
+    {
+      "family": "salliere",
+      "slug": "kallsortering-salliere",
+      "name": "Källsortering SALLIERE",
+      "sku": "908",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "SALLIERE är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Lås, Sammanlänkade innerkärl, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "salliere-1.jpg",
+        "salliere-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "69 × 23 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "84 × 28 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "99 × 33 × 95 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "908",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Lås",
+            "Sammanlänkade innerkärl"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "913",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Lås",
+            "Sammanlänkade innerkärl"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "salliere-1.jpg",
+          "alt": "Källsortering SALLIERE, exempelutförande"
+        },
+        {
+          "file": "salliere-2.jpg",
+          "alt": "Källsortering SALLIERE, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-scopi",
+        "kallsortering-singla",
+        "kallsortering-spika"
+      ]
+    },
+    {
+      "family": "scopi",
+      "slug": "kallsortering-scopi",
+      "name": "Källsortering SCOPI",
+      "sku": "1040",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "SCOPI är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "scopi-1.jpg",
+        "scopi-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "69 × 23 × 86 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "84 × 28 × 101 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "99 × 33 × 116 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "1040",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Vippbart lock"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "1049",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Vippbart lock"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "scopi-1.jpg",
+          "alt": "Källsortering SCOPI, exempelutförande"
+        },
+        {
+          "file": "scopi-2.jpg",
+          "alt": "Källsortering SCOPI, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-singla",
+        "kallsortering-spika",
+        "kallsortering-stella"
+      ]
+    },
+    {
+      "family": "singla",
+      "slug": "kallsortering-singla",
+      "name": "Källsortering SINGLA",
+      "sku": "979",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35 liter.",
+      "description": "SINGLA är en källsorteringsstation. 3 fack à 35 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "singla-1.jpg",
+        "singla-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 35 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "Ø 48 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "Ø × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "979",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Hjul"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "983",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Hjul"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "singla-1.jpg",
+          "alt": "Källsortering SINGLA, exempelutförande"
+        },
+        {
+          "file": "singla-2.jpg",
+          "alt": "Källsortering SINGLA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-spika",
+        "kallsortering-stella",
+        "kallsortering-tacora"
+      ]
+    },
+    {
+      "family": "spika",
+      "slug": "kallsortering-spika",
+      "name": "Källsortering SPIKA",
+      "sku": "967",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "SPIKA är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Stabil botten. Valfri standard-RAL ingår för pulverlack. Pris lämnas i offert.",
+      "imageFiles": [
+        "spika-1.jpg",
+        "spika-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "78 × 26 × 90 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "93 × 31 × 100 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "108 × 36 × 110 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "967",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Stabil botten"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "spika-1.jpg",
+          "alt": "Källsortering SPIKA, exempelutförande"
+        },
+        {
+          "file": "spika-2.jpg",
+          "alt": "Källsortering SPIKA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-stella",
+        "kallsortering-tacora",
+        "kallsortering-todi"
+      ]
+    },
+    {
+      "family": "stella",
+      "slug": "kallsortering-stella",
+      "name": "Källsortering STELLA",
+      "sku": "1013",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "STELLA är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Sammanlänkade innerkärl, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "stella-1.jpg",
+        "stella-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "78 × 26 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "93 × 32 × 83 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "120 × 40 × 90 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "1013",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Sammanlänkade innerkärl"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "1020",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Sammanlänkade innerkärl"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "stella-1.jpg",
+          "alt": "Källsortering STELLA, exempelutförande"
+        },
+        {
+          "file": "stella-2.jpg",
+          "alt": "Källsortering STELLA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-tacora",
+        "kallsortering-todi",
+        "kallsortering-tolima"
+      ]
+    },
+    {
+      "family": "tacora",
+      "slug": "kallsortering-tacora",
+      "name": "Källsortering TACORA",
+      "sku": "5774",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med trä. 2–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "TACORA är en källsorteringsstation med trä. 2–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "tacora-1.jpg",
+        "tacora-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt och trä eller rostfritt stål och trä",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "2 × 35 l",
+          "dim": "58 × 32 × 75 cm",
+          "capacity": "2 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 60 l",
+          "dim": "70 × 38 × 85 cm",
+          "capacity": "2 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "2 × 100 l",
+          "dim": "84 × 45 × 96 cm",
+          "capacity": "2 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 35 l",
+          "dim": "84 × 32 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "102 × 38 × 85 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "124 × 45 × 96 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "111 × 32 × 75 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "135 × 38 × 85 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "163 × 45 × 96 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt och trä",
+          "code": "PC",
+          "sku": "5774",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        },
+        {
+          "name": "Rostfritt stål och trä",
+          "code": "SST",
+          "sku": "5677",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock",
+            "Hjul"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": true,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "tacora-1.jpg",
+          "alt": "Källsortering TACORA, exempelutförande"
+        },
+        {
+          "file": "tacora-2.jpg",
+          "alt": "Källsortering TACORA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-todi",
+        "kallsortering-tolima",
+        "kallsortering-triolet"
+      ]
+    },
+    {
+      "family": "todi",
+      "slug": "kallsortering-todi",
+      "name": "Källsortering TODI",
+      "sku": "1068",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "TODI är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår, Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "todi-1.jpg",
+        "todi-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "69 × 23 × 92 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "84 × 28 × 107 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "99 × 33 × 122 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "1068",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Vippbart lock"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "1076",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Vippbart lock"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "todi-1.jpg",
+          "alt": "Källsortering TODI, exempelutförande"
+        },
+        {
+          "file": "todi-2.jpg",
+          "alt": "Källsortering TODI, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-tolima",
+        "kallsortering-triolet",
+        "kallsortering-zupo"
+      ]
+    },
+    {
+      "family": "tolima",
+      "slug": "kallsortering-tolima",
+      "name": "Källsortering TOLIMA",
+      "sku": "6155",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation med trä. 3–4 fraktioner à 35, 60 eller 100 liter.",
+      "description": "TOLIMA är en källsorteringsstation med trä. 3–4 fraktioner à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Hjul, Lås. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "tolima-1.jpg",
+        "tolima-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt och trä eller rostfritt stål och trä",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "92 × 27 × 83 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "110 × 33 × 92 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "131 × 40 × 102 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 35 l",
+          "dim": "118 × 27 × 83 cm",
+          "capacity": "4 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 60 l",
+          "dim": "142 × 33 × 92 cm",
+          "capacity": "4 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "4 × 100 l",
+          "dim": "170 × 40 × 102 cm",
+          "capacity": "4 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt och trä",
+          "code": "PC",
+          "sku": "6155",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Hjul"
+          ]
+        },
+        {
+          "name": "Rostfritt stål och trä",
+          "code": "SST",
+          "sku": "6074",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Hjul",
+            "Lås"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": true,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "tolima-1.jpg",
+          "alt": "Källsortering TOLIMA, exempelutförande"
+        },
+        {
+          "file": "tolima-2.jpg",
+          "alt": "Källsortering TOLIMA, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-triolet",
+        "kallsortering-zupo",
+        "kallsortering-albris"
+      ]
+    },
+    {
+      "family": "triolet",
+      "slug": "kallsortering-triolet",
+      "name": "Källsortering TRIOLET",
+      "sku": "919-1",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35, 60 eller 100 liter.",
+      "description": "TRIOLET är en källsorteringsstation. 3 fack à 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "triolet-1.jpg",
+        "triolet-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "78 × 26 × 75 cm",
+          "capacity": "3 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "93 × 32 × 83 cm",
+          "capacity": "3 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "3 × 100 l",
+          "dim": "120 × 40 × 90 cm",
+          "capacity": "3 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "919-1",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "929-1",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår",
+            "Stabil botten"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "triolet-1.jpg",
+          "alt": "Källsortering TRIOLET, exempelutförande"
+        },
+        {
+          "file": "triolet-2.jpg",
+          "alt": "Källsortering TRIOLET, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-zupo",
+        "kallsortering-albris",
+        "kallsortering-ampato"
+      ]
+    },
+    {
+      "family": "vadret",
+      "slug": "papperskorg-vadret",
+      "name": "Papperskorg VADRET",
+      "sku": "13949",
+      "subcategory": "Papperskorgar",
+      "subcategorySlug": "papperskorgar",
+      "summary": "Papperskorg med pedal. Kapacitet 35, 60 eller 100 liter.",
+      "description": "VADRET är en papperskorg med pedal. Kapacitet 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Märkning/dekaler ingår, Pedal. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "vadret-1.jpg",
+        "vadret-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "1 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 35 l",
+          "dim": "23 × 23 × 75 cm",
+          "capacity": "1 × 35 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 60 l",
+          "dim": "28 × 28 × 85 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "B × D × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "33 × 33 × 95 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "13949",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Märkning/dekaler ingår",
+            "Pedal"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "13982",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Märkning/dekaler ingår",
+            "Pedal"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": true,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "vadret-1.jpg",
+          "alt": "Papperskorg VADRET, exempelutförande"
+        },
+        {
+          "file": "vadret-2.jpg",
+          "alt": "Papperskorg VADRET, andra vinkel"
+        }
+      ],
+      "related": [
+        "papperskorg-vela",
+        "papperskorg-zenipole",
+        "papperskorg-finlay"
+      ]
+    },
+    {
+      "family": "vela",
+      "slug": "papperskorg-vela",
+      "name": "Papperskorg VELA",
+      "sku": "9895",
+      "subcategory": "Papperskorgar",
+      "subcategorySlug": "papperskorgar",
+      "summary": "Papperskorg. Kapacitet 35, 60 eller 100 liter.",
+      "description": "VELA är en papperskorg. Kapacitet 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "vela-1.jpg",
+        "vela-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "1 × 60 l",
+      "sizes": [
+        {
+          "name": "1 × 35 l",
+          "dim": "Ø 27 × 71 cm",
+          "capacity": "1 × 35 l",
+          "dimLabel": "Ø × H"
+        },
+        {
+          "name": "1 × 60 l",
+          "dim": "Ø 32 × 81 cm",
+          "capacity": "1 × 60 l",
+          "dimLabel": "Ø × H"
+        },
+        {
+          "name": "1 × 100 l",
+          "dim": "Ø 37 × 91 cm",
+          "capacity": "1 × 100 l",
+          "dimLabel": "Ø × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "9895",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": [
+            "Vippbart lock"
+          ]
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "9862",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "vela-1.jpg",
+          "alt": "Papperskorg VELA, exempelutförande"
+        },
+        {
+          "file": "vela-2.jpg",
+          "alt": "Papperskorg VELA, andra vinkel"
+        }
+      ],
+      "related": [
+        "papperskorg-zenipole",
+        "papperskorg-finlay",
+        "papperskorg-vadret"
+      ]
+    },
+    {
+      "family": "zenipole",
+      "slug": "papperskorg-zenipole",
+      "name": "Papperskorg ZENIPOLE",
+      "sku": "15676",
+      "subcategory": "Papperskorgar",
+      "subcategorySlug": "papperskorgar",
+      "summary": "Papperskorg. Kapacitet 30 liter.",
+      "description": "ZENIPOLE är en papperskorg. Kapacitet 30 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Stolp- eller väggmontering väljs på sidan och följer med till offerten. Pris lämnas i offert.",
+      "imageFiles": [
+        "zenipole-1.jpg",
+        "zenipole-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "1 × 30 l",
+      "sizes": [
+        {
+          "name": "1 × 30 l",
+          "dim": "30 × 20 × 68 cm",
+          "capacity": "1 × 30 l",
+          "dimLabel": "B × D × H"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "15676",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "15709",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Montering",
+          "options": [
+            "Stolpmontering",
+            "Väggmontering"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "zenipole-1.jpg",
+          "alt": "Papperskorg ZENIPOLE, exempelutförande"
+        },
+        {
+          "file": "zenipole-2.jpg",
+          "alt": "Papperskorg ZENIPOLE, andra vinkel"
+        }
+      ],
+      "related": [
+        "papperskorg-finlay",
+        "papperskorg-vadret",
+        "papperskorg-vela"
+      ]
+    },
+    {
+      "family": "zupo",
+      "slug": "kallsortering-zupo",
+      "name": "Källsortering ZUPO",
+      "sku": "1003",
+      "subcategory": "Källsortering",
+      "subcategorySlug": "kallsortering",
+      "summary": "Källsorteringsstation. 3 fack à 35 eller 60 liter.",
+      "description": "ZUPO är en källsorteringsstation. 3 fack à 35 eller 60 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
+      "imageFiles": [
+        "zupo-1.jpg",
+        "zupo-2.jpg"
+      ],
+      "material": "Pulverlackerad stålplåt eller rostfritt stål",
+      "defaultSize": "3 × 60 l",
+      "sizes": [
+        {
+          "name": "3 × 35 l",
+          "dim": "L 45×70/ H pole 120",
+          "capacity": "3 × 35 l",
+          "dimLabel": "Mått"
+        },
+        {
+          "name": "3 × 60 l",
+          "dim": "L 55×80/ H pole 120",
+          "capacity": "3 × 60 l",
+          "dimLabel": "Mått"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Pulverlackerad stålplåt",
+          "code": "PC",
+          "sku": "1003",
+          "environment": "Inomhus och skyddad utomhusmiljö",
+          "standardFeatures": [
+            "Stomme 1,2 mm stålplåt",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        },
+        {
+          "name": "Rostfritt stål",
+          "code": "SST",
+          "sku": "1007",
+          "environment": "Inomhus och utomhus i allväder",
+          "standardFeatures": [
+            "Stomme 1,2 mm",
+            "AISI 304 rostfritt stål",
+            "Väderbeständig",
+            "Innerhållare för säck",
+            "Avtagbart lock",
+            "Märkning/dekaler ingår"
+          ],
+          "optionalFeatures": []
+        }
+      ],
+      "variants": [
+        {
+          "label": "Märkning",
+          "options": [
+            "Standard svensk sorteringsmärkning",
+            "Utan märkning",
+            "Anpassad märkning"
+          ]
+        }
+      ],
+      "flags": {
+        "wood": false,
+        "mesh": false,
+        "crystal": false,
+        "ashtray": false,
+        "pedal": false,
+        "food": false
+      },
+      "images": [
+        {
+          "file": "zupo-1.jpg",
+          "alt": "Källsortering ZUPO, exempelutförande"
+        },
+        {
+          "file": "zupo-2.jpg",
+          "alt": "Källsortering ZUPO, andra vinkel"
+        }
+      ],
+      "related": [
+        "kallsortering-albris",
+        "kallsortering-ampato",
+        "kallsortering-arizaro"
+      ]
+    }
+  ],
+  "skippedHandwritten": [
+    "albris",
+    "bernina",
+    "eiger",
+    "gemini",
+    "luna"
+  ],
+  "catalog": {
+    "askkoppar": [
+      "askkopp-luna"
+    ],
+    "kallsortering": [
+      "kallsortering-albris",
+      "kallsortering-bernina",
+      "kallsortering-eiger",
+      "kallsortering-gemini",
+      "kallsortering-ampato",
+      "kallsortering-arizaro",
+      "kallsortering-arizaro-at",
+      "kallsortering-arizaro-crystal",
+      "kallsortering-belvedere",
+      "kallsortering-bonanza",
+      "kallsortering-brend",
+      "kallsortering-cachi",
+      "kallsortering-casiri",
+      "kallsortering-chani",
+      "kallsortering-cimon",
+      "kallsortering-denali",
+      "kallsortering-ecomonde",
+      "kallsortering-elm",
+      "kallsortering-elm-tra",
+      "kallsortering-eridani",
+      "kallsortering-kandel",
+      "kallsortering-katyn",
+      "kallsortering-kobuk",
+      "kallsortering-kunka",
+      "kallsortering-medele",
+      "kallsortering-medusa",
+      "kallsortering-misti",
+      "kallsortering-mundin",
+      "kallsortering-nazas",
+      "kallsortering-noatak",
+      "kallsortering-parana",
+      "kallsortering-parral",
+      "kallsortering-pegas",
+      "kallsortering-persei",
+      "kallsortering-pisco",
+      "kallsortering-polaris",
+      "kallsortering-polaris-nat",
+      "kallsortering-pollux",
+      "kallsortering-sajama",
+      "kallsortering-salliere",
+      "kallsortering-scopi",
+      "kallsortering-singla",
+      "kallsortering-spika",
+      "kallsortering-stella",
+      "kallsortering-tacora",
+      "kallsortering-todi",
+      "kallsortering-tolima",
+      "kallsortering-triolet",
+      "kallsortering-zupo"
+    ],
+    "papperskorgar": [
+      "papperskorg-rodberga-100",
+      "papperskorg-finlay",
+      "papperskorg-vadret",
+      "papperskorg-vela",
+      "papperskorg-zenipole"
+    ]
+  }
+}

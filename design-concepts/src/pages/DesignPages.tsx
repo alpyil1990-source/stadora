@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { BINSIGNIA_SLUGS, productPath, products } from '../data/content'
 
 export function DesignIndexPage() {
   return (
@@ -15,10 +16,10 @@ export function DesignIndexPage() {
         <h2 className="text-xl">Skärmar att granska</h2>
         <ol className="mt-4 columns-1 gap-8 text-sm sm:columns-2">
           {[
-            ['Avfallsutkast (5 produkter)', '/design/binsignia'],
+            ['Avfallskatalog', '/design/binsignia'],
             ['Startsida offentlig miljö', '/'],
             ['Hela sortimentet (kategorier)', '/produkter'],
-            ['Källsortering (ALBRIS, BERNINA, EIGER, GEMINI)', '/produkter/avfall-atervinning/kallsortering'],
+            ['Källsortering', '/produkter/avfall-atervinning/kallsortering'],
             ['Askkoppar (LUNA)', '/produkter/avfall-atervinning/askkoppar'],
             ['Lek och aktivitet', '/produkter/lek-aktivitet'],
             ['Gungor (tom underkategori)', '/produkter/lek-aktivitet/gungor'],
@@ -63,14 +64,14 @@ export function DesignIndexPage() {
         </p>
       </section>
       <section className="border border-line bg-sheet p-6 text-sm">
-        <h2 className="text-lg">BINSIGNIA-utkast</h2>
+        <h2 className="text-lg">Avfallskatalog</h2>
         <p className="mt-2 text-muted">
-          Fem modeller med foton från binsignia.com, Paula Stirbu som kontakt och intern EUR-lista.
-          Inga priser på den publika sidan. Resten av sortimentet väntar på att du godkänner utkastet.
+          54 serier från prislistan september 2026, med foton från leverantörens sajt. Inga priser
+          och inga leverantörsartikelnummer på den publika sidan. EUR-lista i admin.
         </p>
         <p className="mt-3">
           <Link className="underline" to="/design/binsignia">
-            Granska de fem produkterna
+            Intern översikt
           </Link>
         </p>
       </section>
@@ -87,85 +88,62 @@ export function DesignIndexPage() {
 }
 
 export function BinsigniaDraftPage() {
-  const items = [
-    {
-      slug: 'askkopp-luna',
-      name: 'LUNA',
-      why: 'Askkopp, en kapacitet. Visar material PC/SST, RAL och enkel SKU per material.',
-      href: '/produkt/askkopp-luna',
-    },
-    {
-      slug: 'kallsortering-albris',
-      name: 'ALBRIS',
-      why: 'Modulär källsortering, 12 konfigurationer, perforerad front.',
-      href: '/produkt/kallsortering-albris',
-    },
-    {
-      slug: 'kallsortering-bernina',
-      name: 'BERNINA',
-      why: 'Enklare rak station — samma kapacitetsgrid, annan kropp.',
-      href: '/produkt/kallsortering-bernina',
-    },
-    {
-      slug: 'kallsortering-eiger',
-      name: 'EIGER',
-      why: 'Food court 3 × 100 l med brickyta. En enda storlek.',
-      href: '/produkt/kallsortering-eiger',
-    },
-    {
-      slug: 'kallsortering-gemini',
-      name: 'GEMINI',
-      why: 'Källsortering med askkopp för gård och terrass.',
-      href: '/produkt/kallsortering-gemini',
-    },
+  const items = BINSIGNIA_SLUGS.map((slug) => products[slug]).filter(Boolean)
+  const groups = [
+    { name: 'Askkoppar', slug: 'askkoppar', href: '/produkter/avfall-atervinning/askkoppar' },
+    { name: 'Källsortering', slug: 'kallsortering', href: '/produkter/avfall-atervinning/kallsortering' },
+    { name: 'Papperskorgar', slug: 'papperskorgar', href: '/produkter/avfall-atervinning/papperskorgar' },
   ]
 
   return (
     <div className="space-y-10">
       <div>
-        <p className="kicker">Utkast · inte hela katalogen</p>
-        <h1 className="mt-2 text-3xl md:text-4xl">Fem BINSIGNIA-produkter</h1>
+        <p className="kicker">Intern översikt · avfall</p>
+        <h1 className="mt-2 text-3xl md:text-4xl">Avfallskatalog</h1>
         <p className="mt-4 max-w-2xl text-muted">
-          Paula Stirbu har gett tillstånd att använda produktfoton, beskrivningar och övergripande
-          specifikationer på stadora.se. Det här är fem modeller så att du kan se hur serie, material,
-          kapacitet och intern prislista sitter innan vi tar in resterande cirka 100 modeller.
+          {items.length} serier från prislistan september 2026. Publika sidor visar namn, material och
+          kapacitet — inte leverantör, inte EUR, inte leverantörens artikelnummer. PETALSTEEL finns
+          på leverantörens webb men inte på prislistan och är inte importerad. Skola och vård väntar.
+        </p>
+        <p className="mt-3 text-sm">
+          <Link className="underline" to="/admin/leverantorer/binsignia">
+            Intern EUR-lista och kontakt
+          </Link>
         </p>
       </div>
-      <ul className="grid gap-4 sm:grid-cols-2">
-        {items.map((item) => (
-          <li key={item.slug} className="border border-line bg-sheet p-5">
-            <p className="kicker">{item.name}</p>
-            <p className="mt-2 font-medium">
-              <Link className="underline" to={item.href}>
-                Öppna produktsidan
+      {groups.map((g) => {
+        const rows = items.filter((p) => p.subcategorySlug === g.slug)
+        return (
+          <section key={g.slug}>
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <h2 className="text-xl">
+                {g.name} · {rows.length}
+              </h2>
+              <Link className="text-sm underline" to={g.href}>
+                Öppna underkategorin
               </Link>
-            </p>
-            <p className="mt-2 text-sm text-muted">{item.why}</p>
-          </li>
-        ))}
-      </ul>
+            </div>
+            <ul className="mt-4 columns-1 gap-x-8 text-sm sm:columns-2 lg:columns-3">
+              {rows.map((p) => (
+                <li key={p.slug} className="break-inside-avoid border-b border-line py-2">
+                  <Link className="underline-offset-2 hover:underline" to={productPath(p)}>
+                    {p.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      })}
       <section className="border border-line bg-sheet p-6 text-sm">
-        <h2 className="text-lg">Vad som ligger i utkastet</h2>
+        <h2 className="text-lg">Vad som gäller</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-muted">
-          <li>Foton hämtade från binsignia.com, inte från stadora.se.</li>
-          <li>Kapacitet och mått från tillverkarens sidor och prislista september 2026.</li>
+          <li>Foton från leverantörens sajt, inte från stadora.se.</li>
+          <li>Kapacitet och mått från sidorna och prislistan september 2026.</li>
           <li>PC och SST som material. AISI 304 bara på rostfritt — inte på pulverlack.</li>
-          <li>Inga priser på produktsidan. EUR-lista, rabatt 15/22/30 % och fraktregler i admin.</li>
-          <li>
-            Kontakt: Paula Stirbu, FORWARD SUPPORT SRL, Vulcan / Brașov.{' '}
-            <Link className="underline" to="/admin/leverantorer/binsignia">
-              Öppna leverantörskortet
-            </Link>
-          </li>
-          <li>Ritningar och PDF-datablad publiceras inte. De lämnas per projekt enligt mejlet.</li>
+          <li>Inga priser och inga leverantörsartikelnummer på produktsidan.</li>
+          <li>Ritningar och PDF-datablad publiceras inte. De lämnas per projekt.</li>
         </ul>
-      </section>
-      <section className="border border-dashed border-line p-6 text-sm">
-        <h2 className="text-lg">Inte inlagt än</h2>
-        <p className="mt-2 text-muted">
-          Resterande modeller på binsignia.com (ELM, ZUPO, ARIZARO, DENALI med flera), skola och vård.
-          Säg till när de fem ser rätt ut så tar vi nästa batch.
-        </p>
       </section>
     </div>
   )

@@ -1,3 +1,5 @@
+import { avfallCatalogSlugs } from './binsignia-rest'
+
 export type CatalogStatus = 'published' | 'needs_work' | 'draft'
 
 export type SubcategoryDef = {
@@ -70,27 +72,22 @@ export const catalog: CategoryDef[] = [
         slug: 'papperskorgar',
         name: 'Papperskorgar',
         blurb: 'Fristående kärl för park, torg och gård.',
-        productSlugs: ['papperskorg-rodberga-100'],
+        productSlugs: avfallCatalogSlugs.papperskorgar,
         draftExamples: ['Papperskorg Djurö', 'Papperskorg Granö'],
       },
       {
         slug: 'askkoppar',
         name: 'Askkoppar',
         blurb: 'Fristående askkoppar.',
-        productSlugs: ['askkopp-luna'],
+        productSlugs: avfallCatalogSlugs.askkoppar,
         draftExamples: [],
       },
       {
         slug: 'kallsortering',
         name: 'Källsortering',
         blurb: 'Stationer och behållare med fraktioner.',
-        productSlugs: [
-          'kallsortering-albris',
-          'kallsortering-bernina',
-          'kallsortering-eiger',
-          'kallsortering-gemini',
-        ],
-        draftExamples: ['Källsorteringsstation ELM', 'Källsorteringsbehållare ZUPO'],
+        productSlugs: avfallCatalogSlugs.kallsortering,
+        draftExamples: [],
         filters: [
           { legend: 'Material', options: ['Pulverlackerad stålplåt', 'Rostfritt stål'] },
           { legend: 'Fraktioner', options: ['1', '2', '3', '4'] },
