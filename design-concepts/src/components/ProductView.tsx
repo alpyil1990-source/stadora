@@ -155,7 +155,7 @@ export function ProductView({
         <button
           type="button"
           onClick={addToQuote}
-          className="bg-ink px-5 py-3 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet"
+          className={`${layout === 'hybrid' ? 'hidden lg:inline-flex' : 'inline-flex'} bg-ink px-5 py-3 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet`}
         >
           Lägg i offertlista
         </button>
@@ -409,9 +409,13 @@ export function ProductView({
   return (
     <article>
       <LayoutNote title="C. Hybrid — rekommenderas" />
-      <nav aria-label="På sidan" className="mb-6 flex flex-wrap gap-3 text-sm">
+      <nav aria-label="På sidan" className="mb-6 flex flex-wrap gap-2 text-xs">
         {jump.map((j) => (
-          <a key={j.id} className="text-sage-dark underline-offset-2 hover:underline" href={`#${j.id}`}>
+          <a
+            key={j.id}
+            className="border border-line px-2 py-1 text-sage-dark hover:border-ink"
+            href={`#${j.id}`}
+          >
             {j.label}
           </a>
         ))}

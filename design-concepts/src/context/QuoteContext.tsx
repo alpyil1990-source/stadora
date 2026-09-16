@@ -1,4 +1,11 @@
-import { createContext, useContext, useMemo, useState, type ReactNode } from 'react'
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+} from 'react'
 import type { AreaId } from '../data/content'
 
 export type QuoteLine = {
@@ -28,7 +35,26 @@ type QuoteContextValue = {
 
 const QuoteContext = createContext<QuoteContextValue | null>(null)
 
-const empty: QuoteState = { offentlig: [], skola: [], vard: [] }
+const STORAGE_KEY = 'stadora-quote-v1'
+
+function blank(): QuoteState {
+  return { offentlig: [], skola: [], vard: [] }
+}
+
+function loadState(): QuoteState {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    if (!raw) return blank()
+    const parsed = JSON.parse(raw) as Partial<QuoteState>
+    return {
+      offentlig: Array.isArray(parsed.offentlig) ? parsed.offentlig : [],
+      skola: Array.isArray(parsed.skola) ? parsed.skola : [],
+      vard: Array.isArray(parsed.vard) ? parsed.vard : [],
+    }
+  } catch {
+    return blank()
+  }
+}
 
 export function QuoteProvider({
   children,
@@ -39,7 +65,11 @@ export function QuoteProvider({
   area: AreaId
   setArea: (area: AreaId) => void
 }) {
-  const [state, setState] = useState<QuoteState>(empty)
+  const [state, setState] = useState<QuoteState>(loadState)
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
+  }, [state])
 
   const value = useMemo<QuoteContextValue>(() => {
     const lines = state[area]
