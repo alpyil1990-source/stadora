@@ -188,7 +188,15 @@ export function AdminSupplierDetail() {
                     {sizes.length > 0 && (
                       <p>
                         Storlekar:{' '}
-                        {sizes.map((s) => `${s.name}${sizePhotos && p.images.some((i) => i.size === s.name) ? '' : ' (bild saknas)'}`).join(' · ')}
+                        {sizes
+                          .map((s) =>
+                            `${s.name}${
+                              sizePhotos && !p.images.some((i) => i.size === s.name)
+                                ? ' (bild saknas)'
+                                : ''
+                            }`,
+                          )
+                          .join(' · ')}
                       </p>
                     )}
                     {colors.length > 0 && (
