@@ -13,12 +13,14 @@ export function ProductImageZoom({
   alt,
   imgClassName,
   imgKey,
+  onIndexChange,
 }: {
   images: LightboxImage[]
   currentSrc: string
   alt: string
   imgClassName?: string
   imgKey?: string
+  onIndexChange?: (index: number) => void
 }) {
   const [open, setOpen] = useState(false)
   const sources = images.length > 0 ? images : [{ src: currentSrc, alt }]
@@ -33,12 +35,12 @@ export function ProductImageZoom({
         type="button"
         onClick={() => setOpen(true)}
         aria-label={`Förstora bild: ${alt}`}
-        className="group relative block h-full w-full cursor-zoom-in"
+        className="relative block h-full w-full cursor-zoom-in"
       >
         <img key={imgKey} src={currentSrc} alt={alt} className={imgClassName} />
         <span
           aria-hidden
-          className="absolute right-3 bottom-3 flex h-9 w-9 items-center justify-center border border-line bg-sheet/90 text-ink opacity-100 shadow-sm md:opacity-70 md:group-hover:opacity-100"
+          className="absolute right-3 bottom-3 flex h-9 w-9 items-center justify-center bg-ink text-sheet"
         >
           <ZoomIn className="h-4 w-4" />
         </span>
@@ -49,6 +51,7 @@ export function ProductImageZoom({
           initialIndex={startIndex}
           fallbackAlt={alt}
           onClose={() => setOpen(false)}
+          onIndexChange={onIndexChange}
         />
       )}
     </>
@@ -60,11 +63,13 @@ function LightboxDialog({
   initialIndex,
   fallbackAlt,
   onClose,
+  onIndexChange,
 }: {
   images: LightboxImage[]
   initialIndex: number
   fallbackAlt: string
   onClose: () => void
+  onIndexChange?: (index: number) => void
 }) {
   const labelId = useId()
   const overlayRef = useRef<HTMLDivElement>(null)
@@ -78,12 +83,20 @@ function LightboxDialog({
   const many = images.length > 1
 
   const prev = useCallback(() => {
-    setIndex((i) => (i - 1 + images.length) % images.length)
-  }, [images.length])
+    setIndex((i) => {
+      const nextIndex = (i - 1 + images.length) % images.length
+      onIndexChange?.(nextIndex)
+      return nextIndex
+    })
+  }, [images.length, onIndexChange])
 
   const next = useCallback(() => {
-    setIndex((i) => (i + 1) % images.length)
-  }, [images.length])
+    setIndex((i) => {
+      const nextIndex = (i + 1) % images.length
+      onIndexChange?.(nextIndex)
+      return nextIndex
+    })
+  }, [images.length, onIndexChange])
 
   useEffect(() => {
     setNatural(null)

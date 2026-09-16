@@ -146,6 +146,7 @@ export function ProductView({
             alt={current.alt}
             imgKey={popKey}
             imgClassName="gallery-pop h-full w-full object-contain p-6"
+            onIndexChange={setActive}
           />
         )}
       </div>
@@ -610,6 +611,7 @@ export function ProductView({
                 alt={current?.alt ?? product.name}
                 imgKey={popKey}
                 imgClassName="gallery-pop mx-auto max-h-[72vh] w-full object-contain"
+                onIndexChange={setActive}
               />
             )}
           </div>
