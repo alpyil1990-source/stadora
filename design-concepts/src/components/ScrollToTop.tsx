@@ -1,11 +1,26 @@
 import { useLayoutEffect, useRef } from 'react'
 import { useLocation, useNavigationType } from 'react-router-dom'
 
+function scrollToTop() {
+  window.scrollTo(0, 0)
+  document.documentElement.scrollTop = 0
+  document.body.scrollTop = 0
+}
+
 /** SPA-navigering behåller scrollY. Vid klick: toppen av nya sidan. Vid tillbaka: densamma platsen. */
 export function ScrollToTop() {
   const { pathname, hash } = useLocation()
   const navigationType = useNavigationType()
   const positions = useRef(new Map<string, number>())
+
+  useLayoutEffect(() => {
+    const { history } = window
+    const previous = history.scrollRestoration
+    history.scrollRestoration = 'manual'
+    return () => {
+      history.scrollRestoration = previous
+    }
+  }, [])
 
   useLayoutEffect(() => {
     if (hash) {
@@ -14,14 +29,12 @@ export function ScrollToTop() {
       if (el) {
         el.scrollIntoView()
       } else {
-        window.scrollTo(0, 0)
+        scrollToTop()
       }
     } else if (navigationType === 'POP' && positions.current.has(pathname)) {
       window.scrollTo(0, positions.current.get(pathname) ?? 0)
     } else {
-      window.scrollTo(0, 0)
-      document.documentElement.scrollTop = 0
-      document.body.scrollTop = 0
+      scrollToTop()
     }
 
     return () => {
