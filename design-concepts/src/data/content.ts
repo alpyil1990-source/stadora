@@ -1,0 +1,426 @@
+export type AreaId = 'offentlig' | 'skola' | 'vard'
+
+export type Product = {
+  slug: string
+  name: string
+  sku?: string
+  area: AreaId
+  category: string
+  categorySlug: string
+  subcategory: string
+  subcategorySlug: string
+  summary: string
+  description: string
+  images: { src: string; alt: string; kind: 'studio' | 'site' | 'detail' }[]
+  material?: string
+  cement?: string
+  wood?: string
+  dimensions?: { label: string; value: string }[]
+  weight?: string
+  mounting?: string[]
+  capacity?: string
+  environment?: string
+  leadTime?: string
+  warranty?: string
+  medicalClass?: string
+  manufacturerQms?: string
+  colors?: string[]
+  variants?: { label: string; options: string[] }[]
+  related: string[]
+  imageNote?: string
+}
+
+export const company = {
+  name: 'STADORA',
+  legal: 'Relicon AB',
+  orgNr: '559174-4551',
+  vat: 'SE559174455501',
+  address: ['Plantslingan 36', '142 51 Skogås, Sverige'],
+  email: 'info@stadora.se',
+  web: 'stadora.se',
+}
+
+export const areas: Record<
+  AreaId,
+  { label: string; tagline: string; path: string; accent: string }
+> = {
+  offentlig: {
+    label: 'Offentlig miljö',
+    tagline: 'Professionella miljöer',
+    path: '/',
+    accent: 'sage',
+  },
+  skola: {
+    label: 'Skola',
+    tagline: 'Skola och lärmiljö',
+    path: '/skola',
+    accent: 'school',
+  },
+  vard: {
+    label: 'Vård',
+    tagline: 'Vård',
+    path: '/vard',
+    accent: 'care',
+  },
+}
+
+export const publicNav = {
+  products: [
+    {
+      name: 'Parkmöbler',
+      href: '/produkter/parkmobler',
+      children: [
+        { name: 'Parkbänkar', href: '/produkter/parkmobler/parkbankar' },
+        { name: 'Bord och picknick', href: '/produkter/parkmobler/parkbankar' },
+        { name: 'Modulära sitt', href: '/produkter/parkmobler/parkbankar' },
+      ],
+    },
+    {
+      name: 'Avfall och återvinning',
+      href: '/produkter/parkmobler',
+      children: [
+        { name: 'Papperskorgar', href: '/produkt/papperskorg-rodberga-100' },
+        { name: 'Askkoppar', href: '/produkt/askkopp-luna' },
+      ],
+    },
+    { name: 'Cykelparkering', href: '/produkter/parkmobler', children: [] },
+    { name: 'Väderskydd och hållplatser', href: '/produkter/parkmobler', children: [] },
+    { name: 'Lek och aktivitet', href: '/produkter/parkmobler', children: [] },
+    { name: 'Plantering', href: '/produkter/parkmobler', children: [] },
+    { name: 'Pollare och räcken', href: '/produkter/parkmobler', children: [] },
+  ],
+}
+
+/** Only fields verified on the live Stadora product pages. Empty sections are omitted in UI. */
+export const products: Record<string, Product> = {
+  'parkbank-arsta': {
+    slug: 'parkbank-arsta',
+    name: 'Parkbänk Årsta',
+    sku: 'ST-1208',
+    area: 'offentlig',
+    category: 'Parkmöbler',
+    categorySlug: 'parkmobler',
+    subcategory: 'Parkbänkar',
+    subcategorySlug: 'parkbankar',
+    summary: 'Bänk med ryggstöd i arkitektonisk betong med trälister.',
+    description:
+      'Bänk med ryggstöd i arkitektonisk betong med trälister. Tillverkas i arkitektonisk betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand.',
+    images: [
+      {
+        src: '/images/arsta-studio.png',
+        alt: 'Parkbänk Årsta, studiofoto',
+        kind: 'studio',
+      },
+      {
+        src: '/images/arsta-miljo.jpg',
+        alt: 'Parkbänk Årsta i utemiljö',
+        kind: 'site',
+      },
+    ],
+    material: 'Arkitektonisk betong med trälister',
+    cement:
+      'Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand.',
+    dimensions: [
+      { label: 'Total längd', value: '190 cm' },
+      { label: 'Sittlängd', value: '150 cm' },
+      { label: 'Sitthöjd', value: '50 cm' },
+      { label: 'Total höjd', value: '85 cm' },
+      { label: 'Bänkbredd', value: '57 cm' },
+    ],
+    weight: '150 kg',
+    mounting: ['Fristående', 'Kan skruvas fast i underlaget'],
+    related: ['parkbank-hammarby', 'parkbank-aspudden', 'parkbank-grondal'],
+    imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
+  },
+  'parkbank-hammarby': {
+    slug: 'parkbank-hammarby',
+    name: 'Parkbänk Hammarby',
+    sku: 'ST-1207',
+    area: 'offentlig',
+    category: 'Parkmöbler',
+    categorySlug: 'parkmobler',
+    subcategory: 'Parkbänkar',
+    subcategorySlug: 'parkbankar',
+    summary: 'Bänk utan ryggstöd i arkitektonisk betong med trälister.',
+    description:
+      'Bänk utan ryggstöd i arkitektonisk betong med trälister. Tillverkas i arkitektonisk betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand.',
+    images: [
+      {
+        src: '/images/hammarby-studio.png',
+        alt: 'Parkbänk Hammarby, studiofoto',
+        kind: 'studio',
+      },
+      {
+        src: '/images/hammarby-miljo.jpg',
+        alt: 'Parkbänk Hammarby i utemiljö',
+        kind: 'site',
+      },
+    ],
+    material: 'Arkitektonisk betong med trälister',
+    cement:
+      'Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand.',
+    dimensions: [
+      { label: 'Total längd', value: '190 cm' },
+      { label: 'Sittlängd', value: '150 cm' },
+      { label: 'Sitthöjd', value: '50 cm' },
+      { label: 'Bänkbredd', value: '50 cm' },
+    ],
+    weight: '130 kg',
+    mounting: ['Fristående', 'Kan skruvas fast i underlaget'],
+    related: ['parkbank-arsta', 'parkbank-grondal', 'parkbank-enskede'],
+    imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
+  },
+  'parkbank-grondal': {
+    slug: 'parkbank-grondal',
+    name: 'Parkbänk Gröndal',
+    sku: 'ST-1210',
+    area: 'offentlig',
+    category: 'Parkmöbler',
+    categorySlug: 'parkmobler',
+    subcategory: 'Parkbänkar',
+    subcategorySlug: 'parkbankar',
+    summary: 'Bänk utan ryggstöd i arkitektonisk betong med trälister.',
+    description:
+      'Bänk utan ryggstöd i arkitektonisk betong med trälister. Tillverkas i arkitektonisk betong.',
+    images: [
+      {
+        src: '/images/grondal-studio.png',
+        alt: 'Parkbänk Gröndal, studiofoto',
+        kind: 'studio',
+      },
+    ],
+    material: 'Arkitektonisk betong med trälister',
+    dimensions: [
+      { label: 'Total längd', value: '200 cm' },
+      { label: 'Sittlängd', value: '170 cm' },
+      { label: 'Sitthöjd', value: '45 cm' },
+      { label: 'Bänkbredd', value: '45 cm' },
+    ],
+    weight: '230 kg',
+    mounting: ['Fristående', 'Kan skruvas fast i underlaget'],
+    related: ['parkbank-hammarby', 'parkbank-aspudden'],
+    imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
+  },
+  'parkbank-aspudden': {
+    slug: 'parkbank-aspudden',
+    name: 'Parkbänk Aspudden',
+    sku: 'ST-1211',
+    area: 'offentlig',
+    category: 'Parkmöbler',
+    categorySlug: 'parkmobler',
+    subcategory: 'Parkbänkar',
+    subcategorySlug: 'parkbankar',
+    summary: 'Bänk med ryggstöd i arkitektonisk betong med trälister.',
+    description:
+      'Bänk med ryggstöd i arkitektonisk betong med trälister. Tillverkas i arkitektonisk betong.',
+    images: [
+      {
+        src: '/images/aspudden-studio.png',
+        alt: 'Parkbänk Aspudden, studiofoto',
+        kind: 'studio',
+      },
+    ],
+    material: 'Arkitektonisk betong med trälister',
+    dimensions: [
+      { label: 'Total längd', value: '200 cm' },
+      { label: 'Sittlängd', value: '179 cm' },
+      { label: 'Sitthöjd', value: '45 cm' },
+      { label: 'Höjd med ryggstöd', value: '90 cm' },
+      { label: 'Bänkbredd', value: '45 cm' },
+    ],
+    weight: '250 kg',
+    mounting: ['Fristående', 'Kan skruvas fast i underlaget'],
+    related: ['parkbank-arsta', 'parkbank-grondal'],
+    imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
+  },
+  'parkbank-enskede': {
+    slug: 'parkbank-enskede',
+    name: 'Parkbänk Enskede',
+    sku: 'ST-1212',
+    area: 'offentlig',
+    category: 'Parkmöbler',
+    categorySlug: 'parkmobler',
+    subcategory: 'Parkbänkar',
+    subcategorySlug: 'parkbankar',
+    summary: 'Bänk med ryggstöd i arkitektonisk betong och trä.',
+    description:
+      'Bänk med ryggstöd i arkitektonisk betong och trä. Tillverkas i arkitektonisk betong.',
+    images: [
+      {
+        src: '/images/enskede-01.jpg',
+        alt: 'Parkbänk Enskede',
+        kind: 'studio',
+      },
+      {
+        src: '/images/enskede-02.jpg',
+        alt: 'Parkbänk Enskede, detalj',
+        kind: 'detail',
+      },
+    ],
+    material: 'Arkitektonisk betong och trä',
+    dimensions: [
+      { label: 'Sittlängd', value: '160 cm' },
+      { label: 'Total längd', value: '180 cm' },
+      { label: 'Sitthöjd', value: '45 cm' },
+      { label: 'Total höjd', value: '85 cm' },
+      { label: 'Sittdjup', value: '46 cm' },
+      { label: 'Bänkbredd', value: '80 cm' },
+    ],
+    mounting: [
+      'Fristående',
+      'Skruvas fast i hårdgjort underlag med monteringssats',
+    ],
+    related: ['parkbank-arsta', 'parkbank-hammarby'],
+    imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
+  },
+  'papperskorg-rodberga-100': {
+    slug: 'papperskorg-rodberga-100',
+    name: 'Papperskorg Rödberga 100',
+    sku: 'ST-1199',
+    area: 'offentlig',
+    category: 'Avfall och återvinning',
+    categorySlug: 'avfall-atervinning',
+    subcategory: 'Papperskorgar',
+    subcategorySlug: 'papperskorgar',
+    summary: 'Papperskorg i arkitektonisk betong med tak i cortenstål, höjd 100 cm.',
+    description:
+      'Papperskorg i arkitektonisk betong med tak i cortenstål, höjd 100 cm. Tillverkas i arkitektonisk betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand.',
+    images: [
+      {
+        src: '/images/rodberga-studio.png',
+        alt: 'Papperskorg Rödberga 100, studiofoto',
+        kind: 'studio',
+      },
+      {
+        src: '/images/rodberga-miljo.jpg',
+        alt: 'Papperskorg Rödberga 100 i utemiljö',
+        kind: 'site',
+      },
+    ],
+    material: 'Arkitektonisk betong, tak i cortenstål',
+    dimensions: [
+      { label: 'Bas', value: '45 × 45 cm' },
+      { label: 'Höjd', value: '80 cm' },
+      { label: 'Höjd med tak', value: '100 cm' },
+      { label: 'Volym med innerkärl', value: 'ca 75 l' },
+    ],
+    weight: '205 kg',
+    related: ['askkopp-luna'],
+    imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
+  },
+  'askkopp-luna': {
+    slug: 'askkopp-luna',
+    name: 'Askkopp LUNA',
+    area: 'offentlig',
+    category: 'Avfall och återvinning',
+    categorySlug: 'avfall-atervinning',
+    subcategory: 'Askkoppar',
+    subcategorySlug: 'askkoppar',
+    summary:
+      'Askkopp LUNA tillverkas i pulverlackerad stålplåt eller rostfritt stål med kapacitet 35 liter.',
+    description:
+      'Askkopp LUNA tillverkas i pulverlackerad stålplåt eller rostfritt stål med kapacitet 35 liter. Utförande, standardegenskaper och tillval varierar med valt material och visas för den valda konfigurationen. Valfri standard-RAL-kulör ingår. Pris lämnas som offert.',
+    images: [
+      { src: '/images/luna-1.png', alt: 'Askkopp LUNA', kind: 'studio' },
+      { src: '/images/luna-2.png', alt: 'Askkopp LUNA, detalj', kind: 'detail' },
+    ],
+    material: 'Pulverlackerad stålplåt eller rostfritt stål',
+    dimensions: [{ label: 'B × D × H', value: '15 × 20 × 102 cm' }],
+    capacity: '35 l',
+    environment: 'Inomhus, skyddad utomhusmiljö',
+    leadTime: 'Normalt cirka 5 veckor',
+    warranty: '12 månader från leverans',
+    variants: [
+      {
+        label: 'Material',
+        options: ['Pulverlackerad stålplåt', 'Rostfritt stål'],
+      },
+      {
+        label: 'Märkning',
+        options: [
+          'Standard svensk sorteringsmärkning',
+          'Utan märkning',
+          'Anpassad märkning',
+        ],
+      },
+    ],
+    related: ['papperskorg-rodberga-100'],
+    imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
+  },
+  'akutvagn-genius': {
+    slug: 'akutvagn-genius',
+    name: 'Akutvagn Genius',
+    area: 'vard',
+    category: 'Vagnar',
+    categorySlug: 'vagnar',
+    subcategory: 'Akutvagnar',
+    subcategorySlug: 'akutvagnar',
+    summary:
+      'Akutvagn med lådor i flera höjder, arbetsskiva i ABS och 125 mm hjul. Medicinteknisk produkt klass I.',
+    description:
+      'Akutvagn för akutrum, vårdavdelning och mottagning. Stomme i pulverlackerad stålplåt RAL 7035 med arbetsskiva i ABS. Lådindelning 2×75 mm, 1×100 mm, 1×150 mm och 2×200 mm. Hjul 125 mm.',
+    images: [
+      { src: '/images/genius.png', alt: 'Akutvagn Genius', kind: 'studio' },
+    ],
+    material: 'Pulverlackerad stålplåt RAL 7035, arbetsskiva i ABS',
+    dimensions: [{ label: 'B × D × H', value: '650 × 600 × 1110 mm' }],
+    medicalClass: 'Medicinteknisk produkt klass I',
+    manufacturerQms:
+      'Tillverkarens ledningssystem är certifierat enligt ISO 9001, ISO 14001 och ISO 13485:2016.',
+    related: [],
+  },
+  'ada-melaminskap': {
+    slug: 'ada-melaminskap',
+    name: 'Ada – melaminskåp med dörrar, lås och nyckel',
+    area: 'skola',
+    category: 'Förvaring',
+    categorySlug: 'forvaring',
+    subcategory: 'Skolförvaring',
+    subcategorySlug: 'skolforvaring',
+    summary: 'Melaminskåp med dörrar, lås och nyckel.',
+    description:
+      'Melaminskåp med dörrar, lås och nyckel. Finns i 3 kulörer: ljus terrakotta, ljusblå, lönn vit.',
+    images: [{ src: '/images/ada.png', alt: 'Ada melaminskåp', kind: 'studio' }],
+    colors: ['Ljusblå', 'Ljus terrakotta', 'Lönn vit'],
+    related: [],
+  },
+}
+
+export const benches = [
+  products['parkbank-hammarby'],
+  products['parkbank-arsta'],
+  products['parkbank-grondal'],
+  products['parkbank-aspudden'],
+  products['parkbank-enskede'],
+]
+
+export const careProducts = [
+  products['akutvagn-genius'],
+  {
+    slug: 'akutvagn-tornado-life',
+    name: 'Akutvagn Tornado Life',
+    summary:
+      'Akutvagn med antimikrobiell pulverlackering och detaljer i teknopolymer. Medicinteknisk produkt klass I.',
+    category: 'Vagnar',
+  },
+  {
+    slug: 'lakemedelsvagn-zephiro',
+    name: 'Läkemedelsvagn Zephiro',
+    summary:
+      'Läkemedelsvagn med sju lådor, läkemedelsfack och centrallås. Medicinteknisk produkt klass I.',
+    category: 'Vagnar',
+  },
+  {
+    slug: 'medicinskap-medcab-iso',
+    name: 'Medicinskåp Medcab ISO',
+    summary:
+      'Medicinskåp med glasdörrar och nyckellås, förberett för ISO-korgar. ISO-korgar är tillval.',
+    category: 'Förvaring',
+  },
+]
+
+export function productPath(p: Product) {
+  if (p.area === 'vard') return `/vard/produkt/${p.slug}`
+  if (p.area === 'skola') return `/skola/produkt/${p.slug}`
+  return `/produkt/${p.slug}`
+}

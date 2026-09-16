@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", "Manrope", system-ui, sans-serif;
+  --font-ui: "Manrope", system-ui, sans-serif;
+  --color-paper: #f4f2ec;
+  --color-sheet: #fffcf7;
+  --color-ink: #1c2b26;
+  --color-muted: #3d4c47;
+  --color-line: #cfc9bc;
+  --color-sage: #5c7268;
+  --color-sage-dark: #3e524a;
+  --color-school: #6a5e43;
+  --color-care: #3f5a63;
+  --color-warn: #8a4b2a;
+}
+
+html {
+  color: var(--color-ink);
+  background: var(--color-paper);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sage);
+  outline-offset: 2px;
+}
+
+.shell {
+  width: min(1180px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.kicker {
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-sage-dark);
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.spec-table th,
+.spec-table td {
+  border-bottom: 1px solid var(--color-line);
+  padding: 0.7rem 0.85rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.spec-table th {
+  width: 38%;
+  color: var(--color-muted);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.spec-table td {
+  font-variant-numeric: tabular-nums;
+}
