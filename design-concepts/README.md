@@ -27,6 +27,7 @@ Se `/design` i prototypen, eller:
 - `/design/produktsida-a` upphandlingsledd
 - `/design/produktsida-b` arkitekturledd
 - `/offertlista` och `/offert`
+- `/admin` VD-översikt, `/admin/flode` offertkedjan, `/admin/offerter`, `/q/Q-2026-0164` kundens godkännandelänk
 - `/miljoer/bostadsgard`
 - `/vard` och `/vard/produkt/akutvagn-genius`
 - `/skola` och `/skola/produkt/ada-melaminskap`

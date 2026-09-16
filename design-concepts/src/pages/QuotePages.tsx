@@ -124,11 +124,17 @@ export function QuoteFormPage() {
           en kopia till den angivna e-postadressen. Detta koncept skickar inget meddelande.
         </p>
         <p className="mt-4 text-sm">
-          Intern titel skulle bli: {ref} · {area} · {pieces} st
+          Intern titel skulle bli: {ref} · {area} · {pieces} st. I admin landar det som inkommen
+          förfrågan utan pris.
         </p>
-        <Link to="/" className="mt-8 inline-block underline">
-          Till startsidan
-        </Link>
+        <div className="mt-8 flex flex-wrap gap-4 text-sm">
+          <Link className="underline" to="/admin/offerter/Q-2026-0188">
+            Se ett inkommet ärende i admin
+          </Link>
+          <Link className="underline" to="/admin/flode">
+            Hela kedjan förfrågan → faktura
+          </Link>
+        </div>
       </div>
     )
   }

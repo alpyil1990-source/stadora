@@ -1,22 +1,20 @@
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { areas, type AreaId } from '../data/content'
-import { useQuote } from '../context/QuoteContext'
+import { useQuoteOptional } from '../context/QuoteContext'
 
 const screens = [
   { to: '/', label: 'Startsida' },
   { to: '/produkter', label: 'Sortiment' },
-  { to: '/produkter/lek-aktivitet', label: 'Lek' },
-  { to: '/produkter/lek-aktivitet/gungor', label: 'Gungor' },
-  { to: '/produkter/parkmobler/parkbankar', label: 'Parkbänkar' },
-  { to: '/produkt/parkbank-arsta', label: 'Produktsida C' },
   { to: '/offertlista', label: 'Offertlista' },
   { to: '/offert', label: 'Offertformulär' },
-  { to: '/vard', label: 'Vård' },
-  { to: '/skola', label: 'Skola' },
+  { to: '/admin', label: 'Admin' },
+  { to: '/admin/flode', label: 'Offertflöde' },
+  { to: '/admin/offerter', label: 'Ärenden' },
+  { to: '/q/Q-2026-0164', label: 'Kundens offertlänk' },
 ]
 
 export function ConceptBar() {
-  const { area } = useQuote()
+  const quote = useQuoteOptional()
   const location = useLocation()
 
   return (
@@ -35,15 +33,15 @@ export function ConceptBar() {
               key={s.to}
               to={s.to}
               className={({ isActive }) =>
-                isActive || location.pathname === s.to
-                  ? 'text-sheet underline'
-                  : 'hover:text-sheet'
+                isActive || location.pathname === s.to ? 'text-sheet underline' : 'hover:text-sheet'
               }
             >
               {s.label}
             </NavLink>
           ))}
-          <span className="text-sheet/50">Område: {areas[area as AreaId].label}</span>
+          {quote && (
+            <span className="text-sheet/50">Område: {areas[quote.area as AreaId].label}</span>
+          )}
         </nav>
       </div>
     </div>

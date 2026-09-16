@@ -1,5 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from './components/AppShell'
+import { AdminShell } from './components/AdminShell'
+import { QuoteReplyShell } from './components/QuoteReplyShell'
 import { HomePage } from './pages/PublicPages'
 import { CatalogIndexPage, CategoryHubPage, SubcategoryListPage } from './pages/CatalogPages'
 import { ProductLayoutA, ProductLayoutB, ProductPage } from './pages/ProductPages'
@@ -11,34 +13,53 @@ import {
   SchoolHomePage,
 } from './pages/AreaPages'
 import { DesignIndexPage, DirectionsPage } from './pages/DesignPages'
+import { AdminDashboard } from './pages/admin/AdminDashboard'
+import { AdminQuotes } from './pages/admin/AdminQuotes'
+import { AdminQuoteDetail } from './pages/admin/AdminQuoteDetail'
+import { AdminInvoices } from './pages/admin/AdminInvoices'
+import { AdminFlow } from './pages/admin/AdminFlow'
+import { CustomerQuotePage } from './pages/CustomerQuotePage'
+import { CommerceProvider } from './context/CommerceContext'
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route element={<AppShell />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/design" element={<DesignIndexPage />} />
-          <Route path="/design/riktningar" element={<DirectionsPage />} />
-          <Route path="/design/produktsida-a" element={<ProductLayoutA />} />
-          <Route path="/design/produktsida-b" element={<ProductLayoutB />} />
-          <Route path="/produkter" element={<CatalogIndexPage />} />
-          <Route path="/produkter/:categorySlug" element={<CategoryHubPage />} />
-          <Route path="/produkter/:categorySlug/:subcategorySlug" element={<SubcategoryListPage />} />
-          <Route path="/produkt/:slug" element={<ProductPage />} />
-          <Route path="/offertlista" element={<QuoteListPage />} />
-          <Route path="/offert" element={<QuoteFormPage />} />
-          <Route path="/miljoer/bostadsgard" element={<EnvironmentPage />} />
-          <Route path="/dokument" element={<DocumentsPage />} />
-          <Route path="/vard" element={<CareHomePage />} />
-          <Route path="/vard/produkt/:slug" element={<ProductPage />} />
-          <Route path="/vard/offertlista" element={<QuoteListPage />} />
-          <Route path="/skola" element={<SchoolHomePage />} />
-          <Route path="/skola/produkt/:slug" element={<ProductPage />} />
-          <Route path="/skola/offertlista" element={<QuoteListPage />} />
+      <CommerceProvider>
+        <Routes>
+          <Route element={<AppShell />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/design" element={<DesignIndexPage />} />
+            <Route path="/design/riktningar" element={<DirectionsPage />} />
+            <Route path="/design/produktsida-a" element={<ProductLayoutA />} />
+            <Route path="/design/produktsida-b" element={<ProductLayoutB />} />
+            <Route path="/produkter" element={<CatalogIndexPage />} />
+            <Route path="/produkter/:categorySlug" element={<CategoryHubPage />} />
+            <Route path="/produkter/:categorySlug/:subcategorySlug" element={<SubcategoryListPage />} />
+            <Route path="/produkt/:slug" element={<ProductPage />} />
+            <Route path="/offertlista" element={<QuoteListPage />} />
+            <Route path="/offert" element={<QuoteFormPage />} />
+            <Route path="/miljoer/bostadsgard" element={<EnvironmentPage />} />
+            <Route path="/dokument" element={<DocumentsPage />} />
+            <Route path="/vard" element={<CareHomePage />} />
+            <Route path="/vard/produkt/:slug" element={<ProductPage />} />
+            <Route path="/vard/offertlista" element={<QuoteListPage />} />
+            <Route path="/skola" element={<SchoolHomePage />} />
+            <Route path="/skola/produkt/:slug" element={<ProductPage />} />
+            <Route path="/skola/offertlista" element={<QuoteListPage />} />
+          </Route>
+          <Route element={<AdminShell />}>
+            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/admin/flode" element={<AdminFlow />} />
+            <Route path="/admin/offerter" element={<AdminQuotes />} />
+            <Route path="/admin/offerter/:id" element={<AdminQuoteDetail />} />
+            <Route path="/admin/fakturor" element={<AdminInvoices />} />
+          </Route>
+          <Route element={<QuoteReplyShell />}>
+            <Route path="/q/:id" element={<CustomerQuotePage />} />
+          </Route>
           <Route path="*" element={<Navigate to="/design" replace />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </CommerceProvider>
     </BrowserRouter>
   )
 }

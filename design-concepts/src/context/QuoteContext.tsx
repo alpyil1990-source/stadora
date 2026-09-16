@@ -132,3 +132,7 @@ export function useQuote() {
   if (!ctx) throw new Error('QuoteProvider missing')
   return ctx
 }
+
+export function useQuoteOptional() {
+  return useContext(QuoteContext)
+}
