@@ -26,8 +26,9 @@ export function AdminBinsigniaTerms() {
         <p className="kicker">Intern inköpslista</p>
         <h2 className="mt-2 text-xl">{binsigniaPriceMeta.list}</h2>
         <p className="mt-2 text-sm text-muted">
-          EUR exkl. moms. Syns inte på produktsidan. Ingen omräkning till SEK. Rabatt 15 % från 1
-          set enligt partneravtalet.
+          EUR exkl. moms. Leverantörens artikelnummer och listpris syns bara här, inte på katalogen
+          eller i kundens offertlista. Ingen omräkning till SEK. Rabatt 15 % från 1 set enligt
+          partneravtalet.
         </p>
       </div>
 

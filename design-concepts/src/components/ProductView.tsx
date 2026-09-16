@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 import type { Product } from '../data/content'
-import { productPath, products } from '../data/content'
+import { isStadoraArticleNumber, productPath, products } from '../data/content'
 import { selectedMaterial } from '../data/binsignia'
 import {
   categoryPath,
@@ -55,6 +55,7 @@ export function ProductView({
   const selectedSize = product.sizes?.find((s) => s.name === variants['Storlek'])
   const finish = selectedMaterial(product, variants['Material'])
   const sku = finish?.sku ?? selectedSize?.sku ?? product.sku
+  const publicSku = isStadoraArticleNumber(sku) ? sku : undefined
   const dimensions = selectedSize?.dimensions ?? product.dimensions
   const weight = selectedSize?.weight ?? product.weight
   const capacity = selectedSize?.capacity ?? product.capacity
@@ -202,7 +203,9 @@ export function ProductView({
                     onChange={() => selectSize(s.name)}
                   />
                   <span className="block font-medium">{s.name}</span>
-                  {s.sku && <span className="block text-xs text-muted">Art.nr {s.sku}</span>}
+                  {isStadoraArticleNumber(s.sku) && (
+                    <span className="block text-xs text-muted">Art.nr {s.sku}</span>
+                  )}
                   {s.summary && s.summary !== s.name && (
                     <span className="block text-xs text-muted">{s.summary}</span>
                   )}
@@ -225,7 +228,7 @@ export function ProductView({
               const selected = variants['Material'] === m.name
               return (
                 <label
-                  key={m.code}
+                    key={m.sku}
                   className={`cursor-pointer border px-3 py-2 text-sm ${
                     selected ? 'border-ink bg-paper' : 'border-line'
                   }`}
@@ -238,7 +241,6 @@ export function ProductView({
                     onChange={() => setVariants((s) => ({ ...s, Material: m.name }))}
                   />
                   <span className="block font-medium">{m.name}</span>
-                  <span className="block text-xs text-muted">Art.nr {m.sku}</span>
                 </label>
               )
             })}
@@ -390,10 +392,10 @@ export function ProductView({
 
   const keyFacts = (
     <dl className="grid grid-cols-2 gap-3 text-sm">
-      {sku && (
+      {publicSku && (
         <div>
           <dt className="text-muted">Art.nr</dt>
-          <dd className="font-medium tabular-nums">{sku}</dd>
+          <dd className="font-medium tabular-nums">{publicSku}</dd>
         </div>
       )}
       {weight && (
@@ -670,8 +672,8 @@ export function ProductView({
             {product.category} · {product.subcategory}
           </p>
           <h1 className="mt-2 text-3xl md:text-4xl">{product.name}</h1>
-          {sku && (
-            <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {sku}</p>
+          {publicSku && (
+            <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {publicSku}</p>
           )}
           <p className="mt-4 max-w-xl text-muted">{product.description}</p>
           <div className="mt-6">{keyFacts}</div>

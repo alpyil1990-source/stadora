@@ -79,6 +79,11 @@ export type Product = {
   reviewNote?: string
 }
 
+/** STADORA's own article numbers (ST-…) may be shown on the public site. Supplier SKUs stay in admin. */
+export function isStadoraArticleNumber(sku?: string | null) {
+  return Boolean(sku && /^ST-/i.test(sku.trim()))
+}
+
 export const company = {
   name: 'STADORA',
   legal: 'Relicon AB',

@@ -1,6 +1,7 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useState } from 'react'
 import { useCommerce } from '../context/CommerceContext'
+import { isStadoraArticleNumber } from '../data/content'
 import {
   formatSek,
   lineTotal,
@@ -75,7 +76,9 @@ export function CustomerQuotePage() {
                 <tr key={l.name}>
                   <th>
                     {l.name}
-                    {l.sku && <span className="block text-xs font-normal text-muted">{l.sku}</span>}
+                    {isStadoraArticleNumber(l.sku) && (
+                      <span className="block text-xs font-normal text-muted">{l.sku}</span>
+                    )}
                   </th>
                   <td className="tabular-nums">{l.qty} st</td>
                   <td className="tabular-nums">{formatSek(l.unitPrice ?? 0)}</td>
