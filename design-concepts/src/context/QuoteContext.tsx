@@ -17,6 +17,8 @@ export type QuoteLine = {
   qty: number
   comment: string
   href: string
+  image?: string
+  imageAlt?: string
 }
 
 type QuoteState = Record<AreaId, QuoteLine[]>

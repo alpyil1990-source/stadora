@@ -41,6 +41,8 @@ export function ProductView({
       variant: variantLabel,
       qty,
       href: productPath(product),
+      image: product.images[0]?.src,
+      imageAlt: product.images[0]?.alt ?? product.name,
     })
     setAdded(true)
   }

@@ -1,6 +1,32 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useQuote } from '../context/QuoteContext'
+import { useQuote, type QuoteLine } from '../context/QuoteContext'
+import { products } from '../data/content'
+
+function lineImage(line: QuoteLine) {
+  if (line.image) return { src: line.image, alt: line.imageAlt ?? line.name }
+  const fallback = products[line.slug]?.images[0]
+  if (fallback) return { src: fallback.src, alt: fallback.alt }
+  return null
+}
+
+function QuoteThumb({ line, size = 'md' }: { line: QuoteLine; size?: 'sm' | 'md' }) {
+  const img = lineImage(line)
+  const box = size === 'sm' ? 'h-10 w-10' : 'h-16 w-16'
+  return (
+    <span
+      className={`inline-flex shrink-0 items-center justify-center overflow-hidden border border-line bg-paper ${box}`}
+    >
+      {img ? (
+        <img src={img.src} alt={img.alt} className="h-full w-full object-contain p-1" />
+      ) : (
+        <span className="text-[0.6rem] text-muted" aria-hidden>
+          —
+        </span>
+      )}
+    </span>
+  )
+}
 
 export function QuoteListPage() {
   const { lines, update, remove, count, pieces, area } = useQuote()
@@ -22,13 +48,16 @@ export function QuoteListPage() {
       ) : (
         <ul className="mt-8 divide-y divide-line border border-line bg-sheet">
           {lines.map((line) => (
-            <li key={line.id} className="grid gap-4 p-4 md:grid-cols-12 md:items-start">
-              <div className="md:col-span-5">
-                <Link className="font-medium hover:underline" to={line.href}>
-                  {line.name}
-                </Link>
-                {line.sku && <p className="text-xs text-muted">Art.nr {line.sku}</p>}
-                {line.variant && <p className="text-sm text-muted">{line.variant}</p>}
+            <li key={line.id} className="grid gap-4 p-4 md:grid-cols-12 md:items-center">
+              <div className="flex items-center gap-3 md:col-span-5">
+                <QuoteThumb line={line} />
+                <div className="min-w-0">
+                  <Link className="font-medium hover:underline" to={line.href}>
+                    {line.name}
+                  </Link>
+                  {line.sku && <p className="text-xs text-muted">Art.nr {line.sku}</p>}
+                  {line.variant && <p className="text-sm text-muted">{line.variant}</p>}
+                </div>
               </div>
               <label className="text-sm md:col-span-2">
                 Antal
@@ -207,9 +236,12 @@ export function QuoteFormPage() {
         <p className="kicker">Sammanfattning</p>
         <ul className="mt-4 space-y-3 text-sm">
           {lines.map((l) => (
-            <li key={l.id}>
-              <span className="font-medium">{l.name}</span>
-              <span className="text-muted"> · {l.qty} st</span>
+            <li key={l.id} className="flex items-center gap-3">
+              <QuoteThumb line={l} size="sm" />
+              <span>
+                <span className="font-medium">{l.name}</span>
+                <span className="text-muted"> · {l.qty} st</span>
+              </span>
             </li>
           ))}
           {lines.length === 0 && <li className="text-muted">Inga rader</li>}
