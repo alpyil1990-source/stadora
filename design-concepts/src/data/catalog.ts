@@ -351,7 +351,6 @@ export const catalog: CategoryDef[] = [
         productSlugs: [...zanoCatalogSlugs.skyltar],
         draftExamples: [],
       },
-      },
     ],
   },
 ]
