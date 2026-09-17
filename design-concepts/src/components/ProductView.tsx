@@ -31,6 +31,12 @@ import {
   imagesForVariant,
   shownLabel,
 } from '../data/gallery'
+import {
+  applyOptionChange,
+  matchingImages,
+  optionComplete,
+  visibleGroups,
+} from '../data/inoplex-config'
 import { finishSwatchHex, isStreetparkProduct } from '../data/streetpark-finishes'
 import { useQuote } from '../context/QuoteContext'
 import { ProductCard } from './ProductCard'
@@ -51,6 +57,7 @@ export function ProductView({
   const [qty, setQty] = useState(1)
   const [active, setActive] = useState(0)
   const [ral, setRal] = useState('')
+  const [wish, setWish] = useState('')
   const [variants, setVariants] = useState<Record<string, string>>(() => {
     const init = initialVariantState(product)
     if (colors[0]) init[COLOR_VARIANT_KEY] = colors[0].name
@@ -74,12 +81,19 @@ export function ProductView({
   const sizeLegend = product.sizeLegend ?? 'Storlek'
   const sizePhotos = hasSizeTaggedImages(product.images)
   const galleryLocked = isStreetparkProduct(product)
+  const optionProduct = Boolean(product.optionGroups?.length)
+  const optionOk = !optionProduct || optionComplete(product, variants)
 
   const galleryState = imagesForVariant(product.images, {
     color: variants[COLOR_VARIANT_KEY],
     size: typeName,
   })
-  const shown = galleryLocked ? product.images : galleryState.shown
+  const inoplexGallery = optionProduct ? matchingImages(product, variants) : null
+  const shown = galleryLocked
+    ? product.images
+    : inoplexGallery
+      ? inoplexGallery.shown
+      : galleryState.shown
   const current = shown[Math.min(active, shown.length - 1)] ?? product.images[0]
   const taggedColors = hasColorTaggedImages(product.images)
   const missingColorPhoto =
@@ -106,12 +120,14 @@ export function ProductView({
   }
 
   function addToQuote() {
+    if (optionProduct && !optionOk) return
     add(
       quoteDraftFromProduct(product, variants, {
         qty,
         ral,
         image: current?.src,
         imageAlt: current?.alt ?? product.name,
+        comment: wish.trim() || undefined,
       }),
       product.area,
     )
@@ -166,6 +182,11 @@ export function ProductView({
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
           Ingen produktbild i {variants[COLOR_VARIANT_KEY]}. Bilden visar {shownLabel(shown)}. Offertlistan
           får ändå rätt kulör.
+        </p>
+      )}
+      {optionProduct && inoplexGallery && !inoplexGallery.matched && (
+        <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
+          Exempelbild – valt utförande kan avvika.
         </p>
       )}
       {shown.length > 1 && (
@@ -266,7 +287,7 @@ export function ProductView({
           </div>
         </fieldset>
       )}
-      {colors.length > 0 && (
+      {colors.length > 0 && !optionProduct && (
         isStreetparkProduct(product) ? (
           <FinishSwatchField
             legend={product.colorLegend ?? 'Kulör på metall'}
@@ -341,6 +362,7 @@ export function ProductView({
       )}
       {product.variants
         ?.filter((v) => !(v.label === 'Material' && product.materials?.length))
+        .filter(() => !optionProduct)
         .map((v) =>
           isStreetparkProduct(product) ? (
             <FinishSwatchField
@@ -381,6 +403,62 @@ export function ProductView({
         </fieldset>
           ),
         )}
+      {optionProduct &&
+        visibleGroups(product, variants).map((g) => (
+          <fieldset key={g.key}>
+            <legend className="text-sm font-medium">{g.label}</legend>
+            <div className={`mt-2 flex flex-wrap gap-2 ${g.kind === 'swatch' ? 'items-start' : ''}`}>
+              {g.options.map((opt) => {
+                const selected = variants[g.key] === opt.name
+                return (
+                  <label
+                    key={opt.id}
+                    className={`cursor-pointer border px-3 py-2 text-sm ${
+                      selected ? 'border-ink bg-paper' : 'border-line'
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      className="sr-only"
+                      name={g.key}
+                      checked={selected}
+                      onChange={() => setVariants((s) => applyOptionChange(product, s, g.key, opt.name))}
+                    />
+                    <span className="flex items-center gap-2">
+                      {opt.swatch && (
+                        <img src={opt.swatch} alt="" className="h-8 w-8 border border-line object-cover" />
+                      )}
+                      <span>{opt.name}</span>
+                    </span>
+                  </label>
+                )
+              })}
+            </div>
+            {g.options.some((o) => o.customText && variants[g.key] === o.name) && (
+              <label className="mt-2 block text-sm">
+                Egen kulör
+                <input
+                  className="mt-1 w-full border border-line bg-sheet px-3 py-2"
+                  value={variants[`${g.key}::egen`] ?? ''}
+                  onChange={(e) => setVariants((s) => ({ ...s, [`${g.key}::egen`]: e.target.value }))}
+                  placeholder="Ange kulör som leverantören ska offerera"
+                />
+              </label>
+            )}
+          </fieldset>
+        ))}
+      {optionProduct && (
+        <label className="block text-sm">
+          Specialönskemål
+          <textarea
+            className="mt-1 w-full border border-line bg-sheet px-3 py-2"
+            rows={2}
+            value={wish}
+            onChange={(e) => setWish(e.target.value)}
+            placeholder="Valfritt. Följer med förfrågan."
+          />
+        </label>
+      )}
       <div>
         <label htmlFor="qty" className="text-sm font-medium">
           Antal
@@ -398,7 +476,8 @@ export function ProductView({
         <button
           type="button"
           onClick={addToQuote}
-          className={`${layout === 'hybrid' ? 'hidden lg:inline-flex' : 'inline-flex'} bg-ink px-5 py-3 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet`}
+          disabled={optionProduct && !optionOk}
+          className={`${layout === 'hybrid' ? 'hidden lg:inline-flex' : 'inline-flex'} bg-ink px-5 py-3 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet disabled:opacity-40`}
         >
           Lägg i offertlista
         </button>
@@ -432,7 +511,12 @@ export function ProductView({
           <p className="text-xs text-muted">Koncept: formuläret skickas inte.</p>
         </form>
       )}
-      <p className="text-sm text-muted">Pris lämnas i offert. Ingen e-handelskassa.</p>
+      <p className="text-sm text-muted">
+        {product.quoteOnRequest ? 'Pris på förfrågan.' : 'Pris lämnas i offert.'} Ingen e-handelskassa.
+      </p>
+      {optionProduct && !optionOk && (
+        <p className="text-sm text-muted">Välj utförande, inklusive egen kulör om den är vald, innan raden läggs i offertlistan.</p>
+      )}
     </div>
   )
 
@@ -746,7 +830,8 @@ export function ProductView({
         <button
           type="button"
           onClick={addToQuote}
-          className="w-full bg-ink py-3 font-ui text-xs font-semibold uppercase tracking-[0.12em] text-sheet"
+          disabled={optionProduct && !optionOk}
+          className="w-full bg-ink py-3 font-ui text-xs font-semibold uppercase tracking-[0.12em] text-sheet disabled:opacity-40"
         >
           Lägg i offertlista
         </button>

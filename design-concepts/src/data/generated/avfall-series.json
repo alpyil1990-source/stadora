@@ -1600,7 +1600,7 @@
     {
       "family": "elm-tra",
       "slug": "kallsortering-elm-tra",
-      "name": "Källsortering ELM trä",
+      "name": "Källsortering ELM",
       "sku": "894",
       "subcategory": "Källsortering",
       "subcategorySlug": "kallsortering",
@@ -1686,11 +1686,11 @@
       "images": [
         {
           "file": "elm-tra-1.jpg",
-          "alt": "Källsortering ELM trä, exempelutförande"
+          "alt": "Källsortering ELM, exempelutförande"
         },
         {
           "file": "elm-tra-2.jpg",
-          "alt": "Källsortering ELM trä, andra vinkel"
+          "alt": "Källsortering ELM, andra vinkel"
         }
       ],
       "related": [
@@ -1811,7 +1811,7 @@
       "sku": "9599",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg. Kapacitet 35, 60 eller 100 liter.",
+      "summary": "FINLAY. Papperskorg. Kapacitet 35, 60 eller 100 liter.",
       "description": "FINLAY är en papperskorg. Kapacitet 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
       "imageFiles": [
         "finlay-1.jpg",
@@ -3797,7 +3797,7 @@
     {
       "family": "polaris-nat",
       "slug": "kallsortering-polaris-nat",
-      "name": "Källsortering POLARIS nät",
+      "name": "Källsortering POLARIS",
       "sku": "1137",
       "subcategory": "Källsortering",
       "subcategorySlug": "kallsortering",
@@ -3879,11 +3879,11 @@
       "images": [
         {
           "file": "polaris-nat-1.jpg",
-          "alt": "Källsortering POLARIS nät, exempelutförande"
+          "alt": "Källsortering POLARIS, exempelutförande"
         },
         {
           "file": "polaris-nat-2.jpg",
-          "alt": "Källsortering POLARIS nät, andra vinkel"
+          "alt": "Källsortering POLARIS, andra vinkel"
         }
       ],
       "related": [
@@ -5095,7 +5095,7 @@
       "sku": "13949",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg med pedal. Kapacitet 35, 60 eller 100 liter.",
+      "summary": "VADRET. Papperskorg med pedal. Kapacitet 35, 60 eller 100 liter.",
       "description": "VADRET är en papperskorg med pedal. Kapacitet 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Märkning/dekaler ingår, Pedal. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
       "imageFiles": [
         "vadret-1.jpg",
@@ -5194,7 +5194,7 @@
       "sku": "9895",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg. Kapacitet 35, 60 eller 100 liter.",
+      "summary": "VELA. Papperskorg. Kapacitet 35, 60 eller 100 liter.",
       "description": "VELA är en papperskorg. Kapacitet 35, 60 eller 100 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock, Märkning/dekaler ingår. Tillval: Vippbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Pris lämnas i offert.",
       "imageFiles": [
         "vela-1.jpg",
@@ -5295,7 +5295,7 @@
       "sku": "15676",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg. Kapacitet 30 liter.",
+      "summary": "ZENIPOLE. Papperskorg. Kapacitet 30 liter.",
       "description": "ZENIPOLE är en papperskorg. Kapacitet 30 liter. Pulverlackerat utförande: inomhus och skyddad utomhusmiljö. Rostfritt AISI 304: inomhus och utomhus i allväder. Ingår bland annat: Stomme 1,2 mm stålplåt, Innerhållare för säck, Avtagbart lock. Valfri standard-RAL ingår för pulverlack; på rostfritt gäller RAL lock och innerkärl. Stolp- eller väggmontering väljs på sidan och följer med till offerten. Pris lämnas i offert.",
       "imageFiles": [
         "zenipole-1.jpg",

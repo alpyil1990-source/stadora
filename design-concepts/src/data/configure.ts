@@ -1,15 +1,16 @@
 import type { Product, SizeOption } from './content'
 import { productPath } from './content'
 import { selectedMaterial } from './binsignia'
+import { initialOptionState, optionQuoteBits } from './inoplex-config'
 
 /** Internal state key for type/size. STREETPARK's public legend is "Modell". */
 export const SIZE_VARIANT_KEY = 'Storlek'
 export const COLOR_VARIANT_KEY = 'Kulör'
 
 export function initialVariantState(product: Product): Record<string, string> {
-  const init: Record<string, string> = {}
+  const init: Record<string, string> = { ...initialOptionState(product) }
   product.variants?.forEach((v) => {
-    init[v.label] = v.options[0]
+    if (init[v.label] == null) init[v.label] = v.options[0]
   })
   const typeName = product.defaultSize ?? product.sizes?.[0]?.name
   if (typeName) init[SIZE_VARIANT_KEY] = typeName
@@ -66,21 +67,30 @@ export function quoteLineVariant(
   const skip = new Set<string>([SIZE_VARIANT_KEY, COLOR_VARIANT_KEY])
   if (product.sizeLegend) skip.add(product.sizeLegend)
   const extra = Object.entries(variants)
-    .filter(([key]) => !skip.has(key))
-    .map(([, value]) => value)
+    .filter(([key]) => !skip.has(key) && !key.endsWith('::egen'))
+    .map(([key, value]) => {
+      if (product.optionGroups?.some((g) => g.key === key)) return null
+      return value
+    })
+    .filter((v): v is string => Boolean(v))
+  const optionBits = optionQuoteBits(product, variants)
+  const size = selectedTypeOption(product, variants)
+  const dim =
+    size?.dimensions?.map((d) => `${d.label} ${d.value}`).join(', ') ||
+    product.dimensions?.map((d) => `${d.label} ${d.value}`).join(', ')
   const trimmed = ral?.trim() ?? ''
   const ralBit = trimmed
     ? /^ral\b/i.test(trimmed)
       ? trimmed
       : `RAL ${trimmed}`
     : ''
-  return [typeName, color, ralBit, ...extra].filter(Boolean).join(' · ') || undefined
+  return [typeName, dim, color, ralBit, ...optionBits, ...extra].filter(Boolean).join(' · ') || undefined
 }
 
 export function quoteDraftFromProduct(
   product: Product,
   variants: Record<string, string>,
-  opts: { qty: number; ral?: string; image?: string; imageAlt?: string },
+  opts: { qty: number; ral?: string; image?: string; imageAlt?: string; comment?: string },
 ) {
   return {
     slug: product.slug,
@@ -91,5 +101,6 @@ export function quoteDraftFromProduct(
     href: productPath(product),
     image: opts.image,
     imageAlt: opts.imageAlt,
+    comment: opts.comment,
   }
 }

@@ -43,6 +43,8 @@ Se `/design` i prototypen, eller:
 - `/produkt/cykelstall-bikeme` STREETPARK med ritning, DWG, förankring och produktblad per modell
 - `/design/streetpark` intern översikt
 - `/admin/leverantorer/streetpark` intern EUR-lista (listpris och netto), luckor och importrapport
+- `/admin/leverantorer/inoplex` intern leverantörssida (inköpspris saknas, offert krävs)
+- `/produkt/planteringskarl-do-23-02` och `/produkt/parkbank-la-20-19` Inoplex-kontrollprodukter (tillverkare dold)
 
 Mobil: smal viewport. Meny under 1024 px, fast offertknapp på produktsidan.
 
@@ -56,4 +58,4 @@ STREETPARK_USER='din@epost' STREETPARK_PASSWORD='…' python3 scripts/fetch-stre
 
 ## Innehållsregel
 
-Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin, utom STREETPARK där modellens artikelnummer följer med offerten.
+Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin, utom STREETPARK och Inoplex-modellkoder som följer med offerten. Inoplex namnges inte på publika produktsidor.

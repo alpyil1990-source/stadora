@@ -1,5 +1,6 @@
 import { binsigniaProducts } from './binsignia'
 import { investimProducts } from './investim'
+import { inoplexProducts } from './inoplex'
 import { streetparkProducts } from './streetpark'
 import { catalog } from './catalog'
 
@@ -110,14 +111,34 @@ export type Product = {
   /** Free-text RAL on the quote line. No swatch catalog unless colors[] exists. */
   ralInQuote?: boolean
   variants?: { label: string; options: string[]; optionSwatches?: Record<string, string> }[]
+  /** Dependent configurator (Inoplex). Child groups appear only for the matching parent value. */
+  optionGroups?: ConfigGroup[]
   related: string[]
   imageNote?: string
   documentPolicy?: string
   documents?: ProductDocument[]
   /** Supplier article numbers may follow the quote line (STREETPARK). */
   quoteShowsSku?: boolean
+  /** Public copy: price is given in a quote, never as a catalog amount. */
+  quoteOnRequest?: boolean
   fetchedAt?: string
   reviewNote?: string
+}
+
+export type ConfigOption = {
+  id: string
+  name: string
+  swatch?: string
+  customText?: boolean
+}
+
+export type ConfigGroup = {
+  key: string
+  label: string
+  kind: 'choice' | 'swatch'
+  parentKey?: string
+  parentValue?: string
+  options: ConfigOption[]
 }
 
 /** STADORA's own article numbers (ST-…) may be shown on the public site. Supplier SKUs stay in admin. */
@@ -435,6 +456,7 @@ export const products: Record<string, Product> = {
   ...investimProducts,
   ...binsigniaProducts,
   ...streetparkProducts,
+  ...inoplexProducts,
   'akutvagn-genius': {
     slug: 'akutvagn-genius',
     name: 'Akutvagn Genius',
@@ -477,6 +499,7 @@ export const products: Record<string, Product> = {
 export { BINSIGNIA_SLUGS } from './binsignia'
 export { INVESTIM_SLUGS } from './investim'
 export { STREETPARK_SLUGS } from './streetpark'
+export { INOPLEX_SLUGS } from './inoplex'
 
 export const binsigniaDraft = [
   products['askkopp-luna'],

@@ -59,6 +59,9 @@ export function QuoteListPage() {
                     <p className="text-xs text-muted">Art.nr {line.sku}</p>
                   )}
                   {line.variant && <p className="text-sm text-muted">{line.variant}</p>}
+                  {products[line.slug]?.quoteOnRequest && (
+                    <p className="text-xs text-muted">Pris på förfrågan</p>
+                  )}
                 </div>
               </div>
               <label className="text-sm md:col-span-2">

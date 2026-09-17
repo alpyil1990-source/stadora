@@ -1,5 +1,6 @@
 import { BINSIGNIA_SLUGS } from './binsignia'
 import { INVESTIM_SLUGS } from './investim'
+import { INOPLEX_SLUGS } from './inoplex'
 import { STREETPARK_SLUGS } from './streetpark'
 
 export type SupplierStatus = 'aktiv' | 'invantar_underlag' | 'pausad'
@@ -103,6 +104,25 @@ export const seedSuppliers: Supplier[] = [
     notes:
       'Tillstånd att använda produktbilder, tekniska uppgifter och dokument från streetpark.eu. Tillverkare visas publikt som STREETPARK. Modellnamn oförändrade, svensk produkttyp framför (t.ex. Cykelställ BIKEME). Inga priser i den publika katalogen. Listpris och inköpsnetto (EUR) ligger i intern admin på den här sidan. Artikelnummer följer med offerten. Originalbilder utan beskärning/omfärgning. 3D-perspektiv i JPG är bild, inte CAD. CAD (DWG), 3D-arkiv, produktblad och förankringsanvisning publiceras på produktsidan, kopplade till rätt modell. Buss- och cykelväderskydd ingår inte i den här omgången. Hämtat 2026-09-17.',
     productSlugs: [...STREETPARK_SLUGS],
+  },
+  {
+    id: 'inoplex',
+    name: 'INOPLEX',
+    status: 'aktiv',
+    orgNr: '',
+    legalName: 'INOPLEX',
+    website: 'https://inoplex.pl/en',
+    mediaSource: 'https://inoplex.pl/en',
+    contact: {
+      name: '',
+      role: 'Katalog / B2B',
+      email: 'inoplex@inoplex.pl',
+      phone: '+48 22 460 54 30',
+    },
+    address: 'ul. Przewodowa 40, 04-874 Warszawa, Polen. Produktion: ul. Bolesława Chrobrego 26, 11-300 Biskupiec.',
+    notes:
+      'Tillstånd att använda produktbilder. Tillverkare visas inte publikt. Modellkod följer med offerten. Inköpspris saknas i katalogen — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs före kundpris. Baseboards/socklar är undantagna. Kundversion av produktblad utan leverantörens logotyp och kontaktuppgifter; original internt. Hämtat 2026-09-17.',
+    productSlugs: [...INOPLEX_SLUGS],
   },
 ]
 

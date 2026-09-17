@@ -1,5 +1,6 @@
 import { avfallCatalogSlugs } from './binsignia-rest'
 import { investimCatalogSlugs } from './investim'
+import { inoplexCatalogSlugs } from './inoplex'
 import { streetparkCatalogSlugs } from './streetpark'
 
 export type CatalogStatus = 'published' | 'needs_work' | 'draft'
@@ -41,6 +42,7 @@ export const catalog: CategoryDef[] = [
           'parkbank-enskede',
           ...investimCatalogSlugs.parkbankar,
           ...streetparkCatalogSlugs.parkbankar,
+          ...inoplexCatalogSlugs.parkbankar,
         ],
         draftExamples: ['Parkbänk Muren', 'Parkbänk Silverdal', 'Smart parkbänk Norra Djurgården'],
         filters: [
@@ -56,6 +58,7 @@ export const catalog: CategoryDef[] = [
         productSlugs: [
           ...investimCatalogSlugs['bord-picknick'],
           ...streetparkCatalogSlugs['bord-picknick'],
+          ...inoplexCatalogSlugs['bord-picknick'],
         ],
         draftExamples: ['Picknickbord Tanto', 'Utomhusbord Långholmen'],
       },
@@ -63,7 +66,11 @@ export const catalog: CategoryDef[] = [
         slug: 'modulara-sitt',
         name: 'Modulära sitt',
         blurb: 'Sittmoduler och sittelement.',
-        productSlugs: [...investimCatalogSlugs['modulara-sitt'], ...streetparkCatalogSlugs.sitto],
+        productSlugs: [
+          ...investimCatalogSlugs['modulara-sitt'],
+          ...streetparkCatalogSlugs.sitto,
+          ...inoplexCatalogSlugs['modulara-sitt'],
+        ],
         draftExamples: ['Sittelement Sandö', 'Sittmodul Hornsberg'],
         liveReady: ['Sittmodul Skarpnäck (grupp 1 på live-sajten, inte inlagd som kort här än)'],
       },
@@ -82,6 +89,7 @@ export const catalog: CategoryDef[] = [
           ...avfallCatalogSlugs.papperskorgar,
           ...investimCatalogSlugs.papperskorgar,
           ...streetparkCatalogSlugs.papperskorgar,
+          ...inoplexCatalogSlugs.papperskorgar,
         ],
         draftExamples: ['Papperskorg Djurö', 'Papperskorg Granö'],
       },
@@ -89,14 +97,18 @@ export const catalog: CategoryDef[] = [
         slug: 'askkoppar',
         name: 'Askkoppar',
         blurb: 'Fristående askkoppar.',
-        productSlugs: [...avfallCatalogSlugs.askkoppar, ...streetparkCatalogSlugs.askkoppar],
+        productSlugs: [
+          ...avfallCatalogSlugs.askkoppar,
+          ...streetparkCatalogSlugs.askkoppar,
+          ...inoplexCatalogSlugs.askkoppar,
+        ],
         draftExamples: [],
       },
       {
         slug: 'kallsortering',
         name: 'Källsortering',
         blurb: 'Stationer och behållare med fraktioner.',
-        productSlugs: avfallCatalogSlugs.kallsortering,
+        productSlugs: [...avfallCatalogSlugs.kallsortering, ...inoplexCatalogSlugs.kallsortering],
         draftExamples: [],
         filters: [
           { legend: 'Material', options: ['Pulverlackerad stålplåt', 'Rostfritt stål'] },
@@ -121,21 +133,21 @@ export const catalog: CategoryDef[] = [
         slug: 'cykelstall',
         name: 'Cykelställ',
         blurb: 'Markstående ställ.',
-        productSlugs: [...investimCatalogSlugs.cykelstall, ...streetparkCatalogSlugs.cykelstall],
+        productSlugs: [...investimCatalogSlugs.cykelstall, ...streetparkCatalogSlugs.cykelstall, ...inoplexCatalogSlugs.cykelstall],
         draftExamples: ['Cykelställ Vasastan', 'Cykelställ Bromma', 'Cykelställ Slussen'],
       },
       {
         slug: 'tak-skydd',
         name: 'Tak och väderskydd',
         blurb: 'Övertäckt parkering.',
-        productSlugs: [],
+        productSlugs: [...inoplexCatalogSlugs['tak-skydd']],
         draftExamples: ['Cykeltak Liljeholmen', 'Cykeltak Norrtull', 'Cykelväderskydd Alvik'],
       },
       {
         slug: 'garage-service',
         name: 'Garage och service',
         blurb: 'Garage, pump och service.',
-        productSlugs: [],
+        productSlugs: [...inoplexCatalogSlugs['garage-service']],
         draftExamples: ['Cykelgarage Hagastaden', 'Cykelservicestation Rosendal', 'Pumpstation Årstadal'],
       },
     ],
@@ -231,7 +243,7 @@ export const catalog: CategoryDef[] = [
         slug: 'planteringskarl',
         name: 'Planteringskärl',
         blurb: 'Kärl och lådor.',
-        productSlugs: [...investimCatalogSlugs.planteringskarl],
+        productSlugs: [...investimCatalogSlugs.planteringskarl, ...inoplexCatalogSlugs.planteringskarl],
         draftExamples: ['Planteringskärl Stadshag', 'Planteringskärl Bergshamra', 'Planteringslåda Mariehäll'],
       },
       {
@@ -252,7 +264,7 @@ export const catalog: CategoryDef[] = [
         slug: 'pollare',
         name: 'Pollare',
         blurb: 'Fasta och fällbara pollare.',
-        productSlugs: [...investimCatalogSlugs.pollare, ...streetparkCatalogSlugs.pollare],
+        productSlugs: [...investimCatalogSlugs.pollare, ...streetparkCatalogSlugs.pollare, ...inoplexCatalogSlugs.pollare],
         draftExamples: ['Pollare Skylten', 'Pollare Stigen', 'Fällpollare Enskede'],
         filters: [
           { legend: 'Form', options: ['Fyrkantig', 'Rund', 'Sexkantig', 'Åttkantig'] },
