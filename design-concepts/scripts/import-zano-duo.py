@@ -580,6 +580,7 @@ def main() -> None:
             {"label": "Sitsbredd", "value": "47 cm", "note": SITS_NOTE},
         ],
         "weight": "90 kg med europeiskt barrträ, 111 kg med hårt trä av europeiskt ursprung. Vikt för ädelträ anges inte.",
+        "weightSummary": "90–111 kg beroende på träutförande",
         "mounting": [
             "För skruvmontering.",
             "Tillverkaren visar exempel på skruvmontering mot stenbeläggning, betong/asfalt och betongfundament. Fundamentets storlek beror på lokala förhållanden och är inte angiven som fast mått.",
@@ -596,7 +597,7 @@ def main() -> None:
         ],
         "documents": documents,
         "related": [],
-        "imageNote": "Exempelbild – valt utförande kan avvika. ZANO-märkning på originalbilden är kvar.",
+        "imageNote": "Exempelbild – valt utförande kan avvika.",
         "reviewNote": "Testimport av en ZANO-produkt för granskning. Inte ett komplett ZANO-sortiment.",
         "internal": {
             "manufacturer": "ZANO",

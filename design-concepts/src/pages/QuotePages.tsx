@@ -36,7 +36,7 @@ export function QuoteListPage() {
       <p className="kicker">Offertlista · {area}</p>
       <h1 className="mt-2 text-3xl">Produkter i förfrågan</h1>
       <p className="mt-3 max-w-xl text-muted">
-        {count} rader · {pieces} st totalt. Inget pris visas. Listan är separat per affärsområde.
+        {count} rader · {pieces} st totalt.
       </p>
       {lines.length === 0 ? (
         <p className="mt-8 border border-dashed border-line p-6 text-sm text-muted">
@@ -203,8 +203,7 @@ export function QuoteFormPage() {
               className="mt-1 block w-full text-sm"
             />
             <span className="mt-1 block text-xs text-muted">
-              Koncept: filen laddas inte upp. I produktion: MIME-whitelist, storleksgräns, viruskontroll,
-              ingen publik URL.
+              PDF, DWG, DXF eller ZIP.
             </span>
           </label>
         </fieldset>

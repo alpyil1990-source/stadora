@@ -93,6 +93,8 @@ export type Product = {
   wood?: string
   dimensions?: { label: string; value: string; note?: string }[]
   weight?: string
+  /** Short weight next to the photo; full figure stays under Mått och vikt. */
+  weightSummary?: string
   mounting?: string[]
   capacity?: string
   environment?: string

@@ -12,7 +12,7 @@ export function QuoteReplyShell() {
           <Link to="/" className="inline-flex items-center gap-3 text-ink" aria-label="STADORA — startsidan">
             <BrandLockup />
           </Link>
-          <p className="text-xs text-muted">Personlig offertlänk · inte e-handel</p>
+          <p className="text-xs text-muted">Personlig offertlänk</p>
         </div>
       </header>
       <main className="shell py-8 md:py-12">

@@ -9,11 +9,11 @@ export function HomePage() {
         <div className="lg:col-span-5">
           <p className="kicker">Offentlig miljö</p>
           <h1 className="mt-3 max-w-xl text-4xl leading-tight md:text-5xl">
-            Underlag för park, torg och gård — inte en varukorg.
+            Underlag för park, torg och gård.
           </h1>
           <p className="mt-5 max-w-md text-muted">
             Produkter för kommun, fastighet, arkitekt och entreprenad. Samla ett projekt i
-            offertlistan. Pris lämnas i offert.
+            offertlistan.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
@@ -53,8 +53,8 @@ export function HomePage() {
           {[
             ['Park och torg', 'Bänkar och sitt för högt slitage.', '/produkter/parkmobler'],
             ['Avfall', 'Kärl och stationer för gård och gata.', '/produkter/avfall-atervinning'],
-            ['Cykelparkering', 'Ställ, tak och service. Underkategorier finns, produkterna är utkast.', '/produkter/cykelparkering'],
-            ['Lek och aktivitet', 'Gungor, lekställ, lekhus. Klicka in — även tomma hyllor.', '/produkter/lek-aktivitet'],
+            ['Cykelparkering', 'Ställ, tak och service för cykel.', '/produkter/cykelparkering'],
+            ['Lek och aktivitet', 'Gungor, lekställningar och lekhus.', '/produkter/lek-aktivitet'],
           ].map(([title, text, href]) => (
             <Link key={title} to={href} className="bg-sheet p-6 hover:bg-paper">
               <h3 className="text-lg">{title}</h3>
@@ -71,7 +71,7 @@ export function HomePage() {
             <h2 className="mt-2 text-2xl md:text-3xl">Källsortering, askkopp och kärl</h2>
             <p className="mt-3 max-w-2xl text-sm text-muted">
               Hela sortimentet ligger under Avfall. Här är fem modeller som visar material och
-              kapacitet. Pris och leverantörens artikelnummer syns inte här.
+              kapacitet.
             </p>
           </div>
           <Link to="/produkter/avfall-atervinning" className="text-sm underline">
@@ -86,11 +86,10 @@ export function HomePage() {
       </section>
 
       <section>
-        <p className="kicker">Verifierade produkter i konceptet</p>
+        <p className="kicker">Parkmöbler</p>
         <h2 className="mt-2 text-2xl md:text-3xl">Parkbänkar med mått och artikelnummer</h2>
         <p className="mt-3 max-w-2xl text-sm text-muted">
-          Listan visar bara produkter som uppfyller miniminivån i inventeringen. Platssnamn-SKU:er
-          med demo-bild och identisk text är utkast och visas inte här.
+          Listan visar parkbänkar med verifierade mått och artikelnummer.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {benches.map((p) => (
@@ -102,12 +101,12 @@ export function HomePage() {
       <section className="grid gap-8 lg:grid-cols-2">
         <div>
           <p className="kicker">Från plats till offert</p>
-          <h2 className="mt-2 text-2xl">Tre steg, ingen kassa</h2>
+          <h2 className="mt-2 text-2xl">Tre steg till offert</h2>
           <ol className="mt-6 space-y-4">
             {[
               ['Berätta om platsen', 'Gata, park, skolgård eller gård. Bifoga handling om ni har den.'],
               ['Vi tar fram underlag', 'Förslag, mått och infästning utifrån det som är verifierat.'],
-              ['Offert mot tidplan', 'Pris och leverans i offerten — inte på produktsidan.'],
+              ['Offert mot tidplan', 'Pris och leverans i offerten.'],
             ].map(([t, d], i) => (
               <li key={t} className="flex gap-4 border-t border-line pt-4">
                 <span className="font-ui text-sm tabular-nums text-muted">0{i + 1}</span>

@@ -115,14 +115,14 @@ export function CustomerQuotePage() {
           </table>
         )}
         <p className="mt-6 text-xs text-muted">
-          Exempelpriser i konceptet. Godkännande skapar inte en kortbetalning.
+          Priser enligt offert. Godkännande är en orderavsikt.
         </p>
       </div>
       <aside className="h-fit border border-line bg-sheet p-5 lg:col-span-5">
         <p className="kicker">Ert svar</p>
         <p className="mt-3 text-sm text-muted">
           {canDecide && priced
-            ? 'Välj ett av alternativen. Svaret syns direkt i admin i detta koncept.'
+            ? 'Välj ett av alternativen. Svaret syns direkt hos STADORA.'
             : 'Väntar på att STADORA skickar en prissatt offert.'}
         </p>
         <div className="mt-5 flex flex-col gap-2">

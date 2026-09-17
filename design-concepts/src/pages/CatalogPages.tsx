@@ -20,14 +20,13 @@ function StatusNote({ sub }: { sub: SubcategoryDef }) {
   if (status === 'published') {
     return (
       <p className="text-sm text-muted">
-        {n} {n === 1 ? 'publicerad produkt' : 'publicerade produkter'} i konceptet · pris i offert
+        {n} {n === 1 ? 'produkt' : 'produkter'}
       </p>
     )
   }
   return (
     <p className="text-sm text-muted">
-      0 publicerade produkter. Underkategorin finns i menyn så att strukturen går att granska.
-      Live-sajten har utkast med demo-bild — de visas inte som produktsidor.
+      0 produkter i den här underkategorin ännu.
     </p>
   )
 }
@@ -49,7 +48,7 @@ function SubcategoryTile({
       <p className="font-medium">{sub.name}</p>
       <p className="mt-1 text-sm text-muted">{sub.blurb}</p>
       <p className="mt-3 text-xs uppercase tracking-[0.08em] text-sage-dark">
-        {empty ? 'Utkast · 0 publicerade' : `${n} i konceptet`}
+        {empty ? '0 produkter' : `${n} ${n === 1 ? 'produkt' : 'produkter'}`}
       </p>
     </Link>
   )
@@ -62,8 +61,7 @@ export function CatalogIndexPage() {
       <p className="kicker">Offentlig miljö</p>
       <h1 className="mt-2 text-4xl">Sortiment</h1>
       <p className="mt-4 max-w-2xl text-muted">
-        Sju huvudkategorier, vardera med underkategorier. Du går Produkter → kategori → underkategori
-        → produkt. Tomma underkategorier är klickbara: strukturen ska synas innan katalogdata är klar.
+        Sju huvudkategorier med underkategorier. Gå från kategori till produkt.
       </p>
       <ul className="mt-10 grid gap-4 sm:grid-cols-2">
         {catalog.map((c) => (
@@ -225,8 +223,7 @@ export function SubcategoryListPage() {
           </form>
         ) : (
           <p className="mt-6 text-sm text-muted">
-            Filter läggs till när det finns publicerade produkter i underkategorin. Värdena ska komma
-            ur sortimentet — inte påhittade.
+            Filter visas när underkategorin har produkter.
           </p>
         )}
         <p className="mt-8 text-sm">
@@ -238,36 +235,10 @@ export function SubcategoryListPage() {
       <div className="lg:col-span-9">
         {empty ? (
           <div className="border border-dashed border-line p-6">
-            <p className="font-medium">Inga publicerade produkter här ännu</p>
+            <p className="font-medium">Inga produkter här ännu</p>
             <p className="mt-2 text-sm text-muted">
-              Så här ser en underkategori ut innan miniminivån är uppfylld. Inga demo-bilder, inga
-              påhittade mått. När en produkt har unik text, riktig bild och spec flyttas den upp som
-              kort.
+              Underkategorin är förberedd. Produkter läggs in när underlag finns.
             </p>
-            {sub.liveReady && sub.liveReady.length > 0 && (
-              <div className="mt-5">
-                <p className="kicker">Finns på live, inte i detta konceptkort</p>
-                <ul className="mt-3 space-y-2 text-sm text-muted">
-                  {sub.liveReady.map((name) => (
-                    <li key={name} className="border-b border-line py-2">
-                      {name}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {sub.draftExamples.length > 0 && (
-              <div className="mt-5">
-                <p className="kicker">Utkast på live-sajten (döljs publikt)</p>
-                <ul className="mt-3 space-y-2 text-sm text-muted">
-                  {sub.draftExamples.map((name) => (
-                    <li key={name} className="border-b border-line py-2">
-                      {name}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
           </div>
         ) : filteredOut ? (
           <div className="border border-dashed border-line p-6">

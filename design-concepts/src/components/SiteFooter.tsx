@@ -83,7 +83,6 @@ export function SiteFooter({ area }: { area: AreaId }) {
         <div className="shell flex flex-col gap-1 py-5 text-xs text-sheet/50 md:flex-row md:justify-between">
           <p>© 2026 STADORA</p>
           <p>VAT {company.vat}</p>
-          <p>Designkoncept — ingen e-handel</p>
         </div>
       </div>
     </footer>

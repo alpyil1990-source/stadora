@@ -40,6 +40,7 @@ type SeriesJson = {
   wood?: string | null
   dimensions: { label: string; value: string; note?: string }[]
   weight: string | null
+  weightSummary?: string | null
   mounting: string[]
   optionGroups: GroupJson[]
   images: ProductImage[]
@@ -79,6 +80,7 @@ function toProduct(row: SeriesJson): Product {
     wood: row.wood ?? undefined,
     dimensions: row.dimensions.length ? row.dimensions : undefined,
     weight: row.weight ?? undefined,
+    weightSummary: row.weightSummary ?? undefined,
     mounting: row.mounting.length ? row.mounting : undefined,
     optionGroups: row.optionGroups.map((g) => ({
       key: g.key,

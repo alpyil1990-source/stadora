@@ -35,7 +35,7 @@ export function ProductCard({ product }: { product: Product }) {
           {product.weight && (
             <>
               <dt>Vikt</dt>
-              <dd className="text-ink">{product.weight}</dd>
+              <dd className="text-ink">{product.weightSummary ?? product.weight}</dd>
             </>
           )}
           {product.mounting && (

@@ -73,6 +73,7 @@ export function ProductView({
   const publicSku = quoteShowsArticleNumber(product, sku) ? sku : undefined
   const dimensions = selectedSize?.dimensions ?? product.dimensions
   const weight = selectedSize?.weight ?? product.weight
+  const weightBesidePhoto = product.weightSummary ?? weight
   const capacity = selectedSize?.capacity ?? product.capacity
   const materialLabel = finish?.name ?? product.material
   const environment = finish?.environment ?? product.environment
@@ -512,12 +513,8 @@ export function ProductView({
             E-post
             <input type="email" className="mt-1 w-full border border-line p-2" required />
           </label>
-          <p className="text-xs text-muted">Koncept: formuläret skickas inte.</p>
         </form>
       )}
-      <p className="text-sm text-muted">
-        {product.quoteOnRequest ? 'Pris på förfrågan.' : 'Pris lämnas i offert.'} Ingen e-handelskassa.
-      </p>
       {optionProduct && !optionOk && (
         <p className="text-sm text-muted">Välj utförande, inklusive egen kulör om den är vald, innan raden läggs i offertlistan.</p>
       )}
@@ -538,10 +535,10 @@ export function ProductView({
           <dd className="font-medium">{product.manufacturer}</dd>
         </div>
       )}
-      {weight && (
+      {weightBesidePhoto && (
         <div>
           <dt className="text-muted">Vikt</dt>
-          <dd className="font-medium">{weight}</dd>
+          <dd className="font-medium">{weightBesidePhoto}</dd>
         </div>
       )}
       {dimensions?.[0] && (
@@ -743,8 +740,6 @@ export function ProductView({
   if (layout === 'visual') {
     return (
       <article>
-        <LayoutNote title="B. Arkitekturledd" />
-        <ReviewNote product={product} />
         <ProductNav product={product} />
         <div className="-mx-4 md:mx-0">
           <div className="max-h-[72vh] overflow-hidden bg-ink">
@@ -774,8 +769,6 @@ export function ProductView({
   if (layout === 'spec') {
     return (
       <article>
-        <LayoutNote title="A. Upphandlingsledd" />
-        <ReviewNote product={product} />
         <ProductNav product={product} />
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">{gallery}</div>
@@ -790,7 +783,7 @@ export function ProductView({
               </div>
               <div className="h-fit border border-line bg-sheet p-5 lg:sticky lg:top-28">
                 <p className="kicker">Offert</p>
-                <p className="mt-2 text-sm">Samla produkter till projektet. Pris i offert.</p>
+                <p className="mt-2 text-sm">Samla produkter till projektet.</p>
                 <div className="mt-4">{configure}</div>
               </div>
             </div>
@@ -802,8 +795,6 @@ export function ProductView({
 
   return (
     <article>
-      <LayoutNote title="C. Hybrid — rekommenderas" />
-      <ReviewNote product={product} />
       <ProductNav product={product} />
       <nav aria-label="På sidan" className="mb-6 flex flex-wrap gap-2 text-xs">
         {jump.map((j) => (
@@ -846,27 +837,6 @@ export function ProductView({
         </button>
       </div>
     </article>
-  )
-}
-
-function LayoutNote({ title }: { title: string }) {
-  return (
-    <p className="mb-6 border border-line bg-paper px-3 py-2 text-xs text-muted">
-      Produktsidelayout: <strong className="text-ink">{title}</strong>. Tomma sektioner utelämnas.
-      Inga mått, certifikat eller dokument är påhittade.
-    </p>
-  )
-}
-
-function ReviewNote({ product }: { product: Product }) {
-  if (!product.reviewNote) return null
-  return (
-    <p className="mb-6 border border-dashed border-line bg-sheet px-3 py-2 text-sm">
-      {product.reviewNote}{' '}
-      <Link className="underline" to="/design/binsignia">
-        Öppna utkastöversikten
-      </Link>
-    </p>
   )
 }
 
@@ -941,9 +911,7 @@ function ProductDocuments({
     }
     return (
       <p className="mt-3 border border-dashed border-line bg-paper px-4 py-5 text-sm text-muted">
-        Inga verifierade datablad, CAD-filer eller certifikat är publicerade för den här produkten.
-        Sektionen döljs i produktion när den är tom; den visas här för att visa hur luckor hanteras.
-        Vi skriver inte att filer finns på begäran.
+        Inga datablad, CAD-filer eller certifikat är publicerade för den här produkten.
       </p>
     )
   }
