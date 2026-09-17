@@ -22,9 +22,10 @@
       "categorySlug": "parkmobler",
       "subcategory": "Solstolar",
       "subcategorySlug": "solstolar",
-      "summary": "Solstol DUO 02.052 från tillverkaren ZANO. Kolstål S235JR eller rostfritt AISI 304, träsits enligt valt utförande. Skruvmontering. Pris på förfrågan.",
-      "description": "Solstol DUO 02.052 från tillverkaren ZANO, formgiven av Filip Babiarz. En modern parksolstol för stadsmiljö, kontorsgårdar och köpcentrum. Modellen är tillräckligt bred för att två vuxna ska kunna sitta bredvid varandra. Konstruktion i kolstål (S235JR) eller rostfritt stål (AISI 304). Sits och ryggstöd i europeiskt barrträ, hårt trä av europeiskt ursprung, oljat ädelträ eller ädelträ av högsta kvalitet. Montering: för skruvmontering. Mått enligt tillverkarens produktblad: bredd 129 cm, höjd 107 cm, djup 153 cm, basens bredd 129 cm, sitsbredd 47 cm. Vikt: 90 kg med europeiskt barrträ, 111 kg med hårt trä av europeiskt ursprung. Vikt för ädelträ anges inte. Kolstål galvaniseras och pulverlackeras i RAL enligt ZANOs kulörkarta för stål; valfri RAL offereras. Rostfritt stål AISI 304 har blank yta. För europeiskt barrträ finns träkulörerna ek, mahogny, teak, cypress och valnöt; egen kulör offereras. Teak är en träkulör på barrträ, inte träslaget teak. Pris på förfrågan.",
-      "material": "Kolstål S235JR eller rostfritt stål AISI 304, sits och ryggstöd i trä",
+      "summary": "Solstol DUO 02.052 från tillverkaren ZANO. Parksolstol för två. Pris på förfrågan.",
+      "description": "Solstol DUO 02.052 från tillverkaren ZANO, formgiven av Filip Babiarz. En modern parksolstol för stadsmiljö, kontorsgårdar och köpcentrum. Tillverkaren anger att två vuxna kan sitta bredvid varandra.",
+      "material": "Kolstål S235JR, galvaniserat och pulverlackerat i RAL, eller rostfritt stål AISI 304 med blank yta. Sits och ryggstöd i europeiskt barrträ, hårt trä av europeiskt ursprung, oljat ädelträ eller ädelträ av högsta kvalitet.",
+      "wood": "För europeiskt barrträ offererar ZANO träkulörerna ek, mahogny, teak, cypress och valnöt, plus egen kulör. Namnen avser kulören på det valda träslaget, inte massivt ek-, mahogny- eller teakträ.",
       "dimensions": [
         {
           "label": "Bredd",
@@ -44,7 +45,8 @@
         },
         {
           "label": "Sitsbredd",
-          "value": "47 cm"
+          "value": "47 cm",
+          "note": "Benämningen följer ZANOs svenska produktblad (sitsbredden). Översiktsritningen måttsätter bara 129, 107 och 153 cm. Samma modells engelska tekniska blad skriver seat height 47 cm (18 5/16 tum) och visar inte 47 cm på översiktsmåtten."
         }
       ],
       "weight": "90 kg med europeiskt barrträ, 111 kg med hårt trä av europeiskt ursprung. Vikt för ädelträ anges inte.",
@@ -146,10 +148,11 @@
         },
         {
           "key": "Trafinish:barrtra",
-          "label": "Träfinish",
+          "label": "Träkulör",
           "kind": "swatch",
           "parentKey": "Sits",
           "parentValue": "Europeiskt barrträ",
+          "hint": "Ek, mahogny, teak, cypress och valnöt är kulören på valt träslag. Barrträ i ekkulör är inte massivt ekträ.",
           "options": [
             {
               "id": "ek",
@@ -300,6 +303,30 @@
           "fetchedAt": "2026-09-17"
         },
         {
+          "title": "Duo_lounger_02-052_ver_01_metric_units_technical_data_sheet.dwg",
+          "typeLabel": "CAD-ritning, metriska enheter (DWG)",
+          "format": "DWG",
+          "href": "/docs/zano/solstol-duo-02-052/cad-ritning.dwg",
+          "kind": "cad",
+          "previewable": false,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/en-tech/archive.zip",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Duo_lounger_02-052_ver_01_imperial_units_technical_data_sheet-1.dwg",
+          "typeLabel": "CAD-ritning, tum-enheter (DWG)",
+          "format": "DWG",
+          "href": "/docs/zano/solstol-duo-02-052/cad-ritning-tum.dwg",
+          "kind": "cad",
+          "previewable": false,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/en-tech/archive.zip",
+          "fetchedAt": "2026-09-17"
+        },
+        {
           "title": "Leżak Duo 02.052 SC_ model uproszczony_dwg 3D.dwg",
           "typeLabel": "3D-modell (DWG)",
           "format": "DWG",
@@ -334,30 +361,6 @@
           "appliesTo": "02.052",
           "sourceUrl": "/workspace/design-concepts/internal/zano/docs/sv-tech/archive.zip",
           "fetchedAt": "2026-09-17"
-        },
-        {
-          "title": "Duo_lounger_02-052_ver_01_imperial_units_technical_data_sheet-1.dwg",
-          "typeLabel": "CAD-ritning, tum-enheter (DWG)",
-          "format": "DWG",
-          "href": "/docs/zano/solstol-duo-02-052/cad-ritning-tum.dwg",
-          "kind": "cad",
-          "previewable": false,
-          "variant": null,
-          "appliesTo": "02.052",
-          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/en-tech/archive.zip",
-          "fetchedAt": "2026-09-17"
-        },
-        {
-          "title": "Duo_lounger_02-052_ver_01_metric_units_technical_data_sheet.dwg",
-          "typeLabel": "CAD-ritning (DWG)",
-          "format": "DWG",
-          "href": "/docs/zano/solstol-duo-02-052/cad-ritning.dwg",
-          "kind": "cad",
-          "previewable": false,
-          "variant": null,
-          "appliesTo": "02.052",
-          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/en-tech/archive.zip",
-          "fetchedAt": "2026-09-17"
         }
       ],
       "related": [],
@@ -381,7 +384,8 @@
       "gaps": [
         "Fliken Färger på zano.se är tom i sidans HTML. Kulörer är hämtade från ZANOs materialsidor för kolstål/trä (länkade under Ytbehandlingsalternativ) och den internationella kulörkartan för samma tillverkare.",
         "Engelskt produktkortsarkiv har filnamnet Technical_data_sheet_metric_units_Duo_02-025.pdf (02-025) men dokumentet avser DUO 02.052. Originalet sparas internt och publiceras inte som kundfil. Svenskt produktblad används utåt.",
-        "Engelskt produktkortsarkiv har filnamnet Technical_data_sheet_imperial_units_Duo_02-025.pdf.pdf (02-025) men dokumentet avser DUO 02.052. Originalet sparas internt och publiceras inte som kundfil. Svenskt produktblad används utåt."
+        "Engelskt produktkortsarkiv har filnamnet Technical_data_sheet_imperial_units_Duo_02-025.pdf.pdf (02-025) men dokumentet avser DUO 02.052. Originalet sparas internt och publiceras inte som kundfil. Svenskt produktblad används utåt.",
+        "Svenskt produktblad skriver sitsbredden 47 cm. Översiktsritningen (SVG/JPG) måttsätter bara 129, 107 och 153 cm. Engelskt tekniskt blad för samma modell 02.052 skriver seat height 47 cm (18 5/16 tum). Benämningen Sitsbredd behålls från det svenska bladet."
       ],
       "failedFiles": []
     }

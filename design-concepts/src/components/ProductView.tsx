@@ -410,6 +410,7 @@ export function ProductView({
         visibleGroups(product, variants).map((g) => (
           <fieldset key={g.key}>
             <legend className="text-sm font-medium">{g.label}</legend>
+            {g.hint && <p className="mt-1 max-w-md text-xs text-muted">{g.hint}</p>}
             <div className={`mt-2 flex flex-wrap gap-2 ${g.kind === 'swatch' ? 'items-start' : ''}`}>
               {g.options.map((opt) => {
                 const selected = variants[g.key] === opt.name
@@ -574,7 +575,12 @@ export function ProductView({
               {dimensions.map((row) => (
                 <tr key={row.label}>
                   <th>{row.label}</th>
-                  <td>{row.value}</td>
+                  <td>
+                    {row.value}
+                    {row.note ? (
+                      <p className="mt-1 text-xs font-normal text-muted">{row.note}</p>
+                    ) : null}
+                  </td>
                 </tr>
               ))}
               {weight && (

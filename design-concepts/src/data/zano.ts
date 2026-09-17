@@ -14,6 +14,7 @@ type GroupJson = {
   kind: 'choice' | 'swatch'
   parentKey?: string
   parentValue?: string
+  hint?: string
   options: OptJson[]
 }
 
@@ -36,7 +37,8 @@ type SeriesJson = {
   summary: string
   description: string
   material: string | null
-  dimensions: { label: string; value: string }[]
+  wood?: string | null
+  dimensions: { label: string; value: string; note?: string }[]
   weight: string | null
   mounting: string[]
   optionGroups: GroupJson[]
@@ -74,6 +76,7 @@ function toProduct(row: SeriesJson): Product {
       color: img.color,
     })),
     material: row.material ?? undefined,
+    wood: row.wood ?? undefined,
     dimensions: row.dimensions.length ? row.dimensions : undefined,
     weight: row.weight ?? undefined,
     mounting: row.mounting.length ? row.mounting : undefined,
@@ -83,6 +86,7 @@ function toProduct(row: SeriesJson): Product {
       kind: g.kind,
       parentKey: g.parentKey,
       parentValue: g.parentValue,
+      hint: g.hint,
       options: g.options.map((o) => ({
         id: o.id,
         name: o.name,

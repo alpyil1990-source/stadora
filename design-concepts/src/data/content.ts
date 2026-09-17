@@ -28,7 +28,7 @@ export type SizeOption = {
   name: string
   sku?: string
   summary?: string
-  dimensions?: { label: string; value: string }[]
+  dimensions?: { label: string; value: string; note?: string }[]
   weight?: string
   capacity?: string
   /** STREETPARK type icon from the supplier product page. */
@@ -91,7 +91,7 @@ export type Product = {
   sourceUrl?: string
   cement?: string
   wood?: string
-  dimensions?: { label: string; value: string }[]
+  dimensions?: { label: string; value: string; note?: string }[]
   weight?: string
   mounting?: string[]
   capacity?: string
@@ -139,6 +139,8 @@ export type ConfigGroup = {
   kind: 'choice' | 'swatch'
   parentKey?: string
   parentValue?: string
+  /** Shown under the legend, e.g. that wood names are stains not species. */
+  hint?: string
   options: ConfigOption[]
 }
 

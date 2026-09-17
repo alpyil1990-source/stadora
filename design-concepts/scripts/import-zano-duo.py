@@ -47,22 +47,26 @@ STEEL_PALETTE = "https://www.zano-streetfurniture.com/info/types-of-steel"
 DESCRIPTION = (
     "Solstol DUO 02.052 från tillverkaren ZANO, formgiven av Filip Babiarz. "
     "En modern parksolstol för stadsmiljö, kontorsgårdar och köpcentrum. "
-    "Modellen är tillräckligt bred för att två vuxna ska kunna sitta bredvid varandra. "
-    "Konstruktion i kolstål (S235JR) eller rostfritt stål (AISI 304). "
-    "Sits och ryggstöd i europeiskt barrträ, hårt trä av europeiskt ursprung, oljat ädelträ eller ädelträ av högsta kvalitet. "
-    "Montering: för skruvmontering. "
-    "Mått enligt tillverkarens produktblad: bredd 129 cm, höjd 107 cm, djup 153 cm, basens bredd 129 cm, sitsbredd 47 cm. "
-    "Vikt: 90 kg med europeiskt barrträ, 111 kg med hårt trä av europeiskt ursprung. Vikt för ädelträ anges inte. "
-    "Kolstål galvaniseras och pulverlackeras i RAL enligt ZANOs kulörkarta för stål; valfri RAL offereras. "
-    "Rostfritt stål AISI 304 har blank yta. "
-    "För europeiskt barrträ finns träkulörerna ek, mahogny, teak, cypress och valnöt; egen kulör offereras. "
-    "Teak är en träkulör på barrträ, inte träslaget teak. "
-    "Pris på förfrågan."
+    "Tillverkaren anger att två vuxna kan sitta bredvid varandra."
 )
 
 SUMMARY = (
-    "Solstol DUO 02.052 från tillverkaren ZANO. Kolstål S235JR eller rostfritt AISI 304, "
-    "träsits enligt valt utförande. Skruvmontering. Pris på förfrågan."
+    "Solstol DUO 02.052 från tillverkaren ZANO. Parksolstol för två. Pris på förfrågan."
+)
+
+MATERIAL = (
+    "Kolstål S235JR, galvaniserat och pulverlackerat i RAL, eller rostfritt stål AISI 304 med blank yta. "
+    "Sits och ryggstöd i europeiskt barrträ, hårt trä av europeiskt ursprung, oljat ädelträ eller ädelträ av högsta kvalitet."
+)
+
+WOOD = (
+    "För europeiskt barrträ offererar ZANO träkulörerna ek, mahogny, teak, cypress och valnöt, plus egen kulör. "
+    "Namnen avser kulören på det valda träslaget, inte massivt ek-, mahogny- eller teakträ."
+)
+
+SITS_NOTE = (
+    "Benämningen följer ZANOs svenska produktblad (sitsbredden). Översiktsritningen måttsätter bara 129, 107 och 153 cm. "
+    "Samma modells engelska tekniska blad skriver seat height 47 cm (18 5/16 tum) och visar inte 47 cm på översiktsmåtten."
 )
 
 
@@ -447,16 +451,17 @@ def main() -> None:
             previewable=fmt in {"PDF", "JPG", "JPEG", "PNG", "WEBP"},
         )
 
-    for name, _path, raw, source in sv_files + en_files:
+    cad_rows = sv_files + en_files
+    for name, path, raw, source in cad_rows:
+        lower = name.lower()
+        if lower.endswith(".dwg") and "metric" in lower:
+            publish_binary(name, raw, source, "CAD-ritning, metriska enheter (DWG)", "DWG", "cad", "cad-ritning.dwg")
+        elif lower.endswith(".dwg") and "imperial" in lower:
+            publish_binary(name, raw, source, "CAD-ritning, tum-enheter (DWG)", "DWG", "cad", "cad-ritning-tum.dwg")
+    for name, path, raw, source in cad_rows:
         lower = name.lower()
         if lower.endswith(".dwg") and "3d" in lower:
             publish_binary(name, raw, source, "3D-modell (DWG)", "DWG", "cad", "3d-modell.dwg")
-        elif lower.endswith(".dwg") and "metric" in lower:
-            publish_binary(name, raw, source, "CAD-ritning (DWG)", "DWG", "cad", "cad-ritning.dwg")
-        elif lower.endswith(".dwg") and "imperial" in lower:
-            publish_binary(name, raw, source, "CAD-ritning, tum-enheter (DWG)", "DWG", "cad", "cad-ritning-tum.dwg")
-        elif lower.endswith(".dwg"):
-            publish_binary(name, raw, source, "CAD-ritning (DWG)", "DWG", "cad", "cad-ritning.dwg")
         elif lower.endswith(".3ds"):
             publish_binary(name, raw, source, "3D-modell (3DS)", "3DS", "cad", "3d-modell.3ds")
         elif lower.endswith(".skp"):
@@ -469,6 +474,11 @@ def main() -> None:
                 f"Engelskt produktkortsarkiv har filnamnet {name} (02-025) men dokumentet avser DUO 02.052. "
                 "Originalet sparas internt och publiceras inte som kundfil. Svenskt produktblad används utåt."
             )
+    gaps.append(
+        "Svenskt produktblad skriver sitsbredden 47 cm. Översiktsritningen (SVG/JPG) måttsätter bara 129, 107 och 153 cm. "
+        "Engelskt tekniskt blad för samma modell 02.052 skriver seat height 47 cm (18 5/16 tum). "
+        "Benämningen Sitsbredd behålls från det svenska bladet."
+    )
 
     if not any(d["format"] == "DWG" and d["typeLabel"].startswith("CAD-ritning") for d in documents):
         gaps.append("2D CAD-ritning (DWG) saknades i det svenska dokumentarkivet; metriska DWG från samma modell-UUID användes när den fanns.")
@@ -528,10 +538,11 @@ def main() -> None:
         },
         {
             "key": "Trafinish:barrtra",
-            "label": "Träfinish",
+            "label": "Träkulör",
             "kind": "swatch",
             "parentKey": "Sits",
             "parentValue": "Europeiskt barrträ",
+            "hint": "Ek, mahogny, teak, cypress och valnöt är kulören på valt träslag. Barrträ i ekkulör är inte massivt ekträ.",
             "options": [
                 {"id": "ek", "name": "Ek", "swatch": swatches.get("wood-ek")},
                 {"id": "mahogny", "name": "Mahogny", "swatch": swatches.get("wood-mahogny")},
@@ -559,13 +570,14 @@ def main() -> None:
         "subcategorySlug": "solstolar",
         "summary": SUMMARY,
         "description": DESCRIPTION,
-        "material": "Kolstål S235JR eller rostfritt stål AISI 304, sits och ryggstöd i trä",
+        "material": MATERIAL,
+        "wood": WOOD,
         "dimensions": [
             {"label": "Bredd", "value": "129 cm"},
             {"label": "Höjd", "value": "107 cm"},
             {"label": "Djup", "value": "153 cm"},
             {"label": "Basens bredd", "value": "129 cm"},
-            {"label": "Sitsbredd", "value": "47 cm"},
+            {"label": "Sitsbredd", "value": "47 cm", "note": SITS_NOTE},
         ],
         "weight": "90 kg med europeiskt barrträ, 111 kg med hårt trä av europeiskt ursprung. Vikt för ädelträ anges inte.",
         "mounting": [
