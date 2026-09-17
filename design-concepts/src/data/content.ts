@@ -2,6 +2,7 @@ import { binsigniaProducts } from './binsignia'
 import { investimProducts } from './investim'
 import { inoplexProducts } from './inoplex'
 import { streetparkProducts } from './streetpark'
+import { zanoProducts } from './zano'
 import { catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
@@ -151,7 +152,7 @@ export function quoteShowsArticleNumber(product?: Product | null, sku?: string |
   if (!sku) return false
   if (isStadoraArticleNumber(sku)) return true
   if (product?.quoteShowsSku) return true
-  return product?.manufacturer === 'STREETPARK'
+  return product?.manufacturer === 'STREETPARK' || product?.manufacturer === 'ZANO'
 }
 
 export function documentsForVariant(product: Product, variant?: string | null) {
@@ -457,6 +458,7 @@ export const products: Record<string, Product> = {
   ...binsigniaProducts,
   ...streetparkProducts,
   ...inoplexProducts,
+  ...zanoProducts,
   'akutvagn-genius': {
     slug: 'akutvagn-genius',
     name: 'Akutvagn Genius',

@@ -1,0 +1,394 @@
+{
+  "fetchedAt": "2026-09-17",
+  "source": "https://www.zano.se/produkter/for-att-sitta-och-vila/solstolar/solstol-duo-02-052",
+  "note": "Testimport av en produkt. ZANO visas publikt. Bilder och dokument är oförändrade original. Inköpspris saknas — lämna tomt, aldrig 0 kr. Ingen övrig ZANO-katalog i denna omgång.",
+  "counts": {
+    "products": 1,
+    "images": 15,
+    "documents": 8
+  },
+  "series": [
+    {
+      "slug": "solstol-duo-02-052",
+      "name": "Solstol DUO 02.052 – ZANO",
+      "modelName": "DUO 02.052",
+      "sku": "02.052",
+      "manufacturer": "ZANO",
+      "quoteShowsSku": true,
+      "quoteOnRequest": true,
+      "sourceUrl": "https://www.zano.se/produkter/for-att-sitta-och-vila/solstolar/solstol-duo-02-052",
+      "fetchedAt": "2026-09-17",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Solstolar",
+      "subcategorySlug": "solstolar",
+      "summary": "Solstol DUO 02.052 från tillverkaren ZANO. Kolstål S235JR eller rostfritt AISI 304, träsits enligt valt utförande. Skruvmontering. Pris på förfrågan.",
+      "description": "Solstol DUO 02.052 från tillverkaren ZANO, formgiven av Filip Babiarz. En modern parksolstol för stadsmiljö, kontorsgårdar och köpcentrum. Modellen är tillräckligt bred för att två vuxna ska kunna sitta bredvid varandra. Konstruktion i kolstål (S235JR) eller rostfritt stål (AISI 304). Sits och ryggstöd i europeiskt barrträ, hårt trä av europeiskt ursprung, oljat ädelträ eller ädelträ av högsta kvalitet. Montering: för skruvmontering. Mått enligt tillverkarens produktblad: bredd 129 cm, höjd 107 cm, djup 153 cm, basens bredd 129 cm, sitsbredd 47 cm. Vikt: 90 kg med europeiskt barrträ, 111 kg med hårt trä av europeiskt ursprung. Vikt för ädelträ anges inte. Kolstål galvaniseras och pulverlackeras i RAL enligt ZANOs kulörkarta för stål; valfri RAL offereras. Rostfritt stål AISI 304 har blank yta. För europeiskt barrträ finns träkulörerna ek, mahogny, teak, cypress och valnöt; egen kulör offereras. Teak är en träkulör på barrträ, inte träslaget teak. Pris på förfrågan.",
+      "material": "Kolstål S235JR eller rostfritt stål AISI 304, sits och ryggstöd i trä",
+      "dimensions": [
+        {
+          "label": "Bredd",
+          "value": "129 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "107 cm"
+        },
+        {
+          "label": "Djup",
+          "value": "153 cm"
+        },
+        {
+          "label": "Basens bredd",
+          "value": "129 cm"
+        },
+        {
+          "label": "Sitsbredd",
+          "value": "47 cm"
+        }
+      ],
+      "weight": "90 kg med europeiskt barrträ, 111 kg med hårt trä av europeiskt ursprung. Vikt för ädelträ anges inte.",
+      "mounting": [
+        "För skruvmontering.",
+        "Tillverkaren visar exempel på skruvmontering mot stenbeläggning, betong/asfalt och betongfundament. Fundamentets storlek beror på lokala förhållanden och är inte angiven som fast mått."
+      ],
+      "optionGroups": [
+        {
+          "key": "Konstruktion",
+          "label": "Konstruktion",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "carbon-steel",
+              "name": "Kolstål S235JR"
+            },
+            {
+              "id": "stainless-steel",
+              "name": "Rostfritt stål AISI 304"
+            }
+          ]
+        },
+        {
+          "key": "Stalfinish:kolstal",
+          "label": "Stålfinish",
+          "kind": "swatch",
+          "parentKey": "Konstruktion",
+          "parentValue": "Kolstål S235JR",
+          "options": [
+            {
+              "id": "ral-9005",
+              "name": "RAL 9005 svart",
+              "swatch": "/images/zano/swatches/ral-9005.png"
+            },
+            {
+              "id": "ral-9011",
+              "name": "RAL 9011 grafitsvart",
+              "swatch": "/images/zano/swatches/ral-9011.png"
+            },
+            {
+              "id": "ral-7016",
+              "name": "RAL 7016 mörk grafit",
+              "swatch": "/images/zano/swatches/ral-7016.png"
+            },
+            {
+              "id": "ral-9007",
+              "name": "RAL 9007 mörkt stål",
+              "swatch": "/images/zano/swatches/ral-9007.png"
+            },
+            {
+              "id": "ral-9010",
+              "name": "RAL 9010 vit",
+              "swatch": "/images/zano/swatches/ral-9010.png"
+            },
+            {
+              "id": "ral-custom",
+              "name": "Egen kulör",
+              "customText": true
+            }
+          ]
+        },
+        {
+          "key": "Stalfinish:rostfritt",
+          "label": "Stålfinish",
+          "kind": "swatch",
+          "parentKey": "Konstruktion",
+          "parentValue": "Rostfritt stål AISI 304",
+          "options": [
+            {
+              "id": "stainless-finish",
+              "name": "Blank yta AISI 304",
+              "swatch": "/images/zano/swatches/stainless.png"
+            }
+          ]
+        },
+        {
+          "key": "Sits",
+          "label": "Sits och ryggstöd",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "barrtra",
+              "name": "Europeiskt barrträ"
+            },
+            {
+              "id": "hardt-eu",
+              "name": "Hårt trä av europeiskt ursprung"
+            },
+            {
+              "id": "oljat",
+              "name": "Oljat ädelträ"
+            },
+            {
+              "id": "premium",
+              "name": "Ädelträ av högsta kvalitet"
+            }
+          ]
+        },
+        {
+          "key": "Trafinish:barrtra",
+          "label": "Träfinish",
+          "kind": "swatch",
+          "parentKey": "Sits",
+          "parentValue": "Europeiskt barrträ",
+          "options": [
+            {
+              "id": "ek",
+              "name": "Ek",
+              "swatch": "/images/zano/swatches/wood-ek.png"
+            },
+            {
+              "id": "mahogny",
+              "name": "Mahogny",
+              "swatch": "/images/zano/swatches/wood-mahogny.png"
+            },
+            {
+              "id": "teak",
+              "name": "Teak",
+              "swatch": "/images/zano/swatches/wood-teak.png"
+            },
+            {
+              "id": "cypress",
+              "name": "Cypress",
+              "swatch": "/images/zano/swatches/wood-cypress.png"
+            },
+            {
+              "id": "valnot",
+              "name": "Valnöt",
+              "swatch": "/images/zano/swatches/wood-valnot.png"
+            },
+            {
+              "id": "wood-custom",
+              "name": "Egen kulör",
+              "customText": true
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/zano/galleri-01.webp",
+          "alt": "Stadsparksolstol Duo og rostfritt stål",
+          "kind": "studio",
+          "color": "Rostfritt stål AISI 304"
+        },
+        {
+          "src": "/images/zano/galleri-02.webp",
+          "alt": "Stadsmöbler för avkoppling – parksolstolen Duo",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/zano/galleri-03.webp",
+          "alt": "Den moderna parksolstolen Duo i trä och stål",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-04.webp",
+          "alt": "Den moderna parksolstolen Duo från ZANO",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-05.webp",
+          "alt": "Solstol Duo – en ny dimension av avkoppling",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-06.webp",
+          "alt": "Den moderna parksolstolen Duo 02.052",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-07.webp",
+          "alt": "Parksolstolen Duo – modernitet och elegans",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-08.webp",
+          "alt": "Bekväm parksolstol Duo",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-09.webp",
+          "alt": "Duo | ZANO",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-10.webp",
+          "alt": "DUO – en parksolstol i stål för stadsbruk",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-11.webp",
+          "alt": "Parksolstol Duo – ZANO Gatumöbler",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-12.webp",
+          "alt": "solstol duo strandpromenad",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-13.webp",
+          "alt": "en parksolstol med pulverlackering i turkos",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-14.webp",
+          "alt": "solstol duo, turkos",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/galleri-15.webp",
+          "alt": "stålstolar med ryggstöd av trä",
+          "kind": "site"
+        }
+      ],
+      "documents": [
+        {
+          "title": "Parksolstol Duo 02.052",
+          "typeLabel": "Produktblad (PDF)",
+          "format": "PDF",
+          "href": "/docs/zano/solstol-duo-02-052/produktblad.pdf",
+          "kind": "datasheet",
+          "previewable": true,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/parksolstol-duo-02-052.pdf",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Parksolstol Duo 02.052 – mått",
+          "typeLabel": "Måttritning (SVG)",
+          "format": "SVG",
+          "href": "/docs/zano/solstol-duo-02-052/matritning.svg",
+          "kind": "drawing",
+          "previewable": true,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/matritning.svg",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Måttritning 02.052",
+          "typeLabel": "Måttritning (JPG)",
+          "format": "JPG",
+          "href": "/images/zano/matritning.jpg",
+          "kind": "drawing",
+          "previewable": true,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/images/original/matritning.jpg",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Leżak Duo 02.052 SC_ model uproszczony_dwg 3D.dwg",
+          "typeLabel": "3D-modell (DWG)",
+          "format": "DWG",
+          "href": "/docs/zano/solstol-duo-02-052/3d-modell.dwg",
+          "kind": "cad",
+          "previewable": false,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/sv-tech/archive.zip",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Leżak Duo 02.052 SC_ model uproszczony.3ds",
+          "typeLabel": "3D-modell (3DS)",
+          "format": "3DS",
+          "href": "/docs/zano/solstol-duo-02-052/3d-modell.3ds",
+          "kind": "cad",
+          "previewable": false,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/sv-tech/archive.zip",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Leżak Duo 02.052 SC_ model uproszczony.skp",
+          "typeLabel": "3D-modell (SKP)",
+          "format": "SKP",
+          "href": "/docs/zano/solstol-duo-02-052/3d-modell.skp",
+          "kind": "cad",
+          "previewable": false,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/sv-tech/archive.zip",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Duo_lounger_02-052_ver_01_imperial_units_technical_data_sheet-1.dwg",
+          "typeLabel": "CAD-ritning, tum-enheter (DWG)",
+          "format": "DWG",
+          "href": "/docs/zano/solstol-duo-02-052/cad-ritning-tum.dwg",
+          "kind": "cad",
+          "previewable": false,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/en-tech/archive.zip",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Duo_lounger_02-052_ver_01_metric_units_technical_data_sheet.dwg",
+          "typeLabel": "CAD-ritning (DWG)",
+          "format": "DWG",
+          "href": "/docs/zano/solstol-duo-02-052/cad-ritning.dwg",
+          "kind": "cad",
+          "previewable": false,
+          "variant": null,
+          "appliesTo": "02.052",
+          "sourceUrl": "/workspace/design-concepts/internal/zano/docs/en-tech/archive.zip",
+          "fetchedAt": "2026-09-17"
+        }
+      ],
+      "related": [],
+      "imageNote": "Exempelbild – valt utförande kan avvika. ZANO-märkning på originalbilden är kvar.",
+      "reviewNote": "Testimport av en ZANO-produkt för granskning. Inte ett komplett ZANO-sortiment.",
+      "internal": {
+        "manufacturer": "ZANO",
+        "legalName": "ZANO Mirosław Zarotyński",
+        "sourceName": "Parksolstol Duo 02.052",
+        "designer": "Filip Babiarz",
+        "sourceUrl": "https://www.zano.se/produkter/for-att-sitta-och-vila/solstolar/solstol-duo-02-052",
+        "catalogueUrl": "https://www.zano-streetfurniture.com/street-furniture/catalogue/benches/duo-lounger-02-052",
+        "productUuid": "a92a4e09-816e-40b9-9268-08240ac2fc9a",
+        "zanoSeFetch": "ok",
+        "keepBranding": true,
+        "supplierQuoteRequired": true,
+        "purchasePrice": null,
+        "woodPaletteUrl": "https://www.zano-streetfurniture.com/info/wood-colours-palette",
+        "steelPaletteUrl": "https://www.zano-streetfurniture.com/info/types-of-steel"
+      },
+      "gaps": [
+        "Fliken Färger på zano.se är tom i sidans HTML. Kulörer är hämtade från ZANOs materialsidor för kolstål/trä (länkade under Ytbehandlingsalternativ) och den internationella kulörkartan för samma tillverkare.",
+        "Engelskt produktkortsarkiv har filnamnet Technical_data_sheet_metric_units_Duo_02-025.pdf (02-025) men dokumentet avser DUO 02.052. Originalet sparas internt och publiceras inte som kundfil. Svenskt produktblad används utåt.",
+        "Engelskt produktkortsarkiv har filnamnet Technical_data_sheet_imperial_units_Duo_02-025.pdf.pdf (02-025) men dokumentet avser DUO 02.052. Originalet sparas internt och publiceras inte som kundfil. Svenskt produktblad används utåt."
+      ],
+      "failedFiles": []
+    }
+  ],
+  "catalog": {
+    "solstolar": [
+      "solstol-duo-02-052"
+    ]
+  }
+}

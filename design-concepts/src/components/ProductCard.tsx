@@ -18,6 +18,9 @@ export function ProductCard({ product }: { product: Product }) {
             {product.name}
           </Link>
         </h3>
+        {product.manufacturer && (
+          <p className="text-sm font-medium">Tillverkare: {product.manufacturer}</p>
+        )}
         {isStadoraArticleNumber(product.sku) && !product.materials?.length && (
           <p className="font-ui text-xs tabular-nums text-muted">Art.nr {product.sku}</p>
         )}

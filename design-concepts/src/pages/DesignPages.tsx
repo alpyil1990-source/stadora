@@ -43,6 +43,9 @@ export function DesignIndexPage() {
             ['Admin: BINSIGNIA (Paula Stirbu)', '/admin/leverantorer/binsignia'],
             ['Admin: STREETPARK', '/admin/leverantorer/streetpark'],
             ['Admin: Inoplex (intern)', '/admin/leverantorer/inoplex'],
+            ['Admin: ZANO (testimport)', '/admin/leverantorer/zano'],
+            ['Solstol DUO 02.052 – ZANO', '/produkt/solstol-duo-02-052'],
+            ['Solstolar', '/produkter/parkmobler/solstolar'],
             ['Planteringskärl DO.23.02', '/produkt/planteringskarl-do-23-02'],
             ['Parkbänk LA.20.19', '/produkt/parkbank-la-20-19'],
             ['Intern översikt STREETPARK', '/design/streetpark'],
@@ -122,6 +125,27 @@ export function DesignIndexPage() {
           {' · '}
           <Link className="underline" to="/produkt/cykelstall-bikeme">
             Cykelställ BIKEME
+          </Link>
+        </p>
+      </section>
+      <section className="border border-line bg-sheet p-6 text-sm">
+        <h2 className="text-lg">ZANO (testimport)</h2>
+        <p className="mt-2 text-muted">
+          En produkt för granskning: Solstol DUO 02.052. Tillverkare ZANO visas publikt på kort,
+          bilder och offert. Märkning på originalbilder och dokument är kvar. Pris på förfrågan.
+          Inte ett komplett ZANO-sortiment.
+        </p>
+        <p className="mt-3">
+          <Link className="underline" to="/produkt/solstol-duo-02-052">
+            Solstol DUO 02.052 – ZANO
+          </Link>
+          {' · '}
+          <Link className="underline" to="/produkter/parkmobler/solstolar">
+            Solstolar
+          </Link>
+          {' · '}
+          <Link className="underline" to="/admin/leverantorer/zano">
+            Intern leverantörssida
           </Link>
         </p>
       </section>

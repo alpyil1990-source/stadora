@@ -55,6 +55,9 @@ export function QuoteListPage() {
                   <Link className="font-medium hover:underline" to={line.href}>
                     {line.name}
                   </Link>
+                  {products[line.slug]?.manufacturer && (
+                    <p className="text-xs text-muted">Tillverkare {products[line.slug].manufacturer}</p>
+                  )}
                   {quoteShowsArticleNumber(products[line.slug], line.sku) && (
                     <p className="text-xs text-muted">Art.nr {line.sku}</p>
                   )}
@@ -251,6 +254,9 @@ export function QuoteFormPage() {
               <QuoteThumb line={l} size="sm" />
               <span>
                 <span className="font-medium">{l.name}</span>
+                {products[l.slug]?.manufacturer && (
+                  <span className="block text-xs text-muted">Tillverkare {products[l.slug].manufacturer}</span>
+                )}
                 {quoteShowsArticleNumber(products[l.slug], l.sku) && (
                   <span className="block text-xs text-muted">Art.nr {l.sku}</span>
                 )}

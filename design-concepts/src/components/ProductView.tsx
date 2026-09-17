@@ -172,6 +172,9 @@ export function ProductView({
           />
         )}
       </div>
+      {product.manufacturer && (
+        <p className="mt-2 text-sm font-medium">Tillverkare: {product.manufacturer}</p>
+      )}
       {product.imageNote && <p className="mt-2 text-xs text-muted">{product.imageNote}</p>}
       {missingSizePhoto && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
@@ -184,7 +187,7 @@ export function ProductView({
           får ändå rätt kulör.
         </p>
       )}
-      {optionProduct && inoplexGallery && !inoplexGallery.matched && (
+      {optionProduct && inoplexGallery && !inoplexGallery.matched && !product.imageNote && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
           Exempelbild – valt utförande kan avvika.
         </p>
@@ -426,7 +429,7 @@ export function ProductView({
                     />
                     <span className="flex items-center gap-2">
                       {opt.swatch && (
-                        <img src={opt.swatch} alt="" className="h-8 w-8 border border-line object-cover" />
+                        <img src={opt.swatch} alt="" className="h-8 w-8 border border-line object-contain" />
                       )}
                       <span>{opt.name}</span>
                     </span>

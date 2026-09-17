@@ -2,6 +2,7 @@ import { BINSIGNIA_SLUGS } from './binsignia'
 import { INVESTIM_SLUGS } from './investim'
 import { INOPLEX_SLUGS } from './inoplex'
 import { STREETPARK_SLUGS } from './streetpark'
+import { ZANO_SLUGS } from './zano'
 
 export type SupplierStatus = 'aktiv' | 'invantar_underlag' | 'pausad'
 
@@ -123,6 +124,25 @@ export const seedSuppliers: Supplier[] = [
     notes:
       'Tillstånd att använda produktbilder. Tillverkare visas inte publikt. Modellkod följer med offerten. Inköpspris saknas i katalogen — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs före kundpris. Baseboards/socklar är undantagna. Kundversion av produktblad utan leverantörens logotyp och kontaktuppgifter; original internt. Hämtat 2026-09-17.',
     productSlugs: [...INOPLEX_SLUGS],
+  },
+  {
+    id: 'zano',
+    name: 'ZANO',
+    status: 'invantar_underlag',
+    orgNr: '',
+    legalName: 'ZANO Mirosław Zarotyński',
+    website: 'https://www.zano.se',
+    mediaSource: 'https://www.zano.se/produkter/for-att-sitta-och-vila/solstolar/solstol-duo-02-052',
+    contact: {
+      name: '',
+      role: 'Katalog / B2B',
+      email: 'office@zano.pl',
+      phone: '+48 12 200 20 53',
+    },
+    address: 'Lindego 7A, 30-148 Kraków, Polen',
+    notes:
+      'TESTIMPORT av en produkt (Solstol DUO 02.052). Inte ett komplett ZANO-sortiment. Tillstånd att använda produktbilder under förutsättning att ZANO-märkning finns kvar. Tillverkare visas publikt. Modellnummer 02.052 följer med offerten. Inköpspris saknas — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs. Dokument oförändrade, inklusive logotyp. Hämtat 2026-09-17.',
+    productSlugs: [...ZANO_SLUGS],
   },
 ]
 

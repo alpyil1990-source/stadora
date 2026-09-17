@@ -2,6 +2,7 @@ import { avfallCatalogSlugs } from './binsignia-rest'
 import { investimCatalogSlugs } from './investim'
 import { inoplexCatalogSlugs } from './inoplex'
 import { streetparkCatalogSlugs } from './streetpark'
+import { zanoCatalogSlugs } from './zano'
 
 export type CatalogStatus = 'published' | 'needs_work' | 'draft'
 
@@ -73,6 +74,13 @@ export const catalog: CategoryDef[] = [
         ],
         draftExamples: ['Sittelement Sandö', 'Sittmodul Hornsberg'],
         liveReady: ['Sittmodul Skarpnäck (grupp 1 på live-sajten, inte inlagd som kort här än)'],
+      },
+      {
+        slug: 'solstolar',
+        name: 'Solstolar',
+        blurb: 'Parksolstolar och vilstolar för offentlig miljö.',
+        productSlugs: [...zanoCatalogSlugs.solstolar],
+        draftExamples: [],
       },
     ],
   },

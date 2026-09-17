@@ -86,20 +86,18 @@ export function matchingImages(product: Product, state: Record<string, string>):
   shown: ProductImage[]
   matched: boolean
 } {
-  const tagged = product.images.filter((img) => img.color || Object.keys(img).length)
-  const finish = state['Stomfinish'] || state[COLOR_VARIANT_KEY]
-  const wood = state['Träslag']
-  const hits = product.images.filter((img) => {
-    if (img.color && finish && img.color !== finish) return false
-    return true
-  })
-  if (hits.length && finish && hits.some((i) => i.color === finish)) {
-    return { shown: hits, matched: true }
+  const finish = state['Stomfinish'] || state['Konstruktion'] || state[COLOR_VARIANT_KEY]
+  const wood = state['Träslag'] || state['Sits']
+  const hits = product.images.filter((img) => img.color && finish && img.color === finish)
+  if (hits.length) {
+    const rest = product.images.filter((img) => img.color !== finish)
+    return { shown: [...hits, ...rest], matched: true }
   }
   if (wood) {
     const byWood = product.images.filter((i) => i.alt.toLowerCase().includes(wood.toLowerCase()))
     if (byWood.length) return { shown: byWood, matched: true }
   }
+  const tagged = product.images.filter((img) => img.color)
   return { shown: product.images, matched: tagged.length === 0 || !finish }
 }
 
