@@ -6,6 +6,7 @@ import {
   useState,
   type ReactNode,
 } from 'react'
+import { useLocation } from 'react-router-dom'
 import type { AreaId } from '../data/content'
 
 export type QuoteLine = {
@@ -23,11 +24,12 @@ export type QuoteLine = {
 
 type QuoteState = Record<AreaId, QuoteLine[]>
 
+type QuoteDraft = Omit<QuoteLine, 'id' | 'comment'> & { comment?: string }
+
 type QuoteContextValue = {
   lines: QuoteLine[]
   area: AreaId
-  setArea: (area: AreaId) => void
-  add: (line: Omit<QuoteLine, 'id' | 'comment'> & { comment?: string }) => void
+  add: (line: QuoteDraft, bucket?: AreaId) => void
   update: (id: string, patch: Partial<QuoteLine>) => void
   remove: (id: string) => void
   clear: () => void
@@ -37,7 +39,13 @@ type QuoteContextValue = {
 
 const QuoteContext = createContext<QuoteContextValue | null>(null)
 
-const STORAGE_KEY = 'stadora-quote-v1'
+export const QUOTE_STORAGE_KEY = 'stadora-quote-v1'
+
+export function areaFromPath(pathname: string): AreaId {
+  if (pathname.startsWith('/vard')) return 'vard'
+  if (pathname.startsWith('/skola')) return 'skola'
+  return 'offentlig'
+}
 
 function blank(): QuoteState {
   return { offentlig: [], skola: [], vard: [] }
@@ -54,9 +62,14 @@ function newLineId() {
   return `q-${Date.now()}-${Math.random().toString(16).slice(2)}`
 }
 
+function linesFor(state: QuoteState, area: AreaId): QuoteLine[] {
+  const list = state[area]
+  return Array.isArray(list) ? list : []
+}
+
 function loadState(): QuoteState {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
+    const raw = localStorage.getItem(QUOTE_STORAGE_KEY)
     if (!raw) return blank()
     const parsed = JSON.parse(raw) as Partial<QuoteState>
     return {
@@ -69,44 +82,51 @@ function loadState(): QuoteState {
   }
 }
 
-export function QuoteProvider({
-  children,
-  area,
-  setArea,
-}: {
-  children: ReactNode
-  area: AreaId
-  setArea: (area: AreaId) => void
-}) {
+function persist(state: QuoteState) {
+  try {
+    localStorage.setItem(QUOTE_STORAGE_KEY, JSON.stringify(state))
+  } catch {
+    /* quota / private mode */
+  }
+}
+
+export function QuoteProvider({ children }: { children: ReactNode }) {
+  const location = useLocation()
+  const area = areaFromPath(location.pathname)
   const [state, setState] = useState<QuoteState>(loadState)
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
+    persist(state)
   }, [state])
 
   const value = useMemo<QuoteContextValue>(() => {
-    const lines = state[area]
+    const lines = linesFor(state, area)
+    const write = (updater: (prev: QuoteState) => QuoteState) => {
+      setState((prev) => {
+        const next = updater(prev)
+        persist(next)
+        return next
+      })
+    }
     return {
       lines,
       area,
-      setArea,
-      add: (line) => {
-        setState((prev) => {
-          const list = prev[area]
-          const existing = list.find(
-            (l) => l.slug === line.slug && l.variant === line.variant,
-          )
+      add: (line, bucket) => {
+        const target = bucket ?? area
+        write((prev) => {
+          const list = linesFor(prev, target)
+          const existing = list.find((l) => l.slug === line.slug && l.variant === line.variant)
           if (existing) {
             return {
               ...prev,
-              [area]: list.map((l) =>
+              [target]: list.map((l) =>
                 l.id === existing.id ? { ...l, qty: l.qty + line.qty } : l,
               ),
             }
           }
           return {
             ...prev,
-            [area]: [
+            [target]: [
               ...list,
               {
                 ...line,
@@ -118,22 +138,22 @@ export function QuoteProvider({
         })
       },
       update: (id, patch) => {
-        setState((prev) => ({
+        write((prev) => ({
           ...prev,
-          [area]: prev[area].map((l) => (l.id === id ? { ...l, ...patch } : l)),
+          [area]: linesFor(prev, area).map((l) => (l.id === id ? { ...l, ...patch } : l)),
         }))
       },
       remove: (id) => {
-        setState((prev) => ({
+        write((prev) => ({
           ...prev,
-          [area]: prev[area].filter((l) => l.id !== id),
+          [area]: linesFor(prev, area).filter((l) => l.id !== id),
         }))
       },
-      clear: () => setState((prev) => ({ ...prev, [area]: [] })),
+      clear: () => write((prev) => ({ ...prev, [area]: [] })),
       count: lines.length,
       pieces: lines.reduce((n, l) => n + l.qty, 0),
     }
-  }, [area, setArea, state])
+  }, [area, state])
 
   return <QuoteContext.Provider value={value}>{children}</QuoteContext.Provider>
 }

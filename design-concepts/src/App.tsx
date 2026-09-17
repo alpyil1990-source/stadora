@@ -21,6 +21,7 @@ import { AdminInvoices } from './pages/admin/AdminInvoices'
 import { AdminFlow } from './pages/admin/AdminFlow'
 import { CustomerQuotePage } from './pages/CustomerQuotePage'
 import { CommerceProvider } from './context/CommerceContext'
+import { QuoteProvider } from './context/QuoteContext'
 import { SupplierProvider } from './context/SupplierContext'
 import { AdminSuppliers } from './pages/admin/AdminSuppliers'
 import { AdminSupplierDetail } from './pages/admin/AdminSupplierDetail'
@@ -31,6 +32,7 @@ export default function App() {
       <ScrollToTop />
       <CommerceProvider>
         <SupplierProvider>
+        <QuoteProvider>
         <Routes>
           <Route element={<AppShell />}>
             <Route path="/" element={<HomePage />} />
@@ -70,6 +72,7 @@ export default function App() {
           </Route>
           <Route path="*" element={<Navigate to="/design" replace />} />
         </Routes>
+        </QuoteProvider>
         </SupplierProvider>
       </CommerceProvider>
     </BrowserRouter>

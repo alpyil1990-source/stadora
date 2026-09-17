@@ -101,7 +101,7 @@ export type Product = {
   colors?: Array<string | ColorOption>
   sizes?: SizeOption[]
   defaultSize?: string
-  /** Label for the size radios. State is written to both Storlek and this legend. */
+  /** Label for the size radios. Selected model is stored as Storlek even when this is "Modell". */
   sizeLegend?: string
   /** Label for the colour swatches. Internal state key remains Kulör. */
   colorLegend?: string
@@ -127,8 +127,10 @@ export function isStadoraArticleNumber(sku?: string | null) {
 
 /** Quote lines may show STREETPARK article numbers; other supplier SKUs stay in admin. */
 export function quoteShowsArticleNumber(product?: Product | null, sku?: string | null) {
+  if (!sku) return false
   if (isStadoraArticleNumber(sku)) return true
-  return Boolean(product?.quoteShowsSku && sku)
+  if (product?.quoteShowsSku) return true
+  return product?.manufacturer === 'STREETPARK'
 }
 
 export function documentsForVariant(product: Product, variant?: string | null) {

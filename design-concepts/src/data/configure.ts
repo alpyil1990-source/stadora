@@ -1,4 +1,5 @@
 import type { Product, SizeOption } from './content'
+import { productPath } from './content'
 import { selectedMaterial } from './binsignia'
 
 /** Internal state key for type/size. STREETPARK's public legend is "Modell". */
@@ -11,12 +12,7 @@ export function initialVariantState(product: Product): Record<string, string> {
     init[v.label] = v.options[0]
   })
   const typeName = product.defaultSize ?? product.sizes?.[0]?.name
-  if (typeName) {
-    init[SIZE_VARIANT_KEY] = typeName
-    if (product.sizeLegend && product.sizeLegend !== SIZE_VARIANT_KEY) {
-      init[product.sizeLegend] = typeName
-    }
-  }
+  if (typeName) init[SIZE_VARIANT_KEY] = typeName
   if (product.materials?.length) {
     init['Material'] = product.defaultMaterial ?? product.materials[0].name
   }
@@ -50,7 +46,7 @@ export function withSelectedType(
   sizeLegend?: string,
 ): Record<string, string> {
   const next: Record<string, string> = { ...variants, [SIZE_VARIANT_KEY]: name }
-  if (sizeLegend && sizeLegend !== SIZE_VARIANT_KEY) next[sizeLegend] = name
+  if (sizeLegend && sizeLegend !== SIZE_VARIANT_KEY) delete next[sizeLegend]
   return next
 }
 
@@ -79,4 +75,21 @@ export function quoteLineVariant(
       : `RAL ${trimmed}`
     : ''
   return [typeName, color, ralBit, ...extra].filter(Boolean).join(' · ') || undefined
+}
+
+export function quoteDraftFromProduct(
+  product: Product,
+  variants: Record<string, string>,
+  opts: { qty: number; ral?: string; image?: string; imageAlt?: string },
+) {
+  return {
+    slug: product.slug,
+    name: product.name,
+    sku: quoteLineSku(product, variants),
+    variant: quoteLineVariant(product, variants, opts.ral),
+    qty: opts.qty,
+    href: productPath(product),
+    image: opts.image,
+    imageAlt: opts.imageAlt,
+  }
 }

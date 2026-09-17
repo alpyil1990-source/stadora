@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, Search, X } from 'lucide-react'
 import { areas, publicNav, type AreaId } from '../data/content'
-import { useQuote } from '../context/QuoteContext'
+import { useQuoteOptional } from '../context/QuoteContext'
 import { BrandLockup } from './BrandMark'
 
 export function SiteHeader({ area }: { area: AreaId }) {
-  const { count } = useQuote()
+  const count = useQuoteOptional()?.count ?? 0
   const [open, setOpen] = useState(false)
   const [mega, setMega] = useState(false)
   const location = useLocation()

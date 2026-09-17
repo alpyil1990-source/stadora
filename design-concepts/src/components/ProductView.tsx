@@ -5,7 +5,6 @@ import type { Product, ProductDocument, SizeOption } from '../data/content'
 import {
   documentsForVariant,
   isStadoraArticleNumber,
-  productPath,
   products,
   quoteShowsArticleNumber,
 } from '../data/content'
@@ -19,8 +18,8 @@ import {
 import {
   COLOR_VARIANT_KEY,
   initialVariantState,
+  quoteDraftFromProduct,
   quoteLineSku,
-  quoteLineVariant,
   selectedTypeName,
   selectedTypeOption,
   withSelectedType,
@@ -86,7 +85,6 @@ export function ProductView({
     Boolean(variants[COLOR_VARIANT_KEY]) && taggedColors && !galleryState.colorMatched
   const missingSizePhoto = Boolean(typeName) && sizePhotos && !galleryState.sizeMatched
 
-  const variantLabel = quoteLineVariant(product, variants, ral)
   const related = product.related.map((slug) => products[slug]).filter(Boolean)
   const popKey = `${variants[COLOR_VARIANT_KEY] ?? ''}-${typeName ?? ''}-${current?.src ?? ''}`
 
@@ -101,16 +99,15 @@ export function ProductView({
   }
 
   function addToQuote() {
-    add({
-      slug: product.slug,
-      name: product.name,
-      sku,
-      variant: variantLabel,
-      qty,
-      href: productPath(product),
-      image: current?.src,
-      imageAlt: current?.alt ?? product.name,
-    })
+    add(
+      quoteDraftFromProduct(product, variants, {
+        qty,
+        ral,
+        image: current?.src,
+        imageAlt: current?.alt ?? product.name,
+      }),
+      product.area,
+    )
     setAdded(true)
   }
 
