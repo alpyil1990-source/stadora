@@ -550,7 +550,7 @@ export function ProductView({
           <dd className="font-medium">{dimensions[0].value}</dd>
         </div>
       )}
-      {materialLabel && (
+      {materialLabel && !optionProduct && (
         <div className="col-span-2">
           <dt className="text-muted">Material</dt>
           <dd className="font-medium">{materialLabel}</dd>
