@@ -261,6 +261,9 @@ export function QuoteFormPage() {
                   <span className="block text-xs text-muted">Art.nr {l.sku}</span>
                 )}
                 {l.variant && <span className="block text-xs text-muted">{l.variant}</span>}
+                {products[l.slug]?.quoteOnRequest && (
+                  <span className="block text-xs text-muted">Pris på förfrågan</span>
+                )}
                 <span className="text-muted"> · {l.qty} st</span>
               </span>
             </li>

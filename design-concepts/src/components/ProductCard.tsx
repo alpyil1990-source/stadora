@@ -46,7 +46,7 @@ export function ProductCard({ product }: { product: Product }) {
           )}
         </dl>
         <p className="pt-2 text-xs font-medium uppercase tracking-[0.08em] text-sage-dark">
-          Pris i offert
+          {product.quoteOnRequest ? 'Pris på förfrågan' : 'Pris i offert'}
         </p>
       </div>
     </article>

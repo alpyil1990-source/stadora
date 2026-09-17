@@ -1000,6 +1000,7 @@ function groupDocuments(docs: ProductDocument[]) {
 function DocumentRow({ doc }: { doc: ProductDocument }) {
   const alt = `${doc.typeLabel} (${doc.format}). ${doc.title}`
   const meta = [doc.format, doc.appliesTo].filter(Boolean).join(' · ')
+  const canOpenInBrowser = doc.previewable || doc.format === 'PDF' || doc.format === 'SVG'
   return (
     <li className="flex items-center gap-3 border-b border-line px-3 py-2 last:border-b-0">
       <div className="h-11 w-14 shrink-0 overflow-hidden border border-line bg-paper">
@@ -1025,15 +1026,28 @@ function DocumentRow({ doc }: { doc: ProductDocument }) {
           {doc.title}
         </p>
       </div>
-      <a
-        href={doc.href}
-        download
-        aria-label={`Ladda ner ${doc.typeLabel} (${doc.format})`}
-        className="inline-flex shrink-0 items-center gap-1.5 text-sm underline-offset-2 hover:underline"
-      >
-        <Download className="h-4 w-4" aria-hidden />
-        Ladda ner
-      </a>
+      <div className="flex shrink-0 items-center gap-3">
+        {canOpenInBrowser && (
+          <a
+            href={doc.href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Öppna ${doc.typeLabel} (${doc.format})`}
+            className="text-sm underline-offset-2 hover:underline"
+          >
+            Öppna
+          </a>
+        )}
+        <a
+          href={doc.href}
+          download
+          aria-label={`Ladda ner ${doc.typeLabel} (${doc.format})`}
+          className="inline-flex items-center gap-1.5 text-sm underline-offset-2 hover:underline"
+        >
+          <Download className="h-4 w-4" aria-hidden />
+          Ladda ner
+        </a>
+      </div>
     </li>
   )
 }
