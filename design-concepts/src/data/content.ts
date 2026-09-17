@@ -27,6 +27,8 @@ export type SizeOption = {
   dimensions?: { label: string; value: string }[]
   weight?: string
   capacity?: string
+  /** STREETPARK type icon from the supplier product page. */
+  icon?: string
 }
 
 export type MaterialFinish = {
@@ -99,6 +101,8 @@ export type Product = {
   defaultSize?: string
   /** Label for the size radios. Internal state key remains Storlek. */
   sizeLegend?: string
+  /** Label for the colour swatches. Internal state key remains Kulör. */
+  colorLegend?: string
   materials?: MaterialFinish[]
   defaultMaterial?: string
   /** Free-text RAL on the quote line. No swatch catalog unless colors[] exists. */

@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Download } from 'lucide-react'
-import type { Product, ProductDocument } from '../data/content'
+import type { Product, ProductDocument, SizeOption } from '../data/content'
 import {
   documentsForVariant,
   isStadoraArticleNumber,
@@ -22,6 +22,7 @@ import {
   imagesForVariant,
   shownLabel,
 } from '../data/gallery'
+import { finishSwatchHex, isStreetparkProduct } from '../data/streetpark-finishes'
 import { useQuote } from '../context/QuoteContext'
 import { ProductCard } from './ProductCard'
 import { Breadcrumb } from './Breadcrumb'
@@ -193,6 +194,14 @@ export function ProductView({
   const configure = (
     <div className="space-y-4">
       {product.sizes && product.sizes.length > 0 && (
+        isStreetparkProduct(product) ? (
+          <StreetparkTypePicker
+            legend={sizeLegend}
+            sizes={product.sizes}
+            selectedName={variants['Storlek']}
+            onSelect={selectSize}
+          />
+        ) : (
         <fieldset>
           <legend className="text-sm font-medium">{sizeLegend}</legend>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -230,6 +239,7 @@ export function ProductView({
             })}
           </div>
         </fieldset>
+        )
       )}
       {product.materials && product.materials.length > 0 && (
         <fieldset>
@@ -259,6 +269,15 @@ export function ProductView({
         </fieldset>
       )}
       {colors.length > 0 && (
+        isStreetparkProduct(product) ? (
+          <FinishSwatchField
+            legend={product.colorLegend ?? 'Kulör på metall'}
+            options={colors.map((c) => ({ name: c.name, hex: c.hex }))}
+            value={variants['Kulör']}
+            inputName="color"
+            onSelect={selectColor}
+          />
+        ) : (
         <fieldset>
           <legend className="text-sm font-medium">Kulör</legend>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -299,6 +318,7 @@ export function ProductView({
             })}
           </div>
         </fieldset>
+        )
       )}
       {product.ralInQuote && (
         <div>
@@ -322,7 +342,17 @@ export function ProductView({
       )}
       {product.variants
         ?.filter((v) => !(v.label === 'Material' && product.materials?.length))
-        .map((v) => (
+        .map((v) =>
+          isStreetparkProduct(product) ? (
+            <FinishSwatchField
+              key={v.label}
+              legend={v.label}
+              options={v.options.map((opt) => ({ name: opt, hex: finishSwatchHex(opt) }))}
+              value={variants[v.label]}
+              inputName={v.label}
+              onSelect={(name) => setVariants((s) => ({ ...s, [v.label]: name }))}
+            />
+          ) : (
         <fieldset key={v.label}>
           <legend className="text-sm font-medium">{v.label}</legend>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -345,7 +375,8 @@ export function ProductView({
             ))}
           </div>
         </fieldset>
-      ))}
+          ),
+        )}
       <div>
         <label htmlFor="qty" className="text-sm font-medium">
           Antal
@@ -590,7 +621,11 @@ export function ProductView({
       )}
       <section id="dokument">
         <h2 className="text-xl">Dokument och underlag</h2>
-        <ProductDocuments product={product} variant={variants['Storlek']} />
+        <ProductDocuments
+          product={product}
+          variant={variants['Storlek']}
+          sizeLegend={sizeLegend}
+        />
       </section>
       {related.length > 0 && (
         <section id="serie">
@@ -787,9 +822,18 @@ function ProductNav({ product }: { product: Product }) {
   )
 }
 
-function ProductDocuments({ product, variant }: { product: Product; variant?: string }) {
+function ProductDocuments({
+  product,
+  variant,
+  sizeLegend = 'Modell',
+}: {
+  product: Product
+  variant?: string
+  sizeLegend?: string
+}) {
   const all = product.documents ?? []
   const docs = documentsForVariant(product, variant)
+  const modelPhrase = variant ? `${sizeLegend.toLowerCase()} ${variant}` : null
 
   if (all.length === 0) {
     if (product.documentPolicy) {
@@ -809,17 +853,16 @@ function ProductDocuments({ product, variant }: { product: Product; variant?: st
   if (docs.length === 0) {
     return (
       <p className="mt-3 border border-dashed border-line bg-paper px-4 py-5 text-sm text-muted">
-        Inga underlag är kopplade till {variant}. Välj den modell som ritningen gäller, till exempel
-        SKM1 för filer märkta SKM1.
+        Inga underlag för {modelPhrase ?? 'det valda utförandet'}.
       </p>
     )
   }
 
   return (
     <div className="mt-3">
-      {variant && (
+      {modelPhrase && (
         <p className="mb-3 text-sm text-muted">
-          Visar underlag för {variant} och filer som gäller hela serien.
+          Underlag för {modelPhrase}. Filer utan modellmärkning gäller hela serien.
         </p>
       )}
       <ul className="border border-line bg-sheet">
@@ -867,5 +910,109 @@ function DocumentRow({ doc }: { doc: ProductDocument }) {
         </a>
       </div>
     </li>
+  )
+}
+
+function StreetparkTypePicker({
+  legend,
+  sizes,
+  selectedName,
+  onSelect,
+}: {
+  legend: string
+  sizes: SizeOption[]
+  selectedName?: string
+  onSelect: (name: string) => void
+}) {
+  const selected = sizes.find((s) => s.name === selectedName)
+  return (
+    <fieldset>
+      <legend className="text-sm font-medium">{legend}</legend>
+      <div className="mt-2 -mx-1 flex max-w-full flex-wrap gap-2 overflow-x-auto pb-1">
+        {sizes.map((s) => {
+          const active = selectedName === s.name
+          return (
+            <label
+              key={s.name}
+              className={`flex w-[4.75rem] shrink-0 cursor-pointer flex-col items-center border px-1.5 py-2 text-center sm:w-[5.5rem] ${
+                active ? 'border-ink bg-paper' : 'border-line bg-sheet'
+              }`}
+            >
+              <input
+                type="radio"
+                className="sr-only"
+                name="size"
+                checked={active}
+                onChange={() => onSelect(s.name)}
+              />
+              <span className="flex aspect-square w-full items-center justify-center bg-paper">
+                {s.icon ? (
+                  <img src={s.icon} alt="" className="max-h-full max-w-full object-contain" />
+                ) : (
+                  <span className="px-0.5 font-ui text-[0.65rem] font-semibold leading-tight text-ink">
+                    {s.name}
+                  </span>
+                )}
+              </span>
+              <span className="mt-1 font-ui text-[0.68rem] font-semibold tracking-[0.04em] text-ink">
+                {s.name}
+              </span>
+            </label>
+          )
+        })}
+      </div>
+      {selected?.summary && selected.summary !== selected.name && (
+        <p className="mt-2 text-xs text-muted">
+          {selected.name}: {selected.summary}
+        </p>
+      )}
+    </fieldset>
+  )
+}
+
+function FinishSwatchField({
+  legend,
+  options,
+  value,
+  inputName,
+  onSelect,
+}: {
+  legend: string
+  options: { name: string; hex?: string }[]
+  value?: string
+  inputName: string
+  onSelect: (name: string) => void
+}) {
+  return (
+    <fieldset>
+      <legend className="text-sm font-medium">{legend}</legend>
+      <div className="mt-2 flex max-w-full flex-wrap gap-2">
+        {options.map((opt) => {
+          const active = value === opt.name
+          return (
+            <label
+              key={opt.name}
+              className={`flex w-[4.85rem] cursor-pointer flex-col items-center gap-1 border px-1.5 py-2 ${
+                active ? 'border-ink bg-paper' : 'border-line bg-sheet'
+              }`}
+            >
+              <input
+                type="radio"
+                className="sr-only"
+                name={inputName}
+                checked={active}
+                onChange={() => onSelect(opt.name)}
+              />
+              <span
+                className="h-8 w-8 border border-line"
+                style={opt.hex ? { background: opt.hex } : undefined}
+                aria-hidden
+              />
+              <span className="text-center text-[0.65rem] leading-tight">{opt.name}</span>
+            </label>
+          )
+        })}
+      </div>
+    </fieldset>
   )
 }

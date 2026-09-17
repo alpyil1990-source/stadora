@@ -1,5 +1,6 @@
-import type { Product, ProductDocument, ProductImage, SizeOption } from './content'
+import type { ColorOption, Product, ProductDocument, ProductImage, SizeOption } from './content'
 import catalogFile from './generated/streetpark-series.json'
+import { finishSwatchHex } from './streetpark-finishes'
 
 const IMAGE_NOTE =
   'Bilden visar ett exempelutförande från STREETPARK. Kulör på skärm kan avvika. Galleriet byts bara när en bild är märkt för vald modell.'
@@ -42,9 +43,12 @@ type SeriesJson = {
     summary?: string | null
     dimensions?: { label: string; value: string }[]
     weight?: string | null
+    icon?: string | null
+    iconSourceUrl?: string | null
   }[]
   defaultSize: string | null
   sizeLegend: string | null
+  colorLegend?: string | null
   colors: string[]
   variants: { label: string; options: string[] }[]
   related: string[]
@@ -68,7 +72,16 @@ function toSizes(rows: SeriesJson['sizes']): SizeOption[] | undefined {
     summary: r.summary ?? undefined,
     dimensions: r.dimensions,
     weight: r.weight ?? undefined,
+    icon: r.icon ?? undefined,
   }))
+}
+
+function toColors(names: string[]): Array<string | ColorOption> | undefined {
+  if (!names.length) return undefined
+  return names.map((name) => {
+    const hex = finishSwatchHex(name)
+    return hex ? { name, hex } : { name }
+  })
 }
 
 function toDocs(rows: DocJson[]): ProductDocument[] {
@@ -115,7 +128,8 @@ function toProduct(row: SeriesJson): Product {
     sizes: toSizes(row.sizes),
     defaultSize: row.defaultSize ?? undefined,
     sizeLegend: row.sizeLegend ?? undefined,
-    colors: row.colors.length ? row.colors : undefined,
+    colorLegend: row.colorLegend ?? (row.colors.length ? 'Kulör på metall' : undefined),
+    colors: toColors(row.colors),
     variants: row.variants.length ? row.variants : undefined,
     related: row.related.slice(0, 3),
     documents: toDocs(row.documents),

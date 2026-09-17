@@ -519,6 +519,19 @@ def safe_name(url: str, used: set[str]) -> str:
     return name
 
 
+def sku_icon_name(code: str, url: str, used: set[str]) -> str:
+    suffix = Path(urlparse(url.split("?")[0]).path).suffix.lower()
+    if suffix not in {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"}:
+        suffix = ".png"
+    slug = re.sub(r"[^A-Za-z0-9._-]+", "-", code).strip("-") or "typ"
+    name = f"{slug}{suffix}"
+    if name in used:
+        digest = hashlib.sha1(url.encode()).hexdigest()[:6]
+        name = f"{slug}-{digest}{suffix}"
+    used.add(name)
+    return name
+
+
 def download_one(url: str, dest: Path) -> dict:
     dest.parent.mkdir(parents=True, exist_ok=True)
     if dest.exists() and dest.stat().st_size > 0:
@@ -601,12 +614,16 @@ def translate_en(text: str | None) -> str | None:
 
 OPTION_MAP = {
     "Metal parts options": "Kulör på metall",
+    "Metal parts option": "Kulör på metall",
     "Concrete parts options": "Betong",
     "Wooden parts options": "Trä",
+    "Wooden parts option": "Trä",
     "Wood parts options": "Trä",
+    "Compact boards": "Kompaktlaminat",
     "RAL": None,
     "Tropical wood": "Tropiskt trä",
-    "Shade of Corten": "Corten-nyans",
+    # Keep STREETPARK's own RAL / Corten labels on the public picker.
+    "Shade of Corten": None,
     "Gray": "Grå",
     "Grey": "Grå",
     "Sandy light": "Ljus sand",
@@ -625,15 +642,17 @@ OPTION_MAP = {
 
 
 def map_option(name: str) -> str:
-    if name in OPTION_MAP and OPTION_MAP[name]:
-        return OPTION_MAP[name]
     if name.upper().startswith("RAL "):
         return name
-    return OPTION_MAP.get(name, name)
+    mapped = OPTION_MAP.get(name)
+    if mapped:
+        return mapped
+    return name
 
 
 def map_legend(name: str) -> str:
-    return OPTION_MAP.get(name, name)
+    mapped = OPTION_MAP.get(name)
+    return mapped or name
 
 
 def info_sv(lines: list[str]) -> str | None:
@@ -688,15 +707,18 @@ def to_catalog_row(product: dict, related: list[str], local: dict) -> dict:
     sizes = []
     for m in models:
         summary = info_sv(m.get("info") or [])
-        sizes.append(
-            {
-                "name": m["code"],
-                "sku": m["code"],
-                "summary": summary,
-                "dimensions": m.get("dimensions") or [],
-                "weight": m.get("weight"),
-            }
-        )
+        size: dict = {
+            "name": m["code"],
+            "sku": m["code"],
+            "summary": summary,
+            "dimensions": m.get("dimensions") or [],
+            "weight": m.get("weight"),
+        }
+        icon_path = (local.get("icons") or {}).get(m["code"])
+        if icon_path:
+            size["icon"] = icon_path["publicPath"]
+            size["iconSourceUrl"] = icon_path["sourceUrl"]
+        sizes.append(size)
     colors: list[str] = []
     variants: list[dict] = []
     for row in product.get("optionRows") or []:
@@ -764,6 +786,7 @@ def to_catalog_row(product: dict, related: list[str], local: dict) -> dict:
         "sizes": sizes,
         "defaultSize": sizes[0]["name"] if sizes else None,
         "sizeLegend": "Modell" if sizes else None,
+        "colorLegend": "Kulör på metall" if colors else None,
         "colors": colors,
         "variants": variants,
         "related": related,
@@ -929,6 +952,20 @@ def main() -> None:
             if img.get("size"):
                 rec["size"] = img["size"]
             images_local.append(rec)
+        icons_local: dict[str, dict] = {}
+        type_dir = img_dir / "types"
+        used_icon: set[str] = set()
+        for m in p.get("models") or []:
+            url = m.get("iconUrl")
+            if not url:
+                continue
+            name = sku_icon_name(m["code"], url, used_icon)
+            dest = type_dir / name
+            downloads.append((url, dest))
+            icons_local[m["code"]] = {
+                "sourceUrl": url,
+                "publicPath": f"/images/streetpark/{p['slug']}/types/{name}",
+            }
         documents_local = []
         seen_doc = set()
         for f in p["files"]:
@@ -966,7 +1003,11 @@ def main() -> None:
                     "appliesTo": extra.get("appliesTo"),
                 }
             )
-        local_map[p["slug"]] = {"images": images_local, "documents": documents_local}
+        local_map[p["slug"]] = {
+            "images": images_local,
+            "documents": documents_local,
+            "icons": icons_local,
+        }
 
     print(f"Downloading {len(downloads)} files…")
     ok = fail = 0
@@ -992,6 +1033,11 @@ def main() -> None:
     for loc in local_map.values():
         loc["images"] = [x for x in loc["images"] if (PUBLIC / x["publicPath"].lstrip("/")).exists()]
         loc["documents"] = [x for x in loc["documents"] if (PUBLIC / x["publicPath"].lstrip("/")).exists()]
+        loc["icons"] = {
+            code: rec
+            for code, rec in (loc.get("icons") or {}).items()
+            if (PUBLIC / rec["publicPath"].lstrip("/")).exists()
+        }
 
     by_sub: dict[str, list[str]] = {}
     for p in products:
