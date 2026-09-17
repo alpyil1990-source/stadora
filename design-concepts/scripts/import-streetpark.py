@@ -299,8 +299,13 @@ def parse_product(html: str, url: str, cat: dict) -> dict:
         opts = []
         for mat in row.select(".material"):
             name = text_or_none(mat.select_one("h2.title"))
-            if name:
-                opts.append(name)
+            if not name:
+                continue
+            img = mat.select_one(".image")
+            style = img.get("style") or "" if img else ""
+            m = re.search(r"url\(([^)]+)\)", style)
+            swatch_url = unsized(m.group(1).strip("\"'")) if m else None
+            opts.append({"name": name, "swatchUrl": swatch_url} if swatch_url else {"name": name})
         if opts:
             option_rows.append({"legend": legend, "options": opts})
 
@@ -577,6 +582,17 @@ PHRASES: list[tuple[str, str]] = [
     ("bench without backrest", "bänk utan ryggstöd"),
     ("benches without backrest", "bänkar utan ryggstöd"),
     ("bench with backrest", "bänk med ryggstöd"),
+    ("bench with armrest", "bänk med armstöd"),
+    ("seat without backrest", "sits utan ryggstöd"),
+    ("seat with backrest", "sits med ryggstöd"),
+    ("without armrests", "utan armstöd"),
+    ("with armrests", "med armstöd"),
+    ("backrest on the wall", "ryggstöd för väggmontage"),
+    ("central leg", "mittben"),
+    ("inner diameter", "innerdiameter"),
+    ("45° angle", "45° vinkel"),
+    ("2 legs", "2 ben"),
+    ("4 legs", "4 ben"),
     ("open pot", "öppen planteringsdel"),
     ("covered pot", "täckt planteringsdel"),
     ("steel leg", "stålben"),
@@ -648,6 +664,12 @@ def map_option(name: str) -> str:
     if mapped:
         return mapped
     return name
+
+
+def option_name(entry: object) -> str:
+    if isinstance(entry, dict):
+        return str(entry.get("name") or "")
+    return str(entry)
 
 
 def map_legend(name: str) -> str:
@@ -723,7 +745,7 @@ def to_catalog_row(product: dict, related: list[str], local: dict) -> dict:
     variants: list[dict] = []
     for row in product.get("optionRows") or []:
         legend = map_legend(row["legend"])
-        options = [map_option(o) for o in row["options"]]
+        options = [map_option(option_name(o)) for o in row["options"]]
         if "metall" in legend.lower() or legend.startswith("Kulör"):
             colors = options
         else:

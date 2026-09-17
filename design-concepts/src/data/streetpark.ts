@@ -49,8 +49,17 @@ type SeriesJson = {
   defaultSize: string | null
   sizeLegend: string | null
   colorLegend?: string | null
-  colors: string[]
-  variants: { label: string; options: string[] }[]
+  colors: Array<
+    | string
+    | {
+        name: string
+        hex?: string
+        swatch?: string
+        swatchSourceUrl?: string
+        code?: string
+      }
+  >
+  variants: { label: string; options: string[]; optionSwatches?: Record<string, string> }[]
   related: string[]
   images: {
     src: string
@@ -76,11 +85,13 @@ function toSizes(rows: SeriesJson['sizes']): SizeOption[] | undefined {
   }))
 }
 
-function toColors(names: string[]): Array<string | ColorOption> | undefined {
-  if (!names.length) return undefined
-  return names.map((name) => {
-    const hex = finishSwatchHex(name)
-    return hex ? { name, hex } : { name }
+function toColors(rows: SeriesJson['colors']): ColorOption[] | undefined {
+  if (!rows.length) return undefined
+  return rows.map((row) => {
+    const name = typeof row === 'string' ? row : row.name
+    const swatch = typeof row === 'string' ? undefined : row.swatch
+    const hex = (typeof row === 'string' ? undefined : row.hex) ?? finishSwatchHex(name)
+    return { name, hex, swatch }
   })
 }
 

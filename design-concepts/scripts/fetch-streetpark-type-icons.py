@@ -149,18 +149,27 @@ def main() -> None:
                     size.pop("icon", None)
                     size.pop("iconSourceUrl", None)
 
-        colors = [restore(c) for c in row.get("colors") or []]
+        colors = row.get("colors") or []
         leftover = []
         for variant in row.get("variants") or []:
             label = legend_sv(variant["label"])
             options = [restore(o) for o in variant.get("options") or []]
             if variant["label"] in METAL_LEGENDS or label == "Kulör på metall":
+                # Keep structured colour objects (swatches) when already harvested.
+                if colors and isinstance(colors[0], dict):
+                    continue
                 colors = options
                 continue
-            leftover.append({"label": label, "options": options})
-        row["colors"] = colors
+            entry = {"label": label, "options": options}
+            if variant.get("optionSwatches"):
+                entry["optionSwatches"] = variant["optionSwatches"]
+            leftover.append(entry)
+        if colors and isinstance(colors[0], dict):
+            row["colors"] = colors
+        else:
+            row["colors"] = [restore(c) if isinstance(c, str) else c for c in colors]
         row["variants"] = leftover
-        if colors:
+        if row["colors"]:
             row["colorLegend"] = "Kulör på metall"
         else:
             row.pop("colorLegend", None)

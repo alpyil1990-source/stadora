@@ -7,6 +7,7 @@ import {
   isStadoraArticleNumber,
   productPath,
   products,
+  quoteShowsArticleNumber,
 } from '../data/content'
 import { selectedMaterial } from '../data/binsignia'
 import {
@@ -15,6 +16,15 @@ import {
   findSubcategory,
   subcategoryPath,
 } from '../data/catalog'
+import {
+  COLOR_VARIANT_KEY,
+  initialVariantState,
+  quoteLineSku,
+  quoteLineVariant,
+  selectedTypeName,
+  selectedTypeOption,
+  withSelectedType,
+} from '../data/configure'
 import {
   colorChoices,
   hasColorTaggedImages,
@@ -43,26 +53,18 @@ export function ProductView({
   const [active, setActive] = useState(0)
   const [ral, setRal] = useState('')
   const [variants, setVariants] = useState<Record<string, string>>(() => {
-    const init: Record<string, string> = {}
-    product.variants?.forEach((v) => {
-      init[v.label] = v.options[0]
-    })
-    if (product.sizes?.length) {
-      init['Storlek'] = product.defaultSize ?? product.sizes[0].name
-    }
-    if (product.materials?.length) {
-      init['Material'] = product.defaultMaterial ?? product.materials[0].name
-    }
-    if (colors[0]) init['Kulör'] = colors[0].name
+    const init = initialVariantState(product)
+    if (colors[0]) init[COLOR_VARIANT_KEY] = colors[0].name
     return init
   })
   const [added, setAdded] = useState(false)
   const [ask, setAsk] = useState(false)
 
-  const selectedSize = product.sizes?.find((s) => s.name === variants['Storlek'])
+  const typeName = selectedTypeName(product, variants)
+  const selectedSize = selectedTypeOption(product, variants)
   const finish = selectedMaterial(product, variants['Material'])
-  const sku = finish?.sku ?? selectedSize?.sku ?? product.sku
-  const publicSku = isStadoraArticleNumber(sku) ? sku : undefined
+  const sku = quoteLineSku(product, variants)
+  const publicSku = quoteShowsArticleNumber(product, sku) ? sku : undefined
   const dimensions = selectedSize?.dimensions ?? product.dimensions
   const weight = selectedSize?.weight ?? product.weight
   const capacity = selectedSize?.capacity ?? product.capacity
@@ -74,36 +76,27 @@ export function ProductView({
   const sizePhotos = hasSizeTaggedImages(product.images)
 
   const galleryState = imagesForVariant(product.images, {
-    color: variants['Kulör'],
-    size: variants['Storlek'],
+    color: variants[COLOR_VARIANT_KEY],
+    size: typeName,
   })
   const shown = galleryState.shown
   const current = shown[Math.min(active, shown.length - 1)] ?? product.images[0]
   const taggedColors = hasColorTaggedImages(product.images)
   const missingColorPhoto =
-    Boolean(variants['Kulör']) && taggedColors && !galleryState.colorMatched
-  const missingSizePhoto =
-    Boolean(variants['Storlek']) && sizePhotos && !galleryState.sizeMatched
+    Boolean(variants[COLOR_VARIANT_KEY]) && taggedColors && !galleryState.colorMatched
+  const missingSizePhoto = Boolean(typeName) && sizePhotos && !galleryState.sizeMatched
 
-  const variantParts = [
-    variants['Storlek'],
-    variants['Kulör'],
-    ral.trim() ? `RAL ${ral.trim()}` : '',
-    ...Object.entries(variants)
-      .filter(([key]) => key !== 'Storlek' && key !== 'Kulör')
-      .map(([, value]) => value),
-  ].filter(Boolean)
-  const variantLabel = variantParts.join(' · ') || undefined
+  const variantLabel = quoteLineVariant(product, variants, ral)
   const related = product.related.map((slug) => products[slug]).filter(Boolean)
-  const popKey = `${variants['Kulör'] ?? ''}-${variants['Storlek'] ?? ''}-${current?.src ?? ''}`
+  const popKey = `${variants[COLOR_VARIANT_KEY] ?? ''}-${typeName ?? ''}-${current?.src ?? ''}`
 
   function selectColor(name: string) {
-    setVariants((v) => ({ ...v, Kulör: name }))
+    setVariants((v) => ({ ...v, [COLOR_VARIANT_KEY]: name }))
     setActive(0)
   }
 
   function selectSize(name: string) {
-    setVariants((v) => ({ ...v, Storlek: name }))
+    setVariants((v) => withSelectedType(v, name, product.sizeLegend))
     setActive(0)
   }
 
@@ -162,12 +155,12 @@ export function ProductView({
       {product.imageNote && <p className="mt-2 text-xs text-muted">{product.imageNote}</p>}
       {missingSizePhoto && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
-          Ingen produktbild för {variants['Storlek']} ännu. Bilden visar {shownLabel(shown)}.
+          Ingen produktbild för {typeName} ännu. Bilden visar {shownLabel(shown)}.
         </p>
       )}
       {missingColorPhoto && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
-          Ingen produktbild i {variants['Kulör']}. Bilden visar {shownLabel(shown)}. Offertlistan
+          Ingen produktbild i {variants[COLOR_VARIANT_KEY]}. Bilden visar {shownLabel(shown)}. Offertlistan
           får ändå rätt kulör.
         </p>
       )}
@@ -198,7 +191,7 @@ export function ProductView({
           <StreetparkTypePicker
             legend={sizeLegend}
             sizes={product.sizes}
-            selectedName={variants['Storlek']}
+            selectedName={typeName}
             onSelect={selectSize}
           />
         ) : (
@@ -207,7 +200,7 @@ export function ProductView({
           <div className="mt-2 flex flex-wrap gap-2">
             {product.sizes.map((s) => {
               const hasPhoto = product.images.some((img) => img.size === s.name)
-              const selected = variants['Storlek'] === s.name
+              const selected = typeName === s.name
               return (
                 <label
                   key={s.name}
@@ -272,9 +265,10 @@ export function ProductView({
         isStreetparkProduct(product) ? (
           <FinishSwatchField
             legend={product.colorLegend ?? 'Kulör på metall'}
-            options={colors.map((c) => ({ name: c.name, hex: c.hex }))}
-            value={variants['Kulör']}
+            options={colors.map((c) => ({ name: c.name, hex: c.hex, swatch: c.swatch }))}
+            value={variants[COLOR_VARIANT_KEY]}
             inputName="color"
+            columns={4}
             onSelect={selectColor}
           />
         ) : (
@@ -283,7 +277,7 @@ export function ProductView({
           <div className="mt-2 flex flex-wrap gap-2">
             {colors.map((c) => {
               const hasPhoto = product.images.some((img) => img.color === c.name)
-              const selected = variants['Kulör'] === c.name
+              const selected = variants[COLOR_VARIANT_KEY] === c.name
               return (
                 <label
                   key={c.name}
@@ -347,9 +341,14 @@ export function ProductView({
             <FinishSwatchField
               key={v.label}
               legend={v.label}
-              options={v.options.map((opt) => ({ name: opt, hex: finishSwatchHex(opt) }))}
+              options={v.options.map((opt) => ({
+                name: opt,
+                hex: finishSwatchHex(opt),
+                swatch: v.optionSwatches?.[opt],
+              }))}
               value={variants[v.label]}
               inputName={v.label}
+              columns={4}
               onSelect={(name) => setVariants((s) => ({ ...s, [v.label]: name }))}
             />
           ) : (
@@ -623,7 +622,7 @@ export function ProductView({
         <h2 className="text-xl">Dokument och underlag</h2>
         <ProductDocuments
           product={product}
-          variant={variants['Storlek']}
+          variant={typeName}
           sizeLegend={sizeLegend}
         />
       </section>
@@ -924,18 +923,18 @@ function StreetparkTypePicker({
   selectedName?: string
   onSelect: (name: string) => void
 }) {
-  const selected = sizes.find((s) => s.name === selectedName)
+  const selected = sizes.find((s) => s.name === selectedName || s.sku === selectedName)
   return (
     <fieldset>
       <legend className="text-sm font-medium">{legend}</legend>
-      <div className="mt-2 -mx-1 flex max-w-full flex-wrap gap-2 overflow-x-auto pb-1">
+      <div className="mt-2 grid grid-cols-4 gap-2 sm:grid-cols-5 md:grid-cols-6">
         {sizes.map((s) => {
-          const active = selectedName === s.name
+          const active = selectedName === s.name || selectedName === s.sku
           return (
             <label
-              key={s.name}
-              className={`flex w-[4.75rem] shrink-0 cursor-pointer flex-col items-center border px-1.5 py-2 text-center sm:w-[5.5rem] ${
-                active ? 'border-ink bg-paper' : 'border-line bg-sheet'
+              key={s.sku ?? s.name}
+              className={`flex cursor-pointer flex-col items-center border bg-sheet px-1 py-2 text-center ${
+                active ? 'border-sage ring-1 ring-sage' : 'border-line'
               }`}
             >
               <input
@@ -945,7 +944,7 @@ function StreetparkTypePicker({
                 checked={active}
                 onChange={() => onSelect(s.name)}
               />
-              <span className="flex aspect-square w-full items-center justify-center bg-paper">
+              <span className="flex aspect-[4/3] w-full items-center justify-center bg-paper">
                 {s.icon ? (
                   <img src={s.icon} alt="" className="max-h-full max-w-full object-contain" />
                 ) : (
@@ -976,24 +975,27 @@ function FinishSwatchField({
   value,
   inputName,
   onSelect,
+  columns = 4,
 }: {
   legend: string
-  options: { name: string; hex?: string }[]
+  options: { name: string; hex?: string; swatch?: string }[]
   value?: string
   inputName: string
   onSelect: (name: string) => void
+  columns?: 4 | 5
 }) {
+  const grid = columns === 5 ? 'grid-cols-4 sm:grid-cols-5' : 'grid-cols-4'
   return (
     <fieldset>
       <legend className="text-sm font-medium">{legend}</legend>
-      <div className="mt-2 flex max-w-full flex-wrap gap-2">
+      <div className={`mt-2 grid max-w-full gap-2 ${grid}`}>
         {options.map((opt) => {
           const active = value === opt.name
           return (
             <label
               key={opt.name}
-              className={`flex w-[4.85rem] cursor-pointer flex-col items-center gap-1 border px-1.5 py-2 ${
-                active ? 'border-ink bg-paper' : 'border-line bg-sheet'
+              className={`flex cursor-pointer flex-col items-center gap-1 border bg-sheet px-1 py-2 ${
+                active ? 'border-sage ring-1 ring-sage' : 'border-line'
               }`}
             >
               <input
@@ -1003,11 +1005,17 @@ function FinishSwatchField({
                 checked={active}
                 onChange={() => onSelect(opt.name)}
               />
-              <span
-                className="h-8 w-8 border border-line"
-                style={opt.hex ? { background: opt.hex } : undefined}
-                aria-hidden
-              />
+              {opt.swatch ? (
+                <span className="block aspect-[3/2] w-full overflow-hidden border border-line bg-paper">
+                  <img src={opt.swatch} alt="" className="h-full w-full object-cover" />
+                </span>
+              ) : (
+                <span
+                  className="block aspect-[3/2] w-full border border-line"
+                  style={opt.hex ? { background: opt.hex } : undefined}
+                  aria-hidden
+                />
+              )}
               <span className="text-center text-[0.65rem] leading-tight">{opt.name}</span>
             </label>
           )

@@ -43,6 +43,17 @@ function blank(): QuoteState {
   return { offentlig: [], skola: [], vard: [] }
 }
 
+function newLineId() {
+  try {
+    if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+      return crypto.randomUUID()
+    }
+  } catch {
+    /* insecure context */
+  }
+  return `q-${Date.now()}-${Math.random().toString(16).slice(2)}`
+}
+
 function loadState(): QuoteState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
@@ -100,7 +111,7 @@ export function QuoteProvider({
               {
                 ...line,
                 comment: line.comment ?? '',
-                id: crypto.randomUUID(),
+                id: newLineId(),
               },
             ],
           }

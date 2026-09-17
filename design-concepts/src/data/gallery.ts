@@ -1,6 +1,6 @@
 import type { Product, ProductImage } from './content'
 
-export type ColorChoice = { name: string; hex?: string }
+export type ColorChoice = { name: string; hex?: string; swatch?: string }
 
 export function colorChoices(product: Product): ColorChoice[] {
   return (product.colors ?? []).map((c) => (typeof c === 'string' ? { name: c } : c))

@@ -18,6 +18,8 @@ export type ProductImage = {
 export type ColorOption = {
   name: string
   hex?: string
+  /** STREETPARK (and similar) chip image harvested from the supplier page. */
+  swatch?: string
 }
 
 export type SizeOption = {
@@ -99,7 +101,7 @@ export type Product = {
   colors?: Array<string | ColorOption>
   sizes?: SizeOption[]
   defaultSize?: string
-  /** Label for the size radios. Internal state key remains Storlek. */
+  /** Label for the size radios. State is written to both Storlek and this legend. */
   sizeLegend?: string
   /** Label for the colour swatches. Internal state key remains Kulör. */
   colorLegend?: string
@@ -107,7 +109,7 @@ export type Product = {
   defaultMaterial?: string
   /** Free-text RAL on the quote line. No swatch catalog unless colors[] exists. */
   ralInQuote?: boolean
-  variants?: { label: string; options: string[] }[]
+  variants?: { label: string; options: string[]; optionSwatches?: Record<string, string> }[]
   related: string[]
   imageNote?: string
   documentPolicy?: string
@@ -132,7 +134,11 @@ export function quoteShowsArticleNumber(product?: Product | null, sku?: string |
 export function documentsForVariant(product: Product, variant?: string | null) {
   const docs = product.documents ?? []
   if (!variant) return docs.filter((d) => !d.variant)
-  return docs.filter((d) => !d.variant || d.variant === variant)
+  const aliases = new Set<string>([variant])
+  const size = product.sizes?.find((s) => s.name === variant || s.sku === variant)
+  if (size?.name) aliases.add(size.name)
+  if (size?.sku) aliases.add(size.sku)
+  return docs.filter((d) => !d.variant || aliases.has(d.variant))
 }
 
 export const company = {
