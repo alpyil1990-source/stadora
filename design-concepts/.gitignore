@@ -12,6 +12,17 @@ dist
 dist-ssr
 *.local
 
+# ZANO import caches (originals stay on disk, not in git)
+internal/zano/listings/
+internal/zano/pages-en/
+internal/zano/bin/
+internal/zano/zips/
+internal/zano/pdf-sv/
+internal/zano/images/
+internal/zano/brochures/
+internal/zano/drawings/
+internal/zano/*.html.tmp
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

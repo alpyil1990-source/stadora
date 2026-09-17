@@ -1,13 +1,606 @@
 {
   "fetchedAt": "2026-09-17",
-  "source": "https://www.zano.se/produkter/for-att-sitta-och-vila/solstolar/solstol-duo-02-052",
-  "note": "Testimport av en produkt. ZANO visas publikt. Bilder och dokument är oförändrade original. Inköpspris saknas — lämna tomt, aldrig 0 kr. Ingen övrig ZANO-katalog i denna omgång.",
+  "source": "https://www.zano.se/produkter",
+  "note": "ZANO-katalog utom kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer). Tillverkare ZANO visas publikt. Bilder och dokument är oförändrade original. Inköpspris saknas — lämna tomt, aldrig 0 kr.",
+  "skipped": [
+    {
+      "category": "Övrigt",
+      "sv": "/produkter/ovriga",
+      "en": [
+        "feeders",
+        "street-lamps",
+        "hand-sanitizer-stations"
+      ]
+    }
+  ],
   "counts": {
-    "products": 1,
-    "images": 15,
-    "documents": 8
+    "products": 3,
+    "images": 35,
+    "documents": 12
   },
   "series": [
+    {
+      "slug": "bank-quadro-02-476",
+      "name": "Bänk Quadro 02.476 – ZANO",
+      "modelName": "Bänk Quadro 02.476",
+      "sku": "02.476",
+      "manufacturer": "ZANO",
+      "quoteShowsSku": true,
+      "quoteOnRequest": true,
+      "sourceUrl": "https://www.zano.se/produkter/for-att-sitta-och-vila/bankar/bank-quadro-02-476",
+      "fetchedAt": "2026-09-17",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Bänk Quadro 02.476 från tillverkaren ZANO.",
+      "description": "Serien Quadro är ett modulärt system med bänkar och planteringskärl, perfekt för att skapa större kompositioner i stadsmiljön. Bänken Quadro 02.476 är en modell utan ryggstöd, med en längd på 180 cm, vilket motsvarar längden på tre sittplatser av modell 02.176 eller tre planteringskärl av modell 06.076.S. Bänkens stomme är tillverkad av stål och sittytan av träplankor.",
+      "material": "trä: europeiska barrträd eller ädelträ. konstruktion – rostfritt stål eller kolstål, galvaniserat. och pulverlackerat.",
+      "wood": "För europeiskt barrträ offererar ZANO träkulörerna ek, mahogny, teak, cypress och valnöt, plus egen kulör. Namnen avser kulören på det valda träslaget, inte massivt ek-, mahogny- eller teakträ.",
+      "dimensions": [
+        {
+          "label": "Bredd",
+          "value": "180 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "46 cm"
+        },
+        {
+          "label": "Djup",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "128 kg",
+      "weightSummary": "128 kg",
+      "mounting": [
+        "Fristående",
+        "För skruvmontering"
+      ],
+      "optionGroups": [
+        {
+          "key": "Konstruktion",
+          "label": "Konstruktion",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "kolstal-s235jr",
+              "name": "Kolstål S235JR"
+            },
+            {
+              "id": "rostfritt-stal-aisi-304",
+              "name": "Rostfritt stål AISI 304"
+            }
+          ]
+        },
+        {
+          "key": "Stalfinish:kolstal",
+          "label": "Stålfinish",
+          "kind": "swatch",
+          "parentKey": "Konstruktion",
+          "parentValue": "Kolstål S235JR",
+          "options": [
+            {
+              "id": "ral-9005",
+              "name": "RAL 9005 svart",
+              "swatch": "/images/zano/swatches/ral-9005.png"
+            },
+            {
+              "id": "ral-9011",
+              "name": "RAL 9011 grafitsvart",
+              "swatch": "/images/zano/swatches/ral-9011.png"
+            },
+            {
+              "id": "ral-7016",
+              "name": "RAL 7016 mörk grafit",
+              "swatch": "/images/zano/swatches/ral-7016.png"
+            },
+            {
+              "id": "ral-9007",
+              "name": "RAL 9007 mörkt stål",
+              "swatch": "/images/zano/swatches/ral-9007.png"
+            },
+            {
+              "id": "ral-9010",
+              "name": "RAL 9010 vit",
+              "swatch": "/images/zano/swatches/ral-9010.png"
+            },
+            {
+              "id": "ral-custom",
+              "name": "Egen kulör",
+              "customText": true
+            }
+          ]
+        },
+        {
+          "key": "Stalfinish:rostfritt",
+          "label": "Stålfinish",
+          "kind": "swatch",
+          "parentKey": "Konstruktion",
+          "parentValue": "Rostfritt stål AISI 304",
+          "options": [
+            {
+              "id": "stainless-finish",
+              "name": "Blank yta AISI 304",
+              "swatch": "/images/zano/swatches/stainless.png"
+            }
+          ]
+        },
+        {
+          "key": "Sits",
+          "label": "Sits",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "europeiskt-barrtra",
+              "name": "Europeiskt barrträ"
+            },
+            {
+              "id": "oljat-adeltra",
+              "name": "Oljat ädelträ"
+            },
+            {
+              "id": "hart-tra-av-europeiskt-ursprung",
+              "name": "Hårt trä av europeiskt ursprung"
+            },
+            {
+              "id": "adeltra-av-hogsta-kvalitet",
+              "name": "Ädelträ av högsta kvalitet"
+            }
+          ]
+        },
+        {
+          "key": "Trafinish:barrtra",
+          "label": "Träkulör",
+          "kind": "swatch",
+          "parentKey": "Sits",
+          "parentValue": "Europeiskt barrträ",
+          "hint": "Ek, mahogny, teak, cypress och valnöt är kulören på valt träslag. Barrträ i ekkulör är inte massivt ekträ.",
+          "options": [
+            {
+              "id": "ek",
+              "name": "Ek",
+              "swatch": "/images/zano/swatches/wood-ek.png"
+            },
+            {
+              "id": "mahogny",
+              "name": "Mahogny",
+              "swatch": "/images/zano/swatches/wood-mahogny.png"
+            },
+            {
+              "id": "teak",
+              "name": "Teak",
+              "swatch": "/images/zano/swatches/wood-teak.png"
+            },
+            {
+              "id": "cypress",
+              "name": "Cypress",
+              "swatch": "/images/zano/swatches/wood-cypress.png"
+            },
+            {
+              "id": "valnot",
+              "name": "Valnöt",
+              "swatch": "/images/zano/swatches/wood-valnot.png"
+            },
+            {
+              "id": "wood-custom",
+              "name": "Egen kulör",
+              "customText": true
+            }
+          ]
+        },
+        {
+          "key": "Montering",
+          "label": "Montering",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "fristaende",
+              "name": "Fristående"
+            },
+            {
+              "id": "for-skruvmontering",
+              "name": "För skruvmontering"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-01.webp",
+          "alt": "City bench made of stainless steel and exotic wood",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-02.webp",
+          "alt": "Quadro city benches",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-03.webp",
+          "alt": "Quadro modular island benches from ZANO",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-04.webp",
+          "alt": "Benches, tables and planters to equip railway station",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-05.webp",
+          "alt": "Benches and planters for company equipment",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-06.webp",
+          "alt": "Urban furniture modular steel with wood finish",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-07.webp",
+          "alt": "Bänk Quadro 02.476 – ZANO, bild 7",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-08.webp",
+          "alt": "office furniture, urban furniture, garden furniture",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-09.webp",
+          "alt": "Quadro bench 02-476 plus pot 02-076 in size L",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476/galleri-10.webp",
+          "alt": "Bänk Quadro 02.476 – ZANO, bild 10",
+          "kind": "site"
+        }
+      ],
+      "documents": [
+        {
+          "title": "Bänk Quadro 02.476",
+          "typeLabel": "Produktblad (PDF)",
+          "format": "PDF",
+          "href": "/docs/zano/bank-quadro-02-476/produktblad.pdf",
+          "kind": "datasheet",
+          "previewable": true,
+          "variant": null,
+          "appliesTo": "02.476",
+          "sourceUrl": "https://files.zano.company/product/card/sv-se/2930dda2-409c-4c73-970c-5c093fb85765/produktblad.pdf",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Måttritning 02.476",
+          "typeLabel": "Måttritning (PNG)",
+          "format": "PNG",
+          "href": "/images/zano/bank-quadro-02-476/matritning.png",
+          "kind": "drawing",
+          "previewable": true,
+          "variant": null,
+          "appliesTo": "02.476",
+          "sourceUrl": "https://files.zano.company/file/image/cf314744-bcef-4c10-a856-dabab571be66/wymiary-lawka-quadro-02-476.png",
+          "fetchedAt": "2026-09-17"
+        }
+      ],
+      "related": [
+        "bank-quadro-02-476-1"
+      ],
+      "imageNote": "Exempelbild – valt utförande kan avvika.",
+      "internal": {
+        "manufacturer": "ZANO",
+        "legalName": "ZANO Mirosław Zarotyński",
+        "sourceName": "BÄNK QUADRO 02.476",
+        "designer": "Iwona Żaczek",
+        "sourceUrl": "https://www.zano.se/produkter/for-att-sitta-och-vila/bankar/bank-quadro-02-476",
+        "catalogueUrl": "https://www.zano-streetfurniture.com/street-furniture/catalogue/benches/bench-quadro-02-476",
+        "productUuid": "2930dda2-409c-4c73-970c-5c093fb85765",
+        "keepBranding": true,
+        "supplierQuoteRequired": true,
+        "purchasePrice": null,
+        "woodPaletteUrl": "https://www.zano-streetfurniture.com/info/wood-colours-palette",
+        "steelPaletteUrl": "https://www.zano-streetfurniture.com/info/types-of-steel",
+        "enCat": "benches"
+      },
+      "gaps": [],
+      "failedFiles": [
+        {
+          "url": "svg 2930dda2-409c-4c73-970c-5c093fb85765",
+          "reason": "https://files.zano.company/product/drawing/sv-se/2930dda2-409c-4c73-970c-5c093fb85765/matritning.svg: HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "slug": "bank-quadro-02-476-1",
+      "name": "Bänk Quadro 02.476.1 – ZANO",
+      "modelName": "Bänk Quadro 02.476.1",
+      "sku": "02.476.1",
+      "manufacturer": "ZANO",
+      "quoteShowsSku": true,
+      "quoteOnRequest": true,
+      "sourceUrl": "https://www.zano.se/produkter/for-att-sitta-och-vila/bankar/bank-quadro-02-476-1",
+      "fetchedAt": "2026-09-17",
+      "category": "Parkmöbler",
+      "categorySlug": "parkmobler",
+      "subcategory": "Parkbänkar",
+      "subcategorySlug": "parkbankar",
+      "summary": "Bänk Quadro 02.476.1 från tillverkaren ZANO.",
+      "description": "Serien Quadro är ett modulärt system med bänkar och planteringskärl, perfekt för att skapa större kompositioner i stadsmiljön. Bänken Quadro 02.476.1 är en modell utan ryggstöd, 120 cm lång, vilket motsvarar längden på två sittbänkar av modell 02.176 eller två planteringskärl av modell 06.076.S. Bänkens stomme är tillverkad av stål och sittytan av träplankor.",
+      "material": "trä: europeiska barrträd eller ädelträ. konstruktion – rostfritt stål eller kolstål, galvaniserat. och pulverlackerat.",
+      "wood": "För europeiskt barrträ offererar ZANO träkulörerna ek, mahogny, teak, cypress och valnöt, plus egen kulör. Namnen avser kulören på det valda träslaget, inte massivt ek-, mahogny- eller teakträ.",
+      "dimensions": [
+        {
+          "label": "Bredd",
+          "value": "120 cm"
+        },
+        {
+          "label": "Höjd",
+          "value": "46 cm"
+        },
+        {
+          "label": "Djup",
+          "value": "60 cm"
+        }
+      ],
+      "weight": "europeiskt barrträ: 53 kg; oljat ädelträ: 78 kg",
+      "weightSummary": "53–78 kg beroende på träutförande",
+      "mounting": [
+        "Fristående",
+        "För skruvmontering"
+      ],
+      "optionGroups": [
+        {
+          "key": "Konstruktion",
+          "label": "Konstruktion",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "kolstal-s235jr",
+              "name": "Kolstål S235JR"
+            },
+            {
+              "id": "rostfritt-stal-aisi-304",
+              "name": "Rostfritt stål AISI 304"
+            }
+          ]
+        },
+        {
+          "key": "Stalfinish:kolstal",
+          "label": "Stålfinish",
+          "kind": "swatch",
+          "parentKey": "Konstruktion",
+          "parentValue": "Kolstål S235JR",
+          "options": [
+            {
+              "id": "ral-9005",
+              "name": "RAL 9005 svart",
+              "swatch": "/images/zano/swatches/ral-9005.png"
+            },
+            {
+              "id": "ral-9011",
+              "name": "RAL 9011 grafitsvart",
+              "swatch": "/images/zano/swatches/ral-9011.png"
+            },
+            {
+              "id": "ral-7016",
+              "name": "RAL 7016 mörk grafit",
+              "swatch": "/images/zano/swatches/ral-7016.png"
+            },
+            {
+              "id": "ral-9007",
+              "name": "RAL 9007 mörkt stål",
+              "swatch": "/images/zano/swatches/ral-9007.png"
+            },
+            {
+              "id": "ral-9010",
+              "name": "RAL 9010 vit",
+              "swatch": "/images/zano/swatches/ral-9010.png"
+            },
+            {
+              "id": "ral-custom",
+              "name": "Egen kulör",
+              "customText": true
+            }
+          ]
+        },
+        {
+          "key": "Stalfinish:rostfritt",
+          "label": "Stålfinish",
+          "kind": "swatch",
+          "parentKey": "Konstruktion",
+          "parentValue": "Rostfritt stål AISI 304",
+          "options": [
+            {
+              "id": "stainless-finish",
+              "name": "Blank yta AISI 304",
+              "swatch": "/images/zano/swatches/stainless.png"
+            }
+          ]
+        },
+        {
+          "key": "Sits",
+          "label": "Sits",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "europeiskt-barrtra",
+              "name": "Europeiskt barrträ"
+            },
+            {
+              "id": "oljat-adeltra",
+              "name": "Oljat ädelträ"
+            },
+            {
+              "id": "hart-tra-av-europeiskt-ursprung",
+              "name": "Hårt trä av europeiskt ursprung"
+            },
+            {
+              "id": "adeltra-av-hogsta-kvalitet",
+              "name": "Ädelträ av högsta kvalitet"
+            }
+          ]
+        },
+        {
+          "key": "Trafinish:barrtra",
+          "label": "Träkulör",
+          "kind": "swatch",
+          "parentKey": "Sits",
+          "parentValue": "Europeiskt barrträ",
+          "hint": "Ek, mahogny, teak, cypress och valnöt är kulören på valt träslag. Barrträ i ekkulör är inte massivt ekträ.",
+          "options": [
+            {
+              "id": "ek",
+              "name": "Ek",
+              "swatch": "/images/zano/swatches/wood-ek.png"
+            },
+            {
+              "id": "mahogny",
+              "name": "Mahogny",
+              "swatch": "/images/zano/swatches/wood-mahogny.png"
+            },
+            {
+              "id": "teak",
+              "name": "Teak",
+              "swatch": "/images/zano/swatches/wood-teak.png"
+            },
+            {
+              "id": "cypress",
+              "name": "Cypress",
+              "swatch": "/images/zano/swatches/wood-cypress.png"
+            },
+            {
+              "id": "valnot",
+              "name": "Valnöt",
+              "swatch": "/images/zano/swatches/wood-valnot.png"
+            },
+            {
+              "id": "wood-custom",
+              "name": "Egen kulör",
+              "customText": true
+            }
+          ]
+        },
+        {
+          "key": "Montering",
+          "label": "Montering",
+          "kind": "choice",
+          "options": [
+            {
+              "id": "fristaende",
+              "name": "Fristående"
+            },
+            {
+              "id": "for-skruvmontering",
+              "name": "För skruvmontering"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-01.webp",
+          "alt": "Quadro bench 02.476.1 stainless steel",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-02.webp",
+          "alt": "Quadro | potting bench",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-03.webp",
+          "alt": "Quadro city bench 02.476.1",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-04.webp",
+          "alt": "Quadro series urban furniture and Scandik table",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-05.webp",
+          "alt": "Modular park furniture",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-06.webp",
+          "alt": "Quadro - urban benches from ZANO urban furniture",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-07.webp",
+          "alt": "Modern city benches at the airport",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-08.webp",
+          "alt": "Modular urban furniture in steel and wood",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-09.webp",
+          "alt": "Quadro benches 02.476.1 with pot",
+          "kind": "site"
+        },
+        {
+          "src": "/images/zano/bank-quadro-02-476-1/galleri-10.webp",
+          "alt": "Office furniture, urban furniture, garden furniture",
+          "kind": "site"
+        }
+      ],
+      "documents": [
+        {
+          "title": "Bänk Quadro 02.476.1",
+          "typeLabel": "Produktblad (PDF)",
+          "format": "PDF",
+          "href": "/docs/zano/bank-quadro-02-476-1/produktblad.pdf",
+          "kind": "datasheet",
+          "previewable": true,
+          "variant": null,
+          "appliesTo": "02.476.1",
+          "sourceUrl": "https://files.zano.company/product/card/sv-se/fe7e6308-0d2f-48c3-8a48-9866b4ebcf22/produktblad.pdf",
+          "fetchedAt": "2026-09-17"
+        },
+        {
+          "title": "Måttritning 02.476.1",
+          "typeLabel": "Måttritning (PNG)",
+          "format": "PNG",
+          "href": "/images/zano/bank-quadro-02-476-1/matritning.png",
+          "kind": "drawing",
+          "previewable": true,
+          "variant": null,
+          "appliesTo": "02.476.1",
+          "sourceUrl": "https://files.zano.company/file/image/de0f00fd-b79b-4c2e-b13d-69546420a2a5/wymiary-02-476-1-quadro.png",
+          "fetchedAt": "2026-09-17"
+        }
+      ],
+      "related": [
+        "bank-quadro-02-476"
+      ],
+      "imageNote": "Exempelbild – valt utförande kan avvika.",
+      "internal": {
+        "manufacturer": "ZANO",
+        "legalName": "ZANO Mirosław Zarotyński",
+        "sourceName": "BÄNK QUADRO 02.476.1",
+        "designer": "Iwona Żaczek",
+        "sourceUrl": "https://www.zano.se/produkter/for-att-sitta-och-vila/bankar/bank-quadro-02-476-1",
+        "catalogueUrl": "https://www.zano-streetfurniture.com/street-furniture/catalogue/benches/bench-quadro-02-476-1",
+        "productUuid": "fe7e6308-0d2f-48c3-8a48-9866b4ebcf22",
+        "keepBranding": true,
+        "supplierQuoteRequired": true,
+        "purchasePrice": null,
+        "woodPaletteUrl": "https://www.zano-streetfurniture.com/info/wood-colours-palette",
+        "steelPaletteUrl": "https://www.zano-streetfurniture.com/info/types-of-steel",
+        "enCat": "benches"
+      },
+      "gaps": [],
+      "failedFiles": [
+        {
+          "url": "svg fe7e6308-0d2f-48c3-8a48-9866b4ebcf22",
+          "reason": "https://files.zano.company/product/drawing/sv-se/fe7e6308-0d2f-48c3-8a48-9866b4ebcf22/matritning.svg: HTTP Error 404: Not Found"
+        }
+      ]
+    },
     {
       "slug": "solstol-duo-02-052",
       "name": "Solstol DUO 02.052 – ZANO",
@@ -365,7 +958,6 @@
       ],
       "related": [],
       "imageNote": "Exempelbild – valt utförande kan avvika.",
-      "reviewNote": "Testimport av en ZANO-produkt för granskning. Inte ett komplett ZANO-sortiment.",
       "internal": {
         "manufacturer": "ZANO",
         "legalName": "ZANO Mirosław Zarotyński",
@@ -391,6 +983,10 @@
     }
   ],
   "catalog": {
+    "parkbankar": [
+      "bank-quadro-02-476",
+      "bank-quadro-02-476-1"
+    ],
     "solstolar": [
       "solstol-duo-02-052"
     ]

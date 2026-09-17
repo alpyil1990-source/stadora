@@ -10,10 +10,10 @@ export function AdminZanoTerms() {
         <p className="kicker">Intern inköpslista</p>
         <h2 className="mt-2 text-xl">Inköpspris saknas</h2>
         <p className="mt-2 text-sm text-muted">
-          Testimport av en produkt. Leverantören lämnar pris vid offertförfrågan. Fältet lämnas tomt —
+          Testimport ersatt av katalogimport. Leverantören lämnar pris vid offertförfrågan. Fältet lämnas tomt —
           aldrig 0 kr. Intern markering: leverantörsoffert krävs före kundpris. Tillverkare ZANO ska
-          synas publikt. Produktbilder och dokument behåller ZANO-märkning. Ingen övrig ZANO-katalog i
-          den här omgången.
+          synas publikt. Produktbilder och dokument behåller ZANO-märkning. Kategorin Övrigt på zano.se
+          (fågelmatare, lyktor, desinfektionsstationer) är undantagen.
         </p>
       </div>
       <ul className="grid gap-2 text-sm sm:grid-cols-2">
@@ -23,7 +23,7 @@ export function AdminZanoTerms() {
         </li>
         <li>
           <span className="text-muted">Modell</span>
-          <p className="font-medium">DUO 02.052</p>
+          <p className="font-medium">{ZANO_SLUGS.length} modeller</p>
         </li>
         <li>
           <span className="text-muted">Webb</span>

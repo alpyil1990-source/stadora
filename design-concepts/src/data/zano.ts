@@ -114,8 +114,30 @@ function toProduct(row: SeriesJson): Product {
   }
 }
 
+function slugsFor(sub: string) {
+  return series.filter((r) => r.subcategorySlug === sub).map((r) => r.slug)
+}
+
 export const zanoCatalogSlugs = {
-  solstolar: series.filter((r) => r.subcategorySlug === 'solstolar').map((r) => r.slug),
+  parkbankar: slugsFor('parkbankar'),
+  solstolar: slugsFor('solstolar'),
+  fatoljer: slugsFor('fatoljer'),
+  barstolar: slugsFor('barstolar'),
+  hangmattor: slugsFor('hangmattor'),
+  'modulara-sitt': slugsFor('modulara-sitt'),
+  solkraftverk: slugsFor('solkraftverk'),
+  'bord-picknick': slugsFor('bord-picknick'),
+  papperskorgar: slugsFor('papperskorgar'),
+  kallsortering: slugsFor('kallsortering'),
+  askkoppar: slugsFor('askkoppar'),
+  cykelstall: slugsFor('cykelstall'),
+  'garage-service': slugsFor('garage-service'),
+  planteringskarl: slugsFor('planteringskarl'),
+  tradskydd: slugsFor('tradskydd'),
+  pollare: slugsFor('pollare'),
+  avsparrning: slugsFor('avsparrning'),
+  skyltar: slugsFor('skyltar'),
+  pergolor: slugsFor('pergolor'),
 }
 
 export const zanoProducts: Record<string, Product> = Object.fromEntries(
