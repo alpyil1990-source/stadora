@@ -73,6 +73,10 @@ export type InvestimPriceRow = {
 
 export const investimPrices = priceRows as InvestimPriceRow[]
 
+export function pricesForSlug(slug: string) {
+  return investimPrices.filter((r) => r.slug === slug)
+}
+
 export function formatEur(n: number | null) {
   if (n == null) return '—'
   return new Intl.NumberFormat('sv-SE', {

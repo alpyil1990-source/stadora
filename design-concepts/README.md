@@ -28,6 +28,7 @@ Se `/design` i prototypen, eller:
 - `/produkt/parkbank-tvattad-rygg` exempelbänk från 2026-importen
 - `/design/park-pollare` intern översikt parkbänkar och pollare
 - `/admin/leverantorer/investim` intern EUR-lista, rabatt och netto
+- `/admin/leverantorer/binsignia` intern EUR-lista, rabatt och netto
 - `/produkt/papperskorg-rodberga-100` storlek (80/100 cm) — bilden byts när foto finns
 - `/produkt/askkopp-luna` material PC/SST + RAL
 - `/produkter/avfall-atervinning/kallsortering` hela källsorteringsserien
@@ -41,7 +42,7 @@ Se `/design` i prototypen, eller:
 - `/dokument`
 - `/produkt/cykelstall-bikeme` STREETPARK med ritning, DWG, förankring och produktblad per modell
 - `/design/streetpark` intern översikt
-- `/admin/leverantorer/streetpark` leverantör och importrapport
+- `/admin/leverantorer/streetpark` intern EUR-lista (listpris och netto), luckor och importrapport
 
 Mobil: smal viewport. Meny under 1024 px, fast offertknapp på produktsidan.
 

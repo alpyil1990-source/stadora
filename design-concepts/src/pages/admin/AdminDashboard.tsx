@@ -43,8 +43,8 @@ export function AdminDashboard() {
           <p className="kicker">VD / ekonomi</p>
           <h1 className="mt-2 text-3xl">Översikt</h1>
           <p className="mt-2 max-w-2xl text-sm text-muted">
-            Siffror från konceptdata (exkl. moms). Inte live-ekonomi. Katalogpriser finns inte — värde
-            uppstår först i kalkyl och offert.
+            Siffror från konceptdata (exkl. moms). Inte live-ekonomi. Katalogen visar inget kundpris —
+            värde uppstår först i kalkyl och offert. Inköpspris ligger hos leverantören.
           </p>
         </div>
         <button type="button" className="text-sm underline" onClick={reset}>
@@ -70,7 +70,7 @@ export function AdminDashboard() {
 
       <p className="text-sm">
         <Link className="underline" to="/admin/leverantorer">
-          Leverantörer, kontaktpersoner och bildkällor
+          Leverantörer — kontakt, bildkälla och inköpspris
         </Link>
       </p>
 

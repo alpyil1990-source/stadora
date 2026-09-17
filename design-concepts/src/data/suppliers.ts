@@ -101,7 +101,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'Ptáčov 40, 674 01 Třebíč, Tjeckien',
     notes:
-      'Tillstånd att använda produktbilder, tekniska uppgifter och dokument från streetpark.eu. Tillverkare visas publikt som STREETPARK. Modellnamn oförändrade, svensk produkttyp framför (t.ex. Cykelställ BIKEME). Inga priser i katalogen. Artikelnummer följer med offerten. Originalbilder utan beskärning/omfärgning. 3D-perspektiv i JPG är bild, inte CAD. CAD (DWG), 3D-arkiv, produktblad och förankringsanvisning publiceras på produktsidan, kopplade till rätt modell. Buss- och cykelväderskydd ingår inte i den här omgången. Hämtat 2026-09-17.',
+      'Tillstånd att använda produktbilder, tekniska uppgifter och dokument från streetpark.eu. Tillverkare visas publikt som STREETPARK. Modellnamn oförändrade, svensk produkttyp framför (t.ex. Cykelställ BIKEME). Inga priser i den publika katalogen. Listpris och inköpsnetto (EUR) ligger i intern admin på den här sidan. Artikelnummer följer med offerten. Originalbilder utan beskärning/omfärgning. 3D-perspektiv i JPG är bild, inte CAD. CAD (DWG), 3D-arkiv, produktblad och förankringsanvisning publiceras på produktsidan, kopplade till rätt modell. Buss- och cykelväderskydd ingår inte i den här omgången. Hämtat 2026-09-17.',
     productSlugs: [...STREETPARK_SLUGS],
   },
 ]

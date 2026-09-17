@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useMemo } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import {
   familyLabel,
   formatEur,
@@ -14,14 +14,16 @@ const ALL = 'all'
 const groups = investimGroups()
 
 export function AdminInvestimTerms() {
-  const [group, setGroup] = useState(ALL)
-  const rows = useMemo(
-    () => (group === ALL ? investimPrices : investimPrices.filter((r) => r.family === group)),
-    [group],
-  )
+  const [params, setParams] = useSearchParams()
+  const group = params.get('grupp') ?? ALL
+  const produkt = params.get('produkt')
+  const rows = useMemo(() => {
+    if (produkt) return investimPrices.filter((r) => r.slug === produkt)
+    return group === ALL ? investimPrices : investimPrices.filter((r) => r.family === group)
+  }, [group, produkt])
 
   return (
-    <section className="space-y-6 border border-line bg-sheet p-5">
+    <section id="inkopspris" className="scroll-mt-8 space-y-6 border border-line bg-sheet p-5">
       <div>
         <p className="kicker">Intern inköpslista</p>
         <h2 className="mt-2 text-xl">{investimPriceMeta.list}</h2>
@@ -98,8 +100,14 @@ export function AdminInvestimTerms() {
           Listpris per grupp
           <select
             className="mt-1 block max-w-full border border-line bg-sheet px-3 py-2"
-            value={group}
-            onChange={(e) => setGroup(e.target.value)}
+            value={produkt ? ALL : group}
+            onChange={(e) => {
+              const next = new URLSearchParams(params)
+              next.delete('produkt')
+              if (e.target.value === ALL) next.delete('grupp')
+              else next.set('grupp', e.target.value)
+              setParams(next, { replace: true })
+            }}
           >
             <option value={ALL}>Alla ({investimPrices.length})</option>
             {groups.map((g) => (
@@ -109,6 +117,22 @@ export function AdminInvestimTerms() {
             ))}
           </select>
         </label>
+        {produkt && products[produkt] && (
+          <p className="mt-2 text-sm">
+            Visar {products[produkt].name}.{' '}
+            <button
+              type="button"
+              className="underline"
+              onClick={() => {
+                const next = new URLSearchParams(params)
+                next.delete('produkt')
+                setParams(next, { replace: true })
+              }}
+            >
+              Visa hela gruppen
+            </button>
+          </p>
+        )}
         <div className="mt-3 overflow-x-auto">
           <table className="spec-table text-sm">
             <thead>

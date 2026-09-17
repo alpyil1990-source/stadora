@@ -3,6 +3,7 @@ import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { useSuppliers } from '../../context/SupplierContext'
 import { products, productPath } from '../../data/content'
 import { colorChoices, hasColorTaggedImages, hasSizeTaggedImages } from '../../data/gallery'
+import { purchaseHint, supplierHasPurchaseList } from '../../data/purchase-admin'
 import { supplierStatusLabel, type SupplierStatus } from '../../data/suppliers'
 import { AdminBinsigniaTerms } from './AdminBinsigniaTerms'
 import { AdminInvestimTerms } from './AdminInvestimTerms'
@@ -41,6 +42,9 @@ export function AdminSupplierDetail() {
         <p className="mt-2 text-sm text-muted">
           {productCount(supplier.id)} produkter i konceptet · bilder ska komma från den här
           leverantörens länk.
+          {supplierHasPurchaseList(supplier.id)
+            ? ' Inköpspris (listpris och netto i EUR) ligger i listan på den här sidan, inte på den publika produktsidan.'
+            : ''}
         </p>
       </div>
 
@@ -175,12 +179,21 @@ export function AdminSupplierDetail() {
               const sizes = p.sizes ?? []
               const colorPhotos = hasColorTaggedImages(p.images)
               const sizePhotos = hasSizeTaggedImages(p.images)
+              const hint = purchaseHint(supplier.id, p.slug)
               return (
                 <li key={p.slug} className="grid gap-3 p-4 md:grid-cols-12 md:items-center">
                   <div className="md:col-span-5">
                     <Link className="font-medium underline" to={productPath(p)}>
                       {p.name}
                     </Link>
+                    {hint && (
+                      <p className={`mt-1 text-xs ${hint.missing ? 'text-muted' : ''}`}>
+                        {hint.label}{' '}
+                        <Link className="underline" to={hint.href}>
+                          Visa rader
+                        </Link>
+                      </p>
+                    )}
                     {p.sku && !p.materials?.length && <p className="text-xs text-muted">Art.nr {p.sku}</p>}
                     {p.materials && p.materials.length > 0 && (
                       <p className="text-xs text-muted">

@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useMemo } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import {
   binsigniaDiscounts,
   binsigniaModels,
@@ -13,7 +13,9 @@ import { productPath, products } from '../../data/content'
 const models = binsigniaModels()
 
 export function AdminBinsigniaTerms() {
-  const [model, setModel] = useState(models[0] ?? 'ALBRIS')
+  const [params, setParams] = useSearchParams()
+  const requested = params.get('serie')
+  const model = requested && models.includes(requested) ? requested : (models[0] ?? 'ALBRIS')
   const rows = useMemo(() => binsigniaPrices.filter((r) => r.model === model), [model])
   const slug = rows[0]?.slug
   const product = slug ? products[slug] : undefined
@@ -21,7 +23,7 @@ export function AdminBinsigniaTerms() {
   const anomalies = rows.filter((r) => r.anomaly)
 
   return (
-    <section className="space-y-6 border border-line bg-sheet p-5">
+    <section id="inkopspris" className="scroll-mt-8 space-y-6 border border-line bg-sheet p-5">
       <div>
         <p className="kicker">Intern inköpslista</p>
         <h2 className="mt-2 text-xl">{binsigniaPriceMeta.list}</h2>
@@ -89,7 +91,11 @@ export function AdminBinsigniaTerms() {
           <select
             className="mt-1 block max-w-full border border-line bg-sheet px-3 py-2"
             value={model}
-            onChange={(e) => setModel(e.target.value)}
+            onChange={(e) => {
+              const next = new URLSearchParams(params)
+              next.set('serie', e.target.value)
+              setParams(next, { replace: true })
+            }}
           >
             {models.map((m) => (
               <option key={m} value={m}>

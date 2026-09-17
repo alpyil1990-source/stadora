@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useSuppliers } from '../../context/SupplierContext'
 import { emptyContact, supplierStatusLabel, type SupplierStatus } from '../../data/suppliers'
 import { products } from '../../data/content'
+import { supplierHasPurchaseList } from '../../data/purchase-admin'
 
 const statuses: SupplierStatus[] = ['aktiv', 'invantar_underlag', 'pausad']
 
@@ -57,7 +58,8 @@ export function AdminSuppliers() {
           <h1 className="mt-2 text-3xl">Leverantörer</h1>
           <p className="mt-3 max-w-2xl text-sm text-muted">
             En rad per leverantör: kontaktperson, hur många produkter vi har från dem, och var
-            bilderna ska hämtas. Produktfoton kommer från leverantörens länk — inte från den
+            bilderna ska hämtas. Inköpspris ligger på leverantörskortet (intern EUR-lista), inte på
+            den publika produktsidan. Produktfoton kommer från leverantörens länk — inte från den
             publicerade sajten. Skola och vård väntar; räkna bara offentlig miljö just nu.
           </p>
         </div>
@@ -148,6 +150,7 @@ export function AdminSuppliers() {
               <th className="py-2 pr-3 font-medium">Leverantör</th>
               <th className="py-2 pr-3 font-medium">Kontaktperson</th>
               <th className="py-2 pr-3 font-medium">Produkter</th>
+              <th className="py-2 pr-3 font-medium">Inköpspris</th>
               <th className="py-2 pr-3 font-medium">Bildkälla</th>
               <th className="py-2 font-medium">Status</th>
             </tr>
@@ -169,6 +172,15 @@ export function AdminSuppliers() {
                     {s.contact.role && <p className="text-xs text-muted">{s.contact.role}</p>}
                   </td>
                   <td className="py-3 pr-3 tabular-nums">{n}</td>
+                  <td className="py-3 pr-3">
+                    {supplierHasPurchaseList(s.id) ? (
+                      <Link className="underline" to={`/admin/leverantorer/${s.id}#inkopspris`}>
+                        Intern EUR-lista
+                      </Link>
+                    ) : (
+                      <span className="text-muted">—</span>
+                    )}
+                  </td>
                   <td className="py-3 pr-3 text-muted">
                     {s.mediaSource.trim() ? 'Angiven' : 'Saknas'}
                   </td>
