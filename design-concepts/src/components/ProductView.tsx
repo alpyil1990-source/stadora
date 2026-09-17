@@ -193,7 +193,7 @@ export function ProductView({
         </p>
       )}
       {shown.length > 1 && (
-        <ul className={`mt-3 flex gap-2 ${galleryLocked ? 'flex-wrap' : ''}`}>
+        <ul className="mt-3 flex flex-wrap gap-2">
           {shown.map((img, i) => (
             <li key={img.src}>
               <button
