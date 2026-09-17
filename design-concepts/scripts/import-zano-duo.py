@@ -64,11 +64,6 @@ WOOD = (
     "Namnen avser kulören på det valda träslaget, inte massivt ek-, mahogny- eller teakträ."
 )
 
-SITS_NOTE = (
-    "Benämningen följer ZANOs svenska produktblad (sitsbredden). Översiktsritningen måttsätter bara 129, 107 och 153 cm. "
-    "Samma modells engelska tekniska blad skriver seat height 47 cm (18 5/16 tum) och visar inte 47 cm på översiktsmåtten."
-)
-
 
 def fetch(url: str, dest: Path | None = None, *, reuse: bool = True) -> tuple[bytes, str, str]:
     if reuse and dest and dest.exists() and dest.stat().st_size > 80:
@@ -577,7 +572,7 @@ def main() -> None:
             {"label": "Höjd", "value": "107 cm"},
             {"label": "Djup", "value": "153 cm"},
             {"label": "Basens bredd", "value": "129 cm"},
-            {"label": "Sitsbredd", "value": "47 cm", "note": SITS_NOTE},
+            {"label": "Sitsbredd", "value": "47 cm"},
         ],
         "weight": "90 kg med europeiskt barrträ, 111 kg med hårt trä av europeiskt ursprung. Vikt för ädelträ anges inte.",
         "weightSummary": "90–111 kg beroende på träutförande",
