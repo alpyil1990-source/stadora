@@ -11,8 +11,10 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import threading
 import time
 import zipfile
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 from io import BytesIO
 from pathlib import Path
@@ -284,14 +286,30 @@ def parse_listing(html: str, cat: str) -> list[dict]:
         href = urljoin(EN_BASE, a.get("href") or "").split("?")[0].rstrip("/")
         if needle not in href or href.endswith(f"/catalogue/{cat}"):
             continue
+        if "/street-furniture/files" in href:
+            continue
         if href in seen:
             continue
         seen.add(href)
-        title = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
+        title = re.sub(r"\s+", " ", (a.get("title") or a.get_text(" ", strip=True)))
         if not title or len(title) < 3:
             continue
         out.append({"url": href, "title": title, "enCat": cat})
     return out
+
+
+def is_combo_page(item: dict) -> bool:
+    """Skip configurator/set landing pages — the member products are imported on their own."""
+    url = item["url"].lower()
+    title = item["title"].lower()
+    slug = url.rstrip("/").rsplit("/", 1)[-1]
+    if "check out" in title:
+        return True
+    if slug.startswith("set-") or slug.startswith("picnic-set"):
+        return True
+    if "picnic sets" in title:
+        return True
+    return False
 
 
 def classify(en_cat: str, title: str, url: str) -> str:
@@ -375,8 +393,14 @@ def parse_en_page(html: str, url: str) -> dict:
     h1 = soup.find("h1")
     title = re.sub(r"\s+", " ", h1.get_text(" ", strip=True)) if h1 else ""
     files = []
-    for a in soup.select(".product-files a[href], .box_files a[href]"):
+    seen_file: set[str] = set()
+    for a in soup.select(
+        ".product-files a[href], .box_files a[href], a.product_pdf[href], a.product_dwg[href], .product_dl a[href]"
+    ):
         href = urljoin(url, a.get("href") or "")
+        if not href or href in seen_file:
+            continue
+        seen_file.add(href)
         files.append({"label": re.sub(r"\s+", " ", a.get_text(" ", strip=True)), "href": href})
     uuids = UUID_RE.findall(html)
     card_uuid = None
@@ -389,6 +413,10 @@ def parse_en_page(html: str, url: str) -> dict:
         m = re.search(r"/product/card/[^/]+/([0-9a-f-]{36})/", html, re.I)
         if m:
             card_uuid = m.group(1).lower()
+    if not card_uuid:
+        m = re.search(r"/archive/[^/]+/(?:documentation|product-card)/([0-9a-f-]{36})/", html, re.I)
+        if m:
+            card_uuid = m.group(1).lower()
     gallery: list[tuple[str, str]] = []
     seen: set[str] = set()
 
@@ -398,7 +426,8 @@ def parse_en_page(html: str, url: str) -> dict:
             return
         if "/images/" not in src and "/file/image/" not in src:
             return
-        if "customization" in src or "banner" in src:
+        low = src.lower()
+        if any(tok in low for tok in ("customization", "banner", "/site/", "/tiles/", "tuv.png")):
             return
         seen.add(src)
         gallery.append((src, alt.strip()))
@@ -420,6 +449,20 @@ def parse_en_page(html: str, url: str) -> dict:
             src = original_image_url(urljoin(url, img.get("src")))
         if src:
             add_img(src, alt)
+
+    # English catalogue template B: product-slider lightbox originals (not sized thumbs).
+    for a in soup.select(
+        ".product-slider a[data-lightbox][href], "
+        ".product-slider a[href*='/images/'], "
+        ".swiper-gallery a[href*='/images/'], "
+        "#RendersCont a[href*='/images/']"
+    ):
+        href = a.get("href") or ""
+        add_img(urljoin(url, href), a.get("title") or "")
+
+    for img in soup.select(".product-slider img, .swiper-gallery img, #RendersCont img"):
+        src = img.get("src") or ""
+        add_img(urljoin(url, src), img.get("alt") or "")
 
     dim_img = soup.select_one(".product-dimensions img")
     drawing = None
@@ -837,8 +880,24 @@ def import_product(item: dict, keep: dict[str, dict]) -> dict:
     doc_dir.mkdir(parents=True, exist_ok=True)
 
     images = []
-    for i, (url, alt) in enumerate(en.get("gallery") or [], start=1):
-        info = download_image(url, orig_dir, img_dir, f"galleri-{i:02d}")
+    gallery_items = list(enumerate(en.get("gallery") or [], start=1))
+    downloaded: dict[int, tuple[dict | None, str, str]] = {}
+    if gallery_items:
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            futs = {
+                pool.submit(download_image, url, orig_dir, img_dir, f"galleri-{i:02d}"): (i, url, alt)
+                for i, (url, alt) in gallery_items
+            }
+            for fut in as_completed(futs):
+                i, url, alt = futs[fut]
+                try:
+                    info = fut.result()
+                except Exception as exc:
+                    downloaded[i] = ({"error": str(exc)}, url, alt)
+                    continue
+                downloaded[i] = (info, url, alt)
+    for i in sorted(downloaded):
+        info, url, alt = downloaded[i]
         if not info or info.get("error"):
             failed.append({"url": url, "reason": (info or {}).get("error", "bild")})
             continue
@@ -1226,6 +1285,7 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--only", default="")
     parser.add_argument("--refresh", action="store_true")
+    parser.add_argument("--jobs", type=int, default=3)
     args = parser.parse_args()
 
     IMG_PUB.mkdir(parents=True, exist_ok=True)
@@ -1259,6 +1319,9 @@ def main() -> None:
         for row in rows:
             if row["url"] in seen_url:
                 continue
+            if is_combo_page(row):
+                print(f"  skip combo {row['url'].rsplit('/', 1)[-1]}")
+                continue
             seen_url.add(row["url"])
             listing.append(row)
 
@@ -1274,27 +1337,54 @@ def main() -> None:
 
     imported = 0
     errors = []
+    lock = threading.Lock()
+
+    def persist() -> None:
+        series = list(series_by_slug.values())
+        fill_related(series)
+        write_payload(sorted(series, key=lambda p: (p["subcategorySlug"], p["name"])))
+        print("  checkpoint", len(series_by_slug))
+
+    def run_one(item: dict, index: int, total: int) -> None:
+        nonlocal imported
+        sku_guess = extract_sku(item["title"]) or extract_sku(item["url"])
+        with lock:
+            if sku_guess and sku_guess in keep:
+                print(f"[{index}/{total}] skip existing {sku_guess}")
+                return
+        print(f"[{index}/{total}] {item['title']}")
+        try:
+            product = import_product(item, dict(keep))
+        except Exception as exc:
+            with lock:
+                errors.append({"url": item["url"], "error": str(exc)})
+            print("  FAIL", exc)
+            return
+        with lock:
+            series_by_slug[product["slug"]] = product
+            if product.get("sku"):
+                keep[product["sku"]] = product
+            imported += 1
+            if imported % 10 == 0:
+                persist()
+
+    pending: list[tuple[int, dict]] = []
     for i, item in enumerate(listing, start=1):
         sku_guess = extract_sku(item["title"]) or extract_sku(item["url"])
-        if sku_guess and sku_guess in keep and not args.refresh:
+        if sku_guess and sku_guess in keep:
             print(f"[{i}/{len(listing)}] skip existing {sku_guess}")
             continue
-        print(f"[{i}/{len(listing)}] {item['title']}")
-        try:
-            product = import_product(item, keep if not args.refresh else {})
-        except Exception as exc:
-            errors.append({"url": item["url"], "error": str(exc)})
-            print("  FAIL", exc)
-            continue
-        series_by_slug[product["slug"]] = product
-        if product.get("sku"):
-            keep[product["sku"]] = product
-        imported += 1
-        if imported % 10 == 0:
-            series = list(series_by_slug.values())
-            fill_related(series)
-            write_payload(sorted(series, key=lambda p: (p["subcategorySlug"], p["name"])))
-            print("  checkpoint", len(series_by_slug))
+        pending.append((i, item))
+
+    jobs = max(1, args.jobs)
+    if jobs == 1 or len(pending) <= 1:
+        for i, item in pending:
+            run_one(item, i, len(listing))
+    else:
+        with ThreadPoolExecutor(max_workers=jobs) as pool:
+            futs = [pool.submit(run_one, item, i, len(listing)) for i, item in pending]
+            for fut in as_completed(futs):
+                fut.result()
 
     series = list(series_by_slug.values())
     fill_related(series)
