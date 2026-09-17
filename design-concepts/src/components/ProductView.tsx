@@ -31,6 +31,7 @@ import {
   imagesForVariant,
   shownLabel,
 } from '../data/gallery'
+import { streetparkGalleryLocked } from '../data/streetpark'
 import { finishSwatchHex, isStreetparkProduct } from '../data/streetpark-finishes'
 import { useQuote } from '../context/QuoteContext'
 import { ProductCard } from './ProductCard'
@@ -73,29 +74,36 @@ export function ProductView({
   const optionalFeatures = finish?.optionalFeatures
   const sizeLegend = product.sizeLegend ?? 'Storlek'
   const sizePhotos = hasSizeTaggedImages(product.images)
+  const galleryLocked = streetparkGalleryLocked(product.slug)
 
   const galleryState = imagesForVariant(product.images, {
     color: variants[COLOR_VARIANT_KEY],
     size: typeName,
   })
-  const shown = galleryState.shown
+  const shown = galleryLocked ? product.images : galleryState.shown
   const current = shown[Math.min(active, shown.length - 1)] ?? product.images[0]
   const taggedColors = hasColorTaggedImages(product.images)
   const missingColorPhoto =
-    Boolean(variants[COLOR_VARIANT_KEY]) && taggedColors && !galleryState.colorMatched
-  const missingSizePhoto = Boolean(typeName) && sizePhotos && !galleryState.sizeMatched
+    !galleryLocked &&
+    Boolean(variants[COLOR_VARIANT_KEY]) &&
+    taggedColors &&
+    !galleryState.colorMatched
+  const missingSizePhoto =
+    !galleryLocked && Boolean(typeName) && sizePhotos && !galleryState.sizeMatched
 
   const related = product.related.map((slug) => products[slug]).filter(Boolean)
-  const popKey = `${variants[COLOR_VARIANT_KEY] ?? ''}-${typeName ?? ''}-${current?.src ?? ''}`
+  const popKey = galleryLocked
+    ? (current?.src ?? '')
+    : `${variants[COLOR_VARIANT_KEY] ?? ''}-${typeName ?? ''}-${current?.src ?? ''}`
 
   function selectColor(name: string) {
     setVariants((v) => ({ ...v, [COLOR_VARIANT_KEY]: name }))
-    setActive(0)
+    if (!galleryLocked) setActive(0)
   }
 
   function selectSize(name: string) {
     setVariants((v) => withSelectedType(v, name, product.sizeLegend))
-    setActive(0)
+    if (!galleryLocked) setActive(0)
   }
 
   function addToQuote() {
@@ -162,7 +170,7 @@ export function ProductView({
         </p>
       )}
       {shown.length > 1 && (
-        <ul className="mt-3 flex gap-2">
+        <ul className={`mt-3 flex gap-2 ${galleryLocked ? 'flex-wrap' : ''}`}>
           {shown.map((img, i) => (
             <li key={img.src}>
               <button
@@ -190,6 +198,7 @@ export function ProductView({
             sizes={product.sizes}
             selectedName={typeName}
             onSelect={selectSize}
+            grayscaleIcons={galleryLocked}
           />
         ) : (
         <fieldset>
@@ -914,11 +923,13 @@ function StreetparkTypePicker({
   sizes,
   selectedName,
   onSelect,
+  grayscaleIcons = false,
 }: {
   legend: string
   sizes: SizeOption[]
   selectedName?: string
   onSelect: (name: string) => void
+  grayscaleIcons?: boolean
 }) {
   const selected = sizes.find((s) => s.name === selectedName || s.sku === selectedName)
   return (
@@ -943,7 +954,13 @@ function StreetparkTypePicker({
               />
               <span className="flex aspect-[4/3] w-full items-center justify-center bg-paper">
                 {s.icon ? (
-                  <img src={s.icon} alt="" className="max-h-full max-w-full object-contain" />
+                  <img
+                    src={s.icon}
+                    alt=""
+                    className={`max-h-full max-w-full object-contain ${
+                      grayscaleIcons ? 'grayscale' : ''
+                    }`}
+                  />
                 ) : (
                   <span className="px-0.5 font-ui text-[0.65rem] font-semibold leading-tight text-ink">
                     {s.name}
