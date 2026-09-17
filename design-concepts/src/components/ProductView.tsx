@@ -863,6 +863,8 @@ function ProductDocuments({
     )
   }
 
+  const groups = groupDocuments(docs)
+
   return (
     <div className="mt-3">
       {modelPhrase && (
@@ -870,50 +872,81 @@ function ProductDocuments({
           Underlag för {modelPhrase}. Filer utan modellmärkning gäller hela serien.
         </p>
       )}
-      <ul className="border border-line bg-sheet">
-        {docs.map((doc) => (
-          <DocumentRow key={`${doc.href}-${doc.variant ?? 'all'}`} doc={doc} />
+      <div className="space-y-5">
+        {groups.map((group) => (
+          <div key={group.label}>
+            {groups.length > 1 && (
+              <h3 className="mb-1.5 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-muted">
+                {group.label}
+              </h3>
+            )}
+            <ul className="border border-line bg-sheet">
+              {group.items.map((doc) => (
+                <DocumentRow key={`${doc.href}-${doc.variant ?? 'all'}`} doc={doc} />
+              ))}
+            </ul>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
 
+function groupDocuments(docs: ProductDocument[]) {
+  const buckets: { label: string; items: ProductDocument[] }[] = [
+    { label: 'Ritningar', items: [] },
+    { label: 'Produktblad och anvisningar', items: [] },
+    { label: 'CAD och originalfiler', items: [] },
+  ]
+  for (const doc of docs) {
+    if (doc.kind === 'drawing' || doc.kind === 'perspective' || doc.kind === 'image') {
+      buckets[0].items.push(doc)
+    } else if (doc.kind === 'cad' || doc.kind === 'other') {
+      buckets[2].items.push(doc)
+    } else {
+      buckets[1].items.push(doc)
+    }
+  }
+  return buckets.filter((bucket) => bucket.items.length > 0)
+}
+
 function DocumentRow({ doc }: { doc: ProductDocument }) {
-  const label = `${doc.typeLabel} (${doc.format})`
-  const alt = `${label}. ${doc.title}`
+  const alt = `${doc.typeLabel} (${doc.format}). ${doc.title}`
+  const meta = [doc.format, doc.appliesTo].filter(Boolean).join(' · ')
   return (
-    <li className="grid gap-3 border-b border-line p-4 last:border-b-0 md:grid-cols-12 md:items-center">
-      <div className="aspect-[4/3] overflow-hidden border border-line bg-paper md:col-span-3">
+    <li className="flex items-center gap-3 border-b border-line px-3 py-2 last:border-b-0">
+      <div className="h-11 w-14 shrink-0 overflow-hidden border border-line bg-paper">
         {doc.previewable ? (
           <ProductImageZoom
+            compact
             images={[{ src: doc.href, alt }]}
             currentSrc={doc.href}
             alt={alt}
-            imgClassName="h-full w-full object-contain p-2"
+            imgClassName="h-full w-full object-contain p-0.5"
           />
         ) : (
-          <div className="flex h-full min-h-24 items-center justify-center font-ui text-xs uppercase tracking-[0.12em] text-muted">
+          <div className="flex h-full items-center justify-center font-ui text-[0.62rem] font-semibold tracking-[0.08em] text-muted">
             {doc.format}
           </div>
         )}
       </div>
-      <div className="md:col-span-6">
-        <p className="font-medium">{label}</p>
-        <p className="mt-1 text-sm text-muted">{doc.title}</p>
-        {doc.variant && <p className="mt-1 text-xs text-muted">Modell {doc.variant}</p>}
-        {doc.appliesTo && <p className="mt-1 text-xs text-muted">{doc.appliesTo}</p>}
+      <div className="min-w-0 flex-1">
+        <p className="text-sm font-medium leading-tight">{doc.typeLabel}</p>
+        <p className="mt-0.5 truncate text-xs text-muted">
+          {meta}
+          {meta ? ' · ' : ''}
+          {doc.title}
+        </p>
       </div>
-      <div className="md:col-span-3 md:text-right">
-        <a
-          href={doc.href}
-          download
-          className="inline-flex items-center gap-2 text-sm underline-offset-2 hover:underline"
-        >
-          <Download className="h-4 w-4" aria-hidden />
-          Ladda ner original
-        </a>
-      </div>
+      <a
+        href={doc.href}
+        download
+        aria-label={`Ladda ner ${doc.typeLabel} (${doc.format})`}
+        className="inline-flex shrink-0 items-center gap-1.5 text-sm underline-offset-2 hover:underline"
+      >
+        <Download className="h-4 w-4" aria-hidden />
+        Ladda ner
+      </a>
     </li>
   )
 }

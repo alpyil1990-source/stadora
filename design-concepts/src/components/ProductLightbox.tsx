@@ -14,6 +14,7 @@ export function ProductImageZoom({
   imgClassName,
   imgKey,
   onIndexChange,
+  compact = false,
 }: {
   images: LightboxImage[]
   currentSrc: string
@@ -21,6 +22,7 @@ export function ProductImageZoom({
   imgClassName?: string
   imgKey?: string
   onIndexChange?: (index: number) => void
+  compact?: boolean
 }) {
   const [open, setOpen] = useState(false)
   const sources = images.length > 0 ? images : [{ src: currentSrc, alt }]
@@ -38,12 +40,14 @@ export function ProductImageZoom({
         className="relative block h-full w-full cursor-zoom-in"
       >
         <img key={imgKey} src={currentSrc} alt={alt} className={imgClassName} />
-        <span
-          aria-hidden
-          className="absolute right-3 bottom-3 flex h-9 w-9 items-center justify-center bg-ink text-sheet"
-        >
-          <ZoomIn className="h-4 w-4" />
-        </span>
+        {!compact && (
+          <span
+            aria-hidden
+            className="absolute right-3 bottom-3 flex h-9 w-9 items-center justify-center bg-ink text-sheet"
+          >
+            <ZoomIn className="h-4 w-4" />
+          </span>
+        )}
       </button>
       {open && (
         <LightboxDialog
