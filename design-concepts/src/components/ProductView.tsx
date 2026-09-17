@@ -933,8 +933,8 @@ function StreetparkTypePicker({
           return (
             <label
               key={s.sku ?? s.name}
-              className={`flex cursor-pointer flex-col items-center border bg-sheet px-1 py-2 text-center ${
-                active ? 'border-sage ring-1 ring-sage' : 'border-line'
+              className={`flex cursor-pointer flex-col items-center border-2 bg-sheet px-1 py-2 text-center ${
+                active ? 'border-sage bg-paper' : 'border-line'
               }`}
             >
               <input
@@ -994,8 +994,8 @@ function FinishSwatchField({
           return (
             <label
               key={opt.name}
-              className={`flex cursor-pointer flex-col items-center gap-1 border bg-sheet px-1 py-2 ${
-                active ? 'border-sage ring-1 ring-sage' : 'border-line'
+              className={`flex cursor-pointer flex-col items-center gap-1 border-2 bg-sheet px-1 py-2 ${
+                active ? 'border-sage bg-paper' : 'border-line'
               }`}
             >
               <input
