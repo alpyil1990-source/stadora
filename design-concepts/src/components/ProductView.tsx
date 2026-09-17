@@ -31,7 +31,6 @@ import {
   imagesForVariant,
   shownLabel,
 } from '../data/gallery'
-import { streetparkGalleryLocked } from '../data/streetpark'
 import { finishSwatchHex, isStreetparkProduct } from '../data/streetpark-finishes'
 import { useQuote } from '../context/QuoteContext'
 import { ProductCard } from './ProductCard'
@@ -74,7 +73,7 @@ export function ProductView({
   const optionalFeatures = finish?.optionalFeatures
   const sizeLegend = product.sizeLegend ?? 'Storlek'
   const sizePhotos = hasSizeTaggedImages(product.images)
-  const galleryLocked = streetparkGalleryLocked(product.slug)
+  const galleryLocked = isStreetparkProduct(product)
 
   const galleryState = imagesForVariant(product.images, {
     color: variants[COLOR_VARIANT_KEY],

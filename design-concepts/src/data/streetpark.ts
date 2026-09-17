@@ -2,18 +2,8 @@ import type { ColorOption, Product, ProductDocument, ProductImage, SizeOption } 
 import catalogFile from './generated/streetpark-series.json'
 import { finishSwatchHex } from './streetpark-finishes'
 
-const IMAGE_NOTE =
-  'Bilden visar ett exempelutförande från STREETPARK. Kulör på skärm kan avvika. Galleriet byts bara när en bild är märkt för vald modell.'
-
 const GALLERY_LOCKED_NOTE =
   'Bilden visar ett exempelutförande från STREETPARK. Kulör på skärm kan avvika. Modellvalet ändrar dokument, inte bildgalleriet.'
-
-/** Staged STREETPARK UX: type picker does not change photos. Start with BERGA only. */
-export const STREETPARK_LOCKED_GALLERY_SLUGS = new Set(['parkbank-berga'])
-
-export function streetparkGalleryLocked(slug: string) {
-  return STREETPARK_LOCKED_GALLERY_SLUGS.has(slug)
-}
 
 type DocJson = {
   title: string
@@ -140,7 +130,6 @@ function toProduct(row: SeriesJson): Product {
       src: img.src,
       alt: img.alt,
       kind: img.kind ?? 'studio',
-      size: streetparkGalleryLocked(row.slug) ? undefined : img.size,
     })),
     material: row.material ?? undefined,
     dimensions: row.dimensions.length ? row.dimensions : undefined,
@@ -154,9 +143,7 @@ function toProduct(row: SeriesJson): Product {
     variants: row.variants.length ? row.variants : undefined,
     related: row.related.slice(0, 3),
     documents: toDocs(row.documents),
-    imageNote: streetparkGalleryLocked(row.slug)
-      ? GALLERY_LOCKED_NOTE
-      : (row.imageNote ?? IMAGE_NOTE),
+    imageNote: GALLERY_LOCKED_NOTE,
   }
 }
 
