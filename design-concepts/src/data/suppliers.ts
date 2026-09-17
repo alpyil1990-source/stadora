@@ -40,32 +40,8 @@ export const emptyContact = (): SupplierContact => ({
   phone: '',
 })
 
+/** Relicon AB is STADORA — own-brand catalog products are not a supplier. */
 export const seedSuppliers: Supplier[] = [
-  {
-    id: 'relicon',
-    name: 'Relicon AB (STADORA)',
-    status: 'aktiv',
-    orgNr: '559174-4551',
-    website: 'https://stadora.se',
-    mediaSource: '',
-    contact: {
-      name: '',
-      role: '',
-      email: 'info@stadora.se',
-      phone: '',
-    },
-    address: 'Plantslingan 36, 142 51 Skogås',
-    notes:
-      'Egna utemiljöprodukter i konceptet (parkbänkar Årsta–Enskede, Rödberga). Namngiven inköpskontakt saknas i underlaget. Nya foton ska komma från intern/leverantörslänk — inte skrapas från den publicerade sajten.',
-    productSlugs: [
-      'parkbank-arsta',
-      'parkbank-hammarby',
-      'parkbank-grondal',
-      'parkbank-aspudden',
-      'parkbank-enskede',
-      'papperskorg-rodberga-100',
-    ],
-  },
   {
     id: 'binsignia',
     name: 'BINSIGNIA® / FORWARD SUPPORT SRL',
