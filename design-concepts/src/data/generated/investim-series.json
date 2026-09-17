@@ -2,14 +2,14 @@
   "series": [
     {
       "slug": "parkbank-tvattad-rygg",
-      "name": "Parkbänk i tvättad betong med ryggstöd",
+      "name": "Bänk med rygg, tvättad betong, 210 cm",
       "sku": "107",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i tvättad betong med ryggstöd. Tvättad betong, trälister och stål, 210 cm.",
-      "description": "Parkbänk i tvättad betong med ryggstöd. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Tvättad betong, trälister och stål, 200 kg.",
+      "description": "Bänk med rygg, tvättad betong, 210 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Tvättad betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -54,20 +54,20 @@
       "images": [
         {
           "file": "parkbank-tvattad-rygg-1.jpg",
-          "alt": "Parkbänk i tvättad betong med ryggstöd"
+          "alt": "Bänk med rygg, tvättad betong, 210 cm"
         }
       ]
     },
     {
       "slug": "parkbank-stal-rygg",
-      "name": "Parkbänk i stål med ryggstöd",
+      "name": "Bänk med rygg, stål, 180 cm",
       "sku": "224",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i stål med ryggstöd. Stålstomme, trälister, 180 cm.",
-      "description": "Parkbänk i stål med ryggstöd. Trälister 4 cm, lackade tre gånger. Stommen är av stålplåt, varmförzinkad och pulverlackerad.",
+      "summary": "Stålstomme, trälister.",
+      "description": "Bänk med rygg, stål, 180 cm. Trälister 4 cm, lackade tre gånger. Stommen är av stålplåt, varmförzinkad och pulverlackerad.",
       "material": "Stålstomme, trälister",
       "cement": null,
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -108,24 +108,24 @@
       "images": [
         {
           "file": "parkbank-stal-rygg-1.png",
-          "alt": "Parkbänk i stål med ryggstöd"
+          "alt": "Bänk med rygg, stål, 180 cm"
         },
         {
           "file": "parkbank-stal-rygg-2.jpg",
-          "alt": "Parkbänk i stål med ryggstöd"
+          "alt": "Bänk med rygg, stål, 180 cm"
         }
       ]
     },
     {
       "slug": "parkbank-stal-rygg-metall",
-      "name": "Parkbänk i stål med ryggstöd, metallstomme",
+      "name": "Bänk med rygg, metallstomme, 180 cm",
       "sku": "260",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i stål med ryggstöd, metallstomme. Stålstomme, trälister, 180 cm.",
-      "description": "Parkbänk i stål med ryggstöd, metallstomme. Trälister 4 cm, lackade tre gånger. Stommen är av stålplåt, varmförzinkad och pulverlackerad.",
+      "summary": "Stålstomme, trälister.",
+      "description": "Bänk med rygg, metallstomme, 180 cm. Trälister 4 cm, lackade tre gånger. Stommen är av stålplåt, varmförzinkad och pulverlackerad.",
       "material": "Stålstomme, trälister",
       "cement": null,
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -166,24 +166,24 @@
       "images": [
         {
           "file": "parkbank-stal-rygg-metall-1.png",
-          "alt": "Parkbänk i stål med ryggstöd, metallstomme"
+          "alt": "Bänk med rygg, metallstomme, 180 cm"
         },
         {
           "file": "parkbank-stal-rygg-metall-2.jpg",
-          "alt": "Parkbänk i stål med ryggstöd, metallstomme"
+          "alt": "Bänk med rygg, metallstomme, 180 cm"
         }
       ]
     },
     {
       "slug": "parkbank-stal",
-      "name": "Parkbänk i stål utan ryggstöd",
+      "name": "Bänk utan rygg, stålrör, 192 cm",
       "sku": "156",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i stål utan ryggstöd. Stålrörsstomme, trälister, 192 cm.",
-      "description": "Parkbänk i stål utan ryggstöd. Trälister 4 cm, lackade tre gånger. Stommen är av stålrör, varmförzinkad och pulverlackerad.",
+      "summary": "Stålrörsstomme, trälister.",
+      "description": "Bänk utan rygg, stålrör, 192 cm. Trälister 4 cm, lackade tre gånger. Stommen är av stålrör, varmförzinkad och pulverlackerad.",
       "material": "Stålrörsstomme, trälister",
       "cement": null,
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -220,20 +220,20 @@
       "images": [
         {
           "file": "parkbank-stal-1.png",
-          "alt": "Parkbänk i stål utan ryggstöd"
+          "alt": "Bänk utan rygg, stålrör, 192 cm"
         }
       ]
     },
     {
       "slug": "parkbank-stal-tra",
-      "name": "Parkbänk i stål och trä utan ryggstöd",
+      "name": "Bänk utan rygg, stål och trä, 180 cm",
       "sku": "209",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i stål och trä utan ryggstöd. Stålstomme, trälister, 180 cm.",
-      "description": "Parkbänk i stål och trä utan ryggstöd. Trälister 4 cm, lackade tre gånger. Stommen är av stålplåt, varmförzinkad och pulverlackerad.",
+      "summary": "Stålstomme, trälister.",
+      "description": "Bänk utan rygg, stål och trä, 180 cm. Trälister 4 cm, lackade tre gånger. Stommen är av stålplåt, varmförzinkad och pulverlackerad.",
       "material": "Stålstomme, trälister",
       "cement": null,
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -270,20 +270,20 @@
       "images": [
         {
           "file": "parkbank-stal-tra-1.png",
-          "alt": "Parkbänk i stål och trä utan ryggstöd"
+          "alt": "Bänk utan rygg, stål och trä, 180 cm"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-sits",
-      "name": "Parkbänk i arkitektonisk betong med träsits",
+      "name": "Bänk med träsits, 180 cm",
       "sku": "601",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong med träsits. Arkitektonisk betong, trälister och stål, 180 cm.",
-      "description": "Parkbänk i arkitektonisk betong med träsits. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 490 kg.",
+      "description": "Bänk med träsits, 180 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -318,20 +318,20 @@
       "images": [
         {
           "file": "parkbank-arkitektur-sits-1.png",
-          "alt": "Parkbänk i arkitektonisk betong med träsits"
+          "alt": "Bänk med träsits, 180 cm"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-rygg",
-      "name": "Parkbänk i arkitektonisk betong med ryggstöd",
+      "name": "Bänk med rygg, 240 cm",
       "sku": "601-ZO",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong med ryggstöd. Arkitektonisk betong, trälister och stål, 240 cm.",
-      "description": "Parkbänk i arkitektonisk betong med ryggstöd. Tillverkas i betong. Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade två gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 500 kg.",
+      "description": "Bänk med rygg, 240 cm. Tillverkas i betong. Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade två gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade två gånger.",
@@ -366,20 +366,20 @@
       "images": [
         {
           "file": "parkbank-arkitektur-rygg-1.png",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd"
+          "alt": "Bänk med rygg, 240 cm"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-smal",
-      "name": "Parkbänk i arkitektonisk betong, smal sits",
+      "name": "Bänk med smal sits, 180 cm",
       "sku": "603",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong, smal sits. Arkitektonisk betong, trälister och stål, 180 cm.",
-      "description": "Parkbänk i arkitektonisk betong, smal sits. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Tillval på sidan: uppspelning av inlagd ljudfil via LED-sensor. Pris för tillvalet saknas i listan. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 570 kg.",
+      "description": "Bänk med smal sits, 180 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Tillval på sidan: uppspelning av inlagd ljudfil via LED-sensor. Pris för tillvalet saknas i listan. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -414,24 +414,24 @@
       "images": [
         {
           "file": "parkbank-arkitektur-smal-1.png",
-          "alt": "Parkbänk i arkitektonisk betong, smal sits"
+          "alt": "Bänk med smal sits, 180 cm"
         },
         {
           "file": "parkbank-arkitektur-smal-2.jpg",
-          "alt": "Parkbänk i arkitektonisk betong, smal sits"
+          "alt": "Bänk med smal sits, 180 cm"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-rygg-200",
-      "name": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm",
+      "name": "Bänk med rygg, 200 cm",
       "sku": "605",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm. Arkitektonisk betong, trälister och stål.",
-      "description": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål.",
+      "description": "Bänk med rygg, 200 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -485,24 +485,24 @@
       "images": [
         {
           "file": "parkbank-arkitektur-rygg-200-1.png",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm"
+          "alt": "Bänk med rygg, 200 cm"
         },
         {
           "file": "parkbank-arkitektur-rygg-200-2.jpg",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm"
+          "alt": "Bänk med rygg, 200 cm"
         }
       ]
     },
     {
       "slug": "parkbank-modul",
-      "name": "Modulär parkbänk i arkitektonisk betong",
+      "name": "Modulär bänk, 120 cm",
       "sku": "608",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Modulär parkbänk i arkitektonisk betong. Arkitektonisk betong, trälister och stål, 120 cm.",
-      "description": "Modulär parkbänk i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 700 kg.",
+      "description": "Modulär bänk, 120 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -550,24 +550,24 @@
       "images": [
         {
           "file": "parkbank-modul-1.png",
-          "alt": "Modulär parkbänk i arkitektonisk betong"
+          "alt": "Modulär bänk, 120 cm"
         },
         {
           "file": "parkbank-modul-2.jpg",
-          "alt": "Modulär parkbänk i arkitektonisk betong"
+          "alt": "Modulär bänk, 120 cm"
         }
       ]
     },
     {
       "slug": "parkbank-puck",
-      "name": "Parkbänk Puck",
+      "name": "Bänk Puck",
       "sku": "651",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk Puck. Arkitektonisk betong, trälister och stål, 200 cm.",
-      "description": "Parkbänk Puck. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 600 kg.",
+      "description": "Bänk Puck. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -602,24 +602,24 @@
       "images": [
         {
           "file": "parkbank-puck-1.png",
-          "alt": "Parkbänk Puck"
+          "alt": "Bänk Puck"
         },
         {
           "file": "parkbank-puck-2.jpg",
-          "alt": "Parkbänk Puck"
+          "alt": "Bänk Puck"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-200",
-      "name": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 cm",
+      "name": "Bänk utan rygg, 200 cm",
       "sku": "652",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 cm. Arkitektonisk betong, trälister och stål.",
-      "description": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 600 kg.",
+      "description": "Bänk utan rygg, 200 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -654,20 +654,20 @@
       "images": [
         {
           "file": "parkbank-arkitektur-200-1.png",
-          "alt": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 cm"
+          "alt": "Bänk utan rygg, 200 cm"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-200-rygg",
-      "name": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm",
+      "name": "Bänk med rygg, 200 × 55 cm",
       "sku": "652-ZO",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm. Arkitektonisk betong, trälister och stål.",
-      "description": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 600 kg.",
+      "description": "Bänk med rygg, 200 × 55 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -706,24 +706,24 @@
       "images": [
         {
           "file": "parkbank-arkitektur-200-rygg-1.png",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm"
+          "alt": "Bänk med rygg, 200 × 55 cm"
         },
         {
           "file": "parkbank-arkitektur-200-rygg-2.jpg",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm"
+          "alt": "Bänk med rygg, 200 × 55 cm"
         }
       ]
     },
     {
       "slug": "parkbank-rogal",
-      "name": "Parkbänk Rogal",
+      "name": "Bänk Rogal",
       "sku": "655",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk Rogal. Arkitektonisk betong, trälister och stål, 229,5 cm.",
-      "description": "Parkbänk Rogal. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 450 kg.",
+      "description": "Bänk Rogal. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -763,24 +763,24 @@
       "images": [
         {
           "file": "parkbank-rogal-1.png",
-          "alt": "Parkbänk Rogal"
+          "alt": "Bänk Rogal"
         },
         {
           "file": "parkbank-rogal-2.jpg",
-          "alt": "Parkbänk Rogal"
+          "alt": "Bänk Rogal"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-rygg-180",
-      "name": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm",
+      "name": "Bänk med rygg, 180 cm",
       "sku": "659",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm. Arkitektonisk betong, trälister och stål.",
-      "description": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål.",
+      "description": "Bänk med rygg, 180 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -828,11 +828,11 @@
       "images": [
         {
           "file": "parkbank-arkitektur-rygg-180-1.jpg",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm"
+          "alt": "Bänk med rygg, 180 cm"
         },
         {
           "file": "parkbank-arkitektur-rygg-180-2.jpg",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm"
+          "alt": "Bänk med rygg, 180 cm"
         }
       ]
     },
@@ -844,7 +844,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 39 cm i tvättad betong, 80 kg.",
+      "summary": "Tvättad betong, 80 kg.",
       "description": "Pollare fyrkantig i tvättad betong, 80 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -892,13 +892,13 @@
       "ralInQuote": false,
       "related": [
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32",
-        "pollare-fyrkant-42"
+        "pollare-fyrkant-42",
+        "pollare-fyrkant-60"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-119-1.png",
-          "alt": "Pollare fyrkantig"
+          "alt": "Pollare fyrkantig 39 cm"
         }
       ],
       "wood": null
@@ -911,7 +911,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 57 cm i tvättad betong, 107 kg.",
+      "summary": "Tvättad betong, 107 kg.",
       "description": "Pollare fyrkantig 57 i tvättad betong, 107 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -940,57 +940,13 @@
       "ralInQuote": false,
       "related": [
         "pollare-fyrkant-119",
-        "pollare-fyrkant-32",
-        "pollare-fyrkant-42"
+        "pollare-fyrkant-42",
+        "pollare-fyrkant-60"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-57-1.png",
-          "alt": "Pollare fyrkantig 57"
-        }
-      ],
-      "wood": null
-    },
-    {
-      "slug": "pollare-fyrkant-32",
-      "name": "Pollare fyrkantig 32 cm",
-      "sku": "12A",
-      "category": "Pollare och räcken",
-      "categorySlug": "pollare-racken",
-      "subcategory": "Pollare",
-      "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 32 cm i tvättad betong, 69 kg.",
-      "description": "Pollare fyrkantig 32 i tvättad betong, 69 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "dimensions": [
-        {
-          "label": "Bas",
-          "value": "32 × 32 cm"
-        },
-        {
-          "label": "Höjd",
-          "value": "32 cm"
-        }
-      ],
-      "weight": "69 kg",
-      "mounting": [
-        "Hål i undersidan för eventuell förankring"
-      ],
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "related": [
-        "pollare-fyrkant-119",
-        "pollare-fyrkant-57",
-        "pollare-fyrkant-42"
-      ],
-      "images": [
-        {
-          "file": "pollare-fyrkant-32-1.jpg",
-          "alt": "Pollare fyrkantig 32"
+          "alt": "Pollare fyrkantig 57 cm"
         }
       ],
       "wood": null
@@ -1003,7 +959,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 42 cm i tvättad betong, 28 kg.",
+      "summary": "Tvättad betong, 28 kg.",
       "description": "Pollare fyrkantig 42 i tvättad betong, 28 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1025,12 +981,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-60"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-42-1.png",
-          "alt": "Pollare fyrkantig 42"
+          "alt": "Pollare fyrkantig 42 cm"
         }
       ],
       "wood": null
@@ -1043,7 +999,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 60 cm i tvättad betong, 73 kg.",
+      "summary": "Tvättad betong, 73 kg.",
       "description": "Pollare fyrkantig 60 i tvättad betong, 73 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1065,25 +1021,25 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-60-1.jpg",
-          "alt": "Pollare fyrkantig 60"
+          "alt": "Pollare fyrkantig 60 cm"
         }
       ],
       "wood": null
     },
     {
       "slug": "pollare-fyrkant-44",
-      "name": "Pollare fyrkantig 44 cm",
+      "name": "Pollare fyrkantig 44 cm, 40 × 40 cm",
       "sku": "17",
       "category": "Pollare och räcken",
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 44 cm i tvättad betong, 87 kg.",
+      "summary": "Tvättad betong, 87 kg.",
       "description": "Pollare fyrkantig 44 i tvättad betong, 87 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1113,25 +1069,25 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-44-1.jpg",
-          "alt": "Pollare fyrkantig 44"
+          "alt": "Pollare fyrkantig 44 cm, 40 × 40 cm"
         }
       ],
       "wood": null
     },
     {
       "slug": "pollare-fyrkant-44-2",
-      "name": "Pollare fyrkantig 44 cm",
+      "name": "Pollare fyrkantig 44 cm, 30 × 30 cm",
       "sku": "21",
       "category": "Pollare och räcken",
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 44 cm i tvättad betong, 69 kg.",
+      "summary": "Tvättad betong, 69 kg.",
       "description": "Pollare fyrkantig 44 i tvättad betong, 69 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1157,12 +1113,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-44-2-1.png",
-          "alt": "Pollare fyrkantig 44"
+          "alt": "Pollare fyrkantig 44 cm, 30 × 30 cm"
         }
       ],
       "wood": null
@@ -1175,7 +1131,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 47 cm i tvättad betong, 40 kg.",
+      "summary": "Tvättad betong, 40 kg.",
       "description": "Pollare fyrkantig 47 i tvättad betong, 40 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1197,12 +1153,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-47-1.jpg",
-          "alt": "Pollare fyrkantig 47"
+          "alt": "Pollare fyrkantig 47 cm"
         }
       ],
       "wood": null
@@ -1215,7 +1171,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 88 cm i tvättad betong, 120 kg.",
+      "summary": "Tvättad betong, 120 kg.",
       "description": "Pollare fyrkantig 88 i tvättad betong, 120 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1241,16 +1197,16 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-88-1.png",
-          "alt": "Pollare fyrkantig 88"
+          "alt": "Pollare fyrkantig 88 cm"
         },
         {
           "file": "pollare-fyrkant-88-2.jpg",
-          "alt": "Pollare fyrkantig 88"
+          "alt": "Pollare fyrkantig 88 cm"
         }
       ],
       "wood": null
@@ -1263,7 +1219,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 58 cm i tvättad betong, 66 kg.",
+      "summary": "Tvättad betong, 66 kg.",
       "description": "Pollare fyrkantig 58 i tvättad betong, 66 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1285,12 +1241,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-58-1.png",
-          "alt": "Pollare fyrkantig 58"
+          "alt": "Pollare fyrkantig 58 cm"
         }
       ],
       "wood": null
@@ -1303,7 +1259,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 80 cm i tvättad betong, 165 kg.",
+      "summary": "Tvättad betong, 165 kg.",
       "description": "Pollare fyrkantig 80 i tvättad betong, 165 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1333,16 +1289,16 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-80-1.png",
-          "alt": "Pollare fyrkantig 80"
+          "alt": "Pollare fyrkantig 80 cm"
         },
         {
           "file": "pollare-fyrkant-80-2.jpg",
-          "alt": "Pollare fyrkantig 80"
+          "alt": "Pollare fyrkantig 80 cm"
         }
       ],
       "wood": null
@@ -1355,7 +1311,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 70 cm i tvättad betong, 65 kg.",
+      "summary": "Tvättad betong, 65 kg.",
       "description": "Pollare fyrkantig 70 i tvättad betong, 65 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1381,12 +1337,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-70-1.png",
-          "alt": "Pollare fyrkantig 70"
+          "alt": "Pollare fyrkantig 70 cm"
         }
       ],
       "wood": null
@@ -1399,7 +1355,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare fyrkantig 83 cm i tvättad betong, 50 kg.",
+      "summary": "Tvättad betong, 50 kg.",
       "description": "Pollare fyrkantig 83 i tvättad betong, 50 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1421,12 +1377,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-fyrkant-83-1.png",
-          "alt": "Pollare fyrkantig 83"
+          "alt": "Pollare fyrkantig 83 cm"
         }
       ],
       "wood": null
@@ -1439,7 +1395,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare sexkantig 74 cm i tvättad betong, 70 kg.",
+      "summary": "Tvättad betong, 70 kg.",
       "description": "Pollare sexkantig 74 i tvättad betong, 70 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1469,7 +1425,7 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
@@ -1487,7 +1443,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare åttkantig 96 cm i tvättad betong, 234 kg.",
+      "summary": "Tvättad betong, 234 kg.",
       "description": "Pollare åttkantig 96 i tvättad betong, 234 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1517,7 +1473,7 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
@@ -1535,7 +1491,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare åttkantig 74 cm i tvättad betong, 75 kg.",
+      "summary": "Tvättad betong, 75 kg.",
       "description": "Pollare åttkantig 74 i tvättad betong, 75 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1565,12 +1521,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-attkant-74-1.png",
-          "alt": "Pollare åttkantig 74"
+          "alt": "Pollare åttkantig 74 cm"
         }
       ],
       "wood": null
@@ -1583,7 +1539,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare 60 cm i tvättad betong, 40 kg.",
+      "summary": "Tvättad betong, 40 kg.",
       "description": "Pollare 60 cm i tvättad betong, 40 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1605,12 +1561,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-betong-60-1.png",
-          "alt": "Pollare betong 60"
+          "alt": "Pollare 60 cm"
         }
       ],
       "wood": null
@@ -1623,7 +1579,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 82 cm, Ø 30 cm i tvättad betong, 89 kg.",
+      "summary": "Tvättad betong, 89 kg.",
       "description": "Pollare rund 82 i tvättad betong, 89 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1653,7 +1609,7 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
@@ -1671,7 +1627,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 60 cm, Ø 30 cm i tvättad betong, 93 kg.",
+      "summary": "Tvättad betong, 93 kg.",
       "description": "Pollare rund 60 i tvättad betong, 93 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1697,7 +1653,7 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
@@ -1715,7 +1671,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 50 cm, Ø 30 cm i tvättad betong, 78 kg.",
+      "summary": "Tvättad betong, 78 kg.",
       "description": "Pollare rund 50 i tvättad betong, 78 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1741,12 +1697,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-50-1.jpg",
-          "alt": "Pollare rund 50"
+          "alt": "Pollare rund 50 cm, Ø 30 cm"
         }
       ],
       "wood": null
@@ -1759,7 +1715,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund, två diametrar i tvättad betong.",
+      "summary": "Tvättad betong, 41 kg.",
       "description": "Pollare rund i tvättad betong, 41 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1807,29 +1763,29 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-26-1.png",
-          "alt": "Pollare rund"
+          "alt": "Pollare rund, två diametrar"
         },
         {
           "file": "pollare-rund-26-2.png",
-          "alt": "Pollare rund"
+          "alt": "Pollare rund, två diametrar"
         }
       ],
       "wood": null
     },
     {
       "slug": "pollare-rund-60-2",
-      "name": "Pollare rund 60 cm, Ø 30 cm",
+      "name": "Pollare rund 60 cm, Ø 30 / 20 cm",
       "sku": "36",
       "category": "Pollare och räcken",
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 60 cm, Ø 30 cm i tvättad betong, 65 kg.",
+      "summary": "Tvättad betong, 65 kg.",
       "description": "Pollare rund 60 i tvättad betong, 65 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1859,12 +1815,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-60-2-1.png",
-          "alt": "Pollare rund 60"
+          "alt": "Pollare rund 60 cm, Ø 30 / 20 cm"
         }
       ],
       "wood": null
@@ -1877,7 +1833,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 56 cm, Ø 28 cm i tvättad betong, 90 kg.",
+      "summary": "Tvättad betong, 90 kg.",
       "description": "Pollare rund 56 i tvättad betong, 90 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1903,16 +1859,16 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-56-1.png",
-          "alt": "Pollare rund 56"
+          "alt": "Pollare rund 56 cm, Ø 28 cm"
         },
         {
           "file": "pollare-rund-56-2.jpg",
-          "alt": "Pollare rund 56"
+          "alt": "Pollare rund 56 cm, Ø 28 cm"
         }
       ],
       "wood": null
@@ -1925,7 +1881,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 80 cm, Ø 40 cm i tvättad betong, 165 kg.",
+      "summary": "Tvättad betong, 165 kg.",
       "description": "Pollare rund 80 i tvättad betong, 165 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -1955,12 +1911,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-80-1.png",
-          "alt": "Pollare rund 80"
+          "alt": "Pollare rund 80 cm, Ø 40 cm"
         }
       ],
       "wood": null
@@ -1973,7 +1929,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 79 cm, Ø 63 cm i tvättad betong, 315 kg.",
+      "summary": "Tvättad betong, 315 kg.",
       "description": "Pollare rund 79 i tvättad betong, 315 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2003,12 +1959,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-79-1.png",
-          "alt": "Pollare rund 79"
+          "alt": "Pollare rund 79 cm, Ø 63 cm"
         }
       ],
       "wood": null
@@ -2021,7 +1977,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 61 cm, Ø 46 cm i tvättad betong, 175 kg.",
+      "summary": "Tvättad betong, 175 kg.",
       "description": "Pollare rund i tvättad betong.",
       "material": "Tvättad betong",
       "cement": null,
@@ -2047,16 +2003,16 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-0-1.jpg",
-          "alt": "Pollare rund"
+          "alt": "Pollare rund 61 cm, Ø 46 cm"
         },
         {
           "file": "pollare-rund-0-2.jpg",
-          "alt": "Pollare rund"
+          "alt": "Pollare rund 61 cm, Ø 46 cm"
         }
       ],
       "wood": null
@@ -2069,7 +2025,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 52 cm, Ø 46 cm i tvättad betong, 140 kg.",
+      "summary": "Tvättad betong, 140 kg.",
       "description": "Pollare rund 52 i tvättad betong, 140 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2095,16 +2051,16 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-52-1.png",
-          "alt": "Pollare rund 52"
+          "alt": "Pollare rund 52 cm, Ø 46 cm"
         },
         {
           "file": "pollare-rund-52-2.jpg",
-          "alt": "Pollare rund 52"
+          "alt": "Pollare rund 52 cm, Ø 46 cm"
         }
       ],
       "wood": null
@@ -2117,7 +2073,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 38 cm, Ø 62 cm i tvättad betong, 170 kg.",
+      "summary": "Tvättad betong, 170 kg.",
       "description": "Pollare rund 38 i tvättad betong, 170 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2143,12 +2099,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-38-1.jpg",
-          "alt": "Pollare rund 38"
+          "alt": "Pollare rund 38 cm, Ø 62 cm"
         }
       ],
       "wood": null
@@ -2161,7 +2117,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 35 cm, Ø 62 cm i tvättad betong, 155 kg.",
+      "summary": "Tvättad betong, 155 kg.",
       "description": "Pollare rund 35 i tvättad betong, 155 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2187,16 +2143,16 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-35-1.png",
-          "alt": "Pollare rund 35"
+          "alt": "Pollare rund 35 cm, Ø 62 cm"
         },
         {
           "file": "pollare-rund-35-2.jpg",
-          "alt": "Pollare rund 35"
+          "alt": "Pollare rund 35 cm, Ø 62 cm"
         }
       ],
       "wood": null
@@ -2209,7 +2165,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 82 cm, Ø 40 cm i tvättad betong, 160 kg.",
+      "summary": "Tvättad betong, 160 kg.",
       "description": "Pollare rund 82 i tvättad betong, 160 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2235,12 +2191,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-82-2-1.png",
-          "alt": "Pollare rund 82"
+          "alt": "Pollare rund 82 cm, Ø 40 cm"
         }
       ],
       "wood": null
@@ -2253,7 +2209,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 60 cm, Ø 37 cm i tvättad betong, 105 kg.",
+      "summary": "Tvättad betong, 105 kg.",
       "description": "Pollare rund 60 i tvättad betong, 105 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2279,16 +2235,16 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-60-3-1.png",
-          "alt": "Pollare rund 60"
+          "alt": "Pollare rund 60 cm, Ø 37 cm"
         },
         {
           "file": "pollare-rund-60-3-2.jpg",
-          "alt": "Pollare rund 60"
+          "alt": "Pollare rund 60 cm, Ø 37 cm"
         }
       ],
       "wood": null
@@ -2301,7 +2257,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 82 cm, Ø 44 cm i tvättad betong, 270 kg.",
+      "summary": "Tvättad betong, 270 kg.",
       "description": "Pollare rund 82 i tvättad betong, 270 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2327,12 +2283,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-82-3-1.png",
-          "alt": "Pollare rund 82"
+          "alt": "Pollare rund 82 cm, Ø 44 cm"
         }
       ],
       "wood": null
@@ -2345,7 +2301,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 50 cm, Ø 36 cm i tvättad betong, 90 kg.",
+      "summary": "Tvättad betong, 90 kg.",
       "description": "Pollare rund 50 i tvättad betong, 90 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2371,12 +2327,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-50-2-1.jpg",
-          "alt": "Pollare rund 50"
+          "alt": "Pollare rund 50 cm, Ø 36 cm"
         }
       ],
       "wood": null
@@ -2389,7 +2345,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 63 cm, Ø 36 cm i tvättad betong, 130 kg.",
+      "summary": "Tvättad betong, 130 kg.",
       "description": "Pollare rund 63 i tvättad betong, 130 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2415,12 +2371,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-63-1.jpg",
-          "alt": "Pollare rund 63"
+          "alt": "Pollare rund 63 cm, Ø 36 cm"
         }
       ],
       "wood": null
@@ -2433,7 +2389,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 60 cm, Ø 23 cm i tvättad betong, 50 kg.",
+      "summary": "Tvättad betong, 50 kg.",
       "description": "Pollare rund 60 i tvättad betong, 50 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2459,12 +2415,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-60-4-1.jpg",
-          "alt": "Pollare rund 60"
+          "alt": "Pollare rund 60 cm, Ø 23 cm"
         }
       ],
       "wood": null
@@ -2477,7 +2433,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 80 cm, Ø 36 cm i tvättad betong, 180 kg.",
+      "summary": "Tvättad betong, 180 kg.",
       "description": "Pollare rund 80 i tvättad betong, 180 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2503,20 +2459,20 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-80-2-1.png",
-          "alt": "Pollare rund 80"
+          "alt": "Pollare rund 80 cm, Ø 36 cm"
         },
         {
           "file": "pollare-rund-80-2-2.jpg",
-          "alt": "Pollare rund 80"
+          "alt": "Pollare rund 80 cm, Ø 36 cm"
         },
         {
           "file": "pollare-rund-80-2-3.jpg",
-          "alt": "Pollare rund 80"
+          "alt": "Pollare rund 80 cm, Ø 36 cm"
         }
       ],
       "wood": null
@@ -2529,7 +2485,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 107 cm, Ø 42 cm i tvättad betong, 165 kg.",
+      "summary": "Tvättad betong, 165 kg.",
       "description": "Pollare rund 107 i tvättad betong, 165 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2559,12 +2515,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-107-1.png",
-          "alt": "Pollare rund 107"
+          "alt": "Pollare rund 107 cm, Ø 42 cm"
         }
       ],
       "wood": null
@@ -2577,7 +2533,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 80 cm, Ø 35,5 cm i tvättad betong, 98 kg.",
+      "summary": "Tvättad betong, 98 kg.",
       "description": "Pollare rund 80 i tvättad betong, 98 kg. Tillverkas i betong. Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2607,29 +2563,29 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-80-3-1.png",
-          "alt": "Pollare rund 80"
+          "alt": "Pollare rund 80 cm, Ø 35,5 cm"
         },
         {
           "file": "pollare-rund-80-3-2.jpg",
-          "alt": "Pollare rund 80"
+          "alt": "Pollare rund 80 cm, Ø 35,5 cm"
         }
       ],
       "wood": null
     },
     {
       "slug": "pollare-rund-60-5",
-      "name": "Pollare rund 60 cm, Ø 37 cm",
+      "name": "Pollare rund 60 cm, Ø 37 / 27 cm",
       "sku": "227",
       "category": "Pollare och räcken",
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 60 cm, Ø 37 cm i tvättad betong, 90 kg.",
+      "summary": "Tvättad betong, 90 kg.",
       "description": "Pollare rund 60 i tvättad betong, 90 kg. Tillverkas i betong. Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2659,12 +2615,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-60-5-1.png",
-          "alt": "Pollare rund 60"
+          "alt": "Pollare rund 60 cm, Ø 37 / 27 cm"
         }
       ],
       "wood": null
@@ -2677,7 +2633,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund 50 cm, Ø 38 cm i tvättad betong, 45 kg.",
+      "summary": "Tvättad betong, 45 kg.",
       "description": "Pollare rund 50 i tvättad betong, 45 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2703,12 +2659,12 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-50-3-1.png",
-          "alt": "Pollare rund 50"
+          "alt": "Pollare rund 50 cm, Ø 38 cm"
         }
       ],
       "wood": null
@@ -2721,7 +2677,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund i arkitektonisk betong, tre höjder.",
+      "summary": "Arkitektonisk betong.",
       "description": "Pollare rund i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: reflextejp i gult, vitt eller rött. Tillval enligt sidan: målning med betongfärg i valfri kulör.",
       "material": "Arkitektonisk betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2789,16 +2745,16 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-rund-613-1.png",
-          "alt": "Pollare rund"
+          "alt": "Pollare rund, tre höjder"
         },
         {
           "file": "pollare-rund-613-2.jpg",
-          "alt": "Pollare rund"
+          "alt": "Pollare rund, tre höjder"
         }
       ],
       "wood": null
@@ -2811,7 +2767,7 @@
       "categorySlug": "pollare-racken",
       "subcategory": "Pollare",
       "subcategorySlug": "pollare",
-      "summary": "Pollare rund med fäste för skylt, 75 cm i tvättad betong, 240 kg.",
+      "summary": "Tvättad betong, 240 kg.",
       "description": "Pollare rund, med fäste för skylt 75 i tvättad betong, 240 kg. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2837,20 +2793,20 @@
       "related": [
         "pollare-fyrkant-119",
         "pollare-fyrkant-57",
-        "pollare-fyrkant-32"
+        "pollare-fyrkant-42"
       ],
       "images": [
         {
           "file": "pollare-skylt-1.png",
-          "alt": "Pollare rund, med fäste för skylt 75"
+          "alt": "Pollare rund med fäste för skylt, 75 cm"
         },
         {
           "file": "pollare-skylt-2.jpg",
-          "alt": "Pollare rund, med fäste för skylt 75"
+          "alt": "Pollare rund med fäste för skylt, 75 cm"
         },
         {
           "file": "pollare-skylt-3.jpg",
-          "alt": "Pollare rund, med fäste för skylt 75"
+          "alt": "Pollare rund med fäste för skylt, 75 cm"
         }
       ],
       "wood": null
@@ -2863,7 +2819,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg rund, Ø 48 cm, 62 cm, 40 l. Tvättad betong. 40 l. 140 kg.",
+      "summary": "Tvättad betong, 140 kg.",
       "description": "Papperskorg rund, Ø 48 cm, 62 cm, 40 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: målad betong. Kapacitet 40 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2913,7 +2869,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg rund, 62 cm, 40 l. Tvättad betong. 40 l. 130 kg.",
+      "summary": "Tvättad betong, 130 kg.",
       "description": "Papperskorg rund, 62 cm, 40 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 40 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2951,7 +2907,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg rund, Ø 59 cm, 70 cm, 45 l. Tvättad betong. 45 l. 210 kg.",
+      "summary": "Tvättad betong, 210 kg.",
       "description": "Papperskorg rund, Ø 59 cm, 70 cm, 45 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 45 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -2997,7 +2953,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg rund, Ø 62,5 cm, 80 cm, 75 l. Tvättad betong. 75 l. 300 kg.",
+      "summary": "Tvättad betong, 300 kg.",
       "description": "Papperskorg rund, Ø 62,5 cm, 80 cm, 75 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: tak, kulör enligt offert. Kapacitet 75 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3063,7 +3019,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg rund, Ø 62,5 cm, 81 cm, 60 l. Tvättad betong. 60 l. 320 kg.",
+      "summary": "Tvättad betong, 320 kg.",
       "description": "Papperskorg rund, Ø 62,5 cm, 81 cm, 60 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: tak, kulör enligt offert. Kapacitet 60 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3105,7 +3061,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg rund, Ø 64 cm, 80 cm, 70 l. Tvättad betong. 70 l. 300 kg.",
+      "summary": "Tvättad betong, 300 kg.",
       "description": "Papperskorg rund, Ø 64 cm, 80 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: tak, kulör enligt offert. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3151,7 +3107,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg rund, Ø 64 cm, 85 cm, 70 l. Tvättad betong. 70 l. 340 kg.",
+      "summary": "Tvättad betong, 340 kg.",
       "description": "Papperskorg rund, Ø 64 cm, 85 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3193,7 +3149,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg rund, Ø 60 cm, 60 cm, 70 l. Tvättad betong. 70 l. 170 kg.",
+      "summary": "Tvättad betong, 170 kg.",
       "description": "Papperskorg rund, Ø 60 cm, 60 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3235,7 +3191,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg rund, Ø 53 cm, 72 cm, 70 l. Tvättad betong. 70 l. 180 kg.",
+      "summary": "Tvättad betong, 180 kg.",
       "description": "Papperskorg rund, Ø 53 cm, 72 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: målad betong. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3285,7 +3241,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg fyrkantig, 50 cm, 50 l. Tvättad betong. 50 l. 140 kg.",
+      "summary": "Tvättad betong, 140 kg.",
       "description": "Papperskorg fyrkantig, 50 cm, 50 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 50 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3327,7 +3283,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg fyrkantig, 70 cm, 90 l. Tvättad betong. 90 l. 230 kg.",
+      "summary": "Tvättad betong, 230 kg.",
       "description": "Papperskorg fyrkantig, 70 cm, 90 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 90 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3377,7 +3333,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg, 70 cm, 70 l. Tvättad betong och trä. 70 l. 340 kg.",
+      "summary": "Tvättad betong och trä, 340 kg.",
       "description": "Papperskorg, 70 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong och trä",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3415,7 +3371,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg sexkantig, Ø 63 cm, 65 cm, 40 l. Stål. 40 l. 190 kg.",
+      "summary": "Stål, 190 kg.",
       "description": "Papperskorg sexkantig, Ø 63 cm, 65 cm, 40 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 40 l med innerkärl när det anges på sidan.",
       "material": "Stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3457,7 +3413,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg sexkantig, 60 cm, 40 l. Stål. 40 l. 170 kg.",
+      "summary": "Stål, 170 kg.",
       "description": "Papperskorg sexkantig, 60 cm, 40 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 40 l med innerkärl när det anges på sidan.",
       "material": "Stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3495,7 +3451,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg sexkantig, 70 cm, 50 l. Tvättad betong. 50 l. 110 kg.",
+      "summary": "Tvättad betong, 110 kg.",
       "description": "Papperskorg sexkantig, 70 cm, 50 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 50 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3537,7 +3493,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg sexkantig, 70 cm, 70 l. Tvättad betong. 70 l. 145 kg.",
+      "summary": "Tvättad betong, 145 kg.",
       "description": "Papperskorg sexkantig, 70 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3575,7 +3531,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg åttkantig, Ø 57 cm, 61 cm, 30 l. Tvättad betong. 30 l. 235 kg.",
+      "summary": "Tvättad betong, 235 kg.",
       "description": "Papperskorg åttkantig, Ø 57 cm, 61 cm, 30 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 30 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3621,7 +3577,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg åttkantig, 60 cm, 40 l. Tvättad betong. 40 l. 150 kg.",
+      "summary": "Tvättad betong, 150 kg.",
       "description": "Papperskorg åttkantig, 60 cm, 40 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 40 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3667,7 +3623,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg åttkantig, Ø 57 cm, 70 cm, 45 l. Tvättad betong. 45 l. 250 kg.",
+      "summary": "Tvättad betong, 250 kg.",
       "description": "Papperskorg åttkantig, Ø 57 cm, 70 cm, 45 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 45 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3713,7 +3669,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg åttkantig, Ø 62 cm, 80 cm, 70 l. Tvättad betong. 70 l. 280 kg.",
+      "summary": "Tvättad betong, 280 kg.",
       "description": "Papperskorg åttkantig, Ø 62 cm, 80 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3755,7 +3711,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg åttkantig, 65 cm, 70 l. Tvättad betong. 70 l. 200 kg.",
+      "summary": "Tvättad betong, 200 kg.",
       "description": "Papperskorg åttkantig, 65 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3793,7 +3749,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg åttkantig, 79 cm, 70 l. Tvättad betong. 70 l. 215 kg.",
+      "summary": "Tvättad betong, 215 kg.",
       "description": "Papperskorg åttkantig, 79 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3831,7 +3787,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg åttkantig, 90 cm, 120 l. Tvättad betong. 120 l. 280 kg.",
+      "summary": "Tvättad betong, 280 kg.",
       "description": "Papperskorg åttkantig, 90 cm, 120 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 120 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3869,7 +3825,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg trapetsformad, 75 cm, 70 l. Tvättad betong. 70 l. 255 kg.",
+      "summary": "Tvättad betong, 255 kg.",
       "description": "Papperskorg trapetsformad, 75 cm, 70 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: tak, kulör enligt offert. Kapacitet 70 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -3901,14 +3857,14 @@
     },
     {
       "slug": "papperskorg-med-tra-50l",
-      "name": "Papperskorg med trä, 72 cm, 50 l",
+      "name": "Papperskorg med trä, 50 l, 170 kg",
       "sku": "117",
       "category": "Avfall och återvinning",
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg med trä, 72 cm, 50 l. Tvättad betong och trä. 50 l. 170 kg.",
-      "description": "Papperskorg med trä, 72 cm, 50 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 50 l med innerkärl när det anges på sidan.",
+      "summary": "Tvättad betong med granityta och trä.",
+      "description": "Papperskorg med trä, 50 l, 170 kg. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 50 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong med granityta och trä",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -3928,7 +3884,7 @@
       "images": [
         {
           "file": "papperskorg-med-tra-50l-1.png",
-          "alt": "Papperskorg med trä, 72 cm, 50 l"
+          "alt": "Papperskorg med trä, 50 l, 170 kg"
         }
       ],
       "related": [
@@ -3939,14 +3895,14 @@
     },
     {
       "slug": "papperskorg-med-tra-50l-2",
-      "name": "Papperskorg med trä, 72 cm, 50 l",
+      "name": "Papperskorg med trä, 50 l, 180 kg",
       "sku": "118",
       "category": "Avfall och återvinning",
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg med trä, 72 cm, 50 l. Tvättad betong och trä. 50 l. 180 kg.",
-      "description": "Papperskorg med trä, 72 cm, 50 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 50 l med innerkärl när det anges på sidan.",
+      "summary": "Tvättad betong med granityta och trä.",
+      "description": "Papperskorg med trä, 50 l, 180 kg. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 50 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong med granityta och trä",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -3966,11 +3922,11 @@
       "images": [
         {
           "file": "papperskorg-med-tra-50l-2-1.png",
-          "alt": "Papperskorg med trä, 72 cm, 50 l"
+          "alt": "Papperskorg med trä, 50 l, 180 kg"
         },
         {
           "file": "papperskorg-med-tra-50l-2-2.jpg",
-          "alt": "Papperskorg med trä, 72 cm, 50 l"
+          "alt": "Papperskorg med trä, 50 l, 180 kg"
         }
       ],
       "related": [
@@ -3987,7 +3943,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg med trä, 70 cm, 45 l. Tvättad betong och trä. 45 l. 150 kg.",
+      "summary": "Tvättad betong med granityta och trä, 150 kg.",
       "description": "Papperskorg med trä, 70 cm, 45 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 45 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong med granityta och trä",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -4025,7 +3981,7 @@
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg med trä, 100 cm, 120 l. Tvättad betong och trä. 120 l. 240 kg.",
+      "summary": "Tvättad betong med granityta och trä, 240 kg.",
       "description": "Papperskorg med trä, 100 cm, 120 l. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Kapacitet 120 l med innerkärl när det anges på sidan.",
       "material": "Tvättad betong med granityta och trä",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -4065,14 +4021,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-60-46-53",
-      "name": "Planteringskärl rektangulärt 60 × 46 × 53 cm",
+      "name": "Kärl rektangulärt 60 × 46 × 53 cm",
       "sku": "69",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 60 × 46 × 53 cm. Tvättad betong. 170 kg.",
-      "description": "Planteringskärl rektangulärt 60 × 46 × 53 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 170 kg.",
+      "description": "Kärl rektangulärt 60 × 46 × 53 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4096,7 +4052,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-60-46-53-1.jpg",
-          "alt": "Planteringskärl rektangulärt 60 × 46 × 53 cm"
+          "alt": "Kärl rektangulärt 60 × 46 × 53 cm"
         }
       ],
       "related": [
@@ -4107,14 +4063,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-80-50-35",
-      "name": "Planteringskärl rektangulärt 80 × 50 × 35 cm",
+      "name": "Kärl rektangulärt 80 × 50 × 35 cm",
       "sku": "198",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 80 × 50 × 35 cm. Tvättad betong. 150 kg.",
-      "description": "Planteringskärl rektangulärt 80 × 50 × 35 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 150 kg.",
+      "description": "Kärl rektangulärt 80 × 50 × 35 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4134,7 +4090,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-80-50-35-1.png",
-          "alt": "Planteringskärl rektangulärt 80 × 50 × 35 cm"
+          "alt": "Kärl rektangulärt 80 × 50 × 35 cm"
         }
       ],
       "related": [
@@ -4145,14 +4101,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-90-40-50",
-      "name": "Planteringskärl rektangulärt 90 × 40 × 50 cm",
+      "name": "Kärl rektangulärt 90 × 40 × 50 cm",
       "sku": "9",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 90 × 40 × 50 cm. Tvättad betong. 210 kg.",
-      "description": "Planteringskärl rektangulärt 90 × 40 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 210 kg.",
+      "description": "Kärl rektangulärt 90 × 40 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4172,11 +4128,11 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-90-40-50-1.png",
-          "alt": "Planteringskärl rektangulärt 90 × 40 × 50 cm"
+          "alt": "Kärl rektangulärt 90 × 40 × 50 cm"
         },
         {
           "file": "planteringskarl-rektangel-90-40-50-2.jpg",
-          "alt": "Planteringskärl rektangulärt 90 × 40 × 50 cm"
+          "alt": "Kärl rektangulärt 90 × 40 × 50 cm"
         }
       ],
       "related": [
@@ -4187,14 +4143,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-100-40-40",
-      "name": "Planteringskärl rektangulärt 100 × 40 × 40 cm",
+      "name": "Kärl rektangulärt 100 × 40 × 40 cm",
       "sku": "231",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 100 × 40 × 40 cm. Tvättad betong. 170 kg.",
-      "description": "Planteringskärl rektangulärt 100 × 40 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 170 kg.",
+      "description": "Kärl rektangulärt 100 × 40 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4214,45 +4170,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-100-40-40-1.png",
-          "alt": "Planteringskärl rektangulärt 100 × 40 × 40 cm"
-        }
-      ],
-      "related": [
-        "planteringskarl-rektangel-60-46-53",
-        "planteringskarl-rektangel-80-50-35",
-        "planteringskarl-rektangel-90-40-50"
-      ]
-    },
-    {
-      "slug": "planteringskarl-rektangel-90-45-40",
-      "name": "Planteringskärl rektangulärt 90 × 45 × 40 cm",
-      "sku": "57",
-      "category": "Plantering",
-      "categorySlug": "plantering",
-      "subcategory": "Planteringskärl",
-      "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 90 × 45 × 40 cm. Tvättad betong. 210 kg.",
-      "description": "Planteringskärl rektangulärt 90 × 45 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Höjd",
-          "value": "40 cm"
-        }
-      ],
-      "weight": "210 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "planteringskarl-rektangel-90-45-40-1.jpg",
-          "alt": "Planteringskärl rektangulärt 90 × 45 × 40 cm"
+          "alt": "Kärl rektangulärt 100 × 40 × 40 cm"
         }
       ],
       "related": [
@@ -4263,14 +4181,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-100-50-50",
-      "name": "Planteringskärl rektangulärt 100 × 50 × 50 cm",
+      "name": "Kärl rektangulärt 100 × 50 × 50 cm",
       "sku": "217",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 100 × 50 × 50 cm. Tvättad betong. 280 kg.",
-      "description": "Planteringskärl rektangulärt 100 × 50 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 280 kg.",
+      "description": "Kärl rektangulärt 100 × 50 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4290,7 +4208,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-100-50-50-1.png",
-          "alt": "Planteringskärl rektangulärt 100 × 50 × 50 cm"
+          "alt": "Kärl rektangulärt 100 × 50 × 50 cm"
         }
       ],
       "related": [
@@ -4301,14 +4219,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-121-61-48",
-      "name": "Planteringskärl rektangulärt 121 × 61 × 48 cm",
+      "name": "Kärl rektangulärt 121 × 61 × 48 cm",
       "sku": "58",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 121 × 61 × 48 cm. Tvättad betong.",
-      "description": "Planteringskärl rektangulärt 121 × 61 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 315 kg.",
+      "description": "Kärl rektangulärt 121 × 61 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4359,7 +4277,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-121-61-48-1.png",
-          "alt": "Planteringskärl rektangulärt 121 × 61 × 48 cm"
+          "alt": "Kärl rektangulärt 121 × 61 × 48 cm"
         }
       ],
       "related": [
@@ -4370,14 +4288,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-124-39-39",
-      "name": "Planteringskärl rektangulärt 124 × 39 × 39 cm",
+      "name": "Kärl rektangulärt 124 × 39 × 39 cm",
       "sku": "24",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 124 × 39 × 39 cm. Tvättad betong.",
-      "description": "Planteringskärl rektangulärt 124 × 39 × 39 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 225 kg.",
+      "description": "Kärl rektangulärt 124 × 39 × 39 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4428,7 +4346,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-124-39-39-1.png",
-          "alt": "Planteringskärl rektangulärt 124 × 39 × 39 cm"
+          "alt": "Kärl rektangulärt 124 × 39 × 39 cm"
         }
       ],
       "related": [
@@ -4439,14 +4357,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-150-45-45",
-      "name": "Planteringskärl rektangulärt 150 × 45 × 45 cm",
+      "name": "Kärl rektangulärt 150 × 45 × 45 cm",
       "sku": "188",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 150 × 45 × 45 cm. Tvättad betong. 325 kg.",
-      "description": "Planteringskärl rektangulärt 150 × 45 × 45 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 325 kg.",
+      "description": "Kärl rektangulärt 150 × 45 × 45 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4466,7 +4384,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-150-45-45-1.png",
-          "alt": "Planteringskärl rektangulärt 150 × 45 × 45 cm"
+          "alt": "Kärl rektangulärt 150 × 45 × 45 cm"
         }
       ],
       "related": [
@@ -4477,14 +4395,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-150-50-50",
-      "name": "Planteringskärl rektangulärt 150 × 50 × 50 cm",
+      "name": "Kärl rektangulärt 150 × 50 × 50 cm",
       "sku": "216",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 150 × 50 × 50 cm. Tvättad betong. 380 kg.",
-      "description": "Planteringskärl rektangulärt 150 × 50 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 380 kg.",
+      "description": "Kärl rektangulärt 150 × 50 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4504,7 +4422,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-150-50-50-1.png",
-          "alt": "Planteringskärl rektangulärt 150 × 50 × 50 cm"
+          "alt": "Kärl rektangulärt 150 × 50 × 50 cm"
         }
       ],
       "related": [
@@ -4515,14 +4433,14 @@
     },
     {
       "slug": "planteringskarl-rektangel-250-60-40",
-      "name": "Planteringskärl rektangulärt 250 × 60 × 40 cm",
+      "name": "Kärl rektangulärt 250 × 60 × 40 cm",
       "sku": "211",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rektangulärt 250 × 60 × 40 cm. Tvättad betong. 630 kg.",
-      "description": "Planteringskärl rektangulärt 250 × 60 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 630 kg.",
+      "description": "Kärl rektangulärt 250 × 60 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4542,7 +4460,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-250-60-40-1.png",
-          "alt": "Planteringskärl rektangulärt 250 × 60 × 40 cm"
+          "alt": "Kärl rektangulärt 250 × 60 × 40 cm"
         }
       ],
       "related": [
@@ -4553,14 +4471,14 @@
     },
     {
       "slug": "planteringskarl-fyrkant-50-50-35",
-      "name": "Planteringskärl fyrkantigt 50 × 50 × 35 cm",
+      "name": "Kärl fyrkantigt 50 × 50 × 35 cm",
       "sku": "212",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl fyrkantigt 50 × 50 × 35 cm. Tvättad betong. 110 kg.",
-      "description": "Planteringskärl fyrkantigt 50 × 50 × 35 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 110 kg.",
+      "description": "Kärl fyrkantigt 50 × 50 × 35 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4584,7 +4502,7 @@
       "images": [
         {
           "file": "planteringskarl-fyrkant-50-50-35-1.png",
-          "alt": "Planteringskärl fyrkantigt 50 × 50 × 35 cm"
+          "alt": "Kärl fyrkantigt 50 × 50 × 35 cm"
         }
       ],
       "related": [
@@ -4595,14 +4513,14 @@
     },
     {
       "slug": "planteringskarl-fyrkant-50-50-50",
-      "name": "Planteringskärl fyrkantigt 50 × 50 × 50 cm",
+      "name": "Kärl fyrkantigt 50 × 50 × 50 cm",
       "sku": "166",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl fyrkantigt 50 × 50 × 50 cm. Tvättad betong. 130 kg.",
-      "description": "Planteringskärl fyrkantigt 50 × 50 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 130 kg.",
+      "description": "Kärl fyrkantigt 50 × 50 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4626,11 +4544,11 @@
       "images": [
         {
           "file": "planteringskarl-fyrkant-50-50-50-1.png",
-          "alt": "Planteringskärl fyrkantigt 50 × 50 × 50 cm"
+          "alt": "Kärl fyrkantigt 50 × 50 × 50 cm"
         },
         {
           "file": "planteringskarl-fyrkant-50-50-50-2.jpg",
-          "alt": "Planteringskärl fyrkantigt 50 × 50 × 50 cm"
+          "alt": "Kärl fyrkantigt 50 × 50 × 50 cm"
         }
       ],
       "related": [
@@ -4641,14 +4559,14 @@
     },
     {
       "slug": "planteringskarl-fyrkant-60-60-50",
-      "name": "Planteringskärl fyrkantigt 60 × 60 × 50 cm",
+      "name": "Kärl fyrkantigt 60 × 60 × 50 cm",
       "sku": "10",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl fyrkantigt 60 × 60 × 50 cm. Tvättad betong.",
-      "description": "Planteringskärl fyrkantigt 60 × 60 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 205 kg.",
+      "description": "Kärl fyrkantigt 60 × 60 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4711,53 +4629,11 @@
       "images": [
         {
           "file": "planteringskarl-fyrkant-60-60-50-1.png",
-          "alt": "Planteringskärl fyrkantigt 60 × 60 × 50 cm"
+          "alt": "Kärl fyrkantigt 60 × 60 × 50 cm"
         },
         {
           "file": "planteringskarl-fyrkant-60-60-50-2.jpg",
-          "alt": "Planteringskärl fyrkantigt 60 × 60 × 50 cm"
-        }
-      ],
-      "related": [
-        "planteringskarl-rektangel-60-46-53",
-        "planteringskarl-rektangel-80-50-35",
-        "planteringskarl-rektangel-90-40-50"
-      ]
-    },
-    {
-      "slug": "planteringskarl-fyrkant-60-60-54",
-      "name": "Planteringskärl fyrkantigt 60 × 60 × 54 cm",
-      "sku": "68",
-      "category": "Plantering",
-      "categorySlug": "plantering",
-      "subcategory": "Planteringskärl",
-      "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl fyrkantigt 60 × 60 × 54 cm. Tvättad betong. 220 kg.",
-      "description": "Planteringskärl fyrkantigt 60 × 60 × 54 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Höjd",
-          "value": "54 cm"
-        },
-        {
-          "label": "Bas",
-          "value": "60 × 60 cm"
-        }
-      ],
-      "weight": "220 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "planteringskarl-fyrkant-60-60-54-1.jpg",
-          "alt": "Planteringskärl fyrkantigt 60 × 60 × 54 cm"
+          "alt": "Kärl fyrkantigt 60 × 60 × 50 cm"
         }
       ],
       "related": [
@@ -4768,14 +4644,14 @@
     },
     {
       "slug": "planteringskarl-fyrkant-75-75-50",
-      "name": "Planteringskärl fyrkantigt 75 × 75 × 50 cm",
+      "name": "Kärl fyrkantigt 75 × 75 × 50 cm",
       "sku": "147",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl fyrkantigt 75 × 75 × 50 cm. Tvättad betong. 280 kg.",
-      "description": "Planteringskärl fyrkantigt 75 × 75 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 280 kg.",
+      "description": "Kärl fyrkantigt 75 × 75 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4799,53 +4675,11 @@
       "images": [
         {
           "file": "planteringskarl-fyrkant-75-75-50-1.png",
-          "alt": "Planteringskärl fyrkantigt 75 × 75 × 50 cm"
+          "alt": "Kärl fyrkantigt 75 × 75 × 50 cm"
         },
         {
           "file": "planteringskarl-fyrkant-75-75-50-2.jpg",
-          "alt": "Planteringskärl fyrkantigt 75 × 75 × 50 cm"
-        }
-      ],
-      "related": [
-        "planteringskarl-rektangel-60-46-53",
-        "planteringskarl-rektangel-80-50-35",
-        "planteringskarl-rektangel-90-40-50"
-      ]
-    },
-    {
-      "slug": "planteringskarl-fyrkant-90-90-70",
-      "name": "Planteringskärl fyrkantigt 90 × 90 × 70 cm",
-      "sku": "56",
-      "category": "Plantering",
-      "categorySlug": "plantering",
-      "subcategory": "Planteringskärl",
-      "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl fyrkantigt 90 × 90 × 70 cm. Tvättad betong. 500 kg.",
-      "description": "Planteringskärl fyrkantigt 90 × 90 × 70 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Höjd",
-          "value": "70 cm"
-        },
-        {
-          "label": "Bas",
-          "value": "90 × 90 cm"
-        }
-      ],
-      "weight": "500 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "planteringskarl-fyrkant-90-90-70-1.jpg",
-          "alt": "Planteringskärl fyrkantigt 90 × 90 × 70 cm"
+          "alt": "Kärl fyrkantigt 75 × 75 × 50 cm"
         }
       ],
       "related": [
@@ -4856,14 +4690,14 @@
     },
     {
       "slug": "planteringskarl-fyrkant-100-100-40",
-      "name": "Planteringskärl fyrkantigt 100 × 100 × 40 cm",
+      "name": "Kärl fyrkantigt 100 × 100 × 40 cm",
       "sku": "168",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl fyrkantigt 100 × 100 × 40 cm. Tvättad betong. 332 kg.",
-      "description": "Planteringskärl fyrkantigt 100 × 100 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 332 kg.",
+      "description": "Kärl fyrkantigt 100 × 100 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4887,11 +4721,11 @@
       "images": [
         {
           "file": "planteringskarl-fyrkant-100-100-40-1.png",
-          "alt": "Planteringskärl fyrkantigt 100 × 100 × 40 cm"
+          "alt": "Kärl fyrkantigt 100 × 100 × 40 cm"
         },
         {
           "file": "planteringskarl-fyrkant-100-100-40-2.jpg",
-          "alt": "Planteringskärl fyrkantigt 100 × 100 × 40 cm"
+          "alt": "Kärl fyrkantigt 100 × 100 × 40 cm"
         }
       ],
       "related": [
@@ -4902,14 +4736,14 @@
     },
     {
       "slug": "planteringskarl-fyrkant-150-150-100",
-      "name": "Planteringskärl fyrkantigt 150 × 150 × 100 cm",
+      "name": "Kärl fyrkantigt 150 × 150 × 100 cm",
       "sku": "176",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl fyrkantigt 150 × 150 × 100 cm. Tvättad betong. 1350 kg.",
-      "description": "Planteringskärl fyrkantigt 150 × 150 × 100 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 1350 kg.",
+      "description": "Kärl fyrkantigt 150 × 150 × 100 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4933,15 +4767,15 @@
       "images": [
         {
           "file": "planteringskarl-fyrkant-150-150-100-1.png",
-          "alt": "Planteringskärl fyrkantigt 150 × 150 × 100 cm"
+          "alt": "Kärl fyrkantigt 150 × 150 × 100 cm"
         },
         {
           "file": "planteringskarl-fyrkant-150-150-100-2.jpg",
-          "alt": "Planteringskärl fyrkantigt 150 × 150 × 100 cm"
+          "alt": "Kärl fyrkantigt 150 × 150 × 100 cm"
         },
         {
           "file": "planteringskarl-fyrkant-150-150-100-3.jpg",
-          "alt": "Planteringskärl fyrkantigt 150 × 150 × 100 cm"
+          "alt": "Kärl fyrkantigt 150 × 150 × 100 cm"
         }
       ],
       "related": [
@@ -4952,14 +4786,14 @@
     },
     {
       "slug": "planteringskarl-sexkant-80-50",
-      "name": "Planteringskärl sexkantigt 80 × 50 cm",
+      "name": "Kärl sexkantigt 80 × 50 cm",
       "sku": "59",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl sexkantigt 80 × 50 cm. Tvättad betong. 240 kg.",
-      "description": "Planteringskärl sexkantigt 80 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 240 kg.",
+      "description": "Kärl sexkantigt 80 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -4979,11 +4813,11 @@
       "images": [
         {
           "file": "planteringskarl-sexkant-80-50-1.png",
-          "alt": "Planteringskärl sexkantigt 80 × 50 cm"
+          "alt": "Kärl sexkantigt 80 × 50 cm"
         },
         {
           "file": "planteringskarl-sexkant-80-50-2.jpg",
-          "alt": "Planteringskärl sexkantigt 80 × 50 cm"
+          "alt": "Kärl sexkantigt 80 × 50 cm"
         }
       ],
       "related": [
@@ -4994,14 +4828,14 @@
     },
     {
       "slug": "planteringskarl-sexkant-80-40",
-      "name": "Planteringskärl sexkantigt 80 × 40 cm",
+      "name": "Kärl sexkantigt 80 × 40 cm",
       "sku": "134",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl sexkantigt 80 × 40 cm. Tvättad betong. 105 kg.",
-      "description": "Planteringskärl sexkantigt 80 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 105 kg.",
+      "description": "Kärl sexkantigt 80 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5025,7 +4859,7 @@
       "images": [
         {
           "file": "planteringskarl-sexkant-80-40-1.png",
-          "alt": "Planteringskärl sexkantigt 80 × 40 cm"
+          "alt": "Kärl sexkantigt 80 × 40 cm"
         }
       ],
       "related": [
@@ -5036,14 +4870,14 @@
     },
     {
       "slug": "planteringskarl-oval-100-50-50",
-      "name": "Planteringskärl ovalt 100 × 50 × 50 cm",
+      "name": "Kärl ovalt 100 × 50 × 50 cm",
       "sku": "177",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl ovalt 100 × 50 × 50 cm. Tvättad betong. 250 kg.",
-      "description": "Planteringskärl ovalt 100 × 50 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 250 kg.",
+      "description": "Kärl ovalt 100 × 50 × 50 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5063,11 +4897,11 @@
       "images": [
         {
           "file": "planteringskarl-oval-100-50-50-1.png",
-          "alt": "Planteringskärl ovalt 100 × 50 × 50 cm"
+          "alt": "Kärl ovalt 100 × 50 × 50 cm"
         },
         {
           "file": "planteringskarl-oval-100-50-50-2.jpg",
-          "alt": "Planteringskärl ovalt 100 × 50 × 50 cm"
+          "alt": "Kärl ovalt 100 × 50 × 50 cm"
         }
       ],
       "related": [
@@ -5078,14 +4912,14 @@
     },
     {
       "slug": "planteringskarl-oval-120-40-40",
-      "name": "Planteringskärl ovalt 120 × 40 × 40 cm",
+      "name": "Kärl ovalt 120 × 40 × 40 cm",
       "sku": "141",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl ovalt 120 × 40 × 40 cm. Tvättad betong. 200 kg.",
-      "description": "Planteringskärl ovalt 120 × 40 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 200 kg.",
+      "description": "Kärl ovalt 120 × 40 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5105,23 +4939,23 @@
       "images": [
         {
           "file": "planteringskarl-oval-120-40-40-1.png",
-          "alt": "Planteringskärl ovalt 120 × 40 × 40 cm"
+          "alt": "Kärl ovalt 120 × 40 × 40 cm"
         },
         {
           "file": "planteringskarl-oval-120-40-40-2.png",
-          "alt": "Planteringskärl ovalt 120 × 40 × 40 cm"
+          "alt": "Kärl ovalt 120 × 40 × 40 cm"
         },
         {
           "file": "planteringskarl-oval-120-40-40-3.jpg",
-          "alt": "Planteringskärl ovalt 120 × 40 × 40 cm"
+          "alt": "Kärl ovalt 120 × 40 × 40 cm"
         },
         {
           "file": "planteringskarl-oval-120-40-40-4.jpg",
-          "alt": "Planteringskärl ovalt 120 × 40 × 40 cm"
+          "alt": "Kärl ovalt 120 × 40 × 40 cm"
         },
         {
           "file": "planteringskarl-oval-120-40-40-5.jpg",
-          "alt": "Planteringskärl ovalt 120 × 40 × 40 cm"
+          "alt": "Kärl ovalt 120 × 40 × 40 cm"
         }
       ],
       "related": [
@@ -5132,14 +4966,14 @@
     },
     {
       "slug": "planteringskarl-oval-120-62-48",
-      "name": "Planteringskärl ovalt 120 × 62 × 48 cm",
+      "name": "Kärl ovalt 120 × 62 × 48 cm",
       "sku": "136",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl ovalt 120 × 62 × 48 cm. Tvättad betong. 355 kg.",
-      "description": "Planteringskärl ovalt 120 × 62 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 355 kg.",
+      "description": "Kärl ovalt 120 × 62 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5159,7 +4993,7 @@
       "images": [
         {
           "file": "planteringskarl-oval-120-62-48-1.png",
-          "alt": "Planteringskärl ovalt 120 × 62 × 48 cm"
+          "alt": "Kärl ovalt 120 × 62 × 48 cm"
         }
       ],
       "related": [
@@ -5170,14 +5004,14 @@
     },
     {
       "slug": "planteringskarl-oval-158-74-78",
-      "name": "Planteringskärl ovalt 158 × 74 × 78 cm",
+      "name": "Kärl ovalt 158 × 74 × 78 cm",
       "sku": "90",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl ovalt 158 × 74 × 78 cm. Tvättad betong. 515 kg.",
-      "description": "Planteringskärl ovalt 158 × 74 × 78 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 515 kg.",
+      "description": "Kärl ovalt 158 × 74 × 78 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5197,11 +5031,11 @@
       "images": [
         {
           "file": "planteringskarl-oval-158-74-78-1.png",
-          "alt": "Planteringskärl ovalt 158 × 74 × 78 cm"
+          "alt": "Kärl ovalt 158 × 74 × 78 cm"
         },
         {
           "file": "planteringskarl-oval-158-74-78-2.jpg",
-          "alt": "Planteringskärl ovalt 158 × 74 × 78 cm"
+          "alt": "Kärl ovalt 158 × 74 × 78 cm"
         }
       ],
       "related": [
@@ -5212,14 +5046,14 @@
     },
     {
       "slug": "planteringskarl-oval-158-108-48",
-      "name": "Planteringskärl ovalt 158 × 108 × 48 cm",
+      "name": "Kärl ovalt 158 × 108 × 48 cm",
       "sku": "91",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl ovalt 158 × 108 × 48 cm. Tvättad betong. 700 kg.",
-      "description": "Planteringskärl ovalt 158 × 108 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 700 kg.",
+      "description": "Kärl ovalt 158 × 108 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5239,11 +5073,11 @@
       "images": [
         {
           "file": "planteringskarl-oval-158-108-48-1.png",
-          "alt": "Planteringskärl ovalt 158 × 108 × 48 cm"
+          "alt": "Kärl ovalt 158 × 108 × 48 cm"
         },
         {
           "file": "planteringskarl-oval-158-108-48-2.jpg",
-          "alt": "Planteringskärl ovalt 158 × 108 × 48 cm"
+          "alt": "Kärl ovalt 158 × 108 × 48 cm"
         }
       ],
       "related": [
@@ -5254,14 +5088,14 @@
     },
     {
       "slug": "planteringskarl-rund-50-40",
-      "name": "Planteringskärl rund 50 × 40 cm",
+      "name": "Kärl rund 50 × 40 cm",
       "sku": "223",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rund 50 × 40 cm. Tvättad betong. 80 kg.",
-      "description": "Planteringskärl rund 50 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 80 kg.",
+      "description": "Kärl rund 50 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5285,11 +5119,11 @@
       "images": [
         {
           "file": "planteringskarl-rund-50-40-1.png",
-          "alt": "Planteringskärl rund 50 × 40 cm"
+          "alt": "Kärl rund 50 × 40 cm"
         },
         {
           "file": "planteringskarl-rund-50-40-2.jpg",
-          "alt": "Planteringskärl rund 50 × 40 cm"
+          "alt": "Kärl rund 50 × 40 cm"
         }
       ],
       "related": [
@@ -5300,14 +5134,14 @@
     },
     {
       "slug": "planteringskarl-rund-60-60",
-      "name": "Planteringskärl rund 60 × 60 cm",
+      "name": "Kärl rund 60 × 60 cm",
       "sku": "178",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rund 60 × 60 cm. Tvättad betong. 170 kg.",
-      "description": "Planteringskärl rund 60 × 60 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 170 kg.",
+      "description": "Kärl rund 60 × 60 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5331,7 +5165,7 @@
       "images": [
         {
           "file": "planteringskarl-rund-60-60-1.png",
-          "alt": "Planteringskärl rund 60 × 60 cm"
+          "alt": "Kärl rund 60 × 60 cm"
         }
       ],
       "related": [
@@ -5342,14 +5176,14 @@
     },
     {
       "slug": "planteringskarl-rund-74-48",
-      "name": "Planteringskärl rund 74 × 48 cm",
+      "name": "Kärl rund 74 × 48 cm",
       "sku": "89",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rund 74 × 48 cm. Tvättad betong. 250 kg.",
-      "description": "Planteringskärl rund 74 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 250 kg.",
+      "description": "Kärl rund 74 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5369,11 +5203,11 @@
       "images": [
         {
           "file": "planteringskarl-rund-74-48-1.png",
-          "alt": "Planteringskärl rund 74 × 48 cm"
+          "alt": "Kärl rund 74 × 48 cm"
         },
         {
           "file": "planteringskarl-rund-74-48-2.jpg",
-          "alt": "Planteringskärl rund 74 × 48 cm"
+          "alt": "Kärl rund 74 × 48 cm"
         }
       ],
       "related": [
@@ -5384,14 +5218,14 @@
     },
     {
       "slug": "planteringskarl-rund-108-48",
-      "name": "Planteringskärl rund 108 × 48 cm",
+      "name": "Kärl rund 108 × 48 cm",
       "sku": "87",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rund 108 × 48 cm. Tvättad betong. 425 kg.",
-      "description": "Planteringskärl rund 108 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 425 kg.",
+      "description": "Kärl rund 108 × 48 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5411,11 +5245,11 @@
       "images": [
         {
           "file": "planteringskarl-rund-108-48-1.png",
-          "alt": "Planteringskärl rund 108 × 48 cm"
+          "alt": "Kärl rund 108 × 48 cm"
         },
         {
           "file": "planteringskarl-rund-108-48-2.jpg",
-          "alt": "Planteringskärl rund 108 × 48 cm"
+          "alt": "Kärl rund 108 × 48 cm"
         }
       ],
       "related": [
@@ -5426,14 +5260,14 @@
     },
     {
       "slug": "planteringskarl-rund-113-70",
-      "name": "Planteringskärl rund 113 × 70 cm",
+      "name": "Kärl rund 113 × 70 cm",
       "sku": "88",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rund 113 × 70 cm. Tvättad betong. 700 kg.",
-      "description": "Planteringskärl rund 113 × 70 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 700 kg.",
+      "description": "Kärl rund 113 × 70 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5453,49 +5287,11 @@
       "images": [
         {
           "file": "planteringskarl-rund-113-70-1.png",
-          "alt": "Planteringskärl rund 113 × 70 cm"
+          "alt": "Kärl rund 113 × 70 cm"
         },
         {
           "file": "planteringskarl-rund-113-70-2.jpg",
-          "alt": "Planteringskärl rund 113 × 70 cm"
-        }
-      ],
-      "related": [
-        "planteringskarl-rektangel-60-46-53",
-        "planteringskarl-rektangel-80-50-35",
-        "planteringskarl-rektangel-90-40-50"
-      ]
-    },
-    {
-      "slug": "planteringskarl-rund-75-35",
-      "name": "Planteringskärl rund 75 × 35 cm",
-      "sku": "66",
-      "category": "Plantering",
-      "categorySlug": "plantering",
-      "subcategory": "Planteringskärl",
-      "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rund 75 × 35 cm. Tvättad betong. 180 kg.",
-      "description": "Planteringskärl rund 75 × 35 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Diameter",
-          "value": "75 cm"
-        }
-      ],
-      "weight": "180 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "planteringskarl-rund-75-35-1.jpg",
-          "alt": "Planteringskärl rund 75 × 35 cm"
+          "alt": "Kärl rund 113 × 70 cm"
         }
       ],
       "related": [
@@ -5506,14 +5302,14 @@
     },
     {
       "slug": "planteringskarl-rund-120-80",
-      "name": "Planteringskärl rund 120 × 80 cm",
+      "name": "Kärl rund 120 × 80 cm",
       "sku": "133",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl rund 120 × 80 cm. Tvättad betong. 800 kg.",
-      "description": "Planteringskärl rund 120 × 80 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 800 kg.",
+      "description": "Kärl rund 120 × 80 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5533,11 +5329,11 @@
       "images": [
         {
           "file": "planteringskarl-rund-120-80-1.png",
-          "alt": "Planteringskärl rund 120 × 80 cm"
+          "alt": "Kärl rund 120 × 80 cm"
         },
         {
           "file": "planteringskarl-rund-120-80-2.jpg",
-          "alt": "Planteringskärl rund 120 × 80 cm"
+          "alt": "Kärl rund 120 × 80 cm"
         }
       ],
       "related": [
@@ -5548,14 +5344,14 @@
     },
     {
       "slug": "planteringskarl-75-60",
-      "name": "Planteringskärl 75 × 60 cm",
+      "name": "Kärl 75 × 60 cm",
       "sku": "67",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl 75 × 60 cm. Tvättad betong. 240 kg.",
-      "description": "Planteringskärl 75 × 60 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 240 kg.",
+      "description": "Kärl 75 × 60 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5575,205 +5371,11 @@
       "images": [
         {
           "file": "planteringskarl-75-60-1.png",
-          "alt": "Planteringskärl 75 × 60 cm"
+          "alt": "Kärl 75 × 60 cm"
         },
         {
           "file": "planteringskarl-75-60-2.jpg",
-          "alt": "Planteringskärl 75 × 60 cm"
-        }
-      ],
-      "related": [
-        "planteringskarl-rektangel-60-46-53",
-        "planteringskarl-rektangel-80-50-35",
-        "planteringskarl-rektangel-90-40-50"
-      ]
-    },
-    {
-      "slug": "planteringskarl-60-54",
-      "name": "Planteringskärl 60 × 54 cm",
-      "sku": "70",
-      "category": "Plantering",
-      "categorySlug": "plantering",
-      "subcategory": "Planteringskärl",
-      "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl 60 × 54 cm. Tvättad betong. 240 kg.",
-      "description": "Planteringskärl 60 × 54 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Höjd",
-          "value": "54 cm"
-        }
-      ],
-      "weight": "240 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "planteringskarl-60-54-1.jpg",
-          "alt": "Planteringskärl 60 × 54 cm"
-        }
-      ],
-      "related": [
-        "planteringskarl-rektangel-60-46-53",
-        "planteringskarl-rektangel-80-50-35",
-        "planteringskarl-rektangel-90-40-50"
-      ]
-    },
-    {
-      "slug": "planteringskarl-60-54-2",
-      "name": "Planteringskärl 60 × 54 × 2 cm",
-      "sku": "71",
-      "category": "Plantering",
-      "categorySlug": "plantering",
-      "subcategory": "Planteringskärl",
-      "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl 60 × 54 × 2 cm. Tvättad betong. 180 kg.",
-      "description": "Planteringskärl 60 × 54 × 2 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Höjd",
-          "value": "54 cm"
-        }
-      ],
-      "weight": "180 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "planteringskarl-60-54-2-1.jpg",
-          "alt": "Planteringskärl 60 × 54 × 2 cm"
-        }
-      ],
-      "related": [
-        "planteringskarl-rektangel-60-46-53",
-        "planteringskarl-rektangel-80-50-35",
-        "planteringskarl-rektangel-90-40-50"
-      ]
-    },
-    {
-      "slug": "planteringskarl-60-54-3",
-      "name": "Planteringskärl 60 × 54 × 3 cm",
-      "sku": "72",
-      "category": "Plantering",
-      "categorySlug": "plantering",
-      "subcategory": "Planteringskärl",
-      "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl 60 × 54 × 3 cm. Tvättad betong. 180 kg.",
-      "description": "Planteringskärl 60 × 54 × 3 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Höjd",
-          "value": "54 cm"
-        }
-      ],
-      "weight": "180 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "planteringskarl-60-54-3-1.jpg",
-          "alt": "Planteringskärl 60 × 54 × 3 cm"
-        }
-      ],
-      "related": [
-        "planteringskarl-rektangel-60-46-53",
-        "planteringskarl-rektangel-80-50-35",
-        "planteringskarl-rektangel-90-40-50"
-      ]
-    },
-    {
-      "slug": "planteringskarl-60-54-4",
-      "name": "Planteringskärl 60 × 54 × 4 cm",
-      "sku": "73",
-      "category": "Plantering",
-      "categorySlug": "plantering",
-      "subcategory": "Planteringskärl",
-      "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl 60 × 54 × 4 cm. Tvättad betong. 180 kg.",
-      "description": "Planteringskärl 60 × 54 × 4 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Höjd",
-          "value": "54 cm"
-        }
-      ],
-      "weight": "180 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "planteringskarl-60-54-4-1.png",
-          "alt": "Planteringskärl 60 × 54 × 4 cm"
-        },
-        {
-          "file": "planteringskarl-60-54-4-2.png",
-          "alt": "Planteringskärl 60 × 54 × 4 cm"
-        }
-      ],
-      "related": [
-        "planteringskarl-rektangel-60-46-53",
-        "planteringskarl-rektangel-80-50-35",
-        "planteringskarl-rektangel-90-40-50"
-      ]
-    },
-    {
-      "slug": "planteringskarl-149-40",
-      "name": "Planteringskärl 149 × 40 cm",
-      "sku": "120",
-      "category": "Plantering",
-      "categorySlug": "plantering",
-      "subcategory": "Planteringskärl",
-      "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl 149 × 40 cm. Tvättad betong. 250 kg.",
-      "description": "Planteringskärl 149 × 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Höjd",
-          "value": "40 cm"
-        }
-      ],
-      "weight": "250 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "planteringskarl-149-40-1.jpg",
-          "alt": "Planteringskärl 149 × 40 cm"
+          "alt": "Kärl 75 × 60 cm"
         }
       ],
       "related": [
@@ -5784,14 +5386,14 @@
     },
     {
       "slug": "planteringskarl",
-      "name": "Planteringskärl, 40 cm",
+      "name": "Kärl, 40 cm",
       "sku": "183",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl, 40 cm. Tvättad betong. 230 kg.",
-      "description": "Planteringskärl, 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong, 230 kg.",
+      "description": "Kärl, 40 cm. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5811,11 +5413,11 @@
       "images": [
         {
           "file": "planteringskarl-1.png",
-          "alt": "Planteringskärl, 40 cm"
+          "alt": "Kärl, 40 cm"
         },
         {
           "file": "planteringskarl-2.jpg",
-          "alt": "Planteringskärl, 40 cm"
+          "alt": "Kärl, 40 cm"
         }
       ],
       "related": [
@@ -5832,7 +5434,7 @@
       "categorySlug": "cykelparkering",
       "subcategory": "Cykelställ",
       "subcategorySlug": "cykelstall",
-      "summary": "Cykelställ i betong. Tvättad betong.",
+      "summary": "Tvättad betong.",
       "description": "Cykelställ i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -5862,14 +5464,14 @@
     },
     {
       "slug": "cykelstall-l",
-      "name": "Cykelställ i betong, L-form",
+      "name": "Cykelställ L-form",
       "sku": "148",
       "category": "Cykelparkering",
       "categorySlug": "cykelparkering",
       "subcategory": "Cykelställ",
       "subcategorySlug": "cykelstall",
-      "summary": "Cykelställ i betong, L-form. Tvättad betong.",
-      "description": "Cykelställ i betong, L-form. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong.",
+      "description": "Cykelställ L-form. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -5897,7 +5499,7 @@
       "images": [
         {
           "file": "cykelstall-l-1.jpg",
-          "alt": "Cykelställ i betong, L-form"
+          "alt": "Cykelställ L-form"
         }
       ],
       "related": [
@@ -5907,13 +5509,13 @@
     },
     {
       "slug": "cykelstall-betong",
-      "name": "Cykelställ i tvättad betong, 5 platser",
+      "name": "Cykelställ, 5 platser",
       "sku": "171",
       "category": "Cykelparkering",
       "categorySlug": "cykelparkering",
       "subcategory": "Cykelställ",
       "subcategorySlug": "cykelstall",
-      "summary": "Cykelställ i tvättad betong, 5 platser. Fristående, 150 cm.",
+      "summary": "Tvättad betong, 300 kg.",
       "description": "Cykelställ i tvättad betong med fem platser, fristående. Tillverkas i betong. Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong",
       "cement": "Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -5942,11 +5544,11 @@
       "images": [
         {
           "file": "cykelstall-betong-1.png",
-          "alt": "Cykelställ i tvättad betong, 5 platser"
+          "alt": "Cykelställ, 5 platser"
         },
         {
           "file": "cykelstall-betong-2.jpg",
-          "alt": "Cykelställ i tvättad betong, 5 platser"
+          "alt": "Cykelställ, 5 platser"
         }
       ],
       "related": [
@@ -5958,53 +5560,15 @@
       ]
     },
     {
-      "slug": "picknickbord-arkitektur",
-      "name": "Picknickbord i arkitektonisk betong",
-      "sku": "660",
-      "category": "Parkmöbler",
-      "categorySlug": "parkmobler",
-      "subcategory": "Bord och picknick",
-      "subcategorySlug": "bord-picknick",
-      "summary": "Picknickbord i arkitektonisk betong. Tvättad betong. 600 kg.",
-      "description": "Picknickbord i arkitektonisk betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "material": "Tvättad betong",
-      "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
-      "wood": null,
-      "dimensions": [
-        {
-          "label": "Höjd",
-          "value": "75 cm"
-        }
-      ],
-      "weight": "600 kg",
-      "environment": "Utomhus i offentlig miljö",
-      "sizes": [],
-      "defaultSize": null,
-      "sizeLegend": null,
-      "ralInQuote": false,
-      "capacity": null,
-      "images": [
-        {
-          "file": "picknickbord-arkitektur-1.png",
-          "alt": "Picknickbord i arkitektonisk betong"
-        }
-      ],
-      "related": [
-        "picknickbord-stal",
-        "schackbord-stal",
-        "picknickbord-betong-tra"
-      ]
-    },
-    {
       "slug": "picknickbord-stal",
-      "name": "Picknickbord i stål och trä",
+      "name": "Picknickbord, stål och trä",
       "sku": "128",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Bord och picknick",
       "subcategorySlug": "bord-picknick",
-      "summary": "Picknickbord i stål och trä. Stål och trä. 350 kg.",
-      "description": "Picknickbord i stål och trä. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm.",
+      "summary": "350 kg.",
+      "description": "Picknickbord, stål och trä. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm.",
       "material": "Stål och trä",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm.",
@@ -6023,29 +5587,29 @@
       "images": [
         {
           "file": "picknickbord-stal-1.jpg",
-          "alt": "Picknickbord i stål och trä"
+          "alt": "Picknickbord, stål och trä"
         },
         {
           "file": "picknickbord-stal-2.jpg",
-          "alt": "Picknickbord i stål och trä"
+          "alt": "Picknickbord, stål och trä"
         }
       ],
       "related": [
-        "picknickbord-arkitektur",
         "schackbord-stal",
-        "picknickbord-betong-tra"
+        "picknickbord-betong-tra",
+        "torgbord-betong"
       ]
     },
     {
       "slug": "schackbord-stal",
-      "name": "Schackbord i stål och sten",
+      "name": "Schackbord, stål och sten",
       "sku": "226",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Bord och picknick",
       "subcategorySlug": "bord-picknick",
-      "summary": "Schackbord i stål och sten.",
-      "description": "Schackbord i stål och sten. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "350 kg.",
+      "description": "Schackbord, stål och sten. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Stål och sten",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -6068,25 +5632,25 @@
       "images": [
         {
           "file": "schackbord-stal-1.png",
-          "alt": "Schackbord i stål och sten"
+          "alt": "Schackbord, stål och sten"
         }
       ],
       "related": [
-        "picknickbord-arkitektur",
         "picknickbord-stal",
-        "picknickbord-betong-tra"
+        "picknickbord-betong-tra",
+        "torgbord-betong"
       ]
     },
     {
       "slug": "picknickbord-betong-tra",
-      "name": "Picknickbord i betong och trä",
+      "name": "Picknickbord, betong och trä",
       "sku": "144",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Bord och picknick",
       "subcategorySlug": "bord-picknick",
-      "summary": "Picknickbord i betong och trä. Tvättad betong. 170 kg.",
-      "description": "Picknickbord i betong och trä. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm.",
+      "summary": "Tvättad betong, 170 kg.",
+      "description": "Picknickbord, betong och trä. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm.",
@@ -6104,17 +5668,17 @@
       "images": [
         {
           "file": "picknickbord-betong-tra-1.jpg",
-          "alt": "Picknickbord i betong och trä"
+          "alt": "Picknickbord, betong och trä"
         },
         {
           "file": "picknickbord-betong-tra-2.jpg",
-          "alt": "Picknickbord i betong och trä"
+          "alt": "Picknickbord, betong och trä"
         }
       ],
       "related": [
-        "picknickbord-arkitektur",
         "picknickbord-stal",
-        "schackbord-stal"
+        "schackbord-stal",
+        "torgbord-betong"
       ]
     },
     {
@@ -6125,7 +5689,7 @@
       "categorySlug": "parkmobler",
       "subcategory": "Bord och picknick",
       "subcategorySlug": "bord-picknick",
-      "summary": "Torgbord i betong. Stål. 330 kg.",
+      "summary": "Stål, 330 kg.",
       "description": "Torgbord i betong. Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Stål",
       "cement": "Snabbindande portlandcement klass 42,5 R, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -6157,21 +5721,21 @@
         }
       ],
       "related": [
-        "picknickbord-arkitektur",
         "picknickbord-stal",
-        "schackbord-stal"
+        "schackbord-stal",
+        "picknickbord-betong-tra"
       ]
     },
     {
       "slug": "schackbord-fyra-sitt",
-      "name": "Schackbord för fyra sittplatser",
+      "name": "Schackbord för fyra",
       "sku": "230",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Bord och picknick",
       "subcategorySlug": "bord-picknick",
-      "summary": "Schackbord för fyra sittplatser. Tvättad betong, granityta. 400 kg.",
-      "description": "Schackbord för fyra sittplatser. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger.",
+      "summary": "Tvättad betong, granityta, 400 kg.",
+      "description": "Schackbord för fyra. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger.",
       "material": "Tvättad betong, granityta",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -6194,25 +5758,25 @@
       "images": [
         {
           "file": "schackbord-fyra-sitt-1.png",
-          "alt": "Schackbord för fyra sittplatser"
+          "alt": "Schackbord för fyra"
         }
       ],
       "related": [
-        "picknickbord-arkitektur",
         "picknickbord-stal",
-        "schackbord-stal"
+        "schackbord-stal",
+        "picknickbord-betong-tra"
       ]
     },
     {
       "slug": "bord-stal-tra",
-      "name": "Bord i stål och trä",
+      "name": "Bord, stål och trä",
       "sku": "185",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Bord och picknick",
       "subcategorySlug": "bord-picknick",
-      "summary": "Bord i stål och trä. Stål och trä. 350 kg.",
-      "description": "Bord i stål och trä. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "350 kg.",
+      "description": "Bord, stål och trä. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Stål och trä",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -6230,29 +5794,29 @@
       "images": [
         {
           "file": "bord-stal-tra-1.png",
-          "alt": "Bord i stål och trä"
+          "alt": "Bord, stål och trä"
         },
         {
           "file": "bord-stal-tra-2.png",
-          "alt": "Bord i stål och trä"
+          "alt": "Bord, stål och trä"
         }
       ],
       "related": [
-        "picknickbord-arkitektur",
         "picknickbord-stal",
-        "schackbord-stal"
+        "schackbord-stal",
+        "picknickbord-betong-tra"
       ]
     },
     {
       "slug": "picknickbord-betong",
-      "name": "Picknickbord i betong och trä, rektangulärt",
+      "name": "Picknickbord rektangulärt, betong och trä",
       "sku": "196",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Bord och picknick",
       "subcategorySlug": "bord-picknick",
-      "summary": "Picknickbord i betong och trä, rektangulärt. Tvättad betong. 500 kg.",
-      "description": "Picknickbord i betong och trä, rektangulärt. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm.",
+      "summary": "Tvättad betong, 500 kg.",
+      "description": "Picknickbord rektangulärt, betong och trä. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm.",
@@ -6271,33 +5835,33 @@
       "images": [
         {
           "file": "picknickbord-betong-1.png",
-          "alt": "Picknickbord i betong och trä, rektangulärt"
+          "alt": "Picknickbord rektangulärt, betong och trä"
         },
         {
           "file": "picknickbord-betong-2.jpg",
-          "alt": "Picknickbord i betong och trä, rektangulärt"
+          "alt": "Picknickbord rektangulärt, betong och trä"
         },
         {
           "file": "picknickbord-betong-3.jpg",
-          "alt": "Picknickbord i betong och trä, rektangulärt"
+          "alt": "Picknickbord rektangulärt, betong och trä"
         }
       ],
       "related": [
-        "picknickbord-arkitektur",
         "picknickbord-stal",
-        "schackbord-stal"
+        "schackbord-stal",
+        "picknickbord-betong-tra"
       ]
     },
     {
       "slug": "sitt-betong",
-      "name": "Sitt i betong utan ryggstöd",
+      "name": "Sitt utan rygg, betong",
       "sku": "225",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Modulära sitt",
       "subcategorySlug": "modulara-sitt",
-      "summary": "Sitt i betong utan ryggstöd. Tvättad betong. 90 kg.",
-      "description": "Sitt i betong utan ryggstöd. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger.",
+      "summary": "Tvättad betong, 90 kg.",
+      "description": "Sitt utan rygg, betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister 4 cm, lackade tre gånger.",
@@ -6320,25 +5884,25 @@
       "images": [
         {
           "file": "sitt-betong-1.png",
-          "alt": "Sitt i betong utan ryggstöd"
+          "alt": "Sitt utan rygg, betong"
         },
         {
           "file": "sitt-betong-2.jpg",
-          "alt": "Sitt i betong utan ryggstöd"
+          "alt": "Sitt utan rygg, betong"
         }
       ],
       "related": []
     },
     {
       "slug": "bord-bank-arkitektur",
-      "name": "Bord och bänk i arkitektonisk betong",
+      "name": "Bord och bänk",
       "sku": "192",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Bord och picknick",
       "subcategorySlug": "bord-picknick",
-      "summary": "Bord och bänk i arkitektonisk betong. Arkitektonisk betong och trä.",
-      "description": "Bord och bänk i arkitektonisk betong. Tillverkas i arkitektonisk betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Arkitektonisk betong och trä.",
+      "description": "Bord och bänk. Tillverkas i arkitektonisk betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Arkitektonisk betong och trä",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -6358,29 +5922,29 @@
       "images": [
         {
           "file": "bord-bank-arkitektur-1.png",
-          "alt": "Bord och bänk i arkitektonisk betong"
+          "alt": "Bord och bänk"
         },
         {
           "file": "bord-bank-arkitektur-2.png",
-          "alt": "Bord och bänk i arkitektonisk betong"
+          "alt": "Bord och bänk"
         }
       ],
       "related": [
-        "picknickbord-arkitektur",
         "picknickbord-stal",
-        "schackbord-stal"
+        "schackbord-stal",
+        "picknickbord-betong-tra"
       ]
     },
     {
       "slug": "schackbord-betong",
-      "name": "Schackbord i betong och granit",
+      "name": "Schackbord, betong och granit",
       "sku": "226",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Bord och picknick",
       "subcategorySlug": "bord-picknick",
-      "summary": "Schackbord i betong och granit.",
-      "description": "Schackbord i betong och granit. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
+      "summary": "Tvättad betong och granit, 350 kg.",
+      "description": "Schackbord, betong och granit. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Tvättad betong och granit",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -6403,30 +5967,30 @@
       "images": [
         {
           "file": "schackbord-stal-2.png",
-          "alt": "Schackbord i betong och granit"
+          "alt": "Schackbord, betong och granit"
         },
         {
           "file": "schackbord-stal-3.png",
-          "alt": "Schackbord i betong och granit"
+          "alt": "Schackbord, betong och granit"
         }
       ],
       "related": [
-        "picknickbord-arkitektur",
         "picknickbord-stal",
-        "schackbord-stal"
+        "schackbord-stal",
+        "picknickbord-betong-tra"
       ],
       "family": "rinsed"
     },
     {
       "slug": "papperskorg-fyrkantig",
-      "name": "Papperskorg fyrkantig",
+      "name": "Papperskorg fyrkantig, 50 eller 70 l",
       "sku": "146",
       "category": "Avfall och återvinning",
       "categorySlug": "avfall-atervinning",
       "subcategory": "Papperskorgar",
       "subcategorySlug": "papperskorgar",
-      "summary": "Papperskorg fyrkantig. Tvättad betong. 50 eller 70 liter.",
-      "description": "Papperskorg fyrkantig. Tillverkas i tvättad betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: tak. Kapacitet 50 l (60 cm, 130 kg) eller 70 l (80 cm, 175 kg) med innerkärl.",
+      "summary": "Tvättad betong, 130 kg, 50 l.",
+      "description": "Papperskorg fyrkantig, 50 eller 70 l. Tillverkas i tvättad betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: tak. Kapacitet 50 l (60 cm, 130 kg) eller 70 l (80 cm, 175 kg) med innerkärl.",
       "material": "Tvättad betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": null,
@@ -6483,15 +6047,15 @@
       "images": [
         {
           "file": "papperskorg-fyrkantig-1.png",
-          "alt": "Papperskorg fyrkantig"
+          "alt": "Papperskorg fyrkantig, 50 eller 70 l"
         },
         {
           "file": "papperskorg-fyrkantig-2.png",
-          "alt": "Papperskorg fyrkantig"
+          "alt": "Papperskorg fyrkantig, 50 eller 70 l"
         },
         {
           "file": "papperskorg-fyrkantig-3.jpg",
-          "alt": "Papperskorg fyrkantig"
+          "alt": "Papperskorg fyrkantig, 50 eller 70 l"
         }
       ],
       "related": [
@@ -6502,14 +6066,14 @@
     },
     {
       "slug": "parkbank-arkitektur-190",
-      "name": "Parkbänk i arkitektonisk betong utan ryggstöd, 190 cm",
+      "name": "Bänk utan rygg, 190 cm",
       "sku": "670",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong utan ryggstöd, 190 cm. Arkitektonisk betong, trälister och stål.",
-      "description": "Parkbänk i arkitektonisk betong utan ryggstöd, 190 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade. Tillval enligt sidan: målning med betongfärg, mot tillägg.",
+      "summary": "Arkitektonisk betong, trälister och stål, 130 kg.",
+      "description": "Bänk utan rygg, 190 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade. Tillval enligt sidan: målning med betongfärg, mot tillägg.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister, lackade tre gånger.",
@@ -6549,24 +6113,24 @@
       "images": [
         {
           "file": "parkbank-arkitektur-190-1.png",
-          "alt": "Parkbänk i arkitektonisk betong utan ryggstöd, 190 cm"
+          "alt": "Bänk utan rygg, 190 cm"
         },
         {
           "file": "parkbank-arkitektur-190-2.jpg",
-          "alt": "Parkbänk i arkitektonisk betong utan ryggstöd, 190 cm"
+          "alt": "Bänk utan rygg, 190 cm"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-190-rygg",
-      "name": "Parkbänk i arkitektonisk betong med ryggstöd, 190 cm",
+      "name": "Bänk med rygg, 190 cm",
       "sku": "671",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong med ryggstöd, 190 cm. Arkitektonisk betong, trälister och stål.",
-      "description": "Parkbänk i arkitektonisk betong med ryggstöd, 190 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade. Tillval enligt sidan: målning med betongfärg, mot tillägg.",
+      "summary": "Arkitektonisk betong, trälister och stål, 150 kg.",
+      "description": "Bänk med rygg, 190 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade. Tillval enligt sidan: målning med betongfärg, mot tillägg.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister, lackade tre gånger.",
@@ -6610,24 +6174,24 @@
       "images": [
         {
           "file": "parkbank-arkitektur-190-rygg-1.png",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 190 cm"
+          "alt": "Bänk med rygg, 190 cm"
         },
         {
           "file": "parkbank-arkitektur-190-rygg-2.jpg",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 190 cm"
+          "alt": "Bänk med rygg, 190 cm"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-200-45",
-      "name": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 × 45 cm",
+      "name": "Bänk utan rygg, 200 × 45 cm",
       "sku": "673",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 × 45 cm. Arkitektonisk betong, trälister och stål.",
-      "description": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 × 45 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 230 kg.",
+      "description": "Bänk utan rygg, 200 × 45 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister, lackade tre gånger.",
@@ -6666,20 +6230,20 @@
       "images": [
         {
           "file": "parkbank-arkitektur-200-45-1.png",
-          "alt": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 × 45 cm"
+          "alt": "Bänk utan rygg, 200 × 45 cm"
         }
       ]
     },
     {
       "slug": "parkbank-arkitektur-200-45-rygg",
-      "name": "Parkbänk i arkitektonisk betong med ryggstöd, 200 × 45 cm",
+      "name": "Bänk med rygg, 200 × 45 cm",
       "sku": "674",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
       "subcategory": "Parkbänkar",
       "subcategorySlug": "parkbankar",
-      "summary": "Parkbänk i arkitektonisk betong med ryggstöd, 200 × 45 cm. Arkitektonisk betong, trälister och stål.",
-      "description": "Parkbänk i arkitektonisk betong med ryggstöd, 200 × 45 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
+      "summary": "Arkitektonisk betong, trälister och stål, 250 kg.",
+      "description": "Bänk med rygg, 200 × 45 cm. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "wood": "Trälister, lackade tre gånger.",
@@ -6722,19 +6286,19 @@
       "images": [
         {
           "file": "parkbank-arkitektur-200-45-rygg-1.png",
-          "alt": "Parkbänk i arkitektonisk betong med ryggstöd, 200 × 45 cm"
+          "alt": "Bänk med rygg, 200 × 45 cm"
         }
       ]
     },
     {
       "slug": "planteringskarl-rektangel-120",
-      "name": "Planteringskärl i arkitektonisk betong, rektangulärt 120 cm",
+      "name": "Kärl rektangulärt 120 × 50 × 40 cm",
       "sku": "607",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Planteringskärl i arkitektonisk betong, rektangulärt, 120 cm.",
+      "summary": "Arkitektonisk betong, 210 kg.",
       "description": "Rektangulärt planteringskärl i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Tillval enligt sidan: målning med betongfärg.",
       "material": "Arkitektonisk betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -6768,23 +6332,23 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-120-1.png",
-          "alt": "Planteringskärl i arkitektonisk betong, rektangulärt 120 cm"
+          "alt": "Kärl rektangulärt 120 × 50 × 40 cm"
         },
         {
           "file": "planteringskarl-rektangel-120-2.jpg",
-          "alt": "Planteringskärl i arkitektonisk betong, rektangulärt 120 cm"
+          "alt": "Kärl rektangulärt 120 × 50 × 40 cm"
         }
       ]
     },
     {
       "slug": "planteringskarl-bage",
-      "name": "Planteringskärl i arkitektonisk betong, bågformat",
+      "name": "Kärl bågformat, 229,5 cm",
       "sku": "654",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Bågformat planteringskärl i arkitektonisk betong, 229,5 cm längs ytterbågen.",
+      "summary": "Arkitektonisk betong, 650 kg.",
       "description": "Bågformat planteringskärl i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Arkitektonisk betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -6818,27 +6382,27 @@
       "images": [
         {
           "file": "planteringskarl-bage-1.png",
-          "alt": "Planteringskärl i arkitektonisk betong, bågformat"
+          "alt": "Kärl bågformat, 229,5 cm"
         },
         {
           "file": "planteringskarl-bage-2.jpg",
-          "alt": "Planteringskärl i arkitektonisk betong, bågformat"
+          "alt": "Kärl bågformat, 229,5 cm"
         },
         {
           "file": "planteringskarl-bage-3.jpg",
-          "alt": "Planteringskärl i arkitektonisk betong, bågformat"
+          "alt": "Kärl bågformat, 229,5 cm"
         }
       ]
     },
     {
       "slug": "planteringskarl-kvadrat-60",
-      "name": "Planteringskärl i arkitektonisk betong, kvadratiskt 60 cm",
+      "name": "Kärl kvadratiskt 60 × 60 × 50 cm",
       "sku": "656",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Kvadratiskt planteringskärl i arkitektonisk betong, 60 × 60 cm.",
+      "summary": "Arkitektonisk betong, 180 kg.",
       "description": "Kvadratiskt planteringskärl i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Arkitektonisk betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -6872,19 +6436,19 @@
       "images": [
         {
           "file": "planteringskarl-kvadrat-60-1.png",
-          "alt": "Planteringskärl i arkitektonisk betong, kvadratiskt 60 cm"
+          "alt": "Kärl kvadratiskt 60 × 60 × 50 cm"
         }
       ]
     },
     {
       "slug": "planteringskarl-rektangel-100",
-      "name": "Planteringskärl i arkitektonisk betong, rektangulärt 100 cm",
+      "name": "Kärl rektangulärt 100 × 60 × 50 cm",
       "sku": "657",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Rektangulärt planteringskärl i arkitektonisk betong, 100 cm.",
+      "summary": "Arkitektonisk betong, 290 kg.",
       "description": "Rektangulärt planteringskärl i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Arkitektonisk betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -6918,19 +6482,19 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-100-1.png",
-          "alt": "Planteringskärl i arkitektonisk betong, rektangulärt 100 cm"
+          "alt": "Kärl rektangulärt 100 × 60 × 50 cm"
         }
       ]
     },
     {
       "slug": "planteringskarl-kvadrat-100",
-      "name": "Planteringskärl i arkitektonisk betong, kvadratiskt 100 cm",
+      "name": "Kärl kvadratiskt 100 × 100 × 70 cm",
       "sku": "612",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Kvadratiskt planteringskärl i arkitektonisk betong, 100 × 100 cm.",
+      "summary": "Arkitektonisk betong, 450 kg.",
       "description": "Kvadratiskt planteringskärl i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Arkitektonisk betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -6964,19 +6528,19 @@
       "images": [
         {
           "file": "planteringskarl-kvadrat-100-1.png",
-          "alt": "Planteringskärl i arkitektonisk betong, kvadratiskt 100 cm"
+          "alt": "Kärl kvadratiskt 100 × 100 × 70 cm"
         }
       ]
     },
     {
       "slug": "planteringskarl-rektangel-160",
-      "name": "Planteringskärl i arkitektonisk betong, rektangulärt 160 cm",
+      "name": "Kärl rektangulärt 160 × 60 × 50 cm",
       "sku": "658",
       "category": "Plantering",
       "categorySlug": "plantering",
       "subcategory": "Planteringskärl",
       "subcategorySlug": "planteringskarl",
-      "summary": "Rektangulärt planteringskärl i arkitektonisk betong, 160 cm.",
+      "summary": "Arkitektonisk betong, 540 kg.",
       "description": "Rektangulärt planteringskärl i arkitektonisk betong. Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
       "material": "Arkitektonisk betong",
       "cement": "Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206.",
@@ -7010,7 +6574,7 @@
       "images": [
         {
           "file": "planteringskarl-rektangel-160-1.png",
-          "alt": "Planteringskärl i arkitektonisk betong, rektangulärt 160 cm"
+          "alt": "Kärl rektangulärt 160 × 60 × 50 cm"
         }
       ]
     }
@@ -7040,7 +6604,6 @@
     "pollare": [
       "pollare-fyrkant-119",
       "pollare-fyrkant-57",
-      "pollare-fyrkant-32",
       "pollare-fyrkant-42",
       "pollare-fyrkant-60",
       "pollare-fyrkant-44",
@@ -7117,7 +6680,6 @@
       "planteringskarl-rektangel-80-50-35",
       "planteringskarl-rektangel-90-40-50",
       "planteringskarl-rektangel-100-40-40",
-      "planteringskarl-rektangel-90-45-40",
       "planteringskarl-rektangel-100-50-50",
       "planteringskarl-rektangel-121-61-48",
       "planteringskarl-rektangel-124-39-39",
@@ -7127,9 +6689,7 @@
       "planteringskarl-fyrkant-50-50-35",
       "planteringskarl-fyrkant-50-50-50",
       "planteringskarl-fyrkant-60-60-50",
-      "planteringskarl-fyrkant-60-60-54",
       "planteringskarl-fyrkant-75-75-50",
-      "planteringskarl-fyrkant-90-90-70",
       "planteringskarl-fyrkant-100-100-40",
       "planteringskarl-fyrkant-150-150-100",
       "planteringskarl-sexkant-80-50",
@@ -7144,14 +6704,8 @@
       "planteringskarl-rund-74-48",
       "planteringskarl-rund-108-48",
       "planteringskarl-rund-113-70",
-      "planteringskarl-rund-75-35",
       "planteringskarl-rund-120-80",
       "planteringskarl-75-60",
-      "planteringskarl-60-54",
-      "planteringskarl-60-54-2",
-      "planteringskarl-60-54-3",
-      "planteringskarl-60-54-4",
-      "planteringskarl-149-40",
       "planteringskarl",
       "planteringskarl-rektangel-120",
       "planteringskarl-bage",
@@ -7161,7 +6715,6 @@
       "planteringskarl-rektangel-160"
     ],
     "bord-picknick": [
-      "picknickbord-arkitektur",
       "picknickbord-stal",
       "schackbord-stal",
       "picknickbord-betong-tra",

@@ -1,7 +1,7 @@
 [
   {
     "slug": "parkbank-tvattad-rygg",
-    "name": "Parkbänk i tvättad betong med ryggstöd",
+    "name": "Bänk med rygg, tvättad betong, 210 cm",
     "sku": "107",
     "variant": "Med ryggstöd",
     "listEur": 365,
@@ -13,7 +13,7 @@
   },
   {
     "slug": "parkbank-stal-rygg",
-    "name": "Parkbänk i stål med ryggstöd",
+    "name": "Bänk med rygg, stål, 180 cm",
     "sku": "224",
     "variant": "Med ryggstöd",
     "listEur": 605,
@@ -25,7 +25,7 @@
   },
   {
     "slug": "parkbank-stal-rygg-metall",
-    "name": "Parkbänk i stål med ryggstöd, metallstomme",
+    "name": "Bänk med rygg, metallstomme, 180 cm",
     "sku": "260",
     "variant": "Med ryggstöd",
     "listEur": 708,
@@ -37,7 +37,7 @@
   },
   {
     "slug": "parkbank-stal",
-    "name": "Parkbänk i stål utan ryggstöd",
+    "name": "Bänk utan rygg, stålrör, 192 cm",
     "sku": "156",
     "variant": "Utan ryggstöd",
     "listEur": 230,
@@ -49,7 +49,7 @@
   },
   {
     "slug": "parkbank-stal-tra",
-    "name": "Parkbänk i stål och trä utan ryggstöd",
+    "name": "Bänk utan rygg, stål och trä, 180 cm",
     "sku": "209",
     "variant": "Utan ryggstöd",
     "listEur": 236,
@@ -61,7 +61,7 @@
   },
   {
     "slug": "parkbank-arkitektur-sits",
-    "name": "Parkbänk i arkitektonisk betong med träsits",
+    "name": "Bänk med träsits, 180 cm",
     "sku": "601",
     "variant": "Med träsits",
     "listEur": 740,
@@ -73,7 +73,7 @@
   },
   {
     "slug": "parkbank-arkitektur-rygg",
-    "name": "Parkbänk i arkitektonisk betong med ryggstöd",
+    "name": "Bänk med rygg, 240 cm",
     "sku": "601-ZO",
     "variant": "Sits och ryggstöd i trä",
     "listEur": 962,
@@ -85,7 +85,7 @@
   },
   {
     "slug": "parkbank-arkitektur-smal",
-    "name": "Parkbänk i arkitektonisk betong, smal sits",
+    "name": "Bänk med smal sits, 180 cm",
     "sku": "603",
     "variant": "Med träsits",
     "listEur": 795,
@@ -97,7 +97,7 @@
   },
   {
     "slug": "parkbank-arkitektur-rygg-200",
-    "name": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm",
+    "name": "Bänk med rygg, 200 cm",
     "sku": "605",
     "variant": "Fristående",
     "listEur": 330,
@@ -109,7 +109,7 @@
   },
   {
     "slug": "parkbank-arkitektur-rygg-200",
-    "name": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm",
+    "name": "Bänk med rygg, 200 cm",
     "sku": "605",
     "variant": "I mark",
     "listEur": 375,
@@ -121,7 +121,7 @@
   },
   {
     "slug": "parkbank-modul",
-    "name": "Modulär parkbänk i arkitektonisk betong",
+    "name": "Modulär bänk, 120 cm",
     "sku": "608",
     "variant": "Utan ryggstöd",
     "listEur": 851,
@@ -133,7 +133,7 @@
   },
   {
     "slug": "parkbank-modul",
-    "name": "Modulär parkbänk i arkitektonisk betong",
+    "name": "Modulär bänk, 120 cm",
     "sku": "608",
     "variant": "Med ryggstöd",
     "listEur": 944,
@@ -145,7 +145,7 @@
   },
   {
     "slug": "parkbank-puck",
-    "name": "Parkbänk Puck",
+    "name": "Bänk Puck",
     "sku": "651",
     "variant": "Utan ryggstöd",
     "listEur": 1089,
@@ -157,7 +157,7 @@
   },
   {
     "slug": "parkbank-arkitektur-200",
-    "name": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 cm",
+    "name": "Bänk utan rygg, 200 cm",
     "sku": "652",
     "variant": "—",
     "listEur": null,
@@ -169,7 +169,7 @@
   },
   {
     "slug": "parkbank-arkitektur-200-rygg",
-    "name": "Parkbänk i arkitektonisk betong med ryggstöd, 200 cm",
+    "name": "Bänk med rygg, 200 × 55 cm",
     "sku": "652-ZO",
     "variant": "Med ryggstöd",
     "listEur": 1068,
@@ -181,7 +181,7 @@
   },
   {
     "slug": "parkbank-rogal",
-    "name": "Parkbänk Rogal",
+    "name": "Bänk Rogal",
     "sku": "655",
     "variant": "Med träsits",
     "listEur": 750,
@@ -193,7 +193,7 @@
   },
   {
     "slug": "parkbank-arkitektur-rygg-180",
-    "name": "Parkbänk i arkitektonisk betong med ryggstöd, 180 cm",
+    "name": "Bänk med rygg, 180 cm",
     "sku": "659",
     "variant": "Med ryggstöd",
     "listEur": 670,
@@ -240,18 +240,6 @@
     "family": "rinsed"
   },
   {
-    "slug": "pollare-fyrkant-32",
-    "name": "Pollare fyrkantig 32 cm",
-    "sku": "12A",
-    "variant": "Standard",
-    "listEur": 51.0,
-    "discountPercent": 20,
-    "netEur": 40.8,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
     "slug": "pollare-fyrkant-42",
     "name": "Pollare fyrkantig 42 cm",
     "sku": "13",
@@ -277,7 +265,7 @@
   },
   {
     "slug": "pollare-fyrkant-44",
-    "name": "Pollare fyrkantig 44 cm",
+    "name": "Pollare fyrkantig 44 cm, 40 × 40 cm",
     "sku": "17",
     "variant": "Standard",
     "listEur": 66.0,
@@ -289,7 +277,7 @@
   },
   {
     "slug": "pollare-fyrkant-44-2",
-    "name": "Pollare fyrkantig 44 cm",
+    "name": "Pollare fyrkantig 44 cm, 30 × 30 cm",
     "sku": "21",
     "variant": "Standard",
     "listEur": 50.0,
@@ -481,7 +469,7 @@
   },
   {
     "slug": "pollare-rund-60-2",
-    "name": "Pollare rund 60 cm, Ø 30 cm",
+    "name": "Pollare rund 60 cm, Ø 30 / 20 cm",
     "sku": "36",
     "variant": "Standard",
     "listEur": 62.0,
@@ -685,7 +673,7 @@
   },
   {
     "slug": "pollare-rund-60-5",
-    "name": "Pollare rund 60 cm, Ø 37 cm",
+    "name": "Pollare rund 60 cm, Ø 37 / 27 cm",
     "sku": "227",
     "variant": "Standard",
     "listEur": 53.0,
@@ -1045,7 +1033,7 @@
   },
   {
     "slug": "papperskorg-med-tra-50l",
-    "name": "Papperskorg med trä, 72 cm, 50 l",
+    "name": "Papperskorg med trä, 50 l, 170 kg",
     "sku": "117",
     "variant": "Standard",
     "listEur": 275.0,
@@ -1057,7 +1045,7 @@
   },
   {
     "slug": "papperskorg-med-tra-50l-2",
-    "name": "Papperskorg med trä, 72 cm, 50 l",
+    "name": "Papperskorg med trä, 50 l, 180 kg",
     "sku": "118",
     "variant": "Standard",
     "listEur": 366.0,
@@ -1093,7 +1081,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-60-46-53",
-    "name": "Planteringskärl rektangulärt 60 × 46 × 53 cm",
+    "name": "Kärl rektangulärt 60 × 46 × 53 cm",
     "sku": "69",
     "variant": "Standard",
     "listEur": 139.0,
@@ -1105,7 +1093,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-80-50-35",
-    "name": "Planteringskärl rektangulärt 80 × 50 × 35 cm",
+    "name": "Kärl rektangulärt 80 × 50 × 35 cm",
     "sku": "198",
     "variant": "Standard",
     "listEur": 115.0,
@@ -1117,7 +1105,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-90-40-50",
-    "name": "Planteringskärl rektangulärt 90 × 40 × 50 cm",
+    "name": "Kärl rektangulärt 90 × 40 × 50 cm",
     "sku": "9",
     "variant": "Standard",
     "listEur": 154.0,
@@ -1129,7 +1117,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-100-40-40",
-    "name": "Planteringskärl rektangulärt 100 × 40 × 40 cm",
+    "name": "Kärl rektangulärt 100 × 40 × 40 cm",
     "sku": "231",
     "variant": "Standard",
     "listEur": 141.0,
@@ -1140,20 +1128,8 @@
     "family": "rinsed"
   },
   {
-    "slug": "planteringskarl-rektangel-90-45-40",
-    "name": "Planteringskärl rektangulärt 90 × 45 × 40 cm",
-    "sku": "57",
-    "variant": "—",
-    "listEur": null,
-    "discountPercent": 20,
-    "netEur": null,
-    "discountRule": "Tvättad betong 20 %",
-    "note": "Katalognumret finns i prislistan men beloppet kunde inte läsas.",
-    "family": "rinsed"
-  },
-  {
     "slug": "planteringskarl-rektangel-100-50-50",
-    "name": "Planteringskärl rektangulärt 100 × 50 × 50 cm",
+    "name": "Kärl rektangulärt 100 × 50 × 50 cm",
     "sku": "217",
     "variant": "Standard",
     "listEur": 235.0,
@@ -1165,7 +1141,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-121-61-48",
-    "name": "Planteringskärl rektangulärt 121 × 61 × 48 cm",
+    "name": "Kärl rektangulärt 121 × 61 × 48 cm",
     "sku": "58",
     "variant": "—",
     "listEur": null,
@@ -1177,7 +1153,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-124-39-39",
-    "name": "Planteringskärl rektangulärt 124 × 39 × 39 cm",
+    "name": "Kärl rektangulärt 124 × 39 × 39 cm",
     "sku": "24",
     "variant": "—",
     "listEur": null,
@@ -1189,7 +1165,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-150-45-45",
-    "name": "Planteringskärl rektangulärt 150 × 45 × 45 cm",
+    "name": "Kärl rektangulärt 150 × 45 × 45 cm",
     "sku": "188",
     "variant": "Standard",
     "listEur": 335.0,
@@ -1201,7 +1177,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-150-50-50",
-    "name": "Planteringskärl rektangulärt 150 × 50 × 50 cm",
+    "name": "Kärl rektangulärt 150 × 50 × 50 cm",
     "sku": "216",
     "variant": "Standard",
     "listEur": 317.0,
@@ -1213,7 +1189,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-250-60-40",
-    "name": "Planteringskärl rektangulärt 250 × 60 × 40 cm",
+    "name": "Kärl rektangulärt 250 × 60 × 40 cm",
     "sku": "211",
     "variant": "Standard",
     "listEur": 548.0,
@@ -1225,7 +1201,7 @@
   },
   {
     "slug": "planteringskarl-fyrkant-50-50-35",
-    "name": "Planteringskärl fyrkantigt 50 × 50 × 35 cm",
+    "name": "Kärl fyrkantigt 50 × 50 × 35 cm",
     "sku": "212",
     "variant": "Standard",
     "listEur": 90.0,
@@ -1237,7 +1213,7 @@
   },
   {
     "slug": "planteringskarl-fyrkant-50-50-50",
-    "name": "Planteringskärl fyrkantigt 50 × 50 × 50 cm",
+    "name": "Kärl fyrkantigt 50 × 50 × 50 cm",
     "sku": "166",
     "variant": "Standard",
     "listEur": 97.0,
@@ -1249,7 +1225,7 @@
   },
   {
     "slug": "planteringskarl-fyrkant-60-60-50",
-    "name": "Planteringskärl fyrkantigt 60 × 60 × 50 cm",
+    "name": "Kärl fyrkantigt 60 × 60 × 50 cm",
     "sku": "10",
     "variant": "50 cm",
     "listEur": 181.0,
@@ -1260,20 +1236,8 @@
     "family": "rinsed"
   },
   {
-    "slug": "planteringskarl-fyrkant-60-60-54",
-    "name": "Planteringskärl fyrkantigt 60 × 60 × 54 cm",
-    "sku": "68",
-    "variant": "Standard",
-    "listEur": 169.0,
-    "discountPercent": 20,
-    "netEur": 135.2,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
     "slug": "planteringskarl-fyrkant-75-75-50",
-    "name": "Planteringskärl fyrkantigt 75 × 75 × 50 cm",
+    "name": "Kärl fyrkantigt 75 × 75 × 50 cm",
     "sku": "147",
     "variant": "Standard",
     "listEur": 205.0,
@@ -1284,20 +1248,8 @@
     "family": "rinsed"
   },
   {
-    "slug": "planteringskarl-fyrkant-90-90-70",
-    "name": "Planteringskärl fyrkantigt 90 × 90 × 70 cm",
-    "sku": "56",
-    "variant": "Standard",
-    "listEur": 372.0,
-    "discountPercent": 20,
-    "netEur": 297.6,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
     "slug": "planteringskarl-fyrkant-100-100-40",
-    "name": "Planteringskärl fyrkantigt 100 × 100 × 40 cm",
+    "name": "Kärl fyrkantigt 100 × 100 × 40 cm",
     "sku": "168",
     "variant": "Standard",
     "listEur": 341.0,
@@ -1309,7 +1261,7 @@
   },
   {
     "slug": "planteringskarl-fyrkant-150-150-100",
-    "name": "Planteringskärl fyrkantigt 150 × 150 × 100 cm",
+    "name": "Kärl fyrkantigt 150 × 150 × 100 cm",
     "sku": "176",
     "variant": "Standard",
     "listEur": 1208.0,
@@ -1321,7 +1273,7 @@
   },
   {
     "slug": "planteringskarl-sexkant-80-50",
-    "name": "Planteringskärl sexkantigt 80 × 50 cm",
+    "name": "Kärl sexkantigt 80 × 50 cm",
     "sku": "59",
     "variant": "—",
     "listEur": null,
@@ -1333,7 +1285,7 @@
   },
   {
     "slug": "planteringskarl-sexkant-80-40",
-    "name": "Planteringskärl sexkantigt 80 × 40 cm",
+    "name": "Kärl sexkantigt 80 × 40 cm",
     "sku": "134",
     "variant": "Standard",
     "listEur": 90.0,
@@ -1345,7 +1297,7 @@
   },
   {
     "slug": "planteringskarl-oval-100-50-50",
-    "name": "Planteringskärl ovalt 100 × 50 × 50 cm",
+    "name": "Kärl ovalt 100 × 50 × 50 cm",
     "sku": "177",
     "variant": "Standard",
     "listEur": 181.0,
@@ -1357,7 +1309,7 @@
   },
   {
     "slug": "planteringskarl-oval-120-40-40",
-    "name": "Planteringskärl ovalt 120 × 40 × 40 cm",
+    "name": "Kärl ovalt 120 × 40 × 40 cm",
     "sku": "141",
     "variant": "Standard",
     "listEur": 55.0,
@@ -1369,7 +1321,7 @@
   },
   {
     "slug": "planteringskarl-oval-120-62-48",
-    "name": "Planteringskärl ovalt 120 × 62 × 48 cm",
+    "name": "Kärl ovalt 120 × 62 × 48 cm",
     "sku": "136",
     "variant": "Standard",
     "listEur": 282.0,
@@ -1381,7 +1333,7 @@
   },
   {
     "slug": "planteringskarl-oval-158-74-78",
-    "name": "Planteringskärl ovalt 158 × 74 × 78 cm",
+    "name": "Kärl ovalt 158 × 74 × 78 cm",
     "sku": "90",
     "variant": "Standard",
     "listEur": 401.0,
@@ -1393,7 +1345,7 @@
   },
   {
     "slug": "planteringskarl-oval-158-108-48",
-    "name": "Planteringskärl ovalt 158 × 108 × 48 cm",
+    "name": "Kärl ovalt 158 × 108 × 48 cm",
     "sku": "91",
     "variant": "Standard",
     "listEur": 547.0,
@@ -1405,7 +1357,7 @@
   },
   {
     "slug": "planteringskarl-rund-50-40",
-    "name": "Planteringskärl rund 50 × 40 cm",
+    "name": "Kärl rund 50 × 40 cm",
     "sku": "223",
     "variant": "Standard",
     "listEur": 95.0,
@@ -1417,7 +1369,7 @@
   },
   {
     "slug": "planteringskarl-rund-60-60",
-    "name": "Planteringskärl rund 60 × 60 cm",
+    "name": "Kärl rund 60 × 60 cm",
     "sku": "178",
     "variant": "Standard",
     "listEur": 137.0,
@@ -1429,7 +1381,7 @@
   },
   {
     "slug": "planteringskarl-rund-74-48",
-    "name": "Planteringskärl rund 74 × 48 cm",
+    "name": "Kärl rund 74 × 48 cm",
     "sku": "89",
     "variant": "Standard",
     "listEur": 195.0,
@@ -1441,7 +1393,7 @@
   },
   {
     "slug": "planteringskarl-rund-108-48",
-    "name": "Planteringskärl rund 108 × 48 cm",
+    "name": "Kärl rund 108 × 48 cm",
     "sku": "87",
     "variant": "Standard",
     "listEur": 324.0,
@@ -1453,7 +1405,7 @@
   },
   {
     "slug": "planteringskarl-rund-113-70",
-    "name": "Planteringskärl rund 113 × 70 cm",
+    "name": "Kärl rund 113 × 70 cm",
     "sku": "88",
     "variant": "Standard",
     "listEur": 478.0,
@@ -1464,20 +1416,8 @@
     "family": "rinsed"
   },
   {
-    "slug": "planteringskarl-rund-75-35",
-    "name": "Planteringskärl rund 75 × 35 cm",
-    "sku": "66",
-    "variant": "Standard",
-    "listEur": 140.0,
-    "discountPercent": 20,
-    "netEur": 112.0,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
     "slug": "planteringskarl-rund-120-80",
-    "name": "Planteringskärl rund 120 × 80 cm",
+    "name": "Kärl rund 120 × 80 cm",
     "sku": "133",
     "variant": "Standard",
     "listEur": 583.0,
@@ -1489,7 +1429,7 @@
   },
   {
     "slug": "planteringskarl-75-60",
-    "name": "Planteringskärl 75 × 60 cm",
+    "name": "Kärl 75 × 60 cm",
     "sku": "67",
     "variant": "Standard",
     "listEur": 186.0,
@@ -1500,68 +1440,8 @@
     "family": "rinsed"
   },
   {
-    "slug": "planteringskarl-60-54",
-    "name": "Planteringskärl 60 × 54 cm",
-    "sku": "70",
-    "variant": "Standard",
-    "listEur": 192.0,
-    "discountPercent": 20,
-    "netEur": 153.6,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
-    "slug": "planteringskarl-60-54-2",
-    "name": "Planteringskärl 60 × 54 × 2 cm",
-    "sku": "71",
-    "variant": "Standard",
-    "listEur": 165.0,
-    "discountPercent": 20,
-    "netEur": 132.0,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
-    "slug": "planteringskarl-60-54-3",
-    "name": "Planteringskärl 60 × 54 × 3 cm",
-    "sku": "72",
-    "variant": "Standard",
-    "listEur": 165.0,
-    "discountPercent": 20,
-    "netEur": 132.0,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
-    "slug": "planteringskarl-60-54-4",
-    "name": "Planteringskärl 60 × 54 × 4 cm",
-    "sku": "73",
-    "variant": "Standard",
-    "listEur": 165.0,
-    "discountPercent": 20,
-    "netEur": 132.0,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
-    "slug": "planteringskarl-149-40",
-    "name": "Planteringskärl 149 × 40 cm",
-    "sku": "120",
-    "variant": "Standard",
-    "listEur": 195.0,
-    "discountPercent": 20,
-    "netEur": 156.0,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
     "slug": "planteringskarl",
-    "name": "Planteringskärl, 40 cm",
+    "name": "Kärl, 40 cm",
     "sku": "183",
     "variant": "Standard",
     "listEur": 205.0,
@@ -1585,7 +1465,7 @@
   },
   {
     "slug": "cykelstall-l",
-    "name": "Cykelställ i betong, L-form",
+    "name": "Cykelställ L-form",
     "sku": "148",
     "variant": "4 platser",
     "listEur": 352.0,
@@ -1597,7 +1477,7 @@
   },
   {
     "slug": "cykelstall-l",
-    "name": "Cykelställ i betong, L-form",
+    "name": "Cykelställ L-form",
     "sku": "148",
     "variant": "5 platser",
     "listEur": 390,
@@ -1609,7 +1489,7 @@
   },
   {
     "slug": "cykelstall-l",
-    "name": "Cykelställ i betong, L-form",
+    "name": "Cykelställ L-form",
     "sku": "148",
     "variant": "6 platser",
     "listEur": 429,
@@ -1621,7 +1501,7 @@
   },
   {
     "slug": "cykelstall-betong",
-    "name": "Cykelställ i tvättad betong, 5 platser",
+    "name": "Cykelställ, 5 platser",
     "sku": "171",
     "variant": "Standard",
     "listEur": 278.0,
@@ -1632,20 +1512,8 @@
     "family": "rinsed"
   },
   {
-    "slug": "picknickbord-arkitektur",
-    "name": "Picknickbord i arkitektonisk betong",
-    "sku": "660",
-    "variant": "Standard",
-    "listEur": 610.0,
-    "discountPercent": 20,
-    "netEur": 488.0,
-    "discountRule": "Tvättad betong 20 %",
-    "note": null,
-    "family": "rinsed"
-  },
-  {
     "slug": "picknickbord-stal",
-    "name": "Picknickbord i stål och trä",
+    "name": "Picknickbord, stål och trä",
     "sku": "128",
     "variant": "Standard",
     "listEur": 365.0,
@@ -1657,7 +1525,7 @@
   },
   {
     "slug": "schackbord-betong",
-    "name": "Schackbord i betong och granit",
+    "name": "Schackbord, betong och granit",
     "sku": "226",
     "variant": "Standard",
     "listEur": 1318.0,
@@ -1669,7 +1537,7 @@
   },
   {
     "slug": "picknickbord-betong-tra",
-    "name": "Picknickbord i betong och trä",
+    "name": "Picknickbord, betong och trä",
     "sku": "144",
     "variant": "Standard",
     "listEur": 345.0,
@@ -1693,7 +1561,7 @@
   },
   {
     "slug": "schackbord-fyra-sitt",
-    "name": "Schackbord för fyra sittplatser",
+    "name": "Schackbord för fyra",
     "sku": "230",
     "variant": "Standard",
     "listEur": 1079.0,
@@ -1705,7 +1573,7 @@
   },
   {
     "slug": "bord-stal-tra",
-    "name": "Bord i stål och trä",
+    "name": "Bord, stål och trä",
     "sku": "185",
     "variant": "Standard",
     "listEur": 1145.0,
@@ -1717,7 +1585,7 @@
   },
   {
     "slug": "picknickbord-betong",
-    "name": "Picknickbord i betong och trä, rektangulärt",
+    "name": "Picknickbord rektangulärt, betong och trä",
     "sku": "196",
     "variant": "Standard",
     "listEur": 400.0,
@@ -1729,7 +1597,7 @@
   },
   {
     "slug": "sitt-betong",
-    "name": "Sitt i betong utan ryggstöd",
+    "name": "Sitt utan rygg, betong",
     "sku": "225",
     "variant": "Standard",
     "listEur": 160.0,
@@ -1741,7 +1609,7 @@
   },
   {
     "slug": "bord-bank-arkitektur",
-    "name": "Bord och bänk i arkitektonisk betong",
+    "name": "Bord och bänk",
     "sku": "192",
     "variant": "Standard",
     "listEur": 528.0,
@@ -1753,7 +1621,7 @@
   },
   {
     "slug": "schackbord-stal",
-    "name": "Schackbord i stål och sten",
+    "name": "Schackbord, stål och sten",
     "sku": "226",
     "variant": "Standard",
     "listEur": null,
@@ -1765,7 +1633,7 @@
   },
   {
     "slug": "papperskorg-fyrkantig",
-    "name": "Papperskorg fyrkantig",
+    "name": "Papperskorg fyrkantig, 50 eller 70 l",
     "sku": "146",
     "variant": "50 l",
     "listEur": 97.0,
@@ -1777,7 +1645,7 @@
   },
   {
     "slug": "papperskorg-fyrkantig",
-    "name": "Papperskorg fyrkantig",
+    "name": "Papperskorg fyrkantig, 50 eller 70 l",
     "sku": "146",
     "variant": "70 l",
     "listEur": 136.0,
@@ -1789,7 +1657,7 @@
   },
   {
     "slug": "parkbank-arkitektur-190",
-    "name": "Parkbänk i arkitektonisk betong utan ryggstöd, 190 cm",
+    "name": "Bänk utan rygg, 190 cm",
     "sku": "670",
     "variant": "Utan ryggstöd",
     "listEur": 467,
@@ -1801,7 +1669,7 @@
   },
   {
     "slug": "parkbank-arkitektur-190-rygg",
-    "name": "Parkbänk i arkitektonisk betong med ryggstöd, 190 cm",
+    "name": "Bänk med rygg, 190 cm",
     "sku": "671",
     "variant": "Med ryggstöd",
     "listEur": 550,
@@ -1813,7 +1681,7 @@
   },
   {
     "slug": "parkbank-arkitektur-200-45",
-    "name": "Parkbänk i arkitektonisk betong utan ryggstöd, 200 × 45 cm",
+    "name": "Bänk utan rygg, 200 × 45 cm",
     "sku": "673",
     "variant": "Utan ryggstöd",
     "listEur": 467,
@@ -1825,7 +1693,7 @@
   },
   {
     "slug": "parkbank-arkitektur-200-45-rygg",
-    "name": "Parkbänk i arkitektonisk betong med ryggstöd, 200 × 45 cm",
+    "name": "Bänk med rygg, 200 × 45 cm",
     "sku": "674",
     "variant": "Med ryggstöd",
     "listEur": 550,
@@ -1837,7 +1705,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-120",
-    "name": "Planteringskärl i arkitektonisk betong, rektangulärt 120 cm",
+    "name": "Kärl rektangulärt 120 × 50 × 40 cm",
     "sku": "607",
     "variant": "Standard",
     "listEur": 257,
@@ -1849,7 +1717,7 @@
   },
   {
     "slug": "planteringskarl-bage",
-    "name": "Planteringskärl i arkitektonisk betong, bågformat",
+    "name": "Kärl bågformat, 229,5 cm",
     "sku": "654",
     "variant": "Standard",
     "listEur": 480,
@@ -1861,7 +1729,7 @@
   },
   {
     "slug": "planteringskarl-kvadrat-60",
-    "name": "Planteringskärl i arkitektonisk betong, kvadratiskt 60 cm",
+    "name": "Kärl kvadratiskt 60 × 60 × 50 cm",
     "sku": "656",
     "variant": "Standard",
     "listEur": 190,
@@ -1873,7 +1741,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-100",
-    "name": "Planteringskärl i arkitektonisk betong, rektangulärt 100 cm",
+    "name": "Kärl rektangulärt 100 × 60 × 50 cm",
     "sku": "657",
     "variant": "Standard",
     "listEur": 306,
@@ -1885,7 +1753,7 @@
   },
   {
     "slug": "planteringskarl-kvadrat-100",
-    "name": "Planteringskärl i arkitektonisk betong, kvadratiskt 100 cm",
+    "name": "Kärl kvadratiskt 100 × 100 × 70 cm",
     "sku": "612",
     "variant": "Standard",
     "listEur": 640,
@@ -1897,7 +1765,7 @@
   },
   {
     "slug": "planteringskarl-rektangel-160",
-    "name": "Planteringskärl i arkitektonisk betong, rektangulärt 160 cm",
+    "name": "Kärl rektangulärt 160 × 60 × 50 cm",
     "sku": "658",
     "variant": "Standard",
     "listEur": 538,

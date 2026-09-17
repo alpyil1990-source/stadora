@@ -53,7 +53,6 @@ export const catalog: CategoryDef[] = [
         blurb: 'Picknickbord och utomhusbord.',
         productSlugs: [...investimCatalogSlugs['bord-picknick']],
         draftExamples: ['Picknickbord Tanto', 'Utomhusbord Långholmen'],
-        liveReady: ['Picknickbord Enskede (grupp 1 på live-sajten, inte inlagd som kort här än)'],
       },
       {
         slug: 'modulara-sitt',
