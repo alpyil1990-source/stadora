@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
-import { ProductCard } from '../components/ProductCard'
+import { ListingCard } from '../components/ListingCard'
 import { unpublishedProducts } from '../data/content'
 import { novumGaps } from '../data/novum'
 import { api } from '../lib/api'
@@ -43,8 +43,9 @@ export function InternHomePage() {
         <p className="kicker">Intern testmiljö</p>
         <h1 className="mt-2 text-3xl md:text-4xl">Opublicerade produkter</h1>
         <p className="mt-4 max-w-2xl text-muted">
-          Endast intern förhandsgranskning. Ingenting här är publicerat. NOVUM Fitness Devices är
-          begränsat till Runner och Airwalker tills du ger godkännande att importera resten.
+          Endast intern förhandsgranskning. Ingenting här är publicerat. Listningen under Lek och
+          aktivitet → Utegym visar Runner och Airwalker som test. Övriga Fitness Devices är inte
+          importerade.
         </p>
         <p className="mt-3 text-sm">
           <Link className="underline" to="/admin/leverantorer/novum">
@@ -58,6 +59,10 @@ export function InternHomePage() {
           <Link className="underline" to="/konto/skapa">
             Testa registrering
           </Link>
+          {' · '}
+          <Link className="underline" to="/produkter/lek-aktivitet/utegym">
+            Utegym-listning
+          </Link>
         </p>
       </div>
       {items.length === 0 ? (
@@ -65,11 +70,13 @@ export function InternHomePage() {
           Inga opublicerade produkter i den här miljön.
         </p>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2">
+        <ul className="grid grid-cols-1 items-stretch gap-3 md:grid-cols-2 lg:grid-cols-3">
           {items.map((p) => (
-            <ProductCard key={p.slug} product={p} />
+            <li key={p.slug}>
+              <ListingCard product={p} />
+            </li>
           ))}
-        </div>
+        </ul>
       )}
       {novumGaps.length > 0 && (
         <section>

@@ -17,6 +17,9 @@ export type SubcategoryDef = {
   /** Produkter som klarar miniminivån på live men inte är inlagda som kort i konceptet. */
   liveReady?: string[]
   filters?: { legend: string; options: string[] }[]
+  /** Representative still for visual category hubs (Lek och aktivitet). */
+  image?: string
+  imageAlt?: string
 }
 
 export type CategoryDef = {
@@ -241,54 +244,79 @@ export const catalog: CategoryDef[] = [
   {
     slug: 'lek-aktivitet',
     name: 'Lek och aktivitet',
-    blurb: 'Gungor, lekställ, lekhus, balans, utegym och sportytor. Underkategorier finns även när produkterna fortfarande är utkast.',
+    blurb: 'Utrustning för lek, träning och aktivitet utomhus. Välj en kategori för att se sortimentet.',
     children: [
       {
-        slug: 'gungor',
-        name: 'Gungor',
-        blurb: 'Gungställningar och gungor.',
+        slug: 'lekplatsutrustning',
+        name: 'Lekplatsutrustning',
+        blurb: 'Gungor, lekställningar, lekhus och övrig lekplats.',
         productSlugs: [],
-        draftExamples: ['Gungställning Sandvik'],
+        draftExamples: [],
+        image: '/images/env-park.jpg',
+        imageAlt: 'Parkmiljö, ingång till lekplatsutrustning',
       },
       {
-        slug: 'lekstallningar',
-        name: 'Lekställningar',
-        blurb: 'Klätterställning, torn och kombinerad lek.',
+        slug: 'tillganglig-lek',
+        name: 'Tillgänglig lek',
+        blurb: 'Lek för flera åldrar och förmågor.',
         productSlugs: [],
-        draftExamples: ['Klätterställning Ekhagen'],
+        draftExamples: [],
+        image: '/images/env-gaard.jpg',
+        imageAlt: 'Gårdsmiljö, ingång till tillgänglig lek',
       },
       {
-        slug: 'lekhus',
-        name: 'Lekhus',
-        blurb: 'Lekhus för rollek.',
+        slug: 'naturlek',
+        name: 'Naturlek',
+        blurb: 'Lek i vegetation och naturmaterial.',
         productSlugs: [],
-        draftExamples: ['Lekhus Björkhaga'],
-      },
-      {
-        slug: 'balans-rorelse',
-        name: 'Balans och rörelse',
-        blurb: 'Balansbanor, hinder och linor.',
-        productSlugs: [],
-        draftExamples: ['Balansstation Örhem', 'Hopphinder Flaten'],
+        draftExamples: [],
+        image: '/images/env-gaard.jpg',
+        imageAlt: 'Planterad gård, ingång till naturlek',
       },
       {
         slug: 'utegym',
         name: 'Utegym',
         blurb: 'Fasta redskap för träning utomhus.',
         productSlugs: [...novumCatalogSlugs.utegym],
-        draftExamples: ['Utegym Hammarbyhöjden', 'Utegym Näsby', 'Street workout Telefonplan'],
+        draftExamples: [],
+        image: '/images/lek/utegym.jpg',
+        imageAlt: 'Utegym, ingång till kategorin',
       },
       {
-        slug: 'sportytor',
-        name: 'Sportytor',
+        slug: 'street-workout',
+        name: 'Street workout',
+        blurb: 'Stationer för calisthenics och street workout.',
+        productSlugs: [],
+        draftExamples: [],
+        image: '/images/env-hallplats.jpg',
+        imageAlt: 'Hållplatsmiljö, ingång till street workout',
+      },
+      {
+        slug: 'multisport-bollplaner',
+        name: 'Multisport och bollplaner',
         blurb: 'Bollplan, MUGA och spel.',
         productSlugs: [],
-        draftExamples: [
-          'Bollplan Hökmossen',
-          'MUGA-anläggning Järvafältet',
-          'Multisportarena Hjorthagen',
-          'Pingisbord Vällingby',
-        ],
+        draftExamples: [],
+        image: '/images/env-skola.jpg',
+        imageAlt: 'Skolgård, ingång till multisport och bollplaner',
+      },
+      {
+        slug: 'klattring-hinderbanor',
+        name: 'Klättring och hinderbanor',
+        blurb: 'Klätterlek, hinder och balansbanor.',
+        productSlugs: [],
+        draftExamples: [],
+        image: '/images/env-park.jpg',
+        imageAlt: 'Parkmiljö, ingång till klättring och hinderbanor',
+      },
+      {
+        slug: 'hundrastgard-agility',
+        name: 'Hundrastgård och agility',
+        blurb: 'Rastgårdar och agilitybanor.',
+        productSlugs: [],
+        draftExamples: [],
+        image: '/images/env-gaard.jpg',
+        imageAlt: 'Gårdsmiljö, ingång till hundrastgård och agility',
       },
     ],
   },

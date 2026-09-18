@@ -13,6 +13,15 @@ import {
 } from '../data/catalog'
 import { ProductCard } from '../components/ProductCard'
 import { Breadcrumb } from '../components/Breadcrumb'
+import { PlayActivityHub, PlayActivityListing } from './PlayActivityPages'
+
+const PLAY_SLUG_REDIRECTS: Record<string, string> = {
+  gungor: 'lekplatsutrustning',
+  lekstallningar: 'lekplatsutrustning',
+  lekhus: 'lekplatsutrustning',
+  'balans-rorelse': 'klattring-hinderbanor',
+  sportytor: 'multisport-bollplaner',
+}
 
 function StatusNote({ sub }: { sub: SubcategoryDef }) {
   const status = subcategoryStatus(sub)
@@ -84,6 +93,7 @@ export function CategoryHubPage() {
   const { categorySlug } = useParams()
   const category = findCategory(categorySlug)
   if (!category) return <Navigate to="/produkter" replace />
+  if (category.slug === 'lek-aktivitet') return <PlayActivityHub category={category} />
 
   return (
     <div>
@@ -113,8 +123,17 @@ export function SubcategoryListPage() {
   const category = findCategory(categorySlug)
   const [on, setOn] = useState<Record<string, string[]>>({})
   if (!category) return <Navigate to="/produkter" replace />
+  const redirected = category.slug === 'lek-aktivitet' && subcategorySlug
+    ? PLAY_SLUG_REDIRECTS[subcategorySlug]
+    : undefined
+  if (redirected) {
+    return <Navigate to={`/produkter/${category.slug}/${redirected}`} replace />
+  }
   const sub = findSubcategory(category, subcategorySlug)
   if (!sub) return <Navigate to={categoryPath(category)} replace />
+  if (category.slug === 'lek-aktivitet') {
+    return <PlayActivityListing category={category} sub={sub} />
+  }
 
   const items = sub.productSlugs.map((slug) => products[slug]).filter(isPublicProduct)
   const filters = sub.filters

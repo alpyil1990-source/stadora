@@ -54,7 +54,7 @@ export function HomePage() {
             ['Park och torg', 'Bänkar och sitt för högt slitage.', '/produkter/parkmobler'],
             ['Avfall', 'Kärl och stationer för gård och gata.', '/produkter/avfall-atervinning'],
             ['Cykelparkering', 'Ställ, tak och service för cykel.', '/produkter/cykelparkering'],
-            ['Lek och aktivitet', 'Gungor, lekställningar och lekhus.', '/produkter/lek-aktivitet'],
+            ['Lek och aktivitet', 'Lekplats, utegym och sportytor.', '/produkter/lek-aktivitet'],
           ].map(([title, text, href]) => (
             <Link key={title} to={href} className="bg-sheet p-6 hover:bg-paper">
               <h3 className="text-lg">{title}</h3>

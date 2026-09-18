@@ -131,9 +131,12 @@ export const novumProducts: Record<string, Product> = Object.fromEntries(
 
 export const NOVUM_SLUGS = series.map((row) => row.slug)
 
-/** Public catalog must stay empty until Alper approves publication. */
+/**
+ * Listing slugs for the unpublished Utegym test grid.
+ * Products stay internal_preview; this is not publication of the rest of Fitness Devices.
+ */
 export const novumCatalogSlugs = {
-  utegym: [] as string[],
+  utegym: [...NOVUM_SLUGS],
 }
 
 export const novumGaps = series.map((row) => ({
