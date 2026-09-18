@@ -8,6 +8,7 @@ import {
   isCadOriginal,
   isStadoraArticleNumber,
   products,
+  publicManufacturer,
   quantityLegend,
   quoteShowsArticleNumber,
 } from '../data/content'
@@ -886,7 +887,9 @@ export function ProductView({
           Opublicerad intern förhandsgranskning. Produkten ingår inte i det publika sortimentet.
           Leverantör och originalfiler är interna tills skriftligt godkännande finns.
           {intern && product.manufacturer
-            ? ` Intern tillverkare ${product.manufacturer} visas bara här.`
+            ? product.manufacturer === 'ZANO'
+              ? ' Tillverkare Zano står i produktbeskrivningen.'
+              : ` Intern tillverkare ${product.manufacturer} visas bara här.`
             : ''}
         </p>
       )}
@@ -901,7 +904,7 @@ export function ProductView({
           {intern && product.originalName && product.originalName !== product.name && (
             <p className="mt-2 text-sm text-muted">Originalnamn {product.originalName}</p>
           )}
-          {intern && product.manufacturer && (
+          {intern && product.manufacturer && !publicManufacturer(product) && (
             <p className="mt-2 text-sm text-muted">
               Intern tillverkare {product.manufacturer} — visas inte publikt
             </p>

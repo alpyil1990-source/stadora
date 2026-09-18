@@ -187,8 +187,12 @@ export function quoteShowsArticleNumber(product?: Product | null, sku?: string |
   return product?.manufacturer === 'STREETPARK' || product?.manufacturer === 'ZANO'
 }
 
-/** Manufacturer stays on the product record for admin and intern views. Never on the public catalog or quote. */
-export function publicManufacturer(_product?: Product | null) {
+/**
+ * STREETPARK, Inoplex, Kusch+Co and NOVUM stay off the public catalog and quote.
+ * ZANO may appear in the product description as "Tillverkare: Zano".
+ */
+export function publicManufacturer(product?: Product | null) {
+  if (product?.manufacturer === 'ZANO') return 'Zano'
   return undefined
 }
 

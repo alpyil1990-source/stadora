@@ -54,10 +54,43 @@ type SeriesJson = {
 
 const series = catalogFile.series as unknown as SeriesJson[]
 
+const MAKER_LINE = 'Tillverkare: Zano.'
+
+function publicName(row: SeriesJson): string {
+  const model = row.modelName?.trim()
+  if (model) return model
+  return row.name.replace(/\s*[–—-]\s*ZANO\s*$/i, '').trim()
+}
+
+function stripMakerBoilerplate(text: string): string {
+  return text
+    .replace(/\s*från tillverkaren ZANO/gi, '')
+    .replace(/\s*Tillverkare:\s*ZANO\.?/gi, '')
+    .replace(/\s*Tillverkare:\s*Zano\.?/gi, '')
+    .replace(/\boffererar ZANO\b/gi, 'offereras')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([.,;:])/g, '$1')
+    .trim()
+}
+
+function withMakerLine(text: string): string {
+  const body = stripMakerBoilerplate(text)
+  if (/^Tillverkare:\s*Zano\b/i.test(body)) return body
+  return body ? `${MAKER_LINE} ${body}` : MAKER_LINE
+}
+
+function publicSummary(row: SeriesJson, name: string): string {
+  const stripped = stripMakerBoilerplate(row.summary)
+  const leftover = stripped.replace(/\.+$/, '').trim()
+  if (!leftover || leftover.toLowerCase() === name.toLowerCase()) return MAKER_LINE
+  return withMakerLine(stripped)
+}
+
 function toProduct(row: SeriesJson): Product {
+  const name = publicName(row)
   return {
     slug: row.slug,
-    name: row.name,
+    name,
     sku: row.sku,
     manufacturer: row.manufacturer,
     quoteShowsSku: row.quoteShowsSku || undefined,
@@ -69,16 +102,16 @@ function toProduct(row: SeriesJson): Product {
     categorySlug: row.categorySlug,
     subcategory: row.subcategory,
     subcategorySlug: row.subcategorySlug,
-    summary: row.summary,
-    description: row.description,
+    summary: publicSummary(row, name),
+    description: withMakerLine(row.description),
     images: row.images.map((img) => ({
       src: img.src,
-      alt: img.alt,
+      alt: img.alt.replace(/\s*[–—-]\s*ZANO(?=,|$)/gi, ''),
       kind: img.kind ?? 'studio',
       color: img.color,
     })),
     material: row.material ?? undefined,
-    wood: row.wood ?? undefined,
+    wood: row.wood ? stripMakerBoilerplate(row.wood) : undefined,
     dimensions: row.dimensions.length ? row.dimensions : undefined,
     weight: row.weight ?? undefined,
     weightSummary: row.weightSummary ?? undefined,

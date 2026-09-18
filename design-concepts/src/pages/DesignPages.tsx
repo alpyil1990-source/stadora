@@ -43,7 +43,7 @@ export function DesignIndexPage() {
             ['Admin: STREETPARK', '/admin/leverantorer/streetpark'],
             ['Admin: Inoplex (intern)', '/admin/leverantorer/inoplex'],
             ['Admin: ZANO', '/admin/leverantorer/zano'],
-            ['Solstol DUO 02.052 – ZANO', '/produkt/solstol-duo-02-052'],
+            ['Solstol DUO 02.052', '/produkt/solstol-duo-02-052'],
             ['ZANO parkbänkar', '/produkter/parkmobler/parkbankar'],
             ['Väntzon och korridor', '/produkter/vantzon-korridor'],
             ['V-Care Fold', '/produkt/v-care-fold'],
@@ -145,11 +145,11 @@ export function DesignIndexPage() {
         <p className="mt-2 text-muted">
           Parkmöbler, avfall, cykelzon, plantering, pollare, skyltar och pergolor från zano.se.
           Kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer) är inte importerad.
-          Tillverkare ZANO syns bara internt. Märkning på originalbilder och dokument är kvar.
+          Tillverkare: Zano står i produktbeskrivningen, inte i produktnamnet. Märkning på originalbilder och dokument är kvar.
         </p>
         <p className="mt-3">
           <Link className="underline" to="/produkt/solstol-duo-02-052">
-            Solstol DUO 02.052 – ZANO
+            Solstol DUO 02.052
           </Link>
           {' · '}
           <Link className="underline" to="/produkter/parkmobler/parkbankar">

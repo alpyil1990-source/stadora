@@ -8,8 +8,8 @@ function QuoteMaker({ slug, as = 'p' }: { slug: string; as?: 'p' | 'span' }) {
   const maker = publicManufacturer(products[slug])
   if (!maker) return null
   const className = as === 'span' ? 'block text-xs text-muted' : 'text-xs text-muted'
-  if (as === 'span') return <span className={className}>Tillverkare {maker}</span>
-  return <p className={className}>Tillverkare {maker}</p>
+  if (as === 'span') return <span className={className}>Tillverkare: {maker}</span>
+  return <p className={className}>Tillverkare: {maker}</p>
 }
 
 function lineImage(line: QuoteLine) {

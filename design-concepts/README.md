@@ -94,7 +94,7 @@ Se `/design` i prototypen, eller:
 - `/admin/leverantorer/streetpark` intern EUR-lista (listpris och netto), luckor och importrapport
 - `/admin/leverantorer/inoplex` intern leverantörssida (inköpspris saknas, offert krävs)
 - `/produkt/planteringskarl-do-23-02` och `/produkt/parkbank-la-20-19` Inoplex-kontrollprodukter (tillverkare dold)
-- `/produkt/solstol-duo-02-052` ZANO Solstol DUO (tillverkare syns, märkning kvar, pris på förfrågan)
+- `/produkt/solstol-duo-02-052` Solstol DUO (Tillverkare: Zano i beskrivningen, märkning kvar, pris på förfrågan)
 - `/produkter/parkmobler/parkbankar` och övriga underkategorier med ZANO-katalog (Övrigt är inte importerat)
 - `/admin/leverantorer/zano` intern ZANO-sida (inköpspris saknas, kvalitetskontroll)
 - `/produkter/vantzon-korridor/vagghangda-fallstolar` V-Care Fold, vägghängd
@@ -115,4 +115,4 @@ STREETPARK_USER='din@epost' STREETPARK_PASSWORD='…' python3 scripts/fetch-stre
 
 ## Innehållsregel
 
-Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin, utom STREETPARK, Inoplex-modellkoder och ZANO-modellnummer som följer med offerten. Inoplex namnges inte på publika produktsidor. ZANO namnges publikt och originalmärkning på bilder/dokument ska vara kvar. ZANO-kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer) importeras inte.
+Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin, utom STREETPARK, Inoplex-modellkoder och ZANO-modellnummer som följer med offerten. Inoplex namnges inte på publika produktsidor. ZANO står som Tillverkare: Zano i produktbeskrivningen, inte i produktnamnet; originalmärkning på bilder/dokument ska vara kvar. ZANO-kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer) importeras inte.
