@@ -44,6 +44,11 @@ import {
   weightForSelection,
 } from '../data/inoplex-config'
 import { finishSwatchHex, isStreetparkProduct } from '../data/streetpark-finishes'
+import {
+  extraMaterialDetails,
+  keyFactDimension,
+  productIngress,
+} from '../lib/productPresentation'
 import { useQuote } from '../context/QuoteContext'
 import { ProductCard } from './ProductCard'
 import { Breadcrumb } from './Breadcrumb'
@@ -84,9 +89,14 @@ export function ProductView({
   const weight = selectedSize?.weight ?? product.weight
   const selectedWeight = weightForSelection(product, variants)
   const weightBesidePhoto = selectedWeight.beside
-  const weightMissingFor = selectedWeight.missingFor
   const capacity = selectedSize?.capacity ?? product.capacity
   const materialLabel = finish?.name ?? product.material
+  const materialExtras = extraMaterialDetails(product)
+  const showMaterial = Boolean(materialLabel || product.cement || product.wood || materialExtras.length)
+  const ingress = productIngress(product)
+  const totalLength = keyFactDimension(dimensions, 'Total längd')
+  const seatLength = keyFactDimension(dimensions, 'Sittlängd')
+  const keyWeight = weightBesidePhoto ?? weight
   const environment = finish?.environment ?? product.environment
   const standardFeatures = finish?.standardFeatures
   const optionalFeatures = finish?.optionalFeatures
@@ -150,7 +160,7 @@ export function ProductView({
   const jump = useMemo(() => {
     const items = [{ id: 'oversikt', label: 'Översikt' }]
     if (dimensions?.length || weight) items.push({ id: 'matt', label: 'Mått och vikt' })
-    if (materialLabel) items.push({ id: 'material', label: 'Material' })
+    if (showMaterial) items.push({ id: 'material', label: 'Material' })
     if (standardFeatures?.length || optionalFeatures?.length) {
       items.push({ id: 'utforande', label: 'Utförande' })
     }
@@ -167,8 +177,8 @@ export function ProductView({
     return items
   }, [
     dimensions,
-    materialLabel,
     optionalFeatures?.length,
+    showMaterial,
     product,
     related.length,
     standardFeatures?.length,
@@ -539,79 +549,29 @@ export function ProductView({
     </div>
   )
 
-  const keyFacts = (
-    <dl className="grid grid-cols-2 gap-3 text-sm">
-      {publicSku && (
-        <div>
-          <dt className="text-muted">Art.nr</dt>
-          <dd className="font-medium tabular-nums">{publicSku}</dd>
-        </div>
-      )}
-      {maker && (
-        <div>
-          <dt className="text-muted">{intern ? 'Intern tillverkare' : 'Tillverkare'}</dt>
-          <dd className="font-medium">
-            {maker}
-            {intern ? ' (visas inte publikt)' : ''}
-          </dd>
-        </div>
-      )}
-      {weightBesidePhoto && (
-        <div>
-          <dt className="text-muted">Vikt</dt>
-          <dd className="font-medium">{weightBesidePhoto}</dd>
-        </div>
-      )}
-      {weightMissingFor && (
-        <div className="col-span-2">
-          <dt className="text-muted">Vikt</dt>
-          <dd className="font-medium">Anges inte för {weightMissingFor}</dd>
-        </div>
-      )}
-      {dimensions?.[0] && (
-        <div>
-          <dt className="text-muted">{dimensions[0].label}</dt>
-          <dd className="font-medium">{dimensions[0].value}</dd>
-        </div>
-      )}
-      {materialLabel && !optionProduct && (
-        <div className="col-span-2">
-          <dt className="text-muted">Material</dt>
-          <dd className="font-medium">{materialLabel}</dd>
-        </div>
-      )}
-      {product.medicalClass && (
-        <div className="col-span-2">
-          <dt className="text-muted">Klassning</dt>
-          <dd className="font-medium">{product.medicalClass}</dd>
-        </div>
-      )}
-      {product.users && (
-        <div>
-          <dt className="text-muted">Användare</dt>
-          <dd className="font-medium">{product.users}</dd>
-        </div>
-      )}
-      {product.ageRange && (
-        <div>
-          <dt className="text-muted">Ålder</dt>
-          <dd className="font-medium">{product.ageRange}</dd>
-        </div>
-      )}
-      {product.fallHeight && (
-        <div>
-          <dt className="text-muted">Maximal fallhöjd</dt>
-          <dd className="font-medium">{product.fallHeight}</dd>
-        </div>
-      )}
-      {product.safetyZoneArea && (
-        <div>
-          <dt className="text-muted">Säkerhetsområde</dt>
-          <dd className="font-medium">{product.safetyZoneArea}</dd>
-        </div>
-      )}
-    </dl>
-  )
+  const keyFacts =
+    totalLength || seatLength || keyWeight ? (
+      <dl className="grid grid-cols-2 gap-3 text-sm">
+        {totalLength && (
+          <div>
+            <dt className="text-muted">{totalLength.label}</dt>
+            <dd className="font-medium">{totalLength.value}</dd>
+          </div>
+        )}
+        {seatLength && (
+          <div>
+            <dt className="text-muted">{seatLength.label}</dt>
+            <dd className="font-medium">{seatLength.value}</dd>
+          </div>
+        )}
+        {keyWeight && (
+          <div>
+            <dt className="text-muted">Vikt</dt>
+            <dd className="font-medium">{keyWeight}</dd>
+          </div>
+        )}
+      </dl>
+    ) : null
 
   const mattSection =
     dimensions?.length || weight ? (
@@ -649,15 +609,17 @@ export function ProductView({
 
   const sections = (
     <div className="space-y-12">
-      {materialLabel && (
+      {showMaterial && (
         <section id="material">
           <h2 className="text-xl">Material och ytbehandling</h2>
           <table className="spec-table mt-3">
             <tbody>
-              <tr>
-                <th>Material</th>
-                <td>{materialLabel}</td>
-              </tr>
+              {materialLabel && (
+                <tr>
+                  <th>Material</th>
+                  <td>{materialLabel}</td>
+                </tr>
+              )}
               {product.cement && (
                 <tr>
                   <th>Betong</th>
@@ -668,6 +630,18 @@ export function ProductView({
                 <tr>
                   <th>Trä</th>
                   <td>{product.wood}</td>
+                </tr>
+              )}
+              {materialExtras.length > 0 && (
+                <tr>
+                  <th>Övrigt</th>
+                  <td>
+                    <div className="space-y-2">
+                      {materialExtras.map((detail) => (
+                        <p key={detail}>{detail}</p>
+                      ))}
+                    </div>
+                  </td>
                 </tr>
               )}
             </tbody>
@@ -857,7 +831,10 @@ export function ProductView({
         <div className="mx-auto max-w-3xl py-12">
           <p className="kicker">{product.subcategory}</p>
           <h1 className="mt-3 text-4xl md:text-5xl">{product.name}</h1>
-          <p className="mt-4 text-lg text-muted">{product.summary}</p>
+          {publicSku && (
+            <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {publicSku}</p>
+          )}
+          {ingress && <p className="mt-4 text-lg text-muted">{ingress}</p>}
           <div className="mt-8">{configure}</div>
           {mattSection && <div className="mt-10">{mattSection}</div>}
         </div>
@@ -878,7 +855,10 @@ export function ProductView({
           <div className="lg:col-span-8">
             <p className="kicker">{product.category}</p>
             <h1 className="mt-2 text-3xl">{product.name}</h1>
-            <p className="mt-3 max-w-2xl text-muted">{product.description}</p>
+            {publicSku && (
+              <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {publicSku}</p>
+            )}
+            {ingress && <p className="mt-3 max-w-2xl text-muted">{ingress}</p>}
             <div className="mt-6 grid gap-8 lg:grid-cols-2">
               <div>
                 {keyFacts}
@@ -941,8 +921,8 @@ export function ProductView({
           {publicSku && (
             <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {publicSku}</p>
           )}
-          <p className="mt-4 max-w-xl text-muted">{product.description}</p>
-          <div className="mt-6">{keyFacts}</div>
+          {ingress && <p className="mt-4 max-w-xl text-muted">{ingress}</p>}
+          {keyFacts && <div className="mt-6">{keyFacts}</div>}
           <div className="mt-6">{configure}</div>
         </div>
       </div>
