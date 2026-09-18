@@ -17,6 +17,9 @@ export type SubcategoryDef = {
   /** Produkter som klarar miniminivån på live men inte är inlagda som kort i konceptet. */
   liveReady?: string[]
   filters?: { legend: string; options: string[] }[]
+  /** Representative still for visual category hubs (Lek och aktivitet). */
+  image?: string
+  imageAlt?: string
 }
 
 export type CategoryDef = {
@@ -241,7 +244,7 @@ export const catalog: CategoryDef[] = [
   {
     slug: 'lek-aktivitet',
     name: 'Lek och aktivitet',
-    blurb: 'Gungor, lekställningar, utegym och sportytor för park och gård.',
+    blurb: 'Utrustning för lek, träning och aktivitet utomhus. Välj en kategori för att se sortimentet.',
     children: [
       {
         slug: 'lekplatsutrustning',
@@ -249,6 +252,8 @@ export const catalog: CategoryDef[] = [
         blurb: 'Gungor, lekställningar, lekhus och övrig lekplats.',
         productSlugs: [],
         draftExamples: [],
+        image: '/images/env-park.jpg',
+        imageAlt: 'Parkmiljö, ingång till lekplatsutrustning',
       },
       {
         slug: 'tillganglig-lek',
@@ -256,6 +261,8 @@ export const catalog: CategoryDef[] = [
         blurb: 'Lek för flera åldrar och förmågor.',
         productSlugs: [],
         draftExamples: [],
+        image: '/images/env-gaard.jpg',
+        imageAlt: 'Gårdsmiljö, ingång till tillgänglig lek',
       },
       {
         slug: 'naturlek',
@@ -263,6 +270,8 @@ export const catalog: CategoryDef[] = [
         blurb: 'Lek i vegetation och naturmaterial.',
         productSlugs: [],
         draftExamples: [],
+        image: '/images/env-gaard.jpg',
+        imageAlt: 'Planterad gård, ingång till naturlek',
       },
       {
         slug: 'utegym',
@@ -270,6 +279,8 @@ export const catalog: CategoryDef[] = [
         blurb: 'Fasta redskap för träning utomhus.',
         productSlugs: [...novumCatalogSlugs.utegym],
         draftExamples: [],
+        image: '/images/lek/utegym.jpg',
+        imageAlt: 'Utegym, ingång till kategorin',
       },
       {
         slug: 'street-workout',
@@ -277,6 +288,8 @@ export const catalog: CategoryDef[] = [
         blurb: 'Stationer för calisthenics och street workout.',
         productSlugs: [],
         draftExamples: [],
+        image: '/images/env-hallplats.jpg',
+        imageAlt: 'Hållplatsmiljö, ingång till street workout',
       },
       {
         slug: 'multisport-bollplaner',
@@ -284,6 +297,8 @@ export const catalog: CategoryDef[] = [
         blurb: 'Bollplan, MUGA och spel.',
         productSlugs: [],
         draftExamples: [],
+        image: '/images/env-skola.jpg',
+        imageAlt: 'Skolgård, ingång till multisport och bollplaner',
       },
       {
         slug: 'klattring-hinderbanor',
@@ -291,6 +306,8 @@ export const catalog: CategoryDef[] = [
         blurb: 'Klätterlek, hinder och balansbanor.',
         productSlugs: [],
         draftExamples: [],
+        image: '/images/env-park.jpg',
+        imageAlt: 'Parkmiljö, ingång till klättring och hinderbanor',
       },
       {
         slug: 'hundrastgard-agility',
@@ -298,6 +315,8 @@ export const catalog: CategoryDef[] = [
         blurb: 'Rastgårdar och agilitybanor.',
         productSlugs: [],
         draftExamples: [],
+        image: '/images/env-gaard.jpg',
+        imageAlt: 'Gårdsmiljö, ingång till hundrastgård och agility',
       },
     ],
   },

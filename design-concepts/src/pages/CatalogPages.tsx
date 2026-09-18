@@ -13,7 +13,7 @@ import {
 } from '../data/catalog'
 import { ProductCard } from '../components/ProductCard'
 import { Breadcrumb } from '../components/Breadcrumb'
-import { PlayActivityListing } from './PlayActivityPages'
+import { PlayActivityHub, PlayActivityListing } from './PlayActivityPages'
 
 const PLAY_SLUG_REDIRECTS: Record<string, string> = {
   gungor: 'lekplatsutrustning',
@@ -93,6 +93,7 @@ export function CategoryHubPage() {
   const { categorySlug } = useParams()
   const category = findCategory(categorySlug)
   if (!category) return <Navigate to="/produkter" replace />
+  if (category.slug === 'lek-aktivitet') return <PlayActivityHub category={category} />
 
   return (
     <div>

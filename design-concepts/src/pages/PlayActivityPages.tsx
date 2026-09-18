@@ -1,10 +1,12 @@
 import { useEffect, useId, useMemo, useState } from 'react'
-import { SlidersHorizontal, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ArrowRight, SlidersHorizontal, X } from 'lucide-react'
 import { ListingCard } from '../components/ListingCard'
 import { Breadcrumb } from '../components/Breadcrumb'
 import { products, type Product } from '../data/content'
 import {
   categoryPath,
+  subcategoryPath,
   type CategoryDef,
   type SubcategoryDef,
 } from '../data/catalog'
@@ -18,6 +20,49 @@ function useListingPreview() {
       .finally(() => setReady(true))
   }, [])
   return ready
+}
+
+export function PlayActivityHub({ category }: { category: CategoryDef }) {
+  return (
+    <div>
+      <Breadcrumb
+        items={[
+          { label: 'Hem', to: '/' },
+          { label: 'Sortiment', to: '/produkter' },
+          { label: category.name },
+        ]}
+      />
+      <h1 className="text-4xl md:text-5xl">{category.name}</h1>
+      <p className="mt-3 max-w-xl text-muted">{category.blurb}</p>
+      <img
+        src="/images/env-park.jpg"
+        alt=""
+        className="mt-8 aspect-[16/7] w-full object-cover"
+      />
+      <ul className="mt-6 grid grid-cols-1 gap-3 md:grid-cols-2">
+        {category.children.map((sub) => (
+          <li key={sub.slug}>
+            <Link
+              to={subcategoryPath(category, sub)}
+              className="group relative block aspect-[16/10] overflow-hidden border border-line bg-paper focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sage"
+            >
+              {sub.image && (
+                <img
+                  src={sub.image}
+                  alt={sub.imageAlt ?? ''}
+                  className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                />
+              )}
+              <span className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-3 bg-sheet/92 px-4 py-3">
+                <span className="text-lg font-medium">{sub.name}</span>
+                <ArrowRight className="h-4 w-4 shrink-0 text-muted group-hover:text-ink" aria-hidden />
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
 }
 
 type SortKey = 'name-asc' | 'name-desc' | 'sku-asc'
