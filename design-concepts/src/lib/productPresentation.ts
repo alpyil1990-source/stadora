@@ -136,6 +136,173 @@ export function extraMaterialDetails(product: Product): string[] {
   return extras
 }
 
+/** Structured rows for Material och ytbehandling. Presentation only — does not mutate product fields. */
+export type MaterialSectionRow = { label: string; value: string }
+
+function capitalizePhrase(text: string): string {
+  const trimmed = tidy(text)
+  if (!trimmed) return trimmed
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1)
+}
+
+function joinSwedishList(parts: string[]): string {
+  const clean = parts.map((part) => tidy(part)).filter(Boolean)
+  if (clean.length <= 1) return clean[0] ?? ''
+  if (clean.length === 2) return `${clean[0]} och ${clean[1]}`
+  return `${clean.slice(0, -1).join(', ')} och ${clean[clean.length - 1]}`
+}
+
+function mergeUniquePhrases(parts: string[]): string[] {
+  const merged: string[] = []
+  for (const part of parts) {
+    const value = tidy(part)
+    if (!value) continue
+    if (merged.some((existing) => containedIn(value, existing))) continue
+    for (let i = merged.length - 1; i >= 0; i--) {
+      if (containedIn(merged[i], value)) merged.splice(i, 1)
+    }
+    merged.push(value)
+  }
+  return merged
+}
+
+function joinClauses(parts: string[]): string {
+  const merged = mergeUniquePhrases(parts).map((part, index) =>
+    index === 0 ? capitalizePhrase(part) : part,
+  )
+  if (!merged.length) return ''
+  return merged
+    .map((part, index) => {
+      if (index === merged.length - 1) return part.replace(/\.+$/, '')
+      return /[.!?]$/.test(part) ? part : `${part}.`
+    })
+    .join(' ')
+}
+
+function stripPrefixLabel(text: string): string {
+  return tidy(text.replace(/^(stommaterial|träslag|stomme|sits)\s*:\s*/i, ''))
+}
+
+export function productHasBackrest(product: Product, selectedSummary?: string): boolean {
+  const selected = (selectedSummary ?? '').toLowerCase()
+  if (/utan rygg/.test(selected)) return false
+  if (/ryggstöd|\bmed rygg\b/.test(selected)) return true
+
+  const text = `${product.summary} ${product.description} ${product.name}`.toLowerCase()
+  if (/utan ryggstöd|utan rygg/.test(text)) return false
+  if (/med ryggstöd|ryggstöd/.test(text)) return true
+  if (product.dimensions?.some((row) => /ryggstöd/i.test(row.label))) return true
+  if (/vilstol|solstol|solbänk|liggstol/i.test(`${product.name} ${product.subcategory}`)) return true
+  return false
+}
+
+function isSeatChunk(chunk: string): boolean {
+  return /trälister|^\s*trä\s*$/i.test(chunk) && !/stomme|stål|betong/i.test(chunk)
+}
+
+function splitCompositeMaterial(material: string): { frame?: string; seat?: string } {
+  const text = tidy(material)
+  if (!text) return {}
+
+  const withSeat = text.match(/^(.*?)\s+med\s+(trälister|trä)\.?$/i)
+  if (withSeat) {
+    return { frame: capitalizePhrase(withSeat[1]), seat: capitalizePhrase(withSeat[2]) }
+  }
+
+  const andSeat = text.match(/^(.*?)\s+och\s+(trälister|trä)\.?$/i)
+  if (andSeat) {
+    return { frame: capitalizePhrase(andSeat[1]), seat: capitalizePhrase(andSeat[2]) }
+  }
+
+  const sentences = splitSentences(text)
+  if (sentences.length >= 2) {
+    const seatSentences = sentences.filter(isSeatChunk)
+    const frameSentences = sentences.filter((sentence) => !isSeatChunk(sentence))
+    if (seatSentences.length && frameSentences.length) {
+      return {
+        frame: capitalizePhrase(frameSentences.join(' ')),
+        seat: capitalizePhrase(seatSentences.join(' ')),
+      }
+    }
+  }
+
+  if (/trälister/i.test(text) && /,\s*| och /i.test(text)) {
+    const chunks = text
+      .split(/,(?!\s*\d)|\s+och\s+/i)
+      .map((chunk) => tidy(chunk.replace(/\.+$/, '')))
+      .filter(Boolean)
+    const seatChunks = chunks.filter(isSeatChunk)
+    const frameChunks = chunks.filter((chunk) => !isSeatChunk(chunk))
+    if (seatChunks.length && frameChunks.length) {
+      return {
+        frame: capitalizePhrase(joinSwedishList(frameChunks)),
+        seat: capitalizePhrase(joinSwedishList(seatChunks)),
+      }
+    }
+  }
+
+  return { frame: capitalizePhrase(text) }
+}
+
+function classifyMaterialSentence(sentence: string): 'frame' | 'seat' | 'concrete' {
+  if (/portlandcement|hållfasthetsklass|tvättad ballast|sorterad sand|betong minst|pn-en\s*206/i.test(sentence)) {
+    return 'concrete'
+  }
+  if (/träslag\s*:|trälister|sits och rygg/i.test(sentence) && !/stommaterial/i.test(sentence)) {
+    return 'seat'
+  }
+  return 'frame'
+}
+
+export function materialSectionRows(
+  product: Product,
+  options: {
+    materialLabel?: string
+    extras?: string[]
+    selectedSummary?: string
+    selectedSeat?: string
+  } = {},
+): MaterialSectionRow[] {
+  const extras = options.extras ?? extraMaterialDetails(product)
+  const source = options.materialLabel ?? product.material ?? ''
+  const split = splitCompositeMaterial(source)
+  const frameParts: string[] = []
+  const seatParts: string[] = []
+  const concreteParts: string[] = []
+
+  if (split.frame) frameParts.push(split.frame)
+  if (product.wood) {
+    seatParts.push(product.wood)
+  } else if (split.seat) {
+    seatParts.push(split.seat)
+  }
+  if (options.selectedSeat) {
+    seatParts.length = 0
+    seatParts.push(options.selectedSeat)
+  }
+  if (product.cement) concreteParts.push(product.cement)
+
+  for (const extra of extras) {
+    const value = stripPrefixLabel(extra)
+    const kind = classifyMaterialSentence(extra)
+    if (kind === 'seat') seatParts.push(value)
+    else if (kind === 'concrete') concreteParts.push(value)
+    else frameParts.push(value)
+  }
+
+  const frame = joinClauses(frameParts)
+  const seat = joinClauses(seatParts)
+  const concrete = joinClauses(concreteParts)
+  const rows: MaterialSectionRow[] = []
+  if (frame) rows.push({ label: 'Stomme', value: frame })
+  if (seat) {
+    const label = productHasBackrest(product, options.selectedSummary) ? 'Sits och ryggstöd' : 'Sits'
+    rows.push({ label, value: seat })
+  }
+  if (concrete) rows.push({ label: 'Betongspecifikation', value: concrete })
+  return rows
+}
+
 export function keyFactDimension(
   dimensions: { label: string; value: string }[] | undefined,
   label: string,

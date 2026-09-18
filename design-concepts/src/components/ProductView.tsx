@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { ArrowLeft, Download } from 'lucide-react'
 import type { Product, ProductDocument, SizeOption } from '../data/content'
@@ -47,6 +47,7 @@ import { finishSwatchHex, isStreetparkProduct } from '../data/streetpark-finishe
 import {
   extraMaterialDetails,
   keyFactDimension,
+  materialSectionRows,
   productIngress,
 } from '../lib/productPresentation'
 import { useQuote } from '../context/QuoteContext'
@@ -91,8 +92,13 @@ export function ProductView({
   const weightBesidePhoto = selectedWeight.beside
   const capacity = selectedSize?.capacity ?? product.capacity
   const materialLabel = finish?.name ?? product.material
-  const materialExtras = extraMaterialDetails(product)
-  const showMaterial = Boolean(materialLabel || product.cement || product.wood || materialExtras.length)
+  const materialRows = materialSectionRows(product, {
+    materialLabel,
+    extras: extraMaterialDetails(product),
+    selectedSummary: selectedSize?.summary,
+    selectedSeat: variants['Sits'] ?? variants['Träslag'],
+  })
+  const showMaterial = materialRows.length > 0
   const ingress = productIngress(product)
   const totalLength = keyFactDimension(dimensions, 'Total längd')
   const seatLength = keyFactDimension(dimensions, 'Sittlängd')
@@ -156,34 +162,6 @@ export function ProductView({
     )
     setAdded(true)
   }
-
-  const jump = useMemo(() => {
-    const items = [{ id: 'oversikt', label: 'Översikt' }]
-    if (dimensions?.length || weight) items.push({ id: 'matt', label: 'Mått och vikt' })
-    if (showMaterial) items.push({ id: 'material', label: 'Material' })
-    if (standardFeatures?.length || optionalFeatures?.length) {
-      items.push({ id: 'utforande', label: 'Utförande' })
-    }
-    if (product.mounting?.length) items.push({ id: 'montering', label: 'Montering' })
-    if (product.safetyZoneArea || product.fallHeight || product.users || product.ageRange) {
-      items.push({ id: 'sakerhet', label: 'Säkerhet' })
-    }
-    if (product.warranty || product.leadTime) items.push({ id: 'leverans', label: 'Leverans' })
-    if (product.medicalClass || product.standards?.length) items.push({ id: 'standard', label: 'Standarder' })
-    if ((product.documents && product.documents.length > 0) || product.documentPolicy) {
-      items.push({ id: 'dokument', label: 'Dokument' })
-    }
-    if (related.length) items.push({ id: 'serie', label: 'Samma typ' })
-    return items
-  }, [
-    dimensions,
-    optionalFeatures?.length,
-    showMaterial,
-    product,
-    related.length,
-    standardFeatures?.length,
-    weight,
-  ])
 
   const gallery = (
     <div>
@@ -614,36 +592,12 @@ export function ProductView({
           <h2 className="text-xl">Material och ytbehandling</h2>
           <table className="spec-table mt-3">
             <tbody>
-              {materialLabel && (
-                <tr>
-                  <th>Material</th>
-                  <td>{materialLabel}</td>
+              {materialRows.map((row) => (
+                <tr key={row.label}>
+                  <th>{row.label}</th>
+                  <td>{row.value}</td>
                 </tr>
-              )}
-              {product.cement && (
-                <tr>
-                  <th>Betong</th>
-                  <td>{product.cement}</td>
-                </tr>
-              )}
-              {product.wood && (
-                <tr>
-                  <th>Trä</th>
-                  <td>{product.wood}</td>
-                </tr>
-              )}
-              {materialExtras.length > 0 && (
-                <tr>
-                  <th>Övrigt</th>
-                  <td>
-                    <div className="space-y-2">
-                      {materialExtras.map((detail) => (
-                        <p key={detail}>{detail}</p>
-                      ))}
-                    </div>
-                  </td>
-                </tr>
-              )}
+              ))}
             </tbody>
           </table>
         </section>
@@ -796,7 +750,7 @@ export function ProductView({
       </section>
       {related.length > 0 && (
         <section id="serie">
-          <h2 className="text-xl">Samma typ i sortimentet</h2>
+          <h2 className="text-xl">Fler modeller i serien</h2>
           <div className="mt-5 grid gap-4 sm:grid-cols-3">
             {related.map((p) => (
               <ProductCard key={p.slug} product={p} />
@@ -888,18 +842,7 @@ export function ProductView({
         </p>
       )}
       <ProductNav product={product} />
-      <nav aria-label="På sidan" className="mb-6 flex flex-wrap gap-2 text-xs">
-        {jump.map((j) => (
-          <a
-            key={j.id}
-            className="border border-line px-2 py-1 text-sage-dark hover:border-ink"
-            href={`#${j.id}`}
-          >
-            {j.label}
-          </a>
-        ))}
-      </nav>
-      <div className="grid items-start gap-10 lg:grid-cols-12" id="oversikt">
+      <div className="grid items-start gap-10 lg:grid-cols-12">
         <div className="lg:col-span-6">
           {gallery}
           {mattSection && <div className="mt-8">{mattSection}</div>}
