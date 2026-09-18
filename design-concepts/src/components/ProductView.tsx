@@ -613,40 +613,42 @@ export function ProductView({
     </dl>
   )
 
+  const mattSection =
+    dimensions?.length || weight ? (
+      <section id="matt">
+        <h2 className="text-xl">Mått och vikt</h2>
+        <table className="spec-table mt-3">
+          <tbody>
+            {(dimensions ?? []).map((row) => (
+              <tr key={row.label}>
+                <th>{row.label}</th>
+                <td>
+                  {row.value}
+                  {row.note ? (
+                    <p className="mt-1 text-xs font-normal text-muted">{row.note}</p>
+                  ) : null}
+                </td>
+              </tr>
+            ))}
+            {weight && (
+              <tr>
+                <th>Vikt</th>
+                <td>{weight}</td>
+              </tr>
+            )}
+            {capacity && (
+              <tr>
+                <th>Kapacitet</th>
+                <td>{capacity}</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </section>
+    ) : null
+
   const sections = (
     <div className="space-y-12">
-      {(dimensions?.length || weight) && (
-        <section id="matt">
-          <h2 className="text-xl">Mått och vikt</h2>
-          <table className="spec-table mt-3">
-            <tbody>
-              {(dimensions ?? []).map((row) => (
-                <tr key={row.label}>
-                  <th>{row.label}</th>
-                  <td>
-                    {row.value}
-                    {row.note ? (
-                      <p className="mt-1 text-xs font-normal text-muted">{row.note}</p>
-                    ) : null}
-                  </td>
-                </tr>
-              ))}
-              {weight && (
-                <tr>
-                  <th>Vikt</th>
-                  <td>{weight}</td>
-                </tr>
-              )}
-              {capacity && (
-                <tr>
-                  <th>Kapacitet</th>
-                  <td>{capacity}</td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        </section>
-      )}
       {materialLabel && (
         <section id="material">
           <h2 className="text-xl">Material och ytbehandling</h2>
@@ -857,6 +859,7 @@ export function ProductView({
           <h1 className="mt-3 text-4xl md:text-5xl">{product.name}</h1>
           <p className="mt-4 text-lg text-muted">{product.summary}</p>
           <div className="mt-8">{configure}</div>
+          {mattSection && <div className="mt-10">{mattSection}</div>}
         </div>
         <div className="mx-auto max-w-3xl pb-16">{sections}</div>
       </article>
@@ -868,7 +871,10 @@ export function ProductView({
       <article>
         <ProductNav product={product} />
         <div className="grid gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-4">{gallery}</div>
+          <div className="lg:col-span-4">
+            {gallery}
+            {mattSection && <div className="mt-8">{mattSection}</div>}
+          </div>
           <div className="lg:col-span-8">
             <p className="kicker">{product.category}</p>
             <h1 className="mt-2 text-3xl">{product.name}</h1>
@@ -914,7 +920,10 @@ export function ProductView({
         ))}
       </nav>
       <div className="grid items-start gap-10 lg:grid-cols-12" id="oversikt">
-        <div className="lg:col-span-6">{gallery}</div>
+        <div className="lg:col-span-6">
+          {gallery}
+          {mattSection && <div className="mt-8">{mattSection}</div>}
+        </div>
         <div className="lg:col-span-6">
           <p className="kicker">
             {product.category} · {product.subcategory}
