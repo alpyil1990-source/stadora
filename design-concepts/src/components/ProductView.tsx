@@ -185,7 +185,7 @@ export function ProductView({
           />
         )}
       </div>
-      {maker && (
+      {!intern && maker && (
         <p className="mt-2 text-sm font-medium">Tillverkare: {maker}</p>
       )}
       {optionProduct && inoplexGallery && !inoplexGallery.matched && (
@@ -545,8 +545,11 @@ export function ProductView({
       )}
       {maker && (
         <div>
-          <dt className="text-muted">Tillverkare</dt>
-          <dd className="font-medium">{maker}</dd>
+          <dt className="text-muted">{intern ? 'Intern tillverkare' : 'Tillverkare'}</dt>
+          <dd className="font-medium">
+            {maker}
+            {intern ? ' (visas inte publikt)' : ''}
+          </dd>
         </div>
       )}
       {weightBesidePhoto && (
