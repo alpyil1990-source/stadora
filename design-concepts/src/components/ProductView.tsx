@@ -869,7 +869,7 @@ export function ProductView({
   }
 
   return (
-    <article>
+    <article className="pb-24 lg:pb-0">
       {product.visibility === 'internal_preview' && (
         <p className="mb-6 border border-dashed border-line bg-sheet px-4 py-3 text-sm">
           Opublicerad intern förhandsgranskning. Produkten ingår inte i det publika sortimentet.
