@@ -105,15 +105,21 @@ function publicAppliesTo(text?: string | null) {
   return next.trim() || undefined
 }
 
+function isSharedCatalogPdf(d: DocJson) {
+  return d.typeLabel === 'Materialprov' || d.typeLabel === 'Garanti och underhåll'
+}
+
 function toDocs(rows: DocJson[]): ProductDocument[] {
-  return rows.map((d) => ({
-    title: d.title,
-    typeLabel: d.typeLabel,
-    format: d.format,
-    href: d.href,
-    kind: d.kind,
-    previewable: Boolean(d.previewable ?? ['JPG', 'JPEG', 'PNG', 'WEBP', 'GIF'].includes(d.format)),
-    variant: d.variant ?? undefined,
+  return rows
+    .filter((d) => !isSharedCatalogPdf(d))
+    .map((d) => ({
+      title: d.title,
+      typeLabel: d.typeLabel,
+      format: d.format,
+      href: d.href,
+      kind: d.kind,
+      previewable: Boolean(d.previewable ?? ['JPG', 'JPEG', 'PNG', 'WEBP', 'GIF'].includes(d.format)),
+      variant: d.variant ?? undefined,
     appliesTo: publicAppliesTo(d.appliesTo),
     sourceUrl: d.sourceUrl,
     fetchedAt: d.fetchedAt,

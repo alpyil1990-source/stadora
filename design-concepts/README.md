@@ -107,7 +107,7 @@ Mobil: smal viewport. Meny under 1024 px, fast offertknapp på produktsidan.
 
 ### STREETPARK-dokument (CAD)
 
-Öppna filer (JPG-ritningar, materialprov, garanti) hämtas utan inloggning. CAD, produktblad och förankring kräver partnerinloggning mot streetpark.eu. Lösenord ska **inte** sparas i repot.
+Öppna filer (JPG-ritningar) hämtas utan inloggning. CAD, produktblad och förankring kräver partnerinloggning mot streetpark.eu. Lösenord ska **inte** sparas i repot.
 
 ```bash
 STREETPARK_USER='din@epost' STREETPARK_PASSWORD='…' python3 scripts/fetch-streetpark-auth.py

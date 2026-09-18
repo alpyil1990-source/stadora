@@ -66,7 +66,7 @@ export function DocumentsPage() {
       </p>
       <p className="mt-4 text-sm">
         STREETPARK: måttritningar, 3D-perspektivbilder, produktblad, förankringsanvisningar och CAD
-        (DWG) från leverantören, plus materialprov och garantivillkor där de gäller. En
+        (DWG) från leverantören. En
         3D-perspektivbild i JPG är en bild, inte CAD. BINSIGNIA och INVESTIM har fortfarande inga
         publicerade ritningar i katalogen. NOVUM-originalfiler är interna och inte tillgängliga här.
       </p>
