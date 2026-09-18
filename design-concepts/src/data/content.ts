@@ -183,11 +183,9 @@ export function quoteShowsArticleNumber(product?: Product | null, sku?: string |
   return product?.manufacturer === 'STREETPARK' || product?.manufacturer === 'ZANO'
 }
 
-/** Public catalog copy. STREETPARK remains on the product record for admin and purchasing. */
-export function publicManufacturer(product?: Product | null) {
-  const name = product?.manufacturer
-  if (!name || name === 'STREETPARK' || name === 'NOVUM') return undefined
-  return name
+/** Manufacturer stays on the product record for admin and intern views. Never on the public catalog or quote. */
+export function publicManufacturer(_product?: Product | null) {
+  return undefined
 }
 
 export function isPublicProduct(product?: Product | null) {

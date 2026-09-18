@@ -143,7 +143,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'Lindego 7A, 30-148 Kraków, Polen',
     notes:
-      'ZANO-sortiment utom kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer). Tillstånd att använda produktbilder under förutsättning att ZANO-märkning finns kvar. Tillverkare visas publikt. Modellnummer följer med offerten. Inköpspris saknas — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs. Dokument oförändrade, inklusive logotyp. Hämtat 2026-09-17.',
+      'ZANO-sortiment utom kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer). Tillstånd att använda produktbilder under förutsättning att ZANO-märkning finns kvar. Tillverkare visas bara internt, inte på den publika produktsidan. Modellnummer följer med offerten. Inköpspris saknas — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs. Dokument oförändrade, inklusive logotyp. Hämtat 2026-09-17.',
     productSlugs: [...ZANO_SLUGS],
   },
   {
@@ -182,7 +182,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'Hallener Str. 1–9, 57439 Attendorn, Tyskland',
     notes:
-      'Tillstånd att använda produktbilder och material på webbplatsen, i offerter och kundprojekt. Publik tillverkare Kusch+Co. Endast vägghängd V-Care Fold i den här omgången (1U/2U/3U MW, trä och klädd). Inga golvstående Fold och inga vanliga V-Care-bänkar. Produktkod följer med offerten; inget påhittat KVCR-beställningsnummer. Inga priser publikt. Prislista och inköpsvillkor endast internt. Modellspecifika Fold-blad/CAD saknas i öppen nedladdning; TE/TB/PRM-ritningar ska inte användas. Hämtat 2026-09-18 från kusch.com och nowystyl.com.',
+      'Tillstånd att använda produktbilder och material på webbplatsen, i offerter och kundprojekt. Tillverkare Kusch+Co endast internt, inte på den publika produktsidan eller offerten. Endast vägghängd V-Care Fold i den här omgången (1U/2U/3U MW, trä och klädd). Inga golvstående Fold och inga vanliga V-Care-bänkar. Produktkod följer med offerten; inget påhittat KVCR-beställningsnummer. Inga priser publikt. Prislista och inköpsvillkor endast internt. Modellspecifika Fold-blad/CAD saknas i öppen nedladdning; TE/TB/PRM-ritningar ska inte användas. Hämtat 2026-09-18 från kusch.com och nowystyl.com.',
     productSlugs: [...KUSCH_VCARE_FOLD_SLUGS],
   },
 ]

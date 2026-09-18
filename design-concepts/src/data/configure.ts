@@ -84,8 +84,7 @@ export function quoteLineVariant(
       ? trimmed
       : `RAL ${trimmed}`
     : ''
-  const maker = product.manufacturer === 'ZANO' ? `Tillverkare ${product.manufacturer}` : ''
-  return [maker, typeName, dim, color, ralBit, ...optionBits, ...extra].filter(Boolean).join(' · ') || undefined
+  return [typeName, dim, color, ralBit, ...optionBits, ...extra].filter(Boolean).join(' · ') || undefined
 }
 
 export function quoteDraftFromProduct(

@@ -8,7 +8,6 @@ import {
   isCadOriginal,
   isStadoraArticleNumber,
   products,
-  publicManufacturer,
   quantityLegend,
   quoteShowsArticleNumber,
 } from '../data/content'
@@ -87,7 +86,6 @@ export function ProductView({
   const finish = selectedMaterial(product, variants['Material'])
   const sku = quoteLineSku(product, variants)
   const publicSku = quoteShowsArticleNumber(product, sku) ? sku : undefined
-  const maker = intern ? product.manufacturer : publicManufacturer(product)
   const dimensions = selectedSize?.dimensions ?? product.dimensions
   const weight = selectedSize?.weight ?? product.weight
   const selectedWeight = weightForSelection(product, variants)
@@ -179,9 +177,6 @@ export function ProductView({
           />
         )}
       </div>
-      {!intern && maker && (
-        <p className="mt-2 text-sm font-medium">Tillverkare: {maker}</p>
-      )}
       {optionProduct && inoplexGallery && !inoplexGallery.matched && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
           {EXAMPLE_IMAGE_NOTE}
@@ -857,11 +852,8 @@ export function ProductView({
       )}
       <ProductNav product={product} />
       <div className="grid items-start gap-10 lg:grid-cols-12">
-        <div className="lg:col-span-6">
-          {gallery}
-          {mattSection && <div className="mt-8">{mattSection}</div>}
-        </div>
-        <div className="lg:col-span-6">
+        <div className="lg:col-span-6">{gallery}</div>
+        <div className="lg:col-span-6 lg:row-span-2">
           <p className="kicker">
             {product.category} · {product.subcategory}
           </p>
@@ -869,10 +861,9 @@ export function ProductView({
           {intern && product.originalName && product.originalName !== product.name && (
             <p className="mt-2 text-sm text-muted">Originalnamn {product.originalName}</p>
           )}
-          {maker && (
+          {intern && product.manufacturer && (
             <p className="mt-2 text-sm text-muted">
-              {intern ? 'Intern tillverkare' : 'Tillverkare'} {maker}
-              {intern ? ' — visas inte publikt' : ''}
+              Intern tillverkare {product.manufacturer} — visas inte publikt
             </p>
           )}
           {publicSku && (
@@ -882,8 +873,11 @@ export function ProductView({
           {keyFacts && <div className="mt-6">{keyFacts}</div>}
           <div className="mt-6">{configure}</div>
         </div>
+        <div className="space-y-12 lg:col-span-6">
+          {mattSection}
+          {sections}
+        </div>
       </div>
-      <div className="mt-14">{sections}</div>
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-sheet p-3 lg:hidden">
         <button
           type="button"

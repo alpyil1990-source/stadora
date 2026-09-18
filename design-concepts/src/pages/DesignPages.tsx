@@ -146,7 +146,7 @@ export function DesignIndexPage() {
         <p className="mt-2 text-muted">
           Parkmöbler, avfall, cykelzon, plantering, pollare, skyltar och pergolor från zano.se.
           Kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer) är inte importerad.
-          Tillverkare ZANO visas publikt. Märkning på originalbilder och dokument är kvar.
+          Tillverkare ZANO syns bara internt. Märkning på originalbilder och dokument är kvar.
         </p>
         <p className="mt-3">
           <Link className="underline" to="/produkt/solstol-duo-02-052">
@@ -174,7 +174,7 @@ export function DesignIndexPage() {
         <h2 className="text-lg">Kusch+Co / Nowy Styl</h2>
         <p className="mt-2 text-muted">
           Vägghängd V-Care Fold i Väntzon och korridor. Fyra poster: fällstol och fällbänk, trä
-          eller klädd. Tillverkare Kusch+Co visas publikt. Produktkod följer med offerten. Pris på
+          eller klädd. Tillverkare syns bara internt. Produktkod följer med offerten. Pris på
           förfrågan. Prislista endast intern. Inga golvstående Fold och inga vanliga V-Care-bänkar.
         </p>
         <p className="mt-3">

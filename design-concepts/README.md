@@ -46,7 +46,7 @@ Leverantören har godkänt användning av produktbilder och material på webbpla
 
 - Publik kategori: `/produkter/vantzon-korridor/vagghangda-fallstolar`
 - Fyra poster: fällstol trä/klädd (1U MW) och fällbänk trä/klädd (2U/3U MW)
-- Tillverkare Kusch+Co visas publikt
+- Tillverkare Kusch+Co endast internt, inte på den publika sidan
 - Pris på förfrågan. Prislista endast intern
 - Inga golvstående Fold och inga vanliga V-Care-bänkar i den här omgången
 
