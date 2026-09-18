@@ -15,14 +15,14 @@ export function listingFacts(product: Product) {
 
 /** Compact catalog card for Lek och aktivitet listings. Not used on product pages. */
 export function ListingCard({ product }: { product: Product }) {
-  const img = product.images[0]
+  const img = product.images.find((image) => image.kind === 'studio') ?? product.images[0]
   const facts = listingFacts(product)
   return (
     <Link
       to={productPath(product)}
       className="group flex h-full flex-col border border-line bg-sheet focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sage"
     >
-      <div className="aspect-[4/3] bg-paper p-3">
+      <div className="relative aspect-[4/3] shrink-0 overflow-hidden bg-paper p-3">
         {img && (
           <img src={img.src} alt={img.alt} className="h-full w-full object-contain" />
         )}

@@ -45,7 +45,7 @@ export function EnvironmentPage() {
       <img src="/images/env-gaard.jpg" alt="Bostadsgård" className="aspect-[16/8] w-full object-cover" />
       <section>
         <h2 className="text-2xl">Produkter som ofta specificeras tillsammans</h2>
-        <div className="mt-5 grid gap-4 sm:grid-cols-3">
+        <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-3">
           <ProductCard product={products['parkbank-arsta']} />
           <ProductCard product={products['parkbank-hammarby']} />
           <ProductCard product={products['papperskorg-rodberga-100']} />

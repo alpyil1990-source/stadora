@@ -4,14 +4,21 @@ import { isStadoraArticleNumber, productPath, publicManufacturer } from '../data
 import { weightForSelection } from '../data/inoplex-config'
 
 export function ProductCard({ product }: { product: Product }) {
-  const img = product.images[0]
+  const img = product.images.find((image) => image.kind === 'studio') ?? product.images[0]
   const cardWeight = weightForSelection(product).beside
   const maker = publicManufacturer(product)
   return (
-    <article className="flex flex-col border border-line bg-sheet">
-      <Link to={productPath(product)} className="block aspect-[5/4] bg-paper">
+    <article className="flex h-full flex-col border border-line bg-sheet">
+      <Link
+        to={productPath(product)}
+        className="relative block aspect-[5/4] shrink-0 overflow-hidden bg-paper"
+      >
         {img && (
-          <img src={img.src} alt={img.alt} className="h-full w-full object-contain p-4" />
+          <img
+            src={img.src}
+            alt={img.alt}
+            className="absolute inset-0 h-full w-full object-contain p-4"
+          />
         )}
       </Link>
       <div className="flex flex-1 flex-col gap-2 p-4">
@@ -29,7 +36,7 @@ export function ProductCard({ product }: { product: Product }) {
             <p className="font-ui text-xs tabular-nums text-muted">Art.nr {product.sku}</p>
           ) : null
         ) : null}
-        <p className="text-sm text-muted">{product.summary}</p>
+        <p className="line-clamp-2 text-sm text-muted">{product.summary}</p>
         <dl className="mt-auto grid grid-cols-2 gap-x-3 gap-y-1 pt-3 text-xs text-muted">
           {product.material && (
             <>

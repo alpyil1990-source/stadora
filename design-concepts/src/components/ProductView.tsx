@@ -751,7 +751,7 @@ export function ProductView({
       {related.length > 0 && (
         <section id="serie">
           <h2 className="text-xl">Fler modeller i serien</h2>
-          <div className="mt-5 grid gap-4 sm:grid-cols-3">
+          <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-3">
             {related.map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}
