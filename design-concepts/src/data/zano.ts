@@ -41,6 +41,7 @@ type SeriesJson = {
   dimensions: { label: string; value: string; note?: string }[]
   weight: string | null
   weightSummary?: string | null
+  weightByOption?: Record<string, string> | null
   mounting: string[]
   optionGroups: GroupJson[]
   images: ProductImage[]
@@ -81,6 +82,7 @@ function toProduct(row: SeriesJson): Product {
     dimensions: row.dimensions.length ? row.dimensions : undefined,
     weight: row.weight ?? undefined,
     weightSummary: row.weightSummary ?? undefined,
+    weightByOption: row.weightByOption ?? undefined,
     mounting: row.mounting.length ? row.mounting : undefined,
     optionGroups: row.optionGroups.map((g) => ({
       key: g.key,
@@ -108,6 +110,7 @@ function toProduct(row: SeriesJson): Product {
       appliesTo: d.appliesTo,
       sourceUrl: d.sourceUrl,
       fetchedAt: d.fetchedAt,
+      language: d.language,
     })),
     imageNote: row.imageNote,
     reviewNote: row.reviewNote,
@@ -151,3 +154,22 @@ export const zanoGaps = series.map((row) => ({
   name: row.name,
   gaps: row.gaps ?? [],
 }))
+
+type ZanoQc = {
+  checkedAt?: string
+  products?: number
+  complete?: number
+  incomplete?: { sku?: string; name: string; gaps: string[] }[]
+  withoutSwedishDatasheet?: { sku?: string; name: string; documents: number }[]
+  withoutDocuments?: { sku?: string; name: string }[]
+  overlapNoSwedishDatasheetAndNoDocuments?: { sku?: string; name: string }[]
+  picnicSets?: {
+    slug: string
+    title?: string
+    ownSku?: string | null
+    memberSkus?: string[]
+    note?: string
+  }[]
+}
+
+export const zanoQc = ((catalogFile as { qc?: ZanoQc }).qc ?? {}) as ZanoQc

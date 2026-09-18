@@ -20,6 +20,7 @@ export type QuoteLine = {
   href: string
   image?: string
   imageAlt?: string
+  imageExample?: boolean
 }
 
 type QuoteState = Record<AreaId, QuoteLine[]>

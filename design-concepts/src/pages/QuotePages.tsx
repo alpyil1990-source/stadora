@@ -62,6 +62,9 @@ export function QuoteListPage() {
                     <p className="text-xs text-muted">Art.nr {line.sku}</p>
                   )}
                   {line.variant && <p className="text-sm text-muted">{line.variant}</p>}
+                  {line.imageExample && (
+                    <p className="text-xs text-muted">Exempelbild – valt utförande kan avvika.</p>
+                  )}
                   {products[line.slug]?.quoteOnRequest && (
                     <p className="text-xs text-muted">Pris på förfrågan</p>
                   )}
@@ -260,6 +263,9 @@ export function QuoteFormPage() {
                   <span className="block text-xs text-muted">Art.nr {l.sku}</span>
                 )}
                 {l.variant && <span className="block text-xs text-muted">{l.variant}</span>}
+                {l.imageExample && (
+                  <span className="block text-xs text-muted">Exempelbild – valt utförande kan avvika.</span>
+                )}
                 {products[l.slug]?.quoteOnRequest && (
                   <span className="block text-xs text-muted">Pris på förfrågan</span>
                 )}

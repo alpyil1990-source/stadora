@@ -36,6 +36,7 @@ import {
   matchingImages,
   optionComplete,
   visibleGroups,
+  weightForSelection,
 } from '../data/inoplex-config'
 import { finishSwatchHex, isStreetparkProduct } from '../data/streetpark-finishes'
 import { useQuote } from '../context/QuoteContext'
@@ -73,7 +74,9 @@ export function ProductView({
   const publicSku = quoteShowsArticleNumber(product, sku) ? sku : undefined
   const dimensions = selectedSize?.dimensions ?? product.dimensions
   const weight = selectedSize?.weight ?? product.weight
-  const weightBesidePhoto = product.weightSummary ?? weight
+  const selectedWeight = weightForSelection(product, variants)
+  const weightBesidePhoto = selectedWeight.beside
+  const weightMissingFor = selectedWeight.missingFor
   const capacity = selectedSize?.capacity ?? product.capacity
   const materialLabel = finish?.name ?? product.material
   const environment = finish?.environment ?? product.environment
@@ -129,6 +132,7 @@ export function ProductView({
         image: current?.src,
         imageAlt: current?.alt ?? product.name,
         comment: wish.trim() || undefined,
+        imageExample: Boolean(optionProduct && inoplexGallery && !inoplexGallery.matched),
       }),
       product.area,
     )
@@ -137,7 +141,7 @@ export function ProductView({
 
   const jump = useMemo(() => {
     const items = [{ id: 'oversikt', label: 'Översikt' }]
-    if (dimensions?.length) items.push({ id: 'matt', label: 'Mått och vikt' })
+    if (dimensions?.length || weight) items.push({ id: 'matt', label: 'Mått och vikt' })
     if (materialLabel) items.push({ id: 'material', label: 'Material' })
     if (standardFeatures?.length || optionalFeatures?.length) {
       items.push({ id: 'utforande', label: 'Utförande' })
@@ -157,6 +161,7 @@ export function ProductView({
     product,
     related.length,
     standardFeatures?.length,
+    weight,
   ])
 
   const gallery = (
@@ -176,7 +181,14 @@ export function ProductView({
       {product.manufacturer && (
         <p className="mt-2 text-sm font-medium">Tillverkare: {product.manufacturer}</p>
       )}
-      {product.imageNote && <p className="mt-2 text-xs text-muted">{product.imageNote}</p>}
+      {optionProduct && inoplexGallery && !inoplexGallery.matched && (
+        <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
+          Exempelbild – valt utförande kan avvika.
+        </p>
+      )}
+      {!optionProduct && product.imageNote && (
+        <p className="mt-2 text-xs text-muted">{product.imageNote}</p>
+      )}
       {missingSizePhoto && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
           Ingen produktbild för {typeName} ännu. Bilden visar {shownLabel(shown)}.
@@ -186,11 +198,6 @@ export function ProductView({
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
           Ingen produktbild i {variants[COLOR_VARIANT_KEY]}. Bilden visar {shownLabel(shown)}. Offertlistan
           får ändå rätt kulör.
-        </p>
-      )}
-      {optionProduct && inoplexGallery && !inoplexGallery.matched && !product.imageNote && (
-        <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
-          Exempelbild – valt utförande kan avvika.
         </p>
       )}
       {shown.length > 1 && (
@@ -541,6 +548,12 @@ export function ProductView({
           <dd className="font-medium">{weightBesidePhoto}</dd>
         </div>
       )}
+      {weightMissingFor && (
+        <div className="col-span-2">
+          <dt className="text-muted">Vikt</dt>
+          <dd className="font-medium">Anges inte för {weightMissingFor}</dd>
+        </div>
+      )}
       {dimensions?.[0] && (
         <div>
           <dt className="text-muted">{dimensions[0].label}</dt>
@@ -564,12 +577,12 @@ export function ProductView({
 
   const sections = (
     <div className="space-y-12">
-      {dimensions && dimensions.length > 0 && (
+      {(dimensions?.length || weight) && (
         <section id="matt">
           <h2 className="text-xl">Mått och vikt</h2>
           <table className="spec-table mt-3">
             <tbody>
-              {dimensions.map((row) => (
+              {(dimensions ?? []).map((row) => (
                 <tr key={row.label}>
                   <th>{row.label}</th>
                   <td>
@@ -973,7 +986,13 @@ function groupDocuments(docs: ProductDocument[]) {
 
 function DocumentRow({ doc }: { doc: ProductDocument }) {
   const alt = `${doc.typeLabel} (${doc.format}). ${doc.title}`
-  const meta = [doc.format, doc.appliesTo].filter(Boolean).join(' · ')
+  const meta = [
+    doc.format,
+    doc.language === 'en' ? 'engelska' : doc.language === 'sv' ? 'svenska' : null,
+    doc.appliesTo,
+  ]
+    .filter(Boolean)
+    .join(' · ')
   const canOpenInBrowser = doc.previewable || doc.format === 'PDF' || doc.format === 'SVG'
   return (
     <li className="flex items-center gap-3 border-b border-line px-3 py-2 last:border-b-0">

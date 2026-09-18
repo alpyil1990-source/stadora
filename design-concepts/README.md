@@ -47,7 +47,9 @@ Se `/design` i prototypen, eller:
 - `/produkt/planteringskarl-do-23-02` och `/produkt/parkbank-la-20-19` Inoplex-kontrollprodukter (tillverkare dold)
 - `/produkt/solstol-duo-02-052` ZANO Solstol DUO (tillverkare syns, märkning kvar, pris på förfrågan)
 - `/produkter/parkmobler/parkbankar` och övriga underkategorier med ZANO-katalog (Övrigt är inte importerat)
-- `/admin/leverantorer/zano` intern ZANO-sida (inköpspris saknas)
+- `/admin/leverantorer/zano` intern ZANO-sida (inköpspris saknas, kvalitetskontroll)
+
+Picknickset-landningssidor utan eget modellnummer importeras inte. Saknat svenskt produktblad räknas inte som ofullständig post; engelska produktkort märks som engelska.
 
 Mobil: smal viewport. Meny under 1024 px, fast offertknapp på produktsidan.
 

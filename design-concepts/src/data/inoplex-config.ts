@@ -87,18 +87,55 @@ export function matchingImages(product: Product, state: Record<string, string>):
   matched: boolean
 } {
   const finish = state['Stomfinish'] || state['Konstruktion'] || state[COLOR_VARIANT_KEY]
-  const wood = state['Träslag'] || state['Sits']
+  const wood = state['Träslag'] || state['Sits'] || state['Bordsskiva']
   const hits = product.images.filter((img) => img.color && finish && img.color === finish)
   if (hits.length) {
     const rest = product.images.filter((img) => img.color !== finish)
     return { shown: [...hits, ...rest], matched: true }
+  }
+  if (finish) {
+    const carbon = /kolstål/i.test(finish)
+    const stainless = /rostfritt/i.test(finish)
+    const byAlt = product.images.filter((img) => {
+      const alt = img.alt.toLowerCase()
+      if (carbon && /\bcarbon\b/.test(alt)) return true
+      if (stainless && /\bstainless\b|\brostfritt\b/.test(alt)) return true
+      return false
+    })
+    if (byAlt.length) {
+      const rest = product.images.filter((img) => !byAlt.includes(img))
+      return { shown: [...byAlt, ...rest], matched: true }
+    }
   }
   if (wood) {
     const byWood = product.images.filter((i) => i.alt.toLowerCase().includes(wood.toLowerCase()))
     if (byWood.length) return { shown: byWood, matched: true }
   }
   const tagged = product.images.filter((img) => img.color)
+  if (product.manufacturer === 'ZANO' && (finish || wood)) {
+    return { shown: product.images, matched: false }
+  }
   return { shown: product.images, matched: tagged.length === 0 || !finish }
+}
+
+export function weightForSelection(
+  product: Product,
+  variants?: Record<string, string>,
+): { beside?: string; full?: string; missingFor?: string } {
+  const full = product.weight
+  const by = product.weightByOption
+  const wood = variants?.['Sits'] || variants?.['Bordsskiva']
+  if (by && wood) {
+    if (by[wood]) return { beside: by[wood], full, missingFor: undefined }
+    return { beside: undefined, full, missingFor: wood }
+  }
+  if (by && Object.keys(by).length > 1) {
+    return { beside: undefined, full }
+  }
+  if (by && Object.keys(by).length === 1) {
+    return { beside: Object.values(by)[0], full }
+  }
+  return { beside: product.weightSummary ?? full, full }
 }
 
 export { COLOR_VARIANT_KEY, SIZE_VARIANT_KEY }

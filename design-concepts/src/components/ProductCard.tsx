@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import type { Product } from '../data/content'
 import { isStadoraArticleNumber, productPath } from '../data/content'
+import { weightForSelection } from '../data/inoplex-config'
 
 export function ProductCard({ product }: { product: Product }) {
   const img = product.images[0]
+  const cardWeight = weightForSelection(product).beside
   return (
     <article className="flex flex-col border border-line bg-sheet">
       <Link to={productPath(product)} className="block aspect-[5/4] bg-paper">
@@ -32,10 +34,10 @@ export function ProductCard({ product }: { product: Product }) {
               <dd className="text-ink">{product.material}</dd>
             </>
           )}
-          {product.weight && (
+          {cardWeight && (
             <>
               <dt>Vikt</dt>
-              <dd className="text-ink">{product.weightSummary ?? product.weight}</dd>
+              <dd className="text-ink">{cardWeight}</dd>
             </>
           )}
           {product.mounting && (

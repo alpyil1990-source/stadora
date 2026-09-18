@@ -72,6 +72,8 @@ export type ProductDocument = {
   appliesTo?: string
   sourceUrl?: string
   fetchedAt?: string
+  /** ISO language of the original file, e.g. sv or en. CAD is usually unmarked. */
+  language?: string
 }
 
 export type Product = {
@@ -95,6 +97,8 @@ export type Product = {
   weight?: string
   /** Short weight next to the photo; full figure stays under Mått och vikt. */
   weightSummary?: string
+  /** Verified weight per configurator option name (e.g. wood species). */
+  weightByOption?: Record<string, string>
   mounting?: string[]
   capacity?: string
   environment?: string

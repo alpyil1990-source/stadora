@@ -156,6 +156,33 @@ OPT_SV = {
     "ädelträ av högsta kvalitet": "Ädelträ av högsta kvalitet",
     "fristående": "Fristående",
     "för skruvmontering": "För skruvmontering",
+    "embedded in concrete": "Gjutning i betong",
+    "gjutning i betong": "Gjutning i betong",
+    "none": "Utan",
+    "utan": "Utan",
+    "left side": "Vänster sida",
+    "right side": "Höger sida",
+    "both sides": "Båda sidor",
+    "bluetooth speaker": "Bluetooth-högtalare",
+    "speaker with built-in memory": "Högtalare med inbyggt minne",
+    "gel batteries 36 ah": "Gelbatterier 36 Ah",
+    "lithium batteries 40 ah": "Litiumbatterier 40 Ah",
+    "etching in stainless steel": "Etsning i rostfritt stål",
+    "cut in steel": "Utskuret i stål",
+    "sticker": "Dekal",
+    "milled in wood": "Fräst i trä",
+    "concrete": "Betong",
+    "uv printed on a tabletop": "UV-tryck på skivan",
+    "printed on stainless steel plate": "Tryck på rostfri platta",
+    "1 chain (both sides)": "1 kedja, båda sidor",
+    "1 chain (one side)": "1 kedja, en sida",
+    "attachment of 2 chains (double-sided)": "2 kedjor, dubbelsidigt",
+    "attachment of 2 chains (final)": "2 kedjor, ändfäste",
+    "single sided": "Enkelsidigt",
+    "double sided": "Dubbelsidigt",
+    "2.4 ghz; 3g, 4g (no sim card included)": "2,4 GHz; 3G, 4G (SIM-kort ingår inte)",
+    "2 a, 10 w": "2 A, 10 W",
+    "galvanized steel container": "Behållare i galvaniserat stål",
 }
 
 DIM_SV = {
@@ -177,6 +204,16 @@ DIM_SV = {
     "tjocklek": "Tjocklek",
     "base width": "Basens bredd",
     "basens bredd": "Basens bredd",
+    "height with anchoring section": "Höjd med förankringsdel",
+    "höjd med förankringsdel": "Höjd med förankringsdel",
+    "height from ground surface": "Höjd från mark",
+    "höjd från mark": "Höjd från mark",
+    "total height": "Totalhöjd",
+    "totalhöjd": "Totalhöjd",
+    "height of the backrest": "Ryggstödets höjd",
+    "ryggstödets höjd": "Ryggstödets höjd",
+    "height above ground": "Höjd över markytan",
+    "höjd över markytan": "Höjd över markytan",
 }
 
 SWATCHES = {
@@ -199,7 +236,7 @@ WOOD_HINT = (
 )
 
 UUID_RE = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
-SKU_RE = re.compile(r"\b(\d{2}\.\d{3}(?:\.\d+)?(?:\.[A-Za-z])?)\b")
+SKU_RE = re.compile(r"\b(\d{2}\.\d{3}(?:\.\d+)?(?:\.[A-Za-z]{1,3})?)\b")
 
 
 def iri(url: str) -> str:
@@ -388,6 +425,117 @@ def opt_sv(name: str) -> str:
     return OPT_SV.get(key, re.sub(r"\s+", " ", name).strip())
 
 
+SPEC_SKIP_HEADINGS = {
+    "dimensions",
+    "mått",
+    "weight",
+    "vikt",
+    "materials",
+    "material",
+    "basic equipment",
+    "electrical specifications",
+    "capacity",
+    "kapacitet",
+    "catalogue number",
+    "katalognummer",
+}
+
+CORE_OPTION_HEADINGS = {
+    "construction",
+    "konstruktion",
+    "seat",
+    "sits",
+    "seat and backrest",
+    "sits och ryggstöd",
+    "top",
+    "bordsskiva",
+    "methods of installation",
+    "monteringssätt",
+    "montering",
+    "installation",
+}
+
+EXTRA_GROUP_LABEL = {
+    "additional table": "Extra bord",
+    "additional bicycle rack": "Extra cykelställ",
+    "sound module": "Ljudmodul",
+    "wireless charger": "Trådlös laddare",
+    "battery pack": "Batteri",
+    "wi-fi hotspot": "Wi-Fi-hotspot",
+    "led lights": "LED-belysning",
+    "logo": "Logotyp",
+    "bollard handle": "Kedjefäste",
+    "fence mounts": "Staketsfästen",
+    "tabletop game board": "Spelplan på skivan",
+    "container": "Behållare",
+}
+
+
+def labelled_option_blocks(soup: BeautifulSoup) -> dict[str, list[str]]:
+    """Option lists on the older EN template (collapsible Construction/Seat/…)."""
+    blocks: dict[str, list[str]] = {}
+
+    def add(heading: str, ul) -> None:
+        if ul is None or heading.lower() in SPEC_SKIP_HEADINGS:
+            return
+        items = []
+        for li in ul.find_all("li", recursive=False):
+            t = re.sub(r"\s+", " ", li.get_text(" ", strip=True))
+            if t:
+                items.append(t)
+        if heading and items:
+            blocks[heading] = items
+
+    for box in soup.select(".collapsible"):
+        btn = box.select_one("h4.collapse-button span, .collapse-button span, h4 span")
+        ul = box.select_one("ul.options")
+        if not btn or not ul:
+            continue
+        heading = btn.get_text(" ", strip=True).rstrip(":").strip()
+        add(heading, ul)
+    if not blocks:
+        for span in soup.find_all("span"):
+            label = span.get_text(" ", strip=True)
+            if not label.endswith(":") or len(label) > 48:
+                continue
+            ul = span.find_next("ul", class_="options")
+            heading = label.rstrip(":").strip()
+            add(heading, ul)
+    for strong in soup.select("li > strong"):
+        heading = strong.get_text(" ", strip=True).rstrip(":").strip()
+        ul = strong.find_next_sibling("ul")
+        if not ul and strong.parent:
+            ul = strong.parent.find("ul")
+        add(heading, ul)
+    return blocks
+
+
+def option_spec_lines(soup: BeautifulSoup, heading: str) -> list[str]:
+    """Dimensions/weight on older templates: heading then key: value lines."""
+    text = soup.get_text("\n", strip=True)
+    rx = re.compile(rf"^{re.escape(heading)}\s*:?\s*$", re.I | re.M)
+    m = rx.search(text)
+    if not m:
+        return []
+    rest = text[m.end() :]
+    stop = re.search(
+        r"\n(Weight|Vikt|Materials|Material|options|Options|Construction|Konstruktion|"
+        r"Capacity|Kapacitet|Basic equipment|Electrical specifications|catalogue number|"
+        r"Finishing options|Downloads|Description)\s*:?\s*\n",
+        rest,
+        re.I,
+    )
+    block = rest[: stop.start()] if stop else rest[:1200]
+    lines: list[str] = []
+    for raw in block.splitlines():
+        t = re.sub(r"\s+", " ", raw).strip()
+        if not t or t.lower() in {"expand", "scroll down", "explore all", "roll all"}:
+            continue
+        if ":" in t or re.search(r"\d+\s*kg\b", t, re.I) or re.match(r"^\d", t):
+            lines.append(t)
+    return lines
+
+
 def parse_en_page(html: str, url: str) -> dict:
     soup = BeautifulSoup(html, "lxml")
     h1 = soup.find("h1")
@@ -473,14 +621,40 @@ def parse_en_page(html: str, url: str) -> dict:
     weights = list_items(html, "Weight") or list_items(html, "Vikt")
     materials = list_items(html, "Materials") or list_items(html, "Material")
     construction = list_items(html, "Construction") or list_items(html, "Konstruktion")
-    seat = list_items(html, "Seat") or list_items(html, "Sits")
+    seat = (
+        list_items(html, "Seat")
+        or list_items(html, "Sits")
+        or list_items(html, "Seat and backrest")
+        or list_items(html, "Sits och ryggstöd")
+    )
     install = (
         list_items(html, "Methods of installation")
         or list_items(html, "Monteringssätt")
         or list_items(html, "Installation")
     )
-    desc_el = soup.select_one('[ref="description"] .data-content, .product-description')
+    desc_el = soup.select_one(
+        '[ref="description"] .data-content, .product-description, #description, .opis p'
+    )
     description_en = re.sub(r"\s+", " ", desc_el.get_text(" ", strip=True)) if desc_el else ""
+    description_en = re.sub(
+        r"^(Description of the model|Model description|Description)\s+",
+        "",
+        description_en,
+        flags=re.I,
+    )
+    option_blocks = labelled_option_blocks(soup)
+    if option_blocks.get("Construction") and not construction:
+        construction = option_blocks["Construction"]
+    if not seat:
+        seat = option_blocks.get("Seat") or option_blocks.get("Seat and backrest") or []
+    if not install:
+        install = option_blocks.get("Methods of installation") or []
+    if not dims:
+        dims = parse_dims(option_spec_lines(soup, "Dimensions") or option_spec_lines(soup, "Mått"))
+    if not weights:
+        weights = option_spec_lines(soup, "Weight") or option_spec_lines(soup, "Vikt")
+    if not materials:
+        materials = option_spec_lines(soup, "Materials") or option_spec_lines(soup, "Material")
     return {
         "title": title,
         "files": files,
@@ -493,7 +667,9 @@ def parse_en_page(html: str, url: str) -> dict:
         "materials": [re.sub(r"\s+", " ", m) for m in materials],
         "construction": construction,
         "seat": seat,
+        "top": option_blocks.get("Top") or [],
         "install": install,
+        "optionBlocks": option_blocks,
         "descriptionEn": description_en,
     }
 
@@ -614,27 +790,152 @@ def pretty_title(raw: str) -> str:
     return raw
 
 
-def weight_fields(weights: list[str]) -> tuple[str | None, str | None]:
-    if not weights:
-        return None, None
-    full = "; ".join(weights)
-    nums = []
+WOOD_WEIGHT_KEYS = [
+    ("europeiskt barrträ", "Europeiskt barrträ"),
+    ("european coniferous", "Europeiskt barrträ"),
+    ("soft wood", "Europeiskt barrträ"),
+    ("hårt trä av europeiskt ursprung", "Hårt trä av europeiskt ursprung"),
+    ("hardwood of european origin", "Hårt trä av europeiskt ursprung"),
+    ("oljat ädelträ", "Oljat ädelträ"),
+    ("hard wood (oil finish)", "Oljat ädelträ"),
+    ("ädelträ av högsta kvalitet", "Ädelträ av högsta kvalitet"),
+    ("premium hard wood", "Ädelträ av högsta kvalitet"),
+    ("eco plank", "eco plank"),
+]
+
+
+def kg_weight_lines(weights: list[str]) -> list[str]:
+    lines: list[str] = []
     for w in weights:
+        t = re.sub(r"\s+", " ", w).strip()
+        low = t.lower()
+        if low.startswith(("grundutrustning", "elektriska", "kapacitet", "basic equipment", "electrical", "capacity")):
+            continue
+        if "kg" not in low:
+            continue
+        lines.append(t)
+    return lines
+
+
+def parse_weight_by_option(weights: list[str]) -> dict[str, str]:
+    by: dict[str, str] = {}
+
+    def add(name: str, kg: str) -> None:
+        name = name.strip(" .")
+        if not name or name.lower() in {"vikt", "weight"}:
+            return
+        by.setdefault(name, kg)
+
+    blob = " ; ".join(weights)
+    for m in re.finditer(
+        r"(\d+(?:[.,]\d+)?)\s*kg\s+med\s+([^.,;]+)",
+        blob,
+        re.I,
+    ):
+        n = m.group(1).replace(".", ",")
+        kg = f"{n} kg"
+        label = re.sub(r"\s+", " ", m.group(2)).strip()
+        mapped = None
+        low = label.lower()
+        for needle, name in WOOD_WEIGHT_KEYS:
+            if needle in low:
+                mapped = name
+                break
+        add(mapped or opt_sv(label), kg)
+
+    for w in kg_weight_lines(weights):
+        low = w.lower()
+        m = re.search(r"(\d+(?:[.,]\d+)?)\s*kg", w, re.I)
+        if not m:
+            continue
+        n = m.group(1).replace(".", ",")
+        if n.endswith(",0"):
+            n = n[:-2]
+        kg = f"{n} kg"
+        matched = False
+        for needle, name in WOOD_WEIGHT_KEYS:
+            if needle in low:
+                add(name, kg)
+                matched = True
+                break
+        if not matched and ":" in w:
+            add(opt_sv(w.split(":", 1)[0]), kg)
+    return by
+
+
+def weight_fields(weights: list[str]) -> tuple[str | None, str | None]:
+    """Return (full weight text, short summary). Do not invent a range that covers unverified woods."""
+    kg_lines = kg_weight_lines(weights)
+    if not kg_lines:
+        return None, None
+    by = parse_weight_by_option(kg_lines)
+    if by:
+        full = "; ".join(f"{name}: {kg}" for name, kg in by.items())
+        if len(by) == 1:
+            return full, next(iter(by.values()))
+        # A compressed range is only honest when the caller knows every wood option
+        # is covered. Leave summary empty; UI uses weightByOption per selection.
+        return full, None
+    full = "; ".join(kg_lines)
+    nums = []
+    for w in kg_lines:
         for n in re.findall(r"(\d+(?:[.,]\d+)?)\s*kg", w, re.I):
             nums.append(float(n.replace(",", ".")))
-    if len(nums) >= 2:
-        lo, hi = min(nums), max(nums)
-        def fmt(x: float) -> str:
-            return str(int(x)) if x.is_integer() else str(x).replace(".", ",")
-        if any("trä" in w.lower() or "wood" in w.lower() for w in weights):
-            return full, f"{fmt(lo)}–{fmt(hi)} kg beroende på träutförande"
-        return full, f"{fmt(lo)}–{fmt(hi)} kg"
-    return full, full
+    if len(nums) == 1:
+        n = nums[0]
+        s = str(int(n)) if n.is_integer() else str(n).replace(".", ",")
+        return full, f"{s} kg"
+    return full, None
+
+
+def is_wood_option(name: str) -> bool:
+    low = name.lower()
+    return any(
+        tok in low
+        for tok in (
+            "barrträ",
+            "soft wood",
+            "hardwood",
+            "hårt trä",
+            "ädelträ",
+            "hard wood",
+            "eco plank",
+            "hpl",
+        )
+    )
+
+
+def extra_choice_groups(blocks: dict[str, list[str]]) -> list[dict]:
+    groups: list[dict] = []
+    for heading, items in blocks.items():
+        key = heading.lower().strip()
+        if key in SPEC_SKIP_HEADINGS or key in CORE_OPTION_HEADINGS:
+            continue
+        names = [opt_sv(x) for x in items if x]
+        names = [n for n in dict.fromkeys(names) if n]
+        if len(names) < 2:
+            continue
+        label = EXTRA_GROUP_LABEL.get(key, heading)
+        groups.append(
+            {
+                "key": slugify(label),
+                "label": label,
+                "kind": "choice",
+                "options": [{"id": slugify(n), "name": n} for n in names],
+            }
+        )
+    return groups
 
 
 def build_options(sv_groups: dict[str, list[str]], en: dict) -> list[dict]:
     construction = [opt_sv(x) for x in (sv_groups.get("Konstruktion") or en.get("construction") or [])]
-    seat = [opt_sv(x) for x in (sv_groups.get("Sits") or en.get("seat") or [])]
+    seat_src = sv_groups.get("Sits") or en.get("seat") or []
+    top_src = sv_groups.get("Bordsskiva") or en.get("top") or []
+    seat_is_top = False
+    if not seat_src and top_src and any(is_wood_option(x) for x in top_src):
+        seat_src = top_src
+        seat_is_top = True
+    seat = [opt_sv(x) for x in seat_src]
     install = [
         opt_sv(x)
         for x in (
@@ -699,10 +1000,14 @@ def build_options(sv_groups: dict[str, list[str]], en: dict) -> list[dict]:
             groups[-1].pop("parentKey")
             groups[-1].pop("parentValue")
     if seat:
+        seat_key = "Bordsskiva" if seat_is_top else "Sits"
+        seat_label = "Bordsskiva" if seat_is_top else (
+            "Sits och ryggstöd" if any("rygg" in s.lower() for s in seat) or "backrest" in " ".join(seat_src).lower() else "Sits"
+        )
         groups.append(
             {
-                "key": "Sits",
-                "label": "Sits och ryggstöd" if any("rygg" in s.lower() for s in seat) else "Sits",
+                "key": seat_key,
+                "label": seat_label,
                 "kind": "choice",
                 "options": [{"id": slugify(s), "name": s} for s in dict.fromkeys(seat)],
             }
@@ -720,7 +1025,7 @@ def build_options(sv_groups: dict[str, list[str]], en: dict) -> list[dict]:
                     "key": "Trafinish:barrtra",
                     "label": "Träkulör",
                     "kind": "swatch",
-                    "parentKey": "Sits",
+                    "parentKey": seat_key,
                     "parentValue": barr,
                     "hint": WOOD_HINT,
                     "options": wood_opts,
@@ -735,6 +1040,7 @@ def build_options(sv_groups: dict[str, list[str]], en: dict) -> list[dict]:
                 "options": [{"id": slugify(i), "name": i} for i in dict.fromkeys(install)],
             }
         )
+    groups.extend(extra_choice_groups(en.get("optionBlocks") or {}))
     # Drop empty parentKey leftovers
     for g in groups:
         if not g.get("parentKey"):
@@ -1146,6 +1452,7 @@ def import_product(item: dict, keep: dict[str, dict]) -> dict:
     dims = sv.get("dimensions") or en.get("dimensions") or []
     weights = sv.get("weights") or en.get("weights") or []
     weight, weight_summary = weight_fields(weights)
+    weight_by = parse_weight_by_option(weights) or None
     materials = sv.get("materials") or []
     material = material_text(materials, en.get("materials") or [], construction_names, seat_names)
 
@@ -1195,6 +1502,7 @@ def import_product(item: dict, keep: dict[str, dict]) -> dict:
         "dimensions": dims,
         "weight": weight,
         "weightSummary": weight_summary,
+        "weightByOption": weight_by,
         "mounting": mounting,
         "optionGroups": option_groups,
         "images": images,

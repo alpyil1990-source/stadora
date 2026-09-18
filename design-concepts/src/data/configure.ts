@@ -91,7 +91,14 @@ export function quoteLineVariant(
 export function quoteDraftFromProduct(
   product: Product,
   variants: Record<string, string>,
-  opts: { qty: number; ral?: string; image?: string; imageAlt?: string; comment?: string },
+  opts: {
+    qty: number
+    ral?: string
+    image?: string
+    imageAlt?: string
+    comment?: string
+    imageExample?: boolean
+  },
 ) {
   return {
     slug: product.slug,
@@ -103,5 +110,6 @@ export function quoteDraftFromProduct(
     image: opts.image,
     imageAlt: opts.imageAlt,
     comment: opts.comment,
+    imageExample: opts.imageExample,
   }
 }
