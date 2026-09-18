@@ -201,7 +201,18 @@ export function documentsForVariant(product: Product, variant?: string | null) {
   return docs.filter((d) => !d.variant || aliases.has(d.variant))
 }
 
-const CAD_ORIGINAL_FORMATS = new Set(['DWG', 'DXF', '3DS', 'GLB', 'GLTF', 'RAR', 'ZIP', 'STEP', 'STP'])
+const CAD_ORIGINAL_FORMATS = new Set([
+  'DWG',
+  'DXF',
+  '3DS',
+  'GLB',
+  'GLTF',
+  'SKP',
+  'RAR',
+  'ZIP',
+  'STEP',
+  'STP',
+])
 
 /** CAD originals require a verified document account unless the file already has another ACL. */
 export function isCadOriginal(doc: ProductDocument) {

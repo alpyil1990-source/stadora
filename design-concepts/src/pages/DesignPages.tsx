@@ -325,8 +325,9 @@ export function StreetparkDraftPage() {
         <h1 className="mt-2 text-3xl md:text-4xl">STREETPARK i katalogen</h1>
         <p className="mt-4 max-w-2xl text-muted">
           {items.length} serier från streetpark.eu. Tillverkare syns inte på den publika sidan. Inga
-          priser på den publika sidan. Artikelnummer följer med offerten. CAD, produktblad och
-          förankring ligger på produktsidan. Buss- och cykelväderskydd ingår inte.
+          priser på den publika sidan. Artikelnummer följer med offerten. JPG-ritningar och
+          produktblad går att öppna utan konto. DWG, RAR och övriga originalfiler kräver inloggning.
+          Buss- och cykelväderskydd ingår inte.
         </p>
         <p className="mt-3 text-sm">
           <Link className="underline" to="/admin/leverantorer/streetpark">
