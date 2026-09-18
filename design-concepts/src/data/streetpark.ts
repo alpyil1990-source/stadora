@@ -3,7 +3,7 @@ import catalogFile from './generated/streetpark-series.json'
 import { finishSwatchHex } from './streetpark-finishes'
 
 const GALLERY_LOCKED_NOTE =
-  'Bilden visar ett exempelutförande från STREETPARK. Kulör på skärm kan avvika. Modellvalet ändrar dokument, inte bildgalleriet.'
+  'Bilden visar ett exempelutförande. Kulör på skärm kan avvika. Modellvalet ändrar dokument, inte bildgalleriet.'
 
 type DocJson = {
   title: string
@@ -110,6 +110,34 @@ function toDocs(rows: DocJson[]): ProductDocument[] {
   }))
 }
 
+function publicDescription(text: string) {
+  let next = text.replace(/\s*Tillverkare:\s*STREETPARK\.?/g, '')
+  next = next.replace(/från STREETPARKs kulörkarta/g, 'från kulörkartan')
+  next = next.replace(/STREETPARK anger att\s+([a-zåäö])/gi, (_, ch: string) => ch.toUpperCase())
+  next = next.replace(/STREETPARK anger att\s+/g, '')
+  next = next.replace(/STREETPARK anger användningen för\s+/g, 'Användning för ')
+  next = next.replace(/STREETPARK anger användning för\s+/g, 'Användning för ')
+  next = next.replace(/STREETPARK anger användning vid\s+/g, 'Användning vid ')
+  next = next.replace(/STREETPARK anger placering i\s+/g, 'Placering i ')
+  next = next.replace(/STREETPARK anger yttermått\s+/g, 'Yttermått ')
+  next = next.replace(/STREETPARK beskriver den som\s+([a-zåäö])/gi, (_, ch: string) => ch.toUpperCase())
+  next = next.replace(/STREETPARK beskriver den som\s+/g, '')
+  next = next.replace(/STREETPARKs\s+/g, '')
+  next = next.replace(/STREETPARK\s+/g, '')
+  next = next.replace(/\s{2,}/g, ' ').replace(/\s+\./g, '.').trim()
+  return next
+}
+
+function publicSummary(text: string) {
+  return text.replace(/\s*STREETPARKs\s+/g, ' ').replace(/\s{2,}/g, ' ').trim()
+}
+
+function publicMounting(items: string[]) {
+  return items.map((item) =>
+    item.replace(/\s+enligt STREETPARKs underlag\.?/g, '.').replace(/\.\./g, '.'),
+  )
+}
+
 function toProduct(row: SeriesJson): Product {
   return {
     slug: row.slug,
@@ -124,8 +152,8 @@ function toProduct(row: SeriesJson): Product {
     categorySlug: row.categorySlug,
     subcategory: row.subcategory,
     subcategorySlug: row.subcategorySlug,
-    summary: row.summary,
-    description: row.description,
+    summary: publicSummary(row.summary),
+    description: publicDescription(row.description),
     images: row.images.map((img) => ({
       src: img.src,
       alt: img.alt,
@@ -134,7 +162,7 @@ function toProduct(row: SeriesJson): Product {
     material: row.material ?? undefined,
     dimensions: row.dimensions.length ? row.dimensions : undefined,
     weight: row.weight ?? undefined,
-    mounting: row.mounting.length ? row.mounting : undefined,
+    mounting: row.mounting.length ? publicMounting(row.mounting) : undefined,
     sizes: toSizes(row.sizes),
     defaultSize: row.defaultSize ?? undefined,
     sizeLegend: row.sizeLegend ?? undefined,

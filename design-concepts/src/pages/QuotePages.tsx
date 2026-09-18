@@ -1,7 +1,15 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useQuote, type QuoteLine } from '../context/QuoteContext'
-import { products, quoteShowsArticleNumber } from '../data/content'
+import { products, publicManufacturer, quoteShowsArticleNumber } from '../data/content'
+
+function QuoteMaker({ slug, as = 'p' }: { slug: string; as?: 'p' | 'span' }) {
+  const maker = publicManufacturer(products[slug])
+  if (!maker) return null
+  const className = as === 'span' ? 'block text-xs text-muted' : 'text-xs text-muted'
+  if (as === 'span') return <span className={className}>Tillverkare {maker}</span>
+  return <p className={className}>Tillverkare {maker}</p>
+}
 
 function lineImage(line: QuoteLine) {
   if (line.image) return { src: line.image, alt: line.imageAlt ?? line.name }
@@ -55,9 +63,7 @@ export function QuoteListPage() {
                   <Link className="font-medium hover:underline" to={line.href}>
                     {line.name}
                   </Link>
-                  {products[line.slug]?.manufacturer && (
-                    <p className="text-xs text-muted">Tillverkare {products[line.slug].manufacturer}</p>
-                  )}
+                  <QuoteMaker slug={line.slug} />
                   {quoteShowsArticleNumber(products[line.slug], line.sku) && (
                     <p className="text-xs text-muted">Art.nr {line.sku}</p>
                   )}
@@ -256,9 +262,7 @@ export function QuoteFormPage() {
               <QuoteThumb line={l} size="sm" />
               <span>
                 <span className="font-medium">{l.name}</span>
-                {products[l.slug]?.manufacturer && (
-                  <span className="block text-xs text-muted">Tillverkare {products[l.slug].manufacturer}</span>
-                )}
+                <QuoteMaker slug={l.slug} as="span" />
                 {quoteShowsArticleNumber(products[l.slug], l.sku) && (
                   <span className="block text-xs text-muted">Art.nr {l.sku}</span>
                 )}

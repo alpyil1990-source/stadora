@@ -111,8 +111,9 @@ export function DesignIndexPage() {
         <h2 className="text-lg">STREETPARK</h2>
         <p className="mt-2 text-muted">
           Parkbänkar, sittmöbler, papperskorgar, cykel- och sparkcykelställ, bord, picknickgrupper
-          och pollare från streetpark.eu. Tillverkare STREETPARK visas publikt. Inga priser på den
-          publika sidan. Listpris och inköpsnetto i EUR ligger i intern admin. Modell och
+          och pollare från streetpark.eu. Tillverkare STREETPARK syns inte på den publika
+          produktsidan. Inga priser på den publika sidan. Listpris och inköpsnetto i EUR ligger i
+          intern admin. Modell och
           artikelnummer följer med offerten. Ritningar i avsnittet Dokument och underlag.
         </p>
         <p className="mt-3">
@@ -316,9 +317,9 @@ export function StreetparkDraftPage() {
         <p className="kicker">Intern översikt · STREETPARK</p>
         <h1 className="mt-2 text-3xl md:text-4xl">STREETPARK i katalogen</h1>
         <p className="mt-4 max-w-2xl text-muted">
-          {items.length} serier från streetpark.eu. Tillverkare visas. Inga priser på den publika
-          sidan. Artikelnummer följer med offerten. CAD, produktblad och förankring ligger på
-          produktsidan. Buss- och cykelväderskydd ingår inte.
+          {items.length} serier från streetpark.eu. Tillverkare syns inte på den publika sidan. Inga
+          priser på den publika sidan. Artikelnummer följer med offerten. CAD, produktblad och
+          förankring ligger på produktsidan. Buss- och cykelväderskydd ingår inte.
         </p>
         <p className="mt-3 text-sm">
           <Link className="underline" to="/admin/leverantorer/streetpark">

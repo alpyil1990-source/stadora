@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 import type { Product } from '../data/content'
-import { isStadoraArticleNumber, productPath } from '../data/content'
+import { isStadoraArticleNumber, productPath, publicManufacturer } from '../data/content'
 import { weightForSelection } from '../data/inoplex-config'
 
 export function ProductCard({ product }: { product: Product }) {
   const img = product.images[0]
   const cardWeight = weightForSelection(product).beside
+  const maker = publicManufacturer(product)
   return (
     <article className="flex flex-col border border-line bg-sheet">
       <Link to={productPath(product)} className="block aspect-[5/4] bg-paper">
@@ -20,8 +21,8 @@ export function ProductCard({ product }: { product: Product }) {
             {product.name}
           </Link>
         </h3>
-        {product.manufacturer && (
-          <p className="text-sm font-medium">Tillverkare: {product.manufacturer}</p>
+        {maker && (
+          <p className="text-sm font-medium">Tillverkare: {maker}</p>
         )}
         {isStadoraArticleNumber(product.sku) && !product.materials?.length && (
           <p className="font-ui text-xs tabular-nums text-muted">Art.nr {product.sku}</p>

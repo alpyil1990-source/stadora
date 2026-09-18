@@ -305,7 +305,7 @@ export function AdminStreetparkTerms() {
         <p className="font-medium">STREETPARK-import</p>
         <p className="text-sm text-muted">
           {catalogProducts.length} produkter · {images} produktbilder · {docs} dokument, varav {cad}{' '}
-          DWG. Tillverkare visas publikt. Artikelnummer följer med offerten. EUR-lista ovan är intern.
+          DWG. Tillverkare STREETPARK syns här internt, inte på den publika produktsidan. Artikelnummer följer med offerten. EUR-lista ovan är intern.
           Originalfiler från streetpark.eu {gatedFile.fetchedAt}.
         </p>
         <p className="text-sm">

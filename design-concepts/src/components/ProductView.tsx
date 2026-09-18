@@ -6,6 +6,7 @@ import {
   documentsForVariant,
   isStadoraArticleNumber,
   products,
+  publicManufacturer,
   quoteShowsArticleNumber,
 } from '../data/content'
 import { selectedMaterial } from '../data/binsignia'
@@ -72,6 +73,7 @@ export function ProductView({
   const finish = selectedMaterial(product, variants['Material'])
   const sku = quoteLineSku(product, variants)
   const publicSku = quoteShowsArticleNumber(product, sku) ? sku : undefined
+  const maker = publicManufacturer(product)
   const dimensions = selectedSize?.dimensions ?? product.dimensions
   const weight = selectedSize?.weight ?? product.weight
   const selectedWeight = weightForSelection(product, variants)
@@ -178,8 +180,8 @@ export function ProductView({
           />
         )}
       </div>
-      {product.manufacturer && (
-        <p className="mt-2 text-sm font-medium">Tillverkare: {product.manufacturer}</p>
+      {maker && (
+        <p className="mt-2 text-sm font-medium">Tillverkare: {maker}</p>
       )}
       {optionProduct && inoplexGallery && !inoplexGallery.matched && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
@@ -536,10 +538,10 @@ export function ProductView({
           <dd className="font-medium tabular-nums">{publicSku}</dd>
         </div>
       )}
-      {product.manufacturer && (
+      {maker && (
         <div>
           <dt className="text-muted">Tillverkare</dt>
-          <dd className="font-medium">{product.manufacturer}</dd>
+          <dd className="font-medium">{maker}</dd>
         </div>
       )}
       {weightBesidePhoto && (
@@ -827,8 +829,8 @@ export function ProductView({
             {product.category} · {product.subcategory}
           </p>
           <h1 className="mt-2 text-3xl md:text-4xl">{product.name}</h1>
-          {product.manufacturer && (
-            <p className="mt-2 text-sm text-muted">Tillverkare {product.manufacturer}</p>
+          {maker && (
+            <p className="mt-2 text-sm text-muted">Tillverkare {maker}</p>
           )}
           {publicSku && (
             <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {publicSku}</p>
