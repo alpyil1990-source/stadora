@@ -1212,13 +1212,13 @@ function StreetparkTypePicker({
   return (
     <fieldset>
       <legend className="text-sm font-medium">{legend}</legend>
-      <div className="mt-2 grid grid-cols-4 gap-2 sm:grid-cols-5 md:grid-cols-6">
+      <div className="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-4">
         {sizes.map((s) => {
           const active = selectedName === s.name || selectedName === s.sku
           return (
             <label
               key={s.sku ?? s.name}
-              className={`flex cursor-pointer flex-col items-center border-2 bg-sheet px-1 py-2 text-center ${
+              className={`flex cursor-pointer flex-col items-center border-2 bg-sheet px-1.5 py-2 text-center ${
                 active ? 'border-sage bg-paper' : 'border-line'
               }`}
             >
@@ -1229,7 +1229,7 @@ function StreetparkTypePicker({
                 checked={active}
                 onChange={() => onSelect(s.name)}
               />
-              <span className="flex aspect-[4/3] w-full items-center justify-center bg-paper">
+              <span className="flex aspect-[150/113] w-full items-center justify-center bg-paper">
                 {s.icon ? (
                   <img
                     src={s.icon}
