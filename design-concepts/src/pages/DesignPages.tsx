@@ -172,10 +172,10 @@ export function DesignIndexPage() {
       <section className="border border-line bg-sheet p-6 text-sm">
         <h2 className="text-lg">Kusch+Co / Nowy Styl</h2>
         <p className="mt-2 text-muted">
-          Ett produktkort för vägghängd V-Care Fold i Väntzon och korridor. Välj sittplatser,
-          trä eller klädd, kulör och fällmekanism. Tillverkare syns bara internt. Produktkod
-          följer med offerten. Pris på förfrågan. Prislista endast intern. Inga golvstående Fold
-          och inga vanliga V-Care-bänkar.
+          Ett produktkort för vägghängd V-Care Fold i Väntzon och korridor, 1–4 sittplatser.
+          Välj trä eller klädd, kulör och fällmekanism. Klädselkollektioner visas med tygprover.
+          Tillverkare syns bara internt. Produktkod följer med offerten. Pris på förfrågan.
+          Prislista endast intern. Inga golvstående Fold och inga vanliga V-Care-bänkar.
         </p>
         <p className="mt-3">
           <Link className="underline" to="/produkt/v-care-fold">

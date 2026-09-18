@@ -152,9 +152,10 @@ export function kuschFoldSeatMaterial(state: Record<string, string>): string | u
   const utforande = state['Utförande']
   if (utforande === 'Klädd') {
     const collection = state['Klädselkollektion']
-    const wish = state['Klädselkulör::egen']?.trim()
-    const colour = wish || state['Klädselkulör']
-    const bits = [collection, colour].filter(Boolean)
+    const colourKey = Object.keys(state).find((key) => key.startsWith('Klädselkulör') && !key.endsWith('::egen'))
+    const wish = colourKey ? state[`${colourKey}::egen`]?.trim() : undefined
+    const colour = wish || (colourKey ? state[colourKey] : undefined)
+    const bits = [collection, colour && colour !== 'Annan kulörkod' ? colour : wish].filter(Boolean)
     const base = bits.length ? bits.join(', ') : 'Klädd sits och rygg'
     return `${base}. Sits och rygg samma klädselkulör.`
   }
