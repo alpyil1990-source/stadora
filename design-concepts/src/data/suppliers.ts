@@ -182,7 +182,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'Hallener Str. 1–9, 57439 Attendorn, Tyskland',
     notes:
-      'Tillstånd att använda produktbilder och material på webbplatsen, i offerter och kundprojekt. Tillverkare Kusch+Co endast internt, inte på den publika produktsidan eller offerten. Endast vägghängd V-Care Fold i den här omgången (1U/2U/3U MW, trä och klädd). Inga golvstående Fold och inga vanliga V-Care-bänkar. Produktkod följer med offerten; inget påhittat KVCR-beställningsnummer. Inga priser publikt. Prislista och inköpsvillkor endast internt. Modellspecifika Fold-blad/CAD saknas i öppen nedladdning; TE/TB/PRM-ritningar ska inte användas. Hämtat 2026-09-18 från kusch.com och nowystyl.com.',
+      'Tillstånd att använda produktbilder och material på webbplatsen, i offerter och kundprojekt. Tillverkare Kusch+Co endast internt, inte på den publika produktsidan eller offerten. Ett produktkort för vägghängd V-Care Fold (1U/2U/3U MW, trä och klädd). Inga golvstående Fold och inga vanliga V-Care-bänkar. Produktkod följer med offerten; inget påhittat KVCR-beställningsnummer. Inga priser publikt. Prislista och inköpsvillkor endast internt. Modellspecifika Fold-blad/CAD saknas i öppen nedladdning; TE/TB/PRM-ritningar ska inte användas. Hämtat 2026-09-18 från kusch.com och nowystyl.com.',
     productSlugs: [...KUSCH_VCARE_FOLD_SLUGS],
   },
 ]

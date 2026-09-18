@@ -19,6 +19,10 @@ export type ProductImage = {
   color?: string
   /** Matches a size option name when this file shows that size. */
   size?: string
+  /** Matches Utförande (Trä / Klädd) when the photo shows that finish. */
+  utforande?: string
+  /** Short gallery label, e.g. "Tre sittplatser, trä". */
+  caption?: string
   /** Private file id. The src is an API path, not a storage path. */
   fileId?: string
 }

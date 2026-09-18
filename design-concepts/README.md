@@ -98,7 +98,7 @@ Se `/design` i prototypen, eller:
 - `/produkter/parkmobler/parkbankar` och övriga underkategorier med ZANO-katalog (Övrigt är inte importerat)
 - `/admin/leverantorer/zano` intern ZANO-sida (inköpspris saknas, kvalitetskontroll)
 - `/produkter/vantzon-korridor/vagghangda-fallstolar` V-Care Fold, vägghängd
-- `/produkt/v-care-fold-1u-mw-w` fällstol trä, `/produkt/v-care-fold-2u-3u-mw-w` fällbänk trä
+- `/produkt/v-care-fold` vägghängd fällstol och fällbänk, varianter för 1–3 sittplatser, trä eller klädd
 - `/admin/leverantorer/kusch-co` intern Kusch+Co-sida (prislista endast intern)
 
 Picknickset-landningssidor utan eget modellnummer importeras inte. Saknat svenskt produktblad räknas inte som ofullständig post; engelska produktkort märks som engelska.

@@ -44,6 +44,7 @@ import {
   visibleGroups,
   weightForSelection,
 } from '../data/inoplex-config'
+import { isKuschFoldProduct, kuschFoldSeatMaterial } from '../data/kusch-vcare-fold'
 import { finishSwatchHex, isStreetparkProduct } from '../data/streetpark-finishes'
 import {
   extraMaterialDetails,
@@ -96,7 +97,10 @@ export function ProductView({
     materialLabel,
     extras: extraMaterialDetails(product),
     selectedSummary: selectedSize?.summary,
-    selectedSeat: variants['Sits'] ?? variants['Träslag'],
+    selectedSeat:
+      (isKuschFoldProduct(product) ? kuschFoldSeatMaterial(variants) : undefined) ??
+      variants['Sits'] ??
+      variants['Träslag'],
   })
   const showMaterial = materialRows.length > 0
   const ingress = productIngress(product)
@@ -125,17 +129,18 @@ export function ProductView({
   const current = shown[Math.min(active, shown.length - 1)] ?? product.images[0]
   const taggedColors = hasColorTaggedImages(product.images)
   const missingColorPhoto =
+    !optionProduct &&
     !galleryLocked &&
     Boolean(variants[COLOR_VARIANT_KEY]) &&
     taggedColors &&
     !galleryState.colorMatched
   const missingSizePhoto =
-    !galleryLocked && Boolean(typeName) && sizePhotos && !galleryState.sizeMatched
+    !optionProduct && !galleryLocked && Boolean(typeName) && sizePhotos && !galleryState.sizeMatched
 
   const related = product.related.map((slug) => products[slug]).filter(Boolean)
   const popKey = galleryLocked
     ? (current?.src ?? '')
-    : `${variants[COLOR_VARIANT_KEY] ?? ''}-${typeName ?? ''}-${current?.src ?? ''}`
+    : `${variants[COLOR_VARIANT_KEY] ?? ''}-${typeName ?? ''}-${variants['Utförande'] ?? ''}-${current?.src ?? ''}`
 
   function selectColor(name: string) {
     setVariants((v) => ({ ...v, [COLOR_VARIANT_KEY]: name }))
@@ -145,6 +150,13 @@ export function ProductView({
   function selectSize(name: string) {
     setVariants((v) => withSelectedType(v, name, product.sizeLegend))
     if (!galleryLocked) setActive(0)
+  }
+
+  function selectOption(key: string, value: string) {
+    setVariants((s) => applyOptionChange(product, s, key, value))
+    if (!galleryLocked && (key === 'Utförande' || key === 'Stomkulör' || key === 'Ytbehandling')) {
+      setActive(0)
+    }
   }
 
   function addToQuote() {
@@ -179,8 +191,13 @@ export function ProductView({
       </div>
       {optionProduct && inoplexGallery && !inoplexGallery.matched && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
-          {EXAMPLE_IMAGE_NOTE}
+          {isKuschFoldProduct(product) && inoplexGallery.unmatchedLabel
+            ? `Ingen originalbild för ${inoplexGallery.unmatchedLabel}. Huvudbilden är inte den valda varianten. Övriga bilder är märkta galleriexempel.`
+            : EXAMPLE_IMAGE_NOTE}
         </p>
+      )}
+      {current?.caption && (
+        <p className="mt-2 text-sm text-muted">{current.caption}</p>
       )}
       {!optionProduct && product.imageNote && (
         <p className="mt-2 text-xs text-muted">{product.imageNote}</p>
@@ -197,17 +214,20 @@ export function ProductView({
         </p>
       )}
       {shown.length > 1 && (
-        <ul className="mt-3 flex flex-wrap gap-2">
+        <ul className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-3">
           {shown.map((img, i) => (
             <li key={img.src}>
               <button
                 type="button"
                 onClick={() => setActive(i)}
-                className={`h-16 w-16 border bg-paper p-1 ${
+                className={`w-full border bg-paper p-1 text-left ${
                   i === Math.min(active, shown.length - 1) ? 'border-ink' : 'border-line'
                 }`}
               >
-                <img src={img.src} alt="" className="h-full w-full object-contain" />
+                <img src={img.src} alt="" className="mx-auto h-16 w-full object-contain" />
+                {img.caption ? (
+                  <span className="mt-1 block text-[0.65rem] leading-snug text-muted">{img.caption}</span>
+                ) : null}
               </button>
             </li>
           ))}
@@ -232,7 +252,12 @@ export function ProductView({
           <legend className="text-sm font-medium">{sizeLegend}</legend>
           <div className="mt-2 flex flex-wrap gap-2">
             {product.sizes.map((s) => {
-              const hasPhoto = product.images.some((img) => img.size === s.name)
+              const hasPhoto = product.images.some((img) => {
+                if (img.size !== s.name) return false
+                const utforande = variants['Utförande']
+                if (utforande && img.utforande) return img.utforande === utforande
+                return true
+              })
               const selected = typeName === s.name
               return (
                 <label
@@ -257,7 +282,7 @@ export function ProductView({
                   )}
                   {sizePhotos && (
                     <span className="block text-xs text-muted">
-                      {hasPhoto ? 'Produktbild finns' : 'Bild saknas — exempelbilden ligger kvar'}
+                      {hasPhoto ? 'Produktbild finns' : 'Originalbild saknas'}
                     </span>
                   )}
                 </label>
@@ -430,7 +455,7 @@ export function ProductView({
                       className="sr-only"
                       name={g.key}
                       checked={selected}
-                      onChange={() => setVariants((s) => applyOptionChange(product, s, g.key, opt.name))}
+                      onChange={() => selectOption(g.key, opt.name)}
                     />
                     <span className="flex items-center gap-2">
                       {opt.swatch && (
@@ -480,8 +505,12 @@ export function ProductView({
         <label htmlFor="qty" className="text-sm font-medium">
           {quantityLegend(product)}
         </label>
-        {product.qtyLegend && /bänk|stol/i.test(product.qtyLegend) && (
-          <p className="mt-1 text-xs text-muted">Skilt från antal sittplatser.</p>
+        {product.qtyLegend && /enhet|bänk|stol/i.test(product.qtyLegend) && (
+          <p className="mt-1 text-xs text-muted">
+            {isKuschFoldProduct(product)
+              ? 'Skilt från antal sittplatser. Tre sittplatser och två enheter innebär två tresitsbänkar.'
+              : 'Skilt från antal sittplatser.'}
+          </p>
         )}
         <input
           id="qty"

@@ -1,5 +1,6 @@
 import type { ConfigGroup, Product, ProductImage } from './content'
 import { COLOR_VARIANT_KEY, SIZE_VARIANT_KEY } from './configure'
+import { isKuschFoldProduct } from './kusch-vcare-fold'
 
 export function visibleGroups(product: Product, state: Record<string, string>): ConfigGroup[] {
   const groups = product.optionGroups ?? []
@@ -82,36 +83,42 @@ export function optionQuoteBits(product: Product, state: Record<string, string>)
   return bits
 }
 
-const KUSCH_PHOTOGRAPHED_WOOD = 'SKNB Natur bok'
-
 function kuschFoldImages(product: Product, state: Record<string, string>): {
   shown: ProductImage[]
   matched: boolean
+  unmatchedLabel?: string
 } {
   const sizeName = state[SIZE_VARIANT_KEY]
+  const utforande = state['Utförande']
   const frame = state['Stomkulör']
-  const wood = state['Träkulör']
-  const sizeTagged = product.images.some((img) => Boolean(img.size))
-  const bySize = sizeName ? product.images.filter((img) => img.size === sizeName) : []
-  const pool = bySize.length ? bySize : product.images
-  const byFrame = frame ? pool.filter((img) => img.color === frame) : []
-  const primary = byFrame.length ? byFrame : pool
+  const exact = product.images.filter((img) => {
+    if (sizeName && img.size !== sizeName) return false
+    if (utforande && img.utforande && img.utforande !== utforande) return false
+    return Boolean(img.size)
+  })
+  const label = [sizeName, utforande ? utforande.toLowerCase() : undefined].filter(Boolean).join(', ')
+  if (!exact.length) {
+    return {
+      shown: product.images,
+      matched: false,
+      unmatchedLabel: label || undefined,
+    }
+  }
+  const byFrame = frame ? exact.filter((img) => img.color === frame) : []
+  const primary = byFrame.length ? byFrame : exact
   const rest = product.images.filter((img) => !primary.includes(img))
-  const shown = [...primary, ...rest]
-  const sizeOk = !sizeTagged || bySize.length > 0
-  const frameOk = Boolean(frame && primary.some((img) => img.color === frame))
-  const woodOk =
-    !wood ||
-    wood === KUSCH_PHOTOGRAPHED_WOOD ||
-    primary.some((img) => img.alt.toLowerCase().includes(wood.toLowerCase()))
-  return { shown, matched: sizeOk && frameOk && woodOk }
+  return { shown: [...primary, ...rest], matched: true }
 }
 
-export function matchingImages(product: Product, state: Record<string, string>): {
+export function matchingImages(
+  product: Product,
+  state: Record<string, string>,
+): {
   shown: ProductImage[]
   matched: boolean
+  unmatchedLabel?: string
 } {
-  if (product.manufacturer === 'Kusch+Co') {
+  if (isKuschFoldProduct(product)) {
     return kuschFoldImages(product, state)
   }
   const finish = state['Stomfinish'] || state['Konstruktion'] || state[COLOR_VARIANT_KEY]

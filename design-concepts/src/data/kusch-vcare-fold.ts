@@ -18,6 +18,11 @@ type GroupJson = {
   options: OptJson[]
 }
 
+type ImageJson = ProductImage & {
+  utforande?: string
+  caption?: string
+}
+
 type SeriesJson = {
   slug: string
   name: string
@@ -35,12 +40,13 @@ type SeriesJson = {
   description: string
   material?: string | null
   wood?: string | null
+  environment?: string | null
   qtyLegend?: string | null
   sizes: SizeOption[]
   defaultSize: string | null
   sizeLegend: string | null
   optionGroups: GroupJson[]
-  images: ProductImage[]
+  images: ImageJson[]
   documents: ProductDocument[]
   related: string[]
   imageNote?: string
@@ -74,9 +80,12 @@ function toProduct(row: SeriesJson): Product {
       kind: img.kind ?? 'studio',
       color: img.color,
       size: img.size,
+      utforande: img.utforande,
+      caption: img.caption,
     })),
     material: row.material ?? undefined,
     wood: row.wood ?? undefined,
+    environment: row.environment ?? undefined,
     qtyLegend: row.qtyLegend ?? undefined,
     mounting: row.mounting.length ? row.mounting : undefined,
     standards: row.standards,
@@ -117,3 +126,52 @@ export const kuschVcareFoldProducts: Record<string, Product> = Object.fromEntrie
 )
 
 export const KUSCH_VCARE_FOLD_SLUGS = series.map((row) => row.slug)
+
+export const KUSCH_VCARE_FOLD_REDIRECTS: Record<string, string> = {
+  'v-care-fold-1u-mw-w': 'v-care-fold',
+  'v-care-fold-1u-mw-uph': 'v-care-fold',
+  'v-care-fold-2u-3u-mw-w': 'v-care-fold',
+  'v-care-fold-2u-3u-mw-uph': 'v-care-fold',
+}
+
+export function isKuschFoldProduct(product?: { slug?: string; manufacturer?: string } | null) {
+  if (!product) return false
+  if (product.slug === 'v-care-fold') return true
+  if (product.slug && product.slug in KUSCH_VCARE_FOLD_REDIRECTS) return true
+  return product.manufacturer === 'Kusch+Co'
+}
+
+export function kuschFoldSku(seatsName?: string, utforande?: string) {
+  const seats = seatsName?.match(/(\d+)/)?.[1]
+  if (!seats) return undefined
+  const upholstered = utforande === 'Klädd'
+  return `VCARE FOLD ${seats}U MW ${upholstered ? 'UPH' : 'W'}`
+}
+
+export function kuschFoldSeatMaterial(state: Record<string, string>): string | undefined {
+  const utforande = state['Utförande']
+  if (utforande === 'Klädd') {
+    const collection = state['Klädselkollektion']
+    const wish = state['Klädselkulör::egen']?.trim()
+    const colour = wish || state['Klädselkulör']
+    const bits = [collection, colour].filter(Boolean)
+    const base = bits.length ? bits.join(', ') : 'Klädd sits och rygg'
+    return `${base}. Sits och rygg samma klädselkulör.`
+  }
+  if (utforande !== 'Trä') return undefined
+  const finish = state['Ytbehandling']
+  if (finish === 'Naturbok') {
+    return 'Bokplywood, SKNB Natur bok. Sits och rygg samma kulör. Ek och valnöt i paletten är betsnamn, inte alternativa träslag.'
+  }
+  if (finish === 'Betsat') {
+    const stain = state['Träkulör']
+    const named = stain ? `Bokplywood, ${stain}` : 'Bokplywood, betsat'
+    return `${named}. Sits och rygg samma kulör. Ek och valnöt är betsnamn, inte alternativa träslag.`
+  }
+  if (finish === 'Laminat') {
+    const lam = state['Laminatkulör']
+    const named = lam ? `Laminat, ${lam}` : 'Laminat'
+    return `${named}. Sits och rygg samma kulör.`
+  }
+  return 'Sits och rygg i trä, samma kulör.'
+}

@@ -197,7 +197,10 @@ export function SubcategoryListPage() {
         }
       }
       if (f.legend === 'Utförande') {
-        const hay = `${p.name} ${p.sku ?? ''}`.toLowerCase()
+        const optionHay = (p.optionGroups ?? [])
+          .flatMap((g) => [g.label, ...g.options.map((o) => o.name)])
+          .join(' ')
+        const hay = `${p.name} ${p.summary} ${p.sku ?? ''} ${optionHay}`.toLowerCase()
         if (
           !sel.some((s) => {
             if (s === 'Trä') return hay.includes('trä') || /\bW\b/.test(p.sku ?? '')

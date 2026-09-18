@@ -2,6 +2,7 @@ import type { Product, SizeOption } from './content'
 import { productPath } from './content'
 import { selectedMaterial } from './binsignia'
 import { initialOptionState, optionQuoteBits } from './inoplex-config'
+import { isKuschFoldProduct, kuschFoldSku } from './kusch-vcare-fold'
 
 /** Internal state key for type/size. STREETPARK's public legend is "Modell". */
 export const SIZE_VARIANT_KEY = 'Storlek'
@@ -52,6 +53,11 @@ export function withSelectedType(
 }
 
 export function quoteLineSku(product: Product, variants: Record<string, string>): string | undefined {
+  if (isKuschFoldProduct(product)) {
+    return (
+      kuschFoldSku(selectedTypeName(product, variants), variants['Utförande']) ?? product.sku
+    )
+  }
   const finish = selectedMaterial(product, variants['Material'])
   const size = selectedTypeOption(product, variants)
   return finish?.sku ?? size?.sku ?? size?.name ?? product.sku

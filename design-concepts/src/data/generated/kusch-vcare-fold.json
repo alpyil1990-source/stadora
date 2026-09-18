@@ -3,7 +3,7 @@
   "source": "https://www.kusch.com/en/v-care/beam-seating/",
   "also": "https://www.nowystyl.com/en/v-care/beam-seating/",
   "finishesId": "kusch_VCARE_WW-KU-2501_BEAMSEATING_en-us",
-  "note": "Fyra vägghängda Fold-poster. Inga golvstående Fold, inga vanliga V-Care-bänkar. Inga priser. Prislista och inköpsvillkor endast internt. Mått i hopfällt läge och lastkapacitet saknas i verifierat underlag och är inte påhittade.",
+  "note": "Ett produktkort. Endast vägghängd Fold 1U/2U/3U MW. Inga golvstående Fold, inga vanliga V-Care-bänkar. Inga priser publikt.",
   "skippedImages": [
     "v-care-fold-bench-kusch-co-63309.jpg — golvstående 3U i trä",
     "v-care-fold-4-seater-upholstered-benchfixed-to-floor — golvfast 4U klädd",
@@ -21,80 +21,87 @@
       "categorySlug": "vantzon-korridor",
       "subcategory": "Vägghängda fällstolar och fällbänkar",
       "subcategorySlug": "vagghangda-fallstolar",
-      "imageNote": "Bilden visar ett exempelutförande.",
-      "documentPolicy": "Modellspecifika produktblad, måttritningar, monteringsanvisningar och CAD/BIM för vägghängd V-Care Fold saknas i leverantörens öppna nedladdning för beam seating. De vanliga V-Care-bänkarna (TE/TB/PRM) har egna ritningar och ska inte användas för Fold. Prislista och inköpsvillkor finns endast internt.",
+      "documentPolicy": "Modellspecifika ritningar, produktblad och CAD för vägghängd Fold publiceras när de finns.",
       "documents": [],
       "mounting": [
         "Vägghängd. Leverantören rekommenderar montage i betongvägg, minst C20/25."
       ],
-      "standards": [
-        "EN 1021-1",
-        "EN 1021-2",
-        "DIN 66084 P-a"
-      ],
-      "slug": "v-care-fold-1u-mw-w",
-      "name": "V-Care Fold vägghängd fällstol – trä",
-      "sku": "VCARE FOLD 1U MW W",
-      "qtyLegend": "Antal stolar",
-      "summary": "Vägghängd fällstol med en sittplats, sits och rygg i bokplywood.",
-      "description": "V-Care Fold är en vägghängd fällstol med en sittplats. Sits och rygg är i bokplywood. Modellen är ritad av Justus Kolberg. Den är avsedd för sjukhus, klinik, skola, myndighet och andra offentliga inomhusmiljöer med hög trafik. Fällmekanismen har mjuk stängning (soft-close). Fällmekanism anges som ME1 eller ME2 enligt prislistan. När sitsen är uppfälld minskar den inte flyktvägens bredd. Materialen uppfyller brandkrav EN 1021-1, EN 1021-2 och DIN 66084 P-a. Sits och rygg får samma träkulör. Leverantören rekommenderar montage i betongvägg, minst C20/25. Hopfällt mått och belastningskapacitet anges inte – de saknas i verifierat underlag. Pris på förfrågan.",
+      "environment": "Offentlig inomhusmiljö med hög trafik, till exempel väntrum, korridor, sjukhus, klinik, skola och myndighet.",
+      "slug": "v-care-fold",
+      "name": "V-Care Fold – vägghängd fällstol och fällbänk",
+      "sku": "VCARE FOLD 3U MW W",
+      "qtyLegend": "Antal enheter",
+      "summary": "Vägghängd fällstol och fällbänk med en, två eller tre sittplatser. Trä eller klädd sits och rygg.",
+      "description": "V-Care Fold är en vägghängd fällstol och fällbänk för väntrum, korridor och andra offentliga inomhusmiljöer. Modellen är ritad av Justus Kolberg. Välj en, två eller tre sittplatser per enhet, trä eller klädd sits och rygg, stomkulör och fällmekanism. Fällmekanismen har mjuk stängning.",
       "material": "Pulverlackerad stålstomme med väggfäste.",
-      "wood": "Sits och rygg i bokplywood. Ek och valnöt i paletten är betsnamn, inte alternativa träslag.",
+      "wood": "Sits och rygg i bokplywood vid träutförande. Ek och valnöt i paletten är betsnamn, inte alternativa träslag. Klätt utförande har klädd sits och rygg i samma kulör.",
       "sizes": [
         {
           "name": "1 sittplats",
-          "sku": "VCARE FOLD 1U MW W",
-          "summary": "En sittplats. Antal i offerten är antal stolar."
+          "summary": "Fällstol. En sittplats per enhet."
+        },
+        {
+          "name": "2 sittplatser",
+          "summary": "Fällbänk. Två sittplatser per enhet."
+        },
+        {
+          "name": "3 sittplatser",
+          "summary": "Fällbänk. Tre sittplatser per enhet."
         }
       ],
-      "defaultSize": "1 sittplats",
+      "defaultSize": "3 sittplatser",
       "sizeLegend": "Antal sittplatser",
       "optionGroups": [
         {
-          "key": "Stomkulör",
-          "label": "Stomkulör",
-          "kind": "swatch",
-          "hint": "Fold-palett från leverantörens finishlista för V-Care beam seating. Valfri RAL utöver paletten ingår inte.",
+          "key": "Utförande",
+          "label": "Utförande",
+          "kind": "choice",
+          "hint": "Sits och rygg i samma utförande och kulör.",
           "options": [
             {
-              "id": "ncs-s-2005y60r-cashmere-nk",
-              "name": "NCS S 2005-Y60R Cashmere NK",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ncs-s-2005y60r-cashmere-nk.jpg"
+              "id": "tra",
+              "name": "Trä"
             },
             {
-              "id": "ral-9005-jet-black-cz-bl-y",
-              "name": "RAL 9005 Jet Black CZ, BL, Y",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-9005-jet-black-cz-bl-y.jpg"
+              "id": "kladd",
+              "name": "Klädd"
+            }
+          ]
+        },
+        {
+          "key": "Ytbehandling",
+          "label": "Ytbehandling",
+          "kind": "choice",
+          "parentKey": "Utförande",
+          "parentValue": "Trä",
+          "hint": "Naturbok, betsat bokplywood eller laminat. Sits och rygg samma kulör. Ek och valnöt är betsnamn, inte alternativa träslag.",
+          "options": [
+            {
+              "id": "naturbok",
+              "name": "Naturbok"
             },
             {
-              "id": "silver-aluminium-sa",
-              "name": "Silver Aluminium SA",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/silver-aluminium-sa.jpg"
+              "id": "betsat",
+              "name": "Betsat"
             },
             {
-              "id": "ral-030-50-40-vermilion-red-vr",
-              "name": "RAL 030 50 40 Vermilion Red VR",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-030-50-40-vermilion-red-vr.jpg"
-            },
+              "id": "laminat",
+              "name": "Laminat"
+            }
+          ]
+        },
+        {
+          "key": "Naturbokkulör",
+          "label": "Träkulör",
+          "kind": "swatch",
+          "parentKey": "Ytbehandling",
+          "parentValue": "Naturbok",
+          "hint": "Sits och rygg i bokplywood, samma kulör.",
+          "options": [
             {
-              "id": "ral-1024-ochre-yellow-oy",
-              "name": "RAL 1024 Ochre Yellow OY",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-1024-ochre-yellow-oy.jpg"
-            },
-            {
-              "id": "ral-5000-violet-blue-vb",
-              "name": "RAL 5000 Violet Blue VB",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-5000-violet-blue-vb.jpg"
-            },
-            {
-              "id": "ral-6003-olive-green-og",
-              "name": "RAL 6003 Olive Green OG",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-6003-olive-green-og.jpg"
-            },
-            {
-              "id": "ral-9016-traffic-white-bi-wt-w",
-              "name": "RAL 9016 Traffic White BI, WT, W",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-9016-traffic-white-bi-wt-w.jpg"
+              "id": "sknb-natural-beech",
+              "name": "SKNB Natur bok",
+              "swatch": "/images/kusch-vcare-fold/swatches/wood/sknb-natural-beech.jpg"
             }
           ]
         },
@@ -102,13 +109,10 @@
           "key": "Träkulör",
           "label": "Träkulör",
           "kind": "swatch",
-          "hint": "Sits och rygg i bokplywood med samma kulör. Ek och valnöt är betsnamn, inte alternativa träslag.",
+          "parentKey": "Ytbehandling",
+          "parentValue": "Betsat",
+          "hint": "Sits och rygg i bokplywood, samma bets. Ek och valnöt är betsnamn, inte alternativa träslag.",
           "options": [
-            {
-              "id": "sknb-natural-beech",
-              "name": "SKNB Natur bok",
-              "swatch": "/images/kusch-vcare-fold/swatches/wood/sknb-natural-beech.jpg"
-            },
             {
               "id": "2-06s-slate",
               "name": "2.06S Slate",
@@ -147,121 +151,57 @@
           ]
         },
         {
-          "key": "Fallmekanism",
-          "label": "Fällmekanism",
-          "kind": "choice",
-          "hint": "ME1 eller ME2 enligt leverantörens prislista. Soft-close ingår i konstruktionen. Vilken kod som är arrettering i öppet läge framgår av prislistan, inte av katalogen.",
-          "options": [
-            {
-              "id": "me1",
-              "name": "ME1"
-            },
-            {
-              "id": "me2",
-              "name": "ME2"
-            }
-          ]
-        }
-      ],
-      "images": [
-        {
-          "src": "/images/kusch-vcare-fold/studio-3u-mw-w.jpg",
-          "alt": "V-Care Fold vägghängd fällbänk i trä, tre sittplatser, stomme NCS S 2005-Y60R Cashmere, sits och rygg SKNB Natur bok. Exempelutförande för fällstolen.",
-          "kind": "studio"
-        }
-      ],
-      "related": [
-        "v-care-fold-1u-mw-uph",
-        "v-care-fold-2u-3u-mw-w",
-        "v-care-fold-2u-3u-mw-uph"
-      ],
-      "gaps": [
-        "Ingen originalbild av 1U MW W. Studion visar vägghängd 3U i trä."
-      ]
-    },
-    {
-      "manufacturer": "Kusch+Co",
-      "quoteShowsSku": true,
-      "quoteOnRequest": true,
-      "sourceUrl": "https://www.kusch.com/en/v-care/beam-seating/",
-      "fetchedAt": "2026-09-18",
-      "category": "Väntzon och korridor",
-      "categorySlug": "vantzon-korridor",
-      "subcategory": "Vägghängda fällstolar och fällbänkar",
-      "subcategorySlug": "vagghangda-fallstolar",
-      "imageNote": "Bilden visar ett exempelutförande.",
-      "documentPolicy": "Modellspecifika produktblad, måttritningar, monteringsanvisningar och CAD/BIM för vägghängd V-Care Fold saknas i leverantörens öppna nedladdning för beam seating. De vanliga V-Care-bänkarna (TE/TB/PRM) har egna ritningar och ska inte användas för Fold. Prislista och inköpsvillkor finns endast internt.",
-      "documents": [],
-      "mounting": [
-        "Vägghängd. Leverantören rekommenderar montage i betongvägg, minst C20/25."
-      ],
-      "standards": [
-        "EN 1021-1",
-        "EN 1021-2",
-        "DIN 66084 P-a"
-      ],
-      "slug": "v-care-fold-1u-mw-uph",
-      "name": "V-Care Fold vägghängd fällstol – klädd",
-      "sku": "VCARE FOLD 1U MW UPH",
-      "qtyLegend": "Antal stolar",
-      "summary": "Vägghängd fällstol med en sittplats, klädd sits och rygg.",
-      "description": "V-Care Fold är en vägghängd fällstol med en sittplats. Sits och rygg är klädda. Modellen är ritad av Justus Kolberg. Den är avsedd för sjukhus, klinik, skola, myndighet och andra offentliga inomhusmiljöer med hög trafik. Fällmekanismen har mjuk stängning (soft-close). Fällmekanism anges som ME1 eller ME2 enligt prislistan. När sitsen är uppfälld minskar den inte flyktvägens bredd. Materialen uppfyller brandkrav EN 1021-1, EN 1021-2 och DIN 66084 P-a. Sits och rygg får samma klädselkulör. Leverantören rekommenderar montage i betongvägg, minst C20/25. Hopfällt mått och belastningskapacitet anges inte – de saknas i verifierat underlag. Pris på förfrågan.",
-      "material": "Pulverlackerad stålstomme med väggfäste. Sits och rygg klädda.",
-      "sizes": [
-        {
-          "name": "1 sittplats",
-          "sku": "VCARE FOLD 1U MW UPH",
-          "summary": "En sittplats. Antal i offerten är antal stolar."
-        }
-      ],
-      "defaultSize": "1 sittplats",
-      "sizeLegend": "Antal sittplatser",
-      "optionGroups": [
-        {
-          "key": "Stomkulör",
-          "label": "Stomkulör",
+          "key": "Laminatkulör",
+          "label": "Laminatkulör",
           "kind": "swatch",
-          "hint": "Fold-palett från leverantörens finishlista för V-Care beam seating. Valfri RAL utöver paletten ingår inte.",
+          "parentKey": "Ytbehandling",
+          "parentValue": "Laminat",
+          "hint": "Sits och rygg i samma laminatkulör.",
           "options": [
             {
-              "id": "ncs-s-2005y60r-cashmere-nk",
-              "name": "NCS S 2005-Y60R Cashmere NK",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ncs-s-2005y60r-cashmere-nk.jpg"
+              "id": "u0901tp-traceless-black",
+              "name": "U0901TP Traceless Black",
+              "swatch": "/images/kusch-vcare-fold/swatches/laminate/u0901tp-traceless-black.jpg"
             },
             {
-              "id": "ral-9005-jet-black-cz-bl-y",
-              "name": "RAL 9005 Jet Black CZ, BL, Y",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-9005-jet-black-cz-bl-y.jpg"
+              "id": "h1733-mainau-birch",
+              "name": "H1733 Mainau Birch",
+              "swatch": "/images/kusch-vcare-fold/swatches/laminate/h1733-mainau-birch.jpg"
             },
             {
-              "id": "silver-aluminium-sa",
-              "name": "Silver Aluminium SA",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/silver-aluminium-sa.jpg"
+              "id": "h3349-kaisersberg-oak",
+              "name": "H3349 Kaisersberg Oak",
+              "swatch": "/images/kusch-vcare-fold/swatches/laminate/h3349-kaisersberg-oak.jpg"
             },
             {
-              "id": "ral-030-50-40-vermilion-red-vr",
-              "name": "RAL 030 50 40 Vermilion Red VR",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-030-50-40-vermilion-red-vr.jpg"
+              "id": "u504-tyrolean-blue",
+              "name": "U504 Tyrolean Blue",
+              "swatch": "/images/kusch-vcare-fold/swatches/laminate/u504-tyrolean-blue.jpg"
             },
             {
-              "id": "ral-1024-ochre-yellow-oy",
-              "name": "RAL 1024 Ochre Yellow OY",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-1024-ochre-yellow-oy.jpg"
+              "id": "u626-kiwi-green",
+              "name": "U626 Kiwi Green",
+              "swatch": "/images/kusch-vcare-fold/swatches/laminate/u626-kiwi-green.jpg"
             },
             {
-              "id": "ral-5000-violet-blue-vb",
-              "name": "RAL 5000 Violet Blue VB",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-5000-violet-blue-vb.jpg"
+              "id": "u708-light-grey",
+              "name": "U708 Light Grey",
+              "swatch": "/images/kusch-vcare-fold/swatches/laminate/u708-light-grey.jpg"
             },
             {
-              "id": "ral-6003-olive-green-og",
-              "name": "RAL 6003 Olive Green OG",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-6003-olive-green-og.jpg"
+              "id": "u963-dark-grey",
+              "name": "U963 Dark Grey",
+              "swatch": "/images/kusch-vcare-fold/swatches/laminate/u963-dark-grey.jpg"
             },
             {
-              "id": "ral-9016-traffic-white-bi-wt-w",
-              "name": "RAL 9016 Traffic White BI, WT, W",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-9016-traffic-white-bi-wt-w.jpg"
+              "id": "u999-black",
+              "name": "U999 Black",
+              "swatch": "/images/kusch-vcare-fold/swatches/laminate/u999-black.jpg"
+            },
+            {
+              "id": "w1000-premium-white",
+              "name": "W1000 Premium White",
+              "swatch": "/images/kusch-vcare-fold/swatches/laminate/w1000-premium-white.jpg"
             }
           ]
         },
@@ -269,7 +209,9 @@
           "key": "Klädselkollektion",
           "label": "Klädselkollektion",
           "kind": "choice",
-          "hint": "Kollektioner från leverantörens finishlista för V-Care beam seating. Sits och rygg får samma kulör.",
+          "parentKey": "Utförande",
+          "parentValue": "Klädd",
+          "hint": "Verifierade klädselkollektioner. Sits och rygg samma klädsel.",
           "options": [
             {
               "id": "skai-parotega",
@@ -305,7 +247,9 @@
           "key": "Klädselkulör",
           "label": "Klädselkulör",
           "kind": "choice",
-          "hint": "Kulörkarta per kollektion för just vägghängd Fold är inte verifierad i prislistan här. Ange önskad kulörkod för offert i stället för påhittade val.",
+          "parentKey": "Utförande",
+          "parentValue": "Klädd",
+            "hint": "Ange önskad kulörkod från vald kollektion. Sits och rygg samma kulör.",
           "options": [
             {
               "id": "uph-wish",
@@ -315,87 +259,10 @@
           ]
         },
         {
-          "key": "Fallmekanism",
-          "label": "Fällmekanism",
-          "kind": "choice",
-          "hint": "ME1 eller ME2 enligt leverantörens prislista. Soft-close ingår i konstruktionen. Vilken kod som är arrettering i öppet läge framgår av prislistan, inte av katalogen.",
-          "options": [
-            {
-              "id": "me1",
-              "name": "ME1"
-            },
-            {
-              "id": "me2",
-              "name": "ME2"
-            }
-          ]
-        }
-      ],
-      "images": [
-        {
-          "src": "/images/kusch-vcare-fold/site-4u-mw-uph-example.jpg",
-          "alt": "V-Care Fold vägghängd fällbänk, klädd, fyra sittplatser i väntrum. Exempelutförande för fällstolen.",
-          "kind": "site"
-        }
-      ],
-      "related": [
-        "v-care-fold-1u-mw-w",
-        "v-care-fold-2u-3u-mw-uph",
-        "v-care-fold-2u-3u-mw-w"
-      ],
-      "gaps": [
-        "Ingen originalbild av 1U MW UPH. Miljöbilden visar vägghängd klädd Fold med fyra sittplatser."
-      ]
-    },
-    {
-      "manufacturer": "Kusch+Co",
-      "quoteShowsSku": true,
-      "quoteOnRequest": true,
-      "sourceUrl": "https://www.kusch.com/en/v-care/beam-seating/",
-      "fetchedAt": "2026-09-18",
-      "category": "Väntzon och korridor",
-      "categorySlug": "vantzon-korridor",
-      "subcategory": "Vägghängda fällstolar och fällbänkar",
-      "subcategorySlug": "vagghangda-fallstolar",
-      "imageNote": "Bilden visar ett exempelutförande.",
-      "documentPolicy": "Modellspecifika produktblad, måttritningar, monteringsanvisningar och CAD/BIM för vägghängd V-Care Fold saknas i leverantörens öppna nedladdning för beam seating. De vanliga V-Care-bänkarna (TE/TB/PRM) har egna ritningar och ska inte användas för Fold. Prislista och inköpsvillkor finns endast internt.",
-      "documents": [],
-      "mounting": [
-        "Vägghängd. Leverantören rekommenderar montage i betongvägg, minst C20/25."
-      ],
-      "standards": [
-        "EN 1021-1",
-        "EN 1021-2",
-        "DIN 66084 P-a"
-      ],
-      "slug": "v-care-fold-2u-3u-mw-w",
-      "name": "V-Care Fold vägghängd fällbänk – trä",
-      "sku": "VCARE FOLD 2U/3U MW W",
-      "qtyLegend": "Antal bänkar",
-      "summary": "Vägghängd fällbänk med två eller tre sittplatser, sits och rygg i bokplywood.",
-      "description": "V-Care Fold är en vägghängd fällbänk med två eller tre sittplatser. Sits och rygg är i bokplywood. Modellen är ritad av Justus Kolberg. Den är avsedd för sjukhus, klinik, skola, myndighet och andra offentliga inomhusmiljöer med hög trafik. Fällmekanismen har mjuk stängning (soft-close). Fällmekanism anges som ME1 eller ME2 enligt prislistan. När sitsarna är uppfällda minskar de inte flyktvägens bredd. Materialen uppfyller brandkrav EN 1021-1, EN 1021-2 och DIN 66084 P-a. Sits och rygg får samma träkulör. Leverantören rekommenderar montage i betongvägg, minst C20/25. Hopfällt mått och belastningskapacitet anges inte – de saknas i verifierat underlag. Antal i offerten är antal bänkar, skilt från antal sittplatser. Pris på förfrågan.",
-      "material": "Pulverlackerad stålstomme med väggfäste.",
-      "wood": "Sits och rygg i bokplywood. Ek och valnöt i paletten är betsnamn, inte alternativa träslag.",
-      "sizes": [
-        {
-          "name": "2 sittplatser",
-          "sku": "VCARE FOLD 2U MW W",
-          "summary": "Två sittplatser på en bänk. Antal i offerten är antal bänkar."
-        },
-        {
-          "name": "3 sittplatser",
-          "sku": "VCARE FOLD 3U MW W",
-          "summary": "Tre sittplatser på en bänk. Antal i offerten är antal bänkar."
-        }
-      ],
-      "defaultSize": "3 sittplatser",
-      "sizeLegend": "Antal sittplatser",
-      "optionGroups": [
-        {
           "key": "Stomkulör",
           "label": "Stomkulör",
           "kind": "swatch",
-          "hint": "Fold-palett från leverantörens finishlista för V-Care beam seating. Valfri RAL utöver paletten ingår inte.",
+          "hint": "Fold-paletten. Valfri RAL utöver paletten ingår inte.",
           "options": [
             {
               "id": "ncs-s-2005y60r-cashmere-nk",
@@ -440,66 +307,17 @@
           ]
         },
         {
-          "key": "Träkulör",
-          "label": "Träkulör",
-          "kind": "swatch",
-          "hint": "Sits och rygg i bokplywood med samma kulör. Ek och valnöt är betsnamn, inte alternativa träslag.",
-          "options": [
-            {
-              "id": "sknb-natural-beech",
-              "name": "SKNB Natur bok",
-              "swatch": "/images/kusch-vcare-fold/swatches/wood/sknb-natural-beech.jpg"
-            },
-            {
-              "id": "2-06s-slate",
-              "name": "2.06S Slate",
-              "swatch": "/images/kusch-vcare-fold/swatches/wood/2-06s-slate.jpg"
-            },
-            {
-              "id": "2-07y-black",
-              "name": "2.07Y Black",
-              "swatch": "/images/kusch-vcare-fold/swatches/wood/2-07y-black.jpg"
-            },
-            {
-              "id": "2-09s-white",
-              "name": "2.09S White",
-              "swatch": "/images/kusch-vcare-fold/swatches/wood/2-09s-white.jpg"
-            },
-            {
-              "id": "2-0cb-acacia",
-              "name": "2.0CB Acacia",
-              "swatch": "/images/kusch-vcare-fold/swatches/wood/2-0cb-acacia.jpg"
-            },
-            {
-              "id": "2-0cc-walnut",
-              "name": "2.0CC Valnöt",
-              "swatch": "/images/kusch-vcare-fold/swatches/wood/2-0cc-walnut.jpg"
-            },
-            {
-              "id": "s39-light-grey",
-              "name": "S39 Light grey",
-              "swatch": "/images/kusch-vcare-fold/swatches/wood/s39-light-grey.jpg"
-            },
-            {
-              "id": "sk40-oak",
-              "name": "SK40 Ek",
-              "swatch": "/images/kusch-vcare-fold/swatches/wood/sk40-oak.jpg"
-            }
-          ]
-        },
-        {
           "key": "Fallmekanism",
           "label": "Fällmekanism",
           "kind": "choice",
-          "hint": "ME1 eller ME2 enligt leverantörens prislista. Soft-close ingår i konstruktionen. Vilken kod som är arrettering i öppet läge framgår av prislistan, inte av katalogen.",
           "options": [
             {
               "id": "me1",
-              "name": "ME1"
+              "name": "ME1 – utan låsning i nedfällt läge"
             },
             {
               "id": "me2",
-              "name": "ME2"
+              "name": "ME2 – med låsning i nedfällt läge"
             }
           ]
         }
@@ -510,195 +328,29 @@
           "alt": "V-Care Fold vägghängd fällbänk i trä, tre sittplatser, stomme NCS S 2005-Y60R Cashmere, sits och rygg SKNB Natur bok.",
           "kind": "studio",
           "size": "3 sittplatser",
-          "color": "NCS S 2005-Y60R Cashmere NK"
+          "color": "NCS S 2005-Y60R Cashmere NK",
+          "utforande": "Trä",
+          "caption": "Tre sittplatser, trä"
         },
         {
           "src": "/images/kusch-vcare-fold/site-2u-mw-w.jpg",
           "alt": "V-Care Fold vägghängd fällbänk i trä, två sittplatser, en sits uppfälld, stomme RAL 9016 Traffic White, sits och rygg i bokplywood. Vårdrum.",
           "kind": "site",
           "size": "2 sittplatser",
-          "color": "RAL 9016 Traffic White BI, WT, W"
-        }
-      ],
-      "related": [
-        "v-care-fold-2u-3u-mw-uph",
-        "v-care-fold-1u-mw-w",
-        "v-care-fold-1u-mw-uph"
-      ],
-      "gaps": []
-    },
-    {
-      "manufacturer": "Kusch+Co",
-      "quoteShowsSku": true,
-      "quoteOnRequest": true,
-      "sourceUrl": "https://www.kusch.com/en/v-care/beam-seating/",
-      "fetchedAt": "2026-09-18",
-      "category": "Väntzon och korridor",
-      "categorySlug": "vantzon-korridor",
-      "subcategory": "Vägghängda fällstolar och fällbänkar",
-      "subcategorySlug": "vagghangda-fallstolar",
-      "imageNote": "Bilden visar ett exempelutförande.",
-      "documentPolicy": "Modellspecifika produktblad, måttritningar, monteringsanvisningar och CAD/BIM för vägghängd V-Care Fold saknas i leverantörens öppna nedladdning för beam seating. De vanliga V-Care-bänkarna (TE/TB/PRM) har egna ritningar och ska inte användas för Fold. Prislista och inköpsvillkor finns endast internt.",
-      "documents": [],
-      "mounting": [
-        "Vägghängd. Leverantören rekommenderar montage i betongvägg, minst C20/25."
-      ],
-      "standards": [
-        "EN 1021-1",
-        "EN 1021-2",
-        "DIN 66084 P-a"
-      ],
-      "slug": "v-care-fold-2u-3u-mw-uph",
-      "name": "V-Care Fold vägghängd fällbänk – klädd",
-      "sku": "VCARE FOLD 2U/3U MW UPH",
-      "qtyLegend": "Antal bänkar",
-      "summary": "Vägghängd fällbänk med två eller tre sittplatser, klädd sits och rygg.",
-      "description": "V-Care Fold är en vägghängd fällbänk med två eller tre sittplatser. Sits och rygg är klädda. Modellen är ritad av Justus Kolberg. Den är avsedd för sjukhus, klinik, skola, myndighet och andra offentliga inomhusmiljöer med hög trafik. Fällmekanismen har mjuk stängning (soft-close). Fällmekanism anges som ME1 eller ME2 enligt prislistan. När sitsarna är uppfällda minskar de inte flyktvägens bredd. Materialen uppfyller brandkrav EN 1021-1, EN 1021-2 och DIN 66084 P-a. Sits och rygg får samma klädselkulör. Leverantören rekommenderar montage i betongvägg, minst C20/25. Hopfällt mått och belastningskapacitet anges inte – de saknas i verifierat underlag. Antal i offerten är antal bänkar, skilt från antal sittplatser. Pris på förfrågan.",
-      "material": "Pulverlackerad stålstomme med väggfäste. Sits och rygg klädda.",
-      "sizes": [
-        {
-          "name": "2 sittplatser",
-          "sku": "VCARE FOLD 2U MW UPH",
-          "summary": "Två sittplatser på en bänk. Antal i offerten är antal bänkar."
+          "color": "RAL 9016 Traffic White BI, WT, W",
+          "utforande": "Trä",
+          "caption": "Två sittplatser, trä"
         },
-        {
-          "name": "3 sittplatser",
-          "sku": "VCARE FOLD 3U MW UPH",
-          "summary": "Tre sittplatser på en bänk. Antal i offerten är antal bänkar."
-        }
-      ],
-      "defaultSize": "2 sittplatser",
-      "sizeLegend": "Antal sittplatser",
-      "optionGroups": [
-        {
-          "key": "Stomkulör",
-          "label": "Stomkulör",
-          "kind": "swatch",
-          "hint": "Fold-palett från leverantörens finishlista för V-Care beam seating. Valfri RAL utöver paletten ingår inte.",
-          "options": [
-            {
-              "id": "ncs-s-2005y60r-cashmere-nk",
-              "name": "NCS S 2005-Y60R Cashmere NK",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ncs-s-2005y60r-cashmere-nk.jpg"
-            },
-            {
-              "id": "ral-9005-jet-black-cz-bl-y",
-              "name": "RAL 9005 Jet Black CZ, BL, Y",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-9005-jet-black-cz-bl-y.jpg"
-            },
-            {
-              "id": "silver-aluminium-sa",
-              "name": "Silver Aluminium SA",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/silver-aluminium-sa.jpg"
-            },
-            {
-              "id": "ral-030-50-40-vermilion-red-vr",
-              "name": "RAL 030 50 40 Vermilion Red VR",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-030-50-40-vermilion-red-vr.jpg"
-            },
-            {
-              "id": "ral-1024-ochre-yellow-oy",
-              "name": "RAL 1024 Ochre Yellow OY",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-1024-ochre-yellow-oy.jpg"
-            },
-            {
-              "id": "ral-5000-violet-blue-vb",
-              "name": "RAL 5000 Violet Blue VB",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-5000-violet-blue-vb.jpg"
-            },
-            {
-              "id": "ral-6003-olive-green-og",
-              "name": "RAL 6003 Olive Green OG",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-6003-olive-green-og.jpg"
-            },
-            {
-              "id": "ral-9016-traffic-white-bi-wt-w",
-              "name": "RAL 9016 Traffic White BI, WT, W",
-              "swatch": "/images/kusch-vcare-fold/swatches/metal/ral-9016-traffic-white-bi-wt-w.jpg"
-            }
-          ]
-        },
-        {
-          "key": "Klädselkollektion",
-          "label": "Klädselkollektion",
-          "kind": "choice",
-          "hint": "Kollektioner från leverantörens finishlista för V-Care beam seating. Sits och rygg får samma kulör.",
-          "options": [
-            {
-              "id": "skai-parotega",
-              "name": "skai® Parotega"
-            },
-            {
-              "id": "valencia",
-              "name": "Valencia"
-            },
-            {
-              "id": "silvertex",
-              "name": "Silvertex"
-            },
-            {
-              "id": "blazer",
-              "name": "Blazer"
-            },
-            {
-              "id": "synergy",
-              "name": "Synergy"
-            },
-            {
-              "id": "main-line-flax",
-              "name": "Main Line Flax"
-            },
-            {
-              "id": "nappa-leather",
-              "name": "Nappa leather"
-            }
-          ]
-        },
-        {
-          "key": "Klädselkulör",
-          "label": "Klädselkulör",
-          "kind": "choice",
-          "hint": "Kulörkarta per kollektion för just vägghängd Fold är inte verifierad i prislistan här. Ange önskad kulörkod för offert i stället för påhittade val.",
-          "options": [
-            {
-              "id": "uph-wish",
-              "name": "Ange kulörkod för offert",
-              "customText": true
-            }
-          ]
-        },
-        {
-          "key": "Fallmekanism",
-          "label": "Fällmekanism",
-          "kind": "choice",
-          "hint": "ME1 eller ME2 enligt leverantörens prislista. Soft-close ingår i konstruktionen. Vilken kod som är arrettering i öppet läge framgår av prislistan, inte av katalogen.",
-          "options": [
-            {
-              "id": "me1",
-              "name": "ME1"
-            },
-            {
-              "id": "me2",
-              "name": "ME2"
-            }
-          ]
-        }
-      ],
-      "images": [
         {
           "src": "/images/kusch-vcare-fold/site-4u-mw-uph-example.jpg",
-          "alt": "V-Care Fold vägghängd fällbänk, klädd, fyra sittplatser vid hiss. Exempelutförande – katalogen gäller två eller tre sittplatser.",
-          "kind": "site"
+          "alt": "V-Care Fold vägghängd fällbänk, klädd, fyra sittplatser i väntrum. Galleriexempel; fyra sittplatser säljs inte som variant.",
+          "kind": "site",
+          "size": "4 sittplatser",
+          "utforande": "Klädd",
+          "caption": "Fyra sittplatser, klädd"
         }
       ],
-      "related": [
-        "v-care-fold-2u-3u-mw-w",
-        "v-care-fold-1u-mw-uph",
-        "v-care-fold-1u-mw-w"
-      ],
-      "gaps": [
-        "Ingen originalbild av 2U eller 3U MW UPH. Miljöbilden visar vägghängd klädd Fold med fyra sittplatser."
-      ]
+      "related": []
     }
   ]
 }
