@@ -49,11 +49,12 @@ export function HomePage() {
             Alla kategorier
           </Link>
         </div>
-        <div className="mt-8 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-5">
           {[
             ['Park och torg', 'Bänkar och sitt för högt slitage.', '/produkter/parkmobler'],
             ['Avfall', 'Kärl och stationer för gård och gata.', '/produkter/avfall-atervinning'],
             ['Cykelparkering', 'Ställ, tak och service för cykel.', '/produkter/cykelparkering'],
+            ['Väntzon', 'Vägghängda fällstolar och fällbänkar.', '/produkter/vantzon-korridor'],
             ['Lek och aktivitet', 'Lekplats, utegym och sportytor.', '/produkter/lek-aktivitet'],
           ].map(([title, text, href]) => (
             <Link key={title} to={href} className="bg-sheet p-6 hover:bg-paper">

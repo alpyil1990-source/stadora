@@ -4,7 +4,7 @@ const MATERIAL_SPEC_RE =
   /portlandcement|hållfasthetsklass|tvättad ballast|sorterad sand|flerkomponents|cementtyp|\bcm\s*ii\b|pn-en\s*206|betong minst\s*c\s*\d|stommaterial\s*:|träslag\s*:|lackade tre gånger|ståldelar är|trälister\s+\d+\s*cm/i
 
 const PRODUCT_OPENER =
-  /^(bänk|parkbänk|papperskorg|askkopp|bord|picknick|cykelställ|pollare|vilstol|solstol|akutvagn|skåp|kärl|sittmodul)\b/i
+  /^(bänk|parkbänk|papperskorg|askkopp|bord|picknick|cykelställ|pollare|vilstol|solstol|akutvagn|skåp|kärl|sittmodul|fällstol|fällbänk|v-care)\b/i
 
 const STOP_WORDS = new Set([
   'med',
@@ -192,12 +192,13 @@ export function productHasBackrest(product: Product, selectedSummary?: string): 
   if (/utan ryggstöd|utan rygg/.test(text)) return false
   if (/med ryggstöd|ryggstöd/.test(text)) return true
   if (product.dimensions?.some((row) => /ryggstöd/i.test(row.label))) return true
-  if (/vilstol|solstol|solbänk|liggstol/i.test(`${product.name} ${product.subcategory}`)) return true
+  if (/vilstol|solstol|solbänk|liggstol|fällstol|fällbänk/i.test(`${product.name} ${product.subcategory}`)) return true
+  if (/sits och rygg/.test(text)) return true
   return false
 }
 
 function isSeatChunk(chunk: string): boolean {
-  return /trälister|^\s*trä\s*$/i.test(chunk) && !/stomme|stål|betong/i.test(chunk)
+  return /trälister|^\s*trä\s*$|sits och rygg/i.test(chunk) && !/stomme|stål|betong/i.test(chunk)
 }
 
 function splitCompositeMaterial(material: string): { frame?: string; seat?: string } {

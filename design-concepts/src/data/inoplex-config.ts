@@ -82,10 +82,38 @@ export function optionQuoteBits(product: Product, state: Record<string, string>)
   return bits
 }
 
+const KUSCH_PHOTOGRAPHED_WOOD = 'SKNB Natur bok'
+
+function kuschFoldImages(product: Product, state: Record<string, string>): {
+  shown: ProductImage[]
+  matched: boolean
+} {
+  const sizeName = state[SIZE_VARIANT_KEY]
+  const frame = state['Stomkulör']
+  const wood = state['Träkulör']
+  const sizeTagged = product.images.some((img) => Boolean(img.size))
+  const bySize = sizeName ? product.images.filter((img) => img.size === sizeName) : []
+  const pool = bySize.length ? bySize : product.images
+  const byFrame = frame ? pool.filter((img) => img.color === frame) : []
+  const primary = byFrame.length ? byFrame : pool
+  const rest = product.images.filter((img) => !primary.includes(img))
+  const shown = [...primary, ...rest]
+  const sizeOk = !sizeTagged || bySize.length > 0
+  const frameOk = Boolean(frame && primary.some((img) => img.color === frame))
+  const woodOk =
+    !wood ||
+    wood === KUSCH_PHOTOGRAPHED_WOOD ||
+    primary.some((img) => img.alt.toLowerCase().includes(wood.toLowerCase()))
+  return { shown, matched: sizeOk && frameOk && woodOk }
+}
+
 export function matchingImages(product: Product, state: Record<string, string>): {
   shown: ProductImage[]
   matched: boolean
 } {
+  if (product.manufacturer === 'Kusch+Co') {
+    return kuschFoldImages(product, state)
+  }
   const finish = state['Stomfinish'] || state['Konstruktion'] || state[COLOR_VARIANT_KEY]
   const wood = state['Träslag'] || state['Sits'] || state['Bordsskiva']
   const hits = product.images.filter((img) => img.color && finish && img.color === finish)

@@ -1,5 +1,7 @@
 import type { Product, ProductImage } from './content'
 
+export const EXAMPLE_IMAGE_NOTE = 'Bilden visar ett exempelutförande.'
+
 export type ColorChoice = { name: string; hex?: string; swatch?: string }
 
 export function colorChoices(product: Product): ColorChoice[] {

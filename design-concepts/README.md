@@ -40,6 +40,16 @@ python3 scripts/import-novum-test.py
 
 Skriptet matchar bilder och dokument mot **artikelnummer** på produktsidan, inte mot liknande namn.
 
+## Kusch+Co / Nowy Styl — V-Care Fold
+
+Leverantören har godkänt användning av produktbilder och material på webbplatsen, i offerter och kundprojekt.
+
+- Publik kategori: `/produkter/vantzon-korridor/vagghangda-fallstolar`
+- Fyra poster: fällstol trä/klädd (1U MW) och fällbänk trä/klädd (2U/3U MW)
+- Tillverkare Kusch+Co visas publikt
+- Pris på förfrågan. Prislista endast intern
+- Inga golvstående Fold och inga vanliga V-Care-bänkar i den här omgången
+
 ## Dokumentkonton (intern testmiljö)
 
 Leverantörsoberoende. Registrering: e-post, lösenord, godkännande av integritetspolicy. Namn och företag är valfria efteråt. Nyhetsbrev är ett separat, avmarkerat val.
@@ -57,7 +67,7 @@ I testmiljön skickas inga externa mejl; bekräftelselänkar ligger i `internal/
 Se `/design` i prototypen, eller:
 
 - `/` startsida offentlig miljö
-- `/produkter` sju huvudkategorier
+- `/produkter` åtta huvudkategorier
 - `/produkter/lek-aktivitet` underkategorier (gungor, lekställ, lekhus …)
 - `/produkter/lek-aktivitet/gungor` tom underkategori (utkast från live-sajten)
 - `/produkter/parkmobler` huvudkategori
@@ -87,6 +97,9 @@ Se `/design` i prototypen, eller:
 - `/produkt/solstol-duo-02-052` ZANO Solstol DUO (tillverkare syns, märkning kvar, pris på förfrågan)
 - `/produkter/parkmobler/parkbankar` och övriga underkategorier med ZANO-katalog (Övrigt är inte importerat)
 - `/admin/leverantorer/zano` intern ZANO-sida (inköpspris saknas, kvalitetskontroll)
+- `/produkter/vantzon-korridor/vagghangda-fallstolar` V-Care Fold, vägghängd
+- `/produkt/v-care-fold-1u-mw-w` fällstol trä, `/produkt/v-care-fold-2u-3u-mw-w` fällbänk trä
+- `/admin/leverantorer/kusch-co` intern Kusch+Co-sida (prislista endast intern)
 
 Picknickset-landningssidor utan eget modellnummer importeras inte. Saknat svenskt produktblad räknas inte som ofullständig post; engelska produktkort märks som engelska.
 

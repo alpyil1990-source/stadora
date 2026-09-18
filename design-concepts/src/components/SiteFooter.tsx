@@ -31,6 +31,9 @@ export function SiteFooter({ area }: { area: AreaId }) {
                   <Link to="/produkter">Alla kategorier</Link>
                 </li>
                 <li>
+                  <Link to="/produkter/vantzon-korridor">Väntzon och korridor</Link>
+                </li>
+                <li>
                   <Link to="/produkter/lek-aktivitet">Lek och aktivitet</Link>
                 </li>
                 <li>

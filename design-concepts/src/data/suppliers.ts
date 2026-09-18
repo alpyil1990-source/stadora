@@ -4,6 +4,7 @@ import { INOPLEX_SLUGS } from './inoplex'
 import { STREETPARK_SLUGS } from './streetpark'
 import { ZANO_SLUGS } from './zano'
 import { NOVUM_SLUGS } from './novum'
+import { KUSCH_VCARE_FOLD_SLUGS } from './kusch-vcare-fold'
 
 export type SupplierStatus = 'aktiv' | 'invantar_underlag' | 'pausad'
 
@@ -164,6 +165,25 @@ export const seedSuppliers: Supplier[] = [
     notes:
       'Testimport 2026-09-18: endast Runner 44103W och Airwalker 4403Z från Fitness Devices. Produkter opublicerade, intern förhandsgranskning. Tillverkare NOVUM registreras internt och visas inte publikt. Alla originalfiler internal_only tills skriftligt godkännande finns för extern nedladdning. Inga priser. Offertförfrågan. Portaluppgifter ligger i miljövariabler, aldrig i källkod.',
     productSlugs: [...NOVUM_SLUGS],
+  },
+  {
+    id: 'kusch-co',
+    name: 'Kusch+Co / Nowy Styl',
+    status: 'aktiv',
+    orgNr: '',
+    legalName: 'Kusch+Co GmbH (Nowy Styl)',
+    website: 'https://www.kusch.com',
+    mediaSource: 'https://www.kusch.com/en/v-care/beam-seating/',
+    contact: {
+      name: '',
+      role: 'Katalog / B2B',
+      email: 'info@kusch.com',
+      phone: '',
+    },
+    address: 'Hallener Str. 1–9, 57439 Attendorn, Tyskland',
+    notes:
+      'Tillstånd att använda produktbilder och material på webbplatsen, i offerter och kundprojekt. Publik tillverkare Kusch+Co. Endast vägghängd V-Care Fold i den här omgången (1U/2U/3U MW, trä och klädd). Inga golvstående Fold och inga vanliga V-Care-bänkar. Produktkod följer med offerten; inget påhittat KVCR-beställningsnummer. Inga priser publikt. Prislista och inköpsvillkor endast internt. Modellspecifika Fold-blad/CAD saknas i öppen nedladdning; TE/TB/PRM-ritningar ska inte användas. Hämtat 2026-09-18 från kusch.com och nowystyl.com.',
+    productSlugs: [...KUSCH_VCARE_FOLD_SLUGS],
   },
 ]
 

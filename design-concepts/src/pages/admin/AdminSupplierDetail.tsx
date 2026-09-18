@@ -167,6 +167,17 @@ export function AdminSupplierDetail() {
       {supplier.id === 'inoplex' && <AdminInoplexTerms />}
       {supplier.id === 'zano' && <AdminZanoTerms />}
       {supplier.id === 'novum' && <AdminNovumTerms />}
+      {supplier.id === 'kusch-co' && (
+        <section className="border border-line bg-sheet p-5 text-sm">
+          <p className="font-medium">Intern underlagspolicy</p>
+          <p className="mt-2 text-muted">
+            Prislista och inköpsvillkor för V-Care Fold är endast interna. De publiceras inte på
+            produktsidan och följer inte med kundofferten som fil. Modellspecifika Fold-blad och
+            CAD saknas i leverantörens öppna nedladdning; ritningar för vanliga V-Care-bänkar ska
+            inte användas.
+          </p>
+        </section>
+      )}
 
       <section>
         <h2 className="text-xl">Produkter från den här leverantören</h2>

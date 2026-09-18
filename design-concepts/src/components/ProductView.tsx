@@ -9,6 +9,7 @@ import {
   isStadoraArticleNumber,
   products,
   publicManufacturer,
+  quantityLegend,
   quoteShowsArticleNumber,
 } from '../data/content'
 import { useAuth } from '../context/AuthContext'
@@ -33,6 +34,7 @@ import {
   colorChoices,
   hasColorTaggedImages,
   hasSizeTaggedImages,
+  EXAMPLE_IMAGE_NOTE,
   imagesForVariant,
   shownLabel,
 } from '../data/gallery'
@@ -182,7 +184,7 @@ export function ProductView({
       )}
       {optionProduct && inoplexGallery && !inoplexGallery.matched && (
         <p className="mt-2 border border-dashed border-line bg-sheet px-3 py-2 text-xs text-muted">
-          Exempelbild – valt utförande kan avvika.
+          {EXAMPLE_IMAGE_NOTE}
         </p>
       )}
       {!optionProduct && product.imageNote && (
@@ -252,11 +254,11 @@ export function ProductView({
                     onChange={() => selectSize(s.name)}
                   />
                   <span className="block font-medium">{s.name}</span>
-                  {isStadoraArticleNumber(s.sku) && (
-                    <span className="block text-xs text-muted">Art.nr {s.sku}</span>
-                  )}
                   {s.summary && s.summary !== s.name && (
                     <span className="block text-xs text-muted">{s.summary}</span>
+                  )}
+                  {(isStadoraArticleNumber(s.sku) || product.quoteShowsSku) && s.sku && (
+                    <span className="block text-xs text-muted">Art.nr {s.sku}</span>
                   )}
                   {sizePhotos && (
                     <span className="block text-xs text-muted">
@@ -447,12 +449,18 @@ export function ProductView({
             </div>
             {g.options.some((o) => o.customText && variants[g.key] === o.name) && (
               <label className="mt-2 block text-sm">
-                Egen kulör
+                {g.options.find((o) => o.customText && variants[g.key] === o.name)?.name.includes('offert')
+                  ? 'Kulörkod för offert'
+                  : 'Egen kulör'}
                 <input
                   className="mt-1 w-full border border-line bg-sheet px-3 py-2"
                   value={variants[`${g.key}::egen`] ?? ''}
                   onChange={(e) => setVariants((s) => ({ ...s, [`${g.key}::egen`]: e.target.value }))}
-                  placeholder="Ange kulör som leverantören ska offerera"
+                  placeholder={
+                    g.key === 'Klädselkulör'
+                      ? 'Ange kulörkod från vald kollektion'
+                      : 'Ange kulör som leverantören ska offerera'
+                  }
                 />
               </label>
             )}
@@ -470,10 +478,16 @@ export function ProductView({
           />
         </label>
       )}
+      {product.quoteOnRequest && (
+        <p className="text-sm font-medium">Pris på förfrågan</p>
+      )}
       <div>
         <label htmlFor="qty" className="text-sm font-medium">
-          Antal
+          {quantityLegend(product)}
         </label>
+        {product.qtyLegend && /bänk|stol/i.test(product.qtyLegend) && (
+          <p className="mt-1 text-xs text-muted">Skilt från antal sittplatser.</p>
+        )}
         <input
           id="qty"
           type="number"

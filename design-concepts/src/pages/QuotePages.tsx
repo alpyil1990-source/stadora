@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useQuote, type QuoteLine } from '../context/QuoteContext'
-import { products, publicManufacturer, quoteShowsArticleNumber } from '../data/content'
+import { products, publicManufacturer, quantityLegend, quantityUnit, quoteShowsArticleNumber } from '../data/content'
+import { EXAMPLE_IMAGE_NOTE } from '../data/gallery'
 
 function QuoteMaker({ slug, as = 'p' }: { slug: string; as?: 'p' | 'span' }) {
   const maker = publicManufacturer(products[slug])
@@ -69,7 +70,7 @@ export function QuoteListPage() {
                   )}
                   {line.variant && <p className="text-sm text-muted">{line.variant}</p>}
                   {line.imageExample && (
-                    <p className="text-xs text-muted">Exempelbild – valt utförande kan avvika.</p>
+                    <p className="text-xs text-muted">{EXAMPLE_IMAGE_NOTE}</p>
                   )}
                   {products[line.slug]?.quoteOnRequest && (
                     <p className="text-xs text-muted">Pris på förfrågan</p>
@@ -77,7 +78,7 @@ export function QuoteListPage() {
                 </div>
               </div>
               <label className="text-sm md:col-span-2">
-                Antal
+                {quantityLegend(products[line.slug])}
                 <input
                   type="number"
                   min={1}
@@ -275,12 +276,12 @@ export function QuoteFormPage() {
                   <span className="block text-xs text-muted">{l.comment.trim()}</span>
                 )}
                 {l.imageExample && (
-                  <span className="block text-xs text-muted">Exempelbild – valt utförande kan avvika.</span>
+                  <span className="block text-xs text-muted">{EXAMPLE_IMAGE_NOTE}</span>
                 )}
                 {products[l.slug]?.quoteOnRequest && (
                   <span className="block text-xs text-muted">Pris på förfrågan</span>
                 )}
-                <span className="text-muted"> · {l.qty} st</span>
+                <span className="text-muted"> · {l.qty} {quantityUnit(products[l.slug])}</span>
               </span>
             </li>
           ))}

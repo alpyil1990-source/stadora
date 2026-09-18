@@ -70,7 +70,7 @@ export function CatalogIndexPage() {
       <p className="kicker">Offentlig miljö</p>
       <h1 className="mt-2 text-4xl">Sortiment</h1>
       <p className="mt-4 max-w-2xl text-muted">
-        Sju huvudkategorier med underkategorier. Gå från kategori till produkt.
+        Åtta huvudkategorier med underkategorier. Gå från kategori till produkt.
       </p>
       <ul className="mt-10 grid gap-4 sm:grid-cols-2">
         {catalog.map((c) => (
@@ -192,6 +192,30 @@ export function SubcategoryListPage() {
           !sel.some((n) =>
             sizes.some((sz) => sz.name.startsWith(`${n} ×`) || sz.name.startsWith(`${n}×`)),
           )
+        ) {
+          return false
+        }
+      }
+      if (f.legend === 'Utförande') {
+        const hay = `${p.name} ${p.sku ?? ''}`.toLowerCase()
+        if (
+          !sel.some((s) => {
+            if (s === 'Trä') return hay.includes('trä') || /\bW\b/.test(p.sku ?? '')
+            if (s === 'Klädd') return hay.includes('klädd') || /UPH/i.test(p.sku ?? '')
+            return hay.includes(s.toLowerCase())
+          })
+        ) {
+          return false
+        }
+      }
+      if (f.legend === 'Typ') {
+        const hay = `${p.name} ${p.summary}`.toLowerCase()
+        if (
+          !sel.some((s) => {
+            if (s === 'Fällstol') return hay.includes('fällstol')
+            if (s === 'Fällbänk') return hay.includes('fällbänk')
+            return hay.includes(s.toLowerCase())
+          })
         ) {
           return false
         }

@@ -4,6 +4,7 @@ import { inoplexCatalogSlugs } from './inoplex'
 import { streetparkCatalogSlugs } from './streetpark'
 import { zanoCatalogSlugs } from './zano'
 import { novumCatalogSlugs } from './novum'
+import { kuschCatalogSlugs } from './kusch-vcare-fold'
 
 export type CatalogStatus = 'published' | 'needs_work' | 'draft'
 
@@ -113,6 +114,24 @@ export const catalog: CategoryDef[] = [
         blurb: 'Solcellsdrivna laddstationer för park och torg.',
         productSlugs: [...zanoCatalogSlugs.solkraftverk],
         draftExamples: [],
+      },
+    ],
+  },
+  {
+    slug: 'vantzon-korridor',
+    name: 'Väntzon och korridor',
+    blurb: 'Vägghängda fällstolar och fällbänkar för väntrum, korridor och offentliga inomhusmiljöer.',
+    children: [
+      {
+        slug: 'vagghangda-fallstolar',
+        name: 'Vägghängda fällstolar och fällbänkar',
+        blurb: 'V-Care Fold, vägghängd. En sittplats som stol, två eller tre som bänk. Trä eller klädd.',
+        productSlugs: [...kuschCatalogSlugs['vagghangda-fallstolar']],
+        draftExamples: [],
+        filters: [
+          { legend: 'Utförande', options: ['Trä', 'Klädd'] },
+          { legend: 'Typ', options: ['Fällstol', 'Fällbänk'] },
+        ],
       },
     ],
   },

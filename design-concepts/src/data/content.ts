@@ -4,6 +4,7 @@ import { inoplexProducts } from './inoplex'
 import { streetparkProducts } from './streetpark'
 import { zanoProducts } from './zano'
 import { novumProducts } from './novum'
+import { kuschVcareFoldProducts } from './kusch-vcare-fold'
 import { catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
@@ -138,6 +139,8 @@ export type Product = {
   quoteShowsSku?: boolean
   /** Public copy: price is given in a quote, never as a catalog amount. */
   quoteOnRequest?: boolean
+  /** Label for the quantity field, e.g. Antal bänkar vs Antal sittplatser. */
+  qtyLegend?: string
   fetchedAt?: string
   reviewNote?: string
   safetyZoneArea?: string
@@ -521,6 +524,7 @@ export const products: Record<string, Product> = {
   ...inoplexProducts,
   ...zanoProducts,
   ...novumProducts,
+  ...kuschVcareFoldProducts,
   'akutvagn-genius': {
     slug: 'akutvagn-genius',
     name: 'Akutvagn Genius',
@@ -565,6 +569,16 @@ export { INVESTIM_SLUGS } from './investim'
 export { STREETPARK_SLUGS } from './streetpark'
 export { INOPLEX_SLUGS } from './inoplex'
 export { NOVUM_SLUGS } from './novum'
+export { KUSCH_VCARE_FOLD_SLUGS } from './kusch-vcare-fold'
+
+export function quantityLegend(product?: Product | null) {
+  return product?.qtyLegend?.trim() || 'Antal'
+}
+
+export function quantityUnit(product?: Product | null) {
+  const stripped = (product?.qtyLegend ?? '').replace(/^antal\s+/i, '').trim()
+  return stripped || 'st'
+}
 
 export const binsigniaDraft = [
   products['askkopp-luna'],
