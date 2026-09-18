@@ -263,6 +263,9 @@ export function QuoteFormPage() {
                   <span className="block text-xs text-muted">Art.nr {l.sku}</span>
                 )}
                 {l.variant && <span className="block text-xs text-muted">{l.variant}</span>}
+                {l.comment?.trim() && (
+                  <span className="block text-xs text-muted">{l.comment.trim()}</span>
+                )}
                 {l.imageExample && (
                   <span className="block text-xs text-muted">Exempelbild – valt utförande kan avvika.</span>
                 )}

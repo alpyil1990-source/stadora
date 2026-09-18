@@ -1049,14 +1049,20 @@ def build_options(sv_groups: dict[str, list[str]], en: dict) -> list[dict]:
     return groups, install
 
 
-def material_text(sv: list[str], en: list[str], construction: list, seat: list) -> str | None:
+def material_text(
+    sv: list[str],
+    en: list[str],
+    construction: list,
+    seat: list,
+    wood_label: str = "Sits",
+) -> str | None:
     bits = sv or []
     if not bits and (construction or seat):
         parts = []
         if construction:
             parts.append(" eller ".join(construction).replace("Kolstål S235JR", "Kolstål S235JR, galvaniserat och pulverlackerat") )
         if seat:
-            parts.append("Sits: " + ", ".join(seat))
+            parts.append(f"{wood_label}: " + ", ".join(seat))
         return ". ".join(parts) + "." if parts else None
     if bits:
         return ". ".join(b.rstrip(".") for b in bits) + "."
@@ -1443,9 +1449,13 @@ def import_product(item: dict, keep: dict[str, dict]) -> dict:
     option_groups, install = build_options(sv.get("groups") or {}, en)
     construction_names = []
     seat_names = []
+    wood_label = "Sits"
     for g in option_groups:
         if g["key"] == "Konstruktion":
             construction_names = [o["name"] for o in g["options"]]
+        if g["key"] == "Bordsskiva":
+            wood_label = "Bordsskiva"
+            seat_names = [o["name"] for o in g["options"]]
         if g["key"] == "Sits":
             seat_names = [o["name"] for o in g["options"]]
 
@@ -1454,7 +1464,9 @@ def import_product(item: dict, keep: dict[str, dict]) -> dict:
     weight, weight_summary = weight_fields(weights)
     weight_by = parse_weight_by_option(weights) or None
     materials = sv.get("materials") or []
-    material = material_text(materials, en.get("materials") or [], construction_names, seat_names)
+    material = material_text(
+        materials, en.get("materials") or [], construction_names, seat_names, wood_label
+    )
 
     desc = sentences(sv.get("description") or "", 3)
     if not desc:

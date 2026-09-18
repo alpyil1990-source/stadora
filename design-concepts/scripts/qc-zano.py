@@ -206,12 +206,16 @@ def looks_english_material(text: str | None) -> bool:
 def material_from_groups(groups: list[dict]) -> str | None:
     construction = []
     seat = []
+    wood_label = "Sits"
     for g in groups:
         if g.get("key") == "Konstruktion":
             construction = [o["name"] for o in g.get("options") or []]
-        if g.get("key") in {"Sits", "Bordsskiva"}:
+        if g.get("key") == "Bordsskiva":
+            wood_label = "Bordsskiva"
             seat = [o["name"] for o in g.get("options") or []]
-    return mod.material_text([], [], construction, seat)
+        if g.get("key") == "Sits":
+            seat = [o["name"] for o in g.get("options") or []]
+    return mod.material_text([], [], construction, seat, wood_label)
 
 
 def translate_dimensions(rows: list[dict]) -> list[dict]:

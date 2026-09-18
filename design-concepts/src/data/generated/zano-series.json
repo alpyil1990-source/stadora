@@ -4083,7 +4083,7 @@
       "subcategorySlug": "bord-picknick",
       "summary": "Bord Tristad 13.022 från tillverkaren ZANO.",
       "description": "Bord Tristad 13.022 från tillverkaren ZANO är ett utomhusbord för måltid, picknick eller arbete. Stommen erbjuds i kolstål S235JR eller rostfritt stål AISI 304, och skivan i europeiskt barrträ, oljat ädelträ, hårt trä av europeiskt ursprung eller ädelträ av högsta kvalitet. Bordet skruvas i fundament.",
-      "material": "Kolstål S235JR, galvaniserat och pulverlackerat eller Rostfritt stål AISI 304. Sits: Europeiskt barrträ, Hårt trä av europeiskt ursprung, Oljat ädelträ, Ädelträ av högsta kvalitet.",
+      "material": "Kolstål S235JR, galvaniserat och pulverlackerat eller Rostfritt stål AISI 304. Bordsskiva: Europeiskt barrträ, Hårt trä av europeiskt ursprung, Oljat ädelträ, Ädelträ av högsta kvalitet.",
       "wood": "För europeiskt barrträ offererar ZANO träkulörerna ek, mahogny, teak, cypress och valnöt, plus egen kulör. Namnen avser kulören på det valda träslaget, inte massivt ek-, mahogny- eller teakträ.",
       "dimensions": [
         {
@@ -108877,7 +108877,7 @@
         "memberSkus": [],
         "documents": false,
         "kind": "kombinationssida",
-        "note": "Samlingssida för separata modeller. Inget eget katalognummer och inget produktkort."
+        "note": "Kombinationssida: 1 bord + 4 fåtöljer med ryggstöd. Inget eget set-katalognummer i sidtexten. Inget produktkort eller files.zano-dokument."
       },
       {
         "slug": "amicus-picnic-set",
