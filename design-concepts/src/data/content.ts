@@ -201,15 +201,18 @@ export function documentsForVariant(product: Product, variant?: string | null) {
   return docs.filter((d) => !d.variant || aliases.has(d.variant))
 }
 
+const CAD_ORIGINAL_FORMATS = new Set(['DWG', 'DXF', '3DS', 'GLB', 'GLTF', 'RAR', 'ZIP', 'STEP', 'STP'])
+
 /** CAD originals require a verified document account unless the file already has another ACL. */
-export function documentAccess(doc: ProductDocument): DocumentAccess {
-  if (doc.access) return doc.access
-  if (doc.kind === 'cad') return 'registered_customer'
-  return 'public'
+export function isCadOriginal(doc: ProductDocument) {
+  if (doc.kind === 'cad') return true
+  return CAD_ORIGINAL_FORMATS.has(doc.format.toUpperCase())
 }
 
-export function isCadOriginal(doc: ProductDocument) {
-  return doc.kind === 'cad'
+export function documentAccess(doc: ProductDocument): DocumentAccess {
+  if (doc.access) return doc.access
+  if (isCadOriginal(doc)) return 'registered_customer'
+  return 'public'
 }
 
 export const company = {
