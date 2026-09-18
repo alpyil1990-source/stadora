@@ -57,16 +57,6 @@ import { ProductCard } from './ProductCard'
 import { Breadcrumb } from './Breadcrumb'
 import { ProductImageZoom } from './ProductLightbox'
 
-function fabricCollectionPreviews(product: Product, collectionName: string): string[] {
-  const group = product.optionGroups?.find(
-    (g) => g.parentKey === 'Klädselkollektion' && g.parentValue === collectionName,
-  )
-  return (group?.options ?? [])
-    .map((o) => o.swatch)
-    .filter((src): src is string => Boolean(src))
-    .slice(0, 4)
-}
-
 export type ProductLayout = 'hybrid' | 'spec' | 'visual'
 
 export function ProductView({
@@ -451,36 +441,25 @@ export function ProductView({
           ),
         )}
       {optionProduct &&
-        visibleGroups(product, variants).map((g) => {
-          const isCollection = g.key === 'Klädselkollektion'
-          const isFabricColour = g.key.startsWith('Klädselkulör')
-          return (
+        visibleGroups(product, variants).map((g) => (
           <fieldset key={g.key}>
             <legend className="text-sm font-medium">{g.label}</legend>
             {g.hint && <p className="mt-1 max-w-md text-xs text-muted">{g.hint}</p>}
             <div
               className={`mt-2 ${
-                isCollection
-                  ? 'grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4'
-                  : isFabricColour
-                    ? 'grid grid-cols-3 gap-2 sm:grid-cols-4'
-                    : g.kind === 'swatch' && g.options.length > 8
-                      ? 'grid grid-cols-3 gap-2 sm:grid-cols-4'
-                      : `flex flex-wrap gap-2 ${g.kind === 'swatch' ? 'items-start' : ''}`
+                g.kind === 'swatch' && g.options.length > 8
+                  ? 'grid grid-cols-3 gap-2 sm:grid-cols-4'
+                  : `flex flex-wrap gap-2 ${g.kind === 'swatch' ? 'items-start' : ''}`
               }`}
             >
               {g.options.map((opt) => {
                 const selected = variants[g.key] === opt.name
-                const mosaic = isCollection ? fabricCollectionPreviews(product, opt.name) : []
-                const tiles = mosaic.length >= 4 ? mosaic : opt.swatch ? [opt.swatch] : []
                 return (
                   <label
                     key={opt.id}
-                    className={`cursor-pointer border text-sm ${
-                      isCollection || (isFabricColour && opt.swatch)
-                        ? 'p-2'
-                        : 'px-3 py-2'
-                    } ${selected ? 'border-ink bg-paper' : 'border-line'}`}
+                    className={`cursor-pointer border px-3 py-2 text-sm ${
+                      selected ? 'border-ink bg-paper' : 'border-line'
+                    }`}
                   >
                     <input
                       type="radio"
@@ -489,30 +468,7 @@ export function ProductView({
                       checked={selected}
                       onChange={() => selectOption(g.key, opt.name)}
                     />
-                    {isCollection && tiles.length > 0 ? (
-                      <span className="block">
-                        {tiles.length === 1 ? (
-                          <span className="block aspect-square overflow-hidden border border-line">
-                            <img src={tiles[0]} alt="" className="h-full w-full object-cover" />
-                          </span>
-                        ) : (
-                          <span className="grid aspect-square grid-cols-2 gap-px overflow-hidden border border-line bg-line">
-                            {tiles.map((src) => (
-                              <img key={src} src={src} alt="" className="h-full w-full object-cover" />
-                            ))}
-                          </span>
-                        )}
-                        <span className="mt-2 block leading-snug">{opt.name}</span>
-                      </span>
-                    ) : isFabricColour && opt.swatch ? (
-                      <span className="flex flex-col gap-1">
-                        <span className="block aspect-square w-full overflow-hidden border border-line">
-                          <img src={opt.swatch} alt="" className="h-full w-full object-cover" />
-                        </span>
-                        <span className="text-center text-[0.7rem] leading-tight">{opt.name}</span>
-                      </span>
-                    ) : (
-                    <span className={`flex gap-2 ${opt.swatch ? 'items-start' : 'items-center'}`}>
+                    <span className="flex items-center gap-2">
                       {opt.swatch && (
                         <img
                           src={opt.swatch}
@@ -522,33 +478,25 @@ export function ProductView({
                       )}
                       <span>{opt.name}</span>
                     </span>
-                    )}
                   </label>
                 )
               })}
             </div>
             {g.options.some((o) => o.customText && variants[g.key] === o.name) && (
               <label className="mt-2 block text-sm">
-                {g.key.startsWith('Klädselkulör')
-                  ? 'Kulörkod utanför listan'
-                  : g.options.find((o) => o.customText && variants[g.key] === o.name)?.name.includes('offert')
-                    ? 'Kulörkod för offert'
-                    : 'Egen kulör'}
+                {g.options.find((o) => o.customText && variants[g.key] === o.name)?.name.includes('offert')
+                  ? 'Kulörkod för offert'
+                  : 'Egen kulör'}
                 <input
                   className="mt-1 w-full border border-line bg-sheet px-3 py-2"
                   value={variants[`${g.key}::egen`] ?? ''}
                   onChange={(e) => setVariants((s) => ({ ...s, [`${g.key}::egen`]: e.target.value }))}
-                  placeholder={
-                    g.key.startsWith('Klädselkulör')
-                      ? 'Ange kulörkod från vald kollektion'
-                      : 'Ange kulör som leverantören ska offerera'
-                  }
+                  placeholder="Ange kulör som leverantören ska offerera"
                 />
               </label>
             )}
           </fieldset>
-          )
-        })}
+        ))}
       {optionProduct && (
         <label className="block text-sm">
           Specialönskemål

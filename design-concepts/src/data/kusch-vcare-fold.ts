@@ -141,25 +141,13 @@ export function isKuschFoldProduct(product?: { slug?: string; manufacturer?: str
   return product.manufacturer === 'Kusch+Co'
 }
 
-export function kuschFoldSku(seatsName?: string, utforande?: string) {
+export function kuschFoldSku(seatsName?: string) {
   const seats = seatsName?.match(/(\d+)/)?.[1]
   if (!seats) return undefined
-  const upholstered = utforande === 'Klädd'
-  return `VCARE FOLD ${seats}U MW ${upholstered ? 'UPH' : 'W'}`
+  return `VCARE FOLD ${seats}U MW W`
 }
 
 export function kuschFoldSeatMaterial(state: Record<string, string>): string | undefined {
-  const utforande = state['Utförande']
-  if (utforande === 'Klädd') {
-    const collection = state['Klädselkollektion']
-    const colourKey = Object.keys(state).find((key) => key.startsWith('Klädselkulör') && !key.endsWith('::egen'))
-    const wish = colourKey ? state[`${colourKey}::egen`]?.trim() : undefined
-    const colour = wish || (colourKey ? state[colourKey] : undefined)
-    const bits = [collection, colour && colour !== 'Annan kulörkod' ? colour : wish].filter(Boolean)
-    const base = bits.length ? bits.join(', ') : 'Klädd sits och rygg'
-    return `${base}. Sits och rygg samma klädselkulör.`
-  }
-  if (utforande !== 'Trä') return undefined
   const finish = state['Ytbehandling']
   if (finish === 'Naturbok') {
     return 'Bokplywood, SKNB Natur bok. Sits och rygg samma kulör. Ek och valnöt i paletten är betsnamn, inte alternativa träslag.'

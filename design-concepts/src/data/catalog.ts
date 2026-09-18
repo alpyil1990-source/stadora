@@ -125,11 +125,10 @@ export const catalog: CategoryDef[] = [
       {
         slug: 'vagghangda-fallstolar',
         name: 'Vägghängda fällstolar och fällbänkar',
-        blurb: 'V-Care Fold, vägghängd. En sittplats som stol, två till fyra som bänk. Trä eller klädd.',
+        blurb: 'V-Care Fold, vägghängd. En sittplats som stol, två till fyra som bänk. Sits och rygg i trä.',
         productSlugs: [...kuschCatalogSlugs['vagghangda-fallstolar']],
         draftExamples: [],
         filters: [
-          { legend: 'Utförande', options: ['Trä', 'Klädd'] },
           { legend: 'Typ', options: ['Fällstol', 'Fällbänk'] },
         ],
       },

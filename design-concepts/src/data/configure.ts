@@ -54,9 +54,7 @@ export function withSelectedType(
 
 export function quoteLineSku(product: Product, variants: Record<string, string>): string | undefined {
   if (isKuschFoldProduct(product)) {
-    return (
-      kuschFoldSku(selectedTypeName(product, variants), variants['Utförande']) ?? product.sku
-    )
+    return kuschFoldSku(selectedTypeName(product, variants)) ?? product.sku
   }
   const finish = selectedMaterial(product, variants['Material'])
   const size = selectedTypeOption(product, variants)

@@ -45,8 +45,7 @@ Skriptet matchar bilder och dokument mot **artikelnummer** på produktsidan, int
 Leverantören har godkänt användning av produktbilder och material på webbplatsen, i offerter och kundprojekt.
 
 - Publik kategori: `/produkter/vantzon-korridor/vagghangda-fallstolar`
-- Ett produktkort: vägghängd fällstol och fällbänk för 1–4 sittplatser, trä eller klädd
-- Klädselkollektioner visas med tygprover; standardkulörer har färgprov, övriga koder som önskemål
+- Ett produktkort: vägghängd fällstol och fällbänk för 1–4 sittplatser, sits och rygg i trä
 - Tillverkare Kusch+Co endast internt, inte på den publika sidan
 - Pris på förfrågan. Prislista endast intern
 - Inga golvstående Fold och inga vanliga V-Care-bänkar i den här omgången. Ingen leverantörsbild för ensitsig vägghängd Fold.
@@ -99,7 +98,7 @@ Se `/design` i prototypen, eller:
 - `/produkter/parkmobler/parkbankar` och övriga underkategorier med ZANO-katalog (Övrigt är inte importerat)
 - `/admin/leverantorer/zano` intern ZANO-sida (inköpspris saknas, kvalitetskontroll)
 - `/produkter/vantzon-korridor/vagghangda-fallstolar` V-Care Fold, vägghängd
-- `/produkt/v-care-fold` vägghängd fällstol och fällbänk, varianter för 1–4 sittplatser, trä eller klädd
+- `/produkt/v-care-fold` vägghängd fällstol och fällbänk, varianter för 1–4 sittplatser, sits och rygg i trä
 - `/admin/leverantorer/kusch-co` intern Kusch+Co-sida (prislista endast intern)
 
 Picknickset-landningssidor utan eget modellnummer importeras inte. Saknat svenskt produktblad räknas inte som ofullständig post; engelska produktkort märks som engelska.
