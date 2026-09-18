@@ -120,10 +120,10 @@ function toDocs(rows: DocJson[]): ProductDocument[] {
       kind: d.kind,
       previewable: Boolean(d.previewable ?? ['JPG', 'JPEG', 'PNG', 'WEBP', 'GIF'].includes(d.format)),
       variant: d.variant ?? undefined,
-    appliesTo: publicAppliesTo(d.appliesTo),
-    sourceUrl: d.sourceUrl,
-    fetchedAt: d.fetchedAt,
-  }))
+      appliesTo: publicAppliesTo(d.appliesTo),
+      sourceUrl: d.sourceUrl,
+      fetchedAt: d.fetchedAt,
+    }))
 }
 
 function publicDescription(text: string) {

@@ -12,6 +12,7 @@ import http.cookiejar
 import json
 import os
 import re
+import runpy
 import shutil
 import subprocess
 import sys
@@ -735,6 +736,13 @@ def main() -> None:
     GATED_PATH.write_text(json.dumps({"fetchedAt": FETCHED_AT, "items": remaining_gated}, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps(series_doc["counts"], indent=2))
     print("remaining gated", len(remaining_gated), "extracted", extracted_n, "new dwg listed", dwg_n)
+    strip_public_datasheets()
+
+
+def strip_public_datasheets() -> None:
+    script = Path(__file__).with_name("strip-streetpark-datasheets.py")
+    ns = runpy.run_path(str(script))
+    ns["strip_all"]()
 
 
 def polish_only() -> None:

@@ -113,6 +113,12 @@ Mobil: smal viewport. Meny under 1024 px, fast offertknapp på produktsidan.
 STREETPARK_USER='din@epost' STREETPARK_PASSWORD='…' python3 scripts/fetch-streetpark-auth.py
 ```
 
+Publika produktblad är en kundversion: STREETPARK-logotyp, `www.streetpark.eu` och länken Download PDF Sampler är borttagna. Originalen ligger i `internal/streetpark/docs/` (inte i git). Efter ny hämtning:
+
+```bash
+python3 scripts/strip-streetpark-datasheets.py
+```
+
 ## Innehållsregel
 
 Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin, utom STREETPARK, Inoplex-modellkoder och ZANO-modellnummer som följer med offerten. Inoplex namnges inte på publika produktsidor. ZANO står som Tillverkare: Zano i produktbeskrivningen, inte i produktnamnet; originalmärkning på bilder/dokument ska vara kvar. ZANO-kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer) importeras inte.

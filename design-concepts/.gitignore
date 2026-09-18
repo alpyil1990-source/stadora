@@ -24,6 +24,9 @@ internal/storage/
 internal/*.sqlite
 internal/*.db
 
+# STREETPARK original datasheets (public copies are stripped)
+internal/streetpark/
+
 # ZANO import caches (originals stay on disk, not in git)
 internal/zano/listings/
 internal/zano/pages-en/

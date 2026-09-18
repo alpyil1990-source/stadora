@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import runpy
 import time
 import urllib.error
 import urllib.request
@@ -1123,6 +1124,13 @@ def main() -> None:
     print("Wrote", GEN / "streetpark-series.json")
     print(json.dumps(payload["counts"], indent=2))
     print("by cat", {k: len(v) for k, v in catalog.items()})
+    strip_public_datasheets()
+
+
+def strip_public_datasheets() -> None:
+    script = Path(__file__).with_name("strip-streetpark-datasheets.py")
+    ns = runpy.run_path(str(script))
+    ns["strip_all"]()
 
 
 if __name__ == "__main__":
