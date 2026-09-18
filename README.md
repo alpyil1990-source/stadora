@@ -25,7 +25,7 @@ npm install
 npm run dev
 ```
 
-Öppnas på `http://127.0.0.1:4317`. Dokument-API (intern testmiljö) på `http://127.0.0.1:4318` via `npm run dev:api`. Börja på `/design` för en förteckning över alla skärmar. Intern NOVUM-förhandsgranskning: `/intern`. Ingenting där är publicerat.
+Öppnas på `http://127.0.0.1:4317`. Dokument-API (intern testmiljö) på `http://127.0.0.1:4318` via `npm run dev:api`. Börja på `/design` för en förteckning över alla skärmar. Intern NOVUM-förhandsgranskning: `/intern`. Ingenting där är publicerat. Lekplatsutrustning har ett VVZ-Play-stickprov (lektorn VZ1-006-15 och vippgunga PHP004).
 
 Skola och vård avvaktar. Offentlig miljö byggs först. Leverantörer, kontaktperson och produktantal ligger i prototypen under `/admin/leverantorer`. Produktbilder ska komma från leverantörens länk, inte skrapas från den publicerade sajten.
 

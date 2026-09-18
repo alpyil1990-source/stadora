@@ -48,6 +48,10 @@ export function DesignIndexPage() {
             ['Väntzon och korridor', '/produkter/vantzon-korridor'],
             ['V-Care Fold', '/produkt/v-care-fold'],
             ['Admin: Kusch+Co', '/admin/leverantorer/kusch-co'],
+            ['Lekplatsutrustning', '/produkter/lek-aktivitet/lekplatsutrustning'],
+            ['Kombinerad lektorn VZ1-006-15', '/produkt/kombinerad-lektorn-vz1-006-15'],
+            ['Vippgunga båge PHP004', '/produkt/vippgunga-bage-php004'],
+            ['Admin: VVZ-Play', '/admin/leverantorer/vvz-play'],
             ['Solstolar', '/produkter/parkmobler/solstolar'],
             ['Planteringskärl DO.23.02', '/produkt/planteringskarl-do-23-02'],
             ['Parkbänk LA.20.19', '/produkt/parkbank-la-20-19'],
@@ -187,6 +191,32 @@ export function DesignIndexPage() {
           </Link>
           {' · '}
           <Link className="underline" to="/admin/leverantorer/kusch-co">
+            Intern leverantörssida
+          </Link>
+        </p>
+      </section>
+      <section className="border border-line bg-sheet p-6 text-sm">
+        <h2 className="text-lg">VVZ-Play</h2>
+        <p className="mt-2 text-muted">
+          Stickprov: kombinerad lektorn VZ1-006-15 och vippgunga båge PHP004. Lekplats, inte
+          parkbänkar eller sopkärl. Tillverkare syns bara internt. Artikelnummer följer med
+          offerten. Pris på förfrågan. Inköps-EUR saknas i den här miljön. Originalbilder och
+          dokument från vvz-play.com.
+        </p>
+        <p className="mt-3">
+          <Link className="underline" to="/produkter/lek-aktivitet/lekplatsutrustning">
+            Lekplatsutrustning
+          </Link>
+          {' · '}
+          <Link className="underline" to="/produkt/kombinerad-lektorn-vz1-006-15">
+            Kombinerad lektorn VZ1-006-15
+          </Link>
+          {' · '}
+          <Link className="underline" to="/produkt/vippgunga-bage-php004">
+            Vippgunga båge PHP004
+          </Link>
+          {' · '}
+          <Link className="underline" to="/admin/leverantorer/vvz-play">
             Intern leverantörssida
           </Link>
         </p>

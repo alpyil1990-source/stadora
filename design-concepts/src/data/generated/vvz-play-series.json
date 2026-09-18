@@ -1,0 +1,281 @@
+{
+  "fetchedAt": "2026-09-18",
+  "source": "https://www.vvz-play.com",
+  "note": "Två produkter som stickprov. Lekplats, inte stadsmöbler. Bildrätt enligt leverantören. Inköpsprislista 2026 (VVZ-Play wholesale pricelist 2026) fanns inte som fil i den här miljön — inga EUR. Inga påhittade mått.",
+  "series": [
+    {
+      "slug": "kombinerad-lektorn-vz1-006-15",
+      "name": "Kombinerad lektorn VZ1-006-15",
+      "originalName": "Combined Tower set VVZ-VZ1-006-15",
+      "sku": "VZ1-006-15",
+      "manufacturer": "VVZ-Play",
+      "quoteShowsSku": true,
+      "quoteOnRequest": true,
+      "sourceUrl": "https://www.vvz-play.com/combined-tower-set-vvz-vz1-006-15-en/",
+      "fetchedAt": "2026-09-18",
+      "category": "Lek och aktivitet",
+      "categorySlug": "lek-aktivitet",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "summary": "Ettorns lekställning med krenelering, trappa eller klättervägg och rutschkana. Ålder 3–14 år.",
+      "description": "Kombinerad lekställning med ett torn med krenelering. Barn kan klättra via trappa eller klättervägg med grepp och åka ner via rutschkana. Stålkonstruktionen är väderbeständig genom varmförzinkning och pulverlack. Alla förband är rostfria och täckta med plastkåpor. Fyra kulörpar enligt leverantören; andra kombinationer kan tillverkas på förfrågan. DWG-filen på leverantörens sida kräver inloggning och är inte publicerad här.",
+      "material": "Förzinkat och pulverlackerat stål, HPL, rutschkana i PE-segment, fästelement i rostfritt stål. Produktbladet anger LDPE i stället för PE.",
+      "colorLegend": "Kulör",
+      "colors": [
+        { "name": "Orange + turkos", "hex": "#ce5c27" },
+        { "name": "Brun + gulgrön", "hex": "#6c4c2c" },
+        { "name": "Antracit + gul", "hex": "#f7b500" },
+        { "name": "Antracit + röd", "hex": "#bb1e10" }
+      ],
+      "dimensions": [
+        {
+          "label": "Längd",
+          "value": "3,7 m",
+          "note": "Produktblad 3,70 m. Ritning 3 732 mm. Produktsidan anger längd 1,7 m och bredd 3,7 m."
+        },
+        {
+          "label": "Bredd",
+          "value": "1,7 m",
+          "note": "Produktblad 1,70 m. Ritning 1 689 mm."
+        },
+        {
+          "label": "Höjd",
+          "value": "3,6 m"
+        }
+      ],
+      "ageRange": "3–14 år",
+      "fallHeight": "upp till 1,5 m",
+      "safetyZonePerimeter": "7,30 × 4,80 m enligt produktblad och ritning. Produktsidan anger 4,7 × 7,2 m, 33,84 m².",
+      "environment": "Utomhus, lekplats.",
+      "qtyLegend": "Antal",
+      "standards": ["EN 1176"],
+      "related": ["vippgunga-bage-php004"],
+      "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
+      "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Originalfiler, inklusive märkning. DWG kräver inloggning hos leverantören och är inte hämtad.",
+      "images": [
+        {
+          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/orange-turkos.jpg",
+          "alt": "Kombinerad lektorn VZ1-006-15, orange och turkos",
+          "kind": "studio",
+          "color": "Orange + turkos",
+          "caption": "Orange + turkos"
+        },
+        {
+          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/orange-turkos-baksida.jpg",
+          "alt": "Kombinerad lektorn VZ1-006-15, orange och turkos, baksida",
+          "kind": "detail",
+          "color": "Orange + turkos",
+          "caption": "Orange + turkos, baksida"
+        },
+        {
+          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/brun-gulgron.jpg",
+          "alt": "Kombinerad lektorn VZ1-006-15, brun och gulgrön",
+          "kind": "studio",
+          "color": "Brun + gulgrön",
+          "caption": "Brun + gulgrön"
+        },
+        {
+          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/brun-gulgron-baksida.jpg",
+          "alt": "Kombinerad lektorn VZ1-006-15, brun och gulgrön, baksida",
+          "kind": "detail",
+          "color": "Brun + gulgrön",
+          "caption": "Brun + gulgrön, baksida"
+        },
+        {
+          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-gul.jpg",
+          "alt": "Kombinerad lektorn VZ1-006-15, antracit och gul",
+          "kind": "studio",
+          "color": "Antracit + gul",
+          "caption": "Antracit + gul"
+        },
+        {
+          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-gul-baksida.jpg",
+          "alt": "Kombinerad lektorn VZ1-006-15, antracit och gul, baksida",
+          "kind": "detail",
+          "color": "Antracit + gul",
+          "caption": "Antracit + gul, baksida"
+        },
+        {
+          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-rod.jpg",
+          "alt": "Kombinerad lektorn VZ1-006-15, antracit och röd",
+          "kind": "studio",
+          "color": "Antracit + röd",
+          "caption": "Antracit + röd"
+        },
+        {
+          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-rod-baksida.jpg",
+          "alt": "Kombinerad lektorn VZ1-006-15, antracit och röd, baksida",
+          "kind": "detail",
+          "color": "Antracit + röd",
+          "caption": "Antracit + röd, baksida"
+        }
+      ],
+      "documents": [
+        {
+          "title": "Produktblad VZ1-006-15",
+          "typeLabel": "Produktblad",
+          "format": "PDF",
+          "href": "/docs/vvz-play/VZ1-006-15-T-EN.pdf",
+          "kind": "datasheet",
+          "language": "en",
+          "originalName": "VVZ-VZ1-006-15-T-EN.pdf",
+          "sourceUrl": "https://www.vvz-play.com/public/manager/source/Nové 2026/Kombi zostavy (klasické)/EN/1,5m/VVZ-VZ1-006-15-T-EN.pdf",
+          "fetchedAt": "2026-09-18",
+          "appliesTo": "Engelskt produktblad märkt VVZ-VZ1-006-15-T."
+        },
+        {
+          "title": "Säkerhetsområde VZ1-006-15",
+          "typeLabel": "Ritning, säkerhetsområde",
+          "format": "PDF",
+          "href": "/docs/vvz-play/VZ1-006-15-sakerhetsomrade.pdf",
+          "kind": "drawing",
+          "previewable": false,
+          "originalName": "VVZ-VZ1-006-15-(SMY_SEG).pdf",
+          "sourceUrl": "https://www.vvz-play.com/public/manager/source/Nové 2026/Kombi zostavy (klasické)/dopad plocha/1,5m/VVZ-VZ1-006-15-(SMY_SEG).pdf",
+          "fetchedAt": "2026-09-18",
+          "appliesTo": "Måttsatt plan. Ritningen visar 4 800 × 7 300 mm säkerhetsområde och 1 689 × 3 732 mm för redskapet."
+        }
+      ],
+      "gaps": [
+        "DWG kräver inloggning hos leverantören och är inte hämtad.",
+        "Generellt ungerskt slottcertifikat 2023 på produktsidan är inte importerat — det är inte modellspecifikt.",
+        "Produktsidan anger säkerhetsområde 4,7 × 7,2 m (33,84 m²). Produktblad och ritning anger 7,30 × 4,80 m. Publik sida visar produktblad/ritning och noterar produktsidan.",
+        "Produktsidan anger L×B×H 1,7 × 3,7 × 3,6 m. Produktbladet anger 3,70 × 1,70 × 3,60 m. Samma två basmått, axlarna byter namn.",
+        "Inköpspris saknas i den här miljön. Filen VVZ-Play wholesale pricelist 2026 fanns inte bland bilagorna.",
+        "Vikt saknas hos leverantören.",
+        "Montageanvisning saknas i öppen nedladdning."
+      ],
+      "contradiction": "Säkerhetsområde och vilket basmått som kallas längd respektive bredd skiljer sig mellan produktsida och produktblad/ritning."
+    },
+    {
+      "slug": "vippgunga-bage-php004",
+      "name": "Vippgunga båge PHP004",
+      "originalName": "Seesaw Swing - Arched VVZ-PHP004",
+      "sku": "PHP004",
+      "manufacturer": "VVZ-Play",
+      "quoteShowsSku": true,
+      "quoteOnRequest": true,
+      "sourceUrl": "https://www.vvz-play.com/seesaw-swing-arched-vvz-php004/",
+      "fetchedAt": "2026-09-18",
+      "category": "Lek och aktivitet",
+      "categorySlug": "lek-aktivitet",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "summary": "Bågformad vippgunga för två personer. Ålder 3–14 år.",
+      "description": "Bågformad vippgunga för två personer. Den tränar samarbete, koordination och motorik. Fyra kulörpar enligt leverantören; andra kombinationer kan tillverkas på förfrågan. DWG-filen på leverantörens sida kräver inloggning och är inte publicerad här.",
+      "material": "Förzinkat och pulverlackerat stål, PA, HPL, gummi, fästelement i rostfritt stål.",
+      "colorLegend": "Kulör",
+      "colors": [
+        { "name": "Orange + turkos", "hex": "#ce5c27" },
+        { "name": "Brun + gulgrön", "hex": "#6c4c2c" },
+        { "name": "Antracit + gul", "hex": "#f7b500" },
+        { "name": "Antracit + röd", "hex": "#bb1e10" }
+      ],
+      "dimensions": [
+        {
+          "label": "Längd",
+          "value": "3,1 m",
+          "note": "Produktblad 3,10 m. Ritning 3 100 mm. Produktsidan anger längd 0,3 m och bredd 3,1 m."
+        },
+        {
+          "label": "Bredd",
+          "value": "0,3 m",
+          "note": "Produktblad 0,30 m. Ritning visar 230 mm."
+        },
+        {
+          "label": "Höjd",
+          "value": "1,2 m"
+        }
+      ],
+      "ageRange": "3–14 år",
+      "users": "2 personer",
+      "fallHeight": "upp till 0,99 m",
+      "safetyZoneArea": "13 m²",
+      "safetyZonePerimeter": "5,20 × 2,50 m",
+      "environment": "Utomhus, lekplats.",
+      "qtyLegend": "Antal",
+      "standards": ["EN 1176", "STN EN 1176-1 + A1:2025", "STN EN 1176-6 + AC:2019"],
+      "related": ["kombinerad-lektorn-vz1-006-15"],
+      "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
+      "documentPolicy": "Produktblad, ritning av säkerhetsområde och familjecertifikat från leverantörens öppna nedladdning. Originalfiler, inklusive märkning. DWG kräver inloggning hos leverantören och är inte hämtad.",
+      "images": [
+        {
+          "src": "/images/vvz-play/vippgunga-bage-php004/orange-turkos.jpg",
+          "alt": "Vippgunga båge PHP004, orange och turkos",
+          "kind": "studio",
+          "color": "Orange + turkos",
+          "caption": "Orange + turkos"
+        },
+        {
+          "src": "/images/vvz-play/vippgunga-bage-php004/brun-gulgron.jpg",
+          "alt": "Vippgunga båge PHP004, brun och gulgrön",
+          "kind": "studio",
+          "color": "Brun + gulgrön",
+          "caption": "Brun + gulgrön"
+        },
+        {
+          "src": "/images/vvz-play/vippgunga-bage-php004/antracit-gul.jpg",
+          "alt": "Vippgunga båge PHP004, antracit och gul",
+          "kind": "studio",
+          "color": "Antracit + gul",
+          "caption": "Antracit + gul"
+        },
+        {
+          "src": "/images/vvz-play/vippgunga-bage-php004/antracit-rod.jpg",
+          "alt": "Vippgunga båge PHP004, antracit och röd",
+          "kind": "studio",
+          "color": "Antracit + röd",
+          "caption": "Antracit + röd"
+        }
+      ],
+      "documents": [
+        {
+          "title": "Produktblad PHP004",
+          "typeLabel": "Produktblad",
+          "format": "PDF",
+          "href": "/docs/vvz-play/PHP004-T-EN.pdf",
+          "kind": "datasheet",
+          "language": "en",
+          "originalName": "VVZ-PHP004-T-EN.pdf",
+          "sourceUrl": "https://www.vvz-play.com/public/manager/source/Nové 2026/prevažovacie hojdačky/EN/PHP/VVZ-PHP004-T-EN.pdf",
+          "fetchedAt": "2026-09-18",
+          "appliesTo": "Engelskt produktblad märkt VVZ-PHP004-T."
+        },
+        {
+          "title": "Säkerhetsområde PHP004",
+          "typeLabel": "Ritning, säkerhetsområde",
+          "format": "PDF",
+          "href": "/docs/vvz-play/PHP004-sakerhetsomrade.pdf",
+          "kind": "drawing",
+          "previewable": false,
+          "originalName": "PHP004.pdf",
+          "sourceUrl": "https://www.vvz-play.com/public/manager/source/Nové 2026/prevažovacie hojdačky/dopad plochy/PHP/PHP004.pdf",
+          "fetchedAt": "2026-09-18",
+          "appliesTo": "Måttsatt plan. Ritningen visar 2 500 × 5 200 mm säkerhetsområde."
+        },
+        {
+          "title": "Certifikat vippgungor 2026",
+          "typeLabel": "Certifikat",
+          "format": "PDF",
+          "href": "/docs/vvz-play/PHP-certifikat-vippgungor-2026.pdf",
+          "kind": "other",
+          "language": "sk",
+          "originalName": "Certifikát - Prevažovacie_hojdačky_2026.pdf",
+          "sourceUrl": "https://www.vvz-play.com/public/manager/source/Nové 2026/PHP/Certifikáty/Certifikát - Prevažovacie_hojdačky_2026.pdf",
+          "fetchedAt": "2026-09-18",
+          "appliesTo": "Technická inšpekcia a.s., certifikat 07460/1/2026-CERT-01, 13.04.2026. Typbeteckningen Oblúková prevažovacia hojdačka VVZ-PHP004 ingår tillsammans med övriga vippgungor på samma certifikat."
+        }
+      ],
+      "gaps": [
+        "DWG kräver inloggning hos leverantören och är inte hämtad.",
+        "Produktsidan listar ingen fallhöjd. Maximal fallhöjd upp till 0,99 m kommer från produktbladet.",
+        "Produktsidan anger L×B×H 0,3 × 3,1 × 1,2 m. Produktbladet anger 3,10 × 0,30 × 1,20 m. Ritningen visar 230 mm tvärs redskapet mot 0,30 m i texten.",
+        "Material står inte i produktsidans parameterlista; materialraden kommer från produktbladet.",
+        "Inköpspris saknas i den här miljön. Filen VVZ-Play wholesale pricelist 2026 fanns inte bland bilagorna.",
+        "Vikt saknas hos leverantören.",
+        "Montageanvisning saknas i öppen nedladdning."
+      ],
+      "contradiction": "Vilket basmått som kallas längd respektive bredd skiljer sig mellan produktsida och produktblad. Ritningen visar 230 mm tvärs, produktbladet 0,30 m."
+    }
+  ]
+}

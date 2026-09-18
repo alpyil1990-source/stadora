@@ -5,6 +5,7 @@ import { streetparkCatalogSlugs } from './streetpark'
 import { zanoCatalogSlugs } from './zano'
 import { novumCatalogSlugs } from './novum'
 import { kuschCatalogSlugs } from './kusch-vcare-fold'
+import { vvzPlayCatalogSlugs } from './vvz-play'
 
 export type CatalogStatus = 'published' | 'needs_work' | 'draft'
 
@@ -265,7 +266,7 @@ export const catalog: CategoryDef[] = [
         slug: 'lekplatsutrustning',
         name: 'Lekplatsutrustning',
         blurb: 'Gungor, lekställningar, lekhus och övrig lekplats.',
-        productSlugs: [],
+        productSlugs: [...vvzPlayCatalogSlugs.lekplatsutrustning],
         draftExamples: [],
       },
       {

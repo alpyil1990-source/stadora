@@ -5,6 +5,7 @@ import { STREETPARK_SLUGS } from './streetpark'
 import { ZANO_SLUGS } from './zano'
 import { NOVUM_SLUGS } from './novum'
 import { KUSCH_VCARE_FOLD_SLUGS } from './kusch-vcare-fold'
+import { VVZ_PLAY_SLUGS } from './vvz-play'
 
 export type SupplierStatus = 'aktiv' | 'invantar_underlag' | 'pausad'
 
@@ -184,6 +185,26 @@ export const seedSuppliers: Supplier[] = [
     notes:
       'Tillstånd att använda produktbilder och material på webbplatsen, i offerter och kundprojekt. Tillverkare Kusch+Co endast internt, inte på den publika produktsidan eller offerten. Ett produktkort för vägghängd V-Care Fold (1U–4U MW, trä). Inga klädda varianter i den här omgången. Inga golvstående Fold och inga vanliga V-Care-bänkar. Produktkod följer med offerten; inget påhittat KVCR-beställningsnummer. Inga priser publikt. Prislista och inköpsvillkor endast internt. Modellspecifika Fold-blad/CAD saknas i öppen nedladdning; TE/TB/PRM-ritningar ska inte användas. Hämtat 2026-09-18 från kusch.com och nowystyl.com.',
     productSlugs: [...KUSCH_VCARE_FOLD_SLUGS],
+  },
+  {
+    id: 'vvz-play',
+    name: 'VVZ-Play / Veríme v Zábavu, s.r.o.',
+    status: 'aktiv',
+    orgNr: '',
+    legalName: 'Veríme v Zábavu, s.r.o.',
+    website: 'https://www.vvz-play.com',
+    mediaSource: 'https://www.vvz-play.com/catalog/maintenance-free-playgrounds/',
+    contact: {
+      name: '',
+      role: 'Katalog / B2B',
+      email: 'info@vvz-play.com',
+      phone: '+421 800 500 023',
+    },
+    address:
+      'Huvudkontor: Kasárenská 9, 911 05 Trenčín, Slovakien. Produktion enligt certifikat: Pod Brezinou 3745/86, 911 01 Trenčín.',
+    notes:
+      'Tillstånd att använda produktbilder. Stickprov 2026-09-18: Kombinerad lektorn VZ1-006-15 och Vippgunga båge PHP004. Inte parkbänkar, sopkärl eller annan stadsmöbel. Tillverkare VVZ-Play endast internt, inte på den publika produktsidan eller offerten. Artikelnummer följer med offerten. Inga priser publikt. Wholesale pricelist 2026 saknades som fil i den här miljön — inköps-EUR lämnas tomt, aldrig 0. Originaldokument inklusive märkning. DWG kräver leverantörsinloggning och är inte hämtad. Hämtat 2026-09-18 från vvz-play.com.',
+    productSlugs: [...VVZ_PLAY_SLUGS],
   },
 ]
 

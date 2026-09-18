@@ -11,6 +11,7 @@ import { AdminInoplexTerms } from './AdminInoplexTerms'
 import { AdminStreetparkTerms } from './AdminStreetparkTerms'
 import { AdminZanoTerms } from './AdminZanoTerms'
 import { AdminNovumTerms } from './AdminNovumTerms'
+import { AdminVvzPlayTerms } from './AdminVvzPlayTerms'
 
 const statuses: SupplierStatus[] = ['aktiv', 'invantar_underlag', 'pausad']
 
@@ -167,6 +168,7 @@ export function AdminSupplierDetail() {
       {supplier.id === 'inoplex' && <AdminInoplexTerms />}
       {supplier.id === 'zano' && <AdminZanoTerms />}
       {supplier.id === 'novum' && <AdminNovumTerms />}
+      {supplier.id === 'vvz-play' && <AdminVvzPlayTerms />}
       {supplier.id === 'kusch-co' && (
         <section className="border border-line bg-sheet p-5 text-sm">
           <p className="font-medium">Intern underlagspolicy</p>

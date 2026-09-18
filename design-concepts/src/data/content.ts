@@ -5,6 +5,7 @@ import { streetparkProducts } from './streetpark'
 import { zanoProducts } from './zano'
 import { novumProducts } from './novum'
 import { kuschVcareFoldProducts } from './kusch-vcare-fold'
+import { vvzPlayProducts } from './vvz-play'
 import { catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
@@ -179,7 +180,7 @@ export function isStadoraArticleNumber(sku?: string | null) {
   return Boolean(sku && /^ST-/i.test(sku.trim()))
 }
 
-/** Quote lines may show STREETPARK article numbers; other supplier SKUs stay in admin. */
+/** Quote lines may show STREETPARK and VVZ-Play article numbers; other supplier SKUs stay in admin unless quoteShowsSku. */
 export function quoteShowsArticleNumber(product?: Product | null, sku?: string | null) {
   if (!sku) return false
   if (isStadoraArticleNumber(sku)) return true
@@ -188,7 +189,7 @@ export function quoteShowsArticleNumber(product?: Product | null, sku?: string |
 }
 
 /**
- * STREETPARK, Inoplex, Kusch+Co and NOVUM stay off the public catalog and quote.
+ * STREETPARK, Inoplex, Kusch+Co, NOVUM and VVZ-Play stay off the public catalog and quote.
  * ZANO may appear on the product page as "Tillverkare: Zano", not on listing cards.
  */
 export function publicManufacturer(product?: Product | null) {
@@ -531,6 +532,7 @@ export const products: Record<string, Product> = {
   ...zanoProducts,
   ...novumProducts,
   ...kuschVcareFoldProducts,
+  ...vvzPlayProducts,
   'akutvagn-genius': {
     slug: 'akutvagn-genius',
     name: 'Akutvagn Genius',
@@ -576,6 +578,7 @@ export { STREETPARK_SLUGS } from './streetpark'
 export { INOPLEX_SLUGS } from './inoplex'
 export { NOVUM_SLUGS } from './novum'
 export { KUSCH_VCARE_FOLD_SLUGS } from './kusch-vcare-fold'
+export { VVZ_PLAY_SLUGS } from './vvz-play'
 
 export function quantityLegend(product?: Product | null) {
   return product?.qtyLegend?.trim() || 'Antal'

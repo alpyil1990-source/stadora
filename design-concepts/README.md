@@ -100,6 +100,20 @@ Se `/design` i prototypen, eller:
 - `/produkter/vantzon-korridor/vagghangda-fallstolar` V-Care Fold, vägghängd
 - `/produkt/v-care-fold` vägghängd fällstol och fällbänk, varianter för 1–4 sittplatser, sits och rygg i trä
 - `/admin/leverantorer/kusch-co` intern Kusch+Co-sida (prislista endast intern)
+- `/produkter/lek-aktivitet/lekplatsutrustning` VVZ-Play stickprov (lektorn och vippgunga)
+- `/produkt/kombinerad-lektorn-vz1-006-15` och `/produkt/vippgunga-bage-php004`
+- `/admin/leverantorer/vvz-play` intern VVZ-Play-sida (inköpspris saknas i den här miljön)
+
+## VVZ-Play — stickprov (lekplats)
+
+Leverantören har godkänt användning av produktbilder. Inte parkbänkar, sopkärl eller annan stadsmöbel i den här omgången.
+
+- Publik kategori: `/produkter/lek-aktivitet/lekplatsutrustning`
+- Kombinerad lektorn VZ1-006-15 och vippgunga båge PHP004
+- Tillverkare VVZ-Play endast internt
+- Artikelnummer följer med offerten. Pris på förfrågan
+- Wholesale pricelist 2026 fanns inte som fil i importmiljön — inga EUR
+- Originaldokument inklusive märkning. DWG kräver leverantörsinloggning och är inte hämtad
 
 Picknickset-landningssidor utan eget modellnummer importeras inte. Saknat svenskt produktblad räknas inte som ofullständig post; engelska produktkort märks som engelska.
 
@@ -121,4 +135,4 @@ python3 scripts/strip-streetpark-datasheets.py
 
 ## Innehållsregel
 
-Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin, utom STREETPARK, Inoplex-modellkoder och ZANO-modellnummer som följer med offerten. Inoplex namnges inte på publika produktsidor. ZANO står som Tillverkare: Zano på produktsidan, inte i produktnamnet och inte på listkorten; originalmärkning på bilder/dokument ska vara kvar. ZANO-kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer) importeras inte.
+Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin, utom STREETPARK, Inoplex-modellkoder, ZANO-modellnummer och VVZ-Play artikelnummer som följer med offerten. Inoplex namnges inte på publika produktsidor. ZANO står som Tillverkare: Zano på produktsidan, inte i produktnamnet och inte på listkorten; originalmärkning på bilder/dokument ska vara kvar. ZANO-kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer) importeras inte.
