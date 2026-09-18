@@ -1,4 +1,6 @@
+import { useEffect } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
+import { api } from '../lib/api'
 import { ConceptBar } from './ConceptBar'
 
 const nav = [
@@ -7,9 +9,15 @@ const nav = [
   { to: '/admin/offerter', label: 'Offerter' },
   { to: '/admin/fakturor', label: 'Fakturor' },
   { to: '/admin/leverantorer', label: 'Leverantörer' },
+  { to: '/admin/konton', label: 'Dokumentkonton' },
+  { to: '/admin/nedladdningar', label: 'Nedladdningar' },
 ]
 
 export function AdminShell() {
+  useEffect(() => {
+    void api('/api/preview/enter', { method: 'POST' }).catch(() => undefined)
+  }, [])
+
   return (
     <div className="min-h-svh bg-paper text-ink">
       <ConceptBar />

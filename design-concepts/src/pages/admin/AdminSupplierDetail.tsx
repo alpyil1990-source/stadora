@@ -10,6 +10,7 @@ import { AdminInvestimTerms } from './AdminInvestimTerms'
 import { AdminInoplexTerms } from './AdminInoplexTerms'
 import { AdminStreetparkTerms } from './AdminStreetparkTerms'
 import { AdminZanoTerms } from './AdminZanoTerms'
+import { AdminNovumTerms } from './AdminNovumTerms'
 
 const statuses: SupplierStatus[] = ['aktiv', 'invantar_underlag', 'pausad']
 
@@ -165,6 +166,7 @@ export function AdminSupplierDetail() {
       {supplier.id === 'streetpark' && <AdminStreetparkTerms />}
       {supplier.id === 'inoplex' && <AdminInoplexTerms />}
       {supplier.id === 'zano' && <AdminZanoTerms />}
+      {supplier.id === 'novum' && <AdminNovumTerms />}
 
       <section>
         <h2 className="text-xl">Produkter från den här leverantören</h2>

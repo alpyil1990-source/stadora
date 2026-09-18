@@ -4,3 +4,6 @@ dist
 *.log
 .vite
 agent-tools
+.env
+.env.*
+!.env.example

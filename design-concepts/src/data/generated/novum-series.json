@@ -1,0 +1,466 @@
+{
+  "fetchedAt": "2026-09-18",
+  "importedAt": "2026-09-18T14:44:05.278958+00:00",
+  "scope": "test-import",
+  "categorySource": "https://novum4kids.com/fitness-devices/?per_page=60",
+  "note": "Only Runner and Airwalker. Remaining Fitness Devices are not imported.",
+  "series": [
+    {
+      "slug": "utegym-runner",
+      "name": "Utegym Runner",
+      "originalName": "Runner",
+      "sku": "44103W",
+      "manufacturer": "NOVUM",
+      "visibility": "internal_preview",
+      "quoteOnRequest": true,
+      "quoteShowsSku": true,
+      "sourceUrl": "https://novum4kids.com/product/runner/",
+      "fetchedAt": "2026-09-18",
+      "category": "Lek och aktivitet",
+      "categorySlug": "lek-aktivitet",
+      "subcategory": "Utegym",
+      "subcategorySlug": "utegym",
+      "summary": "Utegymredskap Runner för gång- och löpliknande rörelse i underkroppen, en användare, ålder 14-99+.",
+      "description": "Runner är ett redskap för underkroppen. Rörelsen efterliknar gång eller löpning utan att belasta lederna hårt. NOVUM anger att den mjuka, pendlande benrörelsen stödjer kondition, koordination och muskulatur i ben och höfter. Handtag och stabil stomme ska ge stöd under övningen. Redskapet är avsett för utegym och aktivitetsytor utomhus.\n\nBärande stolpar av fyrkantsprofil 100 × 100 mm i stål S235. Rörliga delar i stål. Handtag i stål. Steg av halkfri plåt. Kompletterande detaljer i rostfritt stål. Förband väder- och UV-beständiga. Stål galvaniserat och pulverlackerat.\n\nSatsen enligt NOVUM: 1 × Runner.",
+      "deviceFunction": "Runner är ett redskap för underkroppen. Rörelsen efterliknar gång eller löpning utan att belasta lederna hårt. NOVUM anger att den mjuka, pendlande benrörelsen stödjer kondition, koordination och muskulatur i ben och höfter. Handtag och stabil stomme ska ge stöd under övningen. Redskapet är avsett för utegym och aktivitetsytor utomhus.",
+      "material": "Bärande stolpar av fyrkantsprofil 100 × 100 mm i stål S235. Rörliga delar i stål. Handtag i stål. Steg av halkfri plåt. Kompletterande detaljer i rostfritt stål. Förband väder- och UV-beständiga. Stål galvaniserat och pulverlackerat.",
+      "colors": [
+        {
+          "name": "Orange"
+        }
+      ],
+      "colorLegend": "Kulör",
+      "dimensions": [
+        {
+          "label": "Längd",
+          "value": "1,16 m"
+        },
+        {
+          "label": "Bredd",
+          "value": "0,65 m"
+        },
+        {
+          "label": "Höjd",
+          "value": "1,51 m"
+        },
+        {
+          "label": "Säkerhetsområde",
+          "value": "17 m²"
+        },
+        {
+          "label": "Säkerhetsområdets omkrets",
+          "value": "15 m"
+        },
+        {
+          "label": "Maximal fallhöjd",
+          "value": "0,8 m"
+        },
+        {
+          "label": "Antal användare",
+          "value": "1"
+        },
+        {
+          "label": "Rekommenderad ålder",
+          "value": "14-99+"
+        }
+      ],
+      "safetyZoneArea": "17 m²",
+      "safetyZonePerimeter": "15 m",
+      "fallHeight": "0,8 m",
+      "users": "1",
+      "ageRange": "14-99+",
+      "mounting": [
+        "Gjutning mot betongfundament.",
+        "Fundament enligt monteringsanvisning."
+      ],
+      "standards": [
+        "EN 16630:2015-06"
+      ],
+      "images": [
+        {
+          "fileId": "42da83c5c2e7ff7a",
+          "alt": "Utegym Runner, artikel 44103W",
+          "kind": "studio",
+          "originalName": "44103W.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/44103W.jpg"
+        },
+        {
+          "fileId": "412bc0a5ff3b5ee9",
+          "alt": "Utegym Runner, artikel 44103W",
+          "kind": "studio",
+          "originalName": "44103W_2.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/44103W_2.jpg"
+        },
+        {
+          "fileId": "21d71308843b9ce9",
+          "alt": "Utegym Runner, artikel 44103W",
+          "kind": "studio",
+          "originalName": "44103W_3.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/44103W_3.jpg"
+        },
+        {
+          "fileId": "a8c8e115262ecab3",
+          "alt": "Utegym Runner, artikel 44103W",
+          "kind": "studio",
+          "originalName": "44103W_4.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/44103W_4.jpg"
+        },
+        {
+          "fileId": "1baae7801a139ed1",
+          "alt": "Utegym Runner, artikel 44103W",
+          "kind": "studio",
+          "originalName": "44103W_6.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/44103W_6.jpg"
+        },
+        {
+          "fileId": "f01364fe02bb4910",
+          "alt": "Utegym Runner, artikel 44103W",
+          "kind": "detail",
+          "originalName": "44103W_7_SV.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/44103W_7_SV.jpg"
+        },
+        {
+          "fileId": "c1a272d6e6b66b38",
+          "alt": "Utegym Runner, artikel 44103W",
+          "kind": "detail",
+          "originalName": "44103W_8_TV.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/44103W_8_TV.jpg"
+        }
+      ],
+      "documents": [
+        {
+          "fileId": "4379ad515011e9c4",
+          "title": "44103W.glb",
+          "typeLabel": "3D-modell",
+          "format": "GLB",
+          "kind": "cad",
+          "access": "internal_only",
+          "originalName": "44103W.glb",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/model3d/44103W.glb",
+          "appliesTo": "Artikel 44103W"
+        },
+        {
+          "fileId": "41d2053dbcc7784e",
+          "title": "44103W_SV.dwg",
+          "typeLabel": "DWG sidovy",
+          "format": "DWG",
+          "kind": "cad",
+          "access": "internal_only",
+          "originalName": "44103W_SV.dwg",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=17EQ62kPPfGa6vIAk7Dslv3OsXOpYYG6F&export=download",
+          "appliesTo": "Artikel 44103W · DWG SIDE VIEW SV"
+        },
+        {
+          "fileId": "04b10917485f27dc",
+          "title": "44103W_TV.dwg",
+          "typeLabel": "DWG ovanvy",
+          "format": "DWG",
+          "kind": "cad",
+          "access": "internal_only",
+          "originalName": "44103W_TV.dwg",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1txLGmdXpVfOOSB5Ok3nV8LF873Y2uYeJ&export=download",
+          "appliesTo": "Artikel 44103W · DWG TOP VIEW TV"
+        },
+        {
+          "fileId": "444d500f3be9c177",
+          "title": "44103W_SV.png",
+          "typeLabel": "Sidovy",
+          "format": "PNG",
+          "kind": "drawing",
+          "access": "internal_only",
+          "originalName": "44103W_SV.png",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1I5vH1bC3Tg4qfAiYu0OvqkQZ9a8-0afU&export=download",
+          "appliesTo": "Artikel 44103W · SIDE VIEW"
+        },
+        {
+          "fileId": "de7bd50cdcfa1dce",
+          "title": "44103W_TV.png",
+          "typeLabel": "Ovanvy",
+          "format": "PNG",
+          "kind": "drawing",
+          "access": "internal_only",
+          "originalName": "44103W_TV.png",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1wdZtLYbXvRAyJHyRej1otE-5V-dtEwNv&export=download",
+          "appliesTo": "Artikel 44103W · TOP VIEW"
+        },
+        {
+          "fileId": "53aabe96e9173450",
+          "title": "44103W_light.3ds",
+          "typeLabel": "3D-modell",
+          "format": "3DS",
+          "kind": "cad",
+          "access": "internal_only",
+          "originalName": "44103W_light.3ds",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1fpCnPd-af6b659ckG2w_TuM1Z3bV2EmY&export=download",
+          "appliesTo": "Artikel 44103W · 3D MODEL"
+        },
+        {
+          "fileId": "f6e9c57171886b7c",
+          "title": "44103W - Technical card.pdf",
+          "typeLabel": "Produktblad",
+          "format": "PDF",
+          "kind": "datasheet",
+          "access": "internal_only",
+          "originalName": "44103W - Technical card.pdf",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1fyTWt2UBQnOrnD5nZAM8t-DUAr9bs18a&export=download",
+          "appliesTo": "Artikel 44103W · DATA SHEET"
+        }
+      ],
+      "related": [],
+      "gaps": [
+        "Ingen produktunik monteringsanvisning i Resources. Produktbladet hänvisar till installationsanvisning."
+      ],
+      "contradiction": null,
+      "lockedBeforeLogin": false,
+      "wpId": "19252"
+    },
+    {
+      "slug": "utegym-airwalker",
+      "name": "Utegym Airwalker",
+      "originalName": "Airwalker",
+      "sku": "4403Z",
+      "manufacturer": "NOVUM",
+      "visibility": "internal_preview",
+      "quoteOnRequest": true,
+      "quoteShowsSku": true,
+      "sourceUrl": "https://novum4kids.com/product/airwalker/",
+      "fetchedAt": "2026-09-18",
+      "category": "Lek och aktivitet",
+      "categorySlug": "lek-aktivitet",
+      "subcategory": "Utegym",
+      "subcategorySlug": "utegym",
+      "summary": "Fristående utegymredskap Airwalker för en användare, ålder 7-99.",
+      "description": "Airwalker är ett fristående utegymredskap för en person. NOVUM:s engelska produktsida återanvänder här en text som beskriver Runner, inte Airwalker. Funktionspåståenden från den texten tas inte med. Verifierade uppgifter är mått, säkerhetsområde, fallhöjd, antal användare, ålder, material stål och visad kulör.\n\nBärande stolpar av rundstålrör Ø 114,3 mm. Ståldetaljer korrosionsskyddade genom galvanisering och pulverlackering. Förband väder- och UV-beständiga. Enligt NOVUM:s produktblad för 4403Z.",
+      "deviceFunction": "Airwalker är ett fristående utegymredskap för en person. NOVUM:s engelska produktsida återanvänder här en text som beskriver Runner, inte Airwalker. Funktionspåståenden från den texten tas inte med. Verifierade uppgifter är mått, säkerhetsområde, fallhöjd, antal användare, ålder, material stål och visad kulör.",
+      "material": "Bärande stolpar av rundstålrör Ø 114,3 mm. Ståldetaljer korrosionsskyddade genom galvanisering och pulverlackering. Förband väder- och UV-beständiga. Enligt NOVUM:s produktblad för 4403Z.",
+      "colors": [
+        {
+          "name": "Grå"
+        }
+      ],
+      "colorLegend": "Kulör",
+      "dimensions": [
+        {
+          "label": "Längd",
+          "value": "1,41 m"
+        },
+        {
+          "label": "Bredd",
+          "value": "0,69 m"
+        },
+        {
+          "label": "Höjd",
+          "value": "1,48 m"
+        },
+        {
+          "label": "Säkerhetsområde",
+          "value": "18,5 m²"
+        },
+        {
+          "label": "Säkerhetsområdets omkrets",
+          "value": "15,5 m"
+        },
+        {
+          "label": "Maximal fallhöjd",
+          "value": "0,34 m"
+        },
+        {
+          "label": "Antal användare",
+          "value": "1"
+        },
+        {
+          "label": "Rekommenderad ålder",
+          "value": "7-99"
+        }
+      ],
+      "safetyZoneArea": "18,5 m²",
+      "safetyZonePerimeter": "15,5 m",
+      "fallHeight": "0,34 m",
+      "users": "1",
+      "ageRange": "7–99",
+      "mounting": [
+        "Placeras under marknivå.",
+        "Fundament enligt monteringsanvisning."
+      ],
+      "standards": [
+        "EN 16630:2015-06"
+      ],
+      "images": [
+        {
+          "fileId": "dba2dab6335bd0d5",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z.jpg"
+        },
+        {
+          "fileId": "67ab2e890120cc34",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_2.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_2.jpg"
+        },
+        {
+          "fileId": "e5a5bdeb789f4e83",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_3.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_3.jpg"
+        },
+        {
+          "fileId": "6c1f8a848f336126",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_4.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_4.jpg"
+        },
+        {
+          "fileId": "bd89519e330472f5",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_5.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_5.jpg"
+        },
+        {
+          "fileId": "a311fc59ab6e19af",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_6.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_6.jpg"
+        },
+        {
+          "fileId": "544e1ec96224c006",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_7.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_7.jpg"
+        },
+        {
+          "fileId": "c7953b24c4460f02",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_8.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_8.jpg"
+        },
+        {
+          "fileId": "c9fb487fca18bbc2",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_9.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_9.jpg"
+        },
+        {
+          "fileId": "fc58357a3322ab02",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_10.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_10.jpg"
+        },
+        {
+          "fileId": "3ccd3a2caf9050b1",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_11.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_11.jpg"
+        },
+        {
+          "fileId": "9dced06a06637b36",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "studio",
+          "originalName": "4403Z_12.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_12.jpg"
+        },
+        {
+          "fileId": "2304c83013c52d6f",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "detail",
+          "originalName": "4403Z_13_SV.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_13_SV.jpg"
+        },
+        {
+          "fileId": "6c0a20681da77b29",
+          "alt": "Utegym Airwalker, artikel 4403Z",
+          "kind": "detail",
+          "originalName": "4403Z_14_TV.jpg",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/2026/07/4403Z_14_TV.jpg"
+        }
+      ],
+      "documents": [
+        {
+          "fileId": "9f0b4fd859339a34",
+          "title": "4403Z.glb",
+          "typeLabel": "3D-modell",
+          "format": "GLB",
+          "kind": "cad",
+          "access": "internal_only",
+          "originalName": "4403Z.glb",
+          "sourceUrl": "https://novum4kids.com/wp-content/uploads/model3d/4403Z.glb",
+          "appliesTo": "Artikel 4403Z"
+        },
+        {
+          "fileId": "3f1a4a7a4619e382",
+          "title": "4403Z_SV.dwg",
+          "typeLabel": "DWG sidovy",
+          "format": "DWG",
+          "kind": "cad",
+          "access": "internal_only",
+          "originalName": "4403Z_SV.dwg",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=0B3sdTI8jCQaqVUhscG1nMWhsOEU&export=download",
+          "appliesTo": "Artikel 4403Z · DWG SIDE VIEW SV"
+        },
+        {
+          "fileId": "af6cca6fa0c66cb5",
+          "title": "4403Z_TV.dwg",
+          "typeLabel": "DWG ovanvy",
+          "format": "DWG",
+          "kind": "cad",
+          "access": "internal_only",
+          "originalName": "4403Z_TV.dwg",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=0B3sdTI8jCQaqMFU2Q21CVGhGVlk&export=download",
+          "appliesTo": "Artikel 4403Z · DWG TOP VIEW TV"
+        },
+        {
+          "fileId": "f765bea10e91467d",
+          "title": "Fitness_AI.pdf",
+          "typeLabel": "Monteringsanvisning",
+          "format": "PDF",
+          "kind": "mounting",
+          "access": "internal_only",
+          "originalName": "Fitness_AI.pdf",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1qbMRWcsMbtbQ6cOkvrBcfoxvneV3ZPxD&export=download",
+          "appliesTo": "Artikel 4403Z · ASSEMBLY MANUAL"
+        },
+        {
+          "fileId": "d086928528b6fbb5",
+          "title": "4403Z_light.3ds",
+          "typeLabel": "3D-modell",
+          "format": "3DS",
+          "kind": "cad",
+          "access": "internal_only",
+          "originalName": "4403Z_light.3ds",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1j4Cp6Hn3UIwvnGEC6ziZJ82z2rOlI53D&export=download",
+          "appliesTo": "Artikel 4403Z · 3D MODEL"
+        },
+        {
+          "fileId": "0baf6dd7b3ac86db",
+          "title": "4403Z - Technical card.pdf",
+          "typeLabel": "Produktblad",
+          "format": "PDF",
+          "kind": "datasheet",
+          "access": "internal_only",
+          "originalName": "4403Z - Technical card.pdf",
+          "sourceUrl": "https://drive.usercontent.google.com/download?id=1LCbbIysnpZKHuofTG3H7wZUtyz8prE0_&export=download",
+          "appliesTo": "Artikel 4403Z · DATA SHEET"
+        }
+      ],
+      "related": [],
+      "gaps": [
+        "Funktionsbeskrivningen på novum4kids.com/product/airwalker/ nämner Runner och är inte verifierad för Airwalker. Produktbladet för 4403Z beskriver material och infästning, inte övningen.",
+        "Monteringsanvisningen Fitness_AI.pdf gäller serien 4401–4427, där 4403Z ingår. Den är inte en unik Airwalker-fil."
+      ],
+      "contradiction": "Airwalker 4403Z har en produkttext som inleds med “The Runner is a device…”. Texten används inte som Airwalkers funktion.",
+      "lockedBeforeLogin": false,
+      "wpId": "16113"
+    }
+  ]
+}

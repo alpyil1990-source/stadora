@@ -9,11 +9,23 @@ export default defineConfig({
     port: 4317,
     strictPort: true,
     allowedHosts: true,
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:4318',
+        changeOrigin: true,
+      },
+    },
   },
   preview: {
     host: '0.0.0.0',
     port: 4317,
     strictPort: true,
     allowedHosts: true,
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:4318',
+        changeOrigin: true,
+      },
+    },
   },
 })

@@ -11,7 +11,46 @@ npm install
 npm run dev
 ```
 
-Dev-servern lyssnar på port **4317**.
+Dev-servern lyssnar på port **4317**. Dokument-API:t (intern testmiljö) lyssnar på port **4318**.
+
+```bash
+cp .env.example .env   # fyll i hemligheter lokalt, committa aldrig .env
+npm run dev:api        # http://127.0.0.1:4318
+npm run dev            # http://127.0.0.1:4317  (proxyar /api till 4318)
+```
+
+**Inget av detta är publicerat.** Intern förhandsgranskning och dokumentkonton är avstängda tills uttryckligt godkännande.
+
+## NOVUM — testimport (opublicerat)
+
+Endast **Runner (44103W)** och **Airwalker (4403Z)** från Fitness Devices. Övriga produkter i kategorin är inte importerade.
+
+- Intern visning: `/intern/produkt/utegym-runner` och `/intern/produkt/utegym-airwalker`
+- Publik Utegym-lista är tom
+- Tillverkare NOVUM registreras internt och visas inte på publika sidor
+- Inga priser, endast offertförfrågan
+- Originalfiler i privat lagring `internal/storage/novum/{artikelnummer}/` med namn `NOVUM_{sku}_{typ}_{nn}.ext`
+- Alla NOVUM-filer har behörighet `internal_only`
+
+Portaluppgifter: `NOVUM_PORTAL_EMAIL` och `NOVUM_PORTAL_PASSWORD` i `.env`. De får aldrig hamna i källkod, databas, loggar, webbläsare eller git.
+
+```bash
+python3 scripts/import-novum-test.py
+```
+
+Skriptet matchar bilder och dokument mot **artikelnummer** på produktsidan, inte mot liknande namn.
+
+## Dokumentkonton (intern testmiljö)
+
+Leverantörsoberoende. Registrering: e-post, lösenord, godkännande av integritetspolicy. Namn och företag är valfria efteråt. Nyhetsbrev är ett separat, avmarkerat val.
+
+- `/konto/skapa` `/konto/logga-in` `/konto/glomt` `/konto`
+- `/integritet`
+- `/admin/konton` `/admin/nedladdningar` `/admin/testmejl`
+
+Behörighet per dokument: `internal_only` (standard för nya leverantörsfiler), `registered_customer`, `public`. Filer lämnas ut via kortlivade signerade länkar. Lagringsvägar syns inte i sidans kod. Nedladdningsloggen är intern.
+
+I testmiljön skickas inga externa mejl; bekräftelselänkar ligger i `internal/mail/`.
 
 ## Skärmar
 

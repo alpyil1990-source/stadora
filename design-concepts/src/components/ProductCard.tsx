@@ -24,9 +24,11 @@ export function ProductCard({ product }: { product: Product }) {
         {maker && (
           <p className="text-sm font-medium">Tillverkare: {maker}</p>
         )}
-        {isStadoraArticleNumber(product.sku) && !product.materials?.length && (
-          <p className="font-ui text-xs tabular-nums text-muted">Art.nr {product.sku}</p>
-        )}
+        {isStadoraArticleNumber(product.sku) || product.visibility === 'internal_preview' ? (
+          product.sku && !product.materials?.length ? (
+            <p className="font-ui text-xs tabular-nums text-muted">Art.nr {product.sku}</p>
+          ) : null
+        ) : null}
         <p className="text-sm text-muted">{product.summary}</p>
         <dl className="mt-auto grid grid-cols-2 gap-x-3 gap-y-1 pt-3 text-xs text-muted">
           {product.material && (

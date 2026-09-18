@@ -50,9 +50,11 @@ export type ProductLayout = 'hybrid' | 'spec' | 'visual'
 export function ProductView({
   product,
   layout,
+  intern = false,
 }: {
   product: Product
   layout: ProductLayout
+  intern?: boolean
 }) {
   const { add } = useQuote()
   const colors = colorChoices(product)
@@ -73,7 +75,7 @@ export function ProductView({
   const finish = selectedMaterial(product, variants['Material'])
   const sku = quoteLineSku(product, variants)
   const publicSku = quoteShowsArticleNumber(product, sku) ? sku : undefined
-  const maker = publicManufacturer(product)
+  const maker = intern ? product.manufacturer : publicManufacturer(product)
   const dimensions = selectedSize?.dimensions ?? product.dimensions
   const weight = selectedSize?.weight ?? product.weight
   const selectedWeight = weightForSelection(product, variants)
@@ -149,8 +151,11 @@ export function ProductView({
       items.push({ id: 'utforande', label: 'Utförande' })
     }
     if (product.mounting?.length) items.push({ id: 'montering', label: 'Montering' })
+    if (product.safetyZoneArea || product.fallHeight || product.users || product.ageRange) {
+      items.push({ id: 'sakerhet', label: 'Säkerhet' })
+    }
     if (product.warranty || product.leadTime) items.push({ id: 'leverans', label: 'Leverans' })
-    if (product.medicalClass) items.push({ id: 'standard', label: 'Standarder' })
+    if (product.medicalClass || product.standards?.length) items.push({ id: 'standard', label: 'Standarder' })
     if ((product.documents && product.documents.length > 0) || product.documentPolicy) {
       items.push({ id: 'dokument', label: 'Dokument' })
     }
@@ -574,6 +579,30 @@ export function ProductView({
           <dd className="font-medium">{product.medicalClass}</dd>
         </div>
       )}
+      {product.users && (
+        <div>
+          <dt className="text-muted">Användare</dt>
+          <dd className="font-medium">{product.users}</dd>
+        </div>
+      )}
+      {product.ageRange && (
+        <div>
+          <dt className="text-muted">Ålder</dt>
+          <dd className="font-medium">{product.ageRange}</dd>
+        </div>
+      )}
+      {product.fallHeight && (
+        <div>
+          <dt className="text-muted">Maximal fallhöjd</dt>
+          <dd className="font-medium">{product.fallHeight}</dd>
+        </div>
+      )}
+      {product.safetyZoneArea && (
+        <div>
+          <dt className="text-muted">Säkerhetsområde</dt>
+          <dd className="font-medium">{product.safetyZoneArea}</dd>
+        </div>
+      )}
     </dl>
   )
 
@@ -680,6 +709,45 @@ export function ProductView({
           </ul>
         </section>
       )}
+      {(product.safetyZoneArea || product.fallHeight || product.users || product.ageRange) && (
+        <section id="sakerhet">
+          <h2 className="text-xl">Säkerhet och användning</h2>
+          <table className="spec-table mt-3">
+            <tbody>
+              {product.users && (
+                <tr>
+                  <th>Antal användare</th>
+                  <td>{product.users}</td>
+                </tr>
+              )}
+              {product.ageRange && (
+                <tr>
+                  <th>Rekommenderad ålder</th>
+                  <td>{product.ageRange}</td>
+                </tr>
+              )}
+              {product.fallHeight && (
+                <tr>
+                  <th>Maximal fallhöjd</th>
+                  <td>{product.fallHeight}</td>
+                </tr>
+              )}
+              {product.safetyZoneArea && (
+                <tr>
+                  <th>Säkerhetsområde</th>
+                  <td>{product.safetyZoneArea}</td>
+                </tr>
+              )}
+              {product.safetyZonePerimeter && (
+                <tr>
+                  <th>Säkerhetsområdets omkrets</th>
+                  <td>{product.safetyZonePerimeter}</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </section>
+      )}
       {environment && (
         <section>
           <h2 className="text-xl">Användningsmiljö</h2>
@@ -707,11 +775,17 @@ export function ProductView({
           </table>
         </section>
       )}
-      {(product.medicalClass || product.manufacturerQms) && (
+      {(product.medicalClass || product.manufacturerQms || product.standards?.length) && (
         <section id="standard">
           <h2 className="text-xl">Standarder och certifieringar</h2>
           <table className="spec-table mt-3">
             <tbody>
+              {product.standards?.map((s) => (
+                <tr key={s}>
+                  <th>Norm</th>
+                  <td>{s}</td>
+                </tr>
+              ))}
               {product.medicalClass && (
                 <tr>
                   <th>Klassning</th>
@@ -810,6 +884,15 @@ export function ProductView({
 
   return (
     <article>
+      {product.visibility === 'internal_preview' && (
+        <p className="mb-6 border border-dashed border-line bg-sheet px-4 py-3 text-sm">
+          Opublicerad intern förhandsgranskning. Produkten ingår inte i det publika sortimentet.
+          Leverantör och originalfiler är interna tills skriftligt godkännande finns.
+          {intern && product.manufacturer
+            ? ` Intern tillverkare ${product.manufacturer} visas bara här.`
+            : ''}
+        </p>
+      )}
       <ProductNav product={product} />
       <nav aria-label="På sidan" className="mb-6 flex flex-wrap gap-2 text-xs">
         {jump.map((j) => (
@@ -829,8 +912,14 @@ export function ProductView({
             {product.category} · {product.subcategory}
           </p>
           <h1 className="mt-2 text-3xl md:text-4xl">{product.name}</h1>
+          {intern && product.originalName && product.originalName !== product.name && (
+            <p className="mt-2 text-sm text-muted">Originalnamn {product.originalName}</p>
+          )}
           {maker && (
-            <p className="mt-2 text-sm text-muted">Tillverkare {maker}</p>
+            <p className="mt-2 text-sm text-muted">
+              {intern ? 'Intern tillverkare' : 'Tillverkare'} {maker}
+              {intern ? ' — visas inte publikt' : ''}
+            </p>
           )}
           {publicSku && (
             <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {publicSku}</p>
@@ -856,6 +945,18 @@ export function ProductView({
 }
 
 function productTrail(product: Product) {
+  if (product.visibility === 'internal_preview') {
+    return {
+      items: [
+        { label: 'Intern förhandsgranskning', to: '/intern' },
+        { label: product.subcategory, to: '/intern' },
+        { label: product.name },
+      ],
+      backTo: '/intern',
+      backLabel: 'Tillbaka till intern förhandsgranskning',
+    }
+  }
+
   if (product.area === 'skola' || product.area === 'vard') {
     const home = product.area === 'skola' ? '/skola' : '/vard'
     const areaLabel = product.area === 'skola' ? 'Skola' : 'Vård'
@@ -992,6 +1093,11 @@ function DocumentRow({ doc }: { doc: ProductDocument }) {
     doc.format,
     doc.language === 'en' ? 'engelska' : doc.language === 'sv' ? 'svenska' : null,
     doc.appliesTo,
+    doc.access === 'internal_only'
+      ? 'endast intern'
+      : doc.access === 'registered_customer'
+        ? 'inloggad kund'
+        : null,
   ]
     .filter(Boolean)
     .join(' · ')

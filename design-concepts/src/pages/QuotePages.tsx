@@ -242,7 +242,11 @@ export function QuoteFormPage() {
           </div>
           <label className="flex items-start gap-2 text-sm">
             <input type="checkbox" required className="mt-1" />
-            Jag godkänner att uppgifterna används för att ta fram offert, enligt integritetspolicyn.
+            Jag godkänner att uppgifterna används för att ta fram offert, enligt{' '}
+            <Link className="underline" to="/integritet">
+              integritetspolicyn
+            </Link>
+            .
           </label>
         </fieldset>
 

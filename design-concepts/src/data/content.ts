@@ -3,9 +3,12 @@ import { investimProducts } from './investim'
 import { inoplexProducts } from './inoplex'
 import { streetparkProducts } from './streetpark'
 import { zanoProducts } from './zano'
+import { novumProducts } from './novum'
 import { catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
+
+export type DocumentAccess = 'internal_only' | 'registered_customer' | 'public'
 
 export type ProductImage = {
   src: string
@@ -15,6 +18,8 @@ export type ProductImage = {
   color?: string
   /** Matches a size option name when this file shows that size. */
   size?: string
+  /** Private file id. The src is an API path, not a storage path. */
+  fileId?: string
 }
 
 export type ColorOption = {
@@ -74,12 +79,17 @@ export type ProductDocument = {
   fetchedAt?: string
   /** ISO language of the original file, e.g. sv or en. CAD is usually unmarked. */
   language?: string
+  fileId?: string
+  access?: DocumentAccess
+  originalName?: string
 }
 
 export type Product = {
   slug: string
   name: string
   sku?: string
+  originalName?: string
+  visibility?: 'public' | 'internal_preview'
   area: AreaId
   category: string
   categorySlug: string
@@ -130,6 +140,13 @@ export type Product = {
   quoteOnRequest?: boolean
   fetchedAt?: string
   reviewNote?: string
+  safetyZoneArea?: string
+  safetyZonePerimeter?: string
+  fallHeight?: string
+  users?: string
+  ageRange?: string
+  standards?: string[]
+  deviceFunction?: string
 }
 
 export type ConfigOption = {
@@ -166,8 +183,12 @@ export function quoteShowsArticleNumber(product?: Product | null, sku?: string |
 /** Public catalog copy. STREETPARK remains on the product record for admin and purchasing. */
 export function publicManufacturer(product?: Product | null) {
   const name = product?.manufacturer
-  if (!name || name === 'STREETPARK') return undefined
+  if (!name || name === 'STREETPARK' || name === 'NOVUM') return undefined
   return name
+}
+
+export function isPublicProduct(product?: Product | null) {
+  return Boolean(product && product.visibility !== 'internal_preview')
 }
 
 export function documentsForVariant(product: Product, variant?: string | null) {
@@ -474,6 +495,7 @@ export const products: Record<string, Product> = {
   ...streetparkProducts,
   ...inoplexProducts,
   ...zanoProducts,
+  ...novumProducts,
   'akutvagn-genius': {
     slug: 'akutvagn-genius',
     name: 'Akutvagn Genius',
@@ -517,6 +539,7 @@ export { BINSIGNIA_SLUGS } from './binsignia'
 export { INVESTIM_SLUGS } from './investim'
 export { STREETPARK_SLUGS } from './streetpark'
 export { INOPLEX_SLUGS } from './inoplex'
+export { NOVUM_SLUGS } from './novum'
 
 export const binsigniaDraft = [
   products['askkopp-luna'],
@@ -559,7 +582,12 @@ export const careProducts = [
   },
 ]
 
+export function unpublishedProducts() {
+  return Object.values(products).filter((p) => p.visibility === 'internal_preview')
+}
+
 export function productPath(p: Product) {
+  if (p.visibility === 'internal_preview') return `/intern/produkt/${p.slug}`
   if (p.area === 'vard') return `/vard/produkt/${p.slug}`
   if (p.area === 'skola') return `/skola/produkt/${p.slug}`
   return `/produkt/${p.slug}`

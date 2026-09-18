@@ -3,6 +3,7 @@ import { INVESTIM_SLUGS } from './investim'
 import { INOPLEX_SLUGS } from './inoplex'
 import { STREETPARK_SLUGS } from './streetpark'
 import { ZANO_SLUGS } from './zano'
+import { NOVUM_SLUGS } from './novum'
 
 export type SupplierStatus = 'aktiv' | 'invantar_underlag' | 'pausad'
 
@@ -143,6 +144,26 @@ export const seedSuppliers: Supplier[] = [
     notes:
       'ZANO-sortiment utom kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer). Tillstånd att använda produktbilder under förutsättning att ZANO-märkning finns kvar. Tillverkare visas publikt. Modellnummer följer med offerten. Inköpspris saknas — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs. Dokument oförändrade, inklusive logotyp. Hämtat 2026-09-17.',
     productSlugs: [...ZANO_SLUGS],
+  },
+  {
+    id: 'novum',
+    name: 'NOVUM Sp. z o.o.',
+    status: 'invantar_underlag',
+    orgNr: '0000900672',
+    vatNr: 'PL7451796890',
+    legalName: 'NOVUM Sp. z o.o.',
+    website: 'https://novum4kids.com',
+    mediaSource: 'https://novum4kids.com/fitness-devices/?per_page=60',
+    contact: {
+      name: '',
+      role: 'Katalog / B2B',
+      email: 'export@novum4kids.com',
+      phone: '+48 89 621 21 12',
+    },
+    address: 'ul. Gnieźnieńska 2A, 12-100 Szczytno, Polen',
+    notes:
+      'Testimport 2026-09-18: endast Runner 44103W och Airwalker 4403Z från Fitness Devices. Produkter opublicerade, intern förhandsgranskning. Tillverkare NOVUM registreras internt och visas inte publikt. Alla originalfiler internal_only tills skriftligt godkännande finns för extern nedladdning. Inga priser. Offertförfrågan. Portaluppgifter ligger i miljövariabler, aldrig i källkod.',
+    productSlugs: [...NOVUM_SLUGS],
   },
 ]
 

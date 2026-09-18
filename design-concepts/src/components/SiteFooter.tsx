@@ -58,6 +58,9 @@ export function SiteFooter({ area }: { area: AreaId }) {
               <Link to="/dokument">Dokument</Link>
             </li>
             <li>
+              <Link to="/integritet">Integritet</Link>
+            </li>
+            <li>
               <Link to="/design">Om detta koncept</Link>
             </li>
           </ul>

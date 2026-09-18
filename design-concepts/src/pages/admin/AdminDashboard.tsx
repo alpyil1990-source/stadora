@@ -68,9 +68,21 @@ export function AdminDashboard() {
         />
       </section>
 
-      <p className="text-sm">
+      <p className="mt-3 text-sm">
         <Link className="underline" to="/admin/leverantorer">
-          Leverantörer — kontakt, bildkälla och inköpspris
+          Leverantörer
+        </Link>
+        {' · '}
+        <Link className="underline" to="/intern">
+          Intern förhandsgranskning
+        </Link>
+        {' · '}
+        <Link className="underline" to="/admin/konton">
+          Dokumentkonton
+        </Link>
+        {' · '}
+        <Link className="underline" to="/admin/nedladdningar">
+          Nedladdningslogg
         </Link>
       </p>
 

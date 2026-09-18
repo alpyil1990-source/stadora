@@ -13,6 +13,8 @@ const screens = [
   { to: '/admin/flode', label: 'Offertflöde' },
   { to: '/admin/offerter', label: 'Ärenden' },
   { to: '/admin/leverantorer', label: 'Leverantörer' },
+  { to: '/intern', label: 'Intern förhandsgranskning' },
+  { to: '/admin/konton', label: 'Dokumentkonton' },
   { to: '/q/Q-2026-0164', label: 'Kundens offertlänk' },
 ]
 

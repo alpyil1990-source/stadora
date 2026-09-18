@@ -12,6 +12,18 @@ dist
 dist-ssr
 *.local
 
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Local document/account test database and mailbox
+internal/db/
+internal/mail/
+internal/storage/
+internal/*.sqlite
+internal/*.db
+
 # ZANO import caches (originals stay on disk, not in git)
 internal/zano/listings/
 internal/zano/pages-en/
@@ -34,3 +46,5 @@ internal/zano/*.html.tmp
 *.njsproj
 *.sln
 *.sw?
+**/__pycache__/
+*.pyc

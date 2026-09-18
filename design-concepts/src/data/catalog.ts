@@ -3,6 +3,7 @@ import { investimCatalogSlugs } from './investim'
 import { inoplexCatalogSlugs } from './inoplex'
 import { streetparkCatalogSlugs } from './streetpark'
 import { zanoCatalogSlugs } from './zano'
+import { novumCatalogSlugs } from './novum'
 
 export type CatalogStatus = 'published' | 'needs_work' | 'draft'
 
@@ -274,7 +275,7 @@ export const catalog: CategoryDef[] = [
         slug: 'utegym',
         name: 'Utegym',
         blurb: 'Fasta redskap för träning utomhus.',
-        productSlugs: [],
+        productSlugs: [...novumCatalogSlugs.utegym],
         draftExamples: ['Utegym Hammarbyhöjden', 'Utegym Näsby', 'Street workout Telefonplan'],
       },
       {

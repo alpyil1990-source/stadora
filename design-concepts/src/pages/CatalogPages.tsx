@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { products, type Product } from '../data/content'
+import { products, type Product, isPublicProduct } from '../data/content'
 import {
   catalog,
   categoryPath,
@@ -116,7 +116,7 @@ export function SubcategoryListPage() {
   const sub = findSubcategory(category, subcategorySlug)
   if (!sub) return <Navigate to={categoryPath(category)} replace />
 
-  const items = sub.productSlugs.map((slug) => products[slug]).filter(Boolean)
+  const items = sub.productSlugs.map((slug) => products[slug]).filter(isPublicProduct)
   const filters = sub.filters
 
   function toggle(legend: string, opt: string) {
