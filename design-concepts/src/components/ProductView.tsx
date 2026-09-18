@@ -1,14 +1,18 @@
 import { useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { ArrowLeft, Download } from 'lucide-react'
 import type { Product, ProductDocument, SizeOption } from '../data/content'
 import {
+  documentAccess,
   documentsForVariant,
+  isCadOriginal,
   isStadoraArticleNumber,
   products,
   publicManufacturer,
   quoteShowsArticleNumber,
 } from '../data/content'
+import { useAuth } from '../context/AuthContext'
+import { CadLoginPanel } from './CadLoginPanel'
 import { selectedMaterial } from '../data/binsignia'
 import {
   categoryPath,
@@ -811,6 +815,7 @@ export function ProductView({
           product={product}
           variant={typeName}
           sizeLegend={sizeLegend}
+          intern={intern}
         />
       </section>
       {related.length > 0 && (
@@ -1013,14 +1018,30 @@ function ProductDocuments({
   product,
   variant,
   sizeLegend = 'Modell',
+  intern = false,
 }: {
   product: Product
   variant?: string
   sizeLegend?: string
+  intern?: boolean
 }) {
+  const { user } = useAuth()
+  const location = useLocation()
   const all = product.documents ?? []
   const docs = documentsForVariant(product, variant)
   const modelPhrase = variant ? `${sizeLegend.toLowerCase()} ${variant}` : null
+  const visible = intern ? docs : docs.filter((d) => documentAccess(d) !== 'internal_only')
+  const cadUnlocked = intern || Boolean(user?.verified)
+  const openDocs = visible.filter((d) => !isCadOriginal(d) || cadUnlocked)
+  const lockedCad = visible.filter((d) => isCadOriginal(d) && !cadUnlocked)
+  const drawing = visible.find(
+    (d) => d.previewable && (d.kind === 'drawing' || d.kind === 'perspective'),
+  )
+  const backdrop = drawing
+    ? { src: drawing.href, alt: drawing.typeLabel }
+    : product.images[0]
+      ? { src: product.images[0].src, alt: product.images[0].alt }
+      : undefined
 
   if (all.length === 0) {
     if (product.documentPolicy) {
@@ -1035,7 +1056,7 @@ function ProductDocuments({
     )
   }
 
-  if (docs.length === 0) {
+  if (docs.length === 0 || (visible.length === 0 && lockedCad.length === 0)) {
     return (
       <p className="mt-3 border border-dashed border-line bg-paper px-4 py-5 text-sm text-muted">
         Inga underlag för {modelPhrase ?? 'det valda utförandet'}.
@@ -1043,7 +1064,7 @@ function ProductDocuments({
     )
   }
 
-  const groups = groupDocuments(docs)
+  const groups = groupDocuments(openDocs)
 
   return (
     <div className="mt-3">
@@ -1055,18 +1076,36 @@ function ProductDocuments({
       <div className="space-y-5">
         {groups.map((group) => (
           <div key={group.label}>
-            {groups.length > 1 && (
+            {(groups.length > 1 || lockedCad.length > 0) && (
               <h3 className="mb-1.5 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-muted">
                 {group.label}
               </h3>
             )}
             <ul className="border border-line bg-sheet">
               {group.items.map((doc) => (
-                <DocumentRow key={`${doc.href}-${doc.variant ?? 'all'}`} doc={doc} />
+                <DocumentRow
+                  key={`${doc.href}-${doc.variant ?? 'all'}`}
+                  doc={doc}
+                  canDownload={intern || documentAccess(doc) !== 'registered_customer' || Boolean(user?.verified)}
+                />
               ))}
             </ul>
           </div>
         ))}
+        {lockedCad.length > 0 && (
+          <div>
+            <h3 className="mb-1.5 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-muted">
+              CAD och originalfiler
+            </h3>
+            <CadLoginPanel
+              heading={`${variant ?? product.name} — filer att ladda ner`}
+              files={lockedCad}
+              backdrop={backdrop}
+              next={`${location.pathname}${location.search}#dokument`}
+              unverified={Boolean(user && !user.verified)}
+            />
+          </div>
+        )}
       </div>
     </div>
   )
@@ -1090,25 +1129,23 @@ function groupDocuments(docs: ProductDocument[]) {
   return buckets.filter((bucket) => bucket.items.length > 0)
 }
 
-function DocumentRow({ doc }: { doc: ProductDocument }) {
+function DocumentRow({ doc, canDownload }: { doc: ProductDocument; canDownload: boolean }) {
   const alt = `${doc.typeLabel} (${doc.format}). ${doc.title}`
+  const access = documentAccess(doc)
   const meta = [
     doc.format,
     doc.language === 'en' ? 'engelska' : doc.language === 'sv' ? 'svenska' : null,
     doc.appliesTo,
-    doc.access === 'internal_only'
-      ? 'endast intern'
-      : doc.access === 'registered_customer'
-        ? 'inloggad kund'
-        : null,
+    access === 'internal_only' ? 'endast intern' : null,
   ]
     .filter(Boolean)
     .join(' · ')
-  const canOpenInBrowser = doc.previewable || doc.format === 'PDF' || doc.format === 'SVG'
+  const canOpenInBrowser =
+    canDownload && (doc.previewable || doc.format === 'PDF' || doc.format === 'SVG')
   return (
     <li className="flex items-center gap-3 border-b border-line px-3 py-2 last:border-b-0">
       <div className="h-11 w-14 shrink-0 overflow-hidden border border-line bg-paper">
-        {doc.previewable ? (
+        {doc.previewable && canDownload ? (
           <ProductImageZoom
             compact
             images={[{ src: doc.href, alt }]}
@@ -1130,28 +1167,30 @@ function DocumentRow({ doc }: { doc: ProductDocument }) {
           {doc.title}
         </p>
       </div>
-      <div className="flex shrink-0 items-center gap-3">
-        {canOpenInBrowser && (
+      {canDownload && (
+        <div className="flex shrink-0 items-center gap-3">
+          {canOpenInBrowser && (
+            <a
+              href={doc.href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Öppna ${doc.typeLabel} (${doc.format})`}
+              className="text-sm underline-offset-2 hover:underline"
+            >
+              Öppna
+            </a>
+          )}
           <a
             href={doc.href}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Öppna ${doc.typeLabel} (${doc.format})`}
-            className="text-sm underline-offset-2 hover:underline"
+            download
+            aria-label={`Ladda ner ${doc.typeLabel} (${doc.format})`}
+            className="inline-flex items-center gap-1.5 text-sm underline-offset-2 hover:underline"
           >
-            Öppna
+            <Download className="h-4 w-4" aria-hidden />
+            Ladda ner
           </a>
-        )}
-        <a
-          href={doc.href}
-          download
-          aria-label={`Ladda ner ${doc.typeLabel} (${doc.format})`}
-          className="inline-flex items-center gap-1.5 text-sm underline-offset-2 hover:underline"
-        >
-          <Download className="h-4 w-4" aria-hidden />
-          Ladda ner
-        </a>
-      </div>
+        </div>
+      )}
     </li>
   )
 }

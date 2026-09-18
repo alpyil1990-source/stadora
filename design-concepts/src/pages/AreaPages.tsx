@@ -71,8 +71,8 @@ export function DocumentsPage() {
         publicerade ritningar i katalogen. NOVUM-originalfiler är interna och inte tillgängliga här.
       </p>
       <div className="mt-8 border border-dashed border-line p-6 text-sm text-muted">
-        På produktsidan: Måttritning (JPG) · modell SKM1 · Ladda ner original. Dokumentkonton och
-        signerade länkar finns i intern testmiljö och är inte aktiverade publikt.
+        Måttritning och 3D-perspektivbild i JPG går att öppna utan konto. CAD och övriga originalfiler
+        (DWG, 3DS, RAR) kräver inloggning. NOVUM-originalfiler är fortfarande bara interna.
       </div>
     </div>
   )

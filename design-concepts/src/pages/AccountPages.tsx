@@ -2,6 +2,7 @@ import { useEffect, useState, type FormEvent } from 'react'
 import { Link, Navigate, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { ApiError, api } from '../lib/api'
+import { safeReturnPath, withNextQuery } from '../lib/returnPath'
 
 function Field({
   label,
@@ -40,11 +41,13 @@ function FormError({ message }: { message: string }) {
 
 export function RegisterPage() {
   const { user, refresh } = useAuth()
+  const [params] = useSearchParams()
+  const next = safeReturnPath(params.get('next'))
   const [error, setError] = useState('')
   const [done, setDone] = useState('')
   const [pending, setPending] = useState(false)
 
-  if (user) return <Navigate to="/konto" replace />
+  if (user) return <Navigate to={next} replace />
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -82,7 +85,12 @@ export function RegisterPage() {
         </p>
       </div>
       {done ? (
-        <p className="border border-line bg-sheet p-4 text-sm">{done}</p>
+        <p className="border border-line bg-sheet p-4 text-sm">
+          {done}{' '}
+          <Link className="underline" to={withNextQuery('/konto/logga-in', next)}>
+            Logga in
+          </Link>
+        </p>
       ) : (
         <form className="space-y-4" onSubmit={onSubmit}>
           <FormError message={error} />
@@ -129,7 +137,7 @@ export function RegisterPage() {
       )}
       <p className="text-sm">
         Har du redan konto?{' '}
-        <Link className="underline" to="/konto/logga-in">
+        <Link className="underline" to={withNextQuery('/konto/logga-in', next)}>
           Logga in
         </Link>
       </p>
@@ -139,9 +147,11 @@ export function RegisterPage() {
 
 export function LoginPage() {
   const { user, refresh } = useAuth()
+  const [params] = useSearchParams()
+  const next = safeReturnPath(params.get('next'))
   const [error, setError] = useState('')
   const [pending, setPending] = useState(false)
-  if (user) return <Navigate to="/konto" replace />
+  if (user) return <Navigate to={next} replace />
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -190,7 +200,7 @@ export function LoginPage() {
           Glömt lösenord
         </Link>
         {' · '}
-        <Link className="underline" to="/konto/skapa">
+        <Link className="underline" to={withNextQuery('/konto/skapa', next)}>
           Skapa konto
         </Link>
       </p>

@@ -201,6 +201,17 @@ export function documentsForVariant(product: Product, variant?: string | null) {
   return docs.filter((d) => !d.variant || aliases.has(d.variant))
 }
 
+/** CAD originals require a verified document account unless the file already has another ACL. */
+export function documentAccess(doc: ProductDocument): DocumentAccess {
+  if (doc.access) return doc.access
+  if (doc.kind === 'cad') return 'registered_customer'
+  return 'public'
+}
+
+export function isCadOriginal(doc: ProductDocument) {
+  return doc.kind === 'cad'
+}
+
 export const company = {
   name: 'STADORA',
   legal: 'Relicon AB',
