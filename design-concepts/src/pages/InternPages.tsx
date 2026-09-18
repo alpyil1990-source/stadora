@@ -70,7 +70,7 @@ export function InternHomePage() {
           Inga opublicerade produkter i den här miljön.
         </p>
       ) : (
-        <ul className="grid grid-cols-1 items-stretch gap-3 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid grid-cols-1 items-stretch gap-3 sm:grid-cols-3">
           {items.map((p) => (
             <li key={p.slug}>
               <ListingCard product={p} />

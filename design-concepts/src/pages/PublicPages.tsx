@@ -78,7 +78,7 @@ export function HomePage() {
             Alla avfallsprodukter
           </Link>
         </div>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {binsigniaDraft.map((p) => (
             <ProductCard key={p.slug} product={p} />
           ))}
@@ -91,7 +91,7 @@ export function HomePage() {
         <p className="mt-3 max-w-2xl text-sm text-muted">
           Listan visar parkbänkar med verifierade mått och artikelnummer.
         </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {benches.map((p) => (
             <ProductCard key={p.slug} product={p} />
           ))}

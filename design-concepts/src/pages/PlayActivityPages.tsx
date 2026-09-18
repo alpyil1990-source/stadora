@@ -192,7 +192,7 @@ export function PlayActivityListing({
           </button>
         </div>
       ) : (
-        <ul className="mt-5 grid grid-cols-1 items-stretch gap-3 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-5 grid grid-cols-1 items-stretch gap-3 sm:grid-cols-3">
           {visible.map((p) => (
             <li key={p.slug} className="min-h-0">
               <ListingCard product={p} />
