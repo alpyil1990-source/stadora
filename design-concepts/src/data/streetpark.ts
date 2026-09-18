@@ -95,6 +95,16 @@ function toColors(rows: SeriesJson['colors']): ColorOption[] | undefined {
   })
 }
 
+function publicAppliesTo(text?: string | null) {
+  if (!text) return undefined
+  let next = text.replace(/Fil från STREETPARK-arkivet /g, 'Fil från arkivet ')
+  next = next.replace(/Gäller materialval som STREETPARK listar för produkten\.?/g, 'Gäller materialval som listats för produkten.')
+  next = next.replace(/Gäller STREETPARKs sortiment enligt dokumentet\.?/g, 'Gäller sortimentet enligt dokumentet.')
+  next = next.replace(/Gäller serien enligt STREETPARKs nedladdning\.?/g, 'Gäller serien enligt nedladdningen.')
+  next = next.replace(/STREETPARKs\s+/g, '').replace(/STREETPARK\s+/g, '')
+  return next.trim() || undefined
+}
+
 function toDocs(rows: DocJson[]): ProductDocument[] {
   return rows.map((d) => ({
     title: d.title,
@@ -104,7 +114,7 @@ function toDocs(rows: DocJson[]): ProductDocument[] {
     kind: d.kind,
     previewable: Boolean(d.previewable ?? ['JPG', 'JPEG', 'PNG', 'WEBP', 'GIF'].includes(d.format)),
     variant: d.variant ?? undefined,
-    appliesTo: d.appliesTo ?? undefined,
+    appliesTo: publicAppliesTo(d.appliesTo),
     sourceUrl: d.sourceUrl,
     fetchedAt: d.fetchedAt,
   }))
