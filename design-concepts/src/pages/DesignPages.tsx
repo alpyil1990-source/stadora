@@ -145,7 +145,7 @@ export function DesignIndexPage() {
         <p className="mt-2 text-muted">
           Parkmöbler, avfall, cykelzon, plantering, pollare, skyltar och pergolor från zano.se.
           Kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer) är inte importerad.
-          Tillverkare: Zano står i produktbeskrivningen, inte i produktnamnet. Märkning på originalbilder och dokument är kvar.
+          Tillverkare: Zano står på produktsidan, inte i produktnamnet och inte på listkorten. Märkning på originalbilder och dokument är kvar.
         </p>
         <p className="mt-3">
           <Link className="underline" to="/produkt/solstol-duo-02-052">

@@ -32,7 +32,9 @@ export function ProductCard({ product }: { product: Product }) {
             <p className="font-ui text-xs tabular-nums text-muted">Art.nr {product.sku}</p>
           ) : null
         ) : null}
-        <p className="line-clamp-2 text-sm text-muted">{product.summary}</p>
+        {product.summary.trim() ? (
+          <p className="line-clamp-2 text-sm text-muted">{product.summary}</p>
+        ) : null}
         <dl className="mt-auto grid grid-cols-2 gap-x-3 gap-y-1 pt-3 text-xs text-muted">
           {product.material && (
             <>

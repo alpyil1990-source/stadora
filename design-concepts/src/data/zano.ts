@@ -82,8 +82,8 @@ function withMakerLine(text: string): string {
 function publicSummary(row: SeriesJson, name: string): string {
   const stripped = stripMakerBoilerplate(row.summary)
   const leftover = stripped.replace(/\.+$/, '').trim()
-  if (!leftover || leftover.toLowerCase() === name.toLowerCase()) return MAKER_LINE
-  return withMakerLine(stripped)
+  if (!leftover || leftover.toLowerCase() === name.toLowerCase()) return ''
+  return stripped
 }
 
 function toProduct(row: SeriesJson): Product {

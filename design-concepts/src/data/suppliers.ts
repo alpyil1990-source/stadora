@@ -143,7 +143,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'Lindego 7A, 30-148 Kraków, Polen',
     notes:
-      'ZANO-sortiment utom kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer). Tillstånd att använda produktbilder under förutsättning att ZANO-märkning finns kvar. Produktnamn utan ZANO; Tillverkare: Zano står i produktbeskrivningen. Modellnummer följer med offerten. Inköpspris saknas — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs. Dokument oförändrade, inklusive logotyp. Hämtat 2026-09-17.',
+      'ZANO-sortiment utom kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer). Tillstånd att använda produktbilder under förutsättning att ZANO-märkning finns kvar. Produktnamn utan ZANO; Tillverkare: Zano står på produktsidan, inte på listkorten. Modellnummer följer med offerten. Inköpspris saknas — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs. Dokument oförändrade, inklusive logotyp. Hämtat 2026-09-17.',
     productSlugs: [...ZANO_SLUGS],
   },
   {

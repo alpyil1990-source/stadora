@@ -189,7 +189,7 @@ export function quoteShowsArticleNumber(product?: Product | null, sku?: string |
 
 /**
  * STREETPARK, Inoplex, Kusch+Co and NOVUM stay off the public catalog and quote.
- * ZANO may appear in the product description as "Tillverkare: Zano".
+ * ZANO may appear on the product page as "Tillverkare: Zano", not on listing cards.
  */
 export function publicManufacturer(product?: Product | null) {
   if (product?.manufacturer === 'ZANO') return 'Zano'

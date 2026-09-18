@@ -16,7 +16,7 @@ export function AdminZanoTerms() {
         <p className="mt-2 text-sm text-muted">
           Katalogimport utom kategorin Övrigt. Leverantören lämnar pris vid offertförfrågan. Fältet lämnas tomt —
           aldrig 0 kr. Intern markering: leverantörsoffert krävs före kundpris. Produktnamn utan ZANO;
-          Tillverkare: Zano står i produktbeskrivningen. Produktbilder och dokument behåller ZANO-märkning. Kategorin Övrigt på zano.se
+          Tillverkare: Zano står på produktsidan, inte på listkorten. Produktbilder och dokument behåller ZANO-märkning. Kategorin Övrigt på zano.se
           (fågelmatare, lyktor, desinfektionsstationer) är undantagen. Picknickset-sidor utan eget
           modellnummer är inte importerade.
         </p>
