@@ -92,10 +92,49 @@ QUOTAS = [
 
 COLOR_SV = {
     "orange + turquoise": ("Orange + turkos", "#ce5c27"),
+    "turquoise + orange": ("Orange + turkos", "#ce5c27"),
+    "orange + turkos": ("Orange + turkos", "#ce5c27"),
+    "turkos + orange": ("Orange + turkos", "#ce5c27"),
     "brown + yellow green": ("Brun + gulgrön", "#6c4c2c"),
+    "brown + yellow": ("Brun + gulgrön", "#6c4c2c"),
+    "yellow green + brown": ("Brun + gulgrön", "#6c4c2c"),
+    "brun + gulgron": ("Brun + gulgrön", "#6c4c2c"),
+    "brun + gulgrön": ("Brun + gulgrön", "#6c4c2c"),
+    "gulgron + brun": ("Brun + gulgrön", "#6c4c2c"),
+    "gulgrön + brun": ("Brun + gulgrön", "#6c4c2c"),
     "anthracite + yellow": ("Antracit + gul", "#f7b500"),
+    "yellow + anthracite": ("Antracit + gul", "#f7b500"),
+    "antracit + gul": ("Antracit + gul", "#f7b500"),
+    "gul + antracit": ("Antracit + gul", "#f7b500"),
     "anthracite + red": ("Antracit + röd", "#bb1e10"),
+    "red + anthracite": ("Antracit + röd", "#bb1e10"),
+    "antracit + rod": ("Antracit + röd", "#bb1e10"),
+    "antracit + röd": ("Antracit + röd", "#bb1e10"),
+    "rod + antracit": ("Antracit + röd", "#bb1e10"),
+    "röd + antracit": ("Antracit + röd", "#bb1e10"),
+    "green + white": ("Grön + vit", "#68a640"),
+    "white + green": ("Grön + vit", "#68a640"),
+    "gron + vit": ("Grön + vit", "#68a640"),
+    "grön + vit": ("Grön + vit", "#68a640"),
 }
+
+COLOR_HEX = {
+    "#ce5c27": "Orange + turkos",
+    "#3d898b": "Orange + turkos",
+    "#6c4c2c": "Brun + gulgrön",
+    "#abc251": "Brun + gulgrön",
+    "#f7b500": "Antracit + gul",
+    "#bb1e10": "Antracit + röd",
+    "#68a640": "Grön + vit",
+}
+
+PREFERRED_COLOR_ORDER = [
+    "Orange + turkos",
+    "Brun + gulgrön",
+    "Antracit + gul",
+    "Antracit + röd",
+    "Grön + vit",
+]
 
 SKIP_URL_PARTS = (
     "/catalog/urban-furniture",
@@ -365,7 +404,14 @@ def crawl_catalog(op: urllib.request.OpenerDirector) -> list[dict]:
 
 def swedish_color(name: str, hex_val: str | None = None) -> dict:
     key = fold(name).replace("yellow-green", "yellow green")
+    hex_key = (hex_val or "").strip().lower()
+    mapped_name = COLOR_HEX.get(hex_key)
     mapped = COLOR_SV.get(key)
+    if mapped_name:
+        row = {"name": mapped_name}
+        if hex_val:
+            row["hex"] = hex_key
+        return row
     if mapped:
         return {"name": mapped[0], "hex": mapped[1]}
     row = {"name": name.strip()}
@@ -952,6 +998,7 @@ def build_one(op: urllib.request.OpenerDirector, listed: dict, prices: dict, log
     doc_dir.mkdir(parents=True, exist_ok=True)
 
     images = []
+    seen_dest: set[str] = set()
     for i, src in enumerate(parsed["imageUrls"][:8]):
         raw = basename(src)
         ext = Path(raw).suffix.lower() or ".jpg"
@@ -960,15 +1007,17 @@ def build_one(op: urllib.request.OpenerDirector, listed: dict, prices: dict, log
         fname = f"{i:02d}{ext}"
         if color:
             fname = f"{slugify(color)}{'-baksida' if kind == 'detail' else ''}{ext}"
-            # avoid overwrite
             dest = img_dir / fname
         else:
             dest = img_dir / fname
+        if dest.name in seen_dest:
+            continue
         try:
             fetch(op, src if src.startswith("http") else abs_url(src), dest)
         except Exception as exc:
             print("  img fail", sku, src, exc)
             continue
+        seen_dest.add(dest.name)
         alt = name + (f", {color.lower()}" if color else "")
         images.append(
             {
@@ -979,6 +1028,46 @@ def build_one(op: urllib.request.OpenerDirector, listed: dict, prices: dict, log
                 "caption": color,
             }
         )
+
+    uniq_images = []
+    seen_src: set[str] = set()
+    for im in images:
+        if im["src"] in seen_src:
+            continue
+        seen_src.add(im["src"])
+        if im.get("color"):
+            sv = swedish_color(im["color"])
+            im["color"] = sv["name"]
+            im["caption"] = sv["name"]
+        uniq_images.append(im)
+    uniq_images.sort(
+        key=lambda im: PREFERRED_COLOR_ORDER.index(im["color"])
+        if im.get("color") in PREFERRED_COLOR_ORDER
+        else 50
+    )
+    by_color: dict[str, dict] = {}
+    untagged: list[dict] = []
+    for im in uniq_images:
+        color = im.get("color")
+        if not color:
+            untagged.append(im)
+            continue
+        if color not in by_color:
+            by_color[color] = im
+    images = list(by_color.values()) + untagged
+
+    uniq_colors = []
+    seen_color: set[str] = set()
+    for c in parsed["colors"]:
+        sv = swedish_color(c.get("name") or "", c.get("hex"))
+        if sv["name"] in seen_color:
+            continue
+        seen_color.add(sv["name"])
+        uniq_colors.append(sv)
+    uniq_colors.sort(
+        key=lambda c: PREFERRED_COLOR_ORDER.index(c["name"]) if c["name"] in PREFERRED_COLOR_ORDER else 50
+    )
+    parsed["colors"] = uniq_colors
 
     documents = []
     for doc in parsed["docs"]:

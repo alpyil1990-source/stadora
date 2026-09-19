@@ -1,4 +1,5 @@
 import type { ColorOption, Product, ProductDocument, ProductImage } from './content'
+import { normalizeCatalogColors, normalizeCatalogImages } from './gallery'
 import catalogFile from './generated/vvz-play-series.json'
 
 type ImageJson = ProductImage & {
@@ -47,12 +48,24 @@ type SeriesJson = {
 
 const series = catalogFile.series as unknown as SeriesJson[]
 
-function toColors(rows: SeriesJson['colors']): ColorOption[] | undefined {
+function toColors(rows: SeriesJson['colors'], images: ProductImage[]): ColorOption[] | undefined {
   if (!rows.length) return undefined
-  return rows.map((row) => ({ name: row.name, hex: row.hex }))
+  return normalizeCatalogColors(
+    rows.map((row) => ({ name: row.name, hex: row.hex })),
+    images,
+  )
 }
 
 function toProduct(row: SeriesJson): Product {
+  const images = normalizeCatalogImages(
+    row.images.map((img) => ({
+      src: img.src,
+      alt: img.alt,
+      kind: img.kind ?? 'studio',
+      color: img.color,
+      caption: img.caption,
+    })),
+  )
   return {
     slug: row.slug,
     name: row.name,
@@ -70,16 +83,10 @@ function toProduct(row: SeriesJson): Product {
     subcategorySlug: row.subcategorySlug,
     summary: row.summary,
     description: row.description,
-    images: row.images.map((img) => ({
-      src: img.src,
-      alt: img.alt,
-      kind: img.kind ?? 'studio',
-      color: img.color,
-      caption: img.caption,
-    })),
+    images,
     material: row.material ?? undefined,
     colorLegend: row.colorLegend ?? (row.colors.length ? 'Kulör' : undefined),
-    colors: toColors(row.colors),
+    colors: toColors(row.colors, images),
     dimensions: row.dimensions.length ? row.dimensions : undefined,
     ageRange: row.ageRange ?? undefined,
     users: row.users ?? undefined,

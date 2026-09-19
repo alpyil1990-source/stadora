@@ -250,34 +250,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/orange-turkos.jpg",
-          "alt": "Kombinerad lektorn, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/brun-gulgron.jpg",
-          "alt": "Kombinerad lektorn, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-gul.jpg",
-          "alt": "Kombinerad lektorn, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-rod.jpg",
-          "alt": "Kombinerad lektorn, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
         }
       ],
       "documents": [
@@ -986,34 +958,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/kombinerad-lekstallning-vz1-001-15/orange-turkos.jpg",
-          "alt": "Kombinerad lekställning, rutschkana, repvägg och stege 1,5 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/kombinerad-lekstallning-vz1-001-15/brun-gulgron.jpg",
-          "alt": "Kombinerad lekställning, rutschkana, repvägg och stege 1,5 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/kombinerad-lekstallning-vz1-001-15/antracit-gul.jpg",
-          "alt": "Kombinerad lekställning, rutschkana, repvägg och stege 1,5 m, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/kombinerad-lekstallning-vz1-001-15/antracit-rod.jpg",
-          "alt": "Kombinerad lekställning, rutschkana, repvägg och stege 1,5 m, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
         }
       ],
       "documents": [
@@ -1140,34 +1084,6 @@
       "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
-        {
-          "src": "/images/vvz-play/lekstallning-ettorn-lag-vzp1-004-10/orange-turkos.jpg",
-          "alt": "Lekställning ettorn låg, rutschkana, lutande klättervägg och stege, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/lekstallning-ettorn-lag-vzp1-004-10/brun-gulgron.jpg",
-          "alt": "Lekställning ettorn låg, rutschkana, lutande klättervägg och stege, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/lekstallning-ettorn-lag-vzp1-004-10/antracit-gul.jpg",
-          "alt": "Lekställning ettorn låg, rutschkana, lutande klättervägg och stege, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/lekstallning-ettorn-lag-vzp1-004-10/antracit-rod.jpg",
-          "alt": "Lekställning ettorn låg, rutschkana, lutande klättervägg och stege, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
-        },
         {
           "src": "/images/vvz-play/lekstallning-ettorn-lag-vzp1-004-10/orange-turkos.jpg",
           "alt": "Lekställning ettorn låg, rutschkana, lutande klättervägg och stege, orange + turkos",
@@ -1371,15 +1287,15 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Orange",
+          "name": "Orange + turkos",
           "hex": "#ce5c27"
         },
         {
-          "name": "Brown",
+          "name": "Brun + gulgrön",
           "hex": "#6c4c2c"
         },
         {
-          "name": "Anthracite",
+          "name": "Antracit + gul",
           "hex": "#393e42"
         }
       ],
@@ -1502,7 +1418,7 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Turquoise + Orange",
+          "name": "Orange + turkos",
           "hex": "#3d898b"
         },
         {
@@ -1553,8 +1469,8 @@
           "src": "/images/vvz-play/gunga-smabarn-vh101-2/turquoise-orange.jpg",
           "alt": "Dubbel gunga småbarn, babysits, turquoise + orange",
           "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
+          "color": "Orange + turkos",
+          "caption": "Orange + turkos"
         },
         {
           "src": "/images/vvz-play/gunga-smabarn-vh101-2/brun-gulgron.jpg",
@@ -1562,20 +1478,6 @@
           "kind": "studio",
           "color": "Brun + gulgrön",
           "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/gunga-smabarn-vh101-2/turquoise-orange.jpg",
-          "alt": "Dubbel gunga småbarn, babysits, turquoise + orange",
-          "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
-        },
-        {
-          "src": "/images/vvz-play/gunga-smabarn-vh101-2/turquoise-orange.jpg",
-          "alt": "Dubbel gunga småbarn, babysits, turquoise + orange",
-          "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
         }
       ],
       "documents": [
@@ -2348,15 +2250,15 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Orange",
+          "name": "Orange + turkos",
           "hex": "#ce5c27"
         },
         {
-          "name": "Brown",
+          "name": "Brun + gulgrön",
           "hex": "#6c4c2c"
         },
         {
-          "name": "Anthracite",
+          "name": "Antracit + gul",
           "hex": "#393e42"
         }
       ],
@@ -2479,7 +2381,7 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Turquoise + Orange",
+          "name": "Orange + turkos",
           "hex": "#3d898b"
         },
         {
@@ -2526,34 +2428,6 @@
       "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
-        {
-          "src": "/images/vvz-play/vippgunga-enben-ph001/orange-turkos.jpg",
-          "alt": "Vippgunga enben 3 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/vippgunga-enben-ph001/brun-gulgron.jpg",
-          "alt": "Vippgunga enben 3 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/vippgunga-enben-ph001/antracit-gul.jpg",
-          "alt": "Vippgunga enben 3 m, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/vippgunga-enben-ph001/antracit-rod.jpg",
-          "alt": "Vippgunga enben 3 m, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
-        },
         {
           "src": "/images/vvz-play/vippgunga-enben-ph001/orange-turkos-baksida.jpg",
           "alt": "Vippgunga enben 3 m, orange + turkos",
@@ -2708,34 +2582,6 @@
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
         {
-          "src": "/images/vvz-play/vippgunga-bage-enben-ph004/orange-turkos.jpg",
-          "alt": "Vippgunga båge enben 3 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/vippgunga-bage-enben-ph004/brun-gulgron.jpg",
-          "alt": "Vippgunga båge enben 3 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/vippgunga-bage-enben-ph004/antracit-gul.jpg",
-          "alt": "Vippgunga båge enben 3 m, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/vippgunga-bage-enben-ph004/antracit-rod.jpg",
-          "alt": "Vippgunga båge enben 3 m, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
-        },
-        {
           "src": "/images/vvz-play/vippgunga-bage-enben-ph004/orange-turkos-baksida.jpg",
           "alt": "Vippgunga båge enben 3 m, orange + turkos",
           "kind": "detail",
@@ -2757,11 +2603,11 @@
           "caption": "Antracit + gul"
         },
         {
-          "src": "/images/vvz-play/vippgunga-bage-enben-ph004/orange-turkos-baksida.jpg",
-          "alt": "Vippgunga båge enben 3 m, orange + turkos",
-          "kind": "detail",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
+          "src": "/images/vvz-play/vippgunga-bage-enben-ph004/antracit-rod.jpg",
+          "alt": "Vippgunga båge enben 3 m, antracit + röd",
+          "kind": "studio",
+          "color": "Antracit + röd",
+          "caption": "Antracit + röd"
         }
       ],
       "documents": [
@@ -3226,34 +3072,6 @@
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
         {
-          "src": "/images/vvz-play/vippgunga-enben-ph002/orange-turkos.jpg",
-          "alt": "Vippgunga enben 4 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/vippgunga-enben-ph002/brun-gulgron.jpg",
-          "alt": "Vippgunga enben 4 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/vippgunga-enben-ph002/antracit-gul.jpg",
-          "alt": "Vippgunga enben 4 m, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/vippgunga-enben-ph002/antracit-rod.jpg",
-          "alt": "Vippgunga enben 4 m, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
-        },
-        {
           "src": "/images/vvz-play/vippgunga-enben-ph002/orange-turkos-baksida.jpg",
           "alt": "Vippgunga enben 4 m, orange + turkos",
           "kind": "detail",
@@ -3433,34 +3251,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-a101/orange-turkos.jpg",
-          "alt": "Minirutschkana med stege 1,0 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-a101/brun-gulgron.jpg",
-          "alt": "Minirutschkana med stege 1,0 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-a101/orange-turkos.jpg",
-          "alt": "Minirutschkana med stege 1,0 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-a101/orange-turkos.jpg",
-          "alt": "Minirutschkana med stege 1,0 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
         }
       ],
       "documents": [
@@ -3514,7 +3304,7 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Turquoise + Orange",
+          "name": "Orange + turkos",
           "hex": "#3d898b"
         },
         {
@@ -3588,34 +3378,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-a102/turquoise-orange.jpg",
-          "alt": "Minirutschkana med trappa 1,0 m, turquoise + orange",
-          "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-a102/brun-gulgron.jpg",
-          "alt": "Minirutschkana med trappa 1,0 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-a102/turquoise-orange.jpg",
-          "alt": "Minirutschkana med trappa 1,0 m, turquoise + orange",
-          "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-a102/turquoise-orange.jpg",
-          "alt": "Minirutschkana med trappa 1,0 m, turquoise + orange",
-          "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
         }
       ],
       "documents": [
@@ -3743,34 +3505,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-ap001-10/orange-turkos.jpg",
-          "alt": "Rutschkana 1,0 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-ap001-10/brun-gulgron.jpg",
-          "alt": "Rutschkana 1,0 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-ap001-10/orange-turkos.jpg",
-          "alt": "Rutschkana 1,0 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-ap001-10/orange-turkos.jpg",
-          "alt": "Rutschkana 1,0 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
         }
       ],
       "documents": [
@@ -3924,34 +3658,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-ap001-15/orange-turkos.jpg",
-          "alt": "Rutschkana 1,5 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-ap001-15/brun-gulgron.jpg",
-          "alt": "Rutschkana 1,5 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-ap001-15/orange-turkos.jpg",
-          "alt": "Rutschkana 1,5 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-ap001-15/orange-turkos.jpg",
-          "alt": "Rutschkana 1,5 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
         }
       ],
       "documents": [
@@ -4105,34 +3811,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-med-gunga-ap002-10/orange-turkos.jpg",
-          "alt": "Rutschkana med gunga Classic 1,0 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-med-gunga-ap002-10/brun-gulgron.jpg",
-          "alt": "Rutschkana med gunga Classic 1,0 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-med-gunga-ap002-10/orange-turkos.jpg",
-          "alt": "Rutschkana med gunga Classic 1,0 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/rutschkana-med-gunga-ap002-10/orange-turkos.jpg",
-          "alt": "Rutschkana med gunga Classic 1,0 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
         }
       ],
       "documents": [
@@ -4286,34 +3964,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl003/orange-turkos.jpg",
-          "alt": "Stående karusell 1,5 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl003/brun-gulgron.jpg",
-          "alt": "Stående karusell 1,5 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl003/antracit-gul.jpg",
-          "alt": "Stående karusell 1,5 m, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl003/antracit-rod.jpg",
-          "alt": "Stående karusell 1,5 m, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
         }
       ],
       "documents": [
@@ -4393,7 +4043,7 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Turquoise + Orange",
+          "name": "Orange + turkos",
           "hex": "#3d898b"
         },
         {
@@ -4440,34 +4090,6 @@
       "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
-        {
-          "src": "/images/vvz-play/karusell-kl001-15/orange-turkos.jpg",
-          "alt": "Karusell med sits 1,5 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl001-15/brun-gulgron.jpg",
-          "alt": "Karusell med sits 1,5 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl001-15/antracit-gul.jpg",
-          "alt": "Karusell med sits 1,5 m, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl001-15/antracit-rod.jpg",
-          "alt": "Karusell med sits 1,5 m, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
-        },
         {
           "src": "/images/vvz-play/karusell-kl001-15/orange-turkos.jpg",
           "alt": "Karusell med sits 1,5 m, orange + turkos",
@@ -4789,34 +4411,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl001-18/orange-turkos.jpg",
-          "alt": "Karusell med sits 1,8 m, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl001-18/brun-gulgron.jpg",
-          "alt": "Karusell med sits 1,8 m, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl001-18/antracit-gul.jpg",
-          "alt": "Karusell med sits 1,8 m, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/karusell-kl001-18/antracit-rod.jpg",
-          "alt": "Karusell med sits 1,8 m, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
         }
       ],
       "documents": [
@@ -4884,7 +4478,7 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Green + White",
+          "name": "Grön + vit",
           "hex": "#68a640"
         }
       ],
@@ -4923,15 +4517,8 @@
           "src": "/images/vvz-play/fjadergunga-sh001/green-white.jpg",
           "alt": "Fjädergunga, green + white",
           "kind": "studio",
-          "color": "Green + White",
-          "caption": "Green + White"
-        },
-        {
-          "src": "/images/vvz-play/fjadergunga-sh001/green-white.jpg",
-          "alt": "Fjädergunga, green + white",
-          "kind": "studio",
-          "color": "Green + White",
-          "caption": "Green + White"
+          "color": "Grön + vit",
+          "caption": "Grön + vit"
         }
       ],
       "documents": [
@@ -5492,7 +5079,7 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Turquoise + Orange",
+          "name": "Orange + turkos",
           "hex": "#3d898b"
         },
         {
@@ -5500,11 +5087,11 @@
           "hex": "#6c4c2c"
         },
         {
-          "name": "Yellow + Anthracite",
+          "name": "Antracit + gul",
           "hex": "#f7b500"
         },
         {
-          "name": "Red + Anthracite",
+          "name": "Antracit + röd",
           "hex": "#bb1e10"
         }
       ],
@@ -5705,13 +5292,6 @@
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
-        },
-        {
-          "src": "/images/vvz-play/sandlada-pd009/orange-turkos.jpg",
-          "alt": "Hexagon sandlåda, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
         }
       ],
       "documents": [
@@ -5893,20 +5473,20 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Antracit + röd",
-          "hex": "#bb1e10"
-        },
-        {
-          "name": "Antracit + gul",
-          "hex": "#f7b500"
-        },
-        {
           "name": "Orange + turkos",
           "hex": "#ce5c27"
         },
         {
           "name": "Brun + gulgrön",
           "hex": "#6c4c2c"
+        },
+        {
+          "name": "Antracit + gul",
+          "hex": "#f7b500"
+        },
+        {
+          "name": "Antracit + röd",
+          "hex": "#bb1e10"
         }
       ],
       "dimensions": [
@@ -6032,20 +5612,20 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Antracit + röd",
-          "hex": "#bb1e10"
-        },
-        {
-          "name": "Antracit + gul",
-          "hex": "#f7b500"
-        },
-        {
           "name": "Orange + turkos",
           "hex": "#ce5c27"
         },
         {
           "name": "Brun + gulgrön",
           "hex": "#6c4c2c"
+        },
+        {
+          "name": "Antracit + gul",
+          "hex": "#f7b500"
+        },
+        {
+          "name": "Antracit + röd",
+          "hex": "#bb1e10"
         }
       ],
       "dimensions": [
@@ -6171,20 +5751,20 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Antracit + röd",
-          "hex": "#bb1e10"
-        },
-        {
-          "name": "Antracit + gul",
-          "hex": "#f7b500"
-        },
-        {
           "name": "Orange + turkos",
           "hex": "#ce5c27"
         },
         {
           "name": "Brun + gulgrön",
           "hex": "#6c4c2c"
+        },
+        {
+          "name": "Antracit + gul",
+          "hex": "#f7b500"
+        },
+        {
+          "name": "Antracit + röd",
+          "hex": "#bb1e10"
         }
       ],
       "dimensions": [
@@ -6500,18 +6080,18 @@
           "caption": "Orange + turkos"
         },
         {
-          "src": "/images/vvz-play/balanslek-bal006/antracit-gul.jpg",
-          "alt": "Balansstång, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
           "src": "/images/vvz-play/balanslek-bal006/brun-gulgron.jpg",
           "alt": "Balansstång, brun + gulgrön",
           "kind": "studio",
           "color": "Brun + gulgrön",
           "caption": "Brun + gulgrön"
+        },
+        {
+          "src": "/images/vvz-play/balanslek-bal006/antracit-gul.jpg",
+          "alt": "Balansstång, antracit + gul",
+          "kind": "studio",
+          "color": "Antracit + gul",
+          "caption": "Antracit + gul"
         },
         {
           "src": "/images/vvz-play/balanslek-bal006/antracit-rod.jpg",
@@ -6584,20 +6164,20 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Antracit + röd",
-          "hex": "#bb1e10"
-        },
-        {
-          "name": "Antracit + gul",
-          "hex": "#f7b500"
+          "name": "Orange + turkos",
+          "hex": "#ce5c27"
         },
         {
           "name": "Brun + gulgrön",
           "hex": "#6c4c2c"
         },
         {
-          "name": "Orange + turkos",
-          "hex": "#ce5c27"
+          "name": "Antracit + gul",
+          "hex": "#f7b500"
+        },
+        {
+          "name": "Antracit + röd",
+          "hex": "#bb1e10"
         }
       ],
       "dimensions": [
@@ -6631,13 +6211,6 @@
       "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
-        {
-          "src": "/images/vvz-play/balanslek-bal001-2/antracit-rod.jpg",
-          "alt": "Balansbom, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
-        },
         {
           "src": "/images/vvz-play/balanslek-bal001-2/brun-gulgron.jpg",
           "alt": "Balansbom, brun + gulgrön",
@@ -6711,19 +6284,19 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Turquoise + Orange",
+          "name": "Orange + turkos",
           "hex": "#3d898b"
         },
         {
-          "name": "Yellow green + Brown",
+          "name": "Brun + gulgrön",
           "hex": "#abc251"
         },
         {
-          "name": "Yellow + Anthracite",
+          "name": "Antracit + gul",
           "hex": "#f7b500"
         },
         {
-          "name": "Red + Anthracite",
+          "name": "Antracit + röd",
           "hex": "#bb1e10"
         }
       ],
@@ -6762,8 +6335,8 @@
           "src": "/images/vvz-play/balanslek-bal005/turquoise-orange.jpg",
           "alt": "Fjäderbalans Surf, turquoise + orange",
           "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
+          "color": "Orange + turkos",
+          "caption": "Orange + turkos"
         },
         {
           "src": "/images/vvz-play/balanslek-bal005/brun-gulgron.jpg",
@@ -6854,7 +6427,7 @@
           "hex": "#ce5c27"
         },
         {
-          "name": "Brown + Yellow",
+          "name": "Brun + gulgrön",
           "hex": "#6c4c2c"
         },
         {
@@ -6897,34 +6470,6 @@
       "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
-        {
-          "src": "/images/vvz-play/lekhus-thematic-shop-pd005/orange-turkos.jpg",
-          "alt": "Lekhus butik, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/lekhus-thematic-shop-pd005/brun-gulgron.jpg",
-          "alt": "Lekhus butik, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/lekhus-thematic-shop-pd005/antracit-gul.jpg",
-          "alt": "Lekhus butik, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/lekhus-thematic-shop-pd005/antracit-rod.jpg",
-          "alt": "Lekhus butik, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
-        },
         {
           "src": "/images/vvz-play/lekhus-thematic-shop-pd005/orange-turkos.jpg",
           "alt": "Lekhus butik, orange + turkos",
@@ -7017,7 +6562,7 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Turquoise + Orange",
+          "name": "Orange + turkos",
           "hex": "#3d898b"
         },
         {
@@ -7064,34 +6609,6 @@
       "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
-        {
-          "src": "/images/vvz-play/tillganglig-lek-inclusive-swing-vh013/turquoise-orange.jpg",
-          "alt": "Tillgänglig gunga, turquoise + orange",
-          "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
-        },
-        {
-          "src": "/images/vvz-play/tillganglig-lek-inclusive-swing-vh013/brun-gulgron.jpg",
-          "alt": "Tillgänglig gunga, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/tillganglig-lek-inclusive-swing-vh013/turquoise-orange.jpg",
-          "alt": "Tillgänglig gunga, turquoise + orange",
-          "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
-        },
-        {
-          "src": "/images/vvz-play/tillganglig-lek-inclusive-swing-vh013/turquoise-orange.jpg",
-          "alt": "Tillgänglig gunga, turquoise + orange",
-          "kind": "studio",
-          "color": "Turquoise + Orange",
-          "caption": "Turquoise + Orange"
-        },
         {
           "src": "/images/vvz-play/tillganglig-lek-inclusive-swing-vh013/orange-turkos.jpg",
           "alt": "Tillgänglig gunga, orange + turkos",
@@ -7198,7 +6715,7 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Turquoise + Orange",
+          "name": "Orange + turkos",
           "hex": "#3d898b"
         },
         {
@@ -7241,34 +6758,6 @@
       "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
-        {
-          "src": "/images/vvz-play/karusell-tillganglig-kl011/orange-turkos.jpg",
-          "alt": "Tillgänglig karusell, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/karusell-tillganglig-kl011/brun-gulgron.jpg",
-          "alt": "Tillgänglig karusell, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/karusell-tillganglig-kl011/antracit-gul.jpg",
-          "alt": "Tillgänglig karusell, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/karusell-tillganglig-kl011/antracit-rod.jpg",
-          "alt": "Tillgänglig karusell, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
-        },
         {
           "src": "/images/vvz-play/karusell-tillganglig-kl011/orange-turkos.jpg",
           "alt": "Tillgänglig karusell, orange + turkos",
@@ -7363,7 +6852,7 @@
       "colorLegend": "Kulör",
       "colors": [
         {
-          "name": "Turquoise + Orange",
+          "name": "Orange + turkos",
           "hex": "#3d898b"
         },
         {
@@ -7406,34 +6895,6 @@
       "imageNote": "Originalbilder från leverantören. Kulör på skärm kan avvika.",
       "documentPolicy": "Produktblad och ritning av säkerhetsområde från leverantörens öppna nedladdning. Certifikat endast internt. DWG kräver inloggning på STADORA.",
       "images": [
-        {
-          "src": "/images/vvz-play/karusell-tillganglig-kl014/orange-turkos.jpg",
-          "alt": "Tillgänglig globkarusell, orange + turkos",
-          "kind": "studio",
-          "color": "Orange + turkos",
-          "caption": "Orange + turkos"
-        },
-        {
-          "src": "/images/vvz-play/karusell-tillganglig-kl014/brun-gulgron.jpg",
-          "alt": "Tillgänglig globkarusell, brun + gulgrön",
-          "kind": "studio",
-          "color": "Brun + gulgrön",
-          "caption": "Brun + gulgrön"
-        },
-        {
-          "src": "/images/vvz-play/karusell-tillganglig-kl014/antracit-gul.jpg",
-          "alt": "Tillgänglig globkarusell, antracit + gul",
-          "kind": "studio",
-          "color": "Antracit + gul",
-          "caption": "Antracit + gul"
-        },
-        {
-          "src": "/images/vvz-play/karusell-tillganglig-kl014/antracit-rod.jpg",
-          "alt": "Tillgänglig globkarusell, antracit + röd",
-          "kind": "studio",
-          "color": "Antracit + röd",
-          "caption": "Antracit + röd"
-        },
         {
           "src": "/images/vvz-play/karusell-tillganglig-kl014/orange-turkos.jpg",
           "alt": "Tillgänglig globkarusell, orange + turkos",

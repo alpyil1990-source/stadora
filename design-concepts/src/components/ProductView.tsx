@@ -32,6 +32,7 @@ import {
 } from '../data/configure'
 import {
   colorChoices,
+  colorsMatch,
   hasColorTaggedImages,
   hasSizeTaggedImages,
   EXAMPLE_IMAGE_NOTE,
@@ -226,7 +227,7 @@ export function ProductView({
       {shown.length > 1 && (
         <ul className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-3">
           {shown.map((img, i) => (
-            <li key={img.src}>
+            <li key={`${img.src}-${i}`}>
               <button
                 type="button"
                 onClick={() => setActive(i)}
@@ -349,7 +350,7 @@ export function ProductView({
           <legend className="text-sm font-medium">Kulör</legend>
           <div className="mt-2 flex flex-wrap gap-2">
             {colors.map((c) => {
-              const hasPhoto = product.images.some((img) => img.color === c.name)
+              const hasPhoto = product.images.some((img) => colorsMatch(img.color, c.name))
               const selected = variants[COLOR_VARIANT_KEY] === c.name
               return (
                 <label
