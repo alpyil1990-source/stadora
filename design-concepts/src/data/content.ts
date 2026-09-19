@@ -82,6 +82,8 @@ export type ProductDocument = {
   fileId?: string
   access?: DocumentAccess
   originalName?: string
+  /** Raster of each PDF page so a two-page sheet can be flipped in the gallery. */
+  previewPages?: { src: string; alt: string }[]
 }
 
 export type Product = {

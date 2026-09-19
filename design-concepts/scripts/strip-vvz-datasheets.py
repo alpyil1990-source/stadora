@@ -205,6 +205,19 @@ def patch_banners(doc: pymupdf.Document) -> list[int]:
     return list(patched)
 
 
+def export_page_previews(pdf_path: Path) -> list[str]:
+    doc = pymupdf.open(pdf_path)
+    written: list[str] = []
+    for i, page in enumerate(doc, 1):
+        pix = page.get_pixmap(matrix=pymupdf.Matrix(1.8, 1.8), alpha=False)
+        image = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+        dest = pdf_path.with_name(f"datasheet-sida-{i}.jpg")
+        image.save(dest, "JPEG", quality=84, optimize=True)
+        written.append(str(dest.relative_to(PUBLIC)))
+    doc.close()
+    return written
+
+
 def leftover(doc: pymupdf.Document) -> list[str]:
     hits: list[str] = []
     for i, page in enumerate(doc, 1):
@@ -246,7 +259,13 @@ def strip_document(src: Path, dest: Path) -> dict:
             tmp_pdf.unlink(missing_ok=True)
             return {"ok": False, "reason": ",".join(leftover_hits)}
         tmp_pdf.replace(dest)
-        return {"ok": True, "pages": pymupdf.open(dest).page_count, "bytes": dest.stat().st_size}
+        page_files = export_page_previews(dest)
+        return {
+            "ok": True,
+            "pages": pymupdf.open(dest).page_count,
+            "bytes": dest.stat().st_size,
+            "previews": page_files,
+        }
 
 
 def internal_for(public_path: Path) -> Path:

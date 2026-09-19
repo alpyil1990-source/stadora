@@ -111,6 +111,7 @@ function toProduct(row: SeriesJson): Product {
       fetchedAt: d.fetchedAt,
       appliesTo: d.appliesTo,
       access: d.access,
+      previewPages: d.previewPages,
     })),
     imageNote: row.imageNote,
     documentPolicy: row.documentPolicy,

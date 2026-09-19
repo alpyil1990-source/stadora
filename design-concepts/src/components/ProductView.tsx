@@ -1129,8 +1129,11 @@ function groupDocuments(docs: ProductDocument[]) {
 function DocumentRow({ doc, canDownload }: { doc: ProductDocument; canDownload: boolean }) {
   const alt = `${doc.typeLabel} (${doc.format}). ${doc.title}`
   const access = documentAccess(doc)
+  const pages = doc.previewPages ?? []
+  const previewImages = pages.length > 0 ? pages : doc.previewable ? [{ src: doc.href, alt }] : []
   const meta = [
     doc.format,
+    pages.length > 1 ? `${pages.length} sidor` : null,
     doc.language === 'en' ? 'engelska' : doc.language === 'sv' ? 'svenska' : null,
     doc.appliesTo,
     access === 'internal_only' ? 'endast intern' : null,
@@ -1138,16 +1141,17 @@ function DocumentRow({ doc, canDownload }: { doc: ProductDocument; canDownload: 
     .filter(Boolean)
     .join(' · ')
   const canOpenInBrowser =
-    canDownload && (doc.previewable || doc.format === 'PDF' || doc.format === 'SVG')
+    canDownload && (doc.previewable || doc.format === 'PDF' || doc.format === 'SVG' || pages.length > 0)
+  const thumb = previewImages[0]
   return (
     <li className="flex items-center gap-3 border-b border-line px-3 py-2 last:border-b-0">
       <div className="h-11 w-14 shrink-0 overflow-hidden border border-line bg-paper">
-        {doc.previewable && canDownload ? (
+        {thumb && canDownload ? (
           <ProductImageZoom
             compact
-            images={[{ src: doc.href, alt }]}
-            currentSrc={doc.href}
-            alt={alt}
+            images={previewImages}
+            currentSrc={thumb.src}
+            alt={thumb.alt || alt}
             imgClassName="h-full w-full object-contain p-0.5"
           />
         ) : (
