@@ -112,7 +112,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/vippgunga-bage-php004/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/vippgunga-bage-php004/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -265,7 +275,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/kombinerad-lektorn-vz1-006-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/kombinerad-lektorn-vz1-006-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -387,7 +407,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-lag-vzd1-001-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-lag-vzd1-001-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -498,7 +528,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-hog-vzd1-004-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-hog-vzd1-004-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -609,7 +649,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-lag-vzd1-005-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-lag-vzd1-005-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -720,7 +770,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-lag-vzd1-002-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-lag-vzd1-002-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -831,7 +891,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-hog-vzd1-003-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-hog-vzd1-003-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -973,7 +1043,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/kombinerad-lekstallning-vz1-001-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/kombinerad-lekstallning-vz1-001-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -1234,7 +1314,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-lag-vzd1-007-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-ettorn-lag-vzd1-007-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -1365,7 +1455,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/gunga-smabarn-1-0-m-vhp101-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/gunga-smabarn-1-0-m-vhp101-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -1485,7 +1585,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/gunga-smabarn-vh101-2/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/gunga-smabarn-vh101-2/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -1638,7 +1748,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/gunga-1-0-m-vhp001-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/gunga-1-0-m-vhp001-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -1780,7 +1900,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/gunga-1-5-m-vhp001-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/gunga-1-5-m-vhp001-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -1922,7 +2052,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/gunga-1-0-m-vhp002-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/gunga-1-0-m-vhp002-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -2064,7 +2204,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/gunga-1-5-m-vhp002-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/gunga-1-5-m-vhp002-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -2206,7 +2356,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/gunga-1-0-m-vhp004-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/gunga-1-0-m-vhp004-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -2337,7 +2497,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-smabarn-1-0-m-vhp102-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-smabarn-1-0-m-vhp102-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -2479,7 +2649,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/vippgunga-enben-ph001/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/vippgunga-enben-ph001/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -2632,7 +2812,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/vippgunga-bage-enben-ph004/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/vippgunga-bage-enben-ph004/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -2785,7 +2975,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/vippgunga-php001/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/vippgunga-php001/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -2907,7 +3107,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/vippgunga-enben-ph001-1/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/vippgunga-enben-ph001-1/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -3122,7 +3332,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/vippgunga-enben-ph002/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/vippgunga-enben-ph002/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -3529,7 +3749,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/rutschkana-ap001-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/rutschkana-ap001-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -3682,7 +3912,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/rutschkana-ap001-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/rutschkana-ap001-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -3835,7 +4075,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap002-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap002-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -3988,7 +4238,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-kl003/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-kl003/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -4141,7 +4401,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-kl001-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-kl001-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -4435,7 +4705,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-kl001-18/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-kl001-18/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -4543,7 +4823,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/fjadergunga-sh001/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/fjadergunga-sh001/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -4658,7 +4948,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/fjadergunga-clover-sh005/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/fjadergunga-clover-sh005/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -4780,7 +5080,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/fjadergunga-sh003/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/fjadergunga-sh003/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -4902,7 +5212,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/fjadergunga-seal-sh013/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/fjadergunga-seal-sh013/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -5024,7 +5344,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/fjadergunga-sh002/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/fjadergunga-sh002/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -6656,7 +6986,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/tillganglig-lek-inclusive-swing-vh013/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/tillganglig-lek-inclusive-swing-vh013/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -6805,7 +7145,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-tillganglig-kl011/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-tillganglig-kl011/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -6942,7 +7292,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-tillganglig-kl014/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-tillganglig-kl014/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -7064,7 +7424,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-vzd1-010-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-vzd1-010-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -7291,7 +7661,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-vzd1-006-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-vzd1-006-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -7421,7 +7801,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-vz1-004-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-vz1-004-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -7563,7 +7953,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-vz1-005-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-vz1-005-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -7674,7 +8074,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-med-tunnel-vzd1-008-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-med-tunnel-vzd1-008-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -7773,7 +8183,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/lekstallning-vzd1-009-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/lekstallning-vzd1-009-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -8031,7 +8451,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-classic-1-5-m-vhp006-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-classic-1-5-m-vhp006-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -8325,7 +8755,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/gunga-babysits-classic-1-5-m-vhp007-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/gunga-babysits-classic-1-5-m-vhp007-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -8467,7 +8907,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-babysits-1-0-m-vhp006-1-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-babysits-1-0-m-vhp006-1-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -8609,7 +9059,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-babysits-1-5-m-vhp006-1-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-babysits-1-5-m-vhp006-1-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -8751,7 +9211,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-classic-1-0-m-vhp006-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/dubbel-gunga-classic-1-0-m-vhp006-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -8893,7 +9363,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/vippgunga-hast-3-m-php001-1/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/vippgunga-hast-3-m-php001-1/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -9035,7 +9515,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/vippgunga-hast-4-m-php002-1/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/vippgunga-hast-4-m-php002-1/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -9177,7 +9667,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/vippgunga-4-m-php002/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/vippgunga-4-m-php002/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -9425,7 +9925,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap003-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap003-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -9588,7 +10098,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap002-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap002-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -9751,7 +10271,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap004-10/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap004-10/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -9914,7 +10444,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap003-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap003-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -10077,7 +10617,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap004-15/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/rutschkana-med-gunga-ap004-15/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -10219,7 +10769,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-kl001-20/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-kl001-20/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -10349,7 +10909,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-kl009/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-kl009/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -10479,7 +11049,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-kl010/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-kl010/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -10578,7 +11158,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/springer-motocycle-sh004/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/springer-motocycle-sh004/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -10746,7 +11336,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/springer-car-sh008/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/springer-car-sh008/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -10857,7 +11457,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/springer-cow-sh009/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/springer-cow-sh009/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",
@@ -12180,7 +12790,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-tillganglig-kl013/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-tillganglig-kl013/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Säkerhetsområde",
@@ -12306,7 +12926,17 @@
           "fetchedAt": "2026-09-19",
           "access": "public",
           "language": "en",
-          "appliesTo": "Engelskt produktblad."
+          "appliesTo": "Engelskt produktblad, 2 sidor.",
+          "previewPages": [
+            {
+              "src": "/docs/vvz-play/karusell-tillganglig-kl015/datasheet-sida-1.jpg",
+              "alt": "Produktblad, sida 1 av 2"
+            },
+            {
+              "src": "/docs/vvz-play/karusell-tillganglig-kl015/datasheet-sida-2.jpg",
+              "alt": "Produktblad, sida 2 av 2"
+            }
+          ]
         },
         {
           "title": "Certifikat",

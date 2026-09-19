@@ -114,6 +114,11 @@ Leverantören har godkänt användning av produktbilder. Inte parkbänkar, sopk�
 - Intern inköpslista: ordinarie pris (list EUR), 30 % rabatt, nettoinköp = list × 0,70. Inga påhittade EUR
 - Certifikat finns på produkten internt (`internal_only`), inte för kund
 - DWG publiceras som CAD och kräver inloggning på STADORA (samma grind som övrig CAD)
+- Publika produktblad är en kundversion: artikelnummer som börjar med `VVZ-` och texten Veríme v Zábavu (sidhuvud och sidfot) är dolda på alla sidor. Originalen ligger i `internal/vvz-play/docs/` (inte i git). Efter ny hämtning:
+
+```bash
+python3 scripts/strip-vvz-datasheets.py --all
+```
 
 Picknickset-landningssidor utan eget modellnummer importeras inte. Saknat svenskt produktblad räknas inte som ofullständig post; engelska produktkort märks som engelska.
 

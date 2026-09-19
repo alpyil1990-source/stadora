@@ -272,12 +272,36 @@ def internal_for(public_path: Path) -> Path:
     return INTERNAL / public_path.relative_to(DOC_ROOT)
 
 
+def is_template_sheet(path: Path) -> bool:
+    """Orange VVZ EN sheets have extractable SKU/slogan or full-width header/footer art."""
+    doc = pymupdf.open(path)
+    text = "\n".join(page.get_text() for page in doc)
+    if SKU_RE.search(text) or re.search(r"together we create", text, re.I):
+        doc.close()
+        return True
+    for page in doc:
+        for info in page.get_images(full=True):
+            if classify_banner(page, info[0]):
+                doc.close()
+                return True
+    doc.close()
+    return False
+
+
 def process_one(public_path: Path) -> dict:
     original = internal_for(public_path)
     original.parent.mkdir(parents=True, exist_ok=True)
     if not original.exists():
         shutil.copy2(public_path, original)
-    info = strip_document(original, public_path)
+    source = original if original.exists() else public_path
+    if not is_template_sheet(source):
+        return {
+            "ok": False,
+            "skipped": True,
+            "reason": "inte VVZ-produktbladsmall (saknar sidhuvud/slogan)",
+            "file": str(public_path.relative_to(PUBLIC)),
+        }
+    info = strip_document(source, public_path)
     info["file"] = str(public_path.relative_to(PUBLIC))
     info["original"] = str(original.relative_to(ROOT))
     return info
@@ -300,6 +324,36 @@ def datasheet_paths() -> list[Path]:
     return sorted(paths)
 
 
+def update_series_previews(results: dict[str, dict]) -> int:
+    if not SERIES_PATH.exists():
+        return 0
+    data = json.loads(SERIES_PATH.read_text())
+    updated = 0
+    for row in data.get("series") or []:
+        for doc in row.get("documents") or []:
+            if doc.get("kind") != "datasheet":
+                continue
+            href = (doc.get("href") or "").lstrip("/")
+            info = results.get(href)
+            if not info or not info.get("ok"):
+                continue
+            pages = info.get("previews") or []
+            n = len(pages)
+            if not n:
+                continue
+            doc["previewPages"] = [
+                {
+                    "src": "/" + page.replace("\\", "/"),
+                    "alt": f"Produktblad, sida {i} av {n}",
+                }
+                for i, page in enumerate(pages, 1)
+            ]
+            doc["appliesTo"] = f"Engelskt produktblad, {n} {'sida' if n == 1 else 'sidor'}."
+            updated += 1
+    SERIES_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+    return updated
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--one", nargs="?", const=str(SAMPLE_ONE), help="Strip one datasheet and stop")
@@ -308,21 +362,32 @@ def main() -> None:
     if pymupdf is None:
         sys.exit("pymupdf required")
     if args.all:
-        summary = {"ok": 0, "fail": 0, "failures": []}
+        summary: dict = {"ok": 0, "fail": 0, "skipped": 0, "failures": [], "skippedFiles": []}
         files = datasheet_paths()
-        for path in files:
+        results: dict[str, dict] = {}
+        for i, path in enumerate(files, 1):
             info = process_one(path)
+            results[str(path.relative_to(PUBLIC))] = info
             if info.get("ok"):
                 summary["ok"] += 1
+            elif info.get("skipped"):
+                summary["skipped"] += 1
+                summary["skippedFiles"].append(info)
             else:
                 summary["fail"] += 1
                 summary["failures"].append(info)
+            if i % 10 == 0 or i == len(files):
+                print(f"  {i}/{len(files)}", flush=True)
+        summary["seriesUpdated"] = update_series_previews(results)
         print(json.dumps(summary, indent=2, ensure_ascii=False))
         return
     target = Path(args.one) if args.one else SAMPLE_ONE
     if not target.is_absolute():
         target = ROOT / target
-    print(json.dumps(process_one(target), indent=2, ensure_ascii=False))
+    info = process_one(target)
+    print(json.dumps(info, indent=2, ensure_ascii=False))
+    if info.get("ok"):
+        print("seriesUpdated", update_series_previews({info["file"]: info}))
 
 
 if __name__ == "__main__":
