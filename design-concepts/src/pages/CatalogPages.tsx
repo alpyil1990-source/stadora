@@ -16,9 +16,6 @@ import { Breadcrumb } from '../components/Breadcrumb'
 import { PlayActivityListing } from './PlayActivityPages'
 
 const PLAY_SLUG_REDIRECTS: Record<string, string> = {
-  gungor: 'lekplatsutrustning',
-  lekstallningar: 'lekplatsutrustning',
-  lekhus: 'lekplatsutrustning',
   'balans-rorelse': 'klattring-hinderbanor',
   sportytor: 'multisport-bollplaner',
 }

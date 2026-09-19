@@ -201,14 +201,21 @@ export function DesignIndexPage() {
       <section className="border border-line bg-sheet p-6 text-sm">
         <h2 className="text-lg">VVZ-Play</h2>
         <p className="mt-2 text-muted">
-          Stickprov: kombinerad lektorn och vippgunga båge. Lekplats, inte parkbänkar eller sopkärl.
-          Tillverkare syns bara internt. Leverantörens artikelnummer syns bara i admin, inte på
-          hemsidan eller offerten. Pris på förfrågan. Inköps-EUR saknas i den här miljön.
-          Originalbilder och dokument från vvz-play.com.
+          Lekplatsutrustning från wholesale pricelist 2026 — inte parkbänkar eller sopkärl.
+          Underkategorier för inköp: lekställningar, gungor, vippgungor, rutschkanor, karuseller,
+          fjäderlek, lekhus, klättring, tillgänglig lek och övrig lekplatsutrustning. Tillverkare
+          syns bara internt. Leverantörens artikelnummer syns bara i admin, inte på hemsidan eller
+          offerten. Pris på förfrågan. Listpris, 30 % rabatt och nettoinköp (list × 0,70) i intern
+          admin. Certifikat endast internt. DWG för kund efter inloggning på STADORA. Originalbilder
+          och dokument från vvz-play.com.
         </p>
         <p className="mt-3">
-          <Link className="underline" to="/produkter/lek-aktivitet/lekplatsutrustning">
-            Lekplatsutrustning
+          <Link className="underline" to="/produkter/lek-aktivitet/lekstallningar">
+            Lekställningar
+          </Link>
+          {' · '}
+          <Link className="underline" to="/produkter/lek-aktivitet/gungor">
+            Gungor
           </Link>
           {' · '}
           <Link className="underline" to="/produkt/kombinerad-lektorn-vz1-006-15">

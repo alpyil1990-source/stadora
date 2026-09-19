@@ -12,6 +12,12 @@ import {
   pricesForSlug as streetparkForSlug,
   STREETPARK_DEFAULT_DISCOUNT,
 } from './streetpark-prices'
+import {
+  formatEur as formatVvz,
+  netEur as vvzNet,
+  pricesForSlug as vvzForSlug,
+  VVZ_PLAY_DEFAULT_DISCOUNT,
+} from './vvz-play-prices'
 
 export type PurchaseHint = {
   label: string
@@ -19,7 +25,7 @@ export type PurchaseHint = {
   missing: boolean
 }
 
-const PRICE_SUPPLIERS = new Set(['binsignia', 'investim', 'streetpark'])
+const PRICE_SUPPLIERS = new Set(['binsignia', 'investim', 'streetpark', 'vvz-play'])
 
 export function supplierHasPurchaseList(id: string) {
   return PRICE_SUPPLIERS.has(id)
@@ -82,6 +88,21 @@ export function purchaseHint(supplierId: string, slug: string): PurchaseHint | n
     const nets = lists.map((n) => streetparkNet(n, STREETPARK_DEFAULT_DISCOUNT))
     return {
       label: `Listpris ${rangeLabel(lists, formatStreetpark)} · inköp ${STREETPARK_DEFAULT_DISCOUNT} % ${rangeLabel(nets, formatStreetpark)}`,
+      href,
+      missing: false,
+    }
+  }
+
+  if (supplierId === 'vvz-play') {
+    const rows = vvzForSlug(slug)
+    const href = `/admin/leverantorer/vvz-play?produkt=${encodeURIComponent(slug)}#inkopspris`
+    if (!rows.length) {
+      return { label: 'Saknas på VVZ-Play-prislistan 2026', href, missing: true }
+    }
+    const lists = rows.map((r) => r.listEur)
+    const nets = lists.map((n) => vvzNet(n, VVZ_PLAY_DEFAULT_DISCOUNT))
+    return {
+      label: `Listpris ${rangeLabel(lists, formatVvz)} · inköp ${VVZ_PLAY_DEFAULT_DISCOUNT} % ${rangeLabel(nets, formatVvz)}`,
       href,
       missing: false,
     }

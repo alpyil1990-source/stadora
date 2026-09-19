@@ -203,7 +203,7 @@ export const seedSuppliers: Supplier[] = [
     address:
       'Huvudkontor: Kasárenská 9, 911 05 Trenčín, Slovakien. Produktion enligt certifikat: Pod Brezinou 3745/86, 911 01 Trenčín.',
     notes:
-      'Tillstånd att använda produktbilder. Stickprov 2026-09-18: Kombinerad lektorn och Vippgunga båge. Inte parkbänkar, sopkärl eller annan stadsmöbel. Tillverkare VVZ-Play endast internt, inte på den publika produktsidan eller offerten. Leverantörens artikelnummer syns bara i admin, inte på hemsidan eller kundofferten. Inga priser publikt. Wholesale pricelist 2026 saknades som fil i den här miljön — inköps-EUR lämnas tomt, aldrig 0. Originaldokument inklusive märkning. DWG kräver leverantörsinloggning och är inte hämtad. Hämtat 2026-09-18 från vvz-play.com.',
+      'Tillstånd att använda produktbilder. Lekplatsprodukter med inköpspris från wholesale pricelist 2026. Inte parkbänkar, sopkärl eller annan stadsmöbel. Tillverkare VVZ-Play endast internt, inte på den publika produktsidan eller offerten. Leverantörens artikelnummer syns bara i admin, inte på hemsidan eller kundofferten. Inga priser publikt. Listpris, 30 % rabatt och nettoinköp (list × 0,70) ligger i intern admin. Certifikat endast internt. DWG för kund efter inloggning på STADORA. Hämtat 2026-09-19 från vvz-play.com.',
     productSlugs: [...VVZ_PLAY_SLUGS],
   },
 ]

@@ -100,20 +100,20 @@ Se `/design` i prototypen, eller:
 - `/produkter/vantzon-korridor/vagghangda-fallstolar` V-Care Fold, vägghängd
 - `/produkt/v-care-fold` vägghängd fällstol och fällbänk, varianter för 1–4 sittplatser, sits och rygg i trä
 - `/admin/leverantorer/kusch-co` intern Kusch+Co-sida (prislista endast intern)
-- `/produkter/lek-aktivitet/lekplatsutrustning` VVZ-Play stickprov (lektorn och vippgunga)
+- `/produkter/lek-aktivitet/lekstallningar` m.fl. underkategorier med VVZ-Play lekplats
 - `/produkt/kombinerad-lektorn-vz1-006-15` och `/produkt/vippgunga-bage-php004`
-- `/admin/leverantorer/vvz-play` intern VVZ-Play-sida (inköpspris saknas i den här miljön)
+- `/admin/leverantorer/vvz-play` intern VVZ-Play-sida (listpris, 30 % rabatt, nettoinköp)
 
-## VVZ-Play — stickprov (lekplats)
+## VVZ-Play — lekplats
 
-Leverantören har godkänt användning av produktbilder. Inte parkbänkar, sopkärl eller annan stadsmöbel i den här omgången.
+Leverantören har godkänt användning av produktbilder. Inte parkbänkar, sopkärl eller annan stadsmöbel.
 
-- Publik kategori: `/produkter/lek-aktivitet/lekplatsutrustning`
-- Kombinerad lektorn och vippgunga båge
-- Tillverkare VVZ-Play endast internt
+- Publika underkategorier: lekställningar, gungor, vippgungor, rutschkanor, karuseller, fjäderlek, lekhus, klättring, tillgänglig lek, övrig lekplatsutrustning
+- Tillverkare VVZ-Play endast internt, aldrig på listning, produktsida eller offert
 - Leverantörens artikelnummer syns bara i admin, inte på hemsidan eller kundofferten. Pris på förfrågan
-- Wholesale pricelist 2026 fanns inte som fil i importmiljön — inga EUR
-- Originaldokument inklusive märkning. DWG kräver leverantörsinloggning och är inte hämtad
+- Intern inköpslista: ordinarie pris (list EUR), 30 % rabatt, nettoinköp = list × 0,70. Inga påhittade EUR
+- Certifikat finns på produkten internt (`internal_only`), inte för kund
+- DWG publiceras som CAD och kräver inloggning på STADORA (samma grind som övrig CAD)
 
 Picknickset-landningssidor utan eget modellnummer importeras inte. Saknat svenskt produktblad räknas inte som ofullständig post; engelska produktkort märks som engelska.
 

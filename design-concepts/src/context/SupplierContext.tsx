@@ -26,13 +26,30 @@ type SupplierValue = {
 const SupplierContext = createContext<SupplierValue | null>(null)
 const STORAGE_KEY = 'stadora-suppliers-v16'
 
+function mergeSeed(stored: Supplier[]): Supplier[] {
+  const byId = new Map(stored.map((s) => [s.id, s]))
+  const seedIds = new Set(seedSuppliers.map((s) => s.id))
+  const merged = seedSuppliers.map((seed) => {
+    const prev = byId.get(seed.id)
+    if (!prev) return seed
+    return {
+      ...seed,
+      contact: { ...seed.contact, ...prev.contact },
+      status: prev.status ?? seed.status,
+      notes: seed.notes,
+      productSlugs: [...new Set([...seed.productSlugs, ...prev.productSlugs])],
+    }
+  })
+  return [...merged, ...stored.filter((s) => !seedIds.has(s.id))]
+}
+
 function load(): Supplier[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return seedSuppliers
     const parsed = JSON.parse(raw) as { suppliers?: Supplier[] }
     if (!Array.isArray(parsed.suppliers) || parsed.suppliers.length === 0) return seedSuppliers
-    return parsed.suppliers
+    return mergeSeed(parsed.suppliers)
   } catch {
     return seedSuppliers
   }

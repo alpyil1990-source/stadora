@@ -102,6 +102,7 @@ function toProduct(row: SeriesJson): Product {
       sourceUrl: d.sourceUrl,
       fetchedAt: d.fetchedAt,
       appliesTo: d.appliesTo,
+      access: d.access,
     })),
     imageNote: row.imageNote,
     documentPolicy: row.documentPolicy,
@@ -114,8 +115,21 @@ export const vvzPlayProducts: Record<string, Product> = Object.fromEntries(
 
 export const VVZ_PLAY_SLUGS = series.map((row) => row.slug)
 
+function slugsFor(sub: string) {
+  return series.filter((row) => row.subcategorySlug === sub).map((row) => row.slug)
+}
+
 export const vvzPlayCatalogSlugs = {
-  lekplatsutrustning: [...VVZ_PLAY_SLUGS],
+  lekplatsutrustning: slugsFor('lekplatsutrustning'),
+  lekstallningar: slugsFor('lekstallningar'),
+  gungor: slugsFor('gungor'),
+  vippgungor: slugsFor('vippgungor'),
+  rutschkanor: slugsFor('rutschkanor'),
+  karuseller: slugsFor('karuseller'),
+  fjaderlek: slugsFor('fjaderlek'),
+  lekhus: slugsFor('lekhus'),
+  'klattring-hinderbanor': slugsFor('klattring-hinderbanor'),
+  'tillganglig-lek': slugsFor('tillganglig-lek'),
 }
 
 export const vvzPlayGaps = series.map((row) => ({

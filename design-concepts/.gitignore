@@ -27,6 +27,9 @@ internal/*.db
 # STREETPARK original datasheets (public copies are stripped)
 internal/streetpark/
 
+# VVZ-Play import caches and supplier originals
+internal/vvz-play/
+
 # Working copies before listing-thumb padding
 internal/listing-unpadded/
 

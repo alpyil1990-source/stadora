@@ -66,6 +66,7 @@ export type ProductDocumentKind =
   | 'warranty'
   | 'maintenance'
   | 'material'
+  | 'certificate'
   | 'image'
   | 'other'
 

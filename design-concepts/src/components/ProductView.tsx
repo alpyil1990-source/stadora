@@ -1107,12 +1107,15 @@ function groupDocuments(docs: ProductDocument[]) {
   const buckets: { label: string; items: ProductDocument[] }[] = [
     { label: 'Ritningar', items: [] },
     { label: 'Produktblad och anvisningar', items: [] },
+    { label: 'Certifikat', items: [] },
     { label: 'CAD och originalfiler', items: [] },
   ]
   for (const doc of docs) {
     if (doc.kind === 'drawing' || doc.kind === 'perspective' || doc.kind === 'image') {
       buckets[0].items.push(doc)
     } else if (doc.kind === 'cad' || doc.kind === 'other') {
+      buckets[3].items.push(doc)
+    } else if (doc.kind === 'certificate') {
       buckets[2].items.push(doc)
     } else {
       buckets[1].items.push(doc)
