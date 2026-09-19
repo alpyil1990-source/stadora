@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useQuote, type QuoteLine } from '../context/QuoteContext'
-import { products, publicManufacturer, quantityLegend, quantityUnit, quoteShowsArticleNumber } from '../data/content'
+import { useProductCatalog } from '../context/ProductCatalogContext'
+import { publicManufacturer, quantityLegend, quantityUnit, quoteShowsArticleNumber, type Product } from '../data/content'
 import { EXAMPLE_IMAGE_NOTE } from '../data/gallery'
 
 function QuoteMaker({ slug, as = 'p' }: { slug: string; as?: 'p' | 'span' }) {
+  const { products } = useProductCatalog()
   const maker = publicManufacturer(products[slug])
   if (!maker) return null
   const className = as === 'span' ? 'block text-xs text-muted' : 'text-xs text-muted'
@@ -12,7 +14,7 @@ function QuoteMaker({ slug, as = 'p' }: { slug: string; as?: 'p' | 'span' }) {
   return <p className={className}>Tillverkare: {maker}</p>
 }
 
-function lineImage(line: QuoteLine) {
+function lineImage(line: QuoteLine, products: Record<string, Product>) {
   if (line.image) return { src: line.image, alt: line.imageAlt ?? line.name }
   const fallback = products[line.slug]?.images[0]
   if (fallback) return { src: fallback.src, alt: fallback.alt }
@@ -20,7 +22,8 @@ function lineImage(line: QuoteLine) {
 }
 
 function QuoteThumb({ line, size = 'md' }: { line: QuoteLine; size?: 'sm' | 'md' }) {
-  const img = lineImage(line)
+  const { products } = useProductCatalog()
+  const img = lineImage(line, products)
   const box = size === 'sm' ? 'h-10 w-10' : 'h-16 w-16'
   return (
     <span
@@ -39,6 +42,7 @@ function QuoteThumb({ line, size = 'md' }: { line: QuoteLine; size?: 'sm' | 'md'
 
 export function QuoteListPage() {
   const { lines, update, remove, count, pieces, area } = useQuote()
+  const { products } = useProductCatalog()
 
   return (
     <div>
@@ -125,6 +129,7 @@ export function QuoteListPage() {
 
 export function QuoteFormPage() {
   const { lines, pieces, area, clear } = useQuote()
+  const { products } = useProductCatalog()
   const [sent, setSent] = useState(false)
   const [ref] = useState(() => {
     const d = new Date()

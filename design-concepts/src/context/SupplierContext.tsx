@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
-import { products } from '../data/content'
+import { useProductCatalog } from './ProductCatalogContext'
 import {
   newSupplierId,
   seedSuppliers,
@@ -56,6 +56,7 @@ function load(): Supplier[] {
 }
 
 export function SupplierProvider({ children }: { children: ReactNode }) {
+  const { products } = useProductCatalog()
   const [suppliers, setSuppliers] = useState<Supplier[]>(load)
 
   useEffect(() => {
@@ -119,7 +120,7 @@ export function SupplierProvider({ children }: { children: ReactNode }) {
           !suppliers.some((s) => s.productSlugs.includes(slug)),
       ),
     }
-  }, [suppliers])
+  }, [products, suppliers])
 
   return <SupplierContext.Provider value={value}>{children}</SupplierContext.Provider>
 }

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
-import { BINSIGNIA_SLUGS, INVESTIM_SLUGS, STREETPARK_SLUGS, productPath, products } from '../data/content'
+import { BINSIGNIA_SLUGS, INVESTIM_SLUGS, STREETPARK_SLUGS, productPath } from '../data/content'
+import { CatalogGate } from '../components/CatalogStatus'
+import { useProductCatalog } from '../context/ProductCatalogContext'
 
 export function DesignIndexPage() {
   return (
@@ -245,6 +247,7 @@ export function DesignIndexPage() {
 }
 
 export function BinsigniaDraftPage() {
+  const { products } = useProductCatalog()
   const items = BINSIGNIA_SLUGS.map((slug) => products[slug]).filter(Boolean)
   const groups = [
     { name: 'Askkoppar', slug: 'askkoppar', href: '/produkter/avfall-atervinning/askkoppar' },
@@ -253,6 +256,7 @@ export function BinsigniaDraftPage() {
   ]
 
   return (
+    <CatalogGate>
     <div className="space-y-10">
       <div>
         <p className="kicker">Intern översikt · avfall</p>
@@ -303,10 +307,12 @@ export function BinsigniaDraftPage() {
         </ul>
       </section>
     </div>
+    </CatalogGate>
   )
 }
 
 export function InvestimDraftPage() {
+  const { products } = useProductCatalog()
   const items = INVESTIM_SLUGS.map((slug) => products[slug]).filter(Boolean)
   const groups = [
     { name: 'Parkbänkar', slug: 'parkbankar', href: '/produkter/parkmobler/parkbankar' },
@@ -320,6 +326,7 @@ export function InvestimDraftPage() {
   ]
 
   return (
+    <CatalogGate>
     <div className="space-y-10">
       <div>
         <p className="kicker">Intern översikt · park och pollare</p>
@@ -370,10 +377,12 @@ export function InvestimDraftPage() {
         </ul>
       </section>
     </div>
+    </CatalogGate>
   )
 }
 
 export function StreetparkDraftPage() {
+  const { products } = useProductCatalog()
   const items = STREETPARK_SLUGS.map((slug) => products[slug]).filter(Boolean)
   const groups = [
     { name: 'Parkbänkar', slug: 'parkbankar', href: '/produkter/parkmobler/parkbankar' },
@@ -386,6 +395,7 @@ export function StreetparkDraftPage() {
   ]
 
   return (
+    <CatalogGate>
     <div className="space-y-10">
       <div>
         <p className="kicker">Intern översikt · STREETPARK</p>
@@ -428,6 +438,7 @@ export function StreetparkDraftPage() {
         )
       })}
     </div>
+    </CatalogGate>
   )
 }
 

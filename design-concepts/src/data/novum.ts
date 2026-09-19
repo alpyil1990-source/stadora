@@ -1,5 +1,7 @@
 import type { Product, ProductDocument, ProductImage } from './content'
-import catalogFile from './generated/novum-series.json'
+import { NOVUM_SLUGS, novumCatalogSlugs } from './catalog-index'
+
+export { NOVUM_SLUGS, novumCatalogSlugs }
 
 export type DocumentAccess = 'internal_only' | 'registered_customer' | 'public'
 
@@ -58,8 +60,6 @@ type SeriesJson = {
   gaps?: string[]
   contradiction?: string | null
 }
-
-const series = catalogFile.series as SeriesJson[]
 
 function fileHref(fileId: string) {
   return `/api/files/${fileId}`
@@ -125,24 +125,24 @@ function toProduct(row: SeriesJson): Product {
   }
 }
 
-export const novumProducts: Record<string, Product> = Object.fromEntries(
-  series.map((row) => [row.slug, toProduct(row)]),
-)
-
-export const NOVUM_SLUGS = series.map((row) => row.slug)
-
-/**
- * Listing slugs for the unpublished Utegym test grid.
- * Products stay internal_preview; this is not publication of the rest of Fitness Devices.
- */
-export const novumCatalogSlugs = {
-  utegym: [...NOVUM_SLUGS],
+export type NovumGap = {
+  slug: string
+  name: string
+  sku: string
+  gaps: string[]
+  contradiction: string | null
 }
 
-export const novumGaps = series.map((row) => ({
-  slug: row.slug,
-  name: row.name,
-  sku: row.sku,
-  gaps: row.gaps ?? [],
-  contradiction: row.contradiction ?? null,
-}))
+export function buildNovumCatalog(catalogFile: { series?: unknown[] }) {
+  const series = (catalogFile.series ?? []) as SeriesJson[]
+  return {
+    products: Object.fromEntries(series.map((row) => [row.slug, toProduct(row)])) as Record<string, Product>,
+    gaps: series.map((row) => ({
+      slug: row.slug,
+      name: row.name,
+      sku: row.sku,
+      gaps: row.gaps ?? [],
+      contradiction: row.contradiction ?? null,
+    })) as NovumGap[],
+  }
+}

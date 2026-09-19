@@ -1,5 +1,7 @@
 import type { MaterialFinish, Product, SizeOption } from './content'
-import catalogFile from './generated/avfall-series.json'
+import { BINSIGNIA_REST_SLUGS, avfallCatalogSlugs } from './catalog-index'
+
+export { BINSIGNIA_REST_SLUGS, avfallCatalogSlugs }
 
 const DOCS =
   'Ritningar och datablad publiceras inte på produktsidan. Behöver projektet måttunderlag eller ritning tar vi fram det i offerten.'
@@ -35,8 +37,6 @@ type SeriesJson = {
   variants: { label: string; options: string[] }[]
   related: string[]
 }
-
-const series = catalogFile.series as SeriesJson[]
 
 function toSizes(rows: SeriesJson['sizes']): SizeOption[] {
   return rows.map((r) => ({
@@ -94,14 +94,7 @@ function toProduct(row: SeriesJson): Product {
   }
 }
 
-export const avfallCatalogSlugs = catalogFile.catalog as {
-  askkoppar: string[]
-  kallsortering: string[]
-  papperskorgar: string[]
+export function buildBinsigniaRestProducts(catalogFile: { series?: unknown[] }) {
+  const series = (catalogFile.series ?? []) as SeriesJson[]
+  return Object.fromEntries(series.map((row) => [row.slug, toProduct(row)])) as Record<string, Product>
 }
-
-export const binsigniaRestProducts: Record<string, Product> = Object.fromEntries(
-  series.map((row) => [row.slug, toProduct(row)]),
-)
-
-export const BINSIGNIA_REST_SLUGS = series.map((row) => row.slug)

@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { useSuppliers } from '../../context/SupplierContext'
-import { products, productPath } from '../../data/content'
+import { useProductCatalog } from '../../context/ProductCatalogContext'
+import { productPath } from '../../data/content'
 import { colorChoices, hasColorTaggedImages, hasSizeTaggedImages } from '../../data/gallery'
 import { purchaseHint, supplierHasPurchaseList } from '../../data/purchase-admin'
 import { supplierStatusLabel, type SupplierStatus } from '../../data/suppliers'
@@ -20,6 +21,7 @@ export function AdminSupplierDetail() {
   const navigate = useNavigate()
   const { suppliers, update, updateContact, assignProduct, unassignProduct, remove, productCount } =
     useSuppliers()
+  const { products } = useProductCatalog()
   const supplier = suppliers.find((s) => s.id === id)
   const [confirmRemove, setConfirmRemove] = useState(false)
   const [pick, setPick] = useState('')

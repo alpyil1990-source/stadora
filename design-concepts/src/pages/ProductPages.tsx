@@ -1,6 +1,8 @@
 import { Navigate, useParams } from 'react-router-dom'
 import { ProductView, type ProductLayout } from '../components/ProductView'
-import { products } from '../data/content'
+import { CatalogError, CatalogLoading } from '../components/CatalogStatus'
+import { useProductCatalog } from '../context/ProductCatalogContext'
+import { products as coreProducts } from '../data/content'
 import { INOPLEX_SLUG_REDIRECTS } from '../data/inoplex'
 import { KUSCH_VCARE_FOLD_REDIRECTS } from '../data/kusch-vcare-fold'
 import { ZANO_REMOVED_PRODUCT_REDIRECTS } from '../data/zano'
@@ -16,7 +18,8 @@ export function ProductPage({
 }) {
   const params = useParams()
   const key = slug ?? params.slug ?? 'parkbank-arsta'
-  const removed = ZANO_REMOVED_PRODUCT_REDIRECTS[key]
+  const { products, status, error, reload, zanoRemovedRedirects } = useProductCatalog()
+  const removed = ZANO_REMOVED_PRODUCT_REDIRECTS[key] ?? zanoRemovedRedirects[key]
   if (removed) {
     return <Navigate to={removed} replace />
   }
@@ -25,7 +28,11 @@ export function ProductPage({
     return <Navigate to={intern ? `/intern/produkt/${redirected}` : `/produkt/${redirected}`} replace />
   }
   const product = products[key]
-  if (!product) return <Navigate to="/" replace />
+  if (!product) {
+    if (status === 'loading') return <CatalogLoading title="Laddar produkten…" />
+    if (status === 'error') return <CatalogError message={error} onRetry={reload} />
+    return <Navigate to="/" replace />
+  }
   if (product.visibility === 'internal_preview' && !intern) {
     return <Navigate to={`/intern/produkt/${product.slug}`} replace />
   }
@@ -33,9 +40,9 @@ export function ProductPage({
 }
 
 export function ProductLayoutA() {
-  return <ProductView product={products['parkbank-arsta']} layout="spec" />
+  return <ProductView product={coreProducts['parkbank-arsta']} layout="spec" />
 }
 
 export function ProductLayoutB() {
-  return <ProductView product={products['parkbank-arsta']} layout="visual" />
+  return <ProductView product={coreProducts['parkbank-arsta']} layout="visual" />
 }

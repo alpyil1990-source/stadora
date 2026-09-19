@@ -1,5 +1,7 @@
 import type { Product, ProductDocument, ProductImage, SizeOption } from './content'
-import catalogFile from './generated/kusch-vcare-fold.json'
+import { KUSCH_VCARE_FOLD_SLUGS, kuschCatalogSlugs } from './catalog-index'
+
+export { KUSCH_VCARE_FOLD_SLUGS, kuschCatalogSlugs }
 
 type OptJson = {
   id: string
@@ -54,8 +56,6 @@ type SeriesJson = {
   mounting: string[]
   standards?: string[]
 }
-
-const series = catalogFile.series as unknown as SeriesJson[]
 
 function toProduct(row: SeriesJson): Product {
   return {
@@ -113,20 +113,6 @@ function toProduct(row: SeriesJson): Product {
   }
 }
 
-function slugsFor(sub: string) {
-  return series.filter((r) => r.subcategorySlug === sub).map((r) => r.slug)
-}
-
-export const kuschCatalogSlugs = {
-  'vagghangda-fallstolar': slugsFor('vagghangda-fallstolar'),
-}
-
-export const kuschVcareFoldProducts: Record<string, Product> = Object.fromEntries(
-  series.map((row) => [row.slug, toProduct(row)]),
-)
-
-export const KUSCH_VCARE_FOLD_SLUGS = series.map((row) => row.slug)
-
 export const KUSCH_VCARE_FOLD_REDIRECTS: Record<string, string> = {
   'v-care-fold-1u-mw-w': 'v-care-fold',
   'v-care-fold-1u-mw-uph': 'v-care-fold',
@@ -163,4 +149,9 @@ export function kuschFoldSeatMaterial(state: Record<string, string>): string | u
     return `${named}. Sits och rygg samma kulör.`
   }
   return 'Sits och rygg i trä, samma kulör.'
+}
+
+export function buildKuschProducts(catalogFile: { series?: unknown[] }) {
+  const series = (catalogFile.series ?? []) as unknown as SeriesJson[]
+  return Object.fromEntries(series.map((row) => [row.slug, toProduct(row)])) as Record<string, Product>
 }

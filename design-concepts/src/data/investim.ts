@@ -1,5 +1,7 @@
 import type { Product, SizeOption } from './content'
-import catalogFile from './generated/investim-series.json'
+import { INVESTIM_SLUGS, investimCatalogSlugs } from './catalog-index'
+
+export { INVESTIM_SLUGS, investimCatalogSlugs }
 
 const DOCS =
   'Ritningar och datablad publiceras inte på produktsidan. Behöver projektet måttunderlag eller ritning tar vi fram det i offerten.'
@@ -36,8 +38,6 @@ type SeriesJson = {
   related: string[]
   images: { file: string; alt: string }[]
 }
-
-const series = catalogFile.series as SeriesJson[]
 
 function toSizes(rows: SeriesJson['sizes']): SizeOption[] | undefined {
   if (!rows.length) return undefined
@@ -83,19 +83,7 @@ function toProduct(row: SeriesJson): Product {
   }
 }
 
-export const investimCatalogSlugs = catalogFile.catalog as {
-  parkbankar: string[]
-  betongbankar: string[]
-  pollare: string[]
-  cykelstall: string[]
-  planteringskarl: string[]
-  papperskorgar: string[]
-  'bord-picknick': string[]
-  'modulara-sitt': string[]
+export function buildInvestimProducts(catalogFile: { series?: unknown[] }) {
+  const series = (catalogFile.series ?? []) as SeriesJson[]
+  return Object.fromEntries(series.map((row) => [row.slug, toProduct(row)])) as Record<string, Product>
 }
-
-export const investimProducts: Record<string, Product> = Object.fromEntries(
-  series.map((row) => [row.slug, toProduct(row)]),
-)
-
-export const INVESTIM_SLUGS = series.map((row) => row.slug)

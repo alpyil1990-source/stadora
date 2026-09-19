@@ -8,12 +8,14 @@ import {
   investimPriceMeta,
   investimPrices,
 } from '../../data/investim-prices'
-import { productPath, products } from '../../data/content'
+import { productPath } from '../../data/content'
+import { useProductCatalog } from '../../context/ProductCatalogContext'
 
 const ALL = 'all'
 const groups = investimGroups()
 
 export function AdminInvestimTerms() {
+  const { products } = useProductCatalog()
   const [params, setParams] = useSearchParams()
   const group = params.get('grupp') ?? ALL
   const produkt = params.get('produkt')

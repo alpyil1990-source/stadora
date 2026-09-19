@@ -3,7 +3,9 @@ import { SlidersHorizontal, X } from 'lucide-react'
 import { ListingCard } from '../components/ListingCard'
 import { PRODUCT_LISTING_GRID } from '../components/ProductCard'
 import { Breadcrumb } from '../components/Breadcrumb'
-import { products, type Product } from '../data/content'
+import { type Product } from '../data/content'
+import { useProductCatalog } from '../context/ProductCatalogContext'
+import { CatalogError, CatalogLoading } from '../components/CatalogStatus'
 import {
   categoryPath,
   type CategoryDef,
@@ -78,6 +80,7 @@ export function PlayActivityListing({
   sub: SubcategoryDef
 }) {
   const previewReady = useListingPreview()
+  const { products, status, error, reload } = useProductCatalog()
   const drawerId = useId()
   const [age, setAge] = useState<string[]>([])
   const [users, setUsers] = useState<string[]>([])
@@ -86,7 +89,7 @@ export function PlayActivityListing({
 
   const items = useMemo(
     () => sub.productSlugs.map((slug) => products[slug]).filter(Boolean),
-    [sub.productSlugs],
+    [products, sub.productSlugs],
   )
   const ageOpts = useMemo(() => uniqueValues(items, (p) => p.ageRange), [items])
   const userOpts = useMemo(() => uniqueValues(items, (p) => p.users), [items])
@@ -118,6 +121,13 @@ export function PlayActivityListing({
 
   if (!previewReady) {
     return <p className="text-sm text-muted">Öppnar listningen…</p>
+  }
+
+  if (sub.productSlugs.length > 0 && status === 'loading' && items.length === 0) {
+    return <CatalogLoading />
+  }
+  if (sub.productSlugs.length > 0 && status === 'error' && items.length === 0) {
+    return <CatalogError message={error} onRetry={reload} />
   }
 
   return (

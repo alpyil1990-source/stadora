@@ -1,6 +1,8 @@
 import type { ColorOption, Product, ProductDocument, ProductImage, SizeOption } from './content'
-import catalogFile from './generated/streetpark-series.json'
+import { STREETPARK_SLUGS, streetparkCatalogSlugs } from './catalog-index'
 import { finishSwatchHex } from './streetpark-finishes'
+
+export { STREETPARK_SLUGS, streetparkCatalogSlugs }
 
 const GALLERY_LOCKED_NOTE =
   'Bilden visar ett exempelutförande. Kulör på skärm kan avvika. Modellvalet ändrar dokument, inte bildgalleriet.'
@@ -70,8 +72,6 @@ type SeriesJson = {
   documents: DocJson[]
   imageNote?: string
 }
-
-const series = catalogFile.series as SeriesJson[]
 
 function toSizes(rows: SeriesJson['sizes']): SizeOption[] | undefined {
   if (!rows.length) return undefined
@@ -191,18 +191,7 @@ function toProduct(row: SeriesJson): Product {
   }
 }
 
-export const streetparkCatalogSlugs = {
-  parkbankar: catalogFile.catalog.parkbankar as string[],
-  papperskorgar: catalogFile.catalog.papperskorgar as string[],
-  askkoppar: catalogFile.catalog.askkoppar as string[],
-  cykelstall: catalogFile.catalog.cykelstall as string[],
-  'bord-picknick': catalogFile.catalog['bord-picknick'] as string[],
-  pollare: catalogFile.catalog.pollare as string[],
-  sitto: ((catalogFile.catalog as { sitto?: string[] }).sitto ?? []) as string[],
+export function buildStreetparkProducts(catalogFile: { series?: unknown[] }) {
+  const series = (catalogFile.series ?? []) as SeriesJson[]
+  return Object.fromEntries(series.map((row) => [row.slug, toProduct(row)])) as Record<string, Product>
 }
-
-export const streetparkProducts: Record<string, Product> = Object.fromEntries(
-  series.map((row) => [row.slug, toProduct(row)]),
-)
-
-export const STREETPARK_SLUGS = series.map((row) => row.slug)

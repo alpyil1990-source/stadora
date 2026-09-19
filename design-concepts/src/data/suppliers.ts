@@ -1,11 +1,13 @@
 import { BINSIGNIA_SLUGS } from './binsignia'
-import { INVESTIM_SLUGS } from './investim'
-import { INOPLEX_SLUGS } from './inoplex'
-import { STREETPARK_SLUGS } from './streetpark'
-import { ZANO_SLUGS } from './zano'
-import { NOVUM_SLUGS } from './novum'
-import { KUSCH_VCARE_FOLD_SLUGS } from './kusch-vcare-fold'
-import { VVZ_PLAY_SLUGS } from './vvz-play'
+import {
+  INVESTIM_SLUGS,
+  INOPLEX_SLUGS,
+  KUSCH_VCARE_FOLD_SLUGS,
+  NOVUM_SLUGS,
+  STREETPARK_SLUGS,
+  VVZ_PLAY_SLUGS,
+  ZANO_SLUGS,
+} from './catalog-index'
 
 export type SupplierStatus = 'aktiv' | 'invantar_underlag' | 'pausad'
 

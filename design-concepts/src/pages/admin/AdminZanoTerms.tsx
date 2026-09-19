@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
-import { ZANO_SLUGS, zanoGaps, zanoProducts, zanoQc } from '../../data/zano'
+import { ZANO_SLUGS } from '../../data/catalog-index'
 import { productPath } from '../../data/content'
+import { useProductCatalog } from '../../context/ProductCatalogContext'
 
 export function AdminZanoTerms() {
+  const { products, zanoGaps, zanoQc } = useProductCatalog()
   const withGaps = zanoGaps.filter((g) => g.gaps.length > 0)
   const noSv = zanoQc.withoutSwedishDatasheet ?? []
   const noDocs = zanoQc.withoutDocuments ?? []
@@ -43,7 +45,7 @@ export function AdminZanoTerms() {
       </ul>
       <ul className="max-h-64 overflow-auto divide-y divide-line border border-line text-sm">
         {ZANO_SLUGS.map((slug) => {
-          const p = zanoProducts[slug]
+          const p = products[slug]
           if (!p) return null
           return (
             <li key={slug} className="px-3 py-1.5">

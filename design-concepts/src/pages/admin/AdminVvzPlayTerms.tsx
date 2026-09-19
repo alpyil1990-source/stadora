@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { productPath } from '../../data/content'
-import { VVZ_PLAY_SLUGS, vvzPlayGaps, vvzPlayProducts } from '../../data/vvz-play'
+import { VVZ_PLAY_SLUGS } from '../../data/catalog-index'
+import { useProductCatalog } from '../../context/ProductCatalogContext'
 import {
   formatEur,
   vvzPlayFamilies,
@@ -14,15 +15,16 @@ import {
 const ALL = 'all'
 
 export function AdminVvzPlayTerms() {
-  const images = VVZ_PLAY_SLUGS.reduce((n, slug) => n + (vvzPlayProducts[slug]?.images.length ?? 0), 0)
-  const docs = VVZ_PLAY_SLUGS.reduce((n, slug) => n + (vvzPlayProducts[slug]?.documents?.length ?? 0), 0)
+  const { products, vvzPlayGaps } = useProductCatalog()
+  const images = VVZ_PLAY_SLUGS.reduce((n, slug) => n + (products[slug]?.images.length ?? 0), 0)
+  const docs = VVZ_PLAY_SLUGS.reduce((n, slug) => n + (products[slug]?.documents?.length ?? 0), 0)
   const certs = VVZ_PLAY_SLUGS.reduce(
     (n, slug) =>
-      n + (vvzPlayProducts[slug]?.documents?.filter((d) => d.kind === 'certificate' || d.access === 'internal_only').length ?? 0),
+      n + (products[slug]?.documents?.filter((d) => d.kind === 'certificate' || d.access === 'internal_only').length ?? 0),
     0,
   )
   const cad = VVZ_PLAY_SLUGS.reduce(
-    (n, slug) => n + (vvzPlayProducts[slug]?.documents?.filter((d) => d.format === 'DWG').length ?? 0),
+    (n, slug) => n + (products[slug]?.documents?.filter((d) => d.format === 'DWG').length ?? 0),
     0,
   )
 
@@ -174,7 +176,7 @@ export function AdminVvzPlayTerms() {
                 </tr>
               ) : (
                 rows.map((r) => {
-                  const p = vvzPlayProducts[r.slug]
+                  const p = products[r.slug]
                   return (
                     <tr key={r.sku}>
                       <td className="tabular-nums">{r.sku}</td>
@@ -210,7 +212,7 @@ export function AdminVvzPlayTerms() {
         </p>
         <ul className="max-h-64 overflow-auto divide-y divide-line border border-line text-sm">
           {VVZ_PLAY_SLUGS.map((slug) => {
-            const p = vvzPlayProducts[slug]
+            const p = products[slug]
             if (!p) return null
             const internCerts = (p.documents ?? []).filter(
               (d) => d.kind === 'certificate' || d.access === 'internal_only',

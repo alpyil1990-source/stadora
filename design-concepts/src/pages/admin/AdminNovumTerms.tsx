@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import { productPath } from '../../data/content'
-import { NOVUM_SLUGS, novumGaps, novumProducts } from '../../data/novum'
+import { NOVUM_SLUGS } from '../../data/catalog-index'
+import { useProductCatalog } from '../../context/ProductCatalogContext'
 
 export function AdminNovumTerms() {
-  const images = NOVUM_SLUGS.reduce((n, slug) => n + (novumProducts[slug]?.images.length ?? 0), 0)
-  const docs = NOVUM_SLUGS.reduce((n, slug) => n + (novumProducts[slug]?.documents?.length ?? 0), 0)
+  const { products, novumGaps } = useProductCatalog()
+  const images = NOVUM_SLUGS.reduce((n, slug) => n + (products[slug]?.images.length ?? 0), 0)
+  const docs = NOVUM_SLUGS.reduce((n, slug) => n + (products[slug]?.documents?.length ?? 0), 0)
   return (
     <section id="novum-testimport" className="scroll-mt-8 space-y-4 border border-line bg-sheet p-5">
       <div>
@@ -39,7 +41,7 @@ export function AdminNovumTerms() {
       </ul>
       <ul className="divide-y divide-line border border-line text-sm">
         {NOVUM_SLUGS.map((slug) => {
-          const p = novumProducts[slug]
+          const p = products[slug]
           if (!p) return null
           return (
             <li key={slug} className="px-3 py-2">

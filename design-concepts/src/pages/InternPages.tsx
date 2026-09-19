@@ -3,7 +3,8 @@ import { Link, Outlet } from 'react-router-dom'
 import { ListingCard } from '../components/ListingCard'
 import { PRODUCT_LISTING_GRID } from '../components/ProductCard'
 import { unpublishedProducts } from '../data/content'
-import { novumGaps } from '../data/novum'
+import { useProductCatalog } from '../context/ProductCatalogContext'
+import { CatalogGate } from '../components/CatalogStatus'
 import { api } from '../lib/api'
 
 export function InternLayout() {
@@ -37,8 +38,10 @@ export function InternLayout() {
 }
 
 export function InternHomePage() {
-  const items = unpublishedProducts()
+  const { products, novumGaps } = useProductCatalog()
+  const items = unpublishedProducts(products)
   return (
+    <CatalogGate>
     <div className="space-y-8">
       <div>
         <p className="kicker">Intern testmiljö</p>
@@ -100,5 +103,6 @@ export function InternHomePage() {
         </section>
       )}
     </div>
+    </CatalogGate>
   )
 }

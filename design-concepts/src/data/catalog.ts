@@ -1,11 +1,13 @@
-import { avfallCatalogSlugs } from './binsignia-rest'
-import { investimCatalogSlugs } from './investim'
-import { inoplexCatalogSlugs } from './inoplex'
-import { streetparkCatalogSlugs } from './streetpark'
-import { zanoCatalogSlugs } from './zano'
-import { novumCatalogSlugs } from './novum'
-import { kuschCatalogSlugs } from './kusch-vcare-fold'
-import { vvzPlayCatalogSlugs } from './vvz-play'
+import {
+  avfallCatalogSlugs,
+  investimCatalogSlugs,
+  inoplexCatalogSlugs,
+  kuschCatalogSlugs,
+  novumCatalogSlugs,
+  streetparkCatalogSlugs,
+  vvzPlayCatalogSlugs,
+  zanoCatalogSlugs,
+} from './catalog-index'
 
 export type CatalogStatus = 'published' | 'needs_work' | 'draft'
 

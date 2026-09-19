@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { products, type Product, isPublicProduct } from '../data/content'
+import { type Product, isPublicProduct } from '../data/content'
+import { useProductCatalog } from '../context/ProductCatalogContext'
+import { CatalogError, CatalogLoading } from '../components/CatalogStatus'
 import {
   catalog,
   categoryPath,
@@ -116,6 +118,7 @@ export function CategoryHubPage() {
 
 export function SubcategoryListPage() {
   const { categorySlug, subcategorySlug } = useParams()
+  const { products, status, error, reload } = useProductCatalog()
   const category = findCategory(categorySlug)
   const [on, setOn] = useState<Record<string, string[]>>({})
   if (!category) return <Navigate to="/produkter" replace />
@@ -135,6 +138,8 @@ export function SubcategoryListPage() {
   }
 
   const items = sub.productSlugs.map((slug) => products[slug]).filter(isPublicProduct)
+  const catalogPending = sub.productSlugs.length > 0 && status !== 'ready'
+  const catalogFailed = catalogPending && status === 'error'
   const filters = sub.filters
 
   function toggle(legend: string, opt: string) {
@@ -280,7 +285,11 @@ export function SubcategoryListPage() {
         <p className="mt-6 text-sm text-muted">Filter visas när underkategorin har produkter.</p>
       )}
       <div className="mt-6">
-        {empty ? (
+        {catalogFailed ? (
+          <CatalogError message={error} onRetry={reload} />
+        ) : catalogPending ? (
+          <CatalogLoading />
+        ) : empty ? (
           <div className="border border-dashed border-line p-6">
             <p className="font-medium">Inga produkter här ännu</p>
             <p className="mt-2 text-sm text-muted">

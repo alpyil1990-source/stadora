@@ -1,6 +1,8 @@
 import type { ColorOption, Product, ProductDocument, ProductImage } from './content'
+import { VVZ_PLAY_SLUGS, vvzPlayCatalogSlugs } from './catalog-index'
 import { normalizeCatalogColors, normalizeCatalogImages } from './gallery'
-import catalogFile from './generated/vvz-play-series.json'
+
+export { VVZ_PLAY_SLUGS, vvzPlayCatalogSlugs }
 
 type ImageJson = ProductImage & {
   color?: string
@@ -45,8 +47,6 @@ type SeriesJson = {
   gaps?: string[]
   contradiction?: string | null
 }
-
-const series = catalogFile.series as unknown as SeriesJson[]
 
 function toColors(rows: SeriesJson['colors'], images: ProductImage[]): ColorOption[] | undefined {
   if (!rows.length) return undefined
@@ -117,33 +117,24 @@ function toProduct(row: SeriesJson): Product {
   }
 }
 
-export const vvzPlayProducts: Record<string, Product> = Object.fromEntries(
-  series.map((row) => [row.slug, toProduct(row)]),
-)
-
-export const VVZ_PLAY_SLUGS = series.map((row) => row.slug)
-
-function slugsFor(sub: string) {
-  return series.filter((row) => row.subcategorySlug === sub).map((row) => row.slug)
+export type VvzPlayGap = {
+  slug: string
+  name: string
+  sku: string
+  gaps: string[]
+  contradiction: string | null
 }
 
-export const vvzPlayCatalogSlugs = {
-  lekplatsutrustning: slugsFor('lekplatsutrustning'),
-  lekstallningar: slugsFor('lekstallningar'),
-  gungor: slugsFor('gungor'),
-  vippgungor: slugsFor('vippgungor'),
-  rutschkanor: slugsFor('rutschkanor'),
-  karuseller: slugsFor('karuseller'),
-  fjaderlek: slugsFor('fjaderlek'),
-  lekhus: slugsFor('lekhus'),
-  'klattring-hinderbanor': slugsFor('klattring-hinderbanor'),
-  'tillganglig-lek': slugsFor('tillganglig-lek'),
+export function buildVvzPlayCatalog(catalogFile: { series?: unknown[] }) {
+  const series = (catalogFile.series ?? []) as unknown as SeriesJson[]
+  return {
+    products: Object.fromEntries(series.map((row) => [row.slug, toProduct(row)])) as Record<string, Product>,
+    gaps: series.map((row) => ({
+      slug: row.slug,
+      name: row.name,
+      sku: row.sku,
+      gaps: row.gaps ?? [],
+      contradiction: row.contradiction ?? null,
+    })) as VvzPlayGap[],
+  }
 }
-
-export const vvzPlayGaps = series.map((row) => ({
-  slug: row.slug,
-  name: row.name,
-  sku: row.sku,
-  gaps: row.gaps ?? [],
-  contradiction: row.contradiction ?? null,
-}))

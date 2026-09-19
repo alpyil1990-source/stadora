@@ -1,11 +1,4 @@
 import { binsigniaProducts } from './binsignia'
-import { investimProducts } from './investim'
-import { inoplexProducts } from './inoplex'
-import { streetparkProducts } from './streetpark'
-import { zanoProducts } from './zano'
-import { novumProducts } from './novum'
-import { kuschVcareFoldProducts } from './kusch-vcare-fold'
-import { vvzPlayProducts } from './vvz-play'
 import { catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
@@ -523,14 +516,7 @@ export const products: Record<string, Product> = {
     related: ['askkopp-luna'],
     imageNote: 'Bilden visar ett exempelutförande. Färgåtergivning på skärm kan avvika.',
   },
-  ...investimProducts,
   ...binsigniaProducts,
-  ...streetparkProducts,
-  ...inoplexProducts,
-  ...zanoProducts,
-  ...novumProducts,
-  ...kuschVcareFoldProducts,
-  ...vvzPlayProducts,
   'akutvagn-genius': {
     slug: 'akutvagn-genius',
     name: 'Akutvagn Genius',
@@ -571,12 +557,14 @@ export const products: Record<string, Product> = {
 }
 
 export { BINSIGNIA_SLUGS } from './binsignia'
-export { INVESTIM_SLUGS } from './investim'
-export { STREETPARK_SLUGS } from './streetpark'
-export { INOPLEX_SLUGS } from './inoplex'
-export { NOVUM_SLUGS } from './novum'
-export { KUSCH_VCARE_FOLD_SLUGS } from './kusch-vcare-fold'
-export { VVZ_PLAY_SLUGS } from './vvz-play'
+export {
+  INVESTIM_SLUGS,
+  STREETPARK_SLUGS,
+  INOPLEX_SLUGS,
+  NOVUM_SLUGS,
+  KUSCH_VCARE_FOLD_SLUGS,
+  VVZ_PLAY_SLUGS,
+} from './catalog-index'
 
 export function quantityLegend(product?: Product | null) {
   return product?.qtyLegend?.trim() || 'Antal'
@@ -628,8 +616,8 @@ export const careProducts = [
   },
 ]
 
-export function unpublishedProducts() {
-  return Object.values(products).filter((p) => p.visibility === 'internal_preview')
+export function unpublishedProducts(source: Record<string, Product> = products) {
+  return Object.values(source).filter((p) => p.visibility === 'internal_preview')
 }
 
 export function productPath(p: Product) {

@@ -1,5 +1,7 @@
 import type { Product, ProductDocument, ProductImage } from './content'
-import catalogFile from './generated/zano-series.json'
+import { ZANO_SLUGS, zanoCatalogSlugs } from './catalog-index'
+
+export { ZANO_SLUGS, zanoCatalogSlugs }
 
 type OptJson = {
   id: string
@@ -54,22 +56,11 @@ type SeriesJson = {
 
 const HIDDEN_SUBCATEGORY_SLUGS = new Set(['solkraftverk'])
 
-const allSeries = catalogFile.series as unknown as SeriesJson[]
-const hiddenSlugs = new Set(
-  allSeries.filter((row) => HIDDEN_SUBCATEGORY_SLUGS.has(row.subcategorySlug)).map((row) => row.slug),
-)
-const series = allSeries.filter((row) => !HIDDEN_SUBCATEGORY_SLUGS.has(row.subcategorySlug))
-
 /** Old Solkraftsverk product URLs. Category is removed from the catalog. */
 export const ZANO_REMOVED_PRODUCT_REDIRECTS: Record<string, string> = {
   'solkraftstation-scandik-19-046': '/produkter/parkmobler',
   'solkraftstation-sunflower-19-001': '/produkter/parkmobler',
   'solkraftstation-universe-19-055': '/produkter/parkmobler',
-}
-for (const slug of hiddenSlugs) {
-  if (!(slug in ZANO_REMOVED_PRODUCT_REDIRECTS)) {
-    ZANO_REMOVED_PRODUCT_REDIRECTS[slug] = '/produkter/parkmobler'
-  }
 }
 
 const MAKER_LINE = 'Tillverkare: Zano.'
@@ -104,7 +95,7 @@ function publicSummary(row: SeriesJson, name: string): string {
   return stripped
 }
 
-function toProduct(row: SeriesJson): Product {
+function toProduct(row: SeriesJson, hiddenSlugs: Set<string>): Product {
   const name = publicName(row)
   return {
     slug: row.slug,
@@ -170,44 +161,7 @@ function toProduct(row: SeriesJson): Product {
   }
 }
 
-function slugsFor(sub: string) {
-  return series.filter((r) => r.subcategorySlug === sub).map((r) => r.slug)
-}
-
-export const zanoCatalogSlugs = {
-  parkbankar: slugsFor('parkbankar'),
-  solstolar: slugsFor('solstolar'),
-  fatoljer: slugsFor('fatoljer'),
-  barstolar: slugsFor('barstolar'),
-  hangmattor: slugsFor('hangmattor'),
-  'modulara-sitt': slugsFor('modulara-sitt'),
-  'bord-picknick': slugsFor('bord-picknick'),
-  papperskorgar: slugsFor('papperskorgar'),
-  kallsortering: slugsFor('kallsortering'),
-  askkoppar: slugsFor('askkoppar'),
-  cykelstall: slugsFor('cykelstall'),
-  'garage-service': slugsFor('garage-service'),
-  planteringskarl: slugsFor('planteringskarl'),
-  tradskydd: slugsFor('tradskydd'),
-  pollare: slugsFor('pollare'),
-  avsparrning: slugsFor('avsparrning'),
-  skyltar: slugsFor('skyltar'),
-  pergolor: slugsFor('pergolor'),
-}
-
-export const zanoProducts: Record<string, Product> = Object.fromEntries(
-  series.map((row) => [row.slug, toProduct(row)]),
-)
-
-export const ZANO_SLUGS = series.map((row) => row.slug)
-
-export const zanoGaps = series.map((row) => ({
-  slug: row.slug,
-  name: row.name,
-  gaps: row.gaps ?? [],
-}))
-
-type ZanoQc = {
+export type ZanoQc = {
   checkedAt?: string
   products?: number
   complete?: number
@@ -224,4 +178,29 @@ type ZanoQc = {
   }[]
 }
 
-export const zanoQc = ((catalogFile as { qc?: ZanoQc }).qc ?? {}) as ZanoQc
+export type ZanoGap = { slug: string; name: string; gaps: string[] }
+
+export function buildZanoCatalog(catalogFile: { series?: unknown[]; qc?: ZanoQc }) {
+  const allSeries = (catalogFile.series ?? []) as unknown as SeriesJson[]
+  const hiddenSlugs = new Set(
+    allSeries.filter((row) => HIDDEN_SUBCATEGORY_SLUGS.has(row.subcategorySlug)).map((row) => row.slug),
+  )
+  const series = allSeries.filter((row) => !HIDDEN_SUBCATEGORY_SLUGS.has(row.subcategorySlug))
+  const removedRedirects: Record<string, string> = { ...ZANO_REMOVED_PRODUCT_REDIRECTS }
+  for (const slug of hiddenSlugs) {
+    if (!(slug in removedRedirects)) removedRedirects[slug] = '/produkter/parkmobler'
+  }
+  return {
+    products: Object.fromEntries(series.map((row) => [row.slug, toProduct(row, hiddenSlugs)])) as Record<
+      string,
+      Product
+    >,
+    gaps: series.map((row) => ({
+      slug: row.slug,
+      name: row.name,
+      gaps: row.gaps ?? [],
+    })) as ZanoGap[],
+    qc: (catalogFile.qc ?? {}) as ZanoQc,
+    removedRedirects,
+  }
+}

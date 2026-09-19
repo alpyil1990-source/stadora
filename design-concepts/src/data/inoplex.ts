@@ -1,5 +1,7 @@
 import type { Product, ProductDocument, ProductImage, SizeOption } from './content'
-import catalogFile from './generated/inoplex-series.json'
+import { INOPLEX_SLUGS, inoplexCatalogSlugs } from './catalog-index'
+
+export { INOPLEX_SLUGS, inoplexCatalogSlugs }
 
 type OptJson = {
   id: string
@@ -43,8 +45,6 @@ type SeriesJson = {
   imageNote?: string
   gaps?: string[]
 }
-
-const series = catalogFile.series as unknown as SeriesJson[]
 
 function toProduct(row: SeriesJson): Product {
   return {
@@ -92,31 +92,6 @@ function toProduct(row: SeriesJson): Product {
   }
 }
 
-function slugsFor(sub: string) {
-  return series.filter((r) => r.subcategorySlug === sub).map((r) => r.slug)
-}
-
-export const inoplexCatalogSlugs = {
-  parkbankar: slugsFor('parkbankar'),
-  betongbankar: slugsFor('betongbankar'),
-  'modulara-sitt': slugsFor('modulara-sitt'),
-  'bord-picknick': slugsFor('bord-picknick'),
-  papperskorgar: slugsFor('papperskorgar'),
-  askkoppar: slugsFor('askkoppar'),
-  kallsortering: slugsFor('kallsortering'),
-  planteringskarl: slugsFor('planteringskarl'),
-  cykelstall: slugsFor('cykelstall'),
-  'tak-skydd': slugsFor('tak-skydd'),
-  'garage-service': slugsFor('garage-service'),
-  pollare: slugsFor('pollare'),
-}
-
-export const inoplexProducts: Record<string, Product> = Object.fromEntries(
-  series.map((row) => [row.slug, toProduct(row)]),
-)
-
-export const INOPLEX_SLUGS = series.map((row) => row.slug)
-
 /** Old park-bench URLs for architectural-concrete planters (DOB.21). */
 export const INOPLEX_SLUG_REDIRECTS: Record<string, string> = {
   'parkbank-dob-21-01': 'planteringskarl-dob-21-01',
@@ -127,8 +102,16 @@ export const INOPLEX_SLUG_REDIRECTS: Record<string, string> = {
   'parkbank-dob-21-06': 'planteringskarl-dob-21-06',
 }
 
-export const inoplexGaps = series.map((row) => ({
-  slug: row.slug,
-  name: row.name,
-  gaps: row.gaps ?? [],
-}))
+export type InoplexGap = { slug: string; name: string; gaps: string[] }
+
+export function buildInoplexCatalog(catalogFile: { series?: unknown[] }) {
+  const series = (catalogFile.series ?? []) as unknown as SeriesJson[]
+  return {
+    products: Object.fromEntries(series.map((row) => [row.slug, toProduct(row)])) as Record<string, Product>,
+    gaps: series.map((row) => ({
+      slug: row.slug,
+      name: row.name,
+      gaps: row.gaps ?? [],
+    })) as InoplexGap[],
+  }
+}

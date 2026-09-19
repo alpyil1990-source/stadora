@@ -7,11 +7,11 @@ import {
   documentsForVariant,
   isCadOriginal,
   isStadoraArticleNumber,
-  products,
   publicManufacturer,
   quantityLegend,
   quoteShowsArticleNumber,
 } from '../data/content'
+import { useProductCatalog } from '../context/ProductCatalogContext'
 import { useAuth } from '../context/AuthContext'
 import { CadLoginPanel } from './CadLoginPanel'
 import { selectedMaterial } from '../data/binsignia'
@@ -71,6 +71,7 @@ export function ProductView({
   intern?: boolean
 }) {
   const { add } = useQuote()
+  const { products } = useProductCatalog()
   const colors = colorChoices(product)
   const [qty, setQty] = useState(1)
   const [active, setActive] = useState(0)

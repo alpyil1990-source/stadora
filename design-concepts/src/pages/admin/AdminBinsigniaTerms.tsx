@@ -8,11 +8,13 @@ import {
   formatEur,
   netEur,
 } from '../../data/binsignia-prices'
-import { productPath, products } from '../../data/content'
+import { productPath } from '../../data/content'
+import { useProductCatalog } from '../../context/ProductCatalogContext'
 
 const models = binsigniaModels()
 
 export function AdminBinsigniaTerms() {
+  const { products } = useProductCatalog()
   const [params, setParams] = useSearchParams()
   const requested = params.get('serie')
   const model = requested && models.includes(requested) ? requested : (models[0] ?? 'ALBRIS')

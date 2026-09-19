@@ -1,6 +1,6 @@
 import type { MaterialFinish, Product, ProductImage, SizeOption } from './content'
 
-import { BINSIGNIA_REST_SLUGS, binsigniaRestProducts } from './binsignia-rest'
+import { BINSIGNIA_REST_SLUGS } from './catalog-index'
 
 export const BINSIGNIA_FEATURED_SLUGS = [
   'askkopp-luna',
@@ -368,10 +368,7 @@ const binsigniaFeaturedProducts: Record<string, Product> = {
   },
 }
 
-export const binsigniaProducts: Record<string, Product> = {
-  ...binsigniaRestProducts,
-  ...binsigniaFeaturedProducts,
-}
+export const binsigniaProducts: Record<string, Product> = binsigniaFeaturedProducts
 
 export const BINSIGNIA_SLUGS = [...BINSIGNIA_FEATURED_SLUGS, ...BINSIGNIA_REST_SLUGS]
 

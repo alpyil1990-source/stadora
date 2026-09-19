@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import gatedFile from '../../data/generated/streetpark-gated.json'
-import { productPath, products } from '../../data/content'
-import { STREETPARK_SLUGS, streetparkProducts } from '../../data/streetpark'
+import { productPath } from '../../data/content'
+import { STREETPARK_SLUGS } from '../../data/catalog-index'
+import { useProductCatalog } from '../../context/ProductCatalogContext'
 import {
   formatEur,
   netEur,
@@ -35,8 +36,9 @@ const families = streetparkFamilies()
 const productOptions = streetparkProductOptions()
 
 export function AdminStreetparkTerms() {
+  const { products } = useProductCatalog()
   const items = (gatedFile.items as GatedItem[]) ?? []
-  const catalogProducts = STREETPARK_SLUGS.map((slug) => streetparkProducts[slug]).filter(Boolean)
+  const catalogProducts = STREETPARK_SLUGS.map((slug) => products[slug]).filter(Boolean)
   const docs = catalogProducts.reduce((n, p) => n + (p.documents?.length ?? 0), 0)
   const images = catalogProducts.reduce((n, p) => n + p.images.length, 0)
   const cad = catalogProducts.reduce(

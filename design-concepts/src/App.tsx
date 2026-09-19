@@ -1,8 +1,10 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from './components/AppShell'
 import { ScrollToTop } from './components/ScrollToTop'
 import { AdminShell } from './components/AdminShell'
 import { QuoteReplyShell } from './components/QuoteReplyShell'
+import { CatalogLoading } from './components/CatalogStatus'
 import { HomePage } from './pages/PublicPages'
 import { CatalogIndexPage, CategoryHubPage, SubcategoryListPage } from './pages/CatalogPages'
 import { ProductLayoutA, ProductLayoutB, ProductPage } from './pages/ProductPages'
@@ -14,21 +16,12 @@ import {
   SchoolHomePage,
 } from './pages/AreaPages'
 import { DesignIndexPage, DirectionsPage, BinsigniaDraftPage, InvestimDraftPage, StreetparkDraftPage } from './pages/DesignPages'
-import { AdminDashboard } from './pages/admin/AdminDashboard'
-import { AdminQuotes } from './pages/admin/AdminQuotes'
-import { AdminQuoteDetail } from './pages/admin/AdminQuoteDetail'
-import { AdminInvoices } from './pages/admin/AdminInvoices'
-import { AdminFlow } from './pages/admin/AdminFlow'
 import { CustomerQuotePage } from './pages/CustomerQuotePage'
 import { CommerceProvider } from './context/CommerceContext'
 import { QuoteProvider } from './context/QuoteContext'
+import { ProductCatalogProvider } from './context/ProductCatalogContext'
 import { SupplierProvider } from './context/SupplierContext'
 import { AuthProvider } from './context/AuthContext'
-import { AdminSuppliers } from './pages/admin/AdminSuppliers'
-import { AdminSupplierDetail } from './pages/admin/AdminSupplierDetail'
-import { AdminAccounts } from './pages/admin/AdminAccounts'
-import { AdminDownloads } from './pages/admin/AdminDownloads'
-import { AdminMail } from './pages/admin/AdminMail'
 import { InternHomePage, InternLayout } from './pages/InternPages'
 import {
   AccountPage,
@@ -40,14 +33,41 @@ import {
 } from './pages/AccountPages'
 import { PrivacyPage } from './pages/PrivacyPage'
 
+const AdminDashboard = lazy(() =>
+  import('./pages/admin/AdminDashboard').then((m) => ({ default: m.AdminDashboard })),
+)
+const AdminQuotes = lazy(() => import('./pages/admin/AdminQuotes').then((m) => ({ default: m.AdminQuotes })))
+const AdminQuoteDetail = lazy(() =>
+  import('./pages/admin/AdminQuoteDetail').then((m) => ({ default: m.AdminQuoteDetail })),
+)
+const AdminInvoices = lazy(() =>
+  import('./pages/admin/AdminInvoices').then((m) => ({ default: m.AdminInvoices })),
+)
+const AdminFlow = lazy(() => import('./pages/admin/AdminFlow').then((m) => ({ default: m.AdminFlow })))
+const AdminSuppliers = lazy(() =>
+  import('./pages/admin/AdminSuppliers').then((m) => ({ default: m.AdminSuppliers })),
+)
+const AdminSupplierDetail = lazy(() =>
+  import('./pages/admin/AdminSupplierDetail').then((m) => ({ default: m.AdminSupplierDetail })),
+)
+const AdminAccounts = lazy(() =>
+  import('./pages/admin/AdminAccounts').then((m) => ({ default: m.AdminAccounts })),
+)
+const AdminDownloads = lazy(() =>
+  import('./pages/admin/AdminDownloads').then((m) => ({ default: m.AdminDownloads })),
+)
+const AdminMail = lazy(() => import('./pages/admin/AdminMail').then((m) => ({ default: m.AdminMail })))
+
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <AuthProvider>
+      <ProductCatalogProvider>
       <CommerceProvider>
         <SupplierProvider>
         <QuoteProvider>
+        <Suspense fallback={<CatalogLoading title="Laddar sidan…" />}>
         <Routes>
           <Route element={<AppShell />}>
             <Route path="/" element={<HomePage />} />
@@ -101,9 +121,11 @@ export default function App() {
           </Route>
           <Route path="*" element={<Navigate to="/design" replace />} />
         </Routes>
+        </Suspense>
         </QuoteProvider>
         </SupplierProvider>
       </CommerceProvider>
+      </ProductCatalogProvider>
       </AuthProvider>
     </BrowserRouter>
   )

@@ -2,13 +2,14 @@ import { useMemo, useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSuppliers } from '../../context/SupplierContext'
 import { emptyContact, supplierStatusLabel, type SupplierStatus } from '../../data/suppliers'
-import { products } from '../../data/content'
+import { useProductCatalog } from '../../context/ProductCatalogContext'
 import { supplierHasPurchaseList } from '../../data/purchase-admin'
 
 const statuses: SupplierStatus[] = ['aktiv', 'invantar_underlag', 'pausad']
 
 export function AdminSuppliers() {
   const { suppliers, add, reset, productCount, unassignedSlugs } = useSuppliers()
+  const { products } = useProductCatalog()
   const navigate = useNavigate()
   const [open, setOpen] = useState(false)
   const [name, setName] = useState('')

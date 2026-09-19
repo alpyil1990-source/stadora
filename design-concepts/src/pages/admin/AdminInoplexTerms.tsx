@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
-import { INOPLEX_SLUGS, inoplexGaps, inoplexProducts } from '../../data/inoplex'
+import { INOPLEX_SLUGS } from '../../data/catalog-index'
 import { productPath } from '../../data/content'
+import { useProductCatalog } from '../../context/ProductCatalogContext'
 
 export function AdminInoplexTerms() {
+  const { products, inoplexGaps } = useProductCatalog()
   const withGaps = inoplexGaps.filter((g) => g.gaps.length > 0)
   return (
     <section id="inkopspris" className="scroll-mt-8 space-y-4 border border-line bg-sheet p-5">
@@ -32,7 +34,7 @@ export function AdminInoplexTerms() {
       <p className="text-sm">
         Exempel:{' '}
         {INOPLEX_SLUGS.slice(0, 4).map((slug, i) => {
-          const p = inoplexProducts[slug]
+          const p = products[slug]
           if (!p) return null
           return (
             <span key={slug}>
