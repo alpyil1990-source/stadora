@@ -13,7 +13,8 @@ export function AdminNovumTerms() {
         <p className="kicker">Testimport · opublicerat</p>
         <h2 className="mt-2 text-xl">NOVUM Fitness Devices — två produkter</h2>
         <p className="mt-2 text-sm text-muted">
-          Endast Runner (44103W) och Airwalker (4403Z). Övriga Fitness Devices är inte importerade.
+          Endast Runner (44103W) och Airwalker (4403Z). Dolda i den publika katalogen tills
+          leverantören svarat. Övriga Fitness Devices är inte importerade.
           Tillverkare NOVUM registreras här och visas inte publikt. Inga priser. Offertförfrågan.
           Alla originalfiler har behörighet internal_only tills skriftligt godkännande finns för
           extern nedladdning. Portaluppgifter ligger i miljövariabler, aldrig i källkod eller databas.

@@ -26,7 +26,7 @@ npm run dev            # http://127.0.0.1:4317  (proxyar /api till 4318)
 Endast **Runner (44103W)** och **Airwalker (4403Z)** från Fitness Devices. Övriga produkter i kategorin är inte importerade.
 
 - Intern visning: `/intern/produkt/utegym-runner` och `/intern/produkt/utegym-airwalker`
-- Publik Utegym-lista är tom
+- Publik Utegym-lista är tom tills leverantören svarat
 - Tillverkare NOVUM registreras internt och visas inte på publika sidor
 - Inga priser, endast offertförfrågan
 - Originalfiler i privat lagring `internal/storage/novum/{artikelnummer}/` med namn `NOVUM_{sku}_{typ}_{nn}.ext`

@@ -34,7 +34,14 @@ export function ProductPage({
     return <Navigate to="/" replace />
   }
   if (product.visibility === 'internal_preview' && !intern) {
-    return <Navigate to={`/intern/produkt/${product.slug}`} replace />
+    const category = product.categorySlug
+    const sub = product.subcategorySlug
+    return (
+      <Navigate
+        to={category && sub ? `/produkter/${category}/${sub}` : '/produkter'}
+        replace
+      />
+    )
   }
   return <ProductView product={product} layout={layout ?? 'hybrid'} intern={intern} />
 }

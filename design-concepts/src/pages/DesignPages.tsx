@@ -24,7 +24,7 @@ export function DesignIndexPage() {
             ['Källsortering', '/produkter/avfall-atervinning/kallsortering'],
             ['Askkoppar (LUNA)', '/produkter/avfall-atervinning/askkoppar'],
             ['Lek och aktivitet', '/produkter/lek-aktivitet'],
-            ['Utegym (intern testlistning)', '/produkter/lek-aktivitet/utegym'],
+            ['Utegym (intern testlistning)', '/intern'],
             ['Huvudkategori Parkmöbler', '/produkter/parkmobler'],
             ['Produktlista Parkbänkar', '/produkter/parkmobler/parkbankar'],
             ['Produktlista Betongbänkar', '/produkter/parkmobler/betongbankar'],

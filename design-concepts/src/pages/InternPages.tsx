@@ -47,9 +47,8 @@ export function InternHomePage() {
         <p className="kicker">Intern testmiljö</p>
         <h1 className="mt-2 text-3xl md:text-4xl">Opublicerade produkter</h1>
         <p className="mt-4 max-w-2xl text-muted">
-          Endast intern förhandsgranskning. Ingenting här är publicerat. Listningen under Lek och
-          aktivitet → Utegym visar Runner och Airwalker som test. Övriga Fitness Devices är inte
-          importerade.
+          Endast intern förhandsgranskning. Ingenting här är publicerat. Runner och Airwalker är
+          dolda i katalogen tills leverantören svarat. Övriga Fitness Devices är inte importerade.
         </p>
         <p className="mt-3 text-sm">
           <Link className="underline" to="/admin/leverantorer/novum">
@@ -64,8 +63,12 @@ export function InternHomePage() {
             Testa registrering
           </Link>
           {' · '}
-          <Link className="underline" to="/produkter/lek-aktivitet/utegym">
-            Utegym-listning
+          <Link className="underline" to="/intern/produkt/utegym-runner">
+            Intern Runner
+          </Link>
+          {' · '}
+          <Link className="underline" to="/intern/produkt/utegym-airwalker">
+            Intern Airwalker
           </Link>
         </p>
       </div>

@@ -3,7 +3,7 @@ import { SlidersHorizontal, X } from 'lucide-react'
 import { ListingCard } from '../components/ListingCard'
 import { PRODUCT_LISTING_GRID } from '../components/ProductCard'
 import { Breadcrumb } from '../components/Breadcrumb'
-import { type Product } from '../data/content'
+import { isPublicProduct, type Product } from '../data/content'
 import { useProductCatalog } from '../context/ProductCatalogContext'
 import { CatalogError, CatalogLoading } from '../components/CatalogStatus'
 import {
@@ -88,7 +88,7 @@ export function PlayActivityListing({
   const [drawer, setDrawer] = useState(false)
 
   const items = useMemo(
-    () => sub.productSlugs.map((slug) => products[slug]).filter(Boolean),
+    () => sub.productSlugs.map((slug) => products[slug]).filter(isPublicProduct),
     [products, sub.productSlugs],
   )
   const ageOpts = useMemo(() => uniqueValues(items, (p) => p.ageRange), [items])

@@ -3,7 +3,6 @@ import {
   investimCatalogSlugs,
   inoplexCatalogSlugs,
   kuschCatalogSlugs,
-  novumCatalogSlugs,
   streetparkCatalogSlugs,
   vvzPlayCatalogSlugs,
   zanoCatalogSlugs,
@@ -343,7 +342,7 @@ export const catalog: CategoryDef[] = [
         slug: 'utegym',
         name: 'Utegym',
         blurb: 'Fasta redskap för träning utomhus.',
-        productSlugs: [...novumCatalogSlugs.utegym],
+        productSlugs: [],
         draftExamples: [],
       },
       {
