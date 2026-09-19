@@ -43,11 +43,10 @@ SE_BASE = "https://www.zano.se"
 WOOD_PALETTE = "https://www.zano-streetfurniture.com/info/wood-colours-palette"
 STEEL_PALETTE = "https://www.zano-streetfurniture.com/info/types-of-steel"
 
-SKIP_EN = {"feeders", "street-lamps", "hand-sanitizer-stations"}
+SKIP_EN = {"feeders", "street-lamps", "hand-sanitizer-stations", "solar-charging-stations"}
 
 # English catalogue pages to crawl. Övrigt equivalents are omitted.
 EN_CATS = [
-    "solar-charging-stations",
     "picnic-tables",
     "tables",
     "bicycle-zone",

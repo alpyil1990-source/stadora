@@ -119,6 +119,9 @@ export function SubcategoryListPage() {
   const category = findCategory(categorySlug)
   const [on, setOn] = useState<Record<string, string[]>>({})
   if (!category) return <Navigate to="/produkter" replace />
+  if (category.slug === 'parkmobler' && subcategorySlug === 'solkraftverk') {
+    return <Navigate to={categoryPath(category)} replace />
+  }
   const redirected = category.slug === 'lek-aktivitet' && subcategorySlug
     ? PLAY_SLUG_REDIRECTS[subcategorySlug]
     : undefined

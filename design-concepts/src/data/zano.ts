@@ -52,7 +52,25 @@ type SeriesJson = {
   gaps?: string[]
 }
 
-const series = catalogFile.series as unknown as SeriesJson[]
+const HIDDEN_SUBCATEGORY_SLUGS = new Set(['solkraftverk'])
+
+const allSeries = catalogFile.series as unknown as SeriesJson[]
+const hiddenSlugs = new Set(
+  allSeries.filter((row) => HIDDEN_SUBCATEGORY_SLUGS.has(row.subcategorySlug)).map((row) => row.slug),
+)
+const series = allSeries.filter((row) => !HIDDEN_SUBCATEGORY_SLUGS.has(row.subcategorySlug))
+
+/** Old Solkraftsverk product URLs. Category is removed from the catalog. */
+export const ZANO_REMOVED_PRODUCT_REDIRECTS: Record<string, string> = {
+  'solkraftstation-scandik-19-046': '/produkter/parkmobler',
+  'solkraftstation-sunflower-19-001': '/produkter/parkmobler',
+  'solkraftstation-universe-19-055': '/produkter/parkmobler',
+}
+for (const slug of hiddenSlugs) {
+  if (!(slug in ZANO_REMOVED_PRODUCT_REDIRECTS)) {
+    ZANO_REMOVED_PRODUCT_REDIRECTS[slug] = '/produkter/parkmobler'
+  }
+}
 
 const MAKER_LINE = 'Tillverkare: Zano.'
 
@@ -131,7 +149,7 @@ function toProduct(row: SeriesJson): Product {
         customText: o.customText || undefined,
       })),
     })),
-    related: row.related,
+    related: row.related.filter((slug) => !hiddenSlugs.has(slug)),
     documents: row.documents
       .filter((d) => !/^Seriebroschyr/i.test(d.typeLabel) && !/\/seriebroschyr\.pdf$/i.test(d.href))
       .map((d) => ({
@@ -163,7 +181,6 @@ export const zanoCatalogSlugs = {
   barstolar: slugsFor('barstolar'),
   hangmattor: slugsFor('hangmattor'),
   'modulara-sitt': slugsFor('modulara-sitt'),
-  solkraftverk: slugsFor('solkraftverk'),
   'bord-picknick': slugsFor('bord-picknick'),
   papperskorgar: slugsFor('papperskorgar'),
   kallsortering: slugsFor('kallsortering'),

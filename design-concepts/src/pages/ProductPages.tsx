@@ -3,6 +3,7 @@ import { ProductView, type ProductLayout } from '../components/ProductView'
 import { products } from '../data/content'
 import { INOPLEX_SLUG_REDIRECTS } from '../data/inoplex'
 import { KUSCH_VCARE_FOLD_REDIRECTS } from '../data/kusch-vcare-fold'
+import { ZANO_REMOVED_PRODUCT_REDIRECTS } from '../data/zano'
 
 export function ProductPage({
   layout,
@@ -15,6 +16,10 @@ export function ProductPage({
 }) {
   const params = useParams()
   const key = slug ?? params.slug ?? 'parkbank-arsta'
+  const removed = ZANO_REMOVED_PRODUCT_REDIRECTS[key]
+  if (removed) {
+    return <Navigate to={removed} replace />
+  }
   const redirected = KUSCH_VCARE_FOLD_REDIRECTS[key] ?? INOPLEX_SLUG_REDIRECTS[key]
   if (redirected) {
     return <Navigate to={intern ? `/intern/produkt/${redirected}` : `/produkt/${redirected}`} replace />
