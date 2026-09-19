@@ -51,7 +51,10 @@ EXISTING_SLUGS = {
     },
 }
 NEW_TARGET = 50
-ADD_TARGET = 50
+# First append was capped at 50. Remaining import takes every leftover
+# playground SKU that has a pricelist EUR and is not already in the catalog.
+ADD_TARGET = 0
+WORKERS = 6
 DISCOUNT_PERCENT = 30
 VVZ_SUBS = [
     "lekstallningar",
@@ -1022,10 +1025,15 @@ def load_existing_series() -> list[dict]:
 
 
 def select_additional(listed: list[dict], prices: dict[str, dict], keep_skus: set[str]) -> list[dict]:
-    by_sub: dict[str, list[dict]] = defaultdict(list)
+    """Every leftover playground SKU with a real EUR. Never duplicates keep_skus."""
+    chosen: list[dict] = []
+    used: set[str] = set(s.upper() for s in keep_skus)
     for raw in listed:
         sku = (raw.get("sku") or "").upper()
-        if not sku or sku in keep_skus:
+        url = raw.get("url") or ""
+        if not sku or sku in used:
+            continue
+        if any(part in url for part in SKIP_URL_PARTS):
             continue
         if sku not in prices or prices[sku].get("listEur") is None:
             continue
@@ -1038,47 +1046,106 @@ def select_additional(listed: list[dict], prices: dict[str, dict], keep_skus: se
         )
         if is_accessory(p):
             continue
-        by_sub[p["subcategorySlug"]].append(p)
+        chosen.append(p)
+        used.add(sku)
+    chosen.sort(key=lambda p: (p.get("subcategorySlug") or "", p["sku"]))
+    return chosen
 
-    def rank(p: dict) -> tuple:
-        sku = p["sku"]
-        title = fold(p.get("title") or "") + " " + fold(p.get("listName") or "")
-        penalty = 0
-        if re.search(r"VZP?[5-9]|VZP10|VZD[5-9]|VZD[6-8]", sku):
-            penalty += 5
-        if sku.count("-") > 3:
-            penalty += 1
-        sub = p.get("subcategorySlug")
-        if sub == "lekhus":
-            if is_accessory(p):
-                penalty += 20
-            if "house" in title or "playhouse" in title:
-                penalty -= 3
-        if sub == "tillganglig-lek" and "inclusive" not in title:
-            penalty += 40
-        if "inclusive" in title:
-            penalty -= 4
-        return (penalty, p.get("listEur") or 0, sku)
 
-    for sub in by_sub:
-        by_sub[sub].sort(key=rank)
+def catalog_row(row: dict) -> dict:
+    return {k: v for k, v in row.items() if k not in ("listEur", "netEur", "discountPercent")}
 
-    chosen: list[dict] = []
-    used: set[str] = set()
-    for sub, n in ADD_QUOTAS:
-        pool = [p for p in by_sub.get(sub, []) if p["sku"] not in used]
-        take = pool[:n]
-        chosen.extend(take)
-        used.update(p["sku"] for p in take)
 
-    if len(chosen) < ADD_TARGET:
-        rest = []
-        for items in by_sub.values():
-            rest.extend(p for p in items if p["sku"] not in used)
-        rest.sort(key=rank)
-        need = ADD_TARGET - len(chosen)
-        chosen.extend(rest[:need])
-    return chosen[:ADD_TARGET]
+def write_catalog(existing_series: list[dict], new_rows: list[dict], existing_price_rows: list[dict]) -> tuple[int, int]:
+    """Merge without duplicate SKU or slug. Existing catalog rows win."""
+    series: list[dict] = []
+    seen_sku: set[str] = set()
+    seen_slug: set[str] = set()
+    for row in [*existing_series, *new_rows]:
+        sku = (row.get("sku") or "").upper()
+        slug = row.get("slug") or ""
+        if not sku or sku in seen_sku or not slug or slug in seen_slug:
+            continue
+        seen_sku.add(sku)
+        seen_slug.add(slug)
+        series.append(catalog_row(row))
+
+    by_sub: dict[str, list[str]] = defaultdict(list)
+    for row in series:
+        by_sub[row["subcategorySlug"]].append(row["slug"])
+    for row in series:
+        others = [s for s in by_sub[row["subcategorySlug"]] if s != row["slug"]]
+        row["related"] = others[:2]
+
+    GEN.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "fetchedAt": FETCHED_AT,
+        "source": "https://www.vvz-play.com",
+        "note": (
+            "Lekplatsprodukter med inköpspris från VVZ-Play wholesale pricelist 2026. "
+            "Inte parkbänkar, papperskorgar, utegym, skatepark eller övrig gatutrustning. "
+            "Tillverkare VVZ-Play endast internt. Leverantörens artikelnummer endast i admin. "
+            "Certifikat intern_only. DWG kräver STADORA-inloggning. Inga påhittade EUR."
+        ),
+        "series": series,
+    }
+    (GEN / "vvz-play-series.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+
+    series_by_sku = {row["sku"]: row for row in series}
+    price_rows: list[dict] = []
+    seen_price: set[str] = set()
+    for row in existing_price_rows:
+        sku = row.get("sku")
+        match = series_by_sku.get(sku)
+        if not match or sku in seen_price:
+            continue
+        price_rows.append(
+            {
+                **row,
+                "slug": match["slug"],
+                "name": match["name"],
+                "subcategory": match["subcategory"],
+                "subcategorySlug": match["subcategorySlug"],
+            }
+        )
+        seen_price.add(sku)
+    for row in new_rows:
+        if row["sku"] in seen_price:
+            continue
+        if row["sku"] not in series_by_sku:
+            continue
+        price_rows.append(
+            {
+                "sku": row["sku"],
+                "slug": row["slug"],
+                "name": row["name"],
+                "subcategory": row["subcategory"],
+                "subcategorySlug": row["subcategorySlug"],
+                "listEur": row["listEur"],
+                "discountPercent": DISCOUNT_PERCENT,
+                "netEur": row["netEur"],
+            }
+        )
+        seen_price.add(row["sku"])
+    price_payload = {
+        "list": "VVZ-Play wholesale pricelist 2026",
+        "fetchedAt": FETCHED_AT,
+        "currency": "EUR",
+        "discountPercent": DISCOUNT_PERCENT,
+        "legal": "Veríme v Zábavu, s.r.o.",
+        "address": "Kasárenská 9, 911 01 Trenčín, Slovakia",
+        "website": "https://www.vvz-play.com",
+        "note": (
+            "Ordinarie pris är listpris i EUR från wholesale pricelist 2026. "
+            "Rabatt 30 %. Nettoinköp = listpris × 0,70. Syns bara i intern admin."
+        ),
+        "vat": "EUR exkl. moms. Inte kundpris på stadora.se.",
+        "rows": price_rows,
+        "counts": {"rows": len(price_rows), "products": len(series)},
+    }
+    (GEN / "vvz-play-prices.json").write_text(json.dumps(price_payload, ensure_ascii=False, indent=2) + "\n")
+    update_catalog_index(series)
+    return len(series), len(price_rows)
 
 
 def update_catalog_index(series: list[dict]) -> None:
@@ -1361,6 +1428,11 @@ def build_one(op: urllib.request.OpenerDirector, listed: dict, prices: dict, log
     }
 
 
+def fetch_one(item: dict, prices: dict, logged: bool) -> dict | None:
+    op = opener()
+    return build_one(op, item, prices, logged)
+
+
 def main() -> int:
     CACHE.mkdir(parents=True, exist_ok=True)
     IMG_ROOT.mkdir(parents=True, exist_ok=True)
@@ -1379,10 +1451,11 @@ def main() -> int:
     (CACHE / "listed.json").write_text(json.dumps(listed, ensure_ascii=False, indent=2))
 
     existing_series = load_existing_series()
-    keep_skus = {r["sku"] for r in existing_series}
+    keep_skus = {(r.get("sku") or "").upper() for r in existing_series}
+    keep_slugs = {r.get("slug") for r in existing_series if r.get("slug")}
     if keep_skus:
         selected = select_additional(listed, prices, keep_skus)
-        print("append", len(selected), "keep", len(existing_series))
+        print("append remaining", len(selected), "keep", len(existing_series))
     else:
         selected = select_products(listed, prices)
         print("selected", len(selected), "existing", sum(1 for p in selected if p["sku"] in EXISTING_SLUGS))
@@ -1399,101 +1472,73 @@ def main() -> int:
     if existing_price_path.exists():
         existing_price_rows = list(json.loads(existing_price_path.read_text()).get("rows") or [])
 
-    new_rows = []
-    for i, item in enumerate(selected, 1):
-        print(f"[{i}/{len(selected)}] {item['sku']} {item['url']}")
-        try:
-            row = build_one(op, item, prices, logged)
-        except Exception as exc:
-            print("  FAIL", item["sku"], exc)
-            continue
-        if row:
-            new_rows.append(row)
+    new_rows: list[dict] = []
+    seen_new_sku: set[str] = set()
+    seen_new_slug: set[str] = set()
+    done = 0
+    failed = 0
 
-    catalog_existing = [
-        {k: v for k, v in row.items() if k not in ("listEur", "netEur", "discountPercent")}
-        for row in existing_series
-    ]
-    series = catalog_existing + [
-        {k: v for k, v in row.items() if k not in ("listEur", "netEur", "discountPercent")}
-        for row in new_rows
-    ]
+    def accept(row: dict | None) -> bool:
+        if not row:
+            return False
+        sku = (row.get("sku") or "").upper()
+        slug = row.get("slug") or ""
+        if not sku or sku in keep_skus or sku in seen_new_sku:
+            print("  skip duplicate sku", sku)
+            return False
+        if not slug or slug in keep_slugs or slug in seen_new_slug:
+            print("  skip duplicate slug", slug, sku)
+            return False
+        seen_new_sku.add(sku)
+        seen_new_slug.add(slug)
+        new_rows.append(row)
+        return True
 
-    # related: two others in same subcategory
-    by_sub: dict[str, list[str]] = defaultdict(list)
-    for row in series:
-        by_sub[row["subcategorySlug"]].append(row["slug"])
-    for row in series:
-        others = [s for s in by_sub[row["subcategorySlug"]] if s != row["slug"]]
-        row["related"] = others[:2]
+    def checkpoint() -> None:
+        n_series, n_prices = write_catalog(existing_series, new_rows, existing_price_rows)
+        print(f"  checkpoint products {n_series} prices {n_prices} new {len(new_rows)}")
 
-    GEN.mkdir(parents=True, exist_ok=True)
-    payload = {
-        "fetchedAt": FETCHED_AT,
-        "source": "https://www.vvz-play.com",
-        "note": (
-            "Lekplatsprodukter med inköpspris från VVZ-Play wholesale pricelist 2026. "
-            "Inte parkbänkar eller sopkärl. Tillverkare VVZ-Play endast internt. "
-            "Leverantörens artikelnummer endast i admin. Certifikat intern_only. "
-            "DWG kräver STADORA-inloggning. Inga påhittade EUR."
-        ),
-        "series": [{k: v for k, v in row.items() if k not in ("listEur", "netEur", "discountPercent")} for row in series],
-    }
-    (GEN / "vvz-play-series.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+    total = len(selected)
+    workers = WORKERS
+    print(f"fetch {total} with {workers} workers, login={'yes' if logged else 'no'} (DWG only if login)")
 
-    price_rows = []
-    seen_price: set[str] = set()
-    series_by_sku = {row["sku"]: row for row in series}
-    for row in existing_price_rows:
-        sku = row.get("sku")
-        match = series_by_sku.get(sku)
-        if not match or sku in seen_price:
-            continue
-        price_rows.append(
-            {
-                **row,
-                "slug": match["slug"],
-                "name": match["name"],
-                "subcategory": match["subcategory"],
-                "subcategorySlug": match["subcategorySlug"],
-            }
-        )
-        seen_price.add(sku)
-    for row in new_rows:
-        if row["sku"] in seen_price:
-            continue
-        price_rows.append(
-            {
-                "sku": row["sku"],
-                "slug": row["slug"],
-                "name": row["name"],
-                "subcategory": row["subcategory"],
-                "subcategorySlug": row["subcategorySlug"],
-                "listEur": row["listEur"],
-                "discountPercent": DISCOUNT_PERCENT,
-                "netEur": row["netEur"],
-            }
-        )
-        seen_price.add(row["sku"])
-    price_payload = {
-        "list": "VVZ-Play wholesale pricelist 2026",
-        "fetchedAt": FETCHED_AT,
-        "currency": "EUR",
-        "discountPercent": DISCOUNT_PERCENT,
-        "legal": "Veríme v Zábavu, s.r.o.",
-        "address": "Kasárenská 9, 911 01 Trenčín, Slovakia",
-        "website": "https://www.vvz-play.com",
-        "note": (
-            "Ordinarie pris är listpris i EUR från wholesale pricelist 2026. "
-            "Rabatt 30 %. Nettoinköp = listpris × 0,70. Syns bara i intern admin."
-        ),
-        "vat": "EUR exkl. moms. Inte kundpris på stadora.se.",
-        "rows": price_rows,
-        "counts": {"rows": len(price_rows), "products": len(series)},
-    }
-    (GEN / "vvz-play-prices.json").write_text(json.dumps(price_payload, ensure_ascii=False, indent=2) + "\n")
-    update_catalog_index(series)
-    print("wrote", len(series), "products", "prices", len(price_rows))
+    try:
+        if workers == 1:
+            for i, item in enumerate(selected, 1):
+                print(f"[{i}/{total}] {item['sku']} {item['url']}")
+                try:
+                    row = build_one(op, item, prices, logged)
+                except Exception as exc:
+                    failed += 1
+                    print("  FAIL", item["sku"], exc)
+                    continue
+                if accept(row):
+                    done += 1
+                if done and done % 10 == 0:
+                    checkpoint()
+        else:
+            with ThreadPoolExecutor(max_workers=workers) as pool:
+                futures = {
+                    pool.submit(fetch_one, item, prices, False): item
+                    for item in selected
+                }
+                for fut in as_completed(futures):
+                    item = futures[fut]
+                    try:
+                        row = fut.result()
+                    except Exception as exc:
+                        failed += 1
+                        print("  FAIL", item["sku"], exc)
+                        continue
+                    if accept(row):
+                        done += 1
+                        print(f"[{done}/{total}] {row['sku']} {row['slug']}")
+                    if done and done % 10 == 0:
+                        checkpoint()
+    finally:
+        checkpoint()
+
+    print("wrote new", len(new_rows), "failed", failed)
     return 0
 
 
