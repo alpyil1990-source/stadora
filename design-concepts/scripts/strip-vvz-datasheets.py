@@ -58,6 +58,20 @@ def strip_sku(text: str) -> str:
     return cleaned.strip()
 
 
+def strip_public_copy(text: str) -> str:
+    cleaned = strip_sku(text)
+    cleaned = re.sub(
+        r"our company\s+Ver[ií]me v Z[aá]bavu(?:[, ]*s\.r\.o\.)?",
+        "the manufacturer.",
+        cleaned,
+        flags=re.I,
+    )
+    cleaned = re.sub(r"Ver[ií]me v Z[aá]bavu(?:[, ]*s\.r\.o\.)?", "", cleaned, flags=re.I)
+    cleaned = re.sub(r" {2,}", " ", cleaned)
+    cleaned = re.sub(r"\s+([,.;:])", r"\1", cleaned)
+    return cleaned.strip()
+
+
 def inset_rect(rect: pymupdf.Rect, top: float = 0.30, bottom: float = 0.10) -> pymupdf.Rect:
     h = rect.height
     return pymupdf.Rect(rect.x0 - 1, rect.y0 + h * top, rect.x1 + 1, rect.y1 - h * bottom)
@@ -140,10 +154,13 @@ def redact_skus_and_slogan(page: pymupdf.Page) -> list[tuple]:
                 if "together we create" in text.lower():
                     page.add_redact_annot(bbox, fill=[c / 255 for c in ORANGE_FOOTER])
                     continue
-                if not SKU_RE.search(text):
+                has_sku = bool(SKU_RE.search(text))
+                has_verime = bool(re.search(r"ver[ií]me", text, re.I))
+                if not has_sku and not has_verime:
                     continue
-                new = strip_sku(text)
-                page.add_redact_annot(inset_rect(bbox), fill=(1, 1, 1))
+                new = strip_public_copy(text)
+                rect = inset_rect(bbox) if has_sku and not has_verime else bbox
+                page.add_redact_annot(rect, fill=(1, 1, 1))
                 if new:
                     inserts.append(
                         (

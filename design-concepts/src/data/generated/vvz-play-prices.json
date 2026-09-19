@@ -1028,10 +1028,3390 @@
       "listEur": 440.0,
       "discountPercent": 30,
       "netEur": 308.0
+    },
+    {
+      "sku": "SH012",
+      "slug": "fjadergunga-bjorn-sh012",
+      "name": "Fjädergunga björn",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 590.0,
+      "discountPercent": 30,
+      "netEur": 413.0
+    },
+    {
+      "sku": "SH007",
+      "slug": "fjadergunga-klover-sh007",
+      "name": "Fjädergunga klöver",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 660.0,
+      "discountPercent": 30,
+      "netEur": 462.0
+    },
+    {
+      "sku": "SH011",
+      "slug": "fjadergunga-svan-sh011",
+      "name": "Fjädergunga svan",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 660.0,
+      "discountPercent": 30,
+      "netEur": 462.0
+    },
+    {
+      "sku": "SH014",
+      "slug": "fjadergunga-enhorning-sh014",
+      "name": "Fjädergunga enhörning",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 590.0,
+      "discountPercent": 30,
+      "netEur": 413.0
+    },
+    {
+      "sku": "SH003-2",
+      "slug": "fjadergunga-hast-sh003-2",
+      "name": "Fjädergunga häst",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 1010.0,
+      "discountPercent": 30,
+      "netEur": 707.0
+    },
+    {
+      "sku": "SH004-2",
+      "slug": "fjadergunga-motorcykel-sh004-2",
+      "name": "Fjädergunga motorcykel",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 1100.0,
+      "discountPercent": 30,
+      "netEur": 770.0
+    },
+    {
+      "sku": "SH015",
+      "slug": "fjadergunga-bat-sh015",
+      "name": "Fjädergunga båt",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 1150.0,
+      "discountPercent": 30,
+      "netEur": 805.0
+    },
+    {
+      "sku": "SH016",
+      "slug": "fjadergunga-bat-sh016",
+      "name": "Fjädergunga båt",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 1610.0,
+      "discountPercent": 30,
+      "netEur": 1127.0
+    },
+    {
+      "sku": "SH014-2",
+      "slug": "fjadergunga-enhorning-sh014-2",
+      "name": "Fjädergunga enhörning",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 1200.0,
+      "discountPercent": 30,
+      "netEur": 840.0
+    },
+    {
+      "sku": "SH017",
+      "slug": "fjadergunga-bil-sh017",
+      "name": "Fjädergunga bil",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 2190.0,
+      "discountPercent": 30,
+      "netEur": 1533.0
+    },
+    {
+      "sku": "VHP003-15",
+      "slug": "gunga-mamma-barn-1-5-m-vhp003-15",
+      "name": "Gunga mamma-barn 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1520.0,
+      "discountPercent": 30,
+      "netEur": 1064.0
+    },
+    {
+      "sku": "VHP005-10",
+      "slug": "gunga-fagelbo-1-0-m-vhp005-10",
+      "name": "Gunga fågelbo 1,0 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1450.0,
+      "discountPercent": 30,
+      "netEur": 1015.0
+    },
+    {
+      "sku": "VHP008-10",
+      "slug": "dubbel-gunga-babysits-classic-1-0-m-vhp008-10",
+      "name": "Dubbel gunga babysits Classic 1,0 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1880.0,
+      "discountPercent": 30,
+      "netEur": 1316.0
+    },
+    {
+      "sku": "VHP005-15",
+      "slug": "gunga-fagelbo-1-5-m-vhp005-15",
+      "name": "Gunga fågelbo 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1410.0,
+      "discountPercent": 30,
+      "netEur": 987.0
+    },
+    {
+      "sku": "VHP008-15",
+      "slug": "dubbel-gunga-babysits-classic-1-5-m-vhp008-15",
+      "name": "Dubbel gunga babysits Classic 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1990.0,
+      "discountPercent": 30,
+      "netEur": 1393.0
+    },
+    {
+      "sku": "VHP009-1-10",
+      "slug": "gunga-fagelbo-classic-1-0-m-vhp009-1-10",
+      "name": "Gunga fågelbo Classic 1,0 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1970.0,
+      "discountPercent": 30,
+      "netEur": 1379.0
+    },
+    {
+      "sku": "VHP009-10",
+      "slug": "gunga-babysits-fagelbo-classic-1-0-m-vhp009-10",
+      "name": "Gunga babysits fågelbo Classic 1,0 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 2250.0,
+      "discountPercent": 30,
+      "netEur": 1575.0
+    },
+    {
+      "sku": "VHP009-1-15",
+      "slug": "gunga-fagelbo-classic-1-5-m-vhp009-1-15",
+      "name": "Gunga fågelbo Classic 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 2080.0,
+      "discountPercent": 30,
+      "netEur": 1456.0
+    },
+    {
+      "sku": "VHP009-15",
+      "slug": "gunga-babysits-fagelbo-classic-1-5-m-vhp009-15",
+      "name": "Gunga babysits fågelbo Classic 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 2400.0,
+      "discountPercent": 30,
+      "netEur": 1680.0
+    },
+    {
+      "sku": "VHP010-10",
+      "slug": "dubbel-gunga-fagelbo-classic-1-0-m-vhp010-10",
+      "name": "Dubbel gunga fågelbo Classic 1,0 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 2200.0,
+      "discountPercent": 30,
+      "netEur": 1540.0
+    },
+    {
+      "sku": "VHP010-15",
+      "slug": "dubbel-gunga-fagelbo-classic-1-5-m-vhp010-15",
+      "name": "Dubbel gunga fågelbo Classic 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 2330.0,
+      "discountPercent": 30,
+      "netEur": 1631.0
+    },
+    {
+      "sku": "VHP011-1-15",
+      "slug": "dubbel-gunga-babysits-fagelbo-mamma-barn-classic-1-5-m-vhp011-1-15",
+      "name": "Dubbel gunga babysits fågelbo mamma-barn Classic 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 4630.0,
+      "discountPercent": 30,
+      "netEur": 3241.0
+    },
+    {
+      "sku": "VHP011-10",
+      "slug": "dubbel-gunga-babysits-fagelbo-classic-1-0-m-vhp011-10",
+      "name": "Dubbel gunga babysits fågelbo Classic 1,0 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 3270.0,
+      "discountPercent": 30,
+      "netEur": 2289.0
+    },
+    {
+      "sku": "VHP011-15",
+      "slug": "dubbel-gunga-babysits-fagelbo-classic-1-5-m-vhp011-15",
+      "name": "Dubbel gunga babysits fågelbo Classic 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 3420.0,
+      "discountPercent": 30,
+      "netEur": 2394.0
+    },
+    {
+      "sku": "LEZ001",
+      "slug": "klatterlek-lez001",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1240.0,
+      "discountPercent": 30,
+      "netEur": 868.0
+    },
+    {
+      "sku": "LEZ003",
+      "slug": "klatterlek-lez003",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 3050.0,
+      "discountPercent": 30,
+      "netEur": 2135.0
+    },
+    {
+      "sku": "LEZ005",
+      "slug": "klatterlek-lez005",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 4200.0,
+      "discountPercent": 30,
+      "netEur": 2940.0
+    },
+    {
+      "sku": "LEZ002",
+      "slug": "klatterlek-lez002",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2100.0,
+      "discountPercent": 30,
+      "netEur": 1470.0
+    },
+    {
+      "sku": "LEZ004",
+      "slug": "klatterlek-lez004",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 4020.0,
+      "discountPercent": 30,
+      "netEur": 2814.0
+    },
+    {
+      "sku": "OP1-08",
+      "slug": "klatterlek-op1-08",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1110.0,
+      "discountPercent": 30,
+      "netEur": 777.0
+    },
+    {
+      "sku": "OP1-10",
+      "slug": "klatterlek-op1-10",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1090.0,
+      "discountPercent": 30,
+      "netEur": 763.0
+    },
+    {
+      "sku": "OP1-09",
+      "slug": "klatterlek-op1-09",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1550.0,
+      "discountPercent": 30,
+      "netEur": 1085.0
+    },
+    {
+      "sku": "OP1-11",
+      "slug": "balanslek-op1-11",
+      "name": "Balanslek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1150.0,
+      "discountPercent": 30,
+      "netEur": 805.0
+    },
+    {
+      "sku": "LEZ006",
+      "slug": "klatterlek-lez006",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 10700.0,
+      "discountPercent": 30,
+      "netEur": 7490.0
+    },
+    {
+      "sku": "KL006",
+      "slug": "karusell-kl006",
+      "name": "Karusell",
+      "subcategory": "Karuseller",
+      "subcategorySlug": "karuseller",
+      "listEur": 4100.0,
+      "discountPercent": 30,
+      "netEur": 2870.0
+    },
+    {
+      "sku": "OP1-14",
+      "slug": "klatterlek-op1-14",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2490.0,
+      "discountPercent": 30,
+      "netEur": 1743.0
+    },
+    {
+      "sku": "OP2-01",
+      "slug": "klatterlek-op2-01",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1485.0,
+      "discountPercent": 30,
+      "netEur": 1039.5
+    },
+    {
+      "sku": "OP2-03",
+      "slug": "klatterlek-op2-03",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1400.0,
+      "discountPercent": 30,
+      "netEur": 980.0
+    },
+    {
+      "sku": "OP2-02",
+      "slug": "klatterlek-op2-02",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1890.0,
+      "discountPercent": 30,
+      "netEur": 1323.0
+    },
+    {
+      "sku": "OP2-04",
+      "slug": "klatterlek-op2-04",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1590.0,
+      "discountPercent": 30,
+      "netEur": 1113.0
+    },
+    {
+      "sku": "OP2-06",
+      "slug": "klatterlek-op2-06",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2100.0,
+      "discountPercent": 30,
+      "netEur": 1470.0
+    },
+    {
+      "sku": "OP2-07",
+      "slug": "klatterlek-op2-07",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1890.0,
+      "discountPercent": 30,
+      "netEur": 1323.0
+    },
+    {
+      "sku": "OP2-08",
+      "slug": "klatterlek-op2-08",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1990.0,
+      "discountPercent": 30,
+      "netEur": 1393.0
+    },
+    {
+      "sku": "OP2-05",
+      "slug": "klatterlek-op2-05",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1370.0,
+      "discountPercent": 30,
+      "netEur": 959.0
+    },
+    {
+      "sku": "OP2-09",
+      "slug": "klatterlek-op2-09",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1340.0,
+      "discountPercent": 30,
+      "netEur": 938.0
+    },
+    {
+      "sku": "OP2-10",
+      "slug": "klatterlek-op2-10",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 3230.0,
+      "discountPercent": 30,
+      "netEur": 2261.0
+    },
+    {
+      "sku": "OP2-11",
+      "slug": "klatterlek-op2-11",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1990.0,
+      "discountPercent": 30,
+      "netEur": 1393.0
+    },
+    {
+      "sku": "OP3-02",
+      "slug": "klatterlek-op3-02",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2200.0,
+      "discountPercent": 30,
+      "netEur": 1540.0
+    },
+    {
+      "sku": "OP3-03",
+      "slug": "klatterlek-op3-03",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2230.0,
+      "discountPercent": 30,
+      "netEur": 1561.0
+    },
+    {
+      "sku": "OP3-01",
+      "slug": "klatterlek-op3-01",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2200.0,
+      "discountPercent": 30,
+      "netEur": 1540.0
+    },
+    {
+      "sku": "OP3-04",
+      "slug": "klatterlek-op3-04",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2480.0,
+      "discountPercent": 30,
+      "netEur": 1736.0
+    },
+    {
+      "sku": "OP3-05",
+      "slug": "klatterlek-op3-05",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2250.0,
+      "discountPercent": 30,
+      "netEur": 1575.0
+    },
+    {
+      "sku": "OP3-06",
+      "slug": "klatterlek-op3-06",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 3350.0,
+      "discountPercent": 30,
+      "netEur": 2345.0
+    },
+    {
+      "sku": "OP3-07",
+      "slug": "klatterlek-op3-07",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 5600.0,
+      "discountPercent": 30,
+      "netEur": 3920.0
+    },
+    {
+      "sku": "OP3-08",
+      "slug": "klatterlek-op3-08",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2650.0,
+      "discountPercent": 30,
+      "netEur": 1855.0
+    },
+    {
+      "sku": "OP4-01",
+      "slug": "klatterlek-op4-01",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2990.0,
+      "discountPercent": 30,
+      "netEur": 2093.0
+    },
+    {
+      "sku": "OP4-02",
+      "slug": "klatterlek-op4-02",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2630.0,
+      "discountPercent": 30,
+      "netEur": 1841.0
+    },
+    {
+      "sku": "OP4-03",
+      "slug": "klatterlek-op4-03",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2985.0,
+      "discountPercent": 30,
+      "netEur": 2089.5
+    },
+    {
+      "sku": "OP4-04",
+      "slug": "klatterlek-op4-04",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 3295.0,
+      "discountPercent": 30,
+      "netEur": 2306.5
+    },
+    {
+      "sku": "OP4-05",
+      "slug": "klatterlek-op4-05",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 4375.0,
+      "discountPercent": 30,
+      "netEur": 3062.5
+    },
+    {
+      "sku": "OP4-06",
+      "slug": "klatterlek-op4-06",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 5750.0,
+      "discountPercent": 30,
+      "netEur": 4025.0
+    },
+    {
+      "sku": "OP5-01",
+      "slug": "klatterlek-op5-01",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 3740.0,
+      "discountPercent": 30,
+      "netEur": 2618.0
+    },
+    {
+      "sku": "OP5-02",
+      "slug": "klatterlek-op5-02",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 4250.0,
+      "discountPercent": 30,
+      "netEur": 2975.0
+    },
+    {
+      "sku": "OP5-03",
+      "slug": "klatterlek-op5-03",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 4420.0,
+      "discountPercent": 30,
+      "netEur": 3094.0
+    },
+    {
+      "sku": "OP6-01",
+      "slug": "klatterlek-op6-01",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 5655.0,
+      "discountPercent": 30,
+      "netEur": 3958.5
+    },
+    {
+      "sku": "OP6-02",
+      "slug": "klatterlek-op6-02",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 4935.0,
+      "discountPercent": 30,
+      "netEur": 3454.5
+    },
+    {
+      "sku": "OP8-01",
+      "slug": "klatterlek-op8-01",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 7280.0,
+      "discountPercent": 30,
+      "netEur": 5096.0
+    },
+    {
+      "sku": "OP7-01",
+      "slug": "klatterlek-op7-01",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 4810.0,
+      "discountPercent": 30,
+      "netEur": 3367.0
+    },
+    {
+      "sku": "OP7-02",
+      "slug": "klatterlek-op7-02",
+      "name": "Klätterlek",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 5180.0,
+      "discountPercent": 30,
+      "netEur": 3626.0
+    },
+    {
+      "sku": "PYR020",
+      "slug": "klatterpyramid-pyr020",
+      "name": "Klätterpyramid",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1650.0,
+      "discountPercent": 30,
+      "netEur": 1155.0
+    },
+    {
+      "sku": "PYR025",
+      "slug": "klatterpyramid-pyr025",
+      "name": "Klätterpyramid",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1950.0,
+      "discountPercent": 30,
+      "netEur": 1365.0
+    },
+    {
+      "sku": "PYR045",
+      "slug": "klatterpyramid-pyr045",
+      "name": "Klätterpyramid",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 4420.0,
+      "discountPercent": 30,
+      "netEur": 3094.0
+    },
+    {
+      "sku": "PYR030",
+      "slug": "klatterpyramid-pyr030",
+      "name": "Klätterpyramid",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2160.0,
+      "discountPercent": 30,
+      "netEur": 1512.0
+    },
+    {
+      "sku": "PYR035",
+      "slug": "klatterpyramid-pyr035",
+      "name": "Klätterpyramid",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 2910.0,
+      "discountPercent": 30,
+      "netEur": 2037.0
+    },
+    {
+      "sku": "PYR040",
+      "slug": "klatterpyramid-pyr040",
+      "name": "Klätterpyramid",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 3750.0,
+      "discountPercent": 30,
+      "netEur": 2625.0
+    },
+    {
+      "sku": "PD002",
+      "slug": "sandlada-pd002",
+      "name": "Sandlåda",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 1210.0,
+      "discountPercent": 30,
+      "netEur": 847.0
+    },
+    {
+      "sku": "PD003",
+      "slug": "sandlada-pd003",
+      "name": "Sandlåda",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2390.0,
+      "discountPercent": 30,
+      "netEur": 1673.0
+    },
+    {
+      "sku": "PYR050",
+      "slug": "klatterpyramid-pyr050",
+      "name": "Klätterpyramid",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 5140.0,
+      "discountPercent": 30,
+      "netEur": 3598.0
+    },
+    {
+      "sku": "PD004",
+      "slug": "sandlada-pd004",
+      "name": "Sandlåda",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2080.0,
+      "discountPercent": 30,
+      "netEur": 1456.0
+    },
+    {
+      "sku": "PD006",
+      "slug": "lekhus-educative-with-tic-tac-toe-abacus-drawing-board-pd006",
+      "name": "Lekhus Educative , with tic-tac-toe, abacus, drawing board",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2250.0,
+      "discountPercent": 30,
+      "netEur": 1575.0
+    },
+    {
+      "sku": "PD007",
+      "slug": "lekhus-themed-wit-sitting-pd007",
+      "name": "Lekhus Themed  wit sitting",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2850.0,
+      "discountPercent": 30,
+      "netEur": 1995.0
+    },
+    {
+      "sku": "PD008",
+      "slug": "sandlada-pd008",
+      "name": "Sandlåda",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2290.0,
+      "discountPercent": 30,
+      "netEur": 1603.0
+    },
+    {
+      "sku": "PD011",
+      "slug": "sandlada-pd011",
+      "name": "Sandlåda",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2900.0,
+      "discountPercent": 30,
+      "netEur": 2030.0
+    },
+    {
+      "sku": "PD010",
+      "slug": "sandlada-pd010",
+      "name": "Sandlåda",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 1220.0,
+      "discountPercent": 30,
+      "netEur": 854.0
+    },
+    {
+      "sku": "PD007-1",
+      "slug": "lekhus-themed-bakery-pd007-1",
+      "name": "Lekhus Themed  - Bakery",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 4590.0,
+      "discountPercent": 30,
+      "netEur": 3213.0
+    },
+    {
+      "sku": "PD013-3",
+      "slug": "lekhus-small-with-abacus-and-drawing-board-pd013-3",
+      "name": "Lekhus Small  with abacus and drawing board",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 1910.0,
+      "discountPercent": 30,
+      "netEur": 1337.0
+    },
+    {
+      "sku": "PD013-4",
+      "slug": "lekhus-small-with-sitting-and-abacus-pd013-4",
+      "name": "Lekhus Small  with sitting and abacus",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 1670.0,
+      "discountPercent": 30,
+      "netEur": 1169.0
+    },
+    {
+      "sku": "PD013-5",
+      "slug": "lekhus-small-with-big-abacus-pd013-5",
+      "name": "Lekhus Small  with big abacus",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2160.0,
+      "discountPercent": 30,
+      "netEur": 1512.0
+    },
+    {
+      "sku": "PD014-1",
+      "slug": "lekhus-middle-with-climbing-wall-pd014-1",
+      "name": "Lekhus Middle  with climbing wall",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2090.0,
+      "discountPercent": 30,
+      "netEur": 1463.0
+    },
+    {
+      "sku": "PD014-2",
+      "slug": "lekpanel-pd014-2",
+      "name": "Lekpanel",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2290.0,
+      "discountPercent": 30,
+      "netEur": 1603.0
+    },
+    {
+      "sku": "PD014-3",
+      "slug": "lekpanel-pd014-3",
+      "name": "Lekpanel",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2190.0,
+      "discountPercent": 30,
+      "netEur": 1533.0
+    },
+    {
+      "sku": "PD015",
+      "slug": "educative-set-ruins-pd015",
+      "name": "Educative set - ruins",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 2700.0,
+      "discountPercent": 30,
+      "netEur": 1890.0
+    },
+    {
+      "sku": "BAL001-1",
+      "slug": "balancing-beam-bal001-1",
+      "name": "Balancing beam",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 470.0,
+      "discountPercent": 30,
+      "netEur": 329.0
+    },
+    {
+      "sku": "BAL002-1",
+      "slug": "balancing-beam-double-bal002-1",
+      "name": "Balancing beam -double",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 990.0,
+      "discountPercent": 30,
+      "netEur": 693.0
+    },
+    {
+      "sku": "BAL003-1",
+      "slug": "balancing-beam-triple-bal003-1",
+      "name": "Balancing beam -triple",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1610.0,
+      "discountPercent": 30,
+      "netEur": 1127.0
+    },
+    {
+      "sku": "BAL002-2",
+      "slug": "balancing-beam-double-bal002-2",
+      "name": "Balancing beam -double",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 840.0,
+      "discountPercent": 30,
+      "netEur": 588.0
+    },
+    {
+      "sku": "BAL003-2",
+      "slug": "balancing-beam-triple-bal003-2",
+      "name": "Balancing beam -triple",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1310.0,
+      "discountPercent": 30,
+      "netEur": 917.0
+    },
+    {
+      "sku": "BAL008",
+      "slug": "triple-bar-bal008",
+      "name": "Triple bar",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 580.0,
+      "discountPercent": 30,
+      "netEur": 406.0
+    },
+    {
+      "sku": "BAL009",
+      "slug": "cross-bar-bal009",
+      "name": "Cross bar",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 710.0,
+      "discountPercent": 30,
+      "netEur": 497.0
+    },
+    {
+      "sku": "DP001-2",
+      "slug": "lekfordon-dp001-2",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1760.0,
+      "discountPercent": 30,
+      "netEur": 1232.0
+    },
+    {
+      "sku": "BAL010",
+      "slug": "triple-bar-bal010",
+      "name": "Triple bar",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 580.0,
+      "discountPercent": 30,
+      "netEur": 406.0
+    },
+    {
+      "sku": "DP001-1",
+      "slug": "lekfordon-dp001-1",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1760.0,
+      "discountPercent": 30,
+      "netEur": 1232.0
+    },
+    {
+      "sku": "DP001-3",
+      "slug": "lekfordon-dp001-3",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1760.0,
+      "discountPercent": 30,
+      "netEur": 1232.0
+    },
+    {
+      "sku": "DP002-1",
+      "slug": "lekfordon-dp002-1",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2360.0,
+      "discountPercent": 30,
+      "netEur": 1652.0
+    },
+    {
+      "sku": "DP002-2",
+      "slug": "lekfordon-dp002-2",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1820.0,
+      "discountPercent": 30,
+      "netEur": 1274.0
+    },
+    {
+      "sku": "DP004-1",
+      "slug": "lekfordon-dp004-1",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2350.0,
+      "discountPercent": 30,
+      "netEur": 1645.0
+    },
+    {
+      "sku": "DP005-1",
+      "slug": "lekfordon-dp005-1",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2140.0,
+      "discountPercent": 30,
+      "netEur": 1498.0
+    },
+    {
+      "sku": "DP003-1",
+      "slug": "lekfordon-dp003-1",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 3160.0,
+      "discountPercent": 30,
+      "netEur": 2212.0
+    },
+    {
+      "sku": "DP005-2",
+      "slug": "lekfordon-dp005-2",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2140.0,
+      "discountPercent": 30,
+      "netEur": 1498.0
+    },
+    {
+      "sku": "DP003-2",
+      "slug": "lekfordon-dp003-2",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 3160.0,
+      "discountPercent": 30,
+      "netEur": 2212.0
+    },
+    {
+      "sku": "DP005-3",
+      "slug": "lekfordon-dp005-3",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1490.0,
+      "discountPercent": 30,
+      "netEur": 1043.0
+    },
+    {
+      "sku": "DP006",
+      "slug": "lekfordon-dp006",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 450.0,
+      "discountPercent": 30,
+      "netEur": 315.0
+    },
+    {
+      "sku": "DP007",
+      "slug": "lekfordon-dp007",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2500.0,
+      "discountPercent": 30,
+      "netEur": 1750.0
+    },
+    {
+      "sku": "DP008",
+      "slug": "lekfordon-dp008",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2300.0,
+      "discountPercent": 30,
+      "netEur": 1610.0
+    },
+    {
+      "sku": "DP009",
+      "slug": "lekfordon-dp009",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2650.0,
+      "discountPercent": 30,
+      "netEur": 1855.0
+    },
+    {
+      "sku": "DP010",
+      "slug": "lekfordon-dp010",
+      "name": "Lekfordon",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2050.0,
+      "discountPercent": 30,
+      "netEur": 1435.0
+    },
+    {
+      "sku": "EDU005",
+      "slug": "throw-board-edu005",
+      "name": "Throw board",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 530.0,
+      "discountPercent": 30,
+      "netEur": 371.0
+    },
+    {
+      "sku": "EDU010",
+      "slug": "telephone-edu010",
+      "name": "Telephone",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 790.0,
+      "discountPercent": 30,
+      "netEur": 553.0
+    },
+    {
+      "sku": "EDU007",
+      "slug": "lekpanel-edu007",
+      "name": "Lekpanel",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 550.0,
+      "discountPercent": 30,
+      "netEur": 385.0
+    },
+    {
+      "sku": "EDU008",
+      "slug": "drawing-board-edu008",
+      "name": "Drawing board",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 850.0,
+      "discountPercent": 30,
+      "netEur": 595.0
+    },
+    {
+      "sku": "EDU006",
+      "slug": "tic-tac-toe-edu006",
+      "name": "Tic-tac-toe",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 570.0,
+      "discountPercent": 30,
+      "netEur": 399.0
+    },
+    {
+      "sku": "EDU011",
+      "slug": "telephone-booth-edu011",
+      "name": "Telephone booth",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1250.0,
+      "discountPercent": 30,
+      "netEur": 875.0
+    },
+    {
+      "sku": "EDU012",
+      "slug": "lekpanel-edu012",
+      "name": "Lekpanel",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1100.0,
+      "discountPercent": 30,
+      "netEur": 770.0
+    },
+    {
+      "sku": "EDU018",
+      "slug": "pexeso-edu018",
+      "name": "Pexeso",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 900.0,
+      "discountPercent": 30,
+      "netEur": 630.0
+    },
+    {
+      "sku": "EDU013",
+      "slug": "drawing-board-with-alphabet-edu013",
+      "name": "Drawing board with alphabet",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 780.0,
+      "discountPercent": 30,
+      "netEur": 546.0
+    },
+    {
+      "sku": "EDU017",
+      "slug": "battleships-game-edu017",
+      "name": "Battleships game",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1050.0,
+      "discountPercent": 30,
+      "netEur": 735.0
+    },
+    {
+      "sku": "EDU019",
+      "slug": "gear-mechanism-edu019",
+      "name": "Gear mechanism",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 480.0,
+      "discountPercent": 30,
+      "netEur": 336.0
+    },
+    {
+      "sku": "EDU014",
+      "slug": "lekpanel-edu014",
+      "name": "Lekpanel",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1330.0,
+      "discountPercent": 30,
+      "netEur": 931.0
+    },
+    {
+      "sku": "EDU022",
+      "slug": "labyrinth-edu022",
+      "name": "Labyrinth",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 530.0,
+      "discountPercent": 30,
+      "netEur": 371.0
+    },
+    {
+      "sku": "GYM002-1",
+      "slug": "lekgym-gym002-1",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1970.0,
+      "discountPercent": 30,
+      "netEur": 1379.0
+    },
+    {
+      "sku": "GYM002-2",
+      "slug": "lekgym-gym002-2",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1700.0,
+      "discountPercent": 30,
+      "netEur": 1190.0
+    },
+    {
+      "sku": "GYM002-3",
+      "slug": "lekgym-gym002-3",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1820.0,
+      "discountPercent": 30,
+      "netEur": 1274.0
+    },
+    {
+      "sku": "GYM001",
+      "slug": "lekgym-gym001",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2370.0,
+      "discountPercent": 30,
+      "netEur": 1659.0
+    },
+    {
+      "sku": "GYM002",
+      "slug": "lekgym-gym002",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2760.0,
+      "discountPercent": 30,
+      "netEur": 1932.0
+    },
+    {
+      "sku": "GYM002-4",
+      "slug": "lekgym-gym002-4",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1650.0,
+      "discountPercent": 30,
+      "netEur": 1155.0
+    },
+    {
+      "sku": "GYM003-1",
+      "slug": "lekgym-gym003-1",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2980.0,
+      "discountPercent": 30,
+      "netEur": 2086.0
+    },
+    {
+      "sku": "GYM003",
+      "slug": "lekgym-gym003",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2790.0,
+      "discountPercent": 30,
+      "netEur": 1953.0
+    },
+    {
+      "sku": "GYM004",
+      "slug": "lekgym-gym004",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 3070.0,
+      "discountPercent": 30,
+      "netEur": 2149.0
+    },
+    {
+      "sku": "GYM004-1",
+      "slug": "lekgym-gym004-1",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 3530.0,
+      "discountPercent": 30,
+      "netEur": 2471.0
+    },
+    {
+      "sku": "GYM005",
+      "slug": "lekgym-gym005",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2760.0,
+      "discountPercent": 30,
+      "netEur": 1932.0
+    },
+    {
+      "sku": "GYM005-1",
+      "slug": "lekgym-gym005-1",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1240.0,
+      "discountPercent": 30,
+      "netEur": 868.0
+    },
+    {
+      "sku": "GYM005-2",
+      "slug": "lekgym-gym005-2",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1690.0,
+      "discountPercent": 30,
+      "netEur": 1183.0
+    },
+    {
+      "sku": "GYM005-3",
+      "slug": "lekgym-gym005-3",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1610.0,
+      "discountPercent": 30,
+      "netEur": 1127.0
+    },
+    {
+      "sku": "GYM006-2",
+      "slug": "lekgym-gym006-2",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1720.0,
+      "discountPercent": 30,
+      "netEur": 1204.0
+    },
+    {
+      "sku": "GYM006-1",
+      "slug": "lekgym-gym006-1",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2860.0,
+      "discountPercent": 30,
+      "netEur": 2002.0
+    },
+    {
+      "sku": "GYM005-4",
+      "slug": "lekgym-gym005-4",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1790.0,
+      "discountPercent": 30,
+      "netEur": 1253.0
+    },
+    {
+      "sku": "GYM006",
+      "slug": "lekgym-gym006",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 5300.0,
+      "discountPercent": 30,
+      "netEur": 3710.0
+    },
+    {
+      "sku": "GYM007",
+      "slug": "lekgym-gym007",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 6970.0,
+      "discountPercent": 30,
+      "netEur": 4879.0
+    },
+    {
+      "sku": "GYM008",
+      "slug": "lekgym-gym008",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 10350.0,
+      "discountPercent": 30,
+      "netEur": 7245.0
+    },
+    {
+      "sku": "L001",
+      "slug": "linbana-l001",
+      "name": "Linbana",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 5300.0,
+      "discountPercent": 30,
+      "netEur": 3710.0
+    },
+    {
+      "sku": "L003",
+      "slug": "linbana-l003",
+      "name": "Linbana",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 4370.0,
+      "discountPercent": 30,
+      "netEur": 3059.0
+    },
+    {
+      "sku": "L001-1",
+      "slug": "linbana-l001-1",
+      "name": "Linbana",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 4370.0,
+      "discountPercent": 30,
+      "netEur": 3059.0
+    },
+    {
+      "sku": "L003-1",
+      "slug": "linbana-l003-1",
+      "name": "Linbana",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 3490.0,
+      "discountPercent": 30,
+      "netEur": 2443.0
+    },
+    {
+      "sku": "L002",
+      "slug": "linbana-l002",
+      "name": "Linbana",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 10300.0,
+      "discountPercent": 30,
+      "netEur": 7210.0
+    },
+    {
+      "sku": "L002-1",
+      "slug": "linbana-l002-1",
+      "name": "Linbana",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 8740.0,
+      "discountPercent": 30,
+      "netEur": 6118.0
+    },
+    {
+      "sku": "LP001",
+      "slug": "rope-twister-hic-2-0m-lp001",
+      "name": "Rope twister - HIC 2,0m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1640.0,
+      "discountPercent": 30,
+      "netEur": 1148.0
+    },
+    {
+      "sku": "LP006",
+      "slug": "rope-wall-high-hic-2-0m-lp006",
+      "name": "Rope wall high - HIC 2,0m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1530.0,
+      "discountPercent": 30,
+      "netEur": 1071.0
+    },
+    {
+      "sku": "LP004",
+      "slug": "rope-wall-hic-1-0m-lp004",
+      "name": "Rope wall - HIC 1,0m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1240.0,
+      "discountPercent": 30,
+      "netEur": 868.0
+    },
+    {
+      "sku": "LP003",
+      "slug": "rope-in-a-shape-hic-1-0m-lp003",
+      "name": "Rope in A shape - HIC 1,0m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1170.0,
+      "discountPercent": 30,
+      "netEur": 819.0
+    },
+    {
+      "sku": "LP002",
+      "slug": "rope-net-hic-1-0m-lp002",
+      "name": "Rope net - HIC 1,0m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1450.0,
+      "discountPercent": 30,
+      "netEur": 1015.0
+    },
+    {
+      "sku": "LP005",
+      "slug": "klatterlek-lp005",
+      "name": "Klätterlek",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 6550.0,
+      "discountPercent": 30,
+      "netEur": 4585.0
+    },
+    {
+      "sku": "LP007",
+      "slug": "small-rope-igloo-hic-2-2m-lp007",
+      "name": "Small rope igloo - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 5600.0,
+      "discountPercent": 30,
+      "netEur": 3920.0
+    },
+    {
+      "sku": "LP008",
+      "slug": "smal-rope-igloo-hic-2-2m-lp008",
+      "name": "Smal rope igloo - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 6650.0,
+      "discountPercent": 30,
+      "netEur": 4655.0
+    },
+    {
+      "sku": "LP011",
+      "slug": "big-rope-igloo-hic-2-2m-lp011",
+      "name": "Big rope igloo - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 11100.0,
+      "discountPercent": 30,
+      "netEur": 7770.0
+    },
+    {
+      "sku": "LP010",
+      "slug": "midlle-rope-igloo-hic-2-2m-lp010",
+      "name": "Midlle rope igloo - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 9450.0,
+      "discountPercent": 30,
+      "netEur": 6615.0
+    },
+    {
+      "sku": "LP009",
+      "slug": "midlle-rope-igloo-hic-2-2m-lp009",
+      "name": "Midlle rope igloo - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 8270.0,
+      "discountPercent": 30,
+      "netEur": 5789.0
+    },
+    {
+      "sku": "LP012",
+      "slug": "big-rope-igloo-hic-2-2m-lp012",
+      "name": "Big rope igloo - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 12380.0,
+      "discountPercent": 30,
+      "netEur": 8666.0
+    },
+    {
+      "sku": "LP019",
+      "slug": "rope-set-hic-2-5m-lp019",
+      "name": "Rope set - HIC 2,5m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 4700.0,
+      "discountPercent": 30,
+      "netEur": 3290.0
+    },
+    {
+      "sku": "LP017",
+      "slug": "big-rope-track-hic-2-2m-lp017",
+      "name": "Big rope track - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 64500.0,
+      "discountPercent": 30,
+      "netEur": 45150.0
+    },
+    {
+      "sku": "LP016",
+      "slug": "rope-track-hic-2-2m-lp016",
+      "name": "Rope track - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 24500.0,
+      "discountPercent": 30,
+      "netEur": 17150.0
+    },
+    {
+      "sku": "LP015",
+      "slug": "big-rope-set-hic-2-2m-lp015",
+      "name": "Big rope set - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 9900.0,
+      "discountPercent": 30,
+      "netEur": 6930.0
+    },
+    {
+      "sku": "LP018",
+      "slug": "big-rope-igloo-hic-2-0m-lp018",
+      "name": "Big rope igloo - HIC 2,0m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 11000.0,
+      "discountPercent": 30,
+      "netEur": 7700.0
+    },
+    {
+      "sku": "LP013",
+      "slug": "rope-dome-hic-2-2m-lp013",
+      "name": "Rope dome - HIC 2,2m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 5830.0,
+      "discountPercent": 30,
+      "netEur": 4081.0
+    },
+    {
+      "sku": "M1-01",
+      "slug": "rep-lekbro-m1-01",
+      "name": "Rep lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1350.0,
+      "discountPercent": 30,
+      "netEur": 945.0
+    },
+    {
+      "sku": "M1-02",
+      "slug": "balanslek-m1-02",
+      "name": "Balanslek",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1270.0,
+      "discountPercent": 30,
+      "netEur": 889.0
+    },
+    {
+      "sku": "M2-01",
+      "slug": "lekbro-m2-01",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2280.0,
+      "discountPercent": 30,
+      "netEur": 1596.0
+    },
+    {
+      "sku": "M1-03",
+      "slug": "balanslek-m1-03",
+      "name": "Balanslek",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1330.0,
+      "discountPercent": 30,
+      "netEur": 931.0
+    },
+    {
+      "sku": "M1-04",
+      "slug": "rep-lekbro-m1-04",
+      "name": "Rep lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1190.0,
+      "discountPercent": 30,
+      "netEur": 833.0
+    },
+    {
+      "sku": "LP020",
+      "slug": "rope-set-hic-2-5m-lp020",
+      "name": "Rope set - HIC 2,5m",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 5830.0,
+      "discountPercent": 30,
+      "netEur": 4081.0
+    },
+    {
+      "sku": "M2-02",
+      "slug": "lekbro-m2-02",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2070.0,
+      "discountPercent": 30,
+      "netEur": 1449.0
+    },
+    {
+      "sku": "MGYM001",
+      "slug": "lekgym-mgym001",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1030.0,
+      "discountPercent": 30,
+      "netEur": 721.0
+    },
+    {
+      "sku": "MGYM002",
+      "slug": "lekgym-mgym002",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1190.0,
+      "discountPercent": 30,
+      "netEur": 833.0
+    },
+    {
+      "sku": "M3-02",
+      "slug": "lekbro-m3-02",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2860.0,
+      "discountPercent": 30,
+      "netEur": 2002.0
+    },
+    {
+      "sku": "M3-01",
+      "slug": "lekbro-m3-01",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2980.0,
+      "discountPercent": 30,
+      "netEur": 2086.0
+    },
+    {
+      "sku": "MGYM003",
+      "slug": "lekgym-mgym003",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1510.0,
+      "discountPercent": 30,
+      "netEur": 1057.0
+    },
+    {
+      "sku": "MGYM004",
+      "slug": "lekgym-mgym004",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1650.0,
+      "discountPercent": 30,
+      "netEur": 1155.0
+    },
+    {
+      "sku": "MGYM005",
+      "slug": "lekgym-mgym005",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1320.0,
+      "discountPercent": 30,
+      "netEur": 924.0
+    },
+    {
+      "sku": "MGYM006",
+      "slug": "lekgym-mgym006",
+      "name": "Lekgym",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1720.0,
+      "discountPercent": 30,
+      "netEur": 1204.0
+    },
+    {
+      "sku": "MP1-02",
+      "slug": "balanslek-mp1-02",
+      "name": "Balanslek",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1390.0,
+      "discountPercent": 30,
+      "netEur": 973.0
+    },
+    {
+      "sku": "MP1-01",
+      "slug": "rep-lekbro-mp1-01",
+      "name": "Rep lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1300.0,
+      "discountPercent": 30,
+      "netEur": 910.0
+    },
+    {
+      "sku": "MP1-03",
+      "slug": "balanslek-mp1-03",
+      "name": "Balanslek",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1420.0,
+      "discountPercent": 30,
+      "netEur": 994.0
+    },
+    {
+      "sku": "MP1-04",
+      "slug": "rep-lekbro-mp1-04",
+      "name": "Rep lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 1180.0,
+      "discountPercent": 30,
+      "netEur": 826.0
+    },
+    {
+      "sku": "MP1-06",
+      "slug": "lekbro-mp1-06",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2230.0,
+      "discountPercent": 30,
+      "netEur": 1561.0
+    },
+    {
+      "sku": "MP1-05",
+      "slug": "lekbro-mp1-05",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2820.0,
+      "discountPercent": 30,
+      "netEur": 1974.0
+    },
+    {
+      "sku": "MP2-01",
+      "slug": "lekbro-mp2-01",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2470.0,
+      "discountPercent": 30,
+      "netEur": 1729.0
+    },
+    {
+      "sku": "MP2-03",
+      "slug": "lekbro-mp2-03",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 3890.0,
+      "discountPercent": 30,
+      "netEur": 2723.0
+    },
+    {
+      "sku": "MP2-04",
+      "slug": "lekbro-mp2-04",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2880.0,
+      "discountPercent": 30,
+      "netEur": 2016.0
+    },
+    {
+      "sku": "MP3-02",
+      "slug": "lekbro-mp3-02",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 3400.0,
+      "discountPercent": 30,
+      "netEur": 2380.0
+    },
+    {
+      "sku": "MP3-01",
+      "slug": "lekbro-mp3-01",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 3560.0,
+      "discountPercent": 30,
+      "netEur": 2492.0
+    },
+    {
+      "sku": "TR15",
+      "slug": "markstudsmatta-tr15",
+      "name": "Markstudsmatta",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2260.0,
+      "discountPercent": 30,
+      "netEur": 1582.0
+    },
+    {
+      "sku": "VZ2-012",
+      "slug": "lekstallning-med-gunga-vz2-012",
+      "name": "Lekställning med gunga",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 11890.0,
+      "discountPercent": 30,
+      "netEur": 8323.0
+    },
+    {
+      "sku": "VZ2-006-15",
+      "slug": "lekstallning-med-tunnel-vz2-006-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6000.0,
+      "discountPercent": 30,
+      "netEur": 4200.0
+    },
+    {
+      "sku": "VZ1-003-15",
+      "slug": "lekstallning-vz1-003-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3880.0,
+      "discountPercent": 30,
+      "netEur": 2716.0
+    },
+    {
+      "sku": "VZ1-002-15",
+      "slug": "lekstallning-vz1-002-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3900.0,
+      "discountPercent": 30,
+      "netEur": 2730.0
+    },
+    {
+      "sku": "VZ1-006-1-15",
+      "slug": "lekstallning-med-gunga-vz1-006-1-15",
+      "name": "Lekställning med gunga",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5570.0,
+      "discountPercent": 30,
+      "netEur": 3899.0
+    },
+    {
+      "sku": "VZ1-007-15",
+      "slug": "lekstallning-vz1-007-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4250.0,
+      "discountPercent": 30,
+      "netEur": 2975.0
+    },
+    {
+      "sku": "MP2-02",
+      "slug": "lekbro-mp2-02",
+      "name": "Lekbro",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 2260.0,
+      "discountPercent": 30,
+      "netEur": 1582.0
+    },
+    {
+      "sku": "VZ1-008-15",
+      "slug": "lekstallning-med-tunnel-vz1-008-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4730.0,
+      "discountPercent": 30,
+      "netEur": 3311.0
+    },
+    {
+      "sku": "VZ1-009-15",
+      "slug": "lekstallning-vz1-009-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4990.0,
+      "discountPercent": 30,
+      "netEur": 3493.0
+    },
+    {
+      "sku": "VZ1-010-15",
+      "slug": "lekstallning-vz1-010-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4600.0,
+      "discountPercent": 30,
+      "netEur": 3220.0
+    },
+    {
+      "sku": "VZ1-011-15",
+      "slug": "lekstallning-med-gunga-vz1-011-15",
+      "name": "Lekställning med gunga",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5490.0,
+      "discountPercent": 30,
+      "netEur": 3843.0
+    },
+    {
+      "sku": "VZ1-2-001-15",
+      "slug": "lekstallning-vz1-2-001-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6400.0,
+      "discountPercent": 30,
+      "netEur": 4480.0
+    },
+    {
+      "sku": "VZ10-001-15",
+      "slug": "lekstallning-tiotorn-med-tunnel-vz10-001-15",
+      "name": "Lekställning tiotorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 35150.0,
+      "discountPercent": 30,
+      "netEur": 24605.0
+    },
+    {
+      "sku": "VZ2-001-15",
+      "slug": "lekstallning-med-tunnel-vz2-001-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6650.0,
+      "discountPercent": 30,
+      "netEur": 4655.0
+    },
+    {
+      "sku": "VZ2-003-15",
+      "slug": "lekstallning-med-tunnel-vz2-003-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7400.0,
+      "discountPercent": 30,
+      "netEur": 5180.0
+    },
+    {
+      "sku": "VZ2-002-15",
+      "slug": "lekstallning-med-tunnel-vz2-002-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6630.0,
+      "discountPercent": 30,
+      "netEur": 4641.0
+    },
+    {
+      "sku": "VZ2-004-15",
+      "slug": "lekstallning-vz2-004-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7400.0,
+      "discountPercent": 30,
+      "netEur": 5180.0
+    },
+    {
+      "sku": "VZ2-005-15",
+      "slug": "lekstallning-med-tunnel-vz2-005-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7100.0,
+      "discountPercent": 30,
+      "netEur": 4970.0
+    },
+    {
+      "sku": "VZ2-007-15",
+      "slug": "lekstallning-vz2-007-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7790.0,
+      "discountPercent": 30,
+      "netEur": 5453.0
+    },
+    {
+      "sku": "VZ2-008-1-15",
+      "slug": "lekstallning-med-tunnel-vz2-008-1-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6750.0,
+      "discountPercent": 30,
+      "netEur": 4725.0
+    },
+    {
+      "sku": "VZ2-008-2-15",
+      "slug": "lekstallning-med-tunnel-vz2-008-2-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7420.0,
+      "discountPercent": 30,
+      "netEur": 5194.0
+    },
+    {
+      "sku": "VZ2-008-15",
+      "slug": "lekstallning-med-tunnel-vz2-008-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7890.0,
+      "discountPercent": 30,
+      "netEur": 5523.0
+    },
+    {
+      "sku": "VZ2-009-15",
+      "slug": "lekstallning-vz2-009-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8550.0,
+      "discountPercent": 30,
+      "netEur": 5985.0
+    },
+    {
+      "sku": "VZ2-010-15",
+      "slug": "lekstallning-med-tunnel-vz2-010-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8200.0,
+      "discountPercent": 30,
+      "netEur": 5740.0
+    },
+    {
+      "sku": "VZ2-011-15",
+      "slug": "lekstallning-vz2-011-15",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7840.0,
+      "discountPercent": 30,
+      "netEur": 5488.0
+    },
+    {
+      "sku": "VZ3-002-15",
+      "slug": "lekstallning-med-tunnel-vz3-002-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 10300.0,
+      "discountPercent": 30,
+      "netEur": 7210.0
+    },
+    {
+      "sku": "VZ3-001-15",
+      "slug": "lekstallning-med-tunnel-vz3-001-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 10650.0,
+      "discountPercent": 30,
+      "netEur": 7455.0
+    },
+    {
+      "sku": "VZ3-003-15",
+      "slug": "lekstallning-med-tunnel-vz3-003-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 10900.0,
+      "discountPercent": 30,
+      "netEur": 7630.0
+    },
+    {
+      "sku": "VZ3-004-15",
+      "slug": "lekstallning-med-tunnel-vz3-004-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 10950.0,
+      "discountPercent": 30,
+      "netEur": 7665.0
+    },
+    {
+      "sku": "VZ4-001-15",
+      "slug": "lekstallning-fyrtorn-med-tunnel-vz4-001-15",
+      "name": "Lekställning fyrtorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 12950.0,
+      "discountPercent": 30,
+      "netEur": 9065.0
+    },
+    {
+      "sku": "VZ4-002-15",
+      "slug": "lekstallning-fyrtorn-med-tunnel-vz4-002-15",
+      "name": "Lekställning fyrtorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 13600.0,
+      "discountPercent": 30,
+      "netEur": 9520.0
+    },
+    {
+      "sku": "VZ5-001-15",
+      "slug": "lekstallning-femtorn-med-tunnel-vz5-001-15",
+      "name": "Lekställning femtorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 14450.0,
+      "discountPercent": 30,
+      "netEur": 10115.0
+    },
+    {
+      "sku": "VZ7-001-15",
+      "slug": "lekstallning-sjutorn-med-tunnel-vz7-001-15",
+      "name": "Lekställning sjutorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 23650.0,
+      "discountPercent": 30,
+      "netEur": 16555.0
+    },
+    {
+      "sku": "VZ7-002-15",
+      "slug": "lekstallning-sjutorn-vz7-002-15",
+      "name": "Lekställning sjutorn",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 24000.0,
+      "discountPercent": 30,
+      "netEur": 16800.0
+    },
+    {
+      "sku": "VZ8-001-15",
+      "slug": "lekstallning-attatorn-med-tunnel-vz8-001-15",
+      "name": "Lekställning åttatorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 26600.0,
+      "discountPercent": 30,
+      "netEur": 18620.0
+    },
+    {
+      "sku": "VZ8-002-15",
+      "slug": "lekstallning-attatorn-med-tunnel-vz8-002-15",
+      "name": "Lekställning åttatorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 24250.0,
+      "discountPercent": 30,
+      "netEur": 16975.0
+    },
+    {
+      "sku": "VZD1-011-10",
+      "slug": "lekstallning-med-gunga-vzd1-011-10",
+      "name": "Lekställning med gunga",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4160.0,
+      "discountPercent": 30,
+      "netEur": 2912.0
+    },
+    {
+      "sku": "VZD2-001-10",
+      "slug": "lekstallning-med-tunnel-vzd2-001-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4740.0,
+      "discountPercent": 30,
+      "netEur": 3318.0
+    },
+    {
+      "sku": "VZ9-001-15",
+      "slug": "lekstallning-med-tunnel-vz9-001-15",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 30250.0,
+      "discountPercent": 30,
+      "netEur": 21175.0
+    },
+    {
+      "sku": "VZD2-002-10",
+      "slug": "lekstallning-med-tunnel-vzd2-002-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4740.0,
+      "discountPercent": 30,
+      "netEur": 3318.0
+    },
+    {
+      "sku": "VZD2-003-10",
+      "slug": "lekstallning-med-tunnel-vzd2-003-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5380.0,
+      "discountPercent": 30,
+      "netEur": 3766.0
+    },
+    {
+      "sku": "VZD2-004-10",
+      "slug": "lekstallning-vzd2-004-10",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5360.0,
+      "discountPercent": 30,
+      "netEur": 3752.0
+    },
+    {
+      "sku": "VZD2-005-10",
+      "slug": "lekstallning-med-tunnel-vzd2-005-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5600.0,
+      "discountPercent": 30,
+      "netEur": 3920.0
+    },
+    {
+      "sku": "VZD2-006-10",
+      "slug": "lekstallning-med-tunnel-vzd2-006-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4030.0,
+      "discountPercent": 30,
+      "netEur": 2821.0
+    },
+    {
+      "sku": "VZD2-007-10",
+      "slug": "lekstallning-vzd2-007-10",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5490.0,
+      "discountPercent": 30,
+      "netEur": 3843.0
+    },
+    {
+      "sku": "VZD2-008-10",
+      "slug": "lekstallning-med-tunnel-vzd2-008-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5440.0,
+      "discountPercent": 30,
+      "netEur": 3808.0
+    },
+    {
+      "sku": "VZD2-009-10",
+      "slug": "lekstallning-vzd2-009-10",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6180.0,
+      "discountPercent": 30,
+      "netEur": 4326.0
+    },
+    {
+      "sku": "VZD2-010-10",
+      "slug": "lekstallning-med-tunnel-vzd2-010-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6080.0,
+      "discountPercent": 30,
+      "netEur": 4256.0
+    },
+    {
+      "sku": "VZD2-011-10",
+      "slug": "lekstallning-vzd2-011-10",
+      "name": "Lekställning",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5590.0,
+      "discountPercent": 30,
+      "netEur": 3913.0
+    },
+    {
+      "sku": "VZD3-001-10",
+      "slug": "lekstallning-med-tunnel-vzd3-001-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7490.0,
+      "discountPercent": 30,
+      "netEur": 5243.0
+    },
+    {
+      "sku": "VZD3-002-10",
+      "slug": "lekstallning-med-tunnel-vzd3-002-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7360.0,
+      "discountPercent": 30,
+      "netEur": 5152.0
+    },
+    {
+      "sku": "VZD3-003-10",
+      "slug": "lekstallning-med-tunnel-vzd3-003-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7870.0,
+      "discountPercent": 30,
+      "netEur": 5509.0
+    },
+    {
+      "sku": "VZD3-004-10",
+      "slug": "lekstallning-med-tunnel-vzd3-004-10",
+      "name": "Lekställning med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8150.0,
+      "discountPercent": 30,
+      "netEur": 5705.0
+    },
+    {
+      "sku": "VZD4-002-10",
+      "slug": "lekstallning-fyrtorn-med-tunnel-vzd4-002-10",
+      "name": "Lekställning fyrtorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8850.0,
+      "discountPercent": 30,
+      "netEur": 6195.0
+    },
+    {
+      "sku": "VZD4-001-10",
+      "slug": "lekstallning-fyrtorn-med-tunnel-vzd4-001-10",
+      "name": "Lekställning fyrtorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8800.0,
+      "discountPercent": 30,
+      "netEur": 6160.0
+    },
+    {
+      "sku": "VZD5-001-10",
+      "slug": "lekstallning-femtorn-med-tunnel-vzd5-001-10",
+      "name": "Lekställning femtorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 10500.0,
+      "discountPercent": 30,
+      "netEur": 7350.0
+    },
+    {
+      "sku": "VZD5-002-10",
+      "slug": "lekstallning-femtorn-med-tunnel-vzd5-002-10",
+      "name": "Lekställning femtorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 11400.0,
+      "discountPercent": 30,
+      "netEur": 7980.0
+    },
+    {
+      "sku": "VZD6-001-10",
+      "slug": "lekstallning-sextorn-med-tunnel-vzd6-001-10",
+      "name": "Lekställning sextorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 13900.0,
+      "discountPercent": 30,
+      "netEur": 9730.0
+    },
+    {
+      "sku": "VZD7-002-10",
+      "slug": "lekstallning-sjutorn-vzd7-002-10",
+      "name": "Lekställning sjutorn",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 16700.0,
+      "discountPercent": 30,
+      "netEur": 11690.0
+    },
+    {
+      "sku": "VZD8-001-10",
+      "slug": "lekstallning-attatorn-med-tunnel-vzd8-001-10",
+      "name": "Lekställning åttatorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 18800.0,
+      "discountPercent": 30,
+      "netEur": 13160.0
+    },
+    {
+      "sku": "VZD7-001-10",
+      "slug": "lekstallning-sjutorn-med-tunnel-vzd7-001-10",
+      "name": "Lekställning sjutorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 16400.0,
+      "discountPercent": 30,
+      "netEur": 11480.0
+    },
+    {
+      "sku": "VZD8-002-10",
+      "slug": "lekstallning-attatorn-med-tunnel-vzd8-002-10",
+      "name": "Lekställning åttatorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 17100.0,
+      "discountPercent": 30,
+      "netEur": 11970.0
+    },
+    {
+      "sku": "VZP1-001-10",
+      "slug": "lekstallning-hog-vzp1-001-10",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3990.0,
+      "discountPercent": 30,
+      "netEur": 2793.0
+    },
+    {
+      "sku": "VZP1-002-10",
+      "slug": "lekstallning-med-tak-med-gunga-vzp1-002-10",
+      "name": "Lekställning med tak med gunga",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4990.0,
+      "discountPercent": 30,
+      "netEur": 3493.0
+    },
+    {
+      "sku": "VZP1-002-15",
+      "slug": "lekstallning-med-tak-med-gunga-vzp1-002-15",
+      "name": "Lekställning med tak med gunga",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6100.0,
+      "discountPercent": 30,
+      "netEur": 4270.0
+    },
+    {
+      "sku": "VZP1-001-15",
+      "slug": "lekstallning-hog-vzp1-001-15",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4990.0,
+      "discountPercent": 30,
+      "netEur": 3493.0
+    },
+    {
+      "sku": "VZP1-003-15",
+      "slug": "lekstallning-lag-vzp1-003-15",
+      "name": "Lekställning låg",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4100.0,
+      "discountPercent": 30,
+      "netEur": 2870.0
+    },
+    {
+      "sku": "VZP1-005-10",
+      "slug": "lekstallning-hog-vzp1-005-10",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4500.0,
+      "discountPercent": 30,
+      "netEur": 3150.0
+    },
+    {
+      "sku": "VZP1-005-15",
+      "slug": "lekstallning-hog-vzp1-005-15",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5350.0,
+      "discountPercent": 30,
+      "netEur": 3745.0
+    },
+    {
+      "sku": "VZP1-006-10",
+      "slug": "lekstallning-med-tak-vzp1-006-10",
+      "name": "Lekställning med tak",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3990.0,
+      "discountPercent": 30,
+      "netEur": 2793.0
+    },
+    {
+      "sku": "VZP1-006-15",
+      "slug": "lekstallning-med-tak-vzp1-006-15",
+      "name": "Lekställning med tak",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 4350.0,
+      "discountPercent": 30,
+      "netEur": 3045.0
+    },
+    {
+      "sku": "VZP10-001-15",
+      "slug": "lekstallning-tiotorn-hog-med-tunnel-vzp10-001-15",
+      "name": "Lekställning tiotorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 36000.0,
+      "discountPercent": 30,
+      "netEur": 25200.0
+    },
+    {
+      "sku": "VZP10-001-10",
+      "slug": "lekstallning-tiotorn-hog-med-tunnel-vzp10-001-10",
+      "name": "Lekställning tiotorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 31500.0,
+      "discountPercent": 30,
+      "netEur": 22050.0
+    },
+    {
+      "sku": "VZP2-001-10",
+      "slug": "lekstallning-hog-vzp2-001-10",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5490.0,
+      "discountPercent": 30,
+      "netEur": 3843.0
+    },
+    {
+      "sku": "VZP2-001-15",
+      "slug": "lekstallning-hog-vzp2-001-15",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6650.0,
+      "discountPercent": 30,
+      "netEur": 4655.0
+    },
+    {
+      "sku": "VZP2-002-10",
+      "slug": "rutschkana-vzp2-002-10",
+      "name": "Rutschkana",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5790.0,
+      "discountPercent": 30,
+      "netEur": 4053.0
+    },
+    {
+      "sku": "VZP2-002-15",
+      "slug": "rutschkana-vzp2-002-15",
+      "name": "Rutschkana",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6850.0,
+      "discountPercent": 30,
+      "netEur": 4795.0
+    },
+    {
+      "sku": "VZP2-003-10",
+      "slug": "lekstallning-med-tak-med-tunnel-vzp2-003-10",
+      "name": "Lekställning med tak med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 5500.0,
+      "discountPercent": 30,
+      "netEur": 3850.0
+    },
+    {
+      "sku": "VZP2-003-15",
+      "slug": "lekstallning-med-tak-med-tunnel-vzp2-003-15",
+      "name": "Lekställning med tak med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6200.0,
+      "discountPercent": 30,
+      "netEur": 4340.0
+    },
+    {
+      "sku": "VZP2-004-10",
+      "slug": "lekstallning-hog-vzp2-004-10",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 7150.0,
+      "discountPercent": 30,
+      "netEur": 5005.0
+    },
+    {
+      "sku": "VZP2-004-15",
+      "slug": "lekstallning-hog-vzp2-004-15",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8550.0,
+      "discountPercent": 30,
+      "netEur": 5985.0
+    },
+    {
+      "sku": "VZP2-005-10",
+      "slug": "lekstallning-hog-med-gunga-vzp2-005-10",
+      "name": "Lekställning hög med gunga",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6990.0,
+      "discountPercent": 30,
+      "netEur": 4893.0
+    },
+    {
+      "sku": "VZP2-005-15",
+      "slug": "lekstallning-hog-med-gunga-vzp2-005-15",
+      "name": "Lekställning hög med gunga",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8190.0,
+      "discountPercent": 30,
+      "netEur": 5733.0
+    },
+    {
+      "sku": "VZP2-006-10",
+      "slug": "lekstallning-lag-vzp2-006-10",
+      "name": "Lekställning låg",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6450.0,
+      "discountPercent": 30,
+      "netEur": 4515.0
+    },
+    {
+      "sku": "VZP2-006-15",
+      "slug": "lekstallning-lag-vzp2-006-15",
+      "name": "Lekställning låg",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8100.0,
+      "discountPercent": 30,
+      "netEur": 5670.0
+    },
+    {
+      "sku": "VZP2-007-10",
+      "slug": "lekstallning-hog-vzp2-007-10",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8650.0,
+      "discountPercent": 30,
+      "netEur": 6055.0
+    },
+    {
+      "sku": "VZP2-009-15",
+      "slug": "lekstallning-med-tak-vzp2-009-15",
+      "name": "Lekställning med tak",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 6700.0,
+      "discountPercent": 30,
+      "netEur": 4690.0
+    },
+    {
+      "sku": "VZP2-007-15",
+      "slug": "lekstallning-hog-vzp2-007-15",
+      "name": "Lekställning hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 9850.0,
+      "discountPercent": 30,
+      "netEur": 6895.0
+    },
+    {
+      "sku": "VZP2-008-15",
+      "slug": "lekstallning-med-tak-vzp2-008-15",
+      "name": "Lekställning med tak",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8950.0,
+      "discountPercent": 30,
+      "netEur": 6265.0
+    },
+    {
+      "sku": "VZP3-001-10",
+      "slug": "lekstallning-hog-med-tunnel-vzp3-001-10",
+      "name": "Lekställning hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 9150.0,
+      "discountPercent": 30,
+      "netEur": 6405.0
+    },
+    {
+      "sku": "VZP3-001-15",
+      "slug": "lekstallning-hog-med-tunnel-vzp3-001-15",
+      "name": "Lekställning hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 10600.0,
+      "discountPercent": 30,
+      "netEur": 7420.0
+    },
+    {
+      "sku": "VZP3-002-10",
+      "slug": "lekstallning-hog-med-tunnel-vzp3-002-10",
+      "name": "Lekställning hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8950.0,
+      "discountPercent": 30,
+      "netEur": 6265.0
+    },
+    {
+      "sku": "VZP3-002-15",
+      "slug": "lekstallning-hog-med-tunnel-vzp3-002-15",
+      "name": "Lekställning hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 10500.0,
+      "discountPercent": 30,
+      "netEur": 7350.0
+    },
+    {
+      "sku": "VZP3-003-10",
+      "slug": "lekstallning-hog-med-tunnel-vzp3-003-10",
+      "name": "Lekställning hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 9300.0,
+      "discountPercent": 30,
+      "netEur": 6510.0
+    },
+    {
+      "sku": "VZP3-003-15",
+      "slug": "lekstallning-hog-med-tunnel-vzp3-003-15",
+      "name": "Lekställning hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 10900.0,
+      "discountPercent": 30,
+      "netEur": 7630.0
+    },
+    {
+      "sku": "VZP3-004-10",
+      "slug": "lekstallning-hog-med-tunnel-vzp3-004-10",
+      "name": "Lekställning hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 8700.0,
+      "discountPercent": 30,
+      "netEur": 6090.0
+    },
+    {
+      "sku": "VZP3-004-15",
+      "slug": "lekstallning-hog-med-tunnel-vzp3-004-15",
+      "name": "Lekställning hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 10250.0,
+      "discountPercent": 30,
+      "netEur": 7175.0
+    },
+    {
+      "sku": "VZP3-005-15",
+      "slug": "lekstallning-med-tak-vzp3-005-15",
+      "name": "Lekställning med tak",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 9990.0,
+      "discountPercent": 30,
+      "netEur": 6993.0
+    },
+    {
+      "sku": "VZP4-001-15",
+      "slug": "lekstallning-fyrtorn-hog-med-tunnel-vzp4-001-15",
+      "name": "Lekställning fyrtorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 13500.0,
+      "discountPercent": 30,
+      "netEur": 9450.0
+    },
+    {
+      "sku": "VZP4-001-10",
+      "slug": "lekstallning-fyrtorn-hog-med-tunnel-vzp4-001-10",
+      "name": "Lekställning fyrtorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 11900.0,
+      "discountPercent": 30,
+      "netEur": 8330.0
+    },
+    {
+      "sku": "VZP4-002-10",
+      "slug": "lekstallning-fyrtorn-hog-vzp4-002-10",
+      "name": "Lekställning fyrtorn hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 13400.0,
+      "discountPercent": 30,
+      "netEur": 9380.0
+    },
+    {
+      "sku": "VZP4-003-15",
+      "slug": "lekstallning-fyrtorn-hog-med-tunnel-vzp4-003-15",
+      "name": "Lekställning fyrtorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 15000.0,
+      "discountPercent": 30,
+      "netEur": 10500.0
+    },
+    {
+      "sku": "VZP4-002-15",
+      "slug": "lekstallning-fyrtorn-hog-vzp4-002-15",
+      "name": "Lekställning fyrtorn hög",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 14950.0,
+      "discountPercent": 30,
+      "netEur": 10465.0
+    },
+    {
+      "sku": "VZP5-001-10",
+      "slug": "lekstallning-femtorn-hog-med-tunnel-vzp5-001-10",
+      "name": "Lekställning femtorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 13600.0,
+      "discountPercent": 30,
+      "netEur": 9520.0
+    },
+    {
+      "sku": "VZP6-001-10",
+      "slug": "lekstallning-sextorn-hog-med-tunnel-vzp6-001-10",
+      "name": "Lekställning sextorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 18000.0,
+      "discountPercent": 30,
+      "netEur": 12600.0
+    },
+    {
+      "sku": "VZP5-001-15",
+      "slug": "lekstallning-femtorn-hog-med-tunnel-vzp5-001-15",
+      "name": "Lekställning femtorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 15700.0,
+      "discountPercent": 30,
+      "netEur": 10990.0
+    },
+    {
+      "sku": "VZP6-001-15",
+      "slug": "lekstallning-sextorn-hog-med-tunnel-vzp6-001-15",
+      "name": "Lekställning sextorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 20900.0,
+      "discountPercent": 30,
+      "netEur": 14630.0
+    },
+    {
+      "sku": "VZP8-001-15",
+      "slug": "lekstallning-attatorn-hog-med-tunnel-vzp8-001-15",
+      "name": "Lekställning åttatorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 28150.0,
+      "discountPercent": 30,
+      "netEur": 19705.0
+    },
+    {
+      "sku": "VZP8-001-10",
+      "slug": "lekstallning-attatorn-hog-med-tunnel-vzp8-001-10",
+      "name": "Lekställning åttatorn hög med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 24900.0,
+      "discountPercent": 30,
+      "netEur": 17430.0
+    },
+    {
+      "sku": "AP005-15",
+      "slug": "rutschkana-med-gunga-ap005-15",
+      "name": "Rutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 5870.0,
+      "discountPercent": 30,
+      "netEur": 4109.0
+    },
+    {
+      "sku": "AP006-10",
+      "slug": "dubbelrutschkana-med-gunga-ap006-10",
+      "name": "Dubbelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 5140.0,
+      "discountPercent": 30,
+      "netEur": 3598.0
+    },
+    {
+      "sku": "AP006-15",
+      "slug": "dubbelrutschkana-med-gunga-ap006-15",
+      "name": "Dubbelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 5960.0,
+      "discountPercent": 30,
+      "netEur": 4172.0
+    },
+    {
+      "sku": "AP007-10",
+      "slug": "dubbelrutschkana-med-gunga-ap007-10",
+      "name": "Dubbelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 4990.0,
+      "discountPercent": 30,
+      "netEur": 3493.0
+    },
+    {
+      "sku": "AP007-15",
+      "slug": "dubbelrutschkana-med-gunga-ap007-15",
+      "name": "Dubbelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 5990.0,
+      "discountPercent": 30,
+      "netEur": 4193.0
+    },
+    {
+      "sku": "AP008-10",
+      "slug": "dubbelrutschkana-med-gunga-ap008-10",
+      "name": "Dubbelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 5290.0,
+      "discountPercent": 30,
+      "netEur": 3703.0
+    },
+    {
+      "sku": "AP009-10",
+      "slug": "dubbelrutschkana-med-gunga-ap009-10",
+      "name": "Dubbelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 5390.0,
+      "discountPercent": 30,
+      "netEur": 3773.0
+    },
+    {
+      "sku": "AP009-15",
+      "slug": "dubbelrutschkana-med-gunga-ap009-15",
+      "name": "Dubbelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 6400.0,
+      "discountPercent": 30,
+      "netEur": 4480.0
+    },
+    {
+      "sku": "AP010-10",
+      "slug": "trippelrutschkana-med-gunga-ap010-10",
+      "name": "Trippelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 8590.0,
+      "discountPercent": 30,
+      "netEur": 6013.0
+    },
+    {
+      "sku": "AP010-15",
+      "slug": "trippelrutschkana-med-gunga-ap010-15",
+      "name": "Trippelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 10150.0,
+      "discountPercent": 30,
+      "netEur": 7105.0
+    },
+    {
+      "sku": "PH002-2",
+      "slug": "vippgunga-4-m-ph002-2",
+      "name": "Vippgunga 4 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 760.0,
+      "discountPercent": 30,
+      "netEur": 532.0
+    },
+    {
+      "sku": "VZ5-002-15",
+      "slug": "lekstallning-femtorn-med-tunnel-vz5-002-15",
+      "name": "Lekställning femtorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 16450.0,
+      "discountPercent": 30,
+      "netEur": 11515.0
+    },
+    {
+      "sku": "AP011-15",
+      "slug": "trippelrutschkana-med-gunga-ap011-15",
+      "name": "Trippelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 10250.0,
+      "discountPercent": 30,
+      "netEur": 7175.0
+    },
+    {
+      "sku": "AP011-10",
+      "slug": "trippelrutschkana-med-gunga-ap011-10",
+      "name": "Trippelrutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 8690.0,
+      "discountPercent": 30,
+      "netEur": 6083.0
+    },
+    {
+      "sku": "VZ6-001-15",
+      "slug": "lekstallning-sextorn-med-tunnel-vz6-001-15",
+      "name": "Lekställning sextorn med tunnel",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 19350.0,
+      "discountPercent": 30,
+      "netEur": 13545.0
+    },
+    {
+      "sku": "AP005-10",
+      "slug": "rutschkana-med-gunga-ap005-10",
+      "name": "Rutschkana med gunga",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 5050.0,
+      "discountPercent": 30,
+      "netEur": 3535.0
+    },
+    {
+      "sku": "PH003",
+      "slug": "vippgunga-fyra-personer-4-m-ph003",
+      "name": "Vippgunga fyra personer 4 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 830.0,
+      "discountPercent": 30,
+      "netEur": 581.0
+    },
+    {
+      "sku": "PH005",
+      "slug": "vippgunga-bage-4-m-ph005",
+      "name": "Vippgunga båge 4 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 820.0,
+      "discountPercent": 30,
+      "netEur": 574.0
+    },
+    {
+      "sku": "PH006",
+      "slug": "vippgunga-bage-roterande-ph006",
+      "name": "Vippgunga båge roterande",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 820.0,
+      "discountPercent": 30,
+      "netEur": 574.0
+    },
+    {
+      "sku": "PH007",
+      "slug": "vippgunga-bage-roterande-ph007",
+      "name": "Vippgunga båge roterande",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 1030.0,
+      "discountPercent": 30,
+      "netEur": 721.0
+    },
+    {
+      "sku": "PH008",
+      "slug": "vippgunga-roterande-3-m-ph008",
+      "name": "Vippgunga roterande 3 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 1030.0,
+      "discountPercent": 30,
+      "netEur": 721.0
+    },
+    {
+      "sku": "PHP003",
+      "slug": "vippgunga-fyra-personer-4-m-php003",
+      "name": "Vippgunga fyra personer 4 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 880.0,
+      "discountPercent": 30,
+      "netEur": 616.0
+    },
+    {
+      "sku": "PH009",
+      "slug": "vippgunga-sex-personer-ph009",
+      "name": "Vippgunga sex personer",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 1060.0,
+      "discountPercent": 30,
+      "netEur": 742.0
+    },
+    {
+      "sku": "PHP005",
+      "slug": "vippgunga-bage-4-m-php005",
+      "name": "Vippgunga båge 4 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 870.0,
+      "discountPercent": 30,
+      "netEur": 609.0
+    },
+    {
+      "sku": "PHP006",
+      "slug": "vippgunga-bage-roterande-php006",
+      "name": "Vippgunga båge roterande",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 1220.0,
+      "discountPercent": 30,
+      "netEur": 854.0
+    },
+    {
+      "sku": "PHP008",
+      "slug": "vippgunga-roterande-3-m-php008",
+      "name": "Vippgunga roterande 3 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 1190.0,
+      "discountPercent": 30,
+      "netEur": 833.0
+    },
+    {
+      "sku": "PHP007",
+      "slug": "vippgunga-bage-roterande-php007",
+      "name": "Vippgunga båge roterande",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 1310.0,
+      "discountPercent": 30,
+      "netEur": 917.0
+    },
+    {
+      "sku": "PHP011",
+      "slug": "vippgunga-fjader-3-m-php011",
+      "name": "Vippgunga fjäder 3 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 1650.0,
+      "discountPercent": 30,
+      "netEur": 1155.0
+    },
+    {
+      "sku": "PHP009",
+      "slug": "vippgunga-sex-personer-5-m-php009",
+      "name": "Vippgunga sex personer 5 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 1440.0,
+      "discountPercent": 30,
+      "netEur": 1008.0
     }
   ],
   "counts": {
-    "rows": 102,
-    "products": 102
+    "rows": 440,
+    "products": 440
   }
 }
