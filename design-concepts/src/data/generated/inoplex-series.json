@@ -37617,8 +37617,8 @@
       "fetchedAt": "2026-09-17",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
+      "subcategory": "Betongbänkar",
+      "subcategorySlug": "betongbankar",
       "typeNoun": "Parkbänk",
       "summary": "Parkbänk LAB.21.04. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
       "description": "Parkbänk LAB.21.04. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
@@ -37769,10 +37769,10 @@
         }
       ],
       "related": [
+        "parkbank-rogal",
         "parkbank-la-23-06",
         "parkbank-la-23-07",
-        "parkbank-la-23-04",
-        "parkbank-la-23-05"
+        "parkbank-la-23-04"
       ],
       "imageNote": "Exempelbild – valt utförande kan avvika.",
       "gaps": [

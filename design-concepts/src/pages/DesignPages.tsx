@@ -27,6 +27,7 @@ export function DesignIndexPage() {
             ['Produktlista Parkbänkar', '/produkter/parkmobler/parkbankar'],
             ['Produktlista Betongbänkar', '/produkter/parkmobler/betongbankar'],
             ['Parkbänk Rogal', '/produkt/parkbank-rogal'],
+            ['Parkbänk LAB.21.04', '/produkt/parkbank-lab-21-04'],
             ['Produktsida C hybrid (rekommenderas)', '/produkt/parkbank-arsta'],
             ['Produktsida A upphandling', '/design/produktsida-a'],
             ['Produktsida B arkitektur', '/design/produktsida-b'],

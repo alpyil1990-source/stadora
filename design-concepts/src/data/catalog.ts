@@ -60,7 +60,7 @@ export const catalog: CategoryDef[] = [
         slug: 'betongbankar',
         name: 'Betongbänkar',
         blurb: 'Bänkar i betong för park, torg och gård.',
-        productSlugs: [...investimCatalogSlugs.betongbankar],
+        productSlugs: [...investimCatalogSlugs.betongbankar, ...inoplexCatalogSlugs.betongbankar],
         draftExamples: [],
         filters: [
           { legend: 'Ryggstöd', options: ['Med ryggstöd', 'Utan ryggstöd'] },
@@ -119,13 +119,6 @@ export const catalog: CategoryDef[] = [
         name: 'Hängmattor',
         blurb: 'Hängmattor för offentlig utemiljö.',
         productSlugs: [...zanoCatalogSlugs.hangmattor],
-        draftExamples: [],
-      },
-      {
-        slug: 'solkraftverk',
-        name: 'Solkraftverk',
-        blurb: 'Solcellsdrivna laddstationer för park och torg.',
-        productSlugs: [...zanoCatalogSlugs.solkraftverk],
         draftExamples: [],
       },
     ],

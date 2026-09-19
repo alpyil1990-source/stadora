@@ -98,6 +98,7 @@ function slugsFor(sub: string) {
 
 export const inoplexCatalogSlugs = {
   parkbankar: slugsFor('parkbankar'),
+  betongbankar: slugsFor('betongbankar'),
   'modulara-sitt': slugsFor('modulara-sitt'),
   'bord-picknick': slugsFor('bord-picknick'),
   papperskorgar: slugsFor('papperskorgar'),
