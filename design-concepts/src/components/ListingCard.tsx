@@ -27,7 +27,7 @@ export function ListingCard({ product }: { product: Product }) {
           <img
             src={img.src}
             alt={img.alt}
-            className="absolute inset-0 h-full w-full object-contain object-center p-2"
+            className="absolute inset-0 h-full w-full object-cover object-center"
           />
         ) : (
           <span className="absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-muted">

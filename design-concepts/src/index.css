@@ -43,7 +43,7 @@ body {
   margin-inline: auto;
 }
 
-/* Same 2 / 4 split as Urbania. Listing photos use object-contain so the whole product stays in frame. */
+/* Same 2 / 4 split as Urbania. Listing photos use object-cover so they fill the square tile. */
 .product-listing-grid {
   display: grid;
   grid-template-columns: 1fr;
