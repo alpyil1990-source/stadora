@@ -748,8 +748,6 @@ def translate_description(parsed: dict, name: str) -> str:
         parts.append("Material enligt leverantören: " + parsed["material"].rstrip(".") + ".")
     if parsed.get("standards"):
         parts.append("Certifierad enligt " + ", ".join(parsed["standards"]) + ".")
-    if parsed.get("colors"):
-        parts.append(f"{len(parsed['colors'])} kulörpar enligt leverantören.")
     return " ".join(parts)
 
 
@@ -1067,7 +1065,22 @@ def build_one(op: urllib.request.OpenerDirector, listed: dict, prices: dict, log
     uniq_colors.sort(
         key=lambda c: PREFERRED_COLOR_ORDER.index(c["name"]) if c["name"] in PREFERRED_COLOR_ORDER else 50
     )
-    parsed["colors"] = uniq_colors
+    image_color_names = {im["color"] for im in images if im.get("color")}
+    if image_color_names:
+        keep = []
+        seen_keep: set[str] = set()
+        for c in uniq_colors:
+            if c["name"] in image_color_names and c["name"] not in seen_keep:
+                keep.append(c)
+                seen_keep.add(c["name"])
+        for name in sorted(image_color_names, key=lambda n: PREFERRED_COLOR_ORDER.index(n) if n in PREFERRED_COLOR_ORDER else 50):
+            if name in seen_keep:
+                continue
+            keep.append(swedish_color(name))
+            seen_keep.add(name)
+        parsed["colors"] = keep
+    else:
+        parsed["colors"] = []
 
     documents = []
     for doc in parsed["docs"]:

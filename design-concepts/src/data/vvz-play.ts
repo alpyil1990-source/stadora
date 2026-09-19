@@ -66,6 +66,7 @@ function toProduct(row: SeriesJson): Product {
       caption: img.caption,
     })),
   )
+  const colors = toColors(row.colors, images)
   return {
     slug: row.slug,
     name: row.name,
@@ -85,8 +86,8 @@ function toProduct(row: SeriesJson): Product {
     description: row.description,
     images,
     material: row.material ?? undefined,
-    colorLegend: row.colorLegend ?? (row.colors.length ? 'Kulör' : undefined),
-    colors: toColors(row.colors, images),
+    colorLegend: colors?.length ? (row.colorLegend ?? 'Kulör') : undefined,
+    colors,
     dimensions: row.dimensions.length ? row.dimensions : undefined,
     ageRange: row.ageRange ?? undefined,
     users: row.users ?? undefined,

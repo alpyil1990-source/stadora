@@ -137,6 +137,14 @@ function alignNameToImages(name: string, imageColors: string[]): string {
   return canon
 }
 
+const NAME_HEX: Record<string, string> = {
+  'Orange + turkos': '#ce5c27',
+  'Brun + gulgrön': '#6c4c2c',
+  'Antracit + gul': '#f7b500',
+  'Antracit + röd': '#bb1e10',
+  'Grön + vit': '#68a640',
+}
+
 export function normalizeCatalogImages(images: ProductImage[]): ProductImage[] {
   return uniqueImagesByColor(images)
 }
@@ -145,22 +153,35 @@ export function normalizeCatalogColors(
   options: ColorChoice[],
   images: ProductImage[],
 ): ColorChoice[] {
-  const imageColors = normalizeCatalogImages(images)
-    .map((img) => img.color)
-    .filter((name): name is string => Boolean(name))
-  const mapped = options.map((opt) => {
-    const name = alignNameToImages(canonicalColorName(opt.name, opt.hex) || opt.name, imageColors)
-    return { ...opt, name }
-  })
-  const seen = new Set<string>()
-  const out: ColorChoice[] = []
-  for (const opt of [...mapped].sort((a, b) => colorRank(a.name) - colorRank(b.name))) {
-    const key = canonicalColorName(opt.name, opt.hex) || opt.name
-    if (seen.has(key)) continue
-    seen.add(key)
-    out.push({ ...opt, name: key })
+  const imageColors = [
+    ...new Set(
+      normalizeCatalogImages(images)
+        .map((img) => img.color)
+        .filter((name): name is string => Boolean(name)),
+    ),
+  ]
+  // Product photos are the source of truth. Scraped series swatches without a
+  // photo are not a colour this SKU actually has.
+  if (imageColors.length === 0) return []
+
+  const byName = new Map<string, ColorChoice>()
+  for (const opt of options) {
+    const aligned = alignNameToImages(
+      canonicalColorName(opt.name, opt.hex) || opt.name,
+      imageColors,
+    )
+    if (!imageColors.some((ic) => colorsMatch(ic, aligned))) continue
+    const key = canonicalColorName(aligned) || aligned
+    if (byName.has(key)) continue
+    byName.set(key, { ...opt, name: key })
   }
-  return out
+  for (const ic of imageColors) {
+    const key = canonicalColorName(ic) || ic
+    if (byName.has(key)) continue
+    const hex = NAME_HEX[key]
+    byName.set(key, hex ? { name: key, hex } : { name: key })
+  }
+  return [...byName.values()].sort((a, b) => colorRank(a.name) - colorRank(b.name))
 }
 
 export function colorChoices(product: Product): ColorChoice[] {
