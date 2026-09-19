@@ -25,6 +25,8 @@ export function DesignIndexPage() {
             ['Utegym (intern testlistning)', '/produkter/lek-aktivitet/utegym'],
             ['Huvudkategori Parkmöbler', '/produkter/parkmobler'],
             ['Produktlista Parkbänkar', '/produkter/parkmobler/parkbankar'],
+            ['Produktlista Betongbänkar', '/produkter/parkmobler/betongbankar'],
+            ['Parkbänk Rogal', '/produkt/parkbank-rogal'],
             ['Produktsida C hybrid (rekommenderas)', '/produkt/parkbank-arsta'],
             ['Produktsida A upphandling', '/design/produktsida-a'],
             ['Produktsida B arkitektur', '/design/produktsida-b'],
@@ -300,6 +302,7 @@ export function InvestimDraftPage() {
   const items = INVESTIM_SLUGS.map((slug) => products[slug]).filter(Boolean)
   const groups = [
     { name: 'Parkbänkar', slug: 'parkbankar', href: '/produkter/parkmobler/parkbankar' },
+    { name: 'Betongbänkar', slug: 'betongbankar', href: '/produkter/parkmobler/betongbankar' },
     { name: 'Bord och picknick', slug: 'bord-picknick', href: '/produkter/parkmobler/bord-picknick' },
     { name: 'Modulära sitt', slug: 'modulara-sitt', href: '/produkter/parkmobler/modulara-sitt' },
     { name: 'Pollare', slug: 'pollare', href: '/produkter/pollare-racken/pollare' },

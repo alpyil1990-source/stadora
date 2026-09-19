@@ -720,8 +720,8 @@
       "sku": "655",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
+      "subcategory": "Betongbänkar",
+      "subcategorySlug": "betongbankar",
       "summary": "Arkitektonisk betong, trälister och stål, 450 kg.",
       "description": "Tillverkas i betong. Flerkomponents portlandcement CM II/A-M (S-LL) 52,5N, hållfasthetsklass 52,5, tvättad ballast och sorterad sand. Betong minst C 40 enligt PN-EN 206. Trälister 4 cm, lackade tre gånger. Ståldelar är varmförzinkade och pulverlackerade.",
       "material": "Arkitektonisk betong, trälister och stål",
@@ -6582,12 +6582,14 @@
       "parkbank-puck",
       "parkbank-arkitektur-200",
       "parkbank-arkitektur-200-rygg",
-      "parkbank-rogal",
       "parkbank-arkitektur-rygg-180",
       "parkbank-arkitektur-190",
       "parkbank-arkitektur-190-rygg",
       "parkbank-arkitektur-200-45",
       "parkbank-arkitektur-200-45-rygg"
+    ],
+    "betongbankar": [
+      "parkbank-rogal"
     ],
     "pollare": [
       "pollare-fyrkant-119",

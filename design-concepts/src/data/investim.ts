@@ -85,6 +85,7 @@ function toProduct(row: SeriesJson): Product {
 
 export const investimCatalogSlugs = catalogFile.catalog as {
   parkbankar: string[]
+  betongbankar: string[]
   pollare: string[]
   cykelstall: string[]
   planteringskarl: string[]

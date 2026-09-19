@@ -57,6 +57,18 @@ export const catalog: CategoryDef[] = [
         ],
       },
       {
+        slug: 'betongbankar',
+        name: 'Betongbänkar',
+        blurb: 'Bänkar i betong för park, torg och gård.',
+        productSlugs: [...investimCatalogSlugs.betongbankar],
+        draftExamples: [],
+        filters: [
+          { legend: 'Ryggstöd', options: ['Med ryggstöd', 'Utan ryggstöd'] },
+          { legend: 'Montering', options: ['Fristående', 'Skruvas i underlaget'] },
+          { legend: 'Material', options: ['Arkitektonisk betong', 'Tvättad betong'] },
+        ],
+      },
+      {
         slug: 'bord-picknick',
         name: 'Bord och picknick',
         blurb: 'Picknickbord och utomhusbord.',
