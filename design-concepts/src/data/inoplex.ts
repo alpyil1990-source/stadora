@@ -116,6 +116,16 @@ export const inoplexProducts: Record<string, Product> = Object.fromEntries(
 
 export const INOPLEX_SLUGS = series.map((row) => row.slug)
 
+/** Old park-bench URLs for architectural-concrete planters (DOB.21). */
+export const INOPLEX_SLUG_REDIRECTS: Record<string, string> = {
+  'parkbank-dob-21-01': 'planteringskarl-dob-21-01',
+  'parkbank-dob-21-02': 'planteringskarl-dob-21-02',
+  'parkbank-dob-21-03': 'planteringskarl-dob-21-03',
+  'parkbank-dob-21-04': 'planteringskarl-dob-21-04',
+  'parkbank-dob-21-05': 'planteringskarl-dob-21-05',
+  'parkbank-dob-21-06': 'planteringskarl-dob-21-06',
+}
+
 export const inoplexGaps = series.map((row) => ({
   slug: row.slug,
   name: row.name,

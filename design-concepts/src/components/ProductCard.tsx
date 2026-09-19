@@ -15,12 +15,16 @@ export function ProductCard({ product }: { product: Product }) {
         to={productPath(product)}
         className="relative block aspect-square overflow-hidden bg-paper"
       >
-        {img && (
+        {img ? (
           <img
             src={img.src}
             alt={img.alt}
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            className="absolute inset-0 h-full w-full object-contain object-center p-2"
           />
+        ) : (
+          <span className="absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-muted">
+            Produktbild saknas
+          </span>
         )}
       </Link>
       <div className="flex flex-1 flex-col gap-1 pt-3">

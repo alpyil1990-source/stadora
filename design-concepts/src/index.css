@@ -43,7 +43,7 @@ body {
   margin-inline: auto;
 }
 
-/* Same 2 / 4 split as Urbania: photos stay ~300px because they fill the tile. */
+/* Same 2 / 4 split as Urbania. Listing photos use object-contain so the whole product stays in frame. */
 .product-listing-grid {
   display: grid;
   grid-template-columns: 1fr;

@@ -27,6 +27,9 @@ internal/*.db
 # STREETPARK original datasheets (public copies are stripped)
 internal/streetpark/
 
+# Working copies before listing-thumb padding
+internal/listing-unpadded/
+
 # ZANO import caches (originals stay on disk, not in git)
 internal/zano/listings/
 internal/zano/pages-en/

@@ -184,7 +184,7 @@ export function ProductView({
   const gallery = (
     <div>
       <div className="aspect-[5/4] overflow-hidden border border-line bg-paper">
-        {current && (
+        {current ? (
           <ProductImageZoom
             images={shown}
             currentSrc={current.src}
@@ -193,6 +193,10 @@ export function ProductView({
             imgClassName="gallery-pop h-full w-full object-contain p-6"
             onIndexChange={setActive}
           />
+        ) : (
+          <div className="flex h-full items-center justify-center p-6 text-center text-sm text-muted">
+            Produktbild saknas
+          </div>
         )}
       </div>
       {optionProduct && inoplexGallery && !inoplexGallery.matched && (

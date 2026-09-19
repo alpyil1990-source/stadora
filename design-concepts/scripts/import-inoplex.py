@@ -136,7 +136,7 @@ CATEGORIES = [
 SKIP_CATS = {"baseboards"}
 
 NOUN_FROM_SLUG = [
-    (r"planter|donice|do-\d", "Planteringskärl"),
+    (r"planter|donice|dob[.-]|do-\d", "Planteringskärl"),
     (r"lounger|sunbed|solsäng", "Vilstol"),
     (r"picnic|table|zestaw", "Picknickgrupp"),
     (r"recycling", "Källsortering"),
@@ -269,12 +269,36 @@ def sv_label(text: str) -> str:
     return OPTION_LABEL.get(raw, raw)
 
 
+def is_planter_product(model: str, desc_en: str) -> bool:
+    if re.match(r"DOB\.", model or ""):
+        return True
+    return bool(re.search(r"\b(?:city|park)\s+planter\b", desc_en or "", re.I))
+
+
 def type_noun(url_slug: str, cat_noun: str) -> str:
     s = url_slug.lower()
     for pat, noun in NOUN_FROM_SLUG:
         if re.search(pat, s):
             return noun
     return cat_noun
+
+
+USED_SLUGS: set[str] = set()
+
+
+def unique_public_slug(slug: str, url_path: str) -> str:
+    if slug not in USED_SLUGS:
+        USED_SLUGS.add(slug)
+        return slug
+    tail = url_path.rstrip("/").split("/")[-1]
+    m = re.search(r"-(\d+)$", tail)
+    cand = f"{slug}-{m.group(1)}" if m else f"{slug}-2"
+    n = 2
+    while cand in USED_SLUGS:
+        n += 1
+        cand = f"{slug}-{n}"
+    USED_SLUGS.add(cand)
+    return cand
 
 
 def public_slug(model: str, url_path: str, noun: str) -> str:
@@ -454,13 +478,38 @@ def parse_form(soup: BeautifulSoup) -> dict:
 
 
 def gallery_json(html: str) -> list[dict]:
-    m = re.search(r"variantsGalleryData\s*=\s*(\[.*?\]);", html, re.S)
-    if not m:
+    """Parse variantsGalleryData even when nested arrays sit inside params."""
+    key = html.find("variantsGalleryData")
+    if key < 0:
         return []
-    try:
-        return json.loads(m.group(1))
-    except json.JSONDecodeError:
+    i = html.find("[", key)
+    if i < 0:
         return []
+    depth = 0
+    in_str = False
+    esc = False
+    for j, ch in enumerate(html[i:], i):
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch == "[":
+            depth += 1
+        elif ch == "]":
+            depth -= 1
+            if depth == 0:
+                try:
+                    data = json.loads(html[i : j + 1])
+                except json.JSONDecodeError:
+                    return []
+                return data if isinstance(data, list) else []
+    return []
 
 
 def default_gallery(soup: BeautifulSoup) -> list[dict]:
@@ -723,6 +772,7 @@ def import_product(op, cat: dict, model: str, url: str) -> dict:
     cache.write_text(html, encoding="utf-8")
     soup = BeautifulSoup(html, "html.parser")
     model = model_from_title(soup, model)
+    desc_en = description_en(soup)
     parsed = parse_form(soup)
     swatch_dir = IMG_PUB / "swatches"
     for g in parsed["groups"]:
@@ -736,9 +786,12 @@ def import_product(op, cat: dict, model: str, url: str) -> dict:
             if save_image(op, src, orig, web):
                 opt["swatch"] = f"/images/inoplex/swatches/{web.name}"
                 opt["swatchSourceUrl"] = src
-    noun = type_noun(slug_path, cat["typeNoun"])
-    slug = public_slug(model, slug_path, noun)
-    desc_en = description_en(soup)
+    if is_planter_product(model, desc_en):
+        cat = next(c for c in CATEGORIES if c["key"] == "planters")
+        noun = cat["typeNoun"]
+    else:
+        noun = type_noun(slug_path, cat["typeNoun"])
+    slug = unique_public_slug(public_slug(model, slug_path, noun), slug_path)
     summary, description = summary_sv(model, noun, desc_en, parsed["groups"])
     files = files_from_page(soup)
     gallery = gallery_json(html) or default_gallery(soup)
@@ -924,6 +977,7 @@ def main() -> None:
     args = ap.parse_args()
     CACHE.mkdir(parents=True, exist_ok=True)
     GEN.mkdir(parents=True, exist_ok=True)
+    USED_SLUGS.clear()
     op = opener()
     series = []
     skipped = []

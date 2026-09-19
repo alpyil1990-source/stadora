@@ -36839,7 +36839,35 @@
       "mounting": [
         "Förankring"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "/images/inoplex/parkbank-la-12-04-2/00.jpg",
+          "alt": "Parkbänk LA.12.04",
+          "kind": "studio",
+          "original": "internal/inoplex/originals/parkbank-la-12-04-2/00.jpg",
+          "sourceUrl": "https://inoplex.pl/images/f0eb65fa-b0ec-443c-8ba1-751d415ab8a0/la-11-14-2.jpg",
+          "tags": {},
+          "color": null
+        },
+        {
+          "src": "/images/inoplex/parkbank-la-12-04-2/01.jpg",
+          "alt": "Parkbänk LA.12.04",
+          "kind": "studio",
+          "original": "internal/inoplex/originals/parkbank-la-12-04-2/01.jpg",
+          "sourceUrl": "https://inoplex.pl/images/60b6d8ca-86c7-4aec-8569-1ceaed80c80d/la-11-14-3.jpg",
+          "tags": {},
+          "color": null
+        },
+        {
+          "src": "/images/inoplex/parkbank-la-12-04-2/02.jpg",
+          "alt": "Parkbänk LA.12.04",
+          "kind": "studio",
+          "original": "internal/inoplex/originals/parkbank-la-12-04-2/02.jpg",
+          "sourceUrl": "https://inoplex.pl/images/e6b2a505-57d2-401b-9174-0f0fa5910954/la-11-14.jpg",
+          "tags": {},
+          "color": null
+        }
+      ],
       "documents": [
         {
           "title": "Måttritning",
@@ -87153,19 +87181,19 @@
       "catKey": "planters"
     },
     {
-      "slug": "parkbank-dob-21-06",
-      "name": "Parkbänk DOB.21.06",
+      "slug": "planteringskarl-dob-21-06",
+      "name": "Planteringskärl DOB.21.06",
       "modelName": "DOB.21.06",
       "sku": "DOB.21.06",
       "sourceUrl": "https://inoplex.pl/en/bench-lab-21-04-2",
       "fetchedAt": "2026-09-17",
-      "category": "Parkmöbler",
-      "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
-      "typeNoun": "Parkbänk",
-      "summary": "Parkbänk DOB.21.06. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
-      "description": "Parkbänk DOB.21.06. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "category": "Plantering",
+      "categorySlug": "plantering",
+      "subcategory": "Planteringskärl",
+      "subcategorySlug": "planteringskarl",
+      "typeNoun": "Planteringskärl",
+      "summary": "Planteringskärl DOB.21.06. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "description": "Planteringskärl DOB.21.06. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
       "descriptionSource": "City Planter made of Architectural Concrete - Durability and Minimalist Design This city planter, made entirely of architectural concrete, is synonymous with durability and minimalist design. Its raw, modern look perfectly complements various public space arrangements. Resistance to weather conditions and variable temperatures guarantees long-term use without the need for maintenance. Ideal for parks, squares, streets and other places where aesthetics go hand in hand with functionality.",
       "internal": {
         "manufacturer": "INOPLEX",
@@ -87278,7 +87306,7 @@
       "images": [
         {
           "src": "/images/inoplex/parkbank-dob-21-06/00.jpg",
-          "alt": "Parkbänk DOB.21.06",
+          "alt": "Planteringskärl DOB.21.06",
           "kind": "studio",
           "original": "internal/inoplex/originals/parkbank-dob-21-06/00.jpg",
           "sourceUrl": "https://inoplex.pl/images/d4682b8b-e2fa-4245-b285-9153b7f39cd8/dob-21-06-szary.jpg",
@@ -87313,10 +87341,10 @@
         }
       ],
       "related": [
-        "parkbank-la-23-06",
-        "parkbank-la-23-07",
-        "parkbank-la-23-04",
-        "parkbank-la-23-05"
+        "planteringskarl-dob-21-05",
+        "planteringskarl-dob-21-04",
+        "planteringskarl-dob-21-03",
+        "planteringskarl-dob-21-02"
       ],
       "imageNote": "Exempelbild – valt utförande kan avvika.",
       "gaps": [
@@ -87325,19 +87353,19 @@
       "catKey": "planters"
     },
     {
-      "slug": "parkbank-dob-21-05",
-      "name": "Parkbänk DOB.21.05",
+      "slug": "planteringskarl-dob-21-05",
+      "name": "Planteringskärl DOB.21.05",
       "modelName": "DOB.21.05",
       "sku": "DOB.21.05",
       "sourceUrl": "https://inoplex.pl/en/bench-lab-21-04-3",
       "fetchedAt": "2026-09-17",
-      "category": "Parkmöbler",
-      "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
-      "typeNoun": "Parkbänk",
-      "summary": "Parkbänk DOB.21.05. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
-      "description": "Parkbänk DOB.21.05. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "category": "Plantering",
+      "categorySlug": "plantering",
+      "subcategory": "Planteringskärl",
+      "subcategorySlug": "planteringskarl",
+      "typeNoun": "Planteringskärl",
+      "summary": "Planteringskärl DOB.21.05. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "description": "Planteringskärl DOB.21.05. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
       "descriptionSource": "Park Planter made of Architectural Concrete - Solidity and Weather Resistance This park planter, made of architectural concrete, is synonymous with solidity and weather resistance. Its durable construction ensures stability and longevity, even in harsh weather conditions. The minimalist design perfectly complements the natural surroundings of parks and squares, creating a harmonious space for plants.",
       "internal": {
         "manufacturer": "INOPLEX",
@@ -87450,7 +87478,7 @@
       "images": [
         {
           "src": "/images/inoplex/parkbank-dob-21-05/00.jpg",
-          "alt": "Parkbänk DOB.21.05",
+          "alt": "Planteringskärl DOB.21.05",
           "kind": "studio",
           "original": "internal/inoplex/originals/parkbank-dob-21-05/00.jpg",
           "sourceUrl": "https://inoplex.pl/images/a5aee524-634a-4374-88a0-d7ab21919bae/dob-21-05-szary.jpg",
@@ -87485,10 +87513,10 @@
         }
       ],
       "related": [
-        "parkbank-la-23-06",
-        "parkbank-la-23-07",
-        "parkbank-la-23-04",
-        "parkbank-la-23-05"
+        "planteringskarl-dob-21-06",
+        "planteringskarl-dob-21-04",
+        "planteringskarl-dob-21-03",
+        "planteringskarl-dob-21-02"
       ],
       "imageNote": "Exempelbild – valt utförande kan avvika.",
       "gaps": [
@@ -87497,19 +87525,19 @@
       "catKey": "planters"
     },
     {
-      "slug": "parkbank-dob-21-04",
-      "name": "Parkbänk DOB.21.04",
+      "slug": "planteringskarl-dob-21-04",
+      "name": "Planteringskärl DOB.21.04",
       "modelName": "DOB.21.04",
       "sku": "DOB.21.04",
       "sourceUrl": "https://inoplex.pl/en/bench-lab-21-04-4",
       "fetchedAt": "2026-09-17",
-      "category": "Parkmöbler",
-      "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
-      "typeNoun": "Parkbänk",
-      "summary": "Parkbänk DOB.21.04. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
-      "description": "Parkbänk DOB.21.04. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "category": "Plantering",
+      "categorySlug": "plantering",
+      "subcategory": "Planteringskärl",
+      "subcategorySlug": "planteringskarl",
+      "typeNoun": "Planteringskärl",
+      "summary": "Planteringskärl DOB.21.04. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "description": "Planteringskärl DOB.21.04. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
       "descriptionSource": "City Planter made of Architectural Concrete - Modern Design and Durability This city planter, made of architectural concrete, is a combination of modern design and exceptional durability. Its raw, elegant appearance perfectly complements modern urban architecture, adding character to the public space. Resistance to variable temperatures and mechanical damage guarantees long-term use without the need for replacement.",
       "internal": {
         "manufacturer": "INOPLEX",
@@ -87622,7 +87650,7 @@
       "images": [
         {
           "src": "/images/inoplex/parkbank-dob-21-04/00.jpg",
-          "alt": "Parkbänk DOB.21.04",
+          "alt": "Planteringskärl DOB.21.04",
           "kind": "studio",
           "original": "internal/inoplex/originals/parkbank-dob-21-04/00.jpg",
           "sourceUrl": "https://inoplex.pl/images/32c26850-032e-4f1d-9e7f-9cb1b1430296/dob-21-04-szary.jpg",
@@ -87657,10 +87685,10 @@
         }
       ],
       "related": [
-        "parkbank-la-23-06",
-        "parkbank-la-23-07",
-        "parkbank-la-23-04",
-        "parkbank-la-23-05"
+        "planteringskarl-dob-21-06",
+        "planteringskarl-dob-21-05",
+        "planteringskarl-dob-21-03",
+        "planteringskarl-dob-21-02"
       ],
       "imageNote": "Exempelbild – valt utförande kan avvika.",
       "gaps": [
@@ -87669,19 +87697,19 @@
       "catKey": "planters"
     },
     {
-      "slug": "parkbank-dob-21-03",
-      "name": "Parkbänk DOB.21.03",
+      "slug": "planteringskarl-dob-21-03",
+      "name": "Planteringskärl DOB.21.03",
       "modelName": "DOB.21.03",
       "sku": "DOB.21.03",
       "sourceUrl": "https://inoplex.pl/en/bench-lab-21-04-5",
       "fetchedAt": "2026-09-17",
-      "category": "Parkmöbler",
-      "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
-      "typeNoun": "Parkbänk",
-      "summary": "Parkbänk DOB.21.03. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
-      "description": "Parkbänk DOB.21.03. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "category": "Plantering",
+      "categorySlug": "plantering",
+      "subcategory": "Planteringskärl",
+      "subcategorySlug": "planteringskarl",
+      "typeNoun": "Planteringskärl",
+      "summary": "Planteringskärl DOB.21.03. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "description": "Planteringskärl DOB.21.03. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
       "descriptionSource": "Park Planter made of Architectural Concrete - Durability and Natural Accent This park planter, made of architectural concrete, is a combination of durability and natural accent. Its solid construction ensures stability and resistance to weather conditions, and the minimalist design perfectly complements the natural surroundings of parks and squares. Ideal for creating green spaces in cities.",
       "internal": {
         "manufacturer": "INOPLEX",
@@ -87794,7 +87822,7 @@
       "images": [
         {
           "src": "/images/inoplex/parkbank-dob-21-03/00.jpg",
-          "alt": "Parkbänk DOB.21.03",
+          "alt": "Planteringskärl DOB.21.03",
           "kind": "studio",
           "original": "internal/inoplex/originals/parkbank-dob-21-03/00.jpg",
           "sourceUrl": "https://inoplex.pl/images/f0afcaf2-5f4b-461d-98e2-93cb043a67a1/dob-21-03-szary.jpg",
@@ -87829,10 +87857,10 @@
         }
       ],
       "related": [
-        "parkbank-la-23-06",
-        "parkbank-la-23-07",
-        "parkbank-la-23-04",
-        "parkbank-la-23-05"
+        "planteringskarl-dob-21-06",
+        "planteringskarl-dob-21-05",
+        "planteringskarl-dob-21-04",
+        "planteringskarl-dob-21-02"
       ],
       "imageNote": "Exempelbild – valt utförande kan avvika.",
       "gaps": [
@@ -87841,19 +87869,19 @@
       "catKey": "planters"
     },
     {
-      "slug": "parkbank-dob-21-02",
-      "name": "Parkbänk DOB.21.02",
+      "slug": "planteringskarl-dob-21-02",
+      "name": "Planteringskärl DOB.21.02",
       "modelName": "DOB.21.02",
       "sku": "DOB.21.02",
       "sourceUrl": "https://inoplex.pl/en/bench-lab-21-04-6",
       "fetchedAt": "2026-09-17",
-      "category": "Parkmöbler",
-      "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
-      "typeNoun": "Parkbänk",
-      "summary": "Parkbänk DOB.21.02. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
-      "description": "Parkbänk DOB.21.02. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "category": "Plantering",
+      "categorySlug": "plantering",
+      "subcategory": "Planteringskärl",
+      "subcategorySlug": "planteringskarl",
+      "typeNoun": "Planteringskärl",
+      "summary": "Planteringskärl DOB.21.02. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "description": "Planteringskärl DOB.21.02. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
       "descriptionSource": "City Planter made of Architectural Concrete - Minimalist Style and Functionality This city planter, made of architectural concrete, is a proposition for lovers of minimalist style and functionality. Its raw, elegant appearance perfectly complements modern urban architecture, and the durable construction ensures stability and resistance to weather conditions. Ideal for creating green spaces in cities.",
       "internal": {
         "manufacturer": "INOPLEX",
@@ -87966,7 +87994,7 @@
       "images": [
         {
           "src": "/images/inoplex/parkbank-dob-21-02/00.jpg",
-          "alt": "Parkbänk DOB.21.02",
+          "alt": "Planteringskärl DOB.21.02",
           "kind": "studio",
           "original": "internal/inoplex/originals/parkbank-dob-21-02/00.jpg",
           "sourceUrl": "https://inoplex.pl/images/21ece931-616c-4447-97dd-2a920d62a051/dob-21-02-szary.jpg",
@@ -88001,10 +88029,10 @@
         }
       ],
       "related": [
-        "parkbank-la-23-06",
-        "parkbank-la-23-07",
-        "parkbank-la-23-04",
-        "parkbank-la-23-05"
+        "planteringskarl-dob-21-06",
+        "planteringskarl-dob-21-05",
+        "planteringskarl-dob-21-04",
+        "planteringskarl-dob-21-03"
       ],
       "imageNote": "Exempelbild – valt utförande kan avvika.",
       "gaps": [
@@ -88013,19 +88041,19 @@
       "catKey": "planters"
     },
     {
-      "slug": "parkbank-dob-21-01",
-      "name": "Parkbänk DOB.21.01",
+      "slug": "planteringskarl-dob-21-01",
+      "name": "Planteringskärl DOB.21.01",
       "modelName": "DOB.21.01",
       "sku": "DOB.21.01",
       "sourceUrl": "https://inoplex.pl/en/bench-lab-21-04-7",
       "fetchedAt": "2026-09-17",
-      "category": "Parkmöbler",
-      "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
-      "typeNoun": "Parkbänk",
-      "summary": "Parkbänk DOB.21.01. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
-      "description": "Parkbänk DOB.21.01. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "category": "Plantering",
+      "categorySlug": "plantering",
+      "subcategory": "Planteringskärl",
+      "subcategorySlug": "planteringskarl",
+      "typeNoun": "Planteringskärl",
+      "summary": "Planteringskärl DOB.21.01. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
+      "description": "Planteringskärl DOB.21.01. Stommaterial: Architectural concrete. Utförande väljs på produktsidan. Pris på förfrågan.",
       "descriptionSource": "Park Planter made of Architectural Concrete - Solidity and Resistance to Variable Temperatures This park planter, made of architectural concrete, is synonymous with solidity and resistance to variable temperatures. Its durable construction ensures stability and longevity, even in harsh weather conditions. The minimalist design perfectly complements the natural surroundings of parks and squares, creating a harmonious space for plants.",
       "internal": {
         "manufacturer": "INOPLEX",
@@ -88138,7 +88166,7 @@
       "images": [
         {
           "src": "/images/inoplex/parkbank-dob-21-01/00.jpg",
-          "alt": "Parkbänk DOB.21.01",
+          "alt": "Planteringskärl DOB.21.01",
           "kind": "studio",
           "original": "internal/inoplex/originals/parkbank-dob-21-01/00.jpg",
           "sourceUrl": "https://inoplex.pl/images/7f67f485-db09-4b77-adc4-c51f7d36c940/dob-21-01-beton21.jpg",
@@ -88173,10 +88201,10 @@
         }
       ],
       "related": [
-        "parkbank-la-23-06",
-        "parkbank-la-23-07",
-        "parkbank-la-23-04",
-        "parkbank-la-23-05"
+        "planteringskarl-dob-21-06",
+        "planteringskarl-dob-21-05",
+        "planteringskarl-dob-21-04",
+        "planteringskarl-dob-21-03"
       ],
       "imageNote": "Exempelbild – valt utförande kan avvika.",
       "gaps": [

@@ -23,12 +23,16 @@ export function ListingCard({ product }: { product: Product }) {
       className="group flex h-full flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sage"
     >
       <div className="relative aspect-square overflow-hidden bg-paper">
-        {img && (
+        {img ? (
           <img
             src={img.src}
             alt={img.alt}
-            className="absolute inset-0 h-full w-full object-cover object-center"
+            className="absolute inset-0 h-full w-full object-contain object-center p-2"
           />
+        ) : (
+          <span className="absolute inset-0 flex items-center justify-center p-4 text-center text-sm text-muted">
+            Produktbild saknas
+          </span>
         )}
       </div>
       <div className="flex flex-1 flex-col pt-3">
