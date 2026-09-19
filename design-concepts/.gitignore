@@ -30,6 +30,9 @@ internal/streetpark/
 # VVZ-Play import caches and supplier originals
 internal/vvz-play/
 
+# Local before/after previews while a VVZ sheet is being approved
+public/docs/vvz-play/_godkannande-preview/
+
 # Working copies before listing-thumb padding
 internal/listing-unpadded/
 
