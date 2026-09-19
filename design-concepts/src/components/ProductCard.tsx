@@ -3,30 +3,29 @@ import type { Product } from '../data/content'
 import { isStadoraArticleNumber, productPath } from '../data/content'
 import { weightForSelection } from '../data/inoplex-config'
 
-/** Full-width listing: four tiles on desktop so photos stay large. */
-export const PRODUCT_LISTING_GRID =
-  'grid grid-cols-1 items-stretch gap-x-3 gap-y-8 sm:grid-cols-2 lg:grid-cols-4'
+/** Catalog grid: 2 columns on small screens, 4 from 850 px (see index.css). */
+export const PRODUCT_LISTING_GRID = 'product-listing-grid'
 
 export function ProductCard({ product }: { product: Product }) {
   const img = product.images.find((image) => image.kind === 'studio') ?? product.images[0]
   const cardWeight = weightForSelection(product).beside
   return (
-    <article className="flex h-full flex-col border border-line bg-sheet">
+    <article className="flex h-full flex-col">
       <Link
         to={productPath(product)}
-        className="relative block aspect-square shrink-0 overflow-hidden bg-paper"
+        className="relative block aspect-square overflow-hidden bg-paper"
       >
         {img && (
           <img
             src={img.src}
             alt={img.alt}
-            className="absolute inset-0 h-full w-full object-contain p-1.5 sm:p-2"
+            className="absolute inset-0 h-full w-full object-cover object-center"
           />
         )}
       </Link>
-      <div className="flex flex-1 flex-col gap-1.5 p-3">
+      <div className="flex flex-1 flex-col gap-1 pt-3">
         <p className="kicker">{product.subcategory}</p>
-        <h3 className="text-lg font-medium leading-snug">
+        <h3 className="text-base font-medium leading-snug">
           <Link to={productPath(product)} className="hover:underline">
             {product.name}
           </Link>
@@ -36,30 +35,13 @@ export function ProductCard({ product }: { product: Product }) {
             <p className="font-ui text-xs tabular-nums text-muted">Art.nr {product.sku}</p>
           ) : null
         ) : null}
-        {product.summary.trim() ? (
-          <p className="line-clamp-2 text-sm text-muted">{product.summary}</p>
+        {product.material && (
+          <p className="line-clamp-1 text-sm text-muted">{product.material}</p>
+        )}
+        {!product.material && cardWeight ? (
+          <p className="text-sm text-muted">{cardWeight}</p>
         ) : null}
-        <dl className="mt-auto grid grid-cols-2 gap-x-3 gap-y-1 pt-3 text-xs text-muted">
-          {product.material && (
-            <>
-              <dt>Material</dt>
-              <dd className="text-ink">{product.material}</dd>
-            </>
-          )}
-          {cardWeight && (
-            <>
-              <dt>Vikt</dt>
-              <dd className="text-ink">{cardWeight}</dd>
-            </>
-          )}
-          {product.mounting && (
-            <>
-              <dt>Montering</dt>
-              <dd className="text-ink">{product.mounting.join(', ')}</dd>
-            </>
-          )}
-        </dl>
-        <p className="pt-2 text-xs font-medium uppercase tracking-[0.08em] text-sage-dark">
+        <p className="mt-auto pt-2 text-xs font-medium uppercase tracking-[0.08em] text-sage-dark">
           {product.quoteOnRequest ? 'Pris på förfrågan' : 'Pris i offert'}
         </p>
       </div>

@@ -20,18 +20,18 @@ export function ListingCard({ product }: { product: Product }) {
   return (
     <Link
       to={productPath(product)}
-      className="group flex h-full flex-col border border-line bg-sheet focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sage"
+      className="group flex h-full flex-col focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sage"
     >
-      <div className="relative aspect-square shrink-0 overflow-hidden bg-paper">
+      <div className="relative aspect-square overflow-hidden bg-paper">
         {img && (
           <img
             src={img.src}
             alt={img.alt}
-            className="absolute inset-0 h-full w-full object-contain p-1.5 sm:p-2"
+            className="absolute inset-0 h-full w-full object-cover object-center"
           />
         )}
       </div>
-      <div className="flex flex-1 flex-col px-3 pb-3 pt-2">
+      <div className="flex flex-1 flex-col pt-3">
         <p className="kicker">{product.subcategory}</p>
         <h3 className="mt-1 text-lg font-medium leading-snug">{product.name}</h3>
         {(isStadoraArticleNumber(product.sku) || product.visibility === 'internal_preview') &&
