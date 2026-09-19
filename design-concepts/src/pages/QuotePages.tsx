@@ -288,7 +288,7 @@ export function QuoteFormPage() {
           {lines.length === 0 && <li className="text-muted">Inga rader</li>}
         </ul>
         <p className="mt-4 text-xs text-muted">
-          Internt underlag: ärende-ID, område, rader med artikelnummer, variant, antal, kommentar,
+          Internt underlag: ärende-ID, område, rader med produkt, variant, antal, kommentar,
           produktsida och bilagor.
         </p>
       </aside>

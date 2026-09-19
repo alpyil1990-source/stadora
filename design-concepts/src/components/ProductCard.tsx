@@ -3,6 +3,10 @@ import type { Product } from '../data/content'
 import { isStadoraArticleNumber, productPath } from '../data/content'
 import { weightForSelection } from '../data/inoplex-config'
 
+/** Full-width listing: four tiles on desktop so photos stay large. */
+export const PRODUCT_LISTING_GRID =
+  'grid grid-cols-1 items-stretch gap-x-3 gap-y-8 sm:grid-cols-2 lg:grid-cols-4'
+
 export function ProductCard({ product }: { product: Product }) {
   const img = product.images.find((image) => image.kind === 'studio') ?? product.images[0]
   const cardWeight = weightForSelection(product).beside
@@ -10,17 +14,17 @@ export function ProductCard({ product }: { product: Product }) {
     <article className="flex h-full flex-col border border-line bg-sheet">
       <Link
         to={productPath(product)}
-        className="relative block aspect-[5/4] shrink-0 overflow-hidden bg-paper"
+        className="relative block aspect-square shrink-0 overflow-hidden bg-paper"
       >
         {img && (
           <img
             src={img.src}
             alt={img.alt}
-            className="absolute inset-0 h-full w-full object-contain p-4"
+            className="absolute inset-0 h-full w-full object-contain p-1.5 sm:p-2"
           />
         )}
       </Link>
-      <div className="flex flex-1 flex-col gap-2 p-4">
+      <div className="flex flex-1 flex-col gap-1.5 p-3">
         <p className="kicker">{product.subcategory}</p>
         <h3 className="text-lg font-medium leading-snug">
           <Link to={productPath(product)} className="hover:underline">

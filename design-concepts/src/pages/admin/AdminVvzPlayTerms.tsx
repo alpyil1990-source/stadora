@@ -14,8 +14,9 @@ export function AdminVvzPlayTerms() {
           Stickprov: två lekplatsprodukter, inte parkbänkar eller sopkärl. Leverantören har godkänt
           användning av produktbilder. Wholesale pricelist 2026 fanns inte som fil bland bilagorna
           här, så inga EUR är inlagda — fältet lämnas tomt, aldrig 0 kr. Tillverkare VVZ-Play
-          registreras här och visas inte på den publika produktsidan eller offerten. Artikelnummer
-          följer med offerten. Originaldokument, inklusive märkning.
+          registreras här och visas inte på den publika produktsidan eller offerten. Leverantörens
+          artikelnummer syns bara här, inte på hemsidan eller kundofferten. Originaldokument,
+          inklusive märkning.
         </p>
       </div>
       <ul className="grid gap-2 text-sm sm:grid-cols-2">

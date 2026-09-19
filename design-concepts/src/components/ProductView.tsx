@@ -54,7 +54,7 @@ import {
   productIngress,
 } from '../lib/productPresentation'
 import { useQuote } from '../context/QuoteContext'
-import { ProductCard } from './ProductCard'
+import { PRODUCT_LISTING_GRID, ProductCard } from './ProductCard'
 import { Breadcrumb } from './Breadcrumb'
 import { ProductImageZoom } from './ProductLightbox'
 
@@ -87,7 +87,12 @@ export function ProductView({
   const selectedSize = selectedTypeOption(product, variants)
   const finish = selectedMaterial(product, variants['Material'])
   const sku = quoteLineSku(product, variants)
-  const publicSku = quoteShowsArticleNumber(product, sku) ? sku : undefined
+  const publicSku =
+    intern || product.visibility === 'internal_preview'
+      ? sku
+      : quoteShowsArticleNumber(product, sku)
+        ? sku
+        : undefined
   const dimensions = selectedSize?.dimensions ?? product.dimensions
   const weight = selectedSize?.weight ?? product.weight
   const selectedWeight = weightForSelection(product, variants)
@@ -283,7 +288,7 @@ export function ProductView({
                   {s.summary && s.summary !== s.name && (
                     <span className="block text-xs text-muted">{s.summary}</span>
                   )}
-                  {(isStadoraArticleNumber(s.sku) || product.quoteShowsSku) && s.sku && (
+                  {(intern || isStadoraArticleNumber(s.sku)) && s.sku && (
                     <span className="block text-xs text-muted">Art.nr {s.sku}</span>
                   )}
                   {sizePhotos && (
@@ -801,7 +806,7 @@ export function ProductView({
       {related.length > 0 && (
         <section id="serie">
           <h2 className="text-xl">Fler modeller i serien</h2>
-          <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-3">
+          <div className={`mt-5 ${PRODUCT_LISTING_GRID}`}>
             {related.map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}

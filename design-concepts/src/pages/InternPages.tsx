@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import { ListingCard } from '../components/ListingCard'
+import { PRODUCT_LISTING_GRID } from '../components/ProductCard'
 import { unpublishedProducts } from '../data/content'
 import { novumGaps } from '../data/novum'
 import { api } from '../lib/api'
@@ -70,7 +71,7 @@ export function InternHomePage() {
           Inga opublicerade produkter i den här miljön.
         </p>
       ) : (
-        <ul className="grid grid-cols-1 items-stretch gap-3 sm:grid-cols-3">
+        <ul className={PRODUCT_LISTING_GRID}>
           {items.map((p) => (
             <li key={p.slug}>
               <ListingCard product={p} />

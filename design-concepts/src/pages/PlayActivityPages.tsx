@@ -1,6 +1,7 @@
 import { useEffect, useId, useMemo, useState } from 'react'
 import { SlidersHorizontal, X } from 'lucide-react'
 import { ListingCard } from '../components/ListingCard'
+import { PRODUCT_LISTING_GRID } from '../components/ProductCard'
 import { Breadcrumb } from '../components/Breadcrumb'
 import { products, type Product } from '../data/content'
 import {
@@ -20,7 +21,7 @@ function useListingPreview() {
   return ready
 }
 
-type SortKey = 'name-asc' | 'name-desc' | 'sku-asc'
+type SortKey = 'name-asc' | 'name-desc'
 
 function uniqueValues(items: Product[], pick: (p: Product) => string | undefined) {
   return [...new Set(items.map(pick).filter((v): v is string => Boolean(v)))]
@@ -101,7 +102,6 @@ export function PlayActivityListing({
   })
 
   const visible = [...filtered].sort((a, b) => {
-    if (sort === 'sku-asc') return (a.sku ?? '').localeCompare(b.sku ?? '', 'sv')
     const cmp = a.name.localeCompare(b.name, 'sv')
     return sort === 'name-desc' ? -cmp : cmp
   })
@@ -121,7 +121,7 @@ export function PlayActivityListing({
   }
 
   return (
-    <div className="mx-auto max-w-[1080px]">
+    <div>
       <Breadcrumb
         items={[
           { label: 'Hem', to: '/' },
@@ -147,7 +147,6 @@ export function PlayActivityListing({
               >
                 <option value="name-asc">Namn A–Ö</option>
                 <option value="name-desc">Namn Ö–A</option>
-                <option value="sku-asc">Artikelnummer</option>
               </select>
             </label>
             <button
@@ -192,7 +191,7 @@ export function PlayActivityListing({
           </button>
         </div>
       ) : (
-        <ul className="mt-5 grid grid-cols-1 items-stretch gap-3 sm:grid-cols-3">
+        <ul className={`mt-5 ${PRODUCT_LISTING_GRID}`}>
           {visible.map((p) => (
             <li key={p.slug} className="min-h-0">
               <ListingCard product={p} />

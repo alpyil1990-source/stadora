@@ -140,7 +140,7 @@ export type Product = {
   imageNote?: string
   documentPolicy?: string
   documents?: ProductDocument[]
-  /** Supplier article numbers may follow the quote line (STREETPARK). */
+  /** Supplier SKU may exist on the product. Public pages never show it. */
   quoteShowsSku?: boolean
   /** Public copy: price is given in a quote, never as a catalog amount. */
   quoteOnRequest?: boolean
@@ -180,12 +180,9 @@ export function isStadoraArticleNumber(sku?: string | null) {
   return Boolean(sku && /^ST-/i.test(sku.trim()))
 }
 
-/** Quote lines may show STREETPARK and VVZ-Play article numbers; other supplier SKUs stay in admin unless quoteShowsSku. */
-export function quoteShowsArticleNumber(product?: Product | null, sku?: string | null) {
-  if (!sku) return false
-  if (isStadoraArticleNumber(sku)) return true
-  if (product?.quoteShowsSku) return true
-  return product?.manufacturer === 'STREETPARK' || product?.manufacturer === 'ZANO'
+/** Public pages and customer quotes may show STADORA ST- numbers only. Supplier SKUs stay in admin. */
+export function quoteShowsArticleNumber(_product?: Product | null, sku?: string | null) {
+  return isStadoraArticleNumber(sku)
 }
 
 /**

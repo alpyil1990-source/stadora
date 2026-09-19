@@ -11,7 +11,7 @@ import {
   type CategoryDef,
   type SubcategoryDef,
 } from '../data/catalog'
-import { ProductCard } from '../components/ProductCard'
+import { PRODUCT_LISTING_GRID, ProductCard } from '../components/ProductCard'
 import { Breadcrumb } from '../components/Breadcrumb'
 import { PlayActivityListing } from './PlayActivityPages'
 
@@ -232,29 +232,38 @@ export function SubcategoryListPage() {
   const filteredOut = !empty && visible.length === 0
 
   return (
-    <div className="grid gap-8 lg:grid-cols-12">
-      <aside className="lg:col-span-3">
-        <Breadcrumb
-          items={[
-            { label: 'Hem', to: '/' },
-            { label: 'Sortiment', to: '/produkter' },
-            { label: category.name, to: categoryPath(category) },
-            { label: sub.name },
-          ]}
-        />
-        <h1 className="text-3xl">{sub.name}</h1>
-        <p className="mt-3 text-sm text-muted">{sub.blurb}</p>
-        <div className="mt-4">
-          <StatusNote sub={sub} />
+    <div>
+      <Breadcrumb
+        items={[
+          { label: 'Hem', to: '/' },
+          { label: 'Sortiment', to: '/produkter' },
+          { label: category.name, to: categoryPath(category) },
+          { label: sub.name },
+        ]}
+      />
+      <div className="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <h1 className="text-3xl md:text-4xl">{sub.name}</h1>
+          <p className="mt-3 max-w-3xl text-sm text-muted">{sub.blurb}</p>
+          <div className="mt-2">
+            <StatusNote sub={sub} />
+          </div>
         </div>
-        {filters && !empty ? (
-          <form className="mt-6 space-y-5 text-sm" onSubmit={(e) => e.preventDefault()}>
-            <p className="text-xs text-muted">Ingen markering = alla. Flera val inom samma grupp är eller.</p>
+        <p className="text-sm">
+          <Link className="underline" to={categoryPath(category)}>
+            Alla underkategorier i {category.name}
+          </Link>
+        </p>
+      </div>
+      {filters && !empty ? (
+        <form className="mt-6 border-b border-line pb-4 text-sm" onSubmit={(e) => e.preventDefault()}>
+          <p className="text-xs text-muted">Ingen markering = alla. Flera val inom samma grupp är eller.</p>
+          <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:gap-x-8 lg:gap-y-3">
             {filters.map((f) => (
-              <fieldset key={f.legend}>
-                <legend className="font-medium">{f.legend}</legend>
+              <fieldset key={f.legend} className="lg:flex lg:flex-wrap lg:items-center lg:gap-3">
+                <legend className="font-medium lg:contents">{f.legend}</legend>
                 {f.options.map((opt) => (
-                  <label key={opt} className="mt-2 flex gap-2">
+                  <label key={opt} className="mt-2 flex gap-2 lg:mt-0">
                     <input
                       type="checkbox"
                       checked={(on[f.legend] ?? []).includes(opt)}
@@ -265,19 +274,12 @@ export function SubcategoryListPage() {
                 ))}
               </fieldset>
             ))}
-          </form>
-        ) : (
-          <p className="mt-6 text-sm text-muted">
-            Filter visas när underkategorin har produkter.
-          </p>
-        )}
-        <p className="mt-8 text-sm">
-          <Link className="underline" to={categoryPath(category)}>
-            Alla underkategorier i {category.name}
-          </Link>
-        </p>
-      </aside>
-      <div className="lg:col-span-9">
+          </div>
+        </form>
+      ) : empty ? null : (
+        <p className="mt-6 text-sm text-muted">Filter visas när underkategorin har produkter.</p>
+      )}
+      <div className="mt-6">
         {empty ? (
           <div className="border border-dashed border-line p-6">
             <p className="font-medium">Inga produkter här ännu</p>
@@ -288,10 +290,10 @@ export function SubcategoryListPage() {
         ) : filteredOut ? (
           <div className="border border-dashed border-line p-6">
             <p className="font-medium">Inga produkter matchar filtren</p>
-            <p className="mt-2 text-sm text-muted">Ta bort någon markering till vänster för att se fler serier.</p>
+            <p className="mt-2 text-sm text-muted">Ta bort någon markering för att se fler serier.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-3">
+          <div className={PRODUCT_LISTING_GRID}>
             {visible.map((p) => (
               <ProductCard key={p.slug} product={p} />
             ))}

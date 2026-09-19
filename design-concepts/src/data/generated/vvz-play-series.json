@@ -5,7 +5,7 @@
   "series": [
     {
       "slug": "kombinerad-lektorn-vz1-006-15",
-      "name": "Kombinerad lektorn VZ1-006-15",
+      "name": "Kombinerad lektorn",
       "originalName": "Combined Tower set VVZ-VZ1-006-15",
       "sku": "VZ1-006-15",
       "manufacturer": "VVZ-Play",
@@ -55,56 +55,56 @@
       "images": [
         {
           "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/orange-turkos.jpg",
-          "alt": "Kombinerad lektorn VZ1-006-15, orange och turkos",
+          "alt": "Kombinerad lektorn, orange och turkos",
           "kind": "studio",
           "color": "Orange + turkos",
           "caption": "Orange + turkos"
         },
         {
           "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/orange-turkos-baksida.jpg",
-          "alt": "Kombinerad lektorn VZ1-006-15, orange och turkos, baksida",
+          "alt": "Kombinerad lektorn, orange och turkos, baksida",
           "kind": "detail",
           "color": "Orange + turkos",
           "caption": "Orange + turkos, baksida"
         },
         {
           "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/brun-gulgron.jpg",
-          "alt": "Kombinerad lektorn VZ1-006-15, brun och gulgrön",
+          "alt": "Kombinerad lektorn, brun och gulgrön",
           "kind": "studio",
           "color": "Brun + gulgrön",
           "caption": "Brun + gulgrön"
         },
         {
           "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/brun-gulgron-baksida.jpg",
-          "alt": "Kombinerad lektorn VZ1-006-15, brun och gulgrön, baksida",
+          "alt": "Kombinerad lektorn, brun och gulgrön, baksida",
           "kind": "detail",
           "color": "Brun + gulgrön",
           "caption": "Brun + gulgrön, baksida"
         },
         {
           "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-gul.jpg",
-          "alt": "Kombinerad lektorn VZ1-006-15, antracit och gul",
+          "alt": "Kombinerad lektorn, antracit och gul",
           "kind": "studio",
           "color": "Antracit + gul",
           "caption": "Antracit + gul"
         },
         {
           "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-gul-baksida.jpg",
-          "alt": "Kombinerad lektorn VZ1-006-15, antracit och gul, baksida",
+          "alt": "Kombinerad lektorn, antracit och gul, baksida",
           "kind": "detail",
           "color": "Antracit + gul",
           "caption": "Antracit + gul, baksida"
         },
         {
           "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-rod.jpg",
-          "alt": "Kombinerad lektorn VZ1-006-15, antracit och röd",
+          "alt": "Kombinerad lektorn, antracit och röd",
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
         },
         {
           "src": "/images/vvz-play/kombinerad-lektorn-vz1-006-15/antracit-rod-baksida.jpg",
-          "alt": "Kombinerad lektorn VZ1-006-15, antracit och röd, baksida",
+          "alt": "Kombinerad lektorn, antracit och röd, baksida",
           "kind": "detail",
           "color": "Antracit + röd",
           "caption": "Antracit + röd, baksida"
@@ -112,22 +112,22 @@
       ],
       "documents": [
         {
-          "title": "Produktblad VZ1-006-15",
+          "title": "Produktblad",
           "typeLabel": "Produktblad",
           "format": "PDF",
-          "href": "/docs/vvz-play/VZ1-006-15-T-EN.pdf",
+          "href": "/docs/vvz-play/kombinerad-lektorn-produktblad-en.pdf",
           "kind": "datasheet",
           "language": "en",
           "originalName": "VVZ-VZ1-006-15-T-EN.pdf",
           "sourceUrl": "https://www.vvz-play.com/public/manager/source/Nové 2026/Kombi zostavy (klasické)/EN/1,5m/VVZ-VZ1-006-15-T-EN.pdf",
           "fetchedAt": "2026-09-18",
-          "appliesTo": "Engelskt produktblad märkt VVZ-VZ1-006-15-T."
+          "appliesTo": "Engelskt produktblad."
         },
         {
-          "title": "Säkerhetsområde VZ1-006-15",
+          "title": "Säkerhetsområde",
           "typeLabel": "Ritning, säkerhetsområde",
           "format": "PDF",
-          "href": "/docs/vvz-play/VZ1-006-15-sakerhetsomrade.pdf",
+          "href": "/docs/vvz-play/kombinerad-lektorn-sakerhetsomrade.pdf",
           "kind": "drawing",
           "previewable": false,
           "originalName": "VVZ-VZ1-006-15-(SMY_SEG).pdf",
@@ -149,7 +149,7 @@
     },
     {
       "slug": "vippgunga-bage-php004",
-      "name": "Vippgunga båge PHP004",
+      "name": "Vippgunga båge",
       "originalName": "Seesaw Swing - Arched VVZ-PHP004",
       "sku": "PHP004",
       "manufacturer": "VVZ-Play",
@@ -201,28 +201,28 @@
       "images": [
         {
           "src": "/images/vvz-play/vippgunga-bage-php004/orange-turkos.jpg",
-          "alt": "Vippgunga båge PHP004, orange och turkos",
+          "alt": "Vippgunga båge, orange och turkos",
           "kind": "studio",
           "color": "Orange + turkos",
           "caption": "Orange + turkos"
         },
         {
           "src": "/images/vvz-play/vippgunga-bage-php004/brun-gulgron.jpg",
-          "alt": "Vippgunga båge PHP004, brun och gulgrön",
+          "alt": "Vippgunga båge, brun och gulgrön",
           "kind": "studio",
           "color": "Brun + gulgrön",
           "caption": "Brun + gulgrön"
         },
         {
           "src": "/images/vvz-play/vippgunga-bage-php004/antracit-gul.jpg",
-          "alt": "Vippgunga båge PHP004, antracit och gul",
+          "alt": "Vippgunga båge, antracit och gul",
           "kind": "studio",
           "color": "Antracit + gul",
           "caption": "Antracit + gul"
         },
         {
           "src": "/images/vvz-play/vippgunga-bage-php004/antracit-rod.jpg",
-          "alt": "Vippgunga båge PHP004, antracit och röd",
+          "alt": "Vippgunga båge, antracit och röd",
           "kind": "studio",
           "color": "Antracit + röd",
           "caption": "Antracit + röd"
@@ -230,22 +230,22 @@
       ],
       "documents": [
         {
-          "title": "Produktblad PHP004",
+          "title": "Produktblad",
           "typeLabel": "Produktblad",
           "format": "PDF",
-          "href": "/docs/vvz-play/PHP004-T-EN.pdf",
+          "href": "/docs/vvz-play/vippgunga-bage-produktblad-en.pdf",
           "kind": "datasheet",
           "language": "en",
           "originalName": "VVZ-PHP004-T-EN.pdf",
           "sourceUrl": "https://www.vvz-play.com/public/manager/source/Nové 2026/prevažovacie hojdačky/EN/PHP/VVZ-PHP004-T-EN.pdf",
           "fetchedAt": "2026-09-18",
-          "appliesTo": "Engelskt produktblad märkt VVZ-PHP004-T."
+          "appliesTo": "Engelskt produktblad."
         },
         {
-          "title": "Säkerhetsområde PHP004",
+          "title": "Säkerhetsområde",
           "typeLabel": "Ritning, säkerhetsområde",
           "format": "PDF",
-          "href": "/docs/vvz-play/PHP004-sakerhetsomrade.pdf",
+          "href": "/docs/vvz-play/vippgunga-bage-sakerhetsomrade.pdf",
           "kind": "drawing",
           "previewable": false,
           "originalName": "PHP004.pdf",
@@ -257,13 +257,13 @@
           "title": "Certifikat vippgungor 2026",
           "typeLabel": "Certifikat",
           "format": "PDF",
-          "href": "/docs/vvz-play/PHP-certifikat-vippgungor-2026.pdf",
+          "href": "/docs/vvz-play/vippgunga-bage-certifikat-2026.pdf",
           "kind": "other",
           "language": "sk",
           "originalName": "Certifikát - Prevažovacie_hojdačky_2026.pdf",
           "sourceUrl": "https://www.vvz-play.com/public/manager/source/Nové 2026/PHP/Certifikáty/Certifikát - Prevažovacie_hojdačky_2026.pdf",
           "fetchedAt": "2026-09-18",
-          "appliesTo": "Technická inšpekcia a.s., certifikat 07460/1/2026-CERT-01, 13.04.2026. Typbeteckningen Oblúková prevažovacia hojdačka VVZ-PHP004 ingår tillsammans med övriga vippgungor på samma certifikat."
+          "appliesTo": "Technická inšpekcia a.s., certifikat 13.04.2026. Gäller den här vippgungan tillsammans med övriga modeller på samma familjecertifikat.",
         }
       ],
       "gaps": [

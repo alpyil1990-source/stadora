@@ -127,8 +127,8 @@ export function DesignIndexPage() {
           Parkbänkar, sittmöbler, papperskorgar, cykel- och sparkcykelställ, bord, picknickgrupper
           och pollare från streetpark.eu. Tillverkare STREETPARK syns inte på den publika
           produktsidan. Inga priser på den publika sidan. Listpris och inköpsnetto i EUR ligger i
-          intern admin. Modell och
-          artikelnummer följer med offerten. Ritningar i avsnittet Dokument och underlag.
+          intern admin. Modellnamn syns publikt. Leverantörens artikelnummer syns bara i admin,
+          inte på hemsidan eller offerten. Ritningar i avsnittet Dokument och underlag.
         </p>
         <p className="mt-3">
           <Link className="underline" to="/design/streetpark">
@@ -178,7 +178,8 @@ export function DesignIndexPage() {
         <p className="mt-2 text-muted">
           Ett produktkort för vägghängd V-Care Fold i Väntzon och korridor, 1–4 sittplatser.
           Utförande är trä. Välj ytbehandling, stomkulör och fällmekanism. Tillverkare syns
-          bara internt. Produktkod följer med offerten. Pris på förfrågan. Prislista endast intern.
+          bara internt. Leverantörens produktkod syns bara i admin. Pris på förfrågan. Prislista
+          endast intern.
           Inga golvstående Fold och inga vanliga V-Care-bänkar.
         </p>
         <p className="mt-3">
@@ -198,10 +199,10 @@ export function DesignIndexPage() {
       <section className="border border-line bg-sheet p-6 text-sm">
         <h2 className="text-lg">VVZ-Play</h2>
         <p className="mt-2 text-muted">
-          Stickprov: kombinerad lektorn VZ1-006-15 och vippgunga båge PHP004. Lekplats, inte
-          parkbänkar eller sopkärl. Tillverkare syns bara internt. Artikelnummer följer med
-          offerten. Pris på förfrågan. Inköps-EUR saknas i den här miljön. Originalbilder och
-          dokument från vvz-play.com.
+          Stickprov: kombinerad lektorn och vippgunga båge. Lekplats, inte parkbänkar eller sopkärl.
+          Tillverkare syns bara internt. Leverantörens artikelnummer syns bara i admin, inte på
+          hemsidan eller offerten. Pris på förfrågan. Inköps-EUR saknas i den här miljön.
+          Originalbilder och dokument från vvz-play.com.
         </p>
         <p className="mt-3">
           <Link className="underline" to="/produkter/lek-aktivitet/lekplatsutrustning">
@@ -209,11 +210,11 @@ export function DesignIndexPage() {
           </Link>
           {' · '}
           <Link className="underline" to="/produkt/kombinerad-lektorn-vz1-006-15">
-            Kombinerad lektorn VZ1-006-15
+            Kombinerad lektorn
           </Link>
           {' · '}
           <Link className="underline" to="/produkt/vippgunga-bage-php004">
-            Vippgunga båge PHP004
+            Vippgunga båge
           </Link>
           {' · '}
           <Link className="underline" to="/admin/leverantorer/vvz-play">
@@ -380,7 +381,7 @@ export function StreetparkDraftPage() {
         <h1 className="mt-2 text-3xl md:text-4xl">STREETPARK i katalogen</h1>
         <p className="mt-4 max-w-2xl text-muted">
           {items.length} serier från streetpark.eu. Tillverkare syns inte på den publika sidan. Inga
-          priser på den publika sidan. Artikelnummer följer med offerten. JPG-ritningar och
+          priser på den publika sidan. Leverantörens artikelnummer syns bara i admin. JPG-ritningar och
           produktblad går att öppna utan konto. DWG, RAR och övriga originalfiler kräver inloggning.
           Buss- och cykelväderskydd ingår inte.
         </p>

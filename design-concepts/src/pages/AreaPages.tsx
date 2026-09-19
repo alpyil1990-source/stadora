@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { products } from '../data/content'
-import { ProductCard } from '../components/ProductCard'
+import { PRODUCT_LISTING_GRID, ProductCard } from '../components/ProductCard'
 
 function PausedArea({ kicker, title }: { kicker: string; title: string }) {
   return (
@@ -45,7 +45,7 @@ export function EnvironmentPage() {
       <img src="/images/env-gaard.jpg" alt="Bostadsgård" className="aspect-[16/8] w-full object-cover" />
       <section>
         <h2 className="text-2xl">Produkter som ofta specificeras tillsammans</h2>
-        <div className="mt-5 grid items-stretch gap-4 sm:grid-cols-3">
+        <div className={`mt-5 ${PRODUCT_LISTING_GRID}`}>
           <ProductCard product={products['parkbank-arsta']} />
           <ProductCard product={products['parkbank-hammarby']} />
           <ProductCard product={products['papperskorg-rodberga-100']} />

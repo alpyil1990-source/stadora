@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import type { Product } from '../data/content'
-import { productPath } from '../data/content'
+import { isStadoraArticleNumber, productPath } from '../data/content'
 
 export function listingFacts(product: Product) {
   const facts: { label: string; value: string }[] = []
@@ -22,17 +22,22 @@ export function ListingCard({ product }: { product: Product }) {
       to={productPath(product)}
       className="group flex h-full flex-col border border-line bg-sheet focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sage"
     >
-      <div className="relative aspect-[4/3] shrink-0 overflow-hidden bg-paper p-3">
+      <div className="relative aspect-square shrink-0 overflow-hidden bg-paper">
         {img && (
-          <img src={img.src} alt={img.alt} className="h-full w-full object-contain" />
+          <img
+            src={img.src}
+            alt={img.alt}
+            className="absolute inset-0 h-full w-full object-contain p-1.5 sm:p-2"
+          />
         )}
       </div>
       <div className="flex flex-1 flex-col px-3 pb-3 pt-2">
         <p className="kicker">{product.subcategory}</p>
         <h3 className="mt-1 text-lg font-medium leading-snug">{product.name}</h3>
-        {product.sku && (
+        {(isStadoraArticleNumber(product.sku) || product.visibility === 'internal_preview') &&
+        product.sku ? (
           <p className="mt-1 font-ui text-xs tabular-nums text-muted">{product.sku}</p>
-        )}
+        ) : null}
         {facts.length > 0 && (
           <dl className="mt-2 space-y-0.5 text-xs text-muted">
             {facts.map((f) => (

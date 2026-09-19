@@ -106,7 +106,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'Ptáčov 40, 674 01 Třebíč, Tjeckien',
     notes:
-      'Tillstånd att använda produktbilder, tekniska uppgifter och dokument från streetpark.eu. Tillverkare STREETPARK finns internt för inköp och produktadministration, inte på den publika produktsidan. Modellnamn oförändrade, svensk produkttyp framför (t.ex. Cykelställ BIKEME). Inga priser i den publika katalogen. Listpris och inköpsnetto (EUR) ligger i intern admin på den här sidan. Artikelnummer följer med offerten. Originalbilder utan beskärning/omfärgning. 3D-perspektiv i JPG är bild, inte CAD. CAD (DWG), 3D-arkiv, produktblad och förankringsanvisning publiceras på produktsidan, kopplade till rätt modell. Kundversion av produktblad utan STREETPARK-logotyp, webbadress och materialprov-länk; original internt. Buss- och cykelväderskydd ingår inte i den här omgången. Hämtat 2026-09-17.',
+      'Tillstånd att använda produktbilder, tekniska uppgifter och dokument från streetpark.eu. Tillverkare STREETPARK finns internt för inköp och produktadministration, inte på den publika produktsidan. Modellnamn oförändrade, svensk produkttyp framför (t.ex. Cykelställ BIKEME). Inga priser i den publika katalogen. Listpris och inköpsnetto (EUR) ligger i intern admin på den här sidan. Leverantörens artikelnummer syns bara i admin, inte på hemsidan eller kundofferten. Originalbilder utan beskärning/omfärgning. 3D-perspektiv i JPG är bild, inte CAD. CAD (DWG), 3D-arkiv, produktblad och förankringsanvisning publiceras på produktsidan, kopplade till rätt modell. Kundversion av produktblad utan STREETPARK-logotyp, webbadress och materialprov-länk; original internt. Buss- och cykelväderskydd ingår inte i den här omgången. Hämtat 2026-09-17.',
     productSlugs: [...STREETPARK_SLUGS],
   },
   {
@@ -125,7 +125,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'ul. Przewodowa 40, 04-874 Warszawa, Polen. Produktion: ul. Bolesława Chrobrego 26, 11-300 Biskupiec.',
     notes:
-      'Tillstånd att använda produktbilder. Tillverkare visas inte publikt. Modellkod följer med offerten. Inköpspris saknas i katalogen — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs före kundpris. Baseboards/socklar är undantagna. Kundversion av produktblad utan leverantörens logotyp och kontaktuppgifter; original internt. Hämtat 2026-09-17.',
+      'Tillstånd att använda produktbilder. Tillverkare visas inte publikt. Leverantörens modellkod syns bara i admin, inte på hemsidan eller kundofferten. Inköpspris saknas i katalogen — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs före kundpris. Baseboards/socklar är undantagna. Kundversion av produktblad utan leverantörens logotyp och kontaktuppgifter; original internt. Hämtat 2026-09-17.',
     productSlugs: [...INOPLEX_SLUGS],
   },
   {
@@ -144,7 +144,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'Lindego 7A, 30-148 Kraków, Polen',
     notes:
-      'ZANO-sortiment utom kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer). Tillstånd att använda produktbilder under förutsättning att ZANO-märkning finns kvar. Produktnamn utan ZANO; Tillverkare: Zano står på produktsidan, inte på listkorten. Modellnummer följer med offerten. Inköpspris saknas — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs. Dokument oförändrade, inklusive logotyp. Hämtat 2026-09-17.',
+      'ZANO-sortiment utom kategorin Övrigt (fågelmatare, lyktor, desinfektionsstationer). Tillstånd att använda produktbilder under förutsättning att ZANO-märkning finns kvar. Produktnamn utan ZANO; Tillverkare: Zano står på produktsidan, inte på listkorten. Leverantörens modellnummer syns bara i admin, inte på hemsidan eller kundofferten. Inköpspris saknas — lämna tomt, aldrig 0 kr. Leverantörsoffert krävs. Dokument oförändrade, inklusive logotyp. Hämtat 2026-09-17.',
     productSlugs: [...ZANO_SLUGS],
   },
   {
@@ -183,7 +183,7 @@ export const seedSuppliers: Supplier[] = [
     },
     address: 'Hallener Str. 1–9, 57439 Attendorn, Tyskland',
     notes:
-      'Tillstånd att använda produktbilder och material på webbplatsen, i offerter och kundprojekt. Tillverkare Kusch+Co endast internt, inte på den publika produktsidan eller offerten. Ett produktkort för vägghängd V-Care Fold (1U–4U MW, trä). Inga klädda varianter i den här omgången. Inga golvstående Fold och inga vanliga V-Care-bänkar. Produktkod följer med offerten; inget påhittat KVCR-beställningsnummer. Inga priser publikt. Prislista och inköpsvillkor endast internt. Modellspecifika Fold-blad/CAD saknas i öppen nedladdning; TE/TB/PRM-ritningar ska inte användas. Hämtat 2026-09-18 från kusch.com och nowystyl.com.',
+      'Tillstånd att använda produktbilder och material på webbplatsen, i offerter och kundprojekt. Tillverkare Kusch+Co endast internt, inte på den publika produktsidan eller offerten. Ett produktkort för vägghängd V-Care Fold (1U–4U MW, trä). Inga klädda varianter i den här omgången. Inga golvstående Fold och inga vanliga V-Care-bänkar. Leverantörens produktkod syns bara i admin; inget påhittat KVCR-beställningsnummer. Inga priser publikt. Prislista och inköpsvillkor endast internt. Modellspecifika Fold-blad/CAD saknas i öppen nedladdning; TE/TB/PRM-ritningar ska inte användas. Hämtat 2026-09-18 från kusch.com och nowystyl.com.',
     productSlugs: [...KUSCH_VCARE_FOLD_SLUGS],
   },
   {
@@ -203,7 +203,7 @@ export const seedSuppliers: Supplier[] = [
     address:
       'Huvudkontor: Kasárenská 9, 911 05 Trenčín, Slovakien. Produktion enligt certifikat: Pod Brezinou 3745/86, 911 01 Trenčín.',
     notes:
-      'Tillstånd att använda produktbilder. Stickprov 2026-09-18: Kombinerad lektorn VZ1-006-15 och Vippgunga båge PHP004. Inte parkbänkar, sopkärl eller annan stadsmöbel. Tillverkare VVZ-Play endast internt, inte på den publika produktsidan eller offerten. Artikelnummer följer med offerten. Inga priser publikt. Wholesale pricelist 2026 saknades som fil i den här miljön — inköps-EUR lämnas tomt, aldrig 0. Originaldokument inklusive märkning. DWG kräver leverantörsinloggning och är inte hämtad. Hämtat 2026-09-18 från vvz-play.com.',
+      'Tillstånd att använda produktbilder. Stickprov 2026-09-18: Kombinerad lektorn och Vippgunga båge. Inte parkbänkar, sopkärl eller annan stadsmöbel. Tillverkare VVZ-Play endast internt, inte på den publika produktsidan eller offerten. Leverantörens artikelnummer syns bara i admin, inte på hemsidan eller kundofferten. Inga priser publikt. Wholesale pricelist 2026 saknades som fil i den här miljön — inköps-EUR lämnas tomt, aldrig 0. Originaldokument inklusive märkning. DWG kräver leverantörsinloggning och är inte hämtad. Hämtat 2026-09-18 från vvz-play.com.',
     productSlugs: [...VVZ_PLAY_SLUGS],
   },
 ]

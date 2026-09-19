@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { benches, binsigniaDraft } from '../data/content'
-import { ProductCard } from '../components/ProductCard'
+import { PRODUCT_LISTING_GRID, ProductCard } from '../components/ProductCard'
 
 export function HomePage() {
   return (
@@ -79,7 +79,7 @@ export function HomePage() {
             Alla avfallsprodukter
           </Link>
         </div>
-        <div className="mt-8 grid items-stretch gap-4 sm:grid-cols-3">
+        <div className={`mt-8 ${PRODUCT_LISTING_GRID}`}>
           {binsigniaDraft.map((p) => (
             <ProductCard key={p.slug} product={p} />
           ))}
@@ -88,11 +88,11 @@ export function HomePage() {
 
       <section>
         <p className="kicker">Parkmöbler</p>
-        <h2 className="mt-2 text-2xl md:text-3xl">Parkbänkar med mått och artikelnummer</h2>
+        <h2 className="mt-2 text-2xl md:text-3xl">Parkbänkar med verifierade mått</h2>
         <p className="mt-3 max-w-2xl text-sm text-muted">
-          Listan visar parkbänkar med verifierade mått och artikelnummer.
+          Listan visar parkbänkar med verifierade mått.
         </p>
-        <div className="mt-8 grid items-stretch gap-4 sm:grid-cols-3">
+        <div className={`mt-8 ${PRODUCT_LISTING_GRID}`}>
           {benches.map((p) => (
             <ProductCard key={p.slug} product={p} />
           ))}
