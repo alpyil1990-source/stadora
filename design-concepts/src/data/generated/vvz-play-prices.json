@@ -528,10 +528,510 @@
       "listEur": 5570.0,
       "discountPercent": 30,
       "netEur": 3899.0
+    },
+    {
+      "sku": "VZD1-010-10",
+      "slug": "lekstallning-vzd1-010-10",
+      "name": "Lekställning ettorn låg, två rutschkanor, repvägg och trappa",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3200.0,
+      "discountPercent": 30,
+      "netEur": 2240.0
+    },
+    {
+      "sku": "VZP1-003-10",
+      "slug": "lekstallning-lag-vzp1-003-10",
+      "name": "Lekställning ettorn låg, rutschkana, trappa, klättervägg och kulram",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3290.0,
+      "discountPercent": 30,
+      "netEur": 2303.0
+    },
+    {
+      "sku": "VZD1-006-10",
+      "slug": "lekstallning-vzd1-006-10",
+      "name": "Lekställning ettorn, rutschkana, klättervägg och trappa",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3420.0,
+      "discountPercent": 30,
+      "netEur": 2394.0
+    },
+    {
+      "sku": "VZ1-004-15",
+      "slug": "lekstallning-vz1-004-15",
+      "name": "Lekställning ettorn, rutschkana, repvägg och stege 1,5 m",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3440.0,
+      "discountPercent": 30,
+      "netEur": 2408.0
+    },
+    {
+      "sku": "VZ1-005-15",
+      "slug": "lekstallning-vz1-005-15",
+      "name": "Lekställning ettorn, rutschkana, repvägg och klättervägg 1,5 m",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3490.0,
+      "discountPercent": 30,
+      "netEur": 2443.0
+    },
+    {
+      "sku": "VZD1-008-10",
+      "slug": "lekstallning-med-tunnel-vzd1-008-10",
+      "name": "Lekställning ettorn, rutschkana, tunnel och trappa",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3500.0,
+      "discountPercent": 30,
+      "netEur": 2450.0
+    },
+    {
+      "sku": "VZD1-009-10",
+      "slug": "lekstallning-vzd1-009-10",
+      "name": "Lekställning ettorn låg, två rutschkanor, klättervägg och trappa",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3690.0,
+      "discountPercent": 30,
+      "netEur": 2583.0
+    },
+    {
+      "sku": "VZP1-004-15",
+      "slug": "lekstallning-lag-vzp1-004-15",
+      "name": "Lekställning ettorn låg, rutschkana, lutande klättervägg och stege 1,5 m",
+      "subcategory": "Lekställningar",
+      "subcategorySlug": "lekstallningar",
+      "listEur": 3850.0,
+      "discountPercent": 30,
+      "netEur": 2695.0
+    },
+    {
+      "sku": "VHP006-15",
+      "slug": "dubbel-gunga-classic-1-5-m-vhp006-15",
+      "name": "Dubbel gunga Classic 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1230.0,
+      "discountPercent": 30,
+      "netEur": 861.0
+    },
+    {
+      "sku": "VHP007-10",
+      "slug": "gunga-babysits-classic-1-0-m-vhp007-10",
+      "name": "Gunga Classic och babysits 1,0 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1250.0,
+      "discountPercent": 30,
+      "netEur": 875.0
+    },
+    {
+      "sku": "VHP007-15",
+      "slug": "gunga-babysits-classic-1-5-m-vhp007-15",
+      "name": "Gunga Classic och babysits 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1295.0,
+      "discountPercent": 30,
+      "netEur": 906.5
+    },
+    {
+      "sku": "VHP006-1-10",
+      "slug": "dubbel-gunga-babysits-1-0-m-vhp006-1-10",
+      "name": "Dubbel gunga babysits 1,0 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1330.0,
+      "discountPercent": 30,
+      "netEur": 931.0
+    },
+    {
+      "sku": "VHP006-1-15",
+      "slug": "dubbel-gunga-babysits-1-5-m-vhp006-1-15",
+      "name": "Dubbel gunga babysits 1,5 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1360.0,
+      "discountPercent": 30,
+      "netEur": 952.0
+    },
+    {
+      "sku": "VHP006-10",
+      "slug": "dubbel-gunga-classic-1-0-m-vhp006-10",
+      "name": "Dubbel gunga Classic 1,0 m",
+      "subcategory": "Gungor",
+      "subcategorySlug": "gungor",
+      "listEur": 1360.0,
+      "discountPercent": 30,
+      "netEur": 952.0
+    },
+    {
+      "sku": "PHP001-1",
+      "slug": "vippgunga-hast-3-m-php001-1",
+      "name": "Vippgunga häst 3 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 720.0,
+      "discountPercent": 30,
+      "netEur": 504.0
+    },
+    {
+      "sku": "PHP002-1",
+      "slug": "vippgunga-hast-4-m-php002-1",
+      "name": "Vippgunga häst 4 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 720.0,
+      "discountPercent": 30,
+      "netEur": 504.0
+    },
+    {
+      "sku": "PHP002",
+      "slug": "vippgunga-4-m-php002",
+      "name": "Vippgunga 4 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 750.0,
+      "discountPercent": 30,
+      "netEur": 525.0
+    },
+    {
+      "sku": "PH002-1",
+      "slug": "vippgunga-hast-4-m-ph002-1",
+      "name": "Vippgunga enben hästar 4 m",
+      "subcategory": "Vippgungor",
+      "subcategorySlug": "vippgungor",
+      "listEur": 760.0,
+      "discountPercent": 30,
+      "netEur": 532.0
+    },
+    {
+      "sku": "AP003-10",
+      "slug": "rutschkana-med-gunga-ap003-10",
+      "name": "Rutschkana med gunga Classic och babysits 1,0 m",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 3550.0,
+      "discountPercent": 30,
+      "netEur": 2485.0
+    },
+    {
+      "sku": "AP002-15",
+      "slug": "rutschkana-med-gunga-ap002-15",
+      "name": "Rutschkana med gunga Classic 1,5 m",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 3690.0,
+      "discountPercent": 30,
+      "netEur": 2583.0
+    },
+    {
+      "sku": "AP004-10",
+      "slug": "rutschkana-med-gunga-ap004-10",
+      "name": "Rutschkana med gunga fågelbo 1,0 m",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 3690.0,
+      "discountPercent": 30,
+      "netEur": 2583.0
+    },
+    {
+      "sku": "AP003-15",
+      "slug": "rutschkana-med-gunga-ap003-15",
+      "name": "Rutschkana med gunga Classic och babysits 1,5 m",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 4250.0,
+      "discountPercent": 30,
+      "netEur": 2975.0
+    },
+    {
+      "sku": "AP004-15",
+      "slug": "rutschkana-med-gunga-ap004-15",
+      "name": "Rutschkana med gunga fågelbo 1,5 m",
+      "subcategory": "Rutschkanor",
+      "subcategorySlug": "rutschkanor",
+      "listEur": 4350.0,
+      "discountPercent": 30,
+      "netEur": 3045.0
+    },
+    {
+      "sku": "KL001-20",
+      "slug": "karusell-kl001-20",
+      "name": "Karusell med sits 2,0 m",
+      "subcategory": "Karuseller",
+      "subcategorySlug": "karuseller",
+      "listEur": 2690.0,
+      "discountPercent": 30,
+      "netEur": 1883.0
+    },
+    {
+      "sku": "KL009",
+      "slug": "karusell-kl009",
+      "name": "Hängkarusell",
+      "subcategory": "Karuseller",
+      "subcategorySlug": "karuseller",
+      "listEur": 2890.0,
+      "discountPercent": 30,
+      "netEur": 2023.0
+    },
+    {
+      "sku": "KL010",
+      "slug": "karusell-kl010",
+      "name": "Hängkarusell med sits",
+      "subcategory": "Karuseller",
+      "subcategorySlug": "karuseller",
+      "listEur": 3590.0,
+      "discountPercent": 30,
+      "netEur": 2513.0
+    },
+    {
+      "sku": "SH004",
+      "slug": "springer-motocycle-sh004",
+      "name": "Fjädergunga motorcykel",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 530.0,
+      "discountPercent": 30,
+      "netEur": 371.0
+    },
+    {
+      "sku": "SH006",
+      "slug": "springer-triple-leaf-sh006",
+      "name": "Fjädergunga treklöver",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 580.0,
+      "discountPercent": 30,
+      "netEur": 406.0
+    },
+    {
+      "sku": "SH008",
+      "slug": "springer-car-sh008",
+      "name": "Fjädergunga bil",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 590.0,
+      "discountPercent": 30,
+      "netEur": 413.0
+    },
+    {
+      "sku": "SH009",
+      "slug": "springer-cow-sh009",
+      "name": "Fjädergunga ko",
+      "subcategory": "Fjäderlek",
+      "subcategorySlug": "fjaderlek",
+      "listEur": 590.0,
+      "discountPercent": 30,
+      "netEur": 413.0
+    },
+    {
+      "sku": "PD013-1",
+      "slug": "lekhus-small-pd013-1",
+      "name": "Litet lekhus",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 1240.0,
+      "discountPercent": 30,
+      "netEur": 868.0
+    },
+    {
+      "sku": "PD016-2",
+      "slug": "lekhus-themed-small-pd016-2",
+      "name": "Temalekhus litet",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 1420.0,
+      "discountPercent": 30,
+      "netEur": 994.0
+    },
+    {
+      "sku": "PD016-1",
+      "slug": "lekhus-themed-tent-pd016-1",
+      "name": "Temalekhus tält",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 1500.0,
+      "discountPercent": 30,
+      "netEur": 1050.0
+    },
+    {
+      "sku": "PD013-2",
+      "slug": "lekhus-small-with-abacus-pd013-2",
+      "name": "Litet lekhus med kulram",
+      "subcategory": "Lekhus och sandlek",
+      "subcategorySlug": "lekhus",
+      "listEur": 1590.0,
+      "discountPercent": 30,
+      "netEur": 1113.0
+    },
+    {
+      "sku": "OP1-12",
+      "slug": "klatterlek-op1-12",
+      "name": "Apbana",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 830.0,
+      "discountPercent": 30,
+      "netEur": 581.0
+    },
+    {
+      "sku": "OP1-06",
+      "slug": "balanslek-op1-06",
+      "name": "Apbana balans",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 865.0,
+      "discountPercent": 30,
+      "netEur": 605.5
+    },
+    {
+      "sku": "OP1-07",
+      "slug": "balanslek-op1-07",
+      "name": "Apbana balans",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 865.0,
+      "discountPercent": 30,
+      "netEur": 605.5
+    },
+    {
+      "sku": "OP1-01",
+      "slug": "klatterlek-op1-01",
+      "name": "Apbana repnät",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 925.0,
+      "discountPercent": 30,
+      "netEur": 647.5
+    },
+    {
+      "sku": "OP1-04",
+      "slug": "klatterlek-op1-04",
+      "name": "Apbana horisontell stege",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 960.0,
+      "discountPercent": 30,
+      "netEur": 672.0
+    },
+    {
+      "sku": "OP1-13",
+      "slug": "balanslek-op1-13",
+      "name": "Apbana balans",
+      "subcategory": "Klättring och hinderbanor",
+      "subcategorySlug": "klattring-hinderbanor",
+      "listEur": 1020.0,
+      "discountPercent": 30,
+      "netEur": 714.0
+    },
+    {
+      "sku": "KL013",
+      "slug": "karusell-tillganglig-kl013",
+      "name": "Tillgänglig karusell 2,5 m",
+      "subcategory": "Tillgänglig lek",
+      "subcategorySlug": "tillganglig-lek",
+      "listEur": 4770.0,
+      "discountPercent": 30,
+      "netEur": 3339.0
+    },
+    {
+      "sku": "KL015",
+      "slug": "karusell-tillganglig-kl015",
+      "name": "Tillgänglig globkarusell 2,5 m",
+      "subcategory": "Tillgänglig lek",
+      "subcategorySlug": "tillganglig-lek",
+      "listEur": 5920.0,
+      "discountPercent": 30,
+      "netEur": 4144.0
+    },
+    {
+      "sku": "EDU001",
+      "slug": "alphabet-edu001",
+      "name": "Lekpanel alfabet",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 305.0,
+      "discountPercent": 30,
+      "netEur": 213.5
+    },
+    {
+      "sku": "EDU016",
+      "slug": "shapes-edu016",
+      "name": "Lekpanel former",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 305.0,
+      "discountPercent": 30,
+      "netEur": 213.5
+    },
+    {
+      "sku": "EDU002",
+      "slug": "numbers-edu002",
+      "name": "Lekpanel siffror",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 315.0,
+      "discountPercent": 30,
+      "netEur": 220.5
+    },
+    {
+      "sku": "EDU004",
+      "slug": "meter-edu004",
+      "name": "Lekpanel mätsticka",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 315.0,
+      "discountPercent": 30,
+      "netEur": 220.5
+    },
+    {
+      "sku": "EDU015",
+      "slug": "rock-paper-scissors-edu015",
+      "name": "Lekpanel sten-sax-påse",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 330.0,
+      "discountPercent": 30,
+      "netEur": 231.0
+    },
+    {
+      "sku": "EDU003",
+      "slug": "clock-edu003",
+      "name": "Lekpanel klocka",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 360.0,
+      "discountPercent": 30,
+      "netEur": 252.0
+    },
+    {
+      "sku": "EDU020",
+      "slug": "throw-ring-edu020",
+      "name": "Lekpanel ringkast",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 405.0,
+      "discountPercent": 30,
+      "netEur": 283.5
+    },
+    {
+      "sku": "BAL007",
+      "slug": "double-bar-bal007",
+      "name": "Dubbel balansbom",
+      "subcategory": "Lekplatsutrustning",
+      "subcategorySlug": "lekplatsutrustning",
+      "listEur": 440.0,
+      "discountPercent": 30,
+      "netEur": 308.0
     }
   ],
   "counts": {
-    "rows": 52,
-    "products": 52
+    "rows": 102,
+    "products": 102
   }
 }

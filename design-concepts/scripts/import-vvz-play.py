@@ -51,7 +51,20 @@ EXISTING_SLUGS = {
     },
 }
 NEW_TARGET = 50
+ADD_TARGET = 50
 DISCOUNT_PERCENT = 30
+VVZ_SUBS = [
+    "lekstallningar",
+    "gungor",
+    "vippgungor",
+    "rutschkanor",
+    "karuseller",
+    "fjaderlek",
+    "lekhus",
+    "lekplatsutrustning",
+    "tillganglig-lek",
+    "klattring-hinderbanor",
+]
 
 PLAYGROUND_CATS = [
     ("spring-swings", "fjaderlek", "Fjäderlek"),
@@ -88,6 +101,20 @@ QUOTAS = [
     ("klattring-hinderbanor", 4),
     ("tillganglig-lek", 3),
     ("lekplatsutrustning", 4),
+]
+
+# Extra 50 on top of the first import. Inclusive SKUs only in tillgänglig lek.
+ADD_QUOTAS = [
+    ("lekstallningar", 8),
+    ("gungor", 6),
+    ("vippgungor", 4),
+    ("rutschkanor", 5),
+    ("karuseller", 3),
+    ("fjaderlek", 4),
+    ("lekhus", 4),
+    ("klattring-hinderbanor", 6),
+    ("tillganglig-lek", 2),
+    ("lekplatsutrustning", 8),
 ]
 
 COLOR_SV = {
@@ -343,8 +370,13 @@ def extract_listing_products(html: str, page_url: str) -> tuple[list[dict], list
                 decoded = hex_decode(hm.group(2))
                 sku = sku or sku_from_text(decoded) or decoded.upper()
         sub, sub_name = cat_for_url(page_url)
-        if "inclusive" in fold(title):
+        folded_title = fold(title)
+        if "inclusive" in folded_title:
             sub, sub_name = "tillganglig-lek", "Tillgänglig lek"
+        elif sub == "tillganglig-lek" and (
+            (sku or "").upper().startswith("EDU") or "educational panel" in folded_title
+        ):
+            sub, sub_name = "lekplatsutrustning", "Lekplatsutrustning"
         products.append(
             {
                 "url": href.split("?")[0],
@@ -532,13 +564,49 @@ def swedish_name(english: str, sku: str) -> str:
             bits.append("fågelbo")
         return " ".join(bits)
 
-    if "spring" in low and ("rocker" in low or "rider" in low or "animal" in low or sku.startswith("W") or sku.startswith("F")):
-        bits = ["Fjädergunga"]
-        extra = re.sub(r"(springer|spring rocker|spring rider|for kids)", "", t, flags=re.I).strip(" -")
-        extra = extra[:40].strip()
-        if extra and fold(extra) not in ("", "fjädergunga"):
-            bits.append(extra)
-        return " ".join(bits) if extra else "Fjädergunga"
+    if "spring" in low and ("rocker" in low or "rider" in low or "animal" in low or "springer" in low or sku.startswith("SH") or sku.startswith("W") or sku.startswith("F")):
+        animal = [
+            ("motocycle", "motorcykel"),
+            ("motorcycle", "motorcykel"),
+            ("unicorn", "enhörning"),
+            ("triple leaf", "treklöver"),
+            ("shamrock", "klöver"),
+            ("clover", "klöver"),
+            ("horse", "häst"),
+            ("swan", "svan"),
+            ("bear", "björn"),
+            ("cow", "ko"),
+            ("car", "bil"),
+            ("boat", "båt"),
+            ("carriage", "vagn"),
+        ]
+        extra = ""
+        for needle, sv in animal:
+            if needle in low:
+                extra = sv
+                break
+        return f"Fjädergunga {extra}".strip() if extra else "Fjädergunga"
+
+    if "educational panel" in low or (sku.startswith("EDU") and "panel" in low):
+        themes = [
+            ("alphabet", "alfabet"),
+            ("number", "siffror"),
+            ("clock", "klocka"),
+            ("shape", "former"),
+            ("measuring", "mätsticka"),
+            ("meter", "mätsticka"),
+            ("rock, paper", "sten-sax-påse"),
+            ("tossing", "ringkast"),
+            ("throw", "ringkast"),
+            ("abacus", "kulram"),
+            ("labyrinth", "labyrint"),
+        ]
+        extra = ""
+        for needle, sv in themes:
+            if needle in low:
+                extra = sv
+                break
+        return f"Lekpanel {extra}".strip() if extra else "Lekpanel"
 
     if "playhouse" in low or "house" in low or "sandbox" in low or "sandpit" in low:
         if "sand" in low:
@@ -752,20 +820,19 @@ def translate_description(parsed: dict, name: str) -> str:
 
 
 def color_for_image(url: str, colors: list[dict]) -> str | None:
+    """Tag a gallery photo from its filename. Never invent a kulör from the 4-swatch template."""
     name = fold(basename(url))
     mapping = [
         (("-yg", "_yg", "yg_"), "Brun + gulgrön"),
         (("-t.", "_t.", "-t_", "_t_"), "Orange + turkos"),
         (("-y.", "_y.", "-y_", "_y_"), "Antracit + gul"),
         (("-r.", "_r.", "-r_", "_r_"), "Antracit + röd"),
+        (("-gw", "_gw", "gw_"), "Grön + vit"),
     ]
     for needles, color in mapping:
         if any(n in name for n in needles):
-            for c in colors:
-                if c["name"] == color:
-                    return color
             return color
-    return colors[0]["name"] if colors else None
+    return None
 
 
 def classify_doc(title: str, href: str, locked: bool) -> dict | None:
@@ -925,6 +992,109 @@ def select_products(listed: list[dict], prices: dict[str, dict]) -> list[dict]:
     return keep + extras
 
 
+def reclassify_listed(p: dict) -> dict:
+    sku = (p.get("sku") or "").upper()
+    title = fold(p.get("title") or "") + " " + fold(p.get("listName") or "")
+    if "inclusive" in title:
+        return {**p, "sku": sku, "subcategorySlug": "tillganglig-lek", "subcategory": "Tillgänglig lek"}
+    if p.get("subcategorySlug") == "tillganglig-lek" and (
+        sku.startswith("EDU") or "educational panel" in title
+    ):
+        return {
+            **p,
+            "sku": sku,
+            "subcategorySlug": "lekplatsutrustning",
+            "subcategory": "Lekplatsutrustning",
+        }
+    return {**p, "sku": sku}
+
+
+def is_accessory(p: dict) -> bool:
+    title = fold(p.get("title") or "") + " " + fold(p.get("listName") or "")
+    return "tarpaulin" in title or "cover for" in title or "cover tarpaulin" in title
+
+
+def load_existing_series() -> list[dict]:
+    path = GEN / "vvz-play-series.json"
+    if not path.exists():
+        return []
+    return list(json.loads(path.read_text()).get("series") or [])
+
+
+def select_additional(listed: list[dict], prices: dict[str, dict], keep_skus: set[str]) -> list[dict]:
+    by_sub: dict[str, list[dict]] = defaultdict(list)
+    for raw in listed:
+        sku = (raw.get("sku") or "").upper()
+        if not sku or sku in keep_skus:
+            continue
+        if sku not in prices or prices[sku].get("listEur") is None:
+            continue
+        p = reclassify_listed(
+            {
+                **raw,
+                "sku": sku,
+                **{k: prices[sku][k] for k in ("listEur", "netEur", "wholesaleEur", "listName")},
+            }
+        )
+        if is_accessory(p):
+            continue
+        by_sub[p["subcategorySlug"]].append(p)
+
+    def rank(p: dict) -> tuple:
+        sku = p["sku"]
+        title = fold(p.get("title") or "") + " " + fold(p.get("listName") or "")
+        penalty = 0
+        if re.search(r"VZP?[5-9]|VZP10|VZD[5-9]|VZD[6-8]", sku):
+            penalty += 5
+        if sku.count("-") > 3:
+            penalty += 1
+        sub = p.get("subcategorySlug")
+        if sub == "lekhus":
+            if is_accessory(p):
+                penalty += 20
+            if "house" in title or "playhouse" in title:
+                penalty -= 3
+        if sub == "tillganglig-lek" and "inclusive" not in title:
+            penalty += 40
+        if "inclusive" in title:
+            penalty -= 4
+        return (penalty, p.get("listEur") or 0, sku)
+
+    for sub in by_sub:
+        by_sub[sub].sort(key=rank)
+
+    chosen: list[dict] = []
+    used: set[str] = set()
+    for sub, n in ADD_QUOTAS:
+        pool = [p for p in by_sub.get(sub, []) if p["sku"] not in used]
+        take = pool[:n]
+        chosen.extend(take)
+        used.update(p["sku"] for p in take)
+
+    if len(chosen) < ADD_TARGET:
+        rest = []
+        for items in by_sub.values():
+            rest.extend(p for p in items if p["sku"] not in used)
+        rest.sort(key=rank)
+        need = ADD_TARGET - len(chosen)
+        chosen.extend(rest[:need])
+    return chosen[:ADD_TARGET]
+
+
+def update_catalog_index(series: list[dict]) -> None:
+    path = GEN / "catalog-index.json"
+    index = json.loads(path.read_text())
+    by_sub: dict[str, list[str]] = {key: [] for key in VVZ_SUBS}
+    slugs: list[str] = []
+    for row in series:
+        slug = row["slug"]
+        slugs.append(slug)
+        sub = row.get("subcategorySlug") or "lekplatsutrustning"
+        by_sub.setdefault(sub, []).append(slug)
+    index["vvzPlay"] = {"slugs": slugs, "bySubcategory": by_sub}
+    path.write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")) + "\n")
+
+
 def login(op: urllib.request.OpenerDirector) -> bool:
     user = (os.environ.get("VVZ_USER") or "").strip()
     password = os.environ.get("VVZ_PASSWORD") or ""
@@ -986,7 +1156,15 @@ def build_one(op: urllib.request.OpenerDirector, listed: dict, prices: dict, log
     if logged:
         parsed["docs"] = download_logged_product(op, url)
 
-    name = swedish_name(parsed.get("originalName") or listed.get("title") or sku, sku)
+    name = swedish_name(
+        listed.get("listName") or parsed.get("originalName") or listed.get("title") or sku,
+        sku,
+    )
+    color_names = {mapped[0] for mapped in COLOR_SV.values()}
+    if name in color_names:
+        name = swedish_name(parsed.get("originalName") or listed.get("title") or sku, sku)
+    if name in color_names:
+        name = f"Lekredskap {sku}"
     slug = make_slug(name, sku)
     sub_slug = listed["subcategorySlug"]
     sub_name = listed["subcategory"]
@@ -1073,11 +1251,14 @@ def build_one(op: urllib.request.OpenerDirector, listed: dict, prices: dict, log
             if c["name"] in image_color_names and c["name"] not in seen_keep:
                 keep.append(c)
                 seen_keep.add(c["name"])
-        for name in sorted(image_color_names, key=lambda n: PREFERRED_COLOR_ORDER.index(n) if n in PREFERRED_COLOR_ORDER else 50):
-            if name in seen_keep:
+        for color_name in sorted(
+            image_color_names,
+            key=lambda n: PREFERRED_COLOR_ORDER.index(n) if n in PREFERRED_COLOR_ORDER else 50,
+        ):
+            if color_name in seen_keep:
                 continue
-            keep.append(swedish_color(name))
-            seen_keep.add(name)
+            keep.append(swedish_color(color_name))
+            seen_keep.add(color_name)
         parsed["colors"] = keep
     else:
         parsed["colors"] = []
@@ -1197,8 +1378,14 @@ def main() -> int:
     print("  listed with sku", len(listed))
     (CACHE / "listed.json").write_text(json.dumps(listed, ensure_ascii=False, indent=2))
 
-    selected = select_products(listed, prices)
-    print("selected", len(selected), "existing", sum(1 for p in selected if p["sku"] in EXISTING_SLUGS))
+    existing_series = load_existing_series()
+    keep_skus = {r["sku"] for r in existing_series}
+    if keep_skus:
+        selected = select_additional(listed, prices, keep_skus)
+        print("append", len(selected), "keep", len(existing_series))
+    else:
+        selected = select_products(listed, prices)
+        print("selected", len(selected), "existing", sum(1 for p in selected if p["sku"] in EXISTING_SLUGS))
     from collections import Counter
 
     print("  by sub", Counter(p["subcategorySlug"] for p in selected))
@@ -1207,7 +1394,12 @@ def main() -> int:
     print("login")
     logged = login(op)
 
-    series = []
+    existing_price_path = GEN / "vvz-play-prices.json"
+    existing_price_rows = []
+    if existing_price_path.exists():
+        existing_price_rows = list(json.loads(existing_price_path.read_text()).get("rows") or [])
+
+    new_rows = []
     for i, item in enumerate(selected, 1):
         print(f"[{i}/{len(selected)}] {item['sku']} {item['url']}")
         try:
@@ -1216,7 +1408,16 @@ def main() -> int:
             print("  FAIL", item["sku"], exc)
             continue
         if row:
-            series.append(row)
+            new_rows.append(row)
+
+    catalog_existing = [
+        {k: v for k, v in row.items() if k not in ("listEur", "netEur", "discountPercent")}
+        for row in existing_series
+    ]
+    series = catalog_existing + [
+        {k: v for k, v in row.items() if k not in ("listEur", "netEur", "discountPercent")}
+        for row in new_rows
+    ]
 
     # related: two others in same subcategory
     by_sub: dict[str, list[str]] = defaultdict(list)
@@ -1241,7 +1442,26 @@ def main() -> int:
     (GEN / "vvz-play-series.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
 
     price_rows = []
-    for row in series:
+    seen_price: set[str] = set()
+    series_by_sku = {row["sku"]: row for row in series}
+    for row in existing_price_rows:
+        sku = row.get("sku")
+        match = series_by_sku.get(sku)
+        if not match or sku in seen_price:
+            continue
+        price_rows.append(
+            {
+                **row,
+                "slug": match["slug"],
+                "name": match["name"],
+                "subcategory": match["subcategory"],
+                "subcategorySlug": match["subcategorySlug"],
+            }
+        )
+        seen_price.add(sku)
+    for row in new_rows:
+        if row["sku"] in seen_price:
+            continue
         price_rows.append(
             {
                 "sku": row["sku"],
@@ -1254,6 +1474,7 @@ def main() -> int:
                 "netEur": row["netEur"],
             }
         )
+        seen_price.add(row["sku"])
     price_payload = {
         "list": "VVZ-Play wholesale pricelist 2026",
         "fetchedAt": FETCHED_AT,
@@ -1271,7 +1492,8 @@ def main() -> int:
         "counts": {"rows": len(price_rows), "products": len(series)},
     }
     (GEN / "vvz-play-prices.json").write_text(json.dumps(price_payload, ensure_ascii=False, indent=2) + "\n")
-    print("wrote", len(series), "products")
+    update_catalog_index(series)
+    print("wrote", len(series), "products", "prices", len(price_rows))
     return 0
 
 
