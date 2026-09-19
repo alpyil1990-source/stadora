@@ -297,7 +297,7 @@ export function ProductView({
                   {(intern || isStadoraArticleNumber(s.sku)) && s.sku && (
                     <span className="block text-xs text-muted">Art.nr {s.sku}</span>
                   )}
-                  {sizePhotos && (
+                  {intern && sizePhotos && (
                     <span className="block text-xs text-muted">
                       {hasPhoto ? 'Produktbild finns' : 'Originalbild saknas'}
                     </span>
@@ -376,7 +376,7 @@ export function ProductView({
                   )}
                   <span>
                     {c.name}
-                    {taggedColors && (
+                    {intern && taggedColors && (
                       <span className="mt-0.5 block text-xs text-muted">
                         {hasPhoto ? 'Byter bild' : 'Ingen unik bild'}
                       </span>
