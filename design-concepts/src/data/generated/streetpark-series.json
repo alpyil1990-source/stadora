@@ -39336,7 +39336,8 @@
       ],
       "imageNote": "Bilden visar ett exempelutförande från STREETPARK. Kulör på skärm kan avvika. Galleriet byts bara när en bild är märkt för vald modell.",
       "mentionsBetoni": false,
-      "colorLegend": "Kulör på metall"
+      "colorLegend": "Kulör på metall",
+      "listingSrc": "/images/streetpark/parkbank-gradua/listing.jpg"
     },
     {
       "slug": "parkbank-inoa",
@@ -41666,7 +41667,8 @@
       ],
       "imageNote": "Bilden visar ett exempelutförande från STREETPARK. Kulör på skärm kan avvika. Galleriet byts bara när en bild är märkt för vald modell.",
       "mentionsBetoni": false,
-      "colorLegend": "Kulör på metall"
+      "colorLegend": "Kulör på metall",
+      "listingSrc": "/images/streetpark/parkbank-inoa/listing.jpg"
     },
     {
       "slug": "parkbank-nisha",
