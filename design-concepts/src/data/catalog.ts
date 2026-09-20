@@ -40,11 +40,6 @@ export const catalog: CategoryDef[] = [
         name: 'Parkbänkar',
         blurb: 'Bänkar med och utan ryggstöd.',
         productSlugs: [
-          'parkbank-hammarby',
-          'parkbank-arsta',
-          'parkbank-grondal',
-          'parkbank-aspudden',
-          'parkbank-enskede',
           ...investimCatalogSlugs.parkbankar,
           ...streetparkCatalogSlugs.parkbankar,
           ...inoplexCatalogSlugs.parkbankar,
@@ -54,14 +49,24 @@ export const catalog: CategoryDef[] = [
         filters: [
           { legend: 'Ryggstöd', options: ['Med ryggstöd', 'Utan ryggstöd'] },
           { legend: 'Montering', options: ['Fristående', 'Skruvas i underlaget'] },
-          { legend: 'Material', options: ['Arkitektonisk betong', 'Tvättad betong', 'Stål', 'Trä'] },
+          { legend: 'Material', options: ['Stål', 'Trä'] },
         ],
       },
       {
         slug: 'betongbankar',
         name: 'Betongbänkar',
         blurb: 'Bänkar i betong för park, torg och gård.',
-        productSlugs: [...investimCatalogSlugs.betongbankar, ...inoplexCatalogSlugs.betongbankar],
+        productSlugs: [
+          'parkbank-hammarby',
+          'parkbank-arsta',
+          'parkbank-grondal',
+          'parkbank-aspudden',
+          'parkbank-enskede',
+          ...investimCatalogSlugs.betongbankar,
+          ...inoplexCatalogSlugs.betongbankar,
+          ...(streetparkCatalogSlugs.betongbankar ?? []),
+          ...(zanoCatalogSlugs.betongbankar ?? []),
+        ],
         draftExamples: [],
         filters: [
           { legend: 'Ryggstöd', options: ['Med ryggstöd', 'Utan ryggstöd'] },

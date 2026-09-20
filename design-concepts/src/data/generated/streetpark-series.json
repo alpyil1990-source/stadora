@@ -30312,8 +30312,8 @@
       "fetchedAt": "2026-09-17",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
+      "subcategory": "Betongbänkar",
+      "subcategorySlug": "betongbankar",
       "summary": "Parkbänk BETLA med sidostycken i arkitektonisk betong.",
       "description": "Parkbänk BETLA. Sidostycken i arkitektonisk betong. Sits och rygg fästs via dolt galvaniserat metallbeslag. Sidostycken i massiv arkitektonisk betong. Sits och rygg i massivträ, fästa i beslaget med dolda rostfria skruvar. Beslaget skruvas i sidostyckena med kraftiga metriskskruvar. Galvaniserade stålplattor på benen med hål för förankring. Formgivning: Jan Padrnos. Tillverkare: STREETPARK.",
       "material": "Sidostycken i massiv arkitektonisk betong. Massivträ i galvaniserat beslag med dolda rostfria skruvar. Galvaniserade bottenplattor med hål för förankring.",
@@ -44081,8 +44081,8 @@
       "fetchedAt": "2026-09-17",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
+      "subcategory": "Betongbänkar",
+      "subcategorySlug": "betongbankar",
       "summary": "Parkbänk ROBUSTA med betongsidostycken och limmat trä.",
       "description": "Parkbänk ROBUSTA. Massiv sits och rygg av limmade profiler på två betongsidostycken. Fogarna trä–betong har metallelement så att bänken kan monteras på plats. Formen är avsedd för högre sittställning på ryggen med fötterna på sitsen. Sidostycken i massiv arkitektonisk betong. Sits och rygg som prismor av limmat massivträ i galvaniserat beslag med dolda rostfria skruvar. Beslaget fästs i sidostyckena med gängstänger. I sidostyckenas nederdel fyra hål för pinnar som lägesfixerar. Formgivning: Ondřej Smolík, Jaromír Kosnar. Tillverkare: STREETPARK.",
       "material": "Sidostycken i massiv arkitektonisk betong. Limmat massivträ i galvaniserat beslag med dolda rostfria skruvar. Hål för lägesfixerande pinnar.",
@@ -45482,8 +45482,8 @@
       "fetchedAt": "2026-09-17",
       "category": "Parkmöbler",
       "categorySlug": "parkmobler",
-      "subcategory": "Parkbänkar",
-      "subcategorySlug": "parkbankar",
+      "subcategory": "Betongbänkar",
+      "subcategorySlug": "betongbankar",
       "summary": "Parkbänk SIBELA med smala betongsidostycken och träbrädor.",
       "description": "Parkbänk SIBELA. Smala betongsidostycken. Längs- eller tvärlagda träribbor, två längder, två bredder och en bågformad bänk. Raka utföranden med längsgående ribbor och rygg finns. Bärande konstruktion i varmförzinkat stål. Sits och rygg av massiva träbrädor med rostfria skruvar. Stommen fästs i betongsidostyckena med åtta metriskbultar. I undersidan fyra gängade hål för förankring. Formgivning: Jan Padrnos. Tillverkare: STREETPARK.",
       "material": "Varmförzinkat stål. Massiva träbrädor med rostfria skruvar. Åtta metriskbultar mot betongsidostycken. Fyra gängade hål för förankring.",
@@ -52271,7 +52271,6 @@
       "parkbank-aluma",
       "parkbank-babia",
       "parkbank-berga",
-      "parkbank-betla",
       "parkbank-bordo",
       "parkbank-borola",
       "parkbank-dina",
@@ -52281,10 +52280,8 @@
       "parkbank-inoa",
       "parkbank-nisha",
       "parkbank-radiano",
-      "parkbank-robusta",
       "parkbank-rosty",
       "parkbank-sadka",
-      "parkbank-sibela",
       "parkbank-twistula",
       "parkbank-vega",
       "parkbank-vela"
@@ -52342,6 +52339,11 @@
       "parkbank-bled",
       "parkbank-audito",
       "sitto-penta-islands"
+    ],
+    "betongbankar": [
+      "parkbank-betla",
+      "parkbank-robusta",
+      "parkbank-sibela"
     ]
   },
   "counts": {
