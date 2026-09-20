@@ -45,6 +45,7 @@ export function DesignIndexPage() {
             ['Admin: Inoplex (intern)', '/admin/leverantorer/inoplex'],
             ['Admin: ZANO', '/admin/leverantorer/zano'],
             ['Solstol DUO 02.052 – ZANO', '/produkt/solstol-duo-02-052'],
+            ['ZANO parkbänkar', '/produkter/parkmobler/parkbankar'],
             ['Solstolar', '/produkter/parkmobler/solstolar'],
             ['Planteringskärl DO.23.02', '/produkt/planteringskarl-do-23-02'],
             ['Parkbänk LA.20.19', '/produkt/parkbank-la-20-19'],
@@ -138,6 +139,14 @@ export function DesignIndexPage() {
         <p className="mt-3">
           <Link className="underline" to="/produkt/solstol-duo-02-052">
             Solstol DUO 02.052 – ZANO
+          </Link>
+          {' · '}
+          <Link className="underline" to="/produkter/parkmobler/parkbankar">
+            Parkbänkar
+          </Link>
+          {' · '}
+          <Link className="underline" to="/produkter/parkmobler/bord-picknick">
+            Bord och picknick
           </Link>
           {' · '}
           <Link className="underline" to="/produkter/parkmobler/solstolar">

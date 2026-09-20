@@ -819,6 +819,8 @@ def import_product(item: dict, keep: dict[str, dict]) -> dict:
     html = html_b.decode("utf-8", "replace")
     en = parse_en_page(html, item["url"])
     uuid = en.get("uuid")
+    if not uuid and not en.get("gallery") and not en.get("title"):
+        raise RuntimeError("tom produktsida utan UUID, bilder och rubrik")
     if not uuid:
         gaps.append("Produkt-UUID saknades i produktkorts-URL; svenska filer kunde inte hämtas via files.zano.company.")
 
