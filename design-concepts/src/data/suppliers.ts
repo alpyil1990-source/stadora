@@ -1,5 +1,6 @@
 import { BINSIGNIA_SLUGS } from './binsignia'
 import { INVESTIM_SLUGS } from './investim'
+import { STREETPARK_SLUGS } from './streetpark'
 
 export type SupplierStatus = 'aktiv' | 'invantar_underlag' | 'pausad'
 
@@ -83,6 +84,25 @@ export const seedSuppliers: Supplier[] = [
     notes:
       'Prislista 2026 EUR. Rabatt: all arkitektonisk betong 10 %; all tvättad betong 20 %, bänkar 10 %; papperskorg i tvättad granit med trä och stållock 5 %. Stålbänkar räknas som bänkar (10 %). Parkbänkar, pollare, cykelställ och planteringskärl från skickade länkar; fluorescerande pollare undantagen. Katalognummer och EUR bara i admin. Hämta inte bilder från stadora.se.',
     productSlugs: [...INVESTIM_SLUGS],
+  },
+  {
+    id: 'streetpark',
+    name: 'STREETPARK s.r.o.',
+    status: 'aktiv',
+    orgNr: '',
+    legalName: 'STREETPARK s.r.o.',
+    website: 'https://www.streetpark.eu',
+    mediaSource: 'https://www.streetpark.eu/en/products/',
+    contact: {
+      name: '',
+      role: 'Katalog / B2B',
+      email: 'info@streetpark.eu',
+      phone: '+420 773 789 672',
+    },
+    address: 'Ptáčov 40, 674 01 Třebíč, Tjeckien',
+    notes:
+      'Tillstånd att använda produktbilder, tekniska uppgifter och dokument från streetpark.eu. Tillverkare visas publikt som STREETPARK. Modellnamn oförändrade, svensk produkttyp framför (t.ex. Cykelställ BIKEME). Inga priser i katalogen. Artikelnummer följer med offerten. Originalbilder utan beskärning/omfärgning. 3D-perspektiv i JPG är bild, inte CAD. CAD (DWG), 3D-arkiv, produktblad och förankringsanvisning publiceras på produktsidan, kopplade till rätt modell. Buss- och cykelväderskydd ingår inte i den här omgången. Hämtat 2026-09-17.',
+    productSlugs: [...STREETPARK_SLUGS],
   },
 ]
 

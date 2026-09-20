@@ -39,9 +39,20 @@ Se `/design` i prototypen, eller:
 - `/miljoer/bostadsgard`
 - `/skola` och `/vard` är pausade grenar (ingen katalog just nu)
 - `/dokument`
+- `/produkt/cykelstall-bikeme` STREETPARK med ritning, DWG, förankring och produktblad per modell
+- `/design/streetpark` intern översikt
+- `/admin/leverantorer/streetpark` leverantör och importrapport
 
 Mobil: smal viewport. Meny under 1024 px, fast offertknapp på produktsidan.
 
+### STREETPARK-dokument (CAD)
+
+Öppna filer (JPG-ritningar, materialprov, garanti) hämtas utan inloggning. CAD, produktblad och förankring kräver partnerinloggning mot streetpark.eu. Lösenord ska **inte** sparas i repot.
+
+```bash
+STREETPARK_USER='din@epost' STREETPARK_PASSWORD='…' python3 scripts/fetch-streetpark-auth.py
+```
+
 ## Innehållsregel
 
-Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin.
+Endast uppgifter som finns hos källan (live-sajten eller leverantörens sida/prislista). Inga påhittade mått, certifikat eller dokument. Tomma sektioner förklaras eller utelämnas. Produktbilder ska komma från leverantörens länk i intern admin, inte hämtas från stadora.se. Avfallsfoton är hämtade från leverantörens sajt med skriftligt tillstånd. Leverantörens artikelnummer syns bara i admin, utom STREETPARK där modellens artikelnummer följer med offerten.

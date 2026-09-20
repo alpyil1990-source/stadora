@@ -24,7 +24,7 @@ type SupplierValue = {
 }
 
 const SupplierContext = createContext<SupplierValue | null>(null)
-const STORAGE_KEY = 'stadora-suppliers-v6'
+const STORAGE_KEY = 'stadora-suppliers-v7'
 
 function load(): Supplier[] {
   try {

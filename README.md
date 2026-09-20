@@ -29,7 +29,9 @@ npm run dev
 
 Skola och vård avvaktar. Offentlig miljö byggs först. Leverantörer, kontaktperson och produktantal ligger i prototypen under `/admin/leverantorer`. Produktbilder ska komma från leverantörens länk, inte skrapas från den publicerade sajten.
 
-Avfallskatalogen har 54 serier från prislistan september 2026 (källsortering, askkopp, papperskorg). Parkbänkar, betongpollare, cykelställ och planteringskärl från prislista 2026 EUR ligger under Parkmöbler, Pollare, Cykelparkering och Plantering (fluorescerande pollare är undantagen). Listpriser i euro, rabatt, netto och leverantörens artikelnummer syns bara i admin. PETALSTEEL saknas på prislistan och är inte importerad. Skola och vård avvaktar.
+Avfallskatalogen har 54 serier från prislistan september 2026 (källsortering, askkopp, papperskorg). Parkbänkar, betongpollare, cykelställ och planteringskärl från prislista 2026 EUR ligger under Parkmöbler, Pollare, Cykelparkering och Plantering (fluorescerande pollare är undantagen). Listpriser i euro, rabatt, netto och leverantörens artikelnummer syns bara i admin. PETALSTEEL saknas på prislistan och är inte importerad.
+
+STREETPARK (62 serier: parkbänkar, sittmöbler, papperskorgar, cykelställ, bord/picknick, pollare) visas med tillverkarnamn. Måttritning, 3D-perspektiv, produktblad, förankring och DWG ligger på produktsidan. Inga priser. STREETPARKs artikelnummer följer med offerten. Buss- och cykelväderskydd ingår inte. Skola och vård avvaktar.
 
 ## Vad som inte ska göras än
 

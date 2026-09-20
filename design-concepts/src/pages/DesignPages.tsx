@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { BINSIGNIA_SLUGS, INVESTIM_SLUGS, productPath, products } from '../data/content'
+import { BINSIGNIA_SLUGS, INVESTIM_SLUGS, STREETPARK_SLUGS, productPath, products } from '../data/content'
 
 export function DesignIndexPage() {
   return (
@@ -41,7 +41,9 @@ export function DesignIndexPage() {
             ['Admin: fakturor', '/admin/fakturor'],
             ['Admin: leverantörer', '/admin/leverantorer'],
             ['Admin: BINSIGNIA (Paula Stirbu)', '/admin/leverantorer/binsignia'],
-            ['Admin: INVESTIM (Robert Miąsek)', '/admin/leverantorer/investim'],
+            ['Admin: STREETPARK', '/admin/leverantorer/streetpark'],
+            ['Intern översikt STREETPARK', '/design/streetpark'],
+            ['Parkbänk FLORIA GRAND', '/produkt/parkbank-floria-grand'],
             ['Parkbänkar och pollare (intern översikt)', '/design/park-pollare'],
             ['Pollare', '/produkter/pollare-racken/pollare'],
             ['Cykelställ', '/produkter/cykelparkering/cykelstall'],
@@ -95,6 +97,27 @@ export function DesignIndexPage() {
           {' · '}
           <Link className="underline" to="/admin/leverantorer/investim">
             Inköpslista EUR
+          </Link>
+        </p>
+      </section>
+      <section className="border border-line bg-sheet p-6 text-sm">
+        <h2 className="text-lg">STREETPARK</h2>
+        <p className="mt-2 text-muted">
+          Parkbänkar, sittmöbler, papperskorgar, cykel- och sparkcykelställ, bord, picknickgrupper
+          och pollare från streetpark.eu. Tillverkare STREETPARK visas publikt. Inga priser. Modell
+          och artikelnummer följer med offerten. Ritningar i avsnittet Dokument och underlag.
+        </p>
+        <p className="mt-3">
+          <Link className="underline" to="/design/streetpark">
+            Intern översikt
+          </Link>
+          {' · '}
+          <Link className="underline" to="/admin/leverantorer/streetpark">
+            Leverantör STREETPARK
+          </Link>
+          {' · '}
+          <Link className="underline" to="/produkt/cykelstall-bikeme">
+            Cykelställ BIKEME
           </Link>
         </p>
       </section>
@@ -234,6 +257,63 @@ export function InvestimDraftPage() {
           <li>Ritningar publiceras inte. De lämnas per projekt i offerten.</li>
         </ul>
       </section>
+    </div>
+  )
+}
+
+export function StreetparkDraftPage() {
+  const items = STREETPARK_SLUGS.map((slug) => products[slug]).filter(Boolean)
+  const groups = [
+    { name: 'Parkbänkar', slug: 'parkbankar', href: '/produkter/parkmobler/parkbankar' },
+    { name: 'Modulära sitt', slug: 'modulara-sitt', href: '/produkter/parkmobler/modulara-sitt' },
+    { name: 'Bord och picknick', slug: 'bord-picknick', href: '/produkter/parkmobler/bord-picknick' },
+    { name: 'Papperskorgar', slug: 'papperskorgar', href: '/produkter/avfall-atervinning/papperskorgar' },
+    { name: 'Askkoppar', slug: 'askkoppar', href: '/produkter/avfall-atervinning/askkoppar' },
+    { name: 'Cykelställ', slug: 'cykelstall', href: '/produkter/cykelparkering/cykelstall' },
+    { name: 'Pollare', slug: 'pollare', href: '/produkter/pollare-racken/pollare' },
+  ]
+
+  return (
+    <div className="space-y-10">
+      <div>
+        <p className="kicker">Intern översikt · STREETPARK</p>
+        <h1 className="mt-2 text-3xl md:text-4xl">STREETPARK i katalogen</h1>
+        <p className="mt-4 max-w-2xl text-muted">
+          {items.length} serier från streetpark.eu. Tillverkare visas. Inga priser. Artikelnummer
+          följer med offerten. CAD, produktblad och förankring ligger på produktsidan. Buss- och
+          cykelväderskydd ingår inte.
+        </p>
+        <p className="mt-3 text-sm">
+          <Link className="underline" to="/admin/leverantorer/streetpark">
+            Leverantör och dokumentöversikt
+          </Link>
+        </p>
+      </div>
+      {groups.map((g) => {
+        const rows = items.filter((p) => p.subcategorySlug === g.slug)
+        if (rows.length === 0) return null
+        return (
+          <section key={g.slug}>
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <h2 className="text-xl">
+                {g.name} · {rows.length}
+              </h2>
+              <Link className="text-sm underline" to={g.href}>
+                Öppna underkategorin
+              </Link>
+            </div>
+            <ul className="mt-4 columns-1 gap-x-8 text-sm sm:columns-2 lg:columns-3">
+              {rows.map((p) => (
+                <li key={p.slug} className="break-inside-avoid border-b border-line py-2">
+                  <Link className="underline-offset-2 hover:underline" to={productPath(p)}>
+                    {p.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      })}
     </div>
   )
 }

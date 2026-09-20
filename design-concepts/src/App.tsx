@@ -13,7 +13,7 @@ import {
   EnvironmentPage,
   SchoolHomePage,
 } from './pages/AreaPages'
-import { DesignIndexPage, DirectionsPage, BinsigniaDraftPage, InvestimDraftPage } from './pages/DesignPages'
+import { DesignIndexPage, DirectionsPage, BinsigniaDraftPage, InvestimDraftPage, StreetparkDraftPage } from './pages/DesignPages'
 import { AdminDashboard } from './pages/admin/AdminDashboard'
 import { AdminQuotes } from './pages/admin/AdminQuotes'
 import { AdminQuoteDetail } from './pages/admin/AdminQuoteDetail'
@@ -37,6 +37,7 @@ export default function App() {
             <Route path="/design" element={<DesignIndexPage />} />
             <Route path="/design/binsignia" element={<BinsigniaDraftPage />} />
             <Route path="/design/park-pollare" element={<InvestimDraftPage />} />
+            <Route path="/design/streetpark" element={<StreetparkDraftPage />} />
             <Route path="/design/riktningar" element={<DirectionsPage />} />
             <Route path="/design/produktsida-a" element={<ProductLayoutA />} />
             <Route path="/design/produktsida-b" element={<ProductLayoutB />} />

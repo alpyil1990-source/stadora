@@ -1,5 +1,6 @@
 import { binsigniaProducts } from './binsignia'
 import { investimProducts } from './investim'
+import { streetparkProducts } from './streetpark'
 import { catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
@@ -36,6 +37,35 @@ export type MaterialFinish = {
   sourceUrl?: string
   standardFeatures?: string[]
   optionalFeatures?: string[]
+}
+
+export type ProductDocumentKind =
+  | 'drawing'
+  | 'perspective'
+  | 'datasheet'
+  | 'mounting'
+  | 'anchoring'
+  | 'cad'
+  | 'warranty'
+  | 'maintenance'
+  | 'material'
+  | 'image'
+  | 'other'
+
+export type ProductDocument = {
+  title: string
+  /** Swedish document type, e.g. Måttritning. Combined with format in the UI. */
+  typeLabel: string
+  /** Actual file format, e.g. JPG or PDF. */
+  format: string
+  href: string
+  kind: ProductDocumentKind
+  previewable?: boolean
+  /** Supplier model/article the file belongs to, e.g. SKM1. */
+  variant?: string
+  appliesTo?: string
+  sourceUrl?: string
+  fetchedAt?: string
 }
 
 export type Product = {
@@ -77,12 +107,28 @@ export type Product = {
   related: string[]
   imageNote?: string
   documentPolicy?: string
+  documents?: ProductDocument[]
+  /** Supplier article numbers may follow the quote line (STREETPARK). */
+  quoteShowsSku?: boolean
+  fetchedAt?: string
   reviewNote?: string
 }
 
 /** STADORA's own article numbers (ST-…) may be shown on the public site. Supplier SKUs stay in admin. */
 export function isStadoraArticleNumber(sku?: string | null) {
   return Boolean(sku && /^ST-/i.test(sku.trim()))
+}
+
+/** Quote lines may show STREETPARK article numbers; other supplier SKUs stay in admin. */
+export function quoteShowsArticleNumber(product?: Product | null, sku?: string | null) {
+  if (isStadoraArticleNumber(sku)) return true
+  return Boolean(product?.quoteShowsSku && sku)
+}
+
+export function documentsForVariant(product: Product, variant?: string | null) {
+  const docs = product.documents ?? []
+  if (!variant) return docs.filter((d) => !d.variant)
+  return docs.filter((d) => !d.variant || d.variant === variant)
 }
 
 export const company = {
@@ -376,6 +422,7 @@ export const products: Record<string, Product> = {
   },
   ...investimProducts,
   ...binsigniaProducts,
+  ...streetparkProducts,
   'akutvagn-genius': {
     slug: 'akutvagn-genius',
     name: 'Akutvagn Genius',
@@ -417,6 +464,7 @@ export const products: Record<string, Product> = {
 
 export { BINSIGNIA_SLUGS } from './binsignia'
 export { INVESTIM_SLUGS } from './investim'
+export { STREETPARK_SLUGS } from './streetpark'
 
 export const binsigniaDraft = [
   products['askkopp-luna'],

@@ -6,6 +6,7 @@ import { colorChoices, hasColorTaggedImages, hasSizeTaggedImages } from '../../d
 import { supplierStatusLabel, type SupplierStatus } from '../../data/suppliers'
 import { AdminBinsigniaTerms } from './AdminBinsigniaTerms'
 import { AdminInvestimTerms } from './AdminInvestimTerms'
+import { AdminStreetparkTerms } from './AdminStreetparkTerms'
 
 const statuses: SupplierStatus[] = ['aktiv', 'invantar_underlag', 'pausad']
 
@@ -155,6 +156,7 @@ export function AdminSupplierDetail() {
 
       {supplier.id === 'binsignia' && <AdminBinsigniaTerms />}
       {supplier.id === 'investim' && <AdminInvestimTerms />}
+      {supplier.id === 'streetpark' && <AdminStreetparkTerms />}
 
       <section>
         <h2 className="text-xl">Produkter från den här leverantören</h2>

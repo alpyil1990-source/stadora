@@ -59,18 +59,19 @@ export function DocumentsPage() {
   return (
     <div className="max-w-2xl">
       <p className="kicker">Dokument och underlag</p>
-      <h1 className="mt-2 text-3xl">Centret är tomt tills filerna är verifierade</h1>
+      <h1 className="mt-2 text-3xl">Dokument ligger på produktsidan</h1>
       <p className="mt-4 text-muted">
-        På den publicerade sajten är <code>/dokument</code> 404 och dessutom blockerad i robots.txt.
-        Inga PDF, DWG eller certifikat hämtades från produktsidorna.
+        Verifierade ritningar, produktblad och originalfiler publiceras i avsnittet Dokument och
+        underlag på respektive produkt. Det här centret duplicerar inte samma filer.
       </p>
       <p className="mt-4 text-sm">
-        När dokument finns ska varje fil visa typ, språk, format, versionsnummer och datum. Visa
-        aldrig “finns på begäran” utan bekräftelse. Ritningar och datablad för ett projekt tas fram i
-        offerten när de behövs — de publiceras inte i katalogen.
+        STREETPARK: måttritningar, 3D-perspektivbilder, produktblad, förankringsanvisningar och CAD
+        (DWG) från leverantören, plus materialprov och garantivillkor där de gäller. En
+        3D-perspektivbild i JPG är en bild, inte CAD. BINSIGNIA och INVESTIM har fortfarande inga
+        publicerade ritningar i katalogen.
       </p>
       <div className="mt-8 border border-dashed border-line p-6 text-sm text-muted">
-        Exempel på rad när ett datablad finns: Datablad · Svenska · PDF · v1.2 · 2026-03-12
+        På produktsidan: Måttritning (JPG) · modell SKM1 · Ladda ner original
       </div>
     </div>
   )

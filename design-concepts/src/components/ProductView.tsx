@@ -1,8 +1,13 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft } from 'lucide-react'
-import type { Product } from '../data/content'
-import { isStadoraArticleNumber, productPath, products } from '../data/content'
+import { ArrowLeft, Download } from 'lucide-react'
+import type { Product, ProductDocument } from '../data/content'
+import {
+  documentsForVariant,
+  isStadoraArticleNumber,
+  productPath,
+  products,
+} from '../data/content'
 import { selectedMaterial } from '../data/binsignia'
 import {
   categoryPath,
@@ -125,6 +130,9 @@ export function ProductView({
     if (product.mounting?.length) items.push({ id: 'montering', label: 'Montering' })
     if (product.warranty || product.leadTime) items.push({ id: 'leverans', label: 'Leverans' })
     if (product.medicalClass) items.push({ id: 'standard', label: 'Standarder' })
+    if ((product.documents && product.documents.length > 0) || product.documentPolicy) {
+      items.push({ id: 'dokument', label: 'Dokument' })
+    }
     if (related.length) items.push({ id: 'serie', label: 'Samma typ' })
     return items
   }, [
@@ -401,6 +409,12 @@ export function ProductView({
           <dd className="font-medium tabular-nums">{publicSku}</dd>
         </div>
       )}
+      {product.manufacturer && (
+        <div>
+          <dt className="text-muted">Tillverkare</dt>
+          <dd className="font-medium">{product.manufacturer}</dd>
+        </div>
+      )}
       {weight && (
         <div>
           <dt className="text-muted">Vikt</dt>
@@ -574,17 +588,9 @@ export function ProductView({
           </table>
         </section>
       )}
-      <section>
+      <section id="dokument">
         <h2 className="text-xl">Dokument och underlag</h2>
-        {product.documentPolicy ? (
-          <p className="mt-3 border border-line bg-paper px-4 py-5 text-sm">{product.documentPolicy}</p>
-        ) : (
-          <p className="mt-3 border border-dashed border-line bg-paper px-4 py-5 text-sm text-muted">
-            Inga verifierade datablad, CAD-filer eller certifikat är publicerade för den här
-            produkten. Sektionen döljs i produktion när den är tom; den visas här för att visa hur
-            luckor hanteras. Vi skriver inte att filer finns på begäran.
-          </p>
-        )}
+        <ProductDocuments product={product} variant={variants['Storlek']} />
       </section>
       {related.length > 0 && (
         <section id="serie">
@@ -685,6 +691,9 @@ export function ProductView({
             {product.category} · {product.subcategory}
           </p>
           <h1 className="mt-2 text-3xl md:text-4xl">{product.name}</h1>
+          {product.manufacturer && (
+            <p className="mt-2 text-sm text-muted">Tillverkare {product.manufacturer}</p>
+          )}
           {publicSku && (
             <p className="mt-2 font-ui text-sm tabular-nums text-muted">Art.nr {publicSku}</p>
           )}
@@ -775,5 +784,88 @@ function ProductNav({ product }: { product: Product }) {
         {trail.backLabel}
       </Link>
     </div>
+  )
+}
+
+function ProductDocuments({ product, variant }: { product: Product; variant?: string }) {
+  const all = product.documents ?? []
+  const docs = documentsForVariant(product, variant)
+
+  if (all.length === 0) {
+    if (product.documentPolicy) {
+      return (
+        <p className="mt-3 border border-line bg-paper px-4 py-5 text-sm">{product.documentPolicy}</p>
+      )
+    }
+    return (
+      <p className="mt-3 border border-dashed border-line bg-paper px-4 py-5 text-sm text-muted">
+        Inga verifierade datablad, CAD-filer eller certifikat är publicerade för den här produkten.
+        Sektionen döljs i produktion när den är tom; den visas här för att visa hur luckor hanteras.
+        Vi skriver inte att filer finns på begäran.
+      </p>
+    )
+  }
+
+  if (docs.length === 0) {
+    return (
+      <p className="mt-3 border border-dashed border-line bg-paper px-4 py-5 text-sm text-muted">
+        Inga underlag är kopplade till {variant}. Välj den modell som ritningen gäller, till exempel
+        SKM1 för filer märkta SKM1.
+      </p>
+    )
+  }
+
+  return (
+    <div className="mt-3">
+      {variant && (
+        <p className="mb-3 text-sm text-muted">
+          Visar underlag för {variant} och filer som gäller hela serien.
+        </p>
+      )}
+      <ul className="border border-line bg-sheet">
+        {docs.map((doc) => (
+          <DocumentRow key={`${doc.href}-${doc.variant ?? 'all'}`} doc={doc} />
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+function DocumentRow({ doc }: { doc: ProductDocument }) {
+  const label = `${doc.typeLabel} (${doc.format})`
+  const alt = `${label}. ${doc.title}`
+  return (
+    <li className="grid gap-3 border-b border-line p-4 last:border-b-0 md:grid-cols-12 md:items-center">
+      <div className="aspect-[4/3] overflow-hidden border border-line bg-paper md:col-span-3">
+        {doc.previewable ? (
+          <ProductImageZoom
+            images={[{ src: doc.href, alt }]}
+            currentSrc={doc.href}
+            alt={alt}
+            imgClassName="h-full w-full object-contain p-2"
+          />
+        ) : (
+          <div className="flex h-full min-h-24 items-center justify-center font-ui text-xs uppercase tracking-[0.12em] text-muted">
+            {doc.format}
+          </div>
+        )}
+      </div>
+      <div className="md:col-span-6">
+        <p className="font-medium">{label}</p>
+        <p className="mt-1 text-sm text-muted">{doc.title}</p>
+        {doc.variant && <p className="mt-1 text-xs text-muted">Modell {doc.variant}</p>}
+        {doc.appliesTo && <p className="mt-1 text-xs text-muted">{doc.appliesTo}</p>}
+      </div>
+      <div className="md:col-span-3 md:text-right">
+        <a
+          href={doc.href}
+          download
+          className="inline-flex items-center gap-2 text-sm underline-offset-2 hover:underline"
+        >
+          <Download className="h-4 w-4" aria-hidden />
+          Ladda ner original
+        </a>
+      </div>
+    </li>
   )
 }

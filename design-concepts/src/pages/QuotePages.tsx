@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useQuote, type QuoteLine } from '../context/QuoteContext'
-import { isStadoraArticleNumber, products } from '../data/content'
+import { products, quoteShowsArticleNumber } from '../data/content'
 
 function lineImage(line: QuoteLine) {
   if (line.image) return { src: line.image, alt: line.imageAlt ?? line.name }
@@ -55,7 +55,7 @@ export function QuoteListPage() {
                   <Link className="font-medium hover:underline" to={line.href}>
                     {line.name}
                   </Link>
-                  {isStadoraArticleNumber(line.sku) && (
+                  {quoteShowsArticleNumber(products[line.slug], line.sku) && (
                     <p className="text-xs text-muted">Art.nr {line.sku}</p>
                   )}
                   {line.variant && <p className="text-sm text-muted">{line.variant}</p>}
@@ -248,6 +248,10 @@ export function QuoteFormPage() {
               <QuoteThumb line={l} size="sm" />
               <span>
                 <span className="font-medium">{l.name}</span>
+                {quoteShowsArticleNumber(products[l.slug], l.sku) && (
+                  <span className="block text-xs text-muted">Art.nr {l.sku}</span>
+                )}
+                {l.variant && <span className="block text-xs text-muted">{l.variant}</span>}
                 <span className="text-muted"> · {l.qty} st</span>
               </span>
             </li>
