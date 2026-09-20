@@ -45,9 +45,20 @@ export function SiteFooter({ area }: { area: AreaId }) {
                 <Link to="/skola">Skolprodukter</Link>
               </li>
             ) : (
-              <li>
-                <Link to="/vard">Vårdprodukter</Link>
-              </li>
+              <>
+                <li>
+                  <Link to="/vard/produkter">Alla kategorier</Link>
+                </li>
+                <li>
+                  <Link to="/vard/produkter/vagnar">Vagnar</Link>
+                </li>
+                <li>
+                  <Link to="/vard/produkter/vantzon-korridor">Väntrum och korridor</Link>
+                </li>
+                <li>
+                  <Link to="/vard/produkter/forvaring">Förvaring</Link>
+                </li>
+              </>
             )}
           </ul>
         </div>
@@ -55,10 +66,10 @@ export function SiteFooter({ area }: { area: AreaId }) {
           <p className="text-[0.7rem] uppercase tracking-[0.16em] text-sheet/50">Underlag</p>
           <ul className="mt-3 space-y-2 text-sm text-sheet/80">
             <li>
-              <Link to="/offert">Offertförfrågan</Link>
+              <Link to={area === 'vard' ? '/vard/offert' : '/offert'}>Offertförfrågan</Link>
             </li>
             <li>
-              <Link to="/dokument">Dokument</Link>
+              <Link to={area === 'vard' ? '/vard/dokument' : '/dokument'}>Dokument</Link>
             </li>
             <li>
               <Link to="/integritet">Integritet</Link>

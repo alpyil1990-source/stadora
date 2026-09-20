@@ -1,4 +1,4 @@
-import { Navigate, useParams } from 'react-router-dom'
+import { Navigate, useLocation, useParams } from 'react-router-dom'
 import { ProductView, type ProductLayout } from '../components/ProductView'
 import { CatalogError, CatalogLoading } from '../components/CatalogStatus'
 import { useProductCatalog } from '../context/ProductCatalogContext'
@@ -17,6 +17,7 @@ export function ProductPage({
   intern?: boolean
 }) {
   const params = useParams()
+  const location = useLocation()
   const key = slug ?? params.slug ?? 'parkbank-arsta'
   const { products, status, error, reload, zanoRemovedRedirects } = useProductCatalog()
   const removed = ZANO_REMOVED_PRODUCT_REDIRECTS[key] ?? zanoRemovedRedirects[key]
@@ -25,20 +26,33 @@ export function ProductPage({
   }
   const redirected = KUSCH_VCARE_FOLD_REDIRECTS[key] ?? INOPLEX_SLUG_REDIRECTS[key]
   if (redirected) {
-    return <Navigate to={intern ? `/intern/produkt/${redirected}` : `/produkt/${redirected}`} replace />
+    const prefix = intern
+      ? '/intern/produkt'
+      : location.pathname.startsWith('/vard')
+        ? '/vard/produkt'
+        : '/produkt'
+    return <Navigate to={`${prefix}/${redirected}`} replace />
   }
   const product = products[key]
   if (!product) {
     if (status === 'loading') return <CatalogLoading title="Laddar produkten…" />
     if (status === 'error') return <CatalogError message={error} onRetry={reload} />
-    return <Navigate to="/" replace />
+    const fallback = intern
+      ? '/intern'
+      : location.pathname.startsWith('/vard')
+        ? '/vard'
+        : location.pathname.startsWith('/skola')
+          ? '/skola'
+          : '/'
+    return <Navigate to={fallback} replace />
   }
   if (product.visibility === 'internal_preview' && !intern) {
     const category = product.categorySlug
     const sub = product.subcategorySlug
+    const base = product.area === 'vard' ? '/vard/produkter' : '/produkter'
     return (
       <Navigate
-        to={category && sub ? `/produkter/${category}/${sub}` : '/produkter'}
+        to={category && sub ? `${base}/${category}/${sub}` : base}
         replace
       />
     )

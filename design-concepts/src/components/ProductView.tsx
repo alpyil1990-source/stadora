@@ -16,6 +16,8 @@ import { useAuth } from '../context/AuthContext'
 import { CadLoginPanel } from './CadLoginPanel'
 import { selectedMaterial } from '../data/binsignia'
 import {
+  catalogBasePath,
+  catalogHomePath,
   categoryPath,
   findCategory,
   findSubcategory,
@@ -959,33 +961,32 @@ function productTrail(product: Product) {
     }
   }
 
-  if (product.area === 'skola' || product.area === 'vard') {
-    const home = product.area === 'skola' ? '/skola' : '/vard'
-    const areaLabel = product.area === 'skola' ? 'Skola' : 'Vård'
+  if (product.area === 'skola') {
     return {
       items: [
-        { label: 'Hem', to: home },
-        { label: areaLabel, to: home },
+        { label: 'Hem', to: '/skola' },
+        { label: 'Skola', to: '/skola' },
         { label: product.name },
       ],
-      backTo: home,
-      backLabel: `Tillbaka till ${areaLabel}`,
+      backTo: '/skola',
+      backLabel: 'Tillbaka till Skola',
     }
   }
 
-  const category = findCategory(product.categorySlug)
+  const area = product.area === 'vard' ? 'vard' : 'offentlig'
+  const category = findCategory(product.categorySlug, area)
   const sub = category ? findSubcategory(category, product.subcategorySlug) : undefined
   const items: { label: string; to?: string }[] = [
-    { label: 'Hem', to: '/' },
-    { label: 'Sortiment', to: '/produkter' },
+    { label: 'Hem', to: catalogHomePath(area) },
+    { label: 'Sortiment', to: catalogBasePath(area) },
   ]
-  if (category) items.push({ label: category.name, to: categoryPath(category) })
-  if (category && sub) items.push({ label: sub.name, to: subcategoryPath(category, sub) })
+  if (category) items.push({ label: category.name, to: categoryPath(category, area) })
+  if (category && sub) items.push({ label: sub.name, to: subcategoryPath(category, sub, area) })
   items.push({ label: product.name })
 
   return {
     items,
-    backTo: category && sub ? subcategoryPath(category, sub) : '/produkter',
+    backTo: category && sub ? subcategoryPath(category, sub, area) : catalogBasePath(area),
     backLabel: sub ? `Tillbaka till ${sub.name}` : 'Tillbaka till sortimentet',
   }
 }

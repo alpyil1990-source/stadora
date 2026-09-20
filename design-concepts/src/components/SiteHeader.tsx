@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, Search, X } from 'lucide-react'
-import { areas, publicNav, type AreaId } from '../data/content'
+import { areas, careNav, publicNav, type AreaId } from '../data/content'
 import { useQuoteOptional } from '../context/QuoteContext'
 import { BrandLockup } from './BrandMark'
 
@@ -12,7 +12,10 @@ export function SiteHeader({ area }: { area: AreaId }) {
   const location = useLocation()
   const meta = areas[area]
   const quoteHref = area === 'offentlig' ? '/offertlista' : `/${area === 'skola' ? 'skola' : 'vard'}/offertlista`
+  const quoteFormHref = area === 'vard' ? '/vard/offert' : '/offert'
   const home = meta.path
+  const megaNav = area === 'vard' ? careNav : publicNav
+  const showMega = area === 'offentlig' || area === 'vard'
 
   useEffect(() => {
     setOpen(false)
@@ -38,11 +41,11 @@ export function SiteHeader({ area }: { area: AreaId }) {
             { label: 'Kontakt', to: '/offert' },
           ]
         : [
-            { label: 'Produkter', to: '/vard' },
-            { label: 'Verksamheter', to: '/vard' },
-            { label: 'Dokument', to: '/dokument' },
-            { label: 'Om STADORA Vård', to: '/vard' },
-            { label: 'Kontakt', to: '/offert' },
+            { label: 'Produkter', type: 'mega' as const },
+            { label: 'Verksamheter', to: '/vard/verksamheter' },
+            { label: 'Dokument', to: '/vard/dokument' },
+            { label: 'Om STADORA Vård', to: '/vard/om' },
+            { label: 'Kontakt', to: '/vard/offert' },
           ]
 
   return (
@@ -82,7 +85,7 @@ export function SiteHeader({ area }: { area: AreaId }) {
             Offertlista ({count})
           </Link>
           <Link
-            to="/offert"
+            to={quoteFormHref}
             className="hidden bg-ink px-4 py-2.5 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet hover:bg-sage-dark md:inline-block"
           >
             Begär offert
@@ -100,10 +103,10 @@ export function SiteHeader({ area }: { area: AreaId }) {
         </div>
       </div>
 
-      {mega && area === 'offentlig' && (
+      {mega && showMega && (
         <div className="hidden border-t border-line bg-sheet lg:block">
           <div className="shell grid grid-cols-2 gap-8 py-8 lg:grid-cols-4">
-            {publicNav.products.map((c) => (
+            {megaNav.products.map((c) => (
               <div key={c.name}>
                 <Link to={c.href} className="kicker hover:underline">
                   {c.name}
@@ -121,7 +124,7 @@ export function SiteHeader({ area }: { area: AreaId }) {
             ))}
           </div>
           <div className="shell border-t border-line py-4 text-sm">
-            <Link className="underline" to="/produkter">
+            <Link className="underline" to={area === 'vard' ? '/vard/produkter' : '/produkter'}>
               Alla kategorier
             </Link>
           </div>
@@ -131,8 +134,8 @@ export function SiteHeader({ area }: { area: AreaId }) {
       {open && (
         <div id="mobile-nav" className="border-t border-line bg-sheet lg:hidden">
           <nav className="shell flex flex-col gap-1 py-4 text-base">
-            {area === 'offentlig' &&
-              publicNav.products.map((c) => (
+            {showMega &&
+              megaNav.products.map((c) => (
                 <details key={c.name} className="border-b border-line py-2">
                   <summary className="cursor-pointer font-medium">{c.name}</summary>
                   <div className="mt-2 flex flex-col gap-2 pb-2 pl-3 text-muted">
@@ -155,7 +158,7 @@ export function SiteHeader({ area }: { area: AreaId }) {
             <Link to={quoteHref} className="py-3">
               Offertlista ({count})
             </Link>
-            <Link to="/offert" className="bg-ink px-4 py-3 text-center text-sheet">
+            <Link to={quoteFormHref} className="bg-ink px-4 py-3 text-center text-sheet">
               Begär offert
             </Link>
           </nav>

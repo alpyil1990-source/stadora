@@ -1,5 +1,5 @@
 import { binsigniaProducts } from './binsignia'
-import { catalog } from './catalog'
+import { careCatalog, catalog } from './catalog'
 
 export type AreaId = 'offentlig' | 'skola' | 'vard'
 
@@ -259,7 +259,7 @@ export const areas: Record<
   },
   vard: {
     label: 'Vård',
-    tagline: 'Vård',
+    tagline: 'Avdelning, väntrum och korridor',
     path: '/vard',
     accent: 'care',
   },
@@ -272,6 +272,17 @@ export const publicNav = {
     children: c.children.map((s) => ({
       name: s.name,
       href: `/produkter/${c.slug}/${s.slug}`,
+    })),
+  })),
+}
+
+export const careNav = {
+  products: careCatalog.map((c) => ({
+    name: c.name,
+    href: `/vard/produkter/${c.slug}`,
+    children: c.children.map((s) => ({
+      name: s.name,
+      href: `/vard/produkter/${c.slug}/${s.slug}`,
     })),
   })),
 }
@@ -536,6 +547,7 @@ export const products: Record<string, Product> = {
     images: [
       { src: '/images/genius.png', alt: 'Akutvagn Genius', kind: 'studio' },
     ],
+    listingSrc: '/images/genius-listing.jpg',
     material: 'Pulverlackerad stålplåt RAL 7035, arbetsskiva i ABS',
     dimensions: [{ label: 'B × D × H', value: '650 × 600 × 1110 mm' }],
     medicalClass: 'Medicinteknisk produkt klass I',
@@ -595,30 +607,7 @@ export const benches = [
   products['parkbank-enskede'],
 ]
 
-export const careProducts = [
-  products['akutvagn-genius'],
-  {
-    slug: 'akutvagn-tornado-life',
-    name: 'Akutvagn Tornado Life',
-    summary:
-      'Akutvagn med antimikrobiell pulverlackering och detaljer i teknopolymer. Medicinteknisk produkt klass I.',
-    category: 'Vagnar',
-  },
-  {
-    slug: 'lakemedelsvagn-zephiro',
-    name: 'Läkemedelsvagn Zephiro',
-    summary:
-      'Läkemedelsvagn med sju lådor, läkemedelsfack och centrallås. Medicinteknisk produkt klass I.',
-    category: 'Vagnar',
-  },
-  {
-    slug: 'medicinskap-medcab-iso',
-    name: 'Medicinskåp Medcab ISO',
-    summary:
-      'Medicinskåp med glasdörrar och nyckellås, förberett för ISO-korgar. ISO-korgar är tillval.',
-    category: 'Förvaring',
-  },
-]
+export const careProducts = [products['akutvagn-genius']]
 
 export function unpublishedProducts(source: Record<string, Product> = products) {
   return Object.values(source).filter((p) => p.visibility === 'internal_preview')

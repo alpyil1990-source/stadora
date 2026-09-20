@@ -79,7 +79,13 @@ export function DesignIndexPage() {
             ['Admin: nedladdningslogg', '/admin/nedladdningar'],
             ['Tre designriktningar', '/design/riktningar'],
             ['Skola (pausad gren)', '/skola'],
-            ['Vård (pausad gren)', '/vard'],
+            ['Vård startsida', '/vard'],
+            ['Vård sortiment', '/vard/produkter'],
+            ['Akutvagnar', '/vard/produkter/vagnar/akutvagnar'],
+            ['Akutvagn Genius', '/vard/produkt/akutvagn-genius'],
+            ['Vård väntrum', '/vard/produkter/vantzon-korridor'],
+            ['Vård verksamheter', '/vard/verksamheter'],
+            ['Om STADORA Vård', '/vard/om'],
           ].map(([label, href]) => (
             <li key={href} className="break-inside-avoid border-b border-line py-2">
               <Link className="underline-offset-2 hover:underline" to={href}>

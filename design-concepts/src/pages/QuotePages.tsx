@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useQuote, type QuoteLine } from '../context/QuoteContext'
 import { useProductCatalog } from '../context/ProductCatalogContext'
-import { publicManufacturer, quantityLegend, quantityUnit, quoteShowsArticleNumber, type Product } from '../data/content'
+import { areas, publicManufacturer, quantityLegend, quantityUnit, quoteShowsArticleNumber, type Product } from '../data/content'
+import { quoteBrowsePath, quoteFormPath } from '../data/catalog'
 import { EXAMPLE_IMAGE_NOTE } from '../data/gallery'
 
 function QuoteMaker({ slug, as = 'p' }: { slug: string; as?: 'p' | 'span' }) {
@@ -46,7 +47,7 @@ export function QuoteListPage() {
 
   return (
     <div>
-      <p className="kicker">Offertlista · {area}</p>
+      <p className="kicker">Offertlista · {areas[area].label}</p>
       <h1 className="mt-2 text-3xl">Produkter i förfrågan</h1>
       <p className="mt-3 max-w-xl text-muted">
         {count} rader · {pieces} st totalt.
@@ -54,8 +55,8 @@ export function QuoteListPage() {
       {lines.length === 0 ? (
         <p className="mt-8 border border-dashed border-line p-6 text-sm text-muted">
           Inga produkter ännu.{' '}
-          <Link className="underline" to="/produkter/parkmobler/parkbankar">
-            Gå till parkbänkar
+          <Link className="underline" to={quoteBrowsePath(area)}>
+            Gå till sortimentet
           </Link>
         </p>
       ) : (
@@ -98,7 +99,7 @@ export function QuoteListPage() {
                   rows={2}
                   value={line.comment}
                   onChange={(e) => update(line.id, { comment: e.target.value })}
-                  placeholder="Utförande, infästning, färg…"
+                  placeholder={area === 'vard' ? 'Avdelning, rumstyp, antal…' : 'Utförande, infästning, färg…'}
                 />
               </label>
               <button
@@ -114,12 +115,12 @@ export function QuoteListPage() {
       )}
       <div className="mt-6 flex flex-wrap gap-3">
         <Link
-          to="/offert"
+          to={quoteFormPath(area)}
           className="bg-ink px-5 py-3 font-ui text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-sheet"
         >
           Fortsätt till offertförfrågan
         </Link>
-        <Link to="/produkter/parkmobler/parkbankar" className="border border-ink px-5 py-3 text-sm">
+        <Link to={quoteBrowsePath(area)} className="border border-ink px-5 py-3 text-sm">
           Lägg till fler produkter
         </Link>
       </div>
@@ -182,7 +183,7 @@ export function QuoteFormPage() {
           {lines.length === 0 && (
             <p className="mt-4 text-sm">
               Listan är tom.{' '}
-              <Link className="underline" to="/offertlista">
+              <Link className="underline" to={area === 'offentlig' ? '/offertlista' : `/${area}/offertlista`}>
                 Öppna offertlistan
               </Link>
             </p>
@@ -192,16 +193,32 @@ export function QuoteFormPage() {
         <fieldset className="space-y-4">
           <legend className="text-xl">Projekt</legend>
           <Field label="Projektnamn" name="project" required />
-          <Field label="Plats / fastighet" name="site" required />
+          <Field
+            label={area === 'vard' ? 'Sjukhus / enhet' : 'Plats / fastighet'}
+            name="site"
+            required
+          />
           <label className="block text-sm">
             Skede
             <select name="stage" className="mt-1 w-full border border-line bg-sheet px-3 py-2" required>
               <option value="">Välj skede</option>
-              <option>Program</option>
-              <option>Systemhandling</option>
-              <option>Bygghandling</option>
-              <option>Produktion / avrop</option>
-              <option>Förvaltning / komplettering</option>
+              {area === 'vard' ? (
+                <>
+                  <option>Avrop / komplettering</option>
+                  <option>Ombyggnad avdelning</option>
+                  <option>Nybyggnad / tillbyggnad</option>
+                  <option>Upphandling / ramavtal</option>
+                  <option>Förvaltning</option>
+                </>
+              ) : (
+                <>
+                  <option>Program</option>
+                  <option>Systemhandling</option>
+                  <option>Bygghandling</option>
+                  <option>Produktion / avrop</option>
+                  <option>Förvaltning / komplettering</option>
+                </>
+              )}
             </select>
           </label>
           <Field label="Önskad tidplan" name="timeline" />
@@ -230,12 +247,25 @@ export function QuoteFormPage() {
           <label className="block text-sm">
             Roll
             <select name="role" className="mt-1 w-full border border-line bg-sheet px-3 py-2">
-              <option>Inköpare / upphandlare</option>
-              <option>Arkitekt / landskapsarkitekt</option>
-              <option>Projektör / ingenjör</option>
-              <option>Entreprenör</option>
-              <option>Förvaltare / BRF</option>
-              <option>Annan</option>
+              {area === 'vard' ? (
+                <>
+                  <option>Inköpare / upphandlare</option>
+                  <option>Verksamhetschef / avdelningschef</option>
+                  <option>Fastighet / teknik</option>
+                  <option>Arkitekt vård</option>
+                  <option>Entreprenör</option>
+                  <option>Annan</option>
+                </>
+              ) : (
+                <>
+                  <option>Inköpare / upphandlare</option>
+                  <option>Arkitekt / landskapsarkitekt</option>
+                  <option>Projektör / ingenjör</option>
+                  <option>Entreprenör</option>
+                  <option>Förvaltare / BRF</option>
+                  <option>Annan</option>
+                </>
+              )}
             </select>
           </label>
           <Field label="Kontaktperson" name="contact" required />

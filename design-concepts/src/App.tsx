@@ -10,7 +10,9 @@ import { CatalogIndexPage, CategoryHubPage, SubcategoryListPage } from './pages/
 import { ProductLayoutA, ProductLayoutB, ProductPage } from './pages/ProductPages'
 import { QuoteFormPage, QuoteListPage } from './pages/QuotePages'
 import {
+  CareAboutPage,
   CareHomePage,
+  CareOperationsPage,
   DocumentsPage,
   EnvironmentPage,
   SchoolHomePage,
@@ -98,8 +100,18 @@ export default function App() {
             <Route path="/konto/glomt" element={<ForgotPage />} />
             <Route path="/konto/aterstall" element={<ResetPage />} />
             <Route path="/vard" element={<CareHomePage />} />
+            <Route path="/vard/produkter" element={<CatalogIndexPage />} />
+            <Route path="/vard/produkter/:categorySlug" element={<CategoryHubPage />} />
+            <Route
+              path="/vard/produkter/:categorySlug/:subcategorySlug"
+              element={<SubcategoryListPage />}
+            />
             <Route path="/vard/produkt/:slug" element={<ProductPage />} />
             <Route path="/vard/offertlista" element={<QuoteListPage />} />
+            <Route path="/vard/offert" element={<QuoteFormPage />} />
+            <Route path="/vard/verksamheter" element={<CareOperationsPage />} />
+            <Route path="/vard/om" element={<CareAboutPage />} />
+            <Route path="/vard/dokument" element={<DocumentsPage />} />
             <Route path="/skola" element={<SchoolHomePage />} />
             <Route path="/skola/produkt/:slug" element={<ProductPage />} />
             <Route path="/skola/offertlista" element={<QuoteListPage />} />

@@ -1,21 +1,30 @@
 import { useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import { type Product, isPublicProduct } from '../data/content'
+import { areaFromPath } from '../context/QuoteContext'
 import { useProductCatalog } from '../context/ProductCatalogContext'
 import { CatalogError, CatalogLoading } from '../components/CatalogStatus'
 import {
-  catalog,
+  catalogBasePath,
+  catalogFor,
+  catalogHomePath,
   categoryPath,
   findCategory,
   findSubcategory,
   subcategoryPath,
   subcategoryStatus,
+  type CatalogArea,
   type CategoryDef,
   type SubcategoryDef,
 } from '../data/catalog'
 import { PRODUCT_LISTING_GRID, ProductCard } from '../components/ProductCard'
 import { Breadcrumb } from '../components/Breadcrumb'
 import { PlayActivityListing } from './PlayActivityPages'
+
+function useCatalogArea(): CatalogArea {
+  const { pathname } = useLocation()
+  return areaFromPath(pathname)
+}
 
 const PLAY_SLUG_REDIRECTS: Record<string, string> = {
   'balans-rorelse': 'klattring-hinderbanor',
@@ -42,15 +51,17 @@ function StatusNote({ sub }: { sub: SubcategoryDef }) {
 function SubcategoryTile({
   category,
   sub,
+  area,
 }: {
   category: CategoryDef
   sub: SubcategoryDef
+  area: CatalogArea
 }) {
   const n = sub.productSlugs.length
   const empty = n === 0
   return (
     <Link
-      to={subcategoryPath(category, sub)}
+      to={subcategoryPath(category, sub, area)}
       className={`block p-5 ${empty ? 'border border-dashed border-line' : 'border border-line bg-sheet'}`}
     >
       <p className="font-medium">{sub.name}</p>
@@ -63,18 +74,22 @@ function SubcategoryTile({
 }
 
 export function CatalogIndexPage() {
+  const area = useCatalogArea()
+  const items = catalogFor(area)
   return (
     <div>
-      <Breadcrumb items={[{ label: 'Hem', to: '/' }, { label: 'Sortiment' }]} />
-      <p className="kicker">Offentlig miljö</p>
+      <Breadcrumb items={[{ label: 'Hem', to: catalogHomePath(area) }, { label: 'Sortiment' }]} />
+      <p className="kicker">{area === 'vard' ? 'STADORA Vård' : 'Offentlig miljö'}</p>
       <h1 className="mt-2 text-4xl">Sortiment</h1>
       <p className="mt-4 max-w-2xl text-muted">
-        Åtta huvudkategorier med underkategorier. Gå från kategori till produkt.
+        {area === 'vard'
+          ? 'Vagnar, förvaring och väntrum. Produkter publiceras när mått, bild och underlag är verifierade.'
+          : 'Åtta huvudkategorier med underkategorier. Gå från kategori till produkt.'}
       </p>
       <ul className="mt-10 grid gap-4 sm:grid-cols-2">
-        {catalog.map((c) => (
+        {items.map((c) => (
           <li key={c.slug}>
-            <Link to={categoryPath(c)} className="block border border-line bg-sheet p-6 hover:border-ink">
+            <Link to={categoryPath(c, area)} className="block border border-line bg-sheet p-6 hover:border-ink">
               <h2 className="text-xl">{c.name}</h2>
               <p className="mt-2 text-sm text-muted">{c.blurb}</p>
               <p className="mt-4 text-sm text-sage-dark">
@@ -89,16 +104,17 @@ export function CatalogIndexPage() {
 }
 
 export function CategoryHubPage() {
+  const area = useCatalogArea()
   const { categorySlug } = useParams()
-  const category = findCategory(categorySlug)
-  if (!category) return <Navigate to="/produkter" replace />
+  const category = findCategory(categorySlug, area)
+  if (!category) return <Navigate to={catalogBasePath(area)} replace />
 
   return (
     <div>
       <Breadcrumb
         items={[
-          { label: 'Hem', to: '/' },
-          { label: 'Sortiment', to: '/produkter' },
+          { label: 'Hem', to: catalogHomePath(area) },
+          { label: 'Sortiment', to: catalogBasePath(area) },
           { label: category.name },
         ]}
       />
@@ -108,7 +124,7 @@ export function CategoryHubPage() {
       <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {category.children.map((sub) => (
           <li key={sub.slug}>
-            <SubcategoryTile category={category} sub={sub} />
+            <SubcategoryTile category={category} sub={sub} area={area} />
           </li>
         ))}
       </ul>
@@ -117,13 +133,14 @@ export function CategoryHubPage() {
 }
 
 export function SubcategoryListPage() {
+  const area = useCatalogArea()
   const { categorySlug, subcategorySlug } = useParams()
   const { products, status, error, reload } = useProductCatalog()
-  const category = findCategory(categorySlug)
+  const category = findCategory(categorySlug, area)
   const [on, setOn] = useState<Record<string, string[]>>({})
-  if (!category) return <Navigate to="/produkter" replace />
+  if (!category) return <Navigate to={catalogBasePath(area)} replace />
   if (category.slug === 'parkmobler' && subcategorySlug === 'solkraftverk') {
-    return <Navigate to={categoryPath(category)} replace />
+    return <Navigate to={categoryPath(category, area)} replace />
   }
   const redirected = category.slug === 'lek-aktivitet' && subcategorySlug
     ? PLAY_SLUG_REDIRECTS[subcategorySlug]
@@ -132,7 +149,7 @@ export function SubcategoryListPage() {
     return <Navigate to={`/produkter/${category.slug}/${redirected}`} replace />
   }
   const sub = findSubcategory(category, subcategorySlug)
-  if (!sub) return <Navigate to={categoryPath(category)} replace />
+  if (!sub) return <Navigate to={categoryPath(category, area)} replace />
   if (category.slug === 'lek-aktivitet') {
     return <PlayActivityListing category={category} sub={sub} />
   }
@@ -240,9 +257,9 @@ export function SubcategoryListPage() {
     <div>
       <Breadcrumb
         items={[
-          { label: 'Hem', to: '/' },
-          { label: 'Sortiment', to: '/produkter' },
-          { label: category.name, to: categoryPath(category) },
+          { label: 'Hem', to: catalogHomePath(area) },
+          { label: 'Sortiment', to: catalogBasePath(area) },
+          { label: category.name, to: categoryPath(category, area) },
           { label: sub.name },
         ]}
       />
@@ -255,7 +272,7 @@ export function SubcategoryListPage() {
           </div>
         </div>
         <p className="text-sm">
-          <Link className="underline" to={categoryPath(category)}>
+          <Link className="underline" to={categoryPath(category, area)}>
             Alla underkategorier i {category.name}
           </Link>
         </p>
@@ -281,9 +298,7 @@ export function SubcategoryListPage() {
             ))}
           </div>
         </form>
-      ) : empty ? null : (
-        <p className="mt-6 text-sm text-muted">Filter visas när underkategorin har produkter.</p>
-      )}
+      ) : null}
       <div className="mt-6">
         {catalogFailed ? (
           <CatalogError message={error} onRetry={reload} />

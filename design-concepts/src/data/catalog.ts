@@ -444,16 +444,105 @@ export const catalog: CategoryDef[] = [
   },
 ]
 
-export function categoryPath(category: CategoryDef) {
-  return `/produkter/${category.slug}`
+export type CatalogArea = 'offentlig' | 'skola' | 'vard'
+
+export const careCatalog: CategoryDef[] = [
+  {
+    slug: 'vagnar',
+    name: 'Vagnar',
+    blurb: 'Akutvagnar och övriga vagnar för avdelning, akutrum och mottagning.',
+    children: [
+      {
+        slug: 'akutvagnar',
+        name: 'Akutvagnar',
+        blurb: 'Akutvagn för akutrum, vårdavdelning och mottagning.',
+        productSlugs: ['akutvagn-genius'],
+        draftExamples: [],
+      },
+      {
+        slug: 'lakemedelsvagnar',
+        name: 'Läkemedelsvagnar',
+        blurb: 'Läkemedelsvagnar publiceras när specifikation och bild finns.',
+        productSlugs: [],
+        draftExamples: [],
+      },
+    ],
+  },
+  {
+    slug: 'forvaring',
+    name: 'Förvaring',
+    blurb: 'Medicinskåp och övrig förvaring för vårdenhet.',
+    children: [
+      {
+        slug: 'medicinskap',
+        name: 'Medicinskåp',
+        blurb: 'Medicinskåp publiceras när specifikation och bild finns.',
+        productSlugs: [],
+        draftExamples: [],
+      },
+    ],
+  },
+  {
+    slug: 'vantzon-korridor',
+    name: 'Väntrum och korridor',
+    blurb: 'Vägghängda fällstolar och fällbänkar för väntrum, korridor och entré.',
+    children: [
+      {
+        slug: 'vagghangda-fallstolar',
+        name: 'Vägghängda fällstolar och fällbänkar',
+        blurb:
+          'V-Care Fold, vägghängd. En sittplats som stol, två till fyra som bänk. Sits och rygg i trä.',
+        productSlugs: [...kuschCatalogSlugs['vagghangda-fallstolar']],
+        draftExamples: [],
+        filters: [{ legend: 'Typ', options: ['Fällstol', 'Fällbänk'] }],
+      },
+    ],
+  },
+]
+
+export function catalogFor(area: CatalogArea = 'offentlig') {
+  if (area === 'vard') return careCatalog
+  return catalog
 }
 
-export function subcategoryPath(category: CategoryDef, sub: SubcategoryDef) {
-  return `/produkter/${category.slug}/${sub.slug}`
+export function catalogHomePath(area: CatalogArea = 'offentlig') {
+  if (area === 'vard') return '/vard'
+  if (area === 'skola') return '/skola'
+  return '/'
 }
 
-export function findCategory(slug: string | undefined) {
-  return catalog.find((c) => c.slug === slug)
+export function catalogBasePath(area: CatalogArea = 'offentlig') {
+  if (area === 'vard') return '/vard/produkter'
+  if (area === 'skola') return '/skola/produkter'
+  return '/produkter'
+}
+
+export function quoteFormPath(area: CatalogArea = 'offentlig') {
+  if (area === 'vard') return '/vard/offert'
+  if (area === 'skola') return '/skola/offert'
+  return '/offert'
+}
+
+export function quoteBrowsePath(area: CatalogArea = 'offentlig') {
+  if (area === 'vard') return '/vard/produkter'
+  if (area === 'skola') return '/skola'
+  return '/produkter/parkmobler/parkbankar'
+}
+
+export function categoryPath(category: CategoryDef, area: CatalogArea = 'offentlig') {
+  return `${catalogBasePath(area)}/${category.slug}`
+}
+
+export function subcategoryPath(
+  category: CategoryDef,
+  sub: SubcategoryDef,
+  area: CatalogArea = 'offentlig',
+) {
+  return `${catalogBasePath(area)}/${category.slug}/${sub.slug}`
+}
+
+export function findCategory(slug: string | undefined, area: CatalogArea = 'offentlig') {
+  return catalogFor(area).find((c) => c.slug === slug)
 }
 
 export function findSubcategory(category: CategoryDef, slug: string | undefined) {
