@@ -35828,6 +35828,14 @@
       ],
       "images": [
         {
+          "src": "/images/streetpark/parkbank-floria-grand/streetpark-lavicka-betoni-floria-grand-lfg2bp-01.jpg",
+          "alt": "Parkbänk FLORIA GRAND i utemiljö, med planteringsdelar",
+          "kind": "studio",
+          "sourceUrl": "https://www.streetpark.eu/wp-content/uploads/2026/04/streetpark-lavicka-betoni-floria-grand-lfg2bp-01.jpg",
+          "fetchedAt": "2026-09-17",
+          "size": "LFG2BP"
+        },
+        {
           "src": "/images/streetpark/parkbank-floria-grand/streetpark-lavicka-betoni-floria-grand-201-03.jpg",
           "alt": "Parkbänk FLORIA GRAND, STREETPARK",
           "kind": "studio",
@@ -35840,14 +35848,6 @@
           "kind": "studio",
           "sourceUrl": "https://www.streetpark.eu/wp-content/uploads/2026/04/streetpark-lavicka-floria-grand-sestava-05.jpg",
           "fetchedAt": "2026-09-17"
-        },
-        {
-          "src": "/images/streetpark/parkbank-floria-grand/streetpark-lavicka-betoni-floria-grand-lfg2bp-01.jpg",
-          "alt": "Parkbänk FLORIA GRAND, STREETPARK",
-          "kind": "studio",
-          "sourceUrl": "https://www.streetpark.eu/wp-content/uploads/2026/04/streetpark-lavicka-betoni-floria-grand-lfg2bp-01.jpg",
-          "fetchedAt": "2026-09-17",
-          "size": "LFG2BP"
         },
         {
           "src": "/images/streetpark/parkbank-floria-grand/streetpark-lavicka-betoni-floria-grand-201-12.jpg",
