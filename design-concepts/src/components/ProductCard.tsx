@@ -6,8 +6,15 @@ import { weightForSelection } from '../data/inoplex-config'
 /** Catalog grid: 2 columns on small screens, 4 from 850 px (see index.css). */
 export const PRODUCT_LISTING_GRID = 'product-listing-grid'
 
-export function ProductCard({ product }: { product: Product }) {
+export function listingThumb(product: Product) {
   const img = product.images.find((image) => image.kind === 'studio') ?? product.images[0]
+  if (!img) return undefined
+  if (product.listingSrc) return { ...img, src: product.listingSrc }
+  return img
+}
+
+export function ProductCard({ product }: { product: Product }) {
+  const img = listingThumb(product)
   const cardWeight = weightForSelection(product).beside
   return (
     <article className="flex h-full flex-col">

@@ -114,7 +114,8 @@
           "file": "parkbank-stal-rygg-2.jpg",
           "alt": "Parkbänk Zinkensdamm"
         }
-      ]
+      ],
+      "listingSrc": "/images/investim/parkbank-stal-rygg-listing.jpg"
     },
     {
       "slug": "parkbank-stal-rygg-metall",
@@ -172,7 +173,8 @@
           "file": "parkbank-stal-rygg-metall-2.jpg",
           "alt": "Parkbänk Eriksdal"
         }
-      ]
+      ],
+      "listingSrc": "/images/investim/parkbank-stal-rygg-metall-listing.jpg"
     },
     {
       "slug": "parkbank-stal",
@@ -222,7 +224,8 @@
           "file": "parkbank-stal-1.png",
           "alt": "Parkbänk Högalid"
         }
-      ]
+      ],
+      "listingSrc": "/images/investim/parkbank-stal-listing.jpg"
     },
     {
       "slug": "parkbank-stal-tra",
@@ -272,7 +275,8 @@
           "file": "parkbank-stal-tra-1.png",
           "alt": "Parkbänk Sofia"
         }
-      ]
+      ],
+      "listingSrc": "/images/investim/parkbank-stal-tra-listing.jpg"
     },
     {
       "slug": "parkbank-arkitektur-sits",

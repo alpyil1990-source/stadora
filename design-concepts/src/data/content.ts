@@ -100,6 +100,8 @@ export type Product = {
   summary: string
   description: string
   images: ProductImage[]
+  /** Square listing thumb with extra margin so object-cover does not crop the product. */
+  listingSrc?: string
   material?: string
   manufacturer?: string
   sourceUrl?: string

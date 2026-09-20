@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { Product } from '../data/content'
 import { isStadoraArticleNumber, productPath } from '../data/content'
+import { listingThumb } from './ProductCard'
 
 export function listingFacts(product: Product) {
   const facts: { label: string; value: string }[] = []
@@ -15,7 +16,7 @@ export function listingFacts(product: Product) {
 
 /** Compact catalog card for Lek och aktivitet listings. Not used on product pages. */
 export function ListingCard({ product }: { product: Product }) {
-  const img = product.images.find((image) => image.kind === 'studio') ?? product.images[0]
+  const img = listingThumb(product)
   const facts = listingFacts(product)
   return (
     <Link

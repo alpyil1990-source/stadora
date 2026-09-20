@@ -37,6 +37,7 @@ type SeriesJson = {
   ralInQuote: boolean
   related: string[]
   images: { file: string; alt: string }[]
+  listingSrc?: string | null
 }
 
 function toSizes(rows: SeriesJson['sizes']): SizeOption[] | undefined {
@@ -66,6 +67,7 @@ function toProduct(row: SeriesJson): Product {
       alt: img.alt,
       kind: 'studio' as const,
     })),
+    listingSrc: row.listingSrc ?? undefined,
     material: row.material,
     cement: row.cement ?? undefined,
     wood: row.wood ?? undefined,

@@ -69,6 +69,7 @@ type SeriesJson = {
     kind?: ProductImage['kind']
     size?: string
   }[]
+  listingSrc?: string | null
   documents: DocJson[]
   imageNote?: string
 }
@@ -175,6 +176,7 @@ function toProduct(row: SeriesJson): Product {
       alt: img.alt,
       kind: img.kind ?? 'studio',
     })),
+    listingSrc: row.listingSrc ?? undefined,
     material: row.material ?? undefined,
     dimensions: row.dimensions.length ? row.dimensions : undefined,
     weight: row.weight ?? undefined,
