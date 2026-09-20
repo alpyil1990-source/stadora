@@ -52,6 +52,7 @@ type SeriesJson = {
   imageNote?: string
   reviewNote?: string
   gaps?: string[]
+  listingSrc?: string | null
 }
 
 const HIDDEN_SUBCATEGORY_SLUGS = new Set(['solkraftverk'])
@@ -141,6 +142,11 @@ function toProduct(row: SeriesJson, hiddenSlugs: Set<string>): Product {
       })),
     })),
     related: row.related.filter((slug) => !hiddenSlugs.has(slug)),
+    listingSrc:
+      row.listingSrc ??
+      (row.subcategorySlug === 'parkbankar'
+        ? `/images/zano/${row.slug}/listing.jpg`
+        : undefined),
     documents: row.documents
       .filter((d) => !/^Seriebroschyr/i.test(d.typeLabel) && !/\/seriebroschyr\.pdf$/i.test(d.href))
       .map((d) => ({
