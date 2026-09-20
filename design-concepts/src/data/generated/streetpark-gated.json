@@ -1,0 +1,59 @@
+{
+  "fetchedAt": "2026-09-17",
+  "items": [
+    {
+      "product": "Askkopp D.N.A. ASH",
+      "slug": "askkopp-d-n-a-ash",
+      "name": "D.N.A. ASH product sheet (pdf)",
+      "sourceUrl": "https://www.streetpark.eu/wp-content/uploads/2024/02/Product-sheet-holder-D.N.A.-DOG_201.pdf",
+      "variant": "KDA101",
+      "fetchedAt": "2026-09-17",
+      "reason": "supplier-file-mismatch"
+    },
+    {
+      "product": "Hundavfallskärl D.N.A. DOG",
+      "slug": "hundavfallskarl-d-n-a-dog",
+      "name": "KDA201 2D drawing (jpg)",
+      "sourceUrl": "https://www.streetpark.eu/wp-content/uploads/2024/02/KDA101-2D.jpg",
+      "variant": "KDA201",
+      "fetchedAt": "2026-09-17",
+      "reason": "supplier-file-mismatch"
+    },
+    {
+      "product": "Parkbänk INOA",
+      "slug": "parkbank-inoa",
+      "name": "LIN2 60 2D drawing",
+      "sourceUrl": "https://www.streetpark.eu/wp-content/uploads/2022/08/LNI2-60-2D.jpg",
+      "variant": "LIN2 60",
+      "fetchedAt": "2026-09-17",
+      "reason": "supplier-file-mismatch"
+    },
+    {
+      "product": "Parkbänk INOA",
+      "slug": "parkbank-inoa",
+      "name": "LIN2 60 3D perspective",
+      "sourceUrl": "https://www.streetpark.eu/wp-content/uploads/2022/08/LNI2-60-3D.jpg",
+      "variant": "LIN2 60",
+      "fetchedAt": "2026-09-17",
+      "reason": "supplier-file-mismatch"
+    },
+    {
+      "product": "Parkbänk INOA",
+      "slug": "parkbank-inoa",
+      "name": "LIN4 60 2D drawing",
+      "sourceUrl": "https://www.streetpark.eu/wp-content/uploads/2022/08/LNI4-60-2D.jpg",
+      "variant": "LIN4 60",
+      "fetchedAt": "2026-09-17",
+      "reason": "supplier-file-mismatch"
+    },
+    {
+      "product": "Parkbänk INOA",
+      "slug": "parkbank-inoa",
+      "name": "LIN4 60 3D perspective",
+      "sourceUrl": "https://www.streetpark.eu/wp-content/uploads/2022/08/LNI4-60-3D.jpg",
+      "variant": "LIN4 60",
+      "fetchedAt": "2026-09-17",
+      "reason": "supplier-file-mismatch"
+    }
+  ]
+}

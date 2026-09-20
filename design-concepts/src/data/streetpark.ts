@@ -1,0 +1,140 @@
+import type { Product, ProductDocument, ProductImage, SizeOption } from './content'
+import catalogFile from './generated/streetpark-series.json'
+
+const IMAGE_NOTE =
+  'Bilden visar ett exempelutförande från STREETPARK. Kulör på skärm kan avvika. Galleriet byts bara när en bild är märkt för vald modell.'
+
+type DocJson = {
+  title: string
+  typeLabel: string
+  format: string
+  href: string
+  sourceUrl?: string
+  fetchedAt?: string
+  variant?: string | null
+  kind: ProductDocument['kind']
+  previewable?: boolean
+  appliesTo?: string | null
+}
+
+type SeriesJson = {
+  slug: string
+  name: string
+  modelName: string
+  sku: string | null
+  manufacturer: string
+  quoteShowsSku: boolean
+  sourceUrl: string
+  fetchedAt: string
+  category: string
+  categorySlug: string
+  subcategory: string
+  subcategorySlug: string
+  summary: string
+  description: string
+  material: string | null
+  dimensions: { label: string; value: string }[]
+  weight: string | null
+  mounting: string[]
+  sizes: {
+    name: string
+    sku?: string
+    summary?: string | null
+    dimensions?: { label: string; value: string }[]
+    weight?: string | null
+  }[]
+  defaultSize: string | null
+  sizeLegend: string | null
+  colors: string[]
+  variants: { label: string; options: string[] }[]
+  related: string[]
+  images: {
+    src: string
+    alt: string
+    kind?: ProductImage['kind']
+    size?: string
+  }[]
+  documents: DocJson[]
+  imageNote?: string
+}
+
+const series = catalogFile.series as SeriesJson[]
+
+function toSizes(rows: SeriesJson['sizes']): SizeOption[] | undefined {
+  if (!rows.length) return undefined
+  return rows.map((r) => ({
+    name: r.name,
+    sku: r.sku,
+    summary: r.summary ?? undefined,
+    dimensions: r.dimensions,
+    weight: r.weight ?? undefined,
+  }))
+}
+
+function toDocs(rows: DocJson[]): ProductDocument[] {
+  return rows.map((d) => ({
+    title: d.title,
+    typeLabel: d.typeLabel,
+    format: d.format,
+    href: d.href,
+    kind: d.kind,
+    previewable: Boolean(d.previewable ?? ['JPG', 'JPEG', 'PNG', 'WEBP', 'GIF'].includes(d.format)),
+    variant: d.variant ?? undefined,
+    appliesTo: d.appliesTo ?? undefined,
+    sourceUrl: d.sourceUrl,
+    fetchedAt: d.fetchedAt,
+  }))
+}
+
+function toProduct(row: SeriesJson): Product {
+  return {
+    slug: row.slug,
+    name: row.name,
+    sku: row.sku ?? undefined,
+    manufacturer: row.manufacturer,
+    quoteShowsSku: row.quoteShowsSku || undefined,
+    sourceUrl: row.sourceUrl,
+    fetchedAt: row.fetchedAt,
+    area: 'offentlig',
+    category: row.category,
+    categorySlug: row.categorySlug,
+    subcategory: row.subcategory,
+    subcategorySlug: row.subcategorySlug,
+    summary: row.summary,
+    description: row.description,
+    images: row.images.map((img) => ({
+      src: img.src,
+      alt: img.alt,
+      kind: img.kind ?? 'studio',
+      size: img.size,
+    })),
+    material: row.material ?? undefined,
+    dimensions: row.dimensions.length ? row.dimensions : undefined,
+    weight: row.weight ?? undefined,
+    mounting: row.mounting.length ? row.mounting : undefined,
+    sizes: toSizes(row.sizes),
+    defaultSize: row.defaultSize ?? undefined,
+    sizeLegend: row.sizeLegend ?? undefined,
+    colors: row.colors.length ? row.colors : undefined,
+    variants: row.variants.length ? row.variants : undefined,
+    related: row.related.slice(0, 3),
+    documents: toDocs(row.documents),
+    imageNote: row.imageNote ?? IMAGE_NOTE,
+  }
+}
+
+export const streetparkCatalogSlugs = {
+  parkbankar: catalogFile.catalog.parkbankar as string[],
+  papperskorgar: catalogFile.catalog.papperskorgar as string[],
+  askkoppar: catalogFile.catalog.askkoppar as string[],
+  cykelstall: catalogFile.catalog.cykelstall as string[],
+  'bord-picknick': catalogFile.catalog['bord-picknick'] as string[],
+  pollare: catalogFile.catalog.pollare as string[],
+  sitto: ((catalogFile.catalog as { sitto?: string[] }).sitto ?? []) as string[],
+}
+
+export const streetparkProducts: Record<string, Product> = Object.fromEntries(
+  series.map((row) => [row.slug, toProduct(row)]),
+)
+
+export const STREETPARK_SLUGS = series.map((row) => row.slug)
